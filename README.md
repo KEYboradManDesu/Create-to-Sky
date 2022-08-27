@@ -3,5 +3,3 @@
 
 地图采用Skyblock Classic Edition
 
-
-这是本人第一次做整合包,如有问题请提出
