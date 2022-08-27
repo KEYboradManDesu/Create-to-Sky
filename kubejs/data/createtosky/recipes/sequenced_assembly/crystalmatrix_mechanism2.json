@@ -1,0 +1,132 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:crystalmatrixtt_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:electrum_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:invar_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:diamond_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:emerald_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:netherite_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "item": "thermal:copper_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        },
+        {
+          "fluid": "kubejs:matrix",
+          
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:crystalmatrixt_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

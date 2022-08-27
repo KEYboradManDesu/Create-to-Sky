@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#D#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:kelp"
+        },
+        "D": {
+            "item": "minecraft:dark_prismarine"
+        }
+    },
+    "result": {
+        "item": "minecraft:sea_pickle",
+        "count": 1
+    }
+}

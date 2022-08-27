@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:snow_block"
+    },
+    "result": "minecraft:powder_snow_bucket",
+    "experience": 10,
+    "cookingtime": 50
+}

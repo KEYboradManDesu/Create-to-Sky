@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:plates/copper"
+  },
+  "result": {
+    "item": "minecraft:copper_ingot"
+  }
+}

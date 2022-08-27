@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " Y ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:green_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_wool"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:sponge",
+        "count": 1
+    }
+}

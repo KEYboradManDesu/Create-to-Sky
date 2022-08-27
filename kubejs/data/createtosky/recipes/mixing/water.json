@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "kubejs:zinc_sheet"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 810
+    }
+  ],
+  "results": [
+    {
+      "fluid": "indrev:hydrogen_still",
+      "amount": 810
+    },
+    {
+      "fluid": "ad_astra:oxygen",
+      "amount": 405
+    },
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "kubejs:zinc_sheet"
+    }
+  ],
+  "heatRequirement":"heated"
+}

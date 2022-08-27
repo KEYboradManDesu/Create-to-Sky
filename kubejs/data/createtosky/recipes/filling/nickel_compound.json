@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "thermal:nickel_ingot"
+    },
+    {
+      "fluid": "tconstruct:molten_iron",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:nickel_compound"
+    }
+  ]
+}

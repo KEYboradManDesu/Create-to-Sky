@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_iron_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:iron_dust",
+      "amount": 3
+    }
+  ]
+}

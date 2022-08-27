@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "thermal:white_rockwool"
+    },
+    {
+      "item": "create_confectionery:marshmallow"
+    }
+  ],
+  "results": [
+    {
+      "item": "cloudstorage:cloud"
+    }
+  ]
+}

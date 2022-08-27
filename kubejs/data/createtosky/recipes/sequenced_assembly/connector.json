@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createaddition:copper_rod"
+  },
+  "transitionalItem": {
+    "item": "createaddition:copper_rod"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createaddition:copper_rod"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "item": "createaddition:copper_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createaddition:copper_rod"
+        },
+        {
+          "item": "kubejs:iron_saw"
+        }
+      ],
+      "results": [
+        {
+          "item": "createaddition:copper_rod"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createaddition:connector",
+      "chance": 1,
+      "value":4
+    }
+  ],
+  "loops": 1
+}

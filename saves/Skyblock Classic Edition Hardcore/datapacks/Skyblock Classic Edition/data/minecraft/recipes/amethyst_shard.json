@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:emerald_block"
+    },
+    "result": "minecraft:amethyst_shard",
+    "experience": 30.1,
+    "cookingtime": 900
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "occultism:raw_iesnium"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "occultism:iesnium_dust",
+      "amount": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "SMZ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:creeper_head"
+        },
+        "S": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "M": {
+            "item": "minecraft:music_disc_13"
+        },
+        "Z": {
+            "item": "minecraft:zombie_head"
+        },
+        "W": {
+            "item": "minecraft:wither_skeleton_skull"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_otherside",
+        "count": 1
+    },
+    "group": "music"
+}

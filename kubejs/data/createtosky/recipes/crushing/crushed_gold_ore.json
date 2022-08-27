@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_gold_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:gold_dust",
+      "amount": 3
+    }
+  ]
+}

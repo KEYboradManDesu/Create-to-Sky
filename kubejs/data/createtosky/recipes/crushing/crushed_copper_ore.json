@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_copper_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:copper_dust",
+      "amount": 3
+    }
+  ]
+}

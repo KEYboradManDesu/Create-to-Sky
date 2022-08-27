@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "minecraft:stone"
+    },
+    "result": "minecraft:flint",
+    "experience": 1,
+    "cookingtime": 210
+}

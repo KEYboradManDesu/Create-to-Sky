@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "thermal:signalum_plate"
+  },
+  "transitionalItem": {
+    "item": "mekanism:advanced_control_circuit"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        },
+        {
+          "item": "mekanism:alloy_atomic"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        },
+        {
+          "item": "mekanism:alloy_atomic"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        },
+        {
+          "item": "mekanism:ingot_refined_obsidian"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        },
+        {
+          "item": "mekanism:energy_tablet"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:advanced_control_circuit"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:atomic_disassembler",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

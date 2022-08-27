@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_tin_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:tin_dust",
+      "amount": 3
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:crystalmatrixt_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_crystalmatrix_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "item": "thermal:lapis_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "item": "thermal:iron_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "item": "thermal:gold_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "fluid": "kubejs:matrix",
+          
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "item": "kubejs:netherite_saw"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:crystalmatrix_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

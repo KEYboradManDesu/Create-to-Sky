@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "mekanism:alloy_reinforced"
+    },
+    {
+      "fluid": "kubejs:infinity",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:alloy_atomic"
+    }
+  ]
+}

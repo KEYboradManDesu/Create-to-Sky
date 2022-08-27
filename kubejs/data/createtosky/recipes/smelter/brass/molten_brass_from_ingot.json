@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "create:brass_ingot"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 1000
+  },
+  "processTime": 600
+}

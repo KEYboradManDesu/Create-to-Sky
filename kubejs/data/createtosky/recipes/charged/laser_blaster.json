@@ -1,0 +1,16 @@
+{
+	"type":"createaddition:charging",
+	"input": {
+      	"item": "kubejs:laser_blaster",
+		"count": 1
+	},
+	"result": {
+		"item": "kubejs:laser_blaster",
+		"count": 1
+	},
+	"energy": 1000,
+  	"conditions": [{
+    	"type": "forge:mod_loaded",
+    	"modid": "kubejs"
+	}]
+}

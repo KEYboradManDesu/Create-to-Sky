@@ -1,0 +1,124 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:energy_tablet"
+  },
+  "transitionalItem": {
+    "item": "mekanismgenerators:solar_panel"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        },
+        {
+          "tag": "forge:dusts/osmium"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        },
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        },
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        },
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        },
+        {
+          "item": "thermal:dynamo_magmatic"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanismgenerators:solar_generator",
+      "chance": 1
+    }
+  ],
+  "loops": 2
+}

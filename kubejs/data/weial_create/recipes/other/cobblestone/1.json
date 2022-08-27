@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 1
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 1000
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "minecraft:lava",
+      "amount": 500
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 500
+    }
+  ]
+}

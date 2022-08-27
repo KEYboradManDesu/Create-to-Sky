@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "thermal:hazmat_leggings"
+  },
+  "transitionalItem": {
+    "item": "thermal:hazmat_leggings"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:hazmat_leggings"
+        },
+        {
+          "item": "kubejs:matter_plastics"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:hazmat_leggings"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:hazmat_leggings"
+        },
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:hazmat_leggings"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:hazmat_leggings"
+        },
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:hazmat_leggings"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:hazmat_leggings"
+        },
+        {
+          "item": "kubejs:matter_plastics"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:hazmat_leggings"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:space_pants",
+      "chance": 1
+    }
+  ],
+  "loops": 2
+}

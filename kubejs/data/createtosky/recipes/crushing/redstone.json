@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "thermal:cinnabar"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:redstone",
+      "amount": 7
+    }
+  ]
+}

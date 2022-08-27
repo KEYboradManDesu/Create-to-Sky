@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_zinc_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:zinc_dust",
+      "amount": 3
+    }
+  ]
+}

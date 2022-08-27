@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_uranium_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:dust_uranium",
+      "amount": 3
+    }
+  ]
+}

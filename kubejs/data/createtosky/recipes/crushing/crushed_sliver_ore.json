@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:crushed_silver_ore"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:silver_dust",
+      "amount": 3
+    }
+  ]
+}
