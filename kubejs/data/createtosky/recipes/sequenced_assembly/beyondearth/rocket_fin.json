@@ -1,0 +1,60 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "beyond_earth:compressed_steel"
+  },
+  "transitionalItem": {
+    "item": "beyond_earth:compressed_steel"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        },
+        {
+          "tag": "forge:ingots/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:rocket_fin",
+      "chance": 1
+    }
+  ],
+  "loops": 3
+}

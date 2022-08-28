@@ -1,0 +1,121 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "beyond_earth:compressed_steel"
+  },
+  "transitionalItem": {
+    "item": "beyond_earth:compressed_steel"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        },
+        {
+          "item": "thermal:invar_plate"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        },
+        {
+          "item": "thermal:invar_plate"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        },
+        {
+          "item": "thermal:invar_plate"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        },
+        {
+          "item": "thermal:signalum_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:rocket_nose_cone",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

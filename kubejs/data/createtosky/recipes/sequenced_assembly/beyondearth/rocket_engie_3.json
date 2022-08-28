@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "beyond_earth:engine_frame"
+  },
+  "transitionalItem": {
+    "item": "beyond_earth:engine_frame"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:engine_frame"
+        },
+        {
+          "item": "beyond_earth:ostrum_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:engine_frame"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:engine_frame"
+        },
+        {
+          "item": "beyond_earth:engine_fan"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:engine_frame"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:engine_frame"
+        },
+        {
+          "item": "beyond_earth:compressed_ostrum"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:engine_frame"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "beyond_earth:engine_frame"
+        },
+        {
+          "item": "thermal:signalum_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "beyond_earth:engine_frame"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:ostrum_engine",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

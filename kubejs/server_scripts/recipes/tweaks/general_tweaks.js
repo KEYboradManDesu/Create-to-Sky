@@ -8,6 +8,7 @@ onEvent("recipes", event => {
   event.stonecutting(AE2("logic_processor_press"), KJ("circuit_scrap"))
   
   event.remove({ output: ("ae2:silicon") })
+  event.remove({ output: ('avaritia:diamond_lattice') })
 
   event.remove({ id: FD("flint_knife") })
   event.remove({ id: FD("iron_knife") })
@@ -64,6 +65,18 @@ onEvent("recipes", event => {
   event.remove({ id: "beyond_earth:space_suit" })
   event.remove({ id: "beyond_earth:space_leggings" })
   event.remove({ id: "beyond_earth:space_boots" })
+  event.remove({ id: "beyond_earth:iron_plate" })
+  event.remove({ id: "beyond_earth:desh_plate" })
+  event.remove({ id: "beyond_earth:rocket_nose_cone" })
+  event.remove({ id: "beyond_earth:rocket_fin" })
+  event.remove({ id: "beyond_earth:iron_engine" })
+  event.remove({ id: "beyond_earth:gold_engine" })
+  event.remove({ id: "beyond_earth:diamond_engine" })
+  event.remove({ id: "beyond_earth:calorite_engine" })
+  event.remove({ id: "beyond_earth:iron_tank" })
+  event.remove({ id: "beyond_earth:gold_tank" })
+  event.remove({ id: "beyond_earth:diamond_tank" })
+  event.remove({ id: "beyond_earth:calorite_tank" })
 
   event.remove({ id: "createoreexcavation:drilling/redstone" })
 
@@ -302,16 +315,7 @@ onEvent("recipes", event => {
 		S: 'avaritia:neutronium_ingot'
 	})
 
-  event.remove({ output: ('avaritia:diamond_lattice') })
-  event.shaped(('avaritia:diamond_lattice'), [
-		'SAS',
-		'ACA',
-		'SAS'
-	], {
-		C: '#forge:gems/diamond',
-    A: '#forge:gears/diamond',
-		S: 'kubejs:alpha_ingot'
-	})
+ 
 
   event.remove({ output: ('forbidden_arcanus:dark_nether_star') })
   event.shaped(('forbidden_arcanus:dark_nether_star'), [
@@ -328,6 +332,7 @@ onEvent("recipes", event => {
 	event.recipes.createPressing([TE('lumium_plate')], TE('lumium_ingot'))
 	event.recipes.createPressing([TE('signalum_plate')], TE('signalum_ingot'))
 	event.recipes.createPressing([TE('constantan_plate')], TE('constantan_ingot'))
+  event.recipes.createPressing(['beyond_earth:desh_plate'], 'beyond_earth:desh_ingot')
   
   event.recipes.createMixing(Item.of("forbidden_arcanus:stella_arcanum", 1), ["thermal:sulfur", ["ae2:sky_stone_block"]])
   event.recipes.createMixing(Item.of("forbidden_arcanus:xpetrified_ore", 1), ["create:experience_nugget", ["minecraft:andesite"]])
@@ -363,6 +368,8 @@ onEvent("recipes", event => {
   event.recipes.thermal.smelter(TE("enderium_dust"), ["#forge:ingots/silver", "minecraft:chorus_fruit", AE2("ender_dust", 2)]).energy(10000)
 	event.recipes.thermal.smelter(KJ("abstruse_mechanism"), [KJ("inductive_mechanism"), TE("enderium_ingot")]).energy(2000)
 
+  event.recipes.thermal.smelter("avaritia:diamond_lattice", ["kubejs:alpha_ingot", "minecraft:nether_star", "#forge:dusts/diamond"]).energy(4000000)
+
   event.recipes.create.mixing('create:creative_blaze_cake', [
     'createaddition:chocolate_cake',
     'avaritia:ultimate_stew',
@@ -381,7 +388,39 @@ onEvent("recipes", event => {
     A: '#thermal:glass/hardened',
 	})
 
-  
+  event.remove({ output: ('beyond_earth:oxygen_gear') })
+  event.shaped(('beyond_earth:oxygen_gear'), [
+		' B ',
+		'DCD',
+		'EAE'
+	], {
+		E: '#forge:gears/lead',
+    D: '#forge:rods/iron',
+    C: 'mekanism:scuba_tank',
+		B: '#forge:ingots/steel',
+    A: '#forge:ingots/lead'
+	})
+
+  event.remove({ output: ('beyond_earth:engine_fan') })
+  event.shaped(('beyond_earth:engine_fan'), [
+		' B ',
+		'BCB',
+		' B '
+	], {
+		B: 'beyond_earth:compressed_steel',
+    C: 'create:propeller'
+	})
+
+  event.remove({ output: ('beyond_earth:wheel') })
+  event.shaped(('beyond_earth:wheel'), [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'thermal:cured_rubber',
+    B: 'create:sturdy_sheet',
+    C: '#forge:gears/lead'
+	})
 
 
   event.remove({ output: ('projecte:philosophers_stone') })

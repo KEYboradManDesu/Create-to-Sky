@@ -32,6 +32,7 @@
 			x: 0.0d
 			y: 3.5d
 			shape: "circle"
+			subtitle: "步骤 0-8"
 			description: ["合成出来只是一个筛框，是不自带筛网的，筛网需要另外合成并右键装配。可以用来筛沙子、泥土、灵魂沙、尘土。"]
 			dependencies: [
 				"5799D55BB26BA52C"
@@ -62,6 +63,7 @@
 			x: 1.4d
 			y: 1.4d
 			shape: "circle"
+			subtitle: "步骤 0-2"
 			description: ["使用蚕对树叶使用后将树叶变为被感染的树叶，并且会不断扩散，把所有相邻的树叶方块尽可能多的感染，所以千万不要把蚕放进一片森林里，除非你不打算要这片森林了。只有感染到达100%才可以用钩子获得线（彻底变白），提前破坏不会获得任何东西。"]
 			dependencies: ["7FDFF28C233BC3A3"]
 			size: 0.7d
@@ -79,6 +81,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "circle"
+			subtitle: "步骤 0"
 			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。"]
 			id: "3AAD60FC5E704C3A"
 			tasks: [{
@@ -121,6 +124,7 @@
 			x: -1.4d
 			y: 0.7d
 			shape: "circle"
+			subtitle: "步骤 0-4"
 			description: ["用锤子破坏石头能得到相应石头的石子。将圆石锤成沙砾，将沙砾锤成沙子，将沙子锤成尘土等等。不同材质的锤耐久与效率不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
 			size: 0.7d
@@ -160,6 +164,7 @@
 			x: 1.4d
 			y: 0.7d
 			shape: "circle"
+			subtitle: "步骤 0-1"
 			description: ["使用钩子去破坏树叶能提高该树叶树苗和该树叶其他产物的掉落几率。同时也有几率掉落蚕。不同材质的钩子耐久度和破坏树叶的速度不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
 			size: 0.7d
@@ -200,6 +205,7 @@
 			x: 1.4d
 			y: 2.8d
 			shape: "circle"
+			subtitle: "步骤 0-3"
 			description: ["最基础的筛网"]
 			dependencies: ["7D43046E1B776A14"]
 			size: 0.7d
@@ -223,6 +229,7 @@
 			x: -1.4d
 			y: 1.4d
 			shape: "circle"
+			subtitle: "步骤 0-5"
 			description: ["用锤子粉碎原石"]
 			dependencies: ["79E6ADB2341757A1"]
 			size: 0.7d
@@ -240,6 +247,7 @@
 			x: -1.4d
 			y: 2.1d
 			shape: "circle"
+			subtitle: "步骤 0-6"
 			dependencies: ["7FA6289A7DFEF822"]
 			size: 0.7d
 			id: "56EEBDFA030A6F5D"
@@ -255,6 +263,7 @@
 			x: -1.4d
 			y: 2.8d
 			shape: "circle"
+			subtitle: "步骤 0-7"
 			dependencies: ["56EEBDFA030A6F5D"]
 			size: 0.7d
 			id: "4F27CB86C95D6A35"

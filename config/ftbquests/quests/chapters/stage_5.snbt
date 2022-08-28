@@ -21,16 +21,16 @@
 	}]
 	quests: [
 		{
-			title: "Finale Start!"
+			title: "航天开始！"
 			icon: "kubejs:calculation_mechanism"
 			x: 5.0d
 			y: 15.5d
 			shape: "hexagon"
 			description: [
-				"Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations! "
-				"But do not fear, as an inventor you will let your creation do all the work for you, as usual."
+				"殖民外星前的最后一章：构建数据中心。 这会带来什么？ 数以千计的数字计算！"
+				"但是不要害怕，作为一个发明家，你会让你的创造像往常一样为你做所有的工作。"
 				""
-				"Cast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required."
+				"将所有计算机制的组合逻辑转换为两位数，您将通过一系列手工操作从中计算出另外 8 个。 建议使用数字 ME 系统来管理物流，但并非严格要求。"
 			]
 			dependencies: ["251A91F6C21AEAFB"]
 			hide: true
@@ -681,12 +681,34 @@
 			hide_dependency_lines: true
 			dependencies: ["75AB1EFC40AA71C2"]
 			hide: true
+			optional: true
 			id: "01111A2405138520"
 			tasks: [{
 				id: "3774A497FCC3BCF7"
 				type: "item"
 				item: "beyond_earth:oxygen_bubble_distributor"
 				count: 3L
+				consume_items: false
+			}]
+		}
+		{
+			title: "代步工具"
+			x: 5.0d
+			y: 8.0d
+			shape: "circle"
+			description: ["在外星你绝对不想徒步漫游，试着制造一辆拉风的&6漫步车&r。"]
+			hide_dependency_lines: true
+			dependencies: ["75AB1EFC40AA71C2"]
+			optional: true
+			id: "12F1D3EE5DFE8C54"
+			tasks: [{
+				id: "556D09478D21C08E"
+				type: "item"
+				item: {
+					id: "beyond_earth:rover"
+					Count: 1b
+					tag: { }
+				}
 				consume_items: false
 			}]
 		}

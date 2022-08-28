@@ -14,6 +14,22 @@
           "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
         },
         {
+          "item": "kubejs:calculation_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
+        },
+        {
           "item": "thermal:tin_gear"
         }
       ],
@@ -95,24 +111,6 @@
         },
         {
           "item": "thermal:electrum_gear"
-        }
-      ],
-      "results": [
-        {
-          "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
-        }
-      ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
-        },
-        {
-          "fluid": "kubejs:matrix",
-          
-          "amount": 1000
         }
       ],
       "results": [

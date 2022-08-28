@@ -35,7 +35,7 @@
 		{
 			title: "更好的火箭"
 			x: -1.0d
-			y: 2.0d
+			y: 1.0d
 			shape: "circle"
 			subtitle: "步骤 51"
 			description: [
@@ -58,12 +58,12 @@
 		{
 			title: "着陆-火星"
 			icon: "beyond_earth:mars_stone"
-			x: 2.0d
+			x: -2.0d
 			y: 4.0d
 			shape: "hexagon"
 			description: [
-				"在火星你可以找到一种当地特色的矿石——紫金矿石"
-				"这些奇怪的矿石是三级火箭必要的材料。"
+				"在&6火星&r你可以找到一种当地特色的矿石——&6紫金矿石&r。"
+				"这些奇怪的矿石是&6三级火箭&r必要的材料。"
 			]
 			dependencies: ["4CA12C2F04AC40EA"]
 			hide: true
@@ -84,7 +84,7 @@
 		}
 		{
 			title: "太阳系任你闯"
-			x: 0.0d
+			x: -3.0d
 			y: 5.0d
 			subtitle: "步骤 52"
 			description: [
@@ -108,8 +108,8 @@
 		}
 		{
 			title: "着陆-水星"
-			x: -4.0d
-			y: 2.0d
+			x: -6.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["Ubu-idim-gud-ud（闪族语：水星）"]
 			dependencies: ["25D5CA649D70E7F3"]
@@ -131,9 +131,9 @@
 		{
 			title: "着陆-金星"
 			x: -2.0d
-			y: 6.0d
+			y: 8.0d
 			shape: "hexagon"
-			description: ["特色：耐热金属矿石，用途：4级火箭"]
+			description: ["特色：&6耐热金属矿石&r，用途：&64级火箭&r"]
 			dependencies: ["25D5CA649D70E7F3"]
 			size: 2.0d
 			id: "1412C99D8D8960B3"
@@ -168,9 +168,9 @@
 		{
 			title: "更远的未来"
 			x: -2.0d
-			y: 8.0d
+			y: 11.0d
 			subtitle: "步骤 53"
-			description: ["有了这艘4级太空火箭我们可以前往更远的星系。"]
+			description: ["有了这艘&64级太空火箭&r我们可以前往更远的星系。"]
 			dependencies: ["1412C99D8D8960B3"]
 			id: "418F815CE774BCFA"
 			tasks: [{
@@ -191,13 +191,13 @@
 		}
 		{
 			title: "着陆-霜原星"
-			x: -3.0d
-			y: 12.0d
+			x: -2.0d
+			y: 14.0d
 			shape: "hexagon"
 			description: ["美丽的大冰块。"]
 			dependencies: ["418F815CE774BCFA"]
 			hide: true
-			size: 3.0d
+			size: 2.0d
 			id: "31569CFC9329E197"
 			tasks: [{
 				id: "6589C55862A59EE5"
@@ -217,7 +217,7 @@
 			x: 0.0d
 			y: 7.0d
 			subtitle: "步骤52-1"
-			description: ["将&6火星石&r制作成&6火星石砖&r。"]
+			description: ["&6火星石&r可以制作成&6火星石砖&r，好看不贵。"]
 			dependencies: ["1412C99D8D8960B3"]
 			dependency_requirement: "one_completed"
 			id: "1D2DC28E7A2E78FF"
@@ -233,7 +233,7 @@
 			x: 0.0d
 			y: 9.0d
 			subtitle: "步骤 52-2"
-			description: ["烧制火星石砖直到它开裂。"]
+			description: ["烧制&6火星石砖&r直到它变为&6裂痕火星石砖&r。"]
 			dependencies: ["1D2DC28E7A2E78FF"]
 			dependency_requirement: "one_completed"
 			id: "71E0FF4D03BC0FAF"
@@ -279,7 +279,7 @@
 			title: "打磨"
 			x: 5.0d
 			y: 10.0d
-			description: ["使用你积灰的&6砂纸&r好好抛光你的异星宝石。"]
+			description: ["拿出库存里积灰的&6砂纸&r好好抛光你的异星宝石。"]
 			dependencies: [
 				"3EBC61A196157671"
 				"445FDA210870576C"
@@ -320,7 +320,7 @@
 			x: 0.0d
 			y: 13.0d
 			subtitle: "步骤 53-1"
-			description: ["使用你的无情铁手将这些-1963461℃的石头盘成石砖"]
+			description: ["你的无情铁手可以将这些-1963461℃的石头盘成石砖"]
 			dependencies: ["31569CFC9329E197"]
 			id: "6648FC46498BFD07"
 			tasks: [{
@@ -335,7 +335,7 @@
 			x: 0.0d
 			y: 11.0d
 			subtitle: "步骤53-2"
-			description: ["超低温的石砖极度易碎。"]
+			description: ["这些超低温的石砖极度易碎，烧制它就像&6[步骤 52-2]&r一样。"]
 			dependencies: ["6648FC46498BFD07"]
 			id: "083319366C9ACB16"
 			tasks: [{
@@ -350,7 +350,7 @@
 			x: 2.0d
 			y: 11.0d
 			subtitle: "步骤 53-3"
-			description: ["粉碎裂纹石砖像&6[步骤 52-3]&r一样。"]
+			description: ["粉碎&6裂纹寒霜石砖&r像&6[步骤 52-3]&r一样。"]
 			dependencies: ["083319366C9ACB16"]
 			id: "2F7D18AD5EBB989D"
 			tasks: [{
@@ -422,6 +422,139 @@
 				id: "20AF9CA01D298DEA"
 				type: "item"
 				item: "kubejs:alpha_ingot"
+				consume_items: false
+			}]
+		}
+		{
+			title: "慢长加工"
+			x: 8.0d
+			y: 8.0d
+			subtitle: "步骤 56"
+			description: ["在&6感应炉&r中加入&6钻石粉&r，&6下界之星&r以加固&6阿尔法合金&r，这将消耗约&64000000FE&r。"]
+			dependencies: [
+				"211F451405ACF59E"
+				"0266FF8DC048858B"
+				"42112159CDECA0F8"
+			]
+			id: "1C32C4DDD72AF1AC"
+			tasks: [{
+				id: "6596A88EA1C6AF4A"
+				type: "item"
+				item: "avaritia:diamond_lattice"
+				consume_items: false
+			}]
+		}
+		{
+			title: "杀凋"
+			icon: "minecraft:wither_rose"
+			x: 9.0d
+			y: 8.0d
+			subtitle: "步骤 55-1"
+			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6自动凋零自杀塔&r。"]
+			hide_dependency_lines: true
+			dependencies: ["211F451405ACF59E"]
+			id: "0266FF8DC048858B"
+			tasks: [{
+				id: "253CB43BCBA7D5A2"
+				type: "kill"
+				title: "击杀 1 只凋零"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [{
+				id: "3D5E6E7514FCF986"
+				type: "item"
+				item: "minecraft:wither_rose"
+				count: 8
+			}]
+		}
+		{
+			title: "我接受不了！"
+			icon: "thermal:diamond_dust"
+			x: 9.0d
+			y: 9.0d
+			subtitle: "步骤 55-2"
+			description: [
+				""
+				"制作&6钻石晶格&r的必要材料之一：&6钻石粉&r，你最好将其&6自动化&r。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["211F451405ACF59E"]
+			id: "42112159CDECA0F8"
+			tasks: [{
+				id: "64428DB5DE0939CD"
+				type: "item"
+				title: "钻石粉"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:dusts/diamond"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "昂贵物品 III"
+			x: 8.0d
+			y: 7.0d
+			subtitle: "步骤 57"
+			description: ["猜猜&6钻石晶格&r+&6下界之星&r会擦出什么样的火花？答案是&6水晶矩阵锭&r。"]
+			dependencies: [
+				"1C32C4DDD72AF1AC"
+				"0266FF8DC048858B"
+			]
+			id: "315CDAB5262EC376"
+			tasks: [{
+				id: "2EBAE2B0E6A58AA7"
+				type: "item"
+				item: "avaritia:crystal_matrix_ingot"
+				consume_items: false
+			}]
+		}
+		{
+			title: "霸王硬压板"
+			x: 8.0d
+			y: 6.0d
+			subtitle: "步骤 58"
+			description: ["高端的材料往往采用简单的加工，就像&6水晶矩阵锭&r，只需使用&6混压机&r混压48下即可变成板材。"]
+			dependencies: ["315CDAB5262EC376"]
+			id: "2E0FBE0A1F0ED1F1"
+			tasks: [{
+				id: "20890D82AF124A6D"
+				type: "item"
+				item: "kubejs:crystal_matrix_sheet"
+				consume_items: false
+			}]
+		}
+		{
+			title: "皮薄馅厚"
+			x: 6.0d
+			y: 6.0d
+			subtitle: "步骤 59"
+			description: ["现在是时候将各种各样的材料的齿轮装配成&6晶格构件&r吧！"]
+			dependencies: ["2E0FBE0A1F0ED1F1"]
+			id: "34260F620C3A90E7"
+			tasks: [{
+				id: "4D4D8D80ABD3D957"
+				type: "item"
+				item: "kubejs:crystalmatrix_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			shape: "hexagon"
+			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起步入无尽吧！"]
+			dependencies: ["34260F620C3A90E7"]
+			size: 2.0d
+			id: "5E5845C2A3CBF34F"
+			tasks: [{
+				id: "0179607DF37390F1"
+				type: "item"
+				item: "avaritia:crystal_matrix"
 				consume_items: false
 			}]
 		}
