@@ -36,6 +36,9 @@
 			dependencies: [
 				"5799D55BB26BA52C"
 				"641BF6D1C0119BAF"
+				"4F27CB86C95D6A35"
+				"7FA6289A7DFEF822"
+				"56EEBDFA030A6F5D"
 			]
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
@@ -221,10 +224,7 @@
 			y: 1.4d
 			shape: "circle"
 			description: ["用锤子粉碎原石"]
-			dependencies: [
-				"79E6ADB2341757A1"
-				"439C4F9A4AFA0885"
-			]
+			dependencies: ["79E6ADB2341757A1"]
 			size: 0.7d
 			id: "7FA6289A7DFEF822"
 			tasks: [{
@@ -240,10 +240,7 @@
 			x: -1.4d
 			y: 2.1d
 			shape: "circle"
-			dependencies: [
-				"7FA6289A7DFEF822"
-				"439C4F9A4AFA0885"
-			]
+			dependencies: ["7FA6289A7DFEF822"]
 			size: 0.7d
 			id: "56EEBDFA030A6F5D"
 			tasks: [{
@@ -258,10 +255,7 @@
 			x: -1.4d
 			y: 2.8d
 			shape: "circle"
-			dependencies: [
-				"56EEBDFA030A6F5D"
-				"439C4F9A4AFA0885"
-			]
+			dependencies: ["56EEBDFA030A6F5D"]
 			size: 0.7d
 			id: "4F27CB86C95D6A35"
 			tasks: [{

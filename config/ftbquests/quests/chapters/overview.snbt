@@ -484,7 +484,7 @@
 					id: "68543E92A6B517DC"
 					type: "item"
 					item: {
-						id: "beyond_earth:rocket_t4"
+						id: "beyond_earth:rocket_t1"
 						Count: 1b
 						tag: { }
 					}

@@ -450,11 +450,11 @@
 			y: 2.5d
 			subtitle: "步骤 38"
 			description: [
-				"第二台&6激光发射器&r可以从&6雪球&r中提取出&6暴雪结晶。&r"
+				"&6炼金镭射发射器&r可以从&6雪球&r中提取出&6暴雪结晶。&r"
 				""
 				"你完全可以使用与&6【步骤 32-2】&r中相同的机械结构。"
 			]
-			dependencies: ["4B34B52092BA32BE"]
+			dependencies: ["01B0A6236A5073D1"]
 			id: "0AE7FAEBD5F86D9C"
 			tasks: [
 				{
@@ -472,18 +472,18 @@
 		}
 		{
 			title: "暴雪试炼"
-			icon: "thermal:blizz_powder"
+			icon: "kubejs:incomplete_blitz_cube"
 			x: 5.0d
-			y: 4.0d
+			y: 1.0d
 			subtitle: "步骤 39-1"
 			description: ["就像早些时候一样，你需要将&6暴雪结晶&r进一步提纯。"]
-			dependencies: ["0AE7FAEBD5F86D9C"]
+			dependencies: ["4B34B52092BA32BE"]
 			id: "01B0A6236A5073D1"
 			tasks: [
 				{
 					id: "7EA6D73F7A49EBAF"
 					type: "item"
-					item: "thermal:blizz_powder"
+					item: "thermal:blitz_powder"
 					consume_items: false
 				}
 				{
@@ -500,7 +500,7 @@
 			y: 5.0d
 			subtitle: "步骤 39-2"
 			description: ["继续将&6暴雪粉末&r压制成为&6冰荷弹。&r"]
-			dependencies: ["01B0A6236A5073D1"]
+			dependencies: ["0AE7FAEBD5F86D9C"]
 			id: "4732465116D723EE"
 			tasks: [
 				{

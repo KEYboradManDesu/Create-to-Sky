@@ -310,7 +310,7 @@ onEvent("recipes", event => {
 	], {
 		C: '#forge:gems/diamond',
     A: '#forge:gears/diamond',
-		S: 'beyond_earth:compressed_calorite'
+		S: 'kubejs:alpha_ingot'
 	})
 
   event.remove({ output: ('forbidden_arcanus:dark_nether_star') })
@@ -572,7 +572,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
     .loops(2)
     .id("thermal:lead_plate")
 
-    let x = "avaritia:crystal_matrix_ingot"
+  let x = "avaritia:crystal_matrix_ingot"
   event.recipes.createSequencedAssembly([
     KJ("crystal_matrix_sheet"),
   ], "avaritia:crystal_matrix_ingot", [
@@ -580,6 +580,15 @@ event.shaped(('buddycards:luminis_sleeve'), [
   ]).transitionalItem(x)
     .loops(48)
     .id("kubejs:crystal_matrix_sheet")
+
+  let z = "kubejs:alpha_quartz"
+    event.recipes.createSequencedAssembly([
+    KJ("alpha_ingot"),
+  ], "kubejs:alpha_quartz", [
+    event.recipes.createPressing(z, z)
+  ]).transitionalItem(z)
+    .loops(48)
+    .id("alpha_ingot")  
 
   wood_types.forEach(wood => {
     if (wood.startsWith("tconstruct")) {
@@ -594,5 +603,35 @@ event.shaped(('buddycards:luminis_sleeve'), [
   
   })
 
+
+  function trading(event) {
+    let trade = (card_id, ingredient, output) => {
+      event.custom({
+        type: 'thermal:press',
+        ingredients: [
+          Ingredient.of(ingredient).toJson(),
+          Ingredient.of(card_id).toJson(),
+        ],
+        result: [
+          Item.of(output).toResultJson()
+        ],
+        energy: 1000
+      })
+    }
+  
+    global.trades.forEach(element => {
+      if (global.transactions[element])
+        global.transactions[element].forEach(transaction => {
+          trade(KJ('trade_card_' + element), transaction.in, transaction.out)
+        })
+    });
+  
+    global.professions.forEach(element => {
+      if (global.transactions[element])
+        global.transactions[element].forEach(transaction => {
+          trade(KJ('profession_card_' + element), transaction.in, transaction.out)
+        })
+    });
+  }
   
 })

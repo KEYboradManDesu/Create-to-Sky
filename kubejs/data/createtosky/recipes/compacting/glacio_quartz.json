@@ -2,11 +2,11 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "kubejs:venus_dust",
+      "item": "kubejs:glacio_dust",
       "amount": 4
     },
     {
-      "item": "thermal:lightning_charge",
+      "item": "beyond_earth:ice_shard",
       "amount": 1
     },
     {
@@ -15,7 +15,7 @@
   ],
   "results": [
     {
-      "item": "kubejs:venus_quartz"
+      "item": "kubejs:glacio_quartz"
     }
   ],
   "heatRequirement":"superheated"

@@ -53,11 +53,9 @@
 			y: 7.75d
 			shape: "hexagon"
 			description: [
-				"一切就绪并编程矩阵后，您可以继续组装宇宙飞船。"
+				"一切就绪后，您可以继续组装宇宙飞船。"
 				""
-				"花一分钟时间制作一个代表你的太空计划的旗帜，以带到月球上。 您可以像横幅一样对其应用图案。"
 				""
-				"在你自己的时间里，坐在你组装好的火箭上，然后按 Space。"
 			]
 			dependencies: [
 				"6BA9A176EDA001A3"
@@ -425,7 +423,7 @@
 			]
 		}
 		{
-			title: "昂贵的砖块 II"
+			title: "贵重物品 II"
 			x: 2.0d
 			y: 3.0d
 			shape: "circle"
@@ -513,7 +511,7 @@
 			shape: "circle"
 			subtitle: "步骤 48"
 			description: [
-				"为了填充你的氧气罐，制作氧气灌注机。"
+				"制作氧气灌注机,给你的氧气罐一点氧气"
 				""
 				"氧气灌注机可以通过加热混合将水分离成其组分来获得合适的氧气。"
 			]
@@ -638,8 +636,14 @@
 		}
 		{
 			title: "物！"
+			icon: {
+				id: "beyond_earth:rocket_t1"
+				Count: 1b
+				tag: { }
+			}
 			x: 3.5999999999999996d
 			y: 7.199999999999999d
+			shape: "circle"
 			description: [
 				"花一分钟时间制作一个代表你的太空计划的旗帜，以带到月球上。 您可以像横幅一样对其应用图案。"
 				"在你自己的时间里，坐在你组装好的火箭上，然后按 Space。"
@@ -648,14 +652,41 @@
 			hide: false
 			size: 1.2d
 			id: "75AB1EFC40AA71C2"
-			tasks: [{
-				id: "3A2653483CF8A3C1"
-				type: "item"
-				item: {
-					id: "beyond_earth:rocket_t1"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "3A2653483CF8A3C1"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t1"
+						Count: 1b
+						tag: { }
+					}
+					consume_items: false
 				}
+				{
+					id: "732E7118DB50B6AB"
+					type: "item"
+					item: "beyond_earth:oxygen_bubble_distributor"
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "太空空间站"
+			icon: "beyond_earth:iron_mark_block"
+			x: 5.0d
+			y: 6.0d
+			shape: "circle"
+			description: ["在到达其他星球之前，可以优先考虑建造一座太空空间站。"]
+			hide_dependency_lines: true
+			dependencies: ["75AB1EFC40AA71C2"]
+			hide: true
+			id: "01111A2405138520"
+			tasks: [{
+				id: "3774A497FCC3BCF7"
+				type: "item"
+				item: "beyond_earth:oxygen_bubble_distributor"
+				count: 3L
 				consume_items: false
 			}]
 		}

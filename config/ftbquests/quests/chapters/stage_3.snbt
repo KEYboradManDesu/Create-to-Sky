@@ -127,7 +127,7 @@
 						id: "itemfilters:tag"
 						Count: 1b
 						tag: {
-							value: "c:cobblestone"
+							value: "forge:cobblestone"
 						}
 					}
 					consume_items: false

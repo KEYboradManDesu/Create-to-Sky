@@ -199,6 +199,28 @@ onEvent("item.registry", event => {
 			.displayName("磨制金星晶体").rarity(RARITY_UNCOMMON)
 
 
+		event.create("glacio_dust")
+			.texture(modpackId + ":item/glacio_dust")
+			.displayName("寒霜岩粉")
+		
+		event.create("glacio_quartz")
+			.texture(modpackId + ":item/glacio_quartz")
+			.displayName("寒霜晶体").rarity(RARITY_UNCOMMON)
+
+		event.create("polished_glacio_quartz")
+			.texture(modpackId + ":item/polished_glacio_quartz")
+			.displayName("磨制寒霜晶体").rarity(RARITY_UNCOMMON)
+
+		event.create("alpha_quartz")
+			.texture(modpackId + ":item/alpha_quartz")
+			.displayName("致密阿尔法晶体").rarity(RARITY_UNCOMMON)
+
+		event.create("alpha_ingot")
+			.texture(modpackId + ":item/alpha_ingot")
+			.displayName("致密阿尔法合金").rarity(RARITY_UNCOMMON)
+
+
+
 		let processors = ["Calculation", "Logic", "Engineering"]
 		let processorsLocalName = ["运算", "逻辑", "工程"]
 		processors.forEach(name => {

@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:polished_glacio_quartz",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:polished_venus_quartz",
+      "amount": 1
+    },
+    {
+      "fluid": "kubejs:powered_water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:alpha_quartz"
+    }
+  ],
+  "heatRequirement":"superheated"
+}
