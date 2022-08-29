@@ -22,6 +22,10 @@ onEvent("recipes", event => {
   event.remove({ output: ("beyond_earth:solar_panel") })
   event.remove({ output: ("beyond_earth:coal_generator") })
 
+  event.remove({ output: ('projecte:low_covalence_dust') })
+  event.remove({ output: ('projecte:medium_covalence_dust') })
+  event.remove({ output: ('projecte:high_covalence_dust') })
+
   event.remove({ id: KJ("stone_saw") })
   event.remove({ id: KJ("iron_saw") })
   event.remove({ id: KJ("diamond_saw") })
@@ -312,7 +316,7 @@ onEvent("recipes", event => {
 		' S '
 	], {
 		C: 'avaritia:neutron_nugget',
-		S: 'avaritia:neutronium_ingot'
+		S: 'kubejs:neutronium_sheet'
 	})
 
  
@@ -369,10 +373,14 @@ onEvent("recipes", event => {
 	event.recipes.thermal.smelter(KJ("abstruse_mechanism"), [KJ("inductive_mechanism"), TE("enderium_ingot")]).energy(2000)
 
   event.recipes.thermal.smelter("avaritia:diamond_lattice", ["kubejs:alpha_ingot", "minecraft:nether_star", "#forge:dusts/diamond"]).energy(4000000)
+  
+  event.recipes.thermal.smelter("projecte:low_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/coal"]).energy(8000000)
+  event.recipes.thermal.smelter("projecte:medium_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/iron"]).energy(8000000)
+  event.recipes.thermal.smelter("projecte:high_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/diamond"]).energy(8000000)
+
 
   event.recipes.create.mixing('create:creative_blaze_cake', [
     'createaddition:chocolate_cake',
-    'avaritia:ultimate_stew',
     'avaritia:star_fuel',
     'avaritia:infinity'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
@@ -442,7 +450,7 @@ onEvent("recipes", event => {
 		D: 'create:creative_motor',
     C: 'avaritia:crystal_matrix',
 		B: 'mekanism:ingot_refined_glowstone',
-    A: 'avaritia:infinity_ingot',
+    A: 'kubejs:creative_machine',
     S: 'industrialforegoing:resourceful_furnace'
 	})
   
@@ -458,25 +466,54 @@ onEvent("recipes", event => {
   
   event.remove({ output: ('projecte:transmutation_tablet') })
   event.shaped(('projecte:transmutation_tablet'), [
-		'BAB',
+		'BBB',
 		'BCB',
-		'BAB'
+		'BBB'
 	], {
 		C: 'projecte:transmutation_table',
-		B: 'tconstruct:cobalt_block',
-    A: 'create:cogwheel',
+		B: 'kubejs:creative_mechanism'
 	})
+  
+  event.remove({ output: ('beyond_earth:rocket_launch_pad') })
+  event.recipes.createMechanicalCrafting(Item.of("beyond_earth:rocket_launch_pad", 1), [
+    "AAAA",
+    "ABBA",
+    "ABBA",
+    "AAAA"
+  ], {
+    A: '#forge:ingots/steel',
+    B: 'beyond_earth:compressed_steel'
+  })
 
-  event.remove({ output: ('projecte:low_covalence_dust') })
-  event.shaped(('projecte:low_covalence_dust'), [
-		'BAB',
-		'BCB',
-		'BAB'
-	], {
-		C: 'forbidden_arcanus:eternal_stella',
-		B: '#forge:cobblestone',
-    A: 'avaritia:diamond_lattice',
-	})
+  event.recipes.createMechanicalCrafting(Item.of("avaritia:infinity_catalyst", 1), [
+    "A    F",
+    " B  E ",
+    " ICDI ",
+    " F  G ",
+    "E    H"
+  ], {
+    A: Item.of('avaritia:singularity', '{Id:"avaritia:coal"}'),
+    B: Item.of('avaritia:singularity', '{Id:"avaritia:copper"}'),
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:diamond"}'),
+    D: Item.of('avaritia:singularity', '{Id:"avaritia:emerald"}'),
+    E: Item.of('avaritia:singularity', '{Id:"avaritia:gold"}'),
+    F: Item.of('avaritia:singularity', '{Id:"avaritia:iron"}'),
+    G: Item.of('avaritia:singularity', '{Id:"avaritia:lapis_lazuli"}'),
+    H: Item.of('avaritia:singularity', '{Id:"avaritia:redstone"}'),
+    I: 'avaritia:crystal_matrix'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("avaritia:infinity_ingot", 1), [
+    "AAAAAAAAA",
+    "ABDDBDDBA",
+    "ADBBDBBDA",
+    "ABDDBDDBA",
+    "AAAAAAAAA"
+  ], {
+    A: 'avaritia:neutronium_ingot',
+    B: 'avaritia:crystal_matrix_ingot',
+    D: 'avaritia:infinity_catalyst'
+  })
 
   event.remove({ output: ('beyond_earth:nasa_workbench') })
   event.recipes.createMechanicalCrafting(Item.of("beyond_earth:nasa_workbench", 1), [
@@ -513,7 +550,7 @@ onEvent("recipes", event => {
 		'ACA',
 		'BAB'
 	], {
-		C: 'create:shadow_steel_casing',
+		C: 'kubejs:neutronium_sheet',
 		B: 'projecte:aeternalis_fuel',
     A: 'create:shadow_steel',
 	})
@@ -527,17 +564,19 @@ event.shaped(('buddycards:luminis_sleeve'), [
 	})
   
   event.recipes.createMechanicalCrafting(Item.of(CR("creative_motor"), 1), [
-    "AAADAAA",
-    "AACBCAA",
-    "DABBBAE",
-    "AACBCAA",
-    "AAADAAA"
+    "FFFFFFF",
+    "FACBCAF",
+    "DABGBAE",
+    "FACBCAF",
+    "FFFFFFF"
   ], {
     A: "avaritia:infinity",
     B: "avaritia:star_fuel",
     C: "avaritia:neutronium_gear",
     D: "projecte:watch_of_flowing_time",
-    E: "create:shaft"
+    E: "create:steam_engine",
+    F: "kubejs:creative_machine",
+    G: "kubejs:creative_mechanism"
   })
 
   
@@ -545,15 +584,15 @@ event.shaped(('buddycards:luminis_sleeve'), [
   event.recipes.createMechanicalCrafting(Item.of("projecte:transmutation_table", 1), [
     "AADDDAA",
     "ADDDDDA",
-    "DDBBBDD",
+    "DDBCBDD",
     "DDCBCDD",
-    "DDBBBDD",
+    "DDBCBDD",
     "AADDDAA",
     "AADDDAA"
   ], {
     A: "avaritia:neutronium",
     B: "avaritia:star_fuel",
-    C: "occultism:chalk_purple",
+    C: "kubejs:creative_machine",
     D: "avaritia:infinity",
   })
 
@@ -561,15 +600,14 @@ event.shaped(('buddycards:luminis_sleeve'), [
   event.recipes.createMechanicalCrafting(Item.of("avaritia:infinity", 1), [
     "AAAAAAA",
     "ADDDDDA",
-    "ADDCDDA",
-    "ADCBCDA",
-    "ADDCDDA",
+    "ADCCCDA",
+    "ADCCCDA",
+    "ADCCCDA",
     "ADDDDDA",
     "AAAAAAA"
   ], {
     A: "avaritia:infinity_ingot",
-    B: "kubejs:computation_matrix",
-    C: "create:refined_radiance_casing",
+    C: "avaritia:crystal_matrix",
     D: "avaritia:neutronium",
   })
 
@@ -619,6 +657,15 @@ event.shaped(('buddycards:luminis_sleeve'), [
   ]).transitionalItem(x)
     .loops(48)
     .id("kubejs:crystal_matrix_sheet")
+
+  let y = "avaritia:neutronium_ingot"
+  event.recipes.createSequencedAssembly([
+    KJ("neutronium_sheet"),
+  ], "avaritia:neutronium_ingot", [
+    event.recipes.createPressing(y, y)
+  ]).transitionalItem(x)
+    .loops(48)
+    .id("kubejs:neutronium_sheet")
 
   let z = "kubejs:alpha_quartz"
     event.recipes.createSequencedAssembly([

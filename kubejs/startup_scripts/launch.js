@@ -40,6 +40,7 @@ onEvent("item.registry", event => {
 		registerMechanism("crystalmatrix", "晶格", RARITY_UNCOMMON)
 		registerMechanism("crystalmatrixtt", "晶格3号", RARITY_UNCOMMON)
 		registerMechanism("crystalmatrixt", "晶格2号", RARITY_UNCOMMON)
+		registerMechanism("creative", "§d§l创世")
 	}
 	//	Machine Parts
 	let registerMachinePart = (name, localName) => {
@@ -323,6 +324,7 @@ onEvent("block.registry", event => {
 	registerMachine("Zinc", "锌机", "cutout")
 	registerMachine("Enderium", "末影合金机", "cutout")
 	registerMachine("Obsidian", "黑曜机", "translucent")
+	registerMachine("Creative", "§d§l创造机", "translucent")
 
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
@@ -338,6 +340,7 @@ onEvent("block.registry", event => {
 	registerCasing("Fluix", "福鲁伊克斯")
 	registerCasing("Zinc", "锌")
 	registerCasing("Enderium", "末影合金")
+	registerCasing("Creative", "§d§l创造")
 
 	event.create("computation_matrix")
 		.model(modpackId + ":block/computation_matrix")

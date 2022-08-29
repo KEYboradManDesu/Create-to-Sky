@@ -64,7 +64,7 @@
 			y: 1.4d
 			shape: "circle"
 			subtitle: "步骤 0-2"
-			description: ["使用蚕对树叶使用后将树叶变为被感染的树叶，并且会不断扩散，把所有相邻的树叶方块尽可能多的感染，所以千万不要把蚕放进一片森林里，除非你不打算要这片森林了。只有感染到达100%才可以用钩子获得线（彻底变白），提前破坏不会获得任何东西。"]
+			description: ["使用&6蚕&r对树叶使用后将&6树叶&r变为&6被感染的树叶&r，并且会不断扩散，把所有相邻的树叶方块尽可能多的感染，所以千万不要把蚕放进一片森林里，除非你不打算要这片森林了。只有感染到达100%才可以用钩子获得线（彻底变白），&6提前破坏不会获得任何东西&r。"]
 			dependencies: ["7FDFF28C233BC3A3"]
 			size: 0.7d
 			id: "7D43046E1B776A14"
@@ -83,6 +83,8 @@
 			shape: "circle"
 			subtitle: "步骤 0"
 			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。"]
+			dependencies: ["75FB28B253B14876"]
+			hide: true
 			id: "3AAD60FC5E704C3A"
 			tasks: [{
 				id: "458D2EC86F719BAD"
@@ -125,7 +127,7 @@
 			y: 0.7d
 			shape: "circle"
 			subtitle: "步骤 0-4"
-			description: ["用锤子破坏石头能得到相应石头的石子。将圆石锤成沙砾，将沙砾锤成沙子，将沙子锤成尘土等等。不同材质的锤耐久与效率不同。"]
+			description: ["用&6锤子&r破坏&6石头&r能得到&6圆石&r。将&6圆石&r锤成&6沙砾&r，将&6沙砾&r锤成&6沙子&r，将&6沙子&r锤成&6尘土&r等等。不同材质的锤耐久与效率不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
 			size: 0.7d
 			id: "79E6ADB2341757A1"
@@ -165,7 +167,7 @@
 			y: 0.7d
 			shape: "circle"
 			subtitle: "步骤 0-1"
-			description: ["使用钩子去破坏树叶能提高该树叶树苗和该树叶其他产物的掉落几率。同时也有几率掉落蚕。不同材质的钩子耐久度和破坏树叶的速度不同。"]
+			description: ["使用&6钩子&r去破坏&6树叶&r能提高该树叶树苗和该树叶其他产物的掉落几率。同时也有几率掉落&6蚕&r。不同材质的&6钩子&r耐久度和破坏&6树叶&r的速度不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
 			size: 0.7d
 			id: "7FDFF28C233BC3A3"
@@ -206,7 +208,7 @@
 			y: 2.8d
 			shape: "circle"
 			subtitle: "步骤 0-3"
-			description: ["最基础的筛网"]
+			description: ["最基础的筛网。"]
 			dependencies: ["7D43046E1B776A14"]
 			size: 0.7d
 			id: "641BF6D1C0119BAF"
@@ -230,7 +232,7 @@
 			y: 1.4d
 			shape: "circle"
 			subtitle: "步骤 0-5"
-			description: ["用锤子粉碎原石"]
+			description: ["用&6锤子&r粉碎&6原石&r。"]
 			dependencies: ["79E6ADB2341757A1"]
 			size: 0.7d
 			id: "7FA6289A7DFEF822"
@@ -248,6 +250,7 @@
 			y: 2.1d
 			shape: "circle"
 			subtitle: "步骤 0-6"
+			description: ["用&6锤子&r粉碎&6沙砾&r。"]
 			dependencies: ["7FA6289A7DFEF822"]
 			size: 0.7d
 			id: "56EEBDFA030A6F5D"
@@ -264,6 +267,7 @@
 			y: 2.8d
 			shape: "circle"
 			subtitle: "步骤 0-7"
+			description: ["用&6锤子&r粉碎&6沙子&r。"]
 			dependencies: ["56EEBDFA030A6F5D"]
 			size: 0.7d
 			id: "4F27CB86C95D6A35"

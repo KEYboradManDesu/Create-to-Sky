@@ -492,5 +492,38 @@
 				}
 			]
 		}
+		{
+			title: "终焉"
+			icon: "avaritia:infinity_catalyst"
+			x: 3.0d
+			y: 1.5d
+			shape: "circle"
+			description: ["回想以前，我们徒手打造了10级文明。我们将走向&4&l无尽&r。"]
+			dependencies: ["4F7A70041B67A348"]
+			optional: true
+			id: "4BB283B651F880A9"
+			tasks: [{
+				id: "25D061C0B0C77A36"
+				type: "checkmark"
+				title: "&3解锁第六章 &7支线"
+			}]
+		}
+		{
+			title: "&d&l创造时代"
+			x: 5.0d
+			y: 2.5d
+			subtitle: "&d&l挑战"
+			description: ["&d&l创造！&r有了&d创造机器&r之后你就是真正的创世神。&9这也意味着整合包也接近尾声，我的使命也彻底结束了。下个整合包再见！"]
+			dependencies: ["4BB283B651F880A9"]
+			optional: true
+			id: "17C02A7F51C8D117"
+			tasks: [{
+				id: "4D8CFDBEDC1073EE"
+				type: "item"
+				item: "kubejs:creative_mechanism"
+				count: 60L
+				consume_items: false
+			}]
+		}
 	]
 }

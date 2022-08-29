@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "kubejs:crystal_matrix_sheet"
+    "item": "kubejs:calculation_mechanism"
   },
   "transitionalItem": {
     "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
@@ -14,7 +14,7 @@
           "item": "kubejs:incomplete_crystalmatrixtt_mechanism"
         },
         {
-          "item": "kubejs:calculation_mechanism"
+          "item": "kubejs:crystal_matrix_sheet"
         }
       ],
       "results": [

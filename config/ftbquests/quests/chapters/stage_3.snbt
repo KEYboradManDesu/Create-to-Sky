@@ -984,30 +984,6 @@
 			]
 		}
 		{
-			title: "点赞、投币、收藏"
-			x: -3.0d
-			y: 15.0d
-			shape: "circle"
-			description: [
-				"&6银币&r的特殊属性可以用来制造&6末影机器。&r"
-				""
-				"事实证明，&6银币&r的唯一来源似乎只有你的口袋。这不禁让你对铸币厂产生了好奇心..."
-			]
-			hide_dependency_lines: true
-			dependencies: [
-				"2BB2C7B95E3C89AE"
-				"6CBA3D97CAD5DB63"
-			]
-			hide: true
-			id: "38B063C8DE71E86D"
-			tasks: [{
-				id: "3B8AF2614A9EE681"
-				type: "item"
-				item: "thermal:silver_coin"
-				consume_items: false
-			}]
-		}
-		{
 			title: "此行未终"
 			icon: "minecraft:end_portal_frame"
 			x: 0.0d
@@ -1033,8 +1009,9 @@
 			x: -1.5d
 			y: 15.5d
 			shape: "circle"
-			description: ["把你手中的银币投入&6冶炼炉&r中以继续...这是不可逆的，记住了。"]
-			dependencies: ["38B063C8DE71E86D"]
+			description: ["把你手中的贵金属银投入&6冶炼炉&r中以继续...。"]
+			dependencies: ["722CA19434E722FB"]
+			hide: true
 			id: "0C11EC34D5FA508B"
 			tasks: [{
 				id: "1E9F96D2152F7384"

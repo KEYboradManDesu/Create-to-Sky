@@ -14,7 +14,10 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["你做到了！你成功登录了月球！现在着手准备建设外星吧。"]
+			description: [
+				"你做到了！你成功登录了月球！现在着手准备建设外星吧。"
+				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，&9接下来的故事都是可选项，如果你足够疲惫的话你可以毕业了，但真正的发明家不会停下前进的脚步。"
+			]
 			dependencies: ["75CF8B6BAC6A01EF"]
 			size: 2.0d
 			id: "455ACDBB066B83CB"
@@ -43,6 +46,7 @@
 				"这些陌生的矿石是二级火箭必要的材料。"
 			]
 			dependencies: ["455ACDBB066B83CB"]
+			optional: true
 			id: "4CA12C2F04AC40EA"
 			tasks: [{
 				id: "23E9A117E444CCFC"
@@ -64,11 +68,11 @@
 			description: [
 				"在&6火星&r你可以找到一种当地特色的矿石——&6紫金矿石&r。"
 				"这些奇怪的矿石是&6三级火箭&r必要的材料。"
-				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，&9接下来的故事都是可选项，如果你足够疲惫的话你可以毕业了，但真正的发明家不会停下前进的脚步。"
 			]
 			dependencies: ["4CA12C2F04AC40EA"]
 			hide: true
 			size: 2.0d
+			optional: true
 			id: "4385C348F8ADB85D"
 			tasks: [{
 				id: "25BB87C04ED1A182"
@@ -93,6 +97,7 @@
 				"这些奇怪的矿石是三级火箭必要的材料。"
 			]
 			dependencies: ["4385C348F8ADB85D"]
+			optional: true
 			id: "25D5CA649D70E7F3"
 			tasks: [{
 				id: "5DD93912450F81A5"
@@ -115,6 +120,7 @@
 			description: ["Ubu-idim-gud-ud（闪族语：水星）"]
 			dependencies: ["25D5CA649D70E7F3"]
 			size: 2.0d
+			optional: true
 			id: "73851AC410B78C63"
 			tasks: [{
 				id: "69F9EBBCE4C3465A"
@@ -715,10 +721,11 @@
 			]
 		}
 		{
+			title: "&f&l第六章完成！&r"
 			x: 4.0d
 			y: 6.0d
 			shape: "hexagon"
-			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起步入无尽吧！"]
+			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起步入&4&l无尽&r吧！"]
 			dependencies: ["34260F620C3A90E7"]
 			size: 2.0d
 			optional: true
@@ -727,6 +734,165 @@
 				id: "0179607DF37390F1"
 				type: "item"
 				item: "avaritia:crystal_matrix"
+				consume_items: false
+			}]
+		}
+		{
+			title: "宇宙的尽头是工作台？"
+			icon: "avaritia:extreme_crafting_table"
+			x: 4.0d
+			y: 4.0d
+			description: [
+				""
+				"&6终极工作台&r可让你合成一些稀有物品。准备好就开始下一步吧。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5E5845C2A3CBF34F"
+				"25D061C0B0C77A36"
+			]
+			hide: true
+			size: 1.5d
+			optional: true
+			id: "09227C3DB592F602"
+			tasks: [
+				{
+					id: "4C2C93D44BFADA8E"
+					type: "item"
+					item: "avaritia:extreme_crafting_table"
+					consume_items: false
+				}
+				{
+					id: "2904CC419EC0A51E"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			title: "耐心测试"
+			icon: "avaritia:neutron_collector"
+			x: 4.0d
+			y: 2.0d
+			description: ["&6中子态素收集器&r可以收集一些肉眼不可见的物质：&6中子&r，你需要等待。"]
+			dependencies: ["09227C3DB592F602"]
+			optional: true
+			id: "7839DED88F29B5CD"
+			tasks: [
+				{
+					id: "208E12D92E7434BC"
+					type: "item"
+					item: "avaritia:neutron_collector"
+					consume_items: false
+				}
+				{
+					id: "1EABF814E6B34BE2"
+					type: "item"
+					item: "avaritia:neutronium_ingot"
+					consume_items: false
+				}
+				{
+					id: "66DF998E75AA088A"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "(怎么又是齿轮)"
+			icon: "avaritia:neutronium_gear"
+			x: 6.0d
+			y: 1.0d
+			description: ["将&6中子锭&r压制成板并制作成齿轮，你最好将其自动化。"]
+			dependencies: ["7839DED88F29B5CD"]
+			optional: true
+			id: "4629C22BEAB2F8E9"
+			tasks: [
+				{
+					id: "711AF3FE48F09378"
+					type: "item"
+					item: "avaritia:neutronium_gear"
+					consume_items: false
+				}
+				{
+					id: "506D8C9148442418"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "俄罗斯套娃"
+			icon: "avaritia:infinity_ingot"
+			x: 5.0d
+			y: 3.0d
+			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭。"]
+			dependencies: ["7839DED88F29B5CD"]
+			optional: true
+			id: "6AEFF95FF106F145"
+			tasks: [
+				{
+					id: "62A82055466696D4"
+					type: "item"
+					item: "avaritia:infinity_catalyst"
+					consume_items: false
+				}
+				{
+					id: "50C14C10399A210F"
+					type: "item"
+					item: "avaritia:neutronium_compressor"
+					consume_items: false
+				}
+				{
+					id: "08E0095CED9B22EA"
+					type: "item"
+					item: "avaritia:infinity_ingot"
+					consume_items: false
+				}
+				{
+					id: "0A32A751CD02018E"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "kubejs:creative_mechanism"
+			x: 7.0d
+			y: 3.0d
+			description: ["终于，是时候将&6晶格构件&r升级一下了！"]
+			dependencies: [
+				"6AEFF95FF106F145"
+				"4629C22BEAB2F8E9"
+			]
+			optional: true
+			id: "1435BC0C1FD6636F"
+			tasks: [
+				{
+					id: "18049C7AC92D47E2"
+					type: "item"
+					item: "kubejs:creative_mechanism"
+					consume_items: false
+				}
+				{
+					id: "329BF55741366211"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "&d&l第六章支线完成！"
+			x: 9.0d
+			y: 3.0d
+			description: ["&6创世构件&r正在被源源不断地生产！全新的技术和魔法之门将为你打开！请发挥你的想象力，尽情创造！我们下个整合包见！"]
+			dependencies: ["1435BC0C1FD6636F"]
+			optional: true
+			id: "6E401A0F416A4DCA"
+			tasks: [{
+				id: "33EFDBAD01CFF12E"
+				type: "item"
+				item: "kubejs:creative_machine"
 				consume_items: false
 			}]
 		}

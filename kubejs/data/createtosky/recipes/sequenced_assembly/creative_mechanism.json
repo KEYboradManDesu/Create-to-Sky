@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:crystalmatrix_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_creative_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        },
+        {
+          "fluid": "kubejs:infinity",
+          
+          "amount": 700
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        },
+        {
+          "item": "avaritia:neutronium_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        },
+        {
+          "item": "avaritia:neutronium_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "kubejs:creative_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

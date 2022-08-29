@@ -63,10 +63,6 @@ onEvent("recipes", event => {
 		else
 		 event.stonecutting(Item.of(id, amount), "avaritia:infinity")
 	}
-
-	infinity("ae2:creative_item_cell", 1, 'projecte:transmutation_tablet')
-	infinity("botania:creative_pool", 1, 'botania:fabulous_pool')
-	infinity("buddycards:creative_grading_sleeve", 1, 'buddycards:luminis_sleeve')
 	infinity("pipez:item_pipe", 16)
 	infinity("pipez:fluid_pipe", 16)
 	infinity("pipez:energy_pipe", 16)
