@@ -35,11 +35,8 @@
 			subtitle: "步骤 0-8"
 			description: ["合成出来只是一个筛框，是不自带筛网的，筛网需要另外合成并右键装配。可以用来筛沙子、泥土、灵魂沙、尘土。"]
 			dependencies: [
-				"5799D55BB26BA52C"
 				"641BF6D1C0119BAF"
-				"4F27CB86C95D6A35"
 				"7FA6289A7DFEF822"
-				"56EEBDFA030A6F5D"
 			]
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
