@@ -53,18 +53,13 @@ onEvent("recipes", event => {
 	ender_machine(AE2("quantum_link"), 1, AE2('fluix_pearl'))
 	ender_machine(("portality:frame"), 1, ('mekanism:ingot_refined_obsidian'))
 	ender_machine(("mekanism:teleporter_frame"), 1, ('mekanism:ingot_refined_glowstone'))
+	
+	ender_machine(("mekanism:basic_logistical_transporter"), 8, ('mekanism:basic_control_circuit'))
+	ender_machine(("mekanism:basic_pressurized_tube"), 8, ('#forge:glass_panes'))
+	ender_machine(("mekanism:basic_universal_cable"), 16, ('thermal:rf_coil'))
+	ender_machine(("mekanism:diversion_transporter"), 8, ('minecraft:iron_bars'))
+	ender_machine(("mekanism:restrictive_transporter"), 8, ('tconstruct:gold_bars'))
 
-	let infinity = (id, amount, other_ingredient) => {
-		event.remove({ output: id })
-		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), "avaritia:infinity", other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "avaritia:infinity", B: other_ingredient })
-		}
-		else
-		 event.stonecutting(Item.of(id, amount), "avaritia:infinity")
-	}
-	infinity("pipez:item_pipe", 16)
-	infinity("pipez:fluid_pipe", 16)
-	infinity("pipez:energy_pipe", 16)
-	infinity("pipez:gas_pipe", 16)
+
+	
 })

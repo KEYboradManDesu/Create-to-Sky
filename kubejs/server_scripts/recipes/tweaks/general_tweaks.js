@@ -114,8 +114,6 @@ onEvent("recipes", event => {
     T: "thermal:tin_ingot",
     S: "create:iron_sheet"
   })
- 
-  event.remove({ output: CR("propeller") })
 
   event.remove({ output: CR("item_vault") })
   event.shaped(CR("item_vault"), [
@@ -268,27 +266,6 @@ onEvent("recipes", event => {
     })
   
   
-  event.remove({ output: ("mekanism:steel_casing") })
-  event.shaped(("mekanism:steel_casing"), [
-    "ASA",
-    "SCS",
-    "ASA"
-  ], {
-    C: KJ("invar_casing"),
-    A: 'beyond_earth:compressed_steel',
-    S: KJ("inductive_mechanism")
-  })
-
-  event.remove({ output: TE('machine_frame') })
-	event.shaped(TE('machine_frame'), [
-		'SAS',
-		'ACA',
-		'SAS'
-	], {
-		C: KJ('invar_casing'),
-		S: '#forge:gears/copper',
-    A: KJ("inductive_mechanism")
-	})
   
   event.remove({ output: ("avaritia:crystal_matrix") })
   event.shaped(("avaritia:crystal_matrix"), [

@@ -27,4 +27,19 @@ onEvent("recipes", event => {
 	creative_machine(Item.of('tconstruct:creative_slot', '{slot:"souls"}'), 1, 'tconstruct:jeweled_apple')
 	creative_machine('thermal:fluid_tank_creative_augment', 1, 'thermal:fluid_tank_augment')
 	creative_machine('thermal:machine_catalyst_creative_augment', 1, 'thermal:machine_catalyst_augment')
+
+
+	let infinity = (id, amount, other_ingredient) => {
+		event.remove({ output: id })
+		if (other_ingredient) {
+			event.smithing(Item.of(id, amount), "avaritia:infinity", other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "avaritia:infinity", B: other_ingredient })
+		}
+		else
+		 event.stonecutting(Item.of(id, amount), "avaritia:infinity")
+	}
+	infinity("pipez:item_pipe", 16)
+	infinity("pipez:fluid_pipe", 16)
+	infinity("pipez:energy_pipe", 16)
+	infinity("pipez:gas_pipe", 16)
 })
