@@ -14,10 +14,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
-			description: [
-				"你做到了！你成功登录了月球！现在着手准备建设外星吧。"
-				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，&9接下来的故事都是可选项，如果你足够疲惫的话你可以毕业了，但真正的发明家不会停下前进的脚步。"
-			]
+			description: ["你做到了！你成功登录了月球！现在着手准备建设外星吧。"]
 			dependencies: ["75CF8B6BAC6A01EF"]
 			size: 2.0d
 			id: "455ACDBB066B83CB"
@@ -46,7 +43,6 @@
 				"这些陌生的矿石是二级火箭必要的材料。"
 			]
 			dependencies: ["455ACDBB066B83CB"]
-			optional: true
 			id: "4CA12C2F04AC40EA"
 			tasks: [{
 				id: "23E9A117E444CCFC"
@@ -72,7 +68,6 @@
 			dependencies: ["4CA12C2F04AC40EA"]
 			hide: true
 			size: 2.0d
-			optional: true
 			id: "4385C348F8ADB85D"
 			tasks: [{
 				id: "25BB87C04ED1A182"
@@ -97,7 +92,6 @@
 				"这些奇怪的矿石是三级火箭必要的材料。"
 			]
 			dependencies: ["4385C348F8ADB85D"]
-			optional: true
 			id: "25D5CA649D70E7F3"
 			tasks: [{
 				id: "5DD93912450F81A5"
@@ -120,7 +114,6 @@
 			description: ["Ubu-idim-gud-ud（闪族语：水星）"]
 			dependencies: ["25D5CA649D70E7F3"]
 			size: 2.0d
-			optional: true
 			id: "73851AC410B78C63"
 			tasks: [{
 				id: "69F9EBBCE4C3465A"
@@ -143,7 +136,6 @@
 			description: ["特色：&6耐热金属矿石&r，用途：&64级火箭&r"]
 			dependencies: ["25D5CA649D70E7F3"]
 			size: 2.0d
-			optional: true
 			id: "1412C99D8D8960B3"
 			tasks: [{
 				id: "4F5192CF9EA1448F"
@@ -180,7 +172,6 @@
 			subtitle: "步骤 53"
 			description: ["有了这艘&64级太空火箭&r我们可以前往更远的星系。"]
 			dependencies: ["1412C99D8D8960B3"]
-			optional: true
 			id: "418F815CE774BCFA"
 			tasks: [{
 				id: "5FEA217034BDB791"
@@ -207,7 +198,6 @@
 			dependencies: ["418F815CE774BCFA"]
 			hide: true
 			size: 2.0d
-			optional: true
 			id: "31569CFC9329E197"
 			tasks: [{
 				id: "6589C55862A59EE5"
@@ -256,7 +246,6 @@
 			description: ["烧制&6火星石砖&r直到它变为&6裂痕火星石砖&r。"]
 			dependencies: ["1D2DC28E7A2E78FF"]
 			dependency_requirement: "one_completed"
-			optional: true
 			id: "71E0FF4D03BC0FAF"
 			tasks: [
 				{
@@ -281,7 +270,6 @@
 			subtitle: "步骤 52-3"
 			description: ["通过粉碎&6裂纹火星石砖&r得到&6火星岩粉&r，通常你会额外的获得&6火星石砖&r。"]
 			dependencies: ["71E0FF4D03BC0FAF"]
-			optional: true
 			id: "0641E2F76830E348"
 			tasks: [
 				{
@@ -305,7 +293,6 @@
 			subtitle: "步骤52-4"
 			description: ["通过神奇的搅拌使&6火星岩粉&r结晶。"]
 			dependencies: ["0641E2F76830E348"]
-			optional: true
 			id: "3EBC61A196157671"
 			tasks: [
 				{
@@ -337,7 +324,6 @@
 				"3EBC61A196157671"
 				"445FDA210870576C"
 			]
-			optional: true
 			id: "286E976F0D0604DC"
 			tasks: [
 				{
@@ -368,7 +354,6 @@
 			subtitle: "步骤 52-5"
 			description: ["真漂亮不是吗？"]
 			dependencies: ["286E976F0D0604DC"]
-			optional: true
 			id: "5DD445593587E20A"
 			tasks: [
 				{
@@ -392,7 +377,6 @@
 			subtitle: "步骤 53-1"
 			description: ["你的无情铁手可以将这些-1963461℃的石头盘成石砖"]
 			dependencies: ["31569CFC9329E197"]
-			optional: true
 			id: "6648FC46498BFD07"
 			tasks: [
 				{
@@ -416,7 +400,6 @@
 			subtitle: "步骤53-2"
 			description: ["这些超低温的石砖极度易碎，烧制它就像&6[步骤 52-2]&r一样。"]
 			dependencies: ["6648FC46498BFD07"]
-			optional: true
 			id: "083319366C9ACB16"
 			tasks: [
 				{
@@ -441,7 +424,6 @@
 			description: ["粉碎&6裂纹寒霜石砖&r像&6[步骤 52-3]&r一样。"]
 			dependencies: ["083319366C9ACB16"]
 			dependency_requirement: "one_completed"
-			optional: true
 			id: "2F7D18AD5EBB989D"
 			tasks: [
 				{
@@ -465,7 +447,6 @@
 			subtitle: "步骤53-4"
 			description: ["通过神奇的巫术使霜原岩粉结晶。"]
 			dependencies: ["2F7D18AD5EBB989D"]
-			optional: true
 			id: "445FDA210870576C"
 			tasks: [
 				{
@@ -489,7 +470,6 @@
 			subtitle: "步骤53-5"
 			description: ["能吃吗？"]
 			dependencies: ["286E976F0D0604DC"]
-			optional: true
 			id: "0930EAC00F14AE50"
 			tasks: [
 				{
@@ -516,7 +496,6 @@
 				"5DD445593587E20A"
 				"0930EAC00F14AE50"
 			]
-			optional: true
 			id: "00E287B896112207"
 			tasks: [
 				{
@@ -543,7 +522,6 @@
 				"由于精炼&6阿尔法合金&r的过程漫长而又枯燥，所以你可能需要建造一条自动生产线..."
 			]
 			dependencies: ["00E287B896112207"]
-			optional: true
 			id: "211F451405ACF59E"
 			tasks: [
 				{
@@ -571,7 +549,6 @@
 				"0266FF8DC048858B"
 				"42112159CDECA0F8"
 			]
-			optional: true
 			id: "1C32C4DDD72AF1AC"
 			tasks: [
 				{
@@ -596,7 +573,6 @@
 			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6自动凋零自杀塔&r。"]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
-			optional: true
 			id: "0266FF8DC048858B"
 			tasks: [{
 				id: "5FBAEC8F216C4953"
@@ -622,7 +598,6 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
-			optional: true
 			id: "42112159CDECA0F8"
 			tasks: [
 				{
@@ -656,7 +631,6 @@
 				"1C32C4DDD72AF1AC"
 				"0266FF8DC048858B"
 			]
-			optional: true
 			id: "315CDAB5262EC376"
 			tasks: [
 				{
@@ -680,7 +654,6 @@
 			subtitle: "步骤 58"
 			description: ["高端的材料往往采用简单的加工，就像&6水晶矩阵锭&r，只需使用&6混压机&r混压48下即可变成板材。"]
 			dependencies: ["315CDAB5262EC376"]
-			optional: true
 			id: "2E0FBE0A1F0ED1F1"
 			tasks: [
 				{
@@ -704,7 +677,6 @@
 			subtitle: "步骤 59"
 			description: ["现在是时候将各种各样的材料的齿轮装配成&6晶格构件&r吧！"]
 			dependencies: ["2E0FBE0A1F0ED1F1"]
-			optional: true
 			id: "34260F620C3A90E7"
 			tasks: [
 				{
@@ -728,7 +700,6 @@
 			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起步入&4&l无尽&r吧！"]
 			dependencies: ["34260F620C3A90E7"]
 			size: 2.0d
-			optional: true
 			id: "5E5845C2A3CBF34F"
 			tasks: [{
 				id: "0179607DF37390F1"
@@ -753,7 +724,6 @@
 			]
 			hide: true
 			size: 1.5d
-			optional: true
 			id: "09227C3DB592F602"
 			tasks: [
 				{
@@ -776,7 +746,6 @@
 			y: 2.0d
 			description: ["&6中子态素收集器&r可以收集一些肉眼不可见的物质：&6中子&r，你需要等待。"]
 			dependencies: ["09227C3DB592F602"]
-			optional: true
 			id: "7839DED88F29B5CD"
 			tasks: [
 				{
@@ -805,7 +774,6 @@
 			y: 1.0d
 			description: ["将&6中子锭&r压制成板并制作成齿轮，你最好将其自动化。"]
 			dependencies: ["7839DED88F29B5CD"]
-			optional: true
 			id: "4629C22BEAB2F8E9"
 			tasks: [
 				{
@@ -826,9 +794,8 @@
 			icon: "avaritia:infinity_ingot"
 			x: 5.0d
 			y: 3.0d
-			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭。"]
+			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭，有了之前的经验你应该可以熟练的完成自动化。"]
 			dependencies: ["7839DED88F29B5CD"]
-			optional: true
 			id: "6AEFF95FF106F145"
 			tasks: [
 				{
@@ -865,7 +832,6 @@
 				"6AEFF95FF106F145"
 				"4629C22BEAB2F8E9"
 			]
-			optional: true
 			id: "1435BC0C1FD6636F"
 			tasks: [
 				{
@@ -885,9 +851,10 @@
 			title: "&d&l第六章支线完成！"
 			x: 9.0d
 			y: 3.0d
+			shape: "hexagon"
 			description: ["&6创世构件&r正在被源源不断地生产！全新的技术和魔法之门将为你打开！请发挥你的想象力，尽情创造！我们下个整合包见！"]
 			dependencies: ["1435BC0C1FD6636F"]
-			optional: true
+			size: 2.0d
 			id: "6E401A0F416A4DCA"
 			tasks: [{
 				id: "33EFDBAD01CFF12E"
@@ -895,6 +862,41 @@
 				item: "kubejs:creative_machine"
 				consume_items: false
 			}]
+		}
+		{
+			title: "[可选] Plan B"
+			icon: {
+				id: "kubejs:maga_screwdriver"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 4.0d
+			description: ["&6中子螺丝刀&r可以帮你更简单的完成自动化，请好好利用这一点！"]
+			dependencies: ["6AEFF95FF106F145"]
+			optional: true
+			id: "666D3A0088EAD5EE"
+			tasks: [
+				{
+					id: "6FCFB3C1A7744C77"
+					type: "item"
+					item: {
+						id: "kubejs:maga_screwdriver"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "1867CD8792818EC0"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
 		}
 	]
 }

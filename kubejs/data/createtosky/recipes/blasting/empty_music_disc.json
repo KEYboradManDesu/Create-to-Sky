@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "mekanism:hdpe_sheet"
+  },
+  "result": {
+    "item": "kubejs:empty_music_disc"
+  }
+}

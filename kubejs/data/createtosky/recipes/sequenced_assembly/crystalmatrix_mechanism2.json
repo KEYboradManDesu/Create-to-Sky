@@ -102,24 +102,6 @@
           "item": "kubejs:incomplete_crystalmatrixt_mechanism"
         }
       ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
-        },
-        {
-          "fluid": "kubejs:matrix",
-          
-          "amount": 1000
-        }
-      ],
-      "results": [
-        {
-          "item": "kubejs:incomplete_crystalmatrixt_mechanism"
-        }
-      ]
     }
   ],
   "results": [

@@ -83,7 +83,7 @@ onEvent("recipes", event => {
     //biomeBlacklist is also available
   
     //Fluid extractor recipes (Fluids)
-    event.recipes.createoreexcavation.extracting(Fluid.of('beyond_earth:oil', 100), '{"text": "oil"}', 30, 100).drill('createoreexcavation:netherite_drill').biomeWhitelist('forge:is_overworld').stress(256).id("beyond_earth:oil");
+    event.recipes.createoreexcavation.extracting(Fluid.of('beyond_earth:oil', 100), '{"text": "oil"}', 55, 100).drill('createoreexcavation:netherite_drill').biomeWhitelist('forge:is_overworld').stress(128).id("beyond_earth:oil");
     //The biome, stress and drill settings are the same as the drilling recipe
   })
 

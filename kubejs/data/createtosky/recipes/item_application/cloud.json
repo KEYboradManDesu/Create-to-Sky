@@ -2,7 +2,7 @@
   "type": "create:item_application",
   "ingredients": [
     {
-      "item": "thermal:white_rockwool"
+      "tag": "forge:wool/white"
     },
     {
       "item": "create_confectionery:marshmallow"

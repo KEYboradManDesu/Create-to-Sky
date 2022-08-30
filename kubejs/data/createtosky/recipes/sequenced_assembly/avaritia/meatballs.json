@@ -1,0 +1,91 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:meat_cooked"
+  },
+  "transitionalItem": {
+    "item": "minecraft:cooked_beef"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        },
+        {
+          "item": "kubejs:maga_screwdriver"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        },
+        {
+          "fluid": "industrialforegoing:meat",
+          
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "avaritia:cosmic_meatballs",
+      "chance": 1
+    }
+  ],
+  "loops": 2
+}

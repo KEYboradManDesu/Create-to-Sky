@@ -25,6 +25,8 @@ onEvent("recipes", event => {
   event.remove({ output: ('projecte:low_covalence_dust') })
   event.remove({ output: ('projecte:medium_covalence_dust') })
   event.remove({ output: ('projecte:high_covalence_dust') })
+  event.remove({ output: ('projecte:collector_mk1') })
+  event.remove({ output: ('projecte:philosophers_stone') })
 
   event.remove({ id: KJ("stone_saw") })
   event.remove({ id: KJ("iron_saw") })
@@ -64,6 +66,7 @@ onEvent("recipes", event => {
   event.remove({ id: "mekanismgenerators:generator/advanced_solar" })
   event.remove({ id: "mekanism:energy_tablet" })
   event.remove({ id: "mekanism:metallurgic_infusing/alloy/atomic" })
+  event.remove({ id: "mekanism:robit" })
 
   event.remove({ id: "beyond_earth:rover" })
   event.remove({ id: "beyond_earth:space_suit" })
@@ -81,6 +84,8 @@ onEvent("recipes", event => {
   event.remove({ id: "beyond_earth:gold_tank" })
   event.remove({ id: "beyond_earth:diamond_tank" })
   event.remove({ id: "beyond_earth:calorite_tank" })
+  event.remove({ id: "beyond_earth:steel_ingot_blasting" })
+  event.remove({ id: "beyond_earth:compressing/compressed_steel" })
 
   event.remove({ id: "createoreexcavation:drilling/redstone" })
 
@@ -222,9 +227,20 @@ onEvent("recipes", event => {
       " RS",
       " SL"
     ], {
-      R: '#forge:rods/iron',
+      R: '#forge:rods/plastic',
       L: '#forge:gears/iron',
       S: '#forge:dyes/blue'
+    })
+
+    event.shaped(KJ("maga_screwdriver"), [
+      "R  ",
+      " EL",
+      " LS"
+    ], {
+      R: '#forge:rods/iron',
+      L: 'avaritia:neutronium_gear',
+      E: 'avaritia:infinity_catalyst',
+      S: 'kubejs:screwdriver'
     })
 
 
@@ -407,30 +423,6 @@ onEvent("recipes", event => {
     C: '#forge:gears/lead'
 	})
 
-
-  event.remove({ output: ('projecte:philosophers_stone') })
-  event.shaped(('projecte:philosophers_stone'), [
-		' S ',
-		'SCS',
-		' S '
-	], {
-		C: 'avaritia:neutronium_compressor',
-		S: 'avaritia:infinity_catalyst'
-	})
-
-  event.remove({ output: ('projecte:collector_mk1') })
-  event.shaped(('projecte:collector_mk1'), [
-		'BAB',
-		'DCD',
-		'BSB'
-	], {
-		D: 'create:creative_motor',
-    C: 'avaritia:crystal_matrix',
-		B: 'mekanism:ingot_refined_glowstone',
-    A: 'kubejs:creative_machine',
-    S: 'industrialforegoing:resourceful_furnace'
-	})
-  
   event.shaped(('avaritia:star_fuel'), [
 		'BAB',
 		'BCB',
@@ -464,9 +456,9 @@ onEvent("recipes", event => {
 
   event.recipes.createMechanicalCrafting(Item.of("avaritia:infinity_catalyst", 1), [
     "A    F",
-    " B  E ",
+    " BMNE ",
     " ICDI ",
-    " F  G ",
+    " FXJG ",
     "E    H"
   ], {
     A: Item.of('avaritia:singularity', '{Id:"avaritia:coal"}'),
@@ -477,7 +469,11 @@ onEvent("recipes", event => {
     F: Item.of('avaritia:singularity', '{Id:"avaritia:iron"}'),
     G: Item.of('avaritia:singularity', '{Id:"avaritia:lapis_lazuli"}'),
     H: Item.of('avaritia:singularity', '{Id:"avaritia:redstone"}'),
-    I: 'avaritia:crystal_matrix'
+    I: 'avaritia:crystal_matrix',
+    M: 'avaritia:ultimate_stew',
+    N: 'avaritia:cosmic_meatballs',
+    X: 'avaritia:endest_pearl',
+    J: 'avaritia:record_fragment'
   })
 
   event.recipes.createMechanicalCrafting(Item.of("avaritia:infinity_ingot", 1), [
@@ -539,24 +535,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
 		C: 'buddycards:luminis_panel',
     A: '#forge:glass_panes'
 	})
-  
-  event.recipes.createMechanicalCrafting(Item.of(CR("creative_motor"), 1), [
-    "FFFFFFF",
-    "FACBCAF",
-    "DABGBAE",
-    "FACBCAF",
-    "FFFFFFF"
-  ], {
-    A: "avaritia:infinity",
-    B: "avaritia:star_fuel",
-    C: "avaritia:neutronium_gear",
-    D: "projecte:watch_of_flowing_time",
-    E: "create:steam_engine",
-    F: "kubejs:creative_machine",
-    G: "kubejs:creative_mechanism"
-  })
 
-  
   event.remove({ output: ('projecte:transmutation_table') })
   event.recipes.createMechanicalCrafting(Item.of("projecte:transmutation_table", 1), [
     "AADDDAA",

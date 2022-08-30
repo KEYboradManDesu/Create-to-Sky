@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:red_sand"
+    },
+    {
+      "fluid": "thermal:crude_oil",
+      "amount": 50
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:oil_red_sand"
+    }
+  ]
+}

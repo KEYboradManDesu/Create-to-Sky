@@ -1,7 +1,7 @@
 {
-  "parent": "kubejs:block/substrate",
+  "parent": "cabricality:block/substrate",
   "textures": {
-    "particle": "thermal:block/glass/lumium_glass",
-    "0": "kubejs:block/catalyst_glass"
+    "particle": "minecraft:block/glass",
+    "0": "cabricality:block/catalyst_glass"
   }
 }

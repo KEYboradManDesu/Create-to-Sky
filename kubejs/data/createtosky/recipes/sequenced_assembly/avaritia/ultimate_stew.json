@@ -1,0 +1,132 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelight:cooking_pot"
+  },
+  "transitionalItem": {
+    "item": "farmersdelight:cooking_pot"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        },
+        {
+          "item": "kubejs:maga_screwdriver"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "fluid": "create:tea",
+          
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "minecraft:cake"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "createaddition:chocolate_cake"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "create_confectionery:white_chocolate_glazed_berries"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "create_confectionery:caramel_glazed_berries"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "create_confectionery:ruby_chocolate_glazed_berries"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "avaritia:ultimate_stew",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

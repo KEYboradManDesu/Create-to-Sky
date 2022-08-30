@@ -136,6 +136,10 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/fern/paste/sky_slimy_fern_paste")
 			.displayName("史莱姆蕨粉末")
 
+		event.create("empty_music_disc")
+			.texture(modpackId + ":item/empty_music_disc")
+			.displayName("空音乐唱片")	
+
 		event.create("radiant_sheet")
 			.texture(modpackId + ":item/radiant_sheet")
 			.displayName("光辉板").rarity(RARITY_UNCOMMON)
@@ -168,6 +172,11 @@ onEvent("item.registry", event => {
 		event.create("flash_drive")
 			.texture(modpackId + ":item/boot_medium")
 			.displayName("闪存").rarity(RARITY_UNCOMMON)
+			.maxDamage(512)
+
+		event.create("maga_screwdriver")
+			.texture(modpackId + ":item/maga_screwdriver")
+			.displayName("中子螺丝刀").rarity(RARITY_UNCOMMON)
 			.maxDamage(512)
 
 		event.create("incomplete_basalz_rod")
@@ -203,22 +212,27 @@ onEvent("item.registry", event => {
 		event.create("glacio_dust")
 			.texture(modpackId + ":item/glacio_dust")
 			.displayName("寒霜岩粉")
+			.glow(true)
 		
 		event.create("glacio_quartz")
 			.texture(modpackId + ":item/glacio_quartz")
 			.displayName("寒霜晶体").rarity(RARITY_UNCOMMON)
+			.glow(true)
 
 		event.create("polished_glacio_quartz")
 			.texture(modpackId + ":item/polished_glacio_quartz")
 			.displayName("磨制寒霜晶体").rarity(RARITY_UNCOMMON)
+			.glow(true)
 
 		event.create("alpha_quartz")
 			.texture(modpackId + ":item/alpha_quartz")
 			.displayName("致密阿尔法晶体").rarity(RARITY_UNCOMMON)
+			.glow(true)
 
 		event.create("alpha_ingot")
 			.texture(modpackId + ":item/alpha_ingot")
 			.displayName("致密阿尔法合金").rarity(RARITY_UNCOMMON)
+			.glow(true)
 
 
 
