@@ -48,7 +48,7 @@ onEvent("recipes", event => {
   ], "#minecraft:wooden_slabs", [
     event.recipes.createDeploying(transitional, [transitional, CR("andesite_alloy")]),
     event.recipes.createDeploying(transitional, [transitional, CR("andesite_alloy")]),
-    event.recipes.createCutting(transitional, [transitional])
+    event.recipes.createDeploying(transitional, [transitional, "#forge:saws"])
   ]).transitionalItem(transitional)
     .loops(1)
     .id("kubejs:kinetic_mechanism")

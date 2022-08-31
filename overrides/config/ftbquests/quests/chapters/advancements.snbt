@@ -415,28 +415,5 @@
 				}
 			]
 		}
-		{
-			title: "&l上传到云端"
-			icon: "cloudstorage:cloud_chest"
-			x: -1.0d
-			y: -6.0d
-			shape: "rsquare"
-			description: ["&6云箱子&r能允许你将物品&6物理&r上传到云端，并可以从任何地方访问它！&b（&b非&6静电云箱子&r&b除了主人，其他玩家无法访问，漏斗也不例外！）"]
-			id: "7B34460F241184BD"
-			tasks: [{
-				id: "23E5594DDAD238A6"
-				type: "advancement"
-				title: "把云箱子放上天！"
-				advancement: "cloudstorage:cloudstorage/cloud_chest"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "4E1D7BE3DA49234C"
-				type: "item"
-				team_reward: false
-				item: "cloudstorage:balloon_bit"
-				count: 4
-			}]
-		}
 	]
 }

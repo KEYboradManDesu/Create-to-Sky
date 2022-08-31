@@ -1010,7 +1010,7 @@
 			y: 15.5d
 			shape: "circle"
 			description: ["把你手中的贵金属银投入&6冶炼炉&r中以继续...。"]
-			dependencies: ["722CA19434E722FB"]
+			dependencies: ["1DA57132A7E1CF77"]
 			hide: true
 			id: "0C11EC34D5FA508B"
 			tasks: [{
@@ -1180,6 +1180,24 @@
 					random_bonus: 4
 				}
 			]
+		}
+		{
+			title: "一键三连"
+			icon: "thermal:silver_coin"
+			x: -3.0d
+			y: 15.0d
+			shape: "circle"
+			description: ["带着不舍你必须将你手中的&6银币&r丢进&6治炼炉&r以获得稳定的熔融银来源，这不由的令你怀疑官方铸币厂的银是从哪来的。&2(此操作不可逆！)"]
+			dependencies: ["722CA19434E722FB"]
+			hide: true
+			hide_text_until_complete: false
+			id: "1DA57132A7E1CF77"
+			tasks: [{
+				id: "363B8DE08388529F"
+				type: "item"
+				item: "thermal:silver_coin"
+				consume_items: false
+			}]
 		}
 	]
 }

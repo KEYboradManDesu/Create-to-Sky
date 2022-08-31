@@ -1,0 +1,23 @@
+{
+	id: "15BB964C81574BA0"
+	order_index: 3
+	title: "&6购买岩石卡片"
+	loot_size: 1
+	rewards: [
+		{ item: "kubejs:trade_card_dirt" }
+		{ item: "kubejs:trade_card_sand" }
+		{ item: "kubejs:trade_card_clay" }
+		{ item: "kubejs:trade_card_ice" }
+		{ item: "kubejs:trade_card_blackstone" }
+		{ item: "kubejs:trade_card_grout" }
+		{ item: "kubejs:trade_card_cobblestone" }
+		{ item: "kubejs:trade_card_scoria" }
+		{ item: "kubejs:trade_card_obsidian" }
+		{ item: "kubejs:trade_card_andesite" }
+		{ item: "kubejs:trade_card_granite" }
+		{ item: "kubejs:trade_card_diorite" }
+		{ item: "kubejs:trade_card_limestone" }
+		{ item: "kubejs:trade_card_seared_stone" }
+		{ item: "kubejs:trade_card_scorched_stone" }
+	]
+}

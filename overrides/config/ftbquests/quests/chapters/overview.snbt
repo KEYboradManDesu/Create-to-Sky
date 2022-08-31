@@ -85,7 +85,7 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					item: "alloy_forgery:deepslate_bricks_forge_controller"
+					item: "tconstruct:seared_melter"
 					consume_items: false
 				}
 				{

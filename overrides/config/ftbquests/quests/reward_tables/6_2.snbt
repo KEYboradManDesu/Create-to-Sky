@@ -1,0 +1,17 @@
+{
+	id: "3C321C6C07C4E9A6"
+	order_index: 2
+	title: "&6购买原木卡片"
+	loot_size: 1
+	rewards: [
+		{ item: "kubejs:trade_card_oak_log" }
+		{ item: "kubejs:trade_card_spruce_log" }
+		{ item: "kubejs:trade_card_jungle_log" }
+		{ item: "kubejs:trade_card_dark_oak_log" }
+		{ item: "kubejs:trade_card_acacia_log" }
+		{ item: "kubejs:trade_card_birch_log" }
+		{ item: "kubejs:trade_card_crimson_stem" }
+		{ item: "kubejs:trade_card_warped_stem" }
+		{ item: "kubejs:trade_card_dead_log" }
+	]
+}

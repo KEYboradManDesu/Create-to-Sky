@@ -6,6 +6,8 @@ onEvent("recipes", event => {
   event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
   event.stonecutting(AE2("calculation_processor_press"), KJ("circuit_scrap"))
   event.stonecutting(AE2("logic_processor_press"), KJ("circuit_scrap"))
+
+	event.remove({ input: '#forge:ores/redstone' })
   
   event.remove({ output: ("ae2:silicon") })
   event.remove({ output: ('avaritia:diamond_lattice') })
@@ -122,6 +124,18 @@ onEvent("recipes", event => {
 
   event.remove({ id: "avaritia:infinity_catalyst" })
 
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/plates" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/gear" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/dust" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/nugget" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/ingot" })
+  event.remove({ id: "tconstruct:tools/materials/melting/silver" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/block" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/raw" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/raw_block" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/ore_singular" })
+  event.remove({ id: "tconstruct:smeltery/melting/metal/silver/sheetmetal" })
+
   
   event.remove({ id: "beyond_earth:rover" })
   event.remove({ id: "beyond_earth:space_suit" })
@@ -173,6 +187,14 @@ onEvent("recipes", event => {
   ], {
     T: "thermal:tin_ingot",
     S: "create:iron_sheet"
+  })
+
+  event.remove({ output: "exnihilosequentia:raw_zinc" })
+  event.shaped("create:raw_zinc", [
+    "SS",
+    "SS"
+  ], {
+    S: 'exnihilosequentia:zinc_pieces'
   })
 
   event.remove({ output: CR("item_vault") })
@@ -261,9 +283,9 @@ onEvent("recipes", event => {
       "R S",
       "LS "
     ], {
-      R: KJ("ruby"),
+      R: TE("ruby"),
       L: TE("lead_ingot"),
-      S: KJ("sapphire")
+      S: TE("sapphire")
     })
 
     event.shaped(KJ("laser_blaster"), [
@@ -437,7 +459,7 @@ onEvent("recipes", event => {
   event.recipes.create.mixing('create:creative_blaze_cake', [
     'createaddition:chocolate_cake',
     'avaritia:star_fuel',
-    'avaritia:infinity'
+    'kubejs:creative_mechanism'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
   
   event.remove({ output: ('beyond_earth:oxygen_mask') })
@@ -721,6 +743,10 @@ event.shaped(('buddycards:luminis_sleeve'), [
   })
 
 
+  onEvent('recipes', event => {
+    trading(event)
+  })
+
   function trading(event) {
     let trade = (card_id, ingredient, output) => {
       event.custom({
@@ -730,7 +756,8 @@ event.shaped(('buddycards:luminis_sleeve'), [
           Ingredient.of(card_id).toJson(),
         ],
         result: [
-          Item.of(output).toResultJson()
+          Item.of(output).toResultJson(),
+          
         ],
         energy: 1000
       })
@@ -750,5 +777,13 @@ event.shaped(('buddycards:luminis_sleeve'), [
         })
     });
   }
-  
+
+
+
+
+
+
+
+
+
 })

@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:ruby",
+      "amount": 4
+    }
+  ]
+}

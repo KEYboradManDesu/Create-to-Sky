@@ -1,0 +1,251 @@
+{
+	id: "08DF8E49DAFD4F9D"
+	group: "0810E42B2DD79973"
+	order_index: 2
+	filename: "shipments"
+	title: "&3▶ 交易列表&f"
+	icon: "thermal:machine_press"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "thermal:machine_press"
+			x: 0.0d
+			y: 12.25d
+			shape: "hexagon"
+			description: [
+				"&6交易列表&r是一个自动使用货币兑换资源的场所。你可以在这里买到交易机上使用的兑换卡。&6交易列表&r是一个自动使用货币兑换资源的场所。你可以在这里买到交易机上使用的兑换卡。"
+				""
+				"兑换卡需要先支付一点钱，但是当你获得了兑换卡你就可以无限使用钱币兑换你需要的物品了！"
+			]
+			size: 2.0d
+			id: "6AC1CED0D341150E"
+			tasks: [{
+				id: "214F623C75A92809"
+				type: "checkmark"
+				title: "交易列表"
+			}]
+		}
+		{
+			title: "自动化交易"
+			icon: { id: "thermal:gold_coin", Count: 2b }
+			x: 2.0d
+			y: 12.25d
+			shape: "circle"
+			subtitle: "银币 <> 金币"
+			description: [
+				"这个交易卡可以让你的交易机自动转换你放入的货币。"
+				"&3&l注意：有几组背包有几组银币就购买几次！"
+			]
+			dependencies: ["6AC1CED0D341150E"]
+			id: "3B548F2C060C2229"
+			tasks: [{
+				id: "601161A1565C5161"
+				type: "item"
+				item: "thermal:silver_coin"
+			}]
+			rewards: [
+				{
+					id: "0A6DEF2E19943F9F"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_exchange_currencies"
+				}
+				{
+					id: "60108034F1BEFAE8"
+					type: "command"
+					title: "可循环"
+					icon: "thermal:machine_cycle_augment"
+					auto: "disabled"
+					command: "/ftbquests change_progress @p reset 3B548F2C060C2229"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "&6购买岩石"
+			icon: "minecraft:stone"
+			disable_toast: true
+			x: -1.0d
+			y: 10.5d
+			shape: "hexagon"
+			subtitle: "岩石的重量，令人安心"
+			id: "1E751917649D5AA7"
+			tasks: [{
+				id: "0446A9EA4BFD1094"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "4C6D81112EE2FFFF"
+				type: "questsadditions:repeat_choice"
+				title: "岩石卡片"
+				table_id: 1566010550773042080L
+			}]
+		}
+		{
+			title: "&6购买装饰品"
+			icon: "supplementaries:crimson_lantern"
+			disable_toast: true
+			x: 1.0d
+			y: 10.5d
+			shape: "hexagon"
+			subtitle: "16银币"
+			id: "7C388086F091CBE7"
+			tasks: [{
+				id: "419095E4D142D323"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "54122EDAE23A34F0"
+				type: "questsadditions:repeat_choice"
+				title: "装饰品卡片"
+				table_id: 7675714625380026653L
+			}]
+		}
+		{
+			title: "&6购买矿物"
+			icon: "minecraft:iron_ingot"
+			disable_toast: true
+			x: -1.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "大自然的搬运工"
+			id: "5FE7AC9188F9EF68"
+			tasks: [{
+				id: "6DA20A14850B6E81"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "4CB840076DE8EC0D"
+				type: "questsadditions:repeat_choice"
+				title: "矿物卡片"
+				table_id: 8605353007124783494L
+			}]
+		}
+		{
+			title: "&6购买农牧用品"
+			icon: "farmersdelight:rice_bag"
+			disable_toast: true
+			x: -0.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "种菜玩家"
+			id: "5683C54AD9355F93"
+			tasks: [{
+				id: "72C9063754C9BBF6"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "30882F3783B0E955"
+				type: "questsadditions:repeat_choice"
+				title: "农牧卡片"
+				table_id: 6311848970000252347L
+			}]
+		}
+		{
+			title: "&6购买原木"
+			icon: "minecraft:oak_log"
+			disable_toast: true
+			x: 0.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "记得植树造林"
+			id: "71B743A93127833E"
+			tasks: [{
+				id: "4884AF1BA2E02133"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "4E4EF6495DB4D4B4"
+				type: "questsadditions:repeat_choice"
+				title: "原木卡片"
+				table_id: 4337560641423600038L
+			}]
+		}
+		{
+			title: "&6购买怪物战利品"
+			icon: "minecraft:spider_eye"
+			disable_toast: true
+			x: 1.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "希望你有刷怪塔"
+			id: "7B48829655BA222C"
+			tasks: [{
+				id: "1EF3156635A66673"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "053D66B71B430A53"
+				type: "questsadditions:repeat_choice"
+				title: "战利品卡片"
+				table_id: 2588189678332119484L
+			}]
+		}
+		{
+			title: "早期贸易"
+			icon: "thermal:machine_press"
+			x: -2.0d
+			y: 12.25d
+			shape: "circle"
+			subtitle: "30 Silver"
+			description: [
+				"达到黄铜阶段需要做出很多努力！"
+				""
+				"热心的交易员都会先来这里买一个交易机，这个机器可能会帮助你摆脱困境！"
+				"&3&l注意：有几组背包有几组银币就购买几次！"
+			]
+			dependencies: ["6AC1CED0D341150E"]
+			id: "4DFE4FD3B504AF4B"
+			tasks: [{
+				id: "3E2EAC7B2D274669"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 30b }
+				item: "thermal:silver_coin"
+				count: 30L
+			}]
+			rewards: [
+				{
+					id: "26C6A3ACA1B59772"
+					type: "item"
+					auto: "enabled"
+					item: "thermal:machine_press"
+				}
+				{
+					id: "271E7F49C6719B0B"
+					type: "item"
+					auto: "no_toast"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "2F6DE0C3510E12B3"
+					type: "command"
+					title: "可循环"
+					icon: "thermal:machine_cycle_augment"
+					team_reward: true
+					auto: "disabled"
+					command: "/ftbquests change_progress @p reset 4DFE4FD3B504AF4B"
+					player_command: false
+				}
+			]
+		}
+	]
+}

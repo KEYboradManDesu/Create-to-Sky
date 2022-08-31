@@ -1,17 +1,17 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "createaddition:copper_rod"
+    "tag": "forge:nuggets/copper"
   },
   "transitionalItem": {
-    "item": "createaddition:copper_rod"
+    "item": "thermal:copper_nugget"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createaddition:copper_rod"
+          "item": "thermal:copper_nugget"
         },
         {
           "item": "create:andesite_alloy"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "createaddition:copper_rod"
+          "item": "thermal:copper_nugget"
         }
       ]
     },
@@ -27,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createaddition:copper_rod"
+          "item": "thermal:copper_nugget"
         },
         {
-          "item": "kubejs:iron_saw"
+          "tag": "forge:saws"
         }
       ],
       "results": [
         {
-          "item": "createaddition:copper_rod"
+          "item": "thermal:copper_nugget"
         }
       ]
     }
@@ -43,8 +43,7 @@
   "results": [
     {
       "item": "createaddition:connector",
-      "chance": 1,
-      "value":4
+      "chance": 1
     }
   ],
   "loops": 1

@@ -92,12 +92,27 @@ onEvent("recipes", event => {
 
 onEvent('item.tags', event => {
 
+  global.trades.forEach(element => {
+		event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
+	});
+
+	global.professions.forEach(element => {
+		event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
+	});
+
+
+  event.get('thermal:crafting/dies').add('#forge:trade_cards')
+	event.get('thermal:crafting/dies').add('#forge:profession_cards')
+
 	event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
 
   event.get("forge:saws").add("kubejs:stone_saw")
   event.get("forge:saws").add("kubejs:iron_saw")
 	event.get("forge:saws").add("kubejs:diamond_saw")
   event.get("forge:saws").add("kubejs:netherite_saw")
+
+  event.get("forge:dyes/red").add("thermal:ruby_dust")
+  event.get("forge:dyes/blue").add("thermal:sapphire_dust")
 
   event.get("forge:ingots/nickel").remove("immersiveengineering:ingot_nickel")
   event.get("forge:ingots/nickel").remove("exnihilosequentia:nickel_ingot")

@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Create to Sky",
-  "version": "0.71",
+  "version": "0.72",
   "author": "",
   "files": [
     {
@@ -402,6 +402,11 @@
     {
       "projectID": 74924,
       "fileID": 3829975,
+      "required": true
+    },
+    {
+      "projectID": 580129,
+      "fileID": 3919400,
       "required": true
     },
     {
