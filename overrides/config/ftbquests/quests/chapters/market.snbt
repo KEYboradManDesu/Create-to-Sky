@@ -267,10 +267,7 @@
 			y: -4.0d
 			shape: "circle"
 			subtitle: "金币 -> 银币"
-			description: [
-				"你可以在这里将金币换回成1组银币。"
-				"&3&l注意：有几组背包有几组金币就兑换几次！"
-			]
+			description: ["你可以在这里将金币换回成1组银币。"]
 			dependencies: ["0F870BEA235D662D"]
 			id: "5326F6482C45D22A"
 			tasks: [{
@@ -278,26 +275,12 @@
 				type: "item"
 				item: "thermal:gold_coin"
 			}]
-			rewards: [
-				{
-					id: "26512E93CE404069"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 64b }
-					auto: "enabled"
-					item: "thermal:silver_coin"
-					count: 64
-				}
-				{
-					id: "757E5641DBD5C7B1"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					team_reward: true
-					auto: "enabled"
-					command: "/ftbquests change_progress @p reset 5326F6482C45D22A"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "3FBB119F009F0F69"
+				type: "questsadditions:repeat"
+				icon: { id: "thermal:silver_coin", Count: 64b }
+				table_id: 2420746931966145187L
+			}]
 		}
 		{
 			title: "手动兑换"
@@ -319,23 +302,11 @@
 				item: "thermal:silver_coin"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "66BE3DDEC92812C4"
-					type: "item"
-					auto: "enabled"
-					item: "thermal:gold_coin"
-				}
-				{
-					id: "6BFA489B434BF111"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					auto: "enabled"
-					command: "/ftbquests change_progress @p reset 1A566C74B1F7F050"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "0B69AC9A9CE46018"
+				type: "questsadditions:repeat"
+				table_id: 5820745751942039010L
+			}]
 		}
 		{
 			title: "共进晚餐"
@@ -803,10 +774,7 @@
 			x: 0.5d
 			y: 1.5d
 			subtitle: "2金币"
-			description: [
-				"集卡的乐趣。"
-				"&3&l注意：有几组背包有几组金币就购买几次！"
-			]
+			description: ["集卡的乐趣。"]
 			id: "093FB7B7FEC6B886"
 			tasks: [{
 				id: "30B16CC21946FE8E"
@@ -815,23 +783,12 @@
 				item: "thermal:gold_coin"
 				count: 2L
 			}]
-			rewards: [
-				{
-					id: "198DC310752F341F"
-					type: "item"
-					auto: "enabled"
-					item: "buddycards:buddycard_pack_mystery"
-				}
-				{
-					id: "15D14CE2E6B9C1E2"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					auto: "enabled"
-					command: "/ftbquests change_progress @p reset 093FB7B7FEC6B886"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "579088DAEC1A5A7D"
+				type: "questsadditions:repeat"
+				title: "神秘巴迪卡牌包"
+				table_id: 2992600883351250502L
+			}]
 		}
 		{
 			title: "玩炸药"
@@ -1134,10 +1091,7 @@
 			x: -1.0d
 			y: -2.0d
 			subtitle: "48银币"
-			description: [
-				"嗡-嗡嗡-嗡"
-				"&3&l注意：有几组背包有几组银币就兑换几次！"
-			]
+			description: ["嗡-嗡嗡-嗡"]
 			id: "003E0D1CE60B166A"
 			tasks: [
 				{
@@ -1161,29 +1115,11 @@
 					count: 10L
 				}
 			]
-			rewards: [
-				{
-					id: "773C4F5E97BD82B8"
-					type: "item"
-					auto: "enabled"
-					item: "minecraft:bee_nest"
-				}
-				{
-					id: "0C8C369DEF6B0FD4"
-					type: "item"
-					auto: "no_toast"
-					item: "minecraft:bee_spawn_egg"
-					count: 2
-				}
-				{
-					id: "24E03584E89B05D1"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					command: "/ftbquests change_progress @p reset 003E0D1CE60B166A"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "58CEC6CA5FE82541"
+				type: "questsadditions:repeat"
+				table_id: 7205977255985799212L
+			}]
 		}
 		{
 			title: "神秘园丁起始包"
@@ -1200,11 +1136,30 @@
 				count: 12L
 			}]
 			rewards: [{
-				id: "189FABC7AF6F91D7"
-				type: "questsadditions:repeat"
-				title: "&2&l神秘花包"
-				icon: "supplementaries:sack"
+				id: "2C91A442D55C4554"
+				type: "questsadditions:repeat_random"
+				title: "神秘花包"
 				table_id: 4891383163620734240L
+			}]
+		}
+		{
+			title: "我爱植树"
+			icon: "minecraft:oak_sapling"
+			x: -12.5d
+			y: 1.5d
+			subtitle: "16银币"
+			description: ["树苗盲盒，测一测你的运气。"]
+			id: "7760D0FCCFCE2C6B"
+			tasks: [{
+				id: "6AEDD26D0FFF8963"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 16L
+			}]
+			rewards: [{
+				id: "51C04B7CF4A61319"
+				type: "questsadditions:repeat_random"
+				table_id: 274727292144083129L
 			}]
 		}
 	]

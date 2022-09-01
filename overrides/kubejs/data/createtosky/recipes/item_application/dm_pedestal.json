@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:shadow_steel_casing"
+    },
+    {
+      "item": "projecte:red_matter"
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:dm_pedestal"
+    }
+  ]
+}

@@ -14,6 +14,7 @@ let AP = (id, x) => MOD("architects_palette", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 
 onEvent("item.registry", event => {
+	
 	//	Mechanism
 	let registerMechanism = (name, localName, rarity) => {
 		let id = name.toLowerCase() + "_mechanism"
@@ -93,9 +94,6 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Nickel Compound", "镶边镍锭")
 		registerTypicalItem("Invar Compound", "殷钢混合物")
 		registerTypicalItem("Silicon Compound", "含硅化合物")
-
-		registerTypicalItem("Ruby", "红宝石")
-		registerTypicalItem("Sapphire", "蓝宝石")
 
 		registerTypicalItem("Sand Ball", "沙球")
 		registerTypicalItem("Coke Chunk", "小块焦炭")
@@ -234,6 +232,79 @@ onEvent("item.registry", event => {
 			.displayName("致密阿尔法合金").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
+		event.create("nether_seed_star")
+			.texture(modpackId + ":item/crystal/nether_seed_star")
+			.displayName("下界之星碎片").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("growing_certus_seed_crystal")
+			.texture(modpackId + ":item/crystal/growing_certus_seed_crystal")
+			.displayName("生长中的赛特斯石英种子")
+
+		event.create("tiny_certus_crystal")
+			.texture(modpackId + ":item/crystal/tiny_certus_crystal")
+			.displayName("赛特斯石英结晶")
+
+		event.create("growing_tiny_certus_crystal")
+			.texture(modpackId + ":item/crystal/growing_tiny_certus_crystal")
+			.displayName("生长中的赛特斯石英结晶")
+
+		event.create("small_certus_crystal")
+			.texture(modpackId + ":item/crystal/small_certus_crystal")
+			.displayName("赛特斯石英晶体")
+
+		event.create("growing_small_certus_crystal")
+			.texture(modpackId + ":item/crystal/growing_small_certus_crystal")
+			.displayName("生长中的赛特斯石英晶体")
+
+		event.create("growing_fluix_seed_crystal")
+			.texture(modpackId + ":item/crystal/growing_fluix_seed_crystal")
+			.displayName("生长中的福禄伊斯科石英种子")
+
+		event.create("tiny_fluix_crystal")
+			.texture(modpackId + ":item/crystal/tiny_fluix_crystal")
+			.displayName("福禄伊斯科石英结晶")
+
+		event.create("growing_tiny_fluix_crystal")
+			.texture(modpackId + ":item/crystal/growing_tiny_fluix_crystal")
+			.displayName("生长中的福禄伊斯科石英结晶")
+
+		event.create("small_fluix_crystal")
+			.texture(modpackId + ":item/crystal/small_fluix_crystal")
+			.displayName("福禄伊斯科石英晶体")
+
+		event.create("growing_small_fluix_crystal")
+			.texture(modpackId + ":item/crystal/growing_small_fluix_crystal")
+			.displayName("生长中的福禄伊斯科石英晶体")
+
+		event.create("growing_nether_seed_star")
+			.texture(modpackId + ":item/crystal/growing_nether_seed_star")
+			.displayName("生长中的下界之星种子").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("tiny_nether_crystal")
+			.texture(modpackId + ":item/crystal/tiny_nether_crystal")
+			.displayName("下界之星结晶").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("growing_tiny_nether_star")
+			.texture(modpackId + ":item/crystal/growing_tiny_nether_star")
+			.displayName("生长中的下界之星结晶").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("small_nether_star")
+			.texture(modpackId + ":item/crystal/small_nether_star")
+			.displayName("下界之星晶体").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("growing_small_nether_star")
+			.texture(modpackId + ":item/crystal/growing_small_nether_star")
+			.displayName("生长中的下界之星晶体").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		
+			
+
 
 
 		let processors = ["Calculation", "Logic", "Engineering"]
@@ -246,6 +317,7 @@ onEvent("item.registry", event => {
 				.displayName(localName + "处理器（半成品）")
 		})
 
+	
 		
 	}
 
@@ -338,7 +410,21 @@ onEvent("block.registry", event => {
 	registerMachine("Zinc", "锌机", "cutout")
 	registerMachine("Enderium", "末影合金机", "cutout")
 	registerMachine("Obsidian", "黑曜机", "translucent")
-	registerMachine("Creative", "§d§l创造机", "translucent")
+
+
+	let CreativeMachine = (name, localName, layer) => {
+		let id = name.toLowerCase() + "_machine"
+		event.create(id)
+			.model(modpackId + ":block/machine/" + id)
+			.material("lantern")
+			.hardness(-1.0)
+			.displayName(localName + "器")
+			.notSolid()
+			.renderType(layer)
+			.tagBlock("create:wrench_pickup")
+			.tagBlock("minecraft:mineable/pickaxe")
+	}
+	CreativeMachine("Creative", "§d§l创造机", "translucent")
 
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
@@ -426,4 +512,7 @@ onEvent("item.modification", event => {
 			item.maxStackSize = 1
 		})
 	});
+
+
+
 })

@@ -7,18 +7,6 @@
 	icon: "kubejs:computation_matrix"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 2.0d
-		y: 6.0d
-		width: 8.0d
-		height: 8.0d
-		rotation: 0.0d
-		image: "beyond_earth:textures/painting/painting_galaxy.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
 	quests: [
 		{
 			title: "航天开始！"
@@ -648,7 +636,11 @@
 				"花一分钟时间制作一个代表你的太空计划的旗帜，以带到月球上。 您可以像横幅一样对其应用图案。"
 				"在你自己的时间里，坐在你组装好的火箭上，然后按 Space。"
 			]
-			dependencies: ["47965C310D9847DC"]
+			dependencies: [
+				"47965C310D9847DC"
+				"01111A2405138520"
+				"12F1D3EE5DFE8C54"
+			]
 			hide: false
 			size: 1.2d
 			id: "75AB1EFC40AA71C2"
@@ -679,7 +671,6 @@
 			shape: "circle"
 			description: ["在到达其他星球之前，可以优先考虑建造一座太空空间站。"]
 			hide_dependency_lines: true
-			dependencies: ["75AB1EFC40AA71C2"]
 			hide: true
 			optional: true
 			id: "01111A2405138520"
@@ -697,8 +688,7 @@
 			y: 8.0d
 			shape: "circle"
 			description: ["在外星你绝对不想徒步漫游，试着制造一辆拉风的&6漫步车&r。"]
-			hide_dependency_lines: true
-			dependencies: ["75AB1EFC40AA71C2"]
+			hide_dependency_lines: false
 			optional: true
 			id: "12F1D3EE5DFE8C54"
 			tasks: [{

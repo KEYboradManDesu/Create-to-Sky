@@ -166,7 +166,8 @@
 			rewards: [{
 				id: "583C35BA7A7B9004"
 				type: "item"
-				item: "vanillacookbook:book_cake"
+				item: "thermal:silver_coin"
+				count: 32
 			}]
 		}
 		{

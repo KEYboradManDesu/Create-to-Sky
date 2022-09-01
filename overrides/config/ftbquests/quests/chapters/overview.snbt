@@ -460,9 +460,7 @@
 			description: [
 				"&o这也许只是你的一小步，却是&9全人类&r的一大步。"
 				""
-				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r"
 				""
-				"&9&l&o世界很大，生活更大。"
 			]
 			dependencies: [
 				"5E62059675895213"
@@ -475,7 +473,7 @@
 					id: "058AEB3EF218C7D2"
 					type: "stat"
 					title: "&6完成第五章"
-					icon: "indrev:controller"
+					icon: "beyond_earth:nasa_workbench"
 					disable_toast: true
 					stat: "minecraft:play_one_minute"
 					value: 1
@@ -513,7 +511,10 @@
 			x: 5.0d
 			y: 2.5d
 			subtitle: "&d&l挑战"
-			description: ["&d&l创造！&r有了&d创造机器&r之后你就是真正的创世神。&9这也意味着整合包也接近尾声，我的使命也彻底结束了。下个整合包再见！"]
+			description: [
+				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r"
+				"&9&l&o世界很大，生活更大。"
+			]
 			dependencies: ["4BB283B651F880A9"]
 			optional: true
 			id: "17C02A7F51C8D117"

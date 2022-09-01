@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "kubejs:copper_machine"
+    },
+    {
+      "tag": "forge:plates/steel"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:component_steel",
+      "amount": 4
+    }
+  ]
+}

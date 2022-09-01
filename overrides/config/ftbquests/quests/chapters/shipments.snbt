@@ -5,7 +5,7 @@
 	filename: "shipments"
 	title: "&3▶ 交易列表&f"
 	icon: "thermal:machine_press"
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -33,10 +33,7 @@
 			y: 12.25d
 			shape: "circle"
 			subtitle: "银币 <> 金币"
-			description: [
-				"这个交易卡可以让你的交易机自动转换你放入的货币。"
-				"&3&l注意：有几组背包有几组银币就购买几次！"
-			]
+			description: ["这个交易卡可以让你的交易机自动转换你放入的货币。"]
 			dependencies: ["6AC1CED0D341150E"]
 			id: "3B548F2C060C2229"
 			tasks: [{
@@ -44,23 +41,12 @@
 				type: "item"
 				item: "thermal:silver_coin"
 			}]
-			rewards: [
-				{
-					id: "0A6DEF2E19943F9F"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_exchange_currencies"
-				}
-				{
-					id: "60108034F1BEFAE8"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					auto: "disabled"
-					command: "/ftbquests change_progress @p reset 3B548F2C060C2229"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "10718F040BF492C6"
+				type: "questsadditions:repeat"
+				title: "货币兑换卡"
+				table_id: 6987990016172115350L
+			}]
 		}
 		{
 			title: "&6购买岩石"
@@ -92,7 +78,7 @@
 			x: 1.0d
 			y: 10.5d
 			shape: "hexagon"
-			subtitle: "16银币"
+			subtitle: "选择困难症"
 			id: "7C388086F091CBE7"
 			tasks: [{
 				id: "419095E4D142D323"
@@ -211,7 +197,6 @@
 				"达到黄铜阶段需要做出很多努力！"
 				""
 				"热心的交易员都会先来这里买一个交易机，这个机器可能会帮助你摆脱困境！"
-				"&3&l注意：有几组背包有几组银币就购买几次！"
 			]
 			dependencies: ["6AC1CED0D341150E"]
 			id: "4DFE4FD3B504AF4B"
@@ -222,30 +207,212 @@
 				item: "thermal:silver_coin"
 				count: 30L
 			}]
-			rewards: [
-				{
-					id: "26C6A3ACA1B59772"
-					type: "item"
-					auto: "enabled"
-					item: "thermal:machine_press"
+			rewards: [{
+				id: "0C7B902781DE263F"
+				type: "questsadditions:repeat"
+				title: "全球交易器"
+				table_id: 130404065566270256L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 猎人"
+			icon: {
+				id: "minecraft:golden_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
 				}
-				{
-					id: "271E7F49C6719B0B"
-					type: "item"
-					auto: "no_toast"
-					item: "thermal:dynamo_stirling"
+			}
+			x: 1.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "720FDD4387C9CE11"
+			tasks: [{
+				id: "20D217738CBCB4A2"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "0F5C67B0C9A55FD1"
+				type: "questsadditions:repeat"
+				table_id: 1226380346995583632L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 农民"
+			icon: {
+				id: "minecraft:golden_hoe"
+				Count: 1b
+				tag: {
+					Damage: 0
 				}
-				{
-					id: "2F6DE0C3510E12B3"
-					type: "command"
-					title: "可循环"
-					icon: "thermal:machine_cycle_augment"
-					team_reward: true
-					auto: "disabled"
-					command: "/ftbquests change_progress @p reset 4DFE4FD3B504AF4B"
-					player_command: false
+			}
+			x: -3.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "15BBED8716FED0DA"
+			tasks: [{
+				id: "77822B9AFEADCE0D"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "09002D0B526F4249"
+				type: "questsadditions:repeat"
+				table_id: 922100088940742502L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 木匠"
+			icon: {
+				id: "minecraft:golden_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			x: -2.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "3602F0407148D7E0"
+			tasks: [{
+				id: "5C7AFA00B668C869"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "5A688835E0DEFE4F"
+				type: "questsadditions:repeat"
+				table_id: 7091111752182264104L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 矿工"
+			icon: {
+				id: "minecraft:golden_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "7A2FD1A8E6866157"
+			tasks: [{
+				id: "40EE346F00821CE4"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "3978A034EE629FE0"
+				type: "questsadditions:repeat"
+				table_id: 5106071763416482484L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 厨师"
+			icon: {
+				id: "farmersdelight:golden_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "3285AF4285AF5B49"
+			tasks: [{
+				id: "3471EC8E9439868D"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "0530059EC3B5A979"
+				type: "questsadditions:repeat"
+				table_id: 5992185380988599946L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 渔夫"
+			icon: {
+				id: "aquaculture:gold_fishing_rod"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.0d
+			y: 14.0d
+			subtitle: "20银币"
+			id: "1C5BE4B33635B51B"
+			tasks: [{
+				id: "372DC8CFE423A0E0"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "1B5851B7D4A69A24"
+				type: "questsadditions:repeat"
+				table_id: 423422760700443865L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 铁匠"
+			icon: {
+				id: "forbidden_arcanus:golden_blacksmith_gavel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: 15.0d
+			subtitle: "20银币"
+			id: "2BE13C976814FB9E"
+			tasks: [{
+				id: "35DA755933CE752F"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "17F231E7068F5FDD"
+				type: "questsadditions:repeat"
+				table_id: 1735731812669914817L
+			}]
+		}
+		{
+			title: "&7&l职业:&r 石匠"
+			icon: {
+				id: "exnihilosequentia:golden_hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 15.0d
+			subtitle: "20银币"
+			id: "07CCBE0FBFA56D03"
+			tasks: [{
+				id: "235A06CDD0DCD7E0"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 20L
+			}]
+			rewards: [{
+				id: "5E62AD102BA89EB8"
+				type: "questsadditions:repeat"
+				table_id: 5450116197919993356L
+			}]
 		}
 	]
 }

@@ -360,7 +360,7 @@
 			}]
 		}
 		{
-			title: "&l上传到云端"
+			title: "上传到云端"
 			icon: "cloudstorage:cloud_chest"
 			x: -2.0d
 			y: -3.0d
@@ -405,6 +405,26 @@
 				type: "item"
 				item: "minecraft:coal"
 				count: 32
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成地狱方块。"]
+			id: "4D360EB7CBCFF364"
+			tasks: [{
+				id: "4CCA92AD80B1D391"
+				type: "observation"
+				title: "观察 肥沃灵魂土"
+				icon: "nethersdelight:rich_soul_soil"
+				timer: 60L
+				observe_type: 0
+				to_observe: "nethersdelight:rich_soul_soil"
+			}]
+			rewards: [{
+				id: "0C5DA6A71EAF0107"
+				type: "item"
+				item: "skinnedlanterns:skeleton_soul_lantern_block"
 			}]
 		}
 	]

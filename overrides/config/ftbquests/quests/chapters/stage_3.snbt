@@ -1199,5 +1199,28 @@
 				consume_items: false
 			}]
 		}
+		{
+			icon: "create:shadow_steel"
+			x: -5.0d
+			y: 5.0d
+			description: ["当&6异彩化合物&r作为物品掉落进&6虚空&r的时候，它会转化为&6暗影钢&r。"]
+			dependencies: ["7B23C933D76458BA"]
+			optional: true
+			id: "04378B05CBDCA619"
+			tasks: [
+				{
+					id: "3DD97D7D979AE11E"
+					type: "item"
+					title: "暗影钢"
+					item: "create:shadow_steel"
+					consume_items: false
+				}
+				{
+					id: "7D07BE833FC12824"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
 	]
 }

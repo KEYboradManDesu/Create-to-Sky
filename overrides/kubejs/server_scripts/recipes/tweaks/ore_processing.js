@@ -106,6 +106,9 @@ onEvent('item.tags', event => {
 
 	event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
 
+  event.get("forge:insulating").add("immersiveengineering:insulating_glass")
+  event.get("forge:insulating").add("immersiveengineering:slag_glass")
+
   event.get("forge:saws").add("kubejs:stone_saw")
   event.get("forge:saws").add("kubejs:iron_saw")
 	event.get("forge:saws").add("kubejs:diamond_saw")
@@ -113,6 +116,9 @@ onEvent('item.tags', event => {
 
   event.get("forge:dyes/red").add("thermal:ruby_dust")
   event.get("forge:dyes/blue").add("thermal:sapphire_dust")
+
+  event.get("twilightforest:portal/activator").remove("minecraft:diamond")
+  event.get("twilightforest:portal/activator").add("thermal:enderium_ingot")
 
   event.get("forge:ingots/nickel").remove("immersiveengineering:ingot_nickel")
   event.get("forge:ingots/nickel").remove("exnihilosequentia:nickel_ingot")
@@ -142,13 +148,14 @@ onEvent('item.tags', event => {
   event.get("forge:plates/nickel").remove("immersiveengineering:plate_nickel")
   event.get("forge:plates/lead").remove("immersiveengineering:plate_lead")
   event.get("forge:plates/silver").remove("immersiveengineering:plate_silver")
-  event.get("forge:plates/uranium").remove("immersiveengineering:plate_uranium")
   event.get("forge:plates/constantan").remove("immersiveengineering:plate_constantan")
   event.get("forge:plates/electrum").remove("immersiveengineering:plate_electrum")
   event.get("forge:plates/steel").remove("immersiveengineering:plate_steel")
   event.get("forge:plates/copper").remove("immersiveengineering:plate_copper")
   event.get("forge:plates/iron").remove("immersiveengineering:plate_iron")
   event.get("forge:plates/gold").remove("immersiveengineering:plate_gold")
+
+  event.get("forge:plates/iron").remove("beyond_earth:iron_plate")
 
   event.get("forge:dusts/nickel").remove("immersiveengineering:dust_nickel")
   event.get("forge:dusts/lead").remove("immersiveengineering:dust_lead")

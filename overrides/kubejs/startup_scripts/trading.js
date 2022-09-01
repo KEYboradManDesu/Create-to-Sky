@@ -20,6 +20,7 @@ let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let IM = (id, x) => MOD("immersiveengineering", id, x)
+let CO = (id, x) => MOD("createoreexcavation", id, x)
 //
 
 
@@ -422,9 +423,9 @@ onEvent('item.registry', event => {
 		simple("燧石", "Flint", MC('flint', 16), 4, S, 0x3C3B3B, 0xA6A6A6)
 		simple("朱砂", "Cinnabar", TE('cinnabar', 4), 16, S, 0xFC7781, 0xFCCED0)
 		simple("红石粉", "Redstone Dust", MC('redstone', 16), 8, S, 0xA80F01, 0xFC7781)
-		simple("钻石", "Diamond", MC('diamond', 1), 1, G, 0x20C3B3, 0xD2FCF3)
+		simple("钻石", "Diamond", CO('raw_diamond', 1), 1, G, 0x20C3B3, 0xD2FCF3)
 		simple("青金石", "Lapis Lazuli", MC('lapis_lazuli', 8), 32, S, 0x335DC1, 0x7395E7)
-		simple("绿宝石", "Emerald", MC('emerald', 1), 1, G, 0x00A82B, 0xADFACB)
+		simple("绿宝石", "Emerald", CO('raw_emerald', 1), 1, G, 0x00A82B, 0xADFACB)
 		simple("硫磺", "Sulfur", TE('sulfur', 4), 8, S, 0xC7A94A, 0xEEF071)
 		simple("磷灰石", "Apatite", TE('apatite', 4), 8, S, 0x27A9BB, 0x2CC7C9)
 		simple("硝石", "Niter", TE('niter', 4), 8, S, 0x735A65, 0xB8AFAF)

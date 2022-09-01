@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [ 
+    {
+      "fluid": "tconstruct:liquid_soul",
+      
+      "amount": 1000
+    },
+    {
+      "tag": "forge:nether_stars"
+    },
+    {
+      "item": "avaritia:infinity_catalyst"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:nether_seed_star",
+      "amount": 2
+    },
+    {
+      "item": "avaritia:infinity_catalyst",
+      "amount": 1
+    }
+  ],
+  "heatRequirement":"superheated"
+}

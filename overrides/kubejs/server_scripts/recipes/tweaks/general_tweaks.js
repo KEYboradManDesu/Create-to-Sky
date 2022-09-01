@@ -124,6 +124,9 @@ onEvent("recipes", event => {
 
   event.remove({ id: "avaritia:infinity_catalyst" })
 
+  event.remove({ id: "immersiveengineering:crafting/component_iron" })
+  event.remove({ id: "immersiveengineering:crafting/component_steel" })
+
   event.remove({ id: "tconstruct:smeltery/melting/metal/silver/plates" })
   event.remove({ id: "tconstruct:smeltery/melting/metal/silver/gear" })
   event.remove({ id: "tconstruct:smeltery/melting/metal/silver/dust" })
@@ -136,6 +139,7 @@ onEvent("recipes", event => {
   event.remove({ id: "tconstruct:smeltery/melting/metal/silver/ore_singular" })
   event.remove({ id: "tconstruct:smeltery/melting/metal/silver/sheetmetal" })
 
+  event.remove({ id: "projecte:dm_pedestal" })
   
   event.remove({ id: "beyond_earth:rover" })
   event.remove({ id: "beyond_earth:space_suit" })
@@ -304,7 +308,7 @@ onEvent("recipes", event => {
       " RS",
       " SL"
     ], {
-      R: '#forge:rods/plastic',
+      R: '#forge:rods/iron',
       L: '#forge:gears/iron',
       S: '#forge:dyes/blue'
     })
@@ -365,7 +369,75 @@ onEvent("recipes", event => {
       S: '#forge:raw_pork'
     })
   
+
+    event.remove({ output: ("immersiveengineering:toolupgrade_revolver_bayonet") })
+    event.shaped(("immersiveengineering:toolupgrade_revolver_bayonet"), [
+      "AD",
+      "CA"
+    ], {
+      C: '#forge:ingots/steel',
+      D: 'mekanismtools:steel_sword',
+      A: '#forge:wires/copper'
+    })
   
+    event.remove({ output: ("immersiveengineering:connector_lv") })
+    event.shaped(("immersiveengineering:connector_lv"), [
+      " D ",
+      "CAC",
+      "CAC"
+    ], {
+      C: '#minecraft:terracotta',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/copper'
+    })
+    event.remove({ output: ("immersiveengineering:connector_lv_relay") })
+    event.shaped(("immersiveengineering:connector_lv_relay"), [
+      " D ",
+      "CAC"
+    ], {
+      C: '#minecraft:terracotta',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/copper'
+    })
+    event.remove({ output: ("immersiveengineering:connector_mv") })
+    event.shaped(("immersiveengineering:connector_mv"), [
+      " D ",
+      "CAC",
+      "CAC"
+    ], {
+      C: '#minecraft:terracotta',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/electrum'
+    })
+    event.remove({ output: ("immersiveengineering:connector_mv_relay") })
+    event.shaped(("immersiveengineering:connector_mv_relay"), [
+      " D ",
+      "CAC"
+    ], {
+      C: '#minecraft:terracotta',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/electrum'
+    })
+    event.remove({ output: ("immersiveengineering:connector_hv") })
+    event.shaped(("immersiveengineering:connector_hv"), [
+      " D ",
+      "CAC",
+      "CAC"
+    ], {
+      C: '#minecraft:terracotta',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/aluminum'
+    })
+    event.remove({ output: ("immersiveengineering:connector_hv_relay") })
+    event.shaped(("immersiveengineering:connector_hv_relay"), [
+      " D ",
+      "CAC"
+    ], {
+      C: '#forge:insulating',
+      D: 'createaddition:connector',
+      A: '#forge:ingots/aluminum'
+    })
+
   
   event.remove({ output: ("avaritia:crystal_matrix") })
   event.shaped(("avaritia:crystal_matrix"), [
@@ -387,12 +459,22 @@ onEvent("recipes", event => {
     S: "avaritia:crystal_matrix"
   })
 
+  event.remove({ output: ("projecte:dark_matter_block") })
+  event.shaped(("projecte:dark_matter_block"), [
+    "SSS",
+    "SCS",
+    "SSS"
+  ], {
+    C: 'create:shadow_steel_casing',
+    S: 'projecte:dark_matter'
+  })
+
   event.shaped(('avaritia:neutronium_gear'), [
 		' S ',
 		'SCS',
 		' S '
 	], {
-		C: 'avaritia:neutron_nugget',
+		C: 'forbidden_arcanus:dark_nether_star',
 		S: 'kubejs:neutronium_sheet'
 	})
 
@@ -778,10 +860,36 @@ event.shaped(('buddycards:luminis_sleeve'), [
     });
   }
 
+  let grow = (from, via, to) => {
+		event.recipes.createSequencedAssembly([to], from, [
+			event.recipes.createFilling(via, [via, Fluid.of(MC("water"), 500)]),
+		]).transitionalItem(via)
+			.loops(4)
+			.id('kubejs:' + to.split(':')[1])
+	}
 
+	grow(AE2("certus_crystal_seed"), KJ('growing_certus_seed_crystal'), KJ('tiny_certus_crystal'))
+	grow(AE2("fluix_crystal_seed"), KJ('growing_fluix_seed_crystal'), KJ('tiny_fluix_crystal'))
 
+	grow(KJ("tiny_certus_crystal"), KJ('growing_tiny_certus_crystal'), KJ('small_certus_crystal'))
+	grow(KJ("tiny_fluix_crystal"), KJ('growing_tiny_fluix_crystal'), KJ('small_fluix_crystal'))
 
+	grow(KJ("small_certus_crystal"), KJ('growing_small_certus_crystal'), AE2('certus_quartz_crystal'))
+	grow(KJ("small_fluix_crystal"), KJ('growing_small_fluix_crystal'), AE2('fluix_crystal'))
 
+  let grow2 = (from, via, to) => {
+		event.recipes.createSequencedAssembly([to], from, [
+			event.recipes.createFilling(via, [via, Fluid.of("tconstruct:liquid_soul", 1000)]),
+		]).transitionalItem(via)
+			.loops(4)
+			.id('kubejs:' + to.split(':')[1])
+	}
+
+	grow2(KJ("nether_seed_star"), KJ('growing_nether_seed_star'), KJ('tiny_nether_crystal'))
+
+	grow2(KJ("tiny_nether_crystal"), KJ('growing_tiny_nether_star'), KJ('small_nether_star'))
+
+	grow2(KJ("small_nether_star"), KJ('growing_small_nether_star'), MC('nether_star'))
 
 
 

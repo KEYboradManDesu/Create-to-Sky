@@ -1,0 +1,11 @@
+{
+	id: "01CF49CE85582330"
+	order_index: 18
+	title: "&7&l全球交易器"
+	icon: "thermal:machine_press"
+	loot_size: 1
+	rewards: [
+		{ item: "thermal:dynamo_stirling" }
+		{ item: "thermal:machine_press" }
+	]
+}

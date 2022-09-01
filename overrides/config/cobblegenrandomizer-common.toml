@@ -9,12 +9,12 @@
 	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
 	#Forge tags are supported
 	[general.lists]
-		#Cobble gen
-		block_list_cobble = ["minecraft:cobblestone|60", "minecraft:coal_ore|25", "minecraft:iron_ore|20", "minecraft:redstone_ore|20", "minecraft:lapis_ore|20", "minecraft:emerald_ore|5", "minecraft:gold_ore|10", "minecraft:diamond_ore|5"]
-		#Stone gen
-		block_list_stone = ["minecraft:stone|30", "minecraft:granite|10", "minecraft:diorite|10", "minecraft:andesite|10"]
 		#Basalt gen
-		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60", "minecraft:nether_quartz_ore|30", "minecraft:nether_gold_ore|30", "minecraft:ancient_debris|1"]
+		block_list_basalt = ["minecraft:basalt|100"]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone|100"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone|100"]
 
 		#Custom settings
 		[general.lists.custom]
@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = []
+			custom_generators = [["cobblestone", "minecraft:crying_obsidian", ["minecraft:andesite|25", "minecraft:granite|25", "minecraft:diorite|25", "create:gabbro|25", "create:limestone|25", "minecraft:deepslate|25"]], ["cobblestone", "nethersdelight:rich_soul_soil", ["minecraft:netherrack|50", "minecraft:basalt|50", "occultism:iesnium_ore_natural|25", "minecraft:nether_gold_ore|25", "minecraft:nether_quartz_ore|25", "tconstruct:cobalt_ore|15", "minecraft:ancient_debris|1"]]]
 
