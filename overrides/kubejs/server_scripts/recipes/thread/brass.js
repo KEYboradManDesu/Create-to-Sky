@@ -51,6 +51,7 @@ onEvent("recipes", event => {
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)
   brass_machine('industrialforegoing:machine_frame_pity', 1, ('minecraft:redstone_block'))
+  brass_machine('kubejs:pipe_module_tier_1', 4)
 
   
 })

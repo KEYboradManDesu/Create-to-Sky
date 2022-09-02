@@ -16,6 +16,7 @@
 			shape: "hexagon"
 			description: ["你做到了！你成功登录了月球！现在着手准备建设外星吧。"]
 			dependencies: ["75CF8B6BAC6A01EF"]
+			hide: true
 			size: 2.0d
 			id: "455ACDBB066B83CB"
 			tasks: [{
@@ -795,7 +796,10 @@
 			x: 5.0d
 			y: 3.0d
 			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭，有了之前的经验你应该可以熟练的完成自动化。"]
-			dependencies: ["7839DED88F29B5CD"]
+			dependencies: [
+				"7839DED88F29B5CD"
+				"666D3A0088EAD5EE"
+			]
 			id: "6AEFF95FF106F145"
 			tasks: [
 				{
@@ -864,7 +868,7 @@
 			}]
 		}
 		{
-			title: "[可选] Plan B"
+			title: "Plan B"
 			icon: {
 				id: "kubejs:maga_screwdriver"
 				Count: 1b
@@ -874,8 +878,9 @@
 			}
 			x: 6.0d
 			y: 4.0d
-			description: ["&6中子螺丝刀&r可以帮你更简单的完成自动化，请好好利用这一点！"]
-			dependencies: ["6AEFF95FF106F145"]
+			description: ["&6中子螺丝刀&r可以帮你更简单的完成&6无尽锭&r的自动生产，请好好利用这一点！"]
+			hide_dependency_lines: true
+			dependencies: ["7839DED88F29B5CD"]
 			optional: true
 			id: "666D3A0088EAD5EE"
 			tasks: [

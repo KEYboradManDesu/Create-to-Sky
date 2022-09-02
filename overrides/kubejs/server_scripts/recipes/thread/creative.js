@@ -32,21 +32,6 @@ onEvent("recipes", event => {
 	creative_machine('create:creative_motor', 1, 'projecte:watch_of_flowing_time')
 	creative_machine('projecte:relay_mk1', 1, 'projecte:collector_mk1')
 
-	let infinity = (id, amount, other_ingredient) => {
-		event.remove({ output: id })
-		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), "avaritia:infinity", other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "avaritia:infinity", B: other_ingredient })
-		}
-		else
-		 event.stonecutting(Item.of(id, amount), "avaritia:infinity")
-	}
-	infinity("pipez:item_pipe", 16)
-	infinity("pipez:fluid_pipe", 16)
-	infinity("pipez:energy_pipe", 16)
-	infinity("pipez:gas_pipe", 16)
-
-
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_ingot", "upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot","kubejs:creative_machine")
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_sword", "upgradednetherite_ultimate:ultimate_upgraded_netherite_sword","upgradednetherite_creative:creative_upgraded_netherite_ingot")
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_pickaxe", "upgradednetherite_ultimate:ultimate_upgraded_netherite_pickaxe","upgradednetherite_creative:creative_upgraded_netherite_ingot")

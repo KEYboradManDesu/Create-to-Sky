@@ -177,6 +177,10 @@ onEvent('item.tags', event => {
   event.get("forge:dusts/iron").remove("immersiveengineering:dust_iron")
   event.get("forge:dusts/gold").remove("immersiveengineering:dust_gold")
 
+  event.get("forge:dusts/desh").add("kubejs:desh_dust")
+  event.get("forge:dusts/calorite").add("kubejs:calorite_dust")
+  event.get("forge:dusts/ostrum").add("kubejs:ostrum_dust")
+
   event.get("forge:dusts/cobalt").add("kubejs:cobalt_dust")
   event.get("forge:dusts/zinc").add("kubejs:zinc_dust")
 

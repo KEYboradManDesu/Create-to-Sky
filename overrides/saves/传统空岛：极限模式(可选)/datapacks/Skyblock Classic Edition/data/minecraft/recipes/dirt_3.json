@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "## ",
+        "## ",
+        "   "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:rooted_dirt"
+        }
+    },
+    "result": {
+        "item": "minecraft:dirt",
+        "count": 4
+    },
+    "group": "dirt"
+}

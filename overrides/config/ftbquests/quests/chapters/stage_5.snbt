@@ -641,7 +641,7 @@
 				"01111A2405138520"
 				"12F1D3EE5DFE8C54"
 			]
-			hide: false
+			hide: true
 			size: 1.2d
 			id: "75AB1EFC40AA71C2"
 			tasks: [
@@ -671,6 +671,7 @@
 			shape: "circle"
 			description: ["在到达其他星球之前，可以优先考虑建造一座太空空间站。"]
 			hide_dependency_lines: true
+			dependencies: ["47965C310D9847DC"]
 			hide: true
 			optional: true
 			id: "01111A2405138520"
@@ -688,7 +689,9 @@
 			y: 8.0d
 			shape: "circle"
 			description: ["在外星你绝对不想徒步漫游，试着制造一辆拉风的&6漫步车&r。"]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
+			dependencies: ["47965C310D9847DC"]
+			hide: true
 			optional: true
 			id: "12F1D3EE5DFE8C54"
 			tasks: [{

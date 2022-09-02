@@ -53,5 +53,6 @@ onEvent("recipes", event => {
 	ender_machine(AE2("quantum_link"), 1, AE2('fluix_pearl'))
 	ender_machine(("portality:frame"), 1, ('mekanism:ingot_refined_obsidian'))
 	ender_machine(("mekanism:teleporter_frame"), 1, ('mekanism:ingot_refined_glowstone'))
+	ender_machine('kubejs:pipe_module_tier_3', 4)
 
 })

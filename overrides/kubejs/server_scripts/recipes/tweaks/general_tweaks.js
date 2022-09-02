@@ -23,6 +23,7 @@ onEvent("recipes", event => {
 
   event.remove({ output: ("beyond_earth:solar_panel") })
   event.remove({ output: ("beyond_earth:coal_generator") })
+  event.remove({ output: ('beyond_earth:hammer') })
 
   event.remove({ output: ('projecte:low_covalence_dust') })
   event.remove({ output: ('projecte:medium_covalence_dust') })
@@ -46,6 +47,11 @@ onEvent("recipes", event => {
   event.remove({ output: ('exnihilosequentia:zinc_ingot') })
   event.remove({ output: ('exnihilosequentia:aluminum_ingot') })
   event.remove({ output: ('exnihilosequentia:uranium_ingot') })
+
+  event.remove({ output: ('pipez:item_pipe') })
+  event.remove({ output: ('pipez:fluid_pipe') })
+  event.remove({ output: ('pipez:gas_pipe') })
+  event.remove({ output: ('pipez:universal_pipe') })
   
   event.remove({ output: ('immersiveengineering:nugget_nickel') })
   event.remove({ output: ('immersiveengineering:nugget_lead') })
@@ -110,6 +116,8 @@ onEvent("recipes", event => {
   event.remove({ id: TC("smeltery/casting/metal/silver/coin_gold_cast") })
 
   event.remove({ id: ("twilightforest:uncrafting_table") })
+
+  event.remove({ id: ("expcaves:clay_ball") })
 
   event.remove({ id: ("hostilenetworks:living_matter/framework") })
   event.remove({ id: ("hostilenetworks:living_matter/deep_learner") })
@@ -559,8 +567,24 @@ onEvent("recipes", event => {
   event.recipes.create.mixing('create:creative_blaze_cake', [
     'createaddition:chocolate_cake',
     'avaritia:star_fuel',
+    'botania:gaia_ingot',
     'kubejs:creative_mechanism'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
+  
+  event.remove({ output: ('expcaves:clay_lump') })
+  event.shaped(('9x expcaves:clay_lump'), [
+		'C'
+	], {
+		C: 'minecraft:clay_ball'
+	})
+
+  event.shaped(('minecraft:clay_ball'), [
+		'CCC',
+    'CCC',
+    'CCC'
+	], {
+		C: 'expcaves:clay_lump'
+	})
   
   event.remove({ output: ('beyond_earth:oxygen_mask') })
   event.shaped(('beyond_earth:oxygen_mask'), [
@@ -848,6 +872,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
     trading(event)
     drawersop(event)
     tweaks(event)
+    prettierpipes(event)
   })
 
   function trading(event) {
@@ -1066,5 +1091,64 @@ event.shaped(('buddycards:luminis_sleeve'), [
 	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:white_sand')
 	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:orange_sand')
 }
+
+function prettierpipes(event) {
+
+	event.remove({ output: PP('pipe') })
+	event.remove({ output: PP('blank_module') })
+	event.shaped(PP("pipe", 8), [
+		'PMP'
+	], {
+		P: CR('brass_sheet'),
+		M: CR('brass_ingot')
+	})
+
+  event.remove({ output: 'pipez:energy_pipe' })
+	event.shaped("8x pipez:energy_pipe", [
+		'PMP'
+	], {
+		P: TE('invar_ingot'),
+		M: MC('redstone')
+	})
+
+	let module = (type, result) => {
+		event.remove({ output: PP(result) })
+		event.stonecutting(PP(result), 'kubejs:pipe_module_' + type)
+	}
+
+	module('utility', 'filter_increase_modifier')
+	module('utility', 'tag_filter_modifier')
+	module('utility', 'mod_filter_modifier')
+	module('utility', 'nbt_filter_modifier')
+	module('utility', 'damage_filter_modifier')
+	module('utility', 'round_robin_sorting_modifier')
+	module('utility', 'random_sorting_modifier')
+	module('utility', 'redstone_module')
+	module('utility', 'stack_size_module')
+	module('utility', 'low_high_priority_module')
+	module('utility', 'medium_high_priority_module')
+	module('utility', 'high_high_priority_module')
+	module('utility', 'low_low_priority_module')
+	module('utility', 'medium_low_priority_module')
+	module('utility', 'high_low_priority_module')
+
+	let tiers = ['low', 'medium', 'high']
+	for (var i = 0; i < tiers.length; i++) {
+		let tier = 'tier_' + (i + 1)
+		let prefix = tiers[i] + "_"
+		module(tier, prefix + 'extraction_module')
+		module(tier, prefix + 'retrieval_module')
+		module(tier, prefix + 'speed_module')
+		module(tier, prefix + 'filter_module')
+		module(tier, prefix + 'crafting_module')
+	}
+
+}
+  
+  event.recipes.thermal.smelter([KJ("invar_compound"), KJ("invar_compound")], [TE("nickel_ingot"), MC("iron_ingot")])
+	event.recipes.thermal.smelter(CR("brass_ingot", 2), [MC("copper_ingot"), CR("zinc_ingot")])
+	event.recipes.thermal.smelter(TC("rose_gold_ingot", 2), [MC("copper_ingot"), MC("gold_ingot")])
+	event.recipes.thermal.smelter(TE("constantan_ingot", 2), [MC("copper_ingot"), TE("nickel_ingot")])
+
 
 })

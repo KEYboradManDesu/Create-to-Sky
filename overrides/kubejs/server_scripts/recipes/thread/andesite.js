@@ -53,8 +53,8 @@ onEvent("recipes", event => {
     .loops(1)
     .id("kubejs:kinetic_mechanism")
 
+
   event.shapeless(KJ('kinetic_mechanism'), ['#immersiveengineering:tools/hammers', CR('cogwheel'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")//.damageIngredient(1)
-  event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")
   event.shaped(KJ("andesite_machine"), [
     "SSS",
     "SCS",
@@ -120,6 +120,7 @@ onEvent("recipes", event => {
 	andesite_machine('thermal:dynamo_stirling', 1, TE('rf_coil'))
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
+  
 
 
   let handmade_machine = (id, amount, other_ingredient) => {
@@ -136,5 +137,7 @@ onEvent("recipes", event => {
   handmade_machine('supplementaries:bellows', 1, '#forge:leather')
   handmade_machine('supplementaries:clock_block', 1, 'minecraft:clock')
   handmade_machine('supplementaries:speaker_block', 1, '#forge:gems/emerald')
+
+  event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:handmade_mechanism_manual_only")
 
 })

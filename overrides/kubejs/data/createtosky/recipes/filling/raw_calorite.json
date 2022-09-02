@@ -5,8 +5,8 @@
       "item": "kubejs:polished_venus_quartz"
     },
     {
-      "fluid": "tconstruct:molten_lumium",
-      "amount": 500
+      "fluid": "beyond_earth:molten_calorite",
+      "amount": 250
     }
   ],
   "results": [

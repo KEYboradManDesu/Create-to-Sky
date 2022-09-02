@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "minecraft:redstone_block"
+    },
+    "result": "minecraft:raw_copper",
+    "experience": 2,
+    "cookingtime": 950
+}

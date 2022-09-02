@@ -105,7 +105,6 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Zinc Dust", "锌粉")
 
 		registerTypicalItem("Circuit Scrap", "压印模板碎片")
-		registerTypicalItem("Matter Plastics", "物质条")
 
 		event.create("incomplete_coke_chunk")
 			.texture(modpackId + ":item/incomplete_coke_chunk")
@@ -129,7 +128,7 @@ onEvent("item.registry", event => {
 
 		event.create("ender_slimy_fern_paste")
 			.texture(modpackId + ":item/fern/paste/ender_slimy_fern_paste")
-			.displayName("史莱姆蕨粉末")
+			.displayName("史莱姆蕨粉末").rarity(RARITY_UNCOMMON)
 
 		event.create("sky_slimy_fern_paste")
 			.texture(modpackId + ":item/fern/paste/sky_slimy_fern_paste")
@@ -137,9 +136,13 @@ onEvent("item.registry", event => {
 
 		event.create("empty_music_disc")
 			.texture(modpackId + ":item/empty_music_disc")
-			.displayName("空音乐唱片")	
+			.displayName("空音乐唱片").rarity(RARITY_UNCOMMON)
 
-		event.create("radiant_sheet")
+		event.create("matter_plastics")
+			.texture(modpackId + ":item/matter_plastics")
+			.displayName("物质条").rarity(RARITY_UNCOMMON)
+		
+			event.create("radiant_sheet")
 			.texture(modpackId + ":item/radiant_sheet")
 			.displayName("光辉板").rarity(RARITY_UNCOMMON)
 			.glow(true)
@@ -194,6 +197,22 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/neutronium_sheet")
 			.displayName("中子板").rarity(RARITY_UNCOMMON)
 
+		event.create("charged_calculator")
+			.texture(modpackId + ":item/charged_calculator")
+			.displayName("计算器").rarity(RARITY_UNCOMMON)
+			.maxDamage(516)
+
+		event.create("calorite_dust")
+			.texture(modpackId + ":item/calorite_dust")
+			.displayName("耐热金属粉").rarity(RARITY_UNCOMMON)
+
+		event.create("desh_dust")
+			.texture(modpackId + ":item/desh_dust")
+			.displayName("戴斯粉").rarity(RARITY_UNCOMMON)
+
+		event.create("ostrum_dust")
+			.texture(modpackId + ":item/ostrum_dust")
+			.displayName("紫金粉").rarity(RARITY_UNCOMMON)
 
 		event.create("venus_dust")
 			.texture(modpackId + ":item/venus_dust")
@@ -280,7 +299,7 @@ onEvent("item.registry", event => {
 
 		event.create("growing_nether_seed_star")
 			.texture(modpackId + ":item/crystal/growing_nether_seed_star")
-			.displayName("生长中的下界之星种子").rarity(RARITY_UNCOMMON)
+			.displayName("增殖中的下界之星碎片").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
 		event.create("tiny_nether_crystal")
@@ -290,7 +309,7 @@ onEvent("item.registry", event => {
 
 		event.create("growing_tiny_nether_star")
 			.texture(modpackId + ":item/crystal/growing_tiny_nether_star")
-			.displayName("生长中的下界之星结晶").rarity(RARITY_UNCOMMON)
+			.displayName("增殖中的下界之星结晶").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
 		event.create("small_nether_star")
@@ -300,11 +319,13 @@ onEvent("item.registry", event => {
 
 		event.create("growing_small_nether_star")
 			.texture(modpackId + ":item/crystal/growing_small_nether_star")
-			.displayName("生长中的下界之星晶体").rarity(RARITY_UNCOMMON)
+			.displayName("增殖中的下界之星晶体").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
-		
-			
+		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')
+		event.create('pipe_module_tier_1').texture(modpackId + ":item/pipe_module_tier_1").displayName('黄铜管道模块')
+		event.create('pipe_module_tier_2').texture(modpackId + ":item/pipe_module_tier_2").displayName('殷钢管道模块')
+		event.create('pipe_module_tier_3').texture(modpackId + ":item/pipe_module_tier_3").displayName('末影管道模块')	
 
 
 

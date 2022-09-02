@@ -622,6 +622,7 @@
 			x: 1.0d
 			y: 9.5d
 			shape: "hexagon"
+			subtitle: "O.G.A.S"
 			description: [
 				"终于走到这一步了！你工厂中所有的传统流水线都已组装完成，让我们一起步入智能时代吧！"
 				""

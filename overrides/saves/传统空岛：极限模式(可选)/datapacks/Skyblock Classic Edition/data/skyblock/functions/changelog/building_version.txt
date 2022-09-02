@@ -1,0 +1,18 @@
+
+Name: Skyblock Classic Edition
+
+Edition: JAVA EDITION
+
+Release: \\ - 2.1.3
+
+Resource_pack: FALSE
+
+Data_pack: TRUE
+
+Stable: STABILE
+
+Github_Tag: JE-26c
+
+Github:https://github.com/Lorenzo0310200/Skyblock-Classic-Edition
+
+Website:https://minecraft-map-building-versions.blogspot.com/

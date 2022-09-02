@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/ostrum"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:ostrum_dust",
+      "amount": 3
+    }
+  ]
+}

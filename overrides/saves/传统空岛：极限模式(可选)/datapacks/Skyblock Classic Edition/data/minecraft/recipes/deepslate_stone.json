@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "minecraft:deepslate",
+        "count": 1
+    },
+    "group": "deepslate"
+}

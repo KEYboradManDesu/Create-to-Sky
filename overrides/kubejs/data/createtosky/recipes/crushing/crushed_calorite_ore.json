@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/calorite"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:calorite_dust",
+      "amount": 3
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "forge:ores/calorite"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:raw_calorite",
+      "amount": 1,
+      "chance": 1
+    }
+  ]
+}

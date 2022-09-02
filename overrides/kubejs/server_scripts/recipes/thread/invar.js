@@ -51,7 +51,18 @@ onEvent("recipes", event => {
   steel_casing('beyond_earth:fuel_refinery', 1, "#forge:buckets/empty")
   steel_casing('beyond_earth:oxygen_loader', 1, "beyond_earth:oxygen_tank")
 
+  let invar_machine = (id, amount, other_ingredient) => {
+		event.remove({ output: id })
+		if (other_ingredient) {
+			event.smithing(Item.of(id, amount), TE('machine_frame'), other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: TE('machine_frame'), B: other_ingredient })
+		}
+		else
+			event.stonecutting(Item.of(id, amount), TE('machine_frame'))
+	}
 
+	invar_machine(TE('dynamo_compression'), 1, TE('rf_coil'))
+	invar_machine('kubejs:pipe_module_tier_2', 4)
   
   /*	let t = KJ("incomplete_inductive_mechanism")
     event.recipes.createSequencedAssembly([

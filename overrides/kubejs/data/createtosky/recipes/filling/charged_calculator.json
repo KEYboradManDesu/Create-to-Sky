@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "forge:plates/netherite"
+    },
+    {
+      "fluid": "kubejs:matrix",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:charged_calculator"
+    }
+  ]
+}

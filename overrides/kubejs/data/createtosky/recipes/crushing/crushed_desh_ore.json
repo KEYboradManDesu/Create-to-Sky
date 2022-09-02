@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/desh"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:desh_dust",
+      "amount": 3
+    }
+  ]
+}

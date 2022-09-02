@@ -1,0 +1,1 @@
+tellraw @a {"text":"Discord Server","italic":true,"underlined":true,"color":"dark_purple","clickEvent":{"action":"open_url","value":"https://discord.gg/T6PHxhznJ6"}}

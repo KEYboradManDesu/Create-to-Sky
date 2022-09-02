@@ -1,0 +1,31 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ores/ostrum"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:raw_ostrum",
+      "amount": 1,
+      "chance": 1
+    },
+    {
+      "item": "beyond_earth:raw_ostrum",
+      "amount": 1,
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "amount": 1,
+      "chance": 0.75
+    },
+    {
+      "item": "beyond_earth:mars_stone",
+      "amount": 1,
+      "chance": 0.12
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:printed_engineering_processor"
+  },
+  "transitionalItem": {
+    "item": "ae2:printed_engineering_processor"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ae2:printed_engineering_processor"
+        },
+        {
+          "item": "kubejs:charged_calculator"
+        }
+      ],
+      "results": [
+        {
+          "item": "ae2:printed_engineering_processor"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "hostilenetworks:blank_data_model"
+    }
+  ],
+  "loops": 1
+}
