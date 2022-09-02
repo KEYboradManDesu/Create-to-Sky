@@ -32,6 +32,22 @@
           "item": "kubejs:incomplete_creative_mechanism"
         },
         {
+          "item": "mekanism:pellet_antimatter"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        },
+        {
           "item": "avaritia:neutronium_gear"
         }
       ],

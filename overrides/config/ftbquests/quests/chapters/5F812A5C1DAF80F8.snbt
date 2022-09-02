@@ -570,7 +570,7 @@
 			x: 9.0d
 			y: 8.0d
 			subtitle: "步骤 55-1"
-			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6自动凋零自杀塔&r，或者&6自动下界之星催化&r生产线。"]
+			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6模拟室&r，或者&6自动下界之星催化&r生产线。"]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
 			id: "0266FF8DC048858B"

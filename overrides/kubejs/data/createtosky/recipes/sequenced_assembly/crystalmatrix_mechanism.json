@@ -72,22 +72,6 @@
           "item": "kubejs:incomplete_crystalmatrix_mechanism"
         }
       ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "kubejs:incomplete_crystalmatrix_mechanism"
-        },
-        {
-          "item": "kubejs:netherite_saw"
-        }
-      ],
-      "results": [
-        {
-          "item": "kubejs:incomplete_crystalmatrix_mechanism"
-        }
-      ]
     }
   ],
   "results": [

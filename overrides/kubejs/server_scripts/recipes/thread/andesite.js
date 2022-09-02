@@ -53,7 +53,8 @@ onEvent("recipes", event => {
     .loops(1)
     .id("kubejs:kinetic_mechanism")
 
-  event.shapeless(KJ("kinetic_mechanism"), [CR("cogwheel"), CR("andesite_alloy"), "#minecraft:logs"]).id("kubejs:kinetic_mechanism_manual_only")//.damageIngredient(1)
+  event.shapeless(KJ('kinetic_mechanism'), ['#immersiveengineering:tools/hammers', CR('cogwheel'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")//.damageIngredient(1)
+  event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")
   event.shaped(KJ("andesite_machine"), [
     "SSS",
     "SCS",
@@ -61,6 +62,15 @@ onEvent("recipes", event => {
   ], {
     C: CR("andesite_casing"),
     S: KJ("kinetic_mechanism")
+  })
+
+  event.shaped(KJ("handmade_machine"), [
+    "SSS",
+    "SCS",
+    "SSS"
+  ], {
+    C: '#minecraft:logs',
+    S: KJ("handmade_mechanism")
   })
 
   let andesite_machine = (id, amount, other_ingredient) => {
@@ -97,7 +107,6 @@ onEvent("recipes", event => {
   andesite_machine('create:portable_storage_interface', 2)
 	andesite_machine('create:encased_fan', 1, CR('propeller'))
 	andesite_machine('create:mechanical_press', 1, MC('iron_block'))
-	andesite_machine('waterstrainer:strainer_base', 1, MC('iron_bars'))
 	andesite_machine('create:mechanical_mixer', 1, CR('whisk'))
 	andesite_machine('create:mechanical_drill', 1, TE('drill_head'))
 	andesite_machine('create:mechanical_saw', 1, TE('saw_blade'))
@@ -111,5 +120,21 @@ onEvent("recipes", event => {
 	andesite_machine('thermal:dynamo_stirling', 1, TE('rf_coil'))
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
+
+
+  let handmade_machine = (id, amount, other_ingredient) => {
+		event.remove({ output: id })
+		if (other_ingredient) {
+			event.smithing(Item.of(id, amount), 'kubejs:handmade_machine', other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:handmade_machine', B: other_ingredient })
+		}
+		else
+			event.stonecutting(Item.of(id, amount), 'kubejs:handmade_machine')
+	}
+
+  handmade_machine('waterstrainer:strainer_base', 1, MC('iron_bars'))
+  handmade_machine('supplementaries:bellows', 1, '#forge:leather')
+  handmade_machine('supplementaries:clock_block', 1, 'minecraft:clock')
+  handmade_machine('supplementaries:speaker_block', 1, '#forge:gems/emerald')
 
 })

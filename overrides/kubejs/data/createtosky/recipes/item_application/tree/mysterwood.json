@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "minecraft:saplings"
+    },
+    {
+      "item": "forbidden_arcanus:golden_feather"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:mysterywood_sapling"
+    }
+  ]
+}

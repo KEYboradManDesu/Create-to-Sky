@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "tag": "forge:dusts/corrupti"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:petrified_root"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"type":"mekanism:nucleosynthesizing","itemInput":{"ingredient":{"tag":"forge:feathers"}},"gasInput":{"amount":4,"gas":"mekanism:antimatter"},"output":{"item":"forbidden_arcanus:dragon_scale"},"duration":800}

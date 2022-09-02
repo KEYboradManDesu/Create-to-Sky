@@ -30,13 +30,15 @@
 			title: "筛出万物！"
 			icon: "exnihilosequentia:jungle_sieve"
 			x: 0.0d
-			y: 3.5d
+			y: 4.2d
 			shape: "circle"
 			subtitle: "步骤 0-8"
 			description: ["合成出来只是一个筛框，是不自带筛网的，筛网需要另外合成并右键装配。可以用来筛沙子、泥土、灵魂沙、尘土。"]
 			dependencies: [
 				"641BF6D1C0119BAF"
 				"7FA6289A7DFEF822"
+				"56EEBDFA030A6F5D"
+				"4F27CB86C95D6A35"
 			]
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
@@ -272,6 +274,7 @@
 				id: "45546C71F5BBEDAA"
 				type: "item"
 				item: "exnihilosequentia:dust"
+				consume_items: false
 			}]
 		}
 		{
@@ -279,7 +282,7 @@
 			x: 2.1d
 			y: 2.8d
 			shape: "circle"
-			description: ["&6燧石筛网&r能允许你的&6砂砾&r筛出各种&6矿物粒&r。"]
+			description: ["进过升级的&6燧石筛网&r能允许你的&6砂砾&r筛出各种&6矿物粒&r。"]
 			dependencies: ["641BF6D1C0119BAF"]
 			size: 0.7d
 			id: "1F5CEC4CAC0AA928"
@@ -287,6 +290,145 @@
 				id: "5B5D8927B75547D5"
 				type: "item"
 				icon: "exnihilosequentia:flint_mesh"
+				item: "exnihilosequentia:flint_mesh"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.1d
+			y: 2.1d
+			subtitle: "步骤 0-9"
+			description: ["用&6线&r将&6铁锭&r缠绕在木棍上，你发明了简易工具锤"]
+			dependencies: [
+				"7D43046E1B776A14"
+				"1F5CEC4CAC0AA928"
+			]
+			size: 0.7d
+			id: "6228AD9031B9247A"
+			tasks: [{
+				id: "50027D4C4CABC3DD"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.8d
+			y: 2.8d
+			subtitle: "步骤 0-10"
+			description: ["用&6燧石&r制作出你的第一个构件吧。"]
+			dependencies: ["6228AD9031B9247A"]
+			size: 0.7d
+			id: "0E8D425D2DA637AF"
+			tasks: [{
+				id: "46108ECC05512D2C"
+				type: "item"
+				item: "kubejs:handmade_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.8d
+			y: 4.2d
+			subtitle: "步骤 0-11"
+			description: ["一个非常简单的手工机器，它会派上大用处的。"]
+			dependencies: ["0E8D425D2DA637AF"]
+			size: 0.7d
+			id: "00FED9AE1821A44E"
+			tasks: [{
+				id: "7FF65FCC04C4BBB9"
+				type: "item"
+				item: "kubejs:handmade_machine"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.1d
+			y: 4.8999999999999995d
+			subtitle: "步骤 0-14"
+			description: ["&6滤网基座&r能允许&6滤网&r过滤水中各种各样的物质。"]
+			dependencies: [
+				"2618DE286746BB3E"
+				"00FED9AE1821A44E"
+			]
+			size: 0.7d
+			id: "6DC4A8DDD7A7472F"
+			tasks: [{
+				id: "1402ACE93E1A3637"
+				type: "item"
+				item: "waterstrainer:strainer_base"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.4d
+			y: 4.2d
+			subtitle: "步骤 0-13"
+			description: ["最简易的滤网，但足够了。"]
+			dependencies: ["17054915BB1DA5D0"]
+			size: 0.7d
+			id: "2618DE286746BB3E"
+			tasks: [{
+				id: "1201464F6745E056"
+				type: "item"
+				item: {
+					id: "waterstrainer:strainer_survivalist"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			icon: "farmersdelight:straw"
+			x: 1.4d
+			y: 3.5d
+			subtitle: "步骤 0-12"
+			description: ["通过使用&6小刀&r破坏&6草&r和&6高草&r得到&6草秆&r，可以用于合成&6粗布&r。"]
+			dependencies: ["641BF6D1C0119BAF"]
+			size: 0.7d
+			id: "17054915BB1DA5D0"
+			tasks: [
+				{
+					id: "7CC9583AFF58928A"
+					type: "item"
+					item: "farmersdelight:straw"
+					consume_items: false
+				}
+				{
+					id: "472C80536C0607DC"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: 2.1d
+			y: 5.6d
+			subtitle: "步骤 0-15"
+			description: ["&6生存者过滤网&r能从水中过滤出&6黏土&r。"]
+			dependencies: ["6DC4A8DDD7A7472F"]
+			size: 0.7d
+			id: "26CD6384A084A493"
+			tasks: [{
+				id: "13CC4A17B7EAF481"
+				type: "item"
+				item: "minecraft:clay_ball"
 				consume_items: false
 			}]
 		}

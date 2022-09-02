@@ -104,7 +104,10 @@ onEvent('item.tags', event => {
   event.get('thermal:crafting/dies').add('#forge:trade_cards')
 	event.get('thermal:crafting/dies').add('#forge:profession_cards')
 
-	event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
+  event.get('thermal:crafting/dies').add('#forge:profession_cards')
+
+	event.get("forge:dust/obsidian").add("#forge:dusts/obsidian")
+  
 
   event.get("forge:insulating").add("immersiveengineering:insulating_glass")
   event.get("forge:insulating").add("immersiveengineering:slag_glass")
@@ -113,6 +116,11 @@ onEvent('item.tags', event => {
   event.get("forge:saws").add("kubejs:iron_saw")
 	event.get("forge:saws").add("kubejs:diamond_saw")
   event.get("forge:saws").add("kubejs:netherite_saw")
+
+  event.get("forge:tools/saws").add("kubejs:stone_saw")
+  event.get("forge:tools/saws").add("kubejs:iron_saw")
+	event.get("forge:tools/saws").add("kubejs:diamond_saw")
+  event.get("forge:tools/saws").add("kubejs:netherite_saw")
 
   event.get("forge:dyes/red").add("thermal:ruby_dust")
   event.get("forge:dyes/blue").add("thermal:sapphire_dust")
@@ -144,6 +152,7 @@ onEvent('item.tags', event => {
   event.get("forge:nuggets/electrum").remove("immersiveengineering:nugget_electrum")
   event.get("forge:nuggets/steel").remove("immersiveengineering:nugget_steel")
   event.get("forge:nuggets/copper").remove("immersiveengineering:nugget_copper")
+  event.get("forge:nuggets/copper").remove("exnihilosequentia:copper_nugget")
 
   event.get("forge:plates/nickel").remove("immersiveengineering:plate_nickel")
   event.get("forge:plates/lead").remove("immersiveengineering:plate_lead")
@@ -167,5 +176,8 @@ onEvent('item.tags', event => {
   event.get("forge:dusts/copper").remove("immersiveengineering:dust_copper")
   event.get("forge:dusts/iron").remove("immersiveengineering:dust_iron")
   event.get("forge:dusts/gold").remove("immersiveengineering:dust_gold")
+
+  event.get("forge:dusts/cobalt").add("kubejs:cobalt_dust")
+  event.get("forge:dusts/zinc").add("kubejs:zinc_dust")
 
 })

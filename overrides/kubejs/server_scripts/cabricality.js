@@ -19,6 +19,9 @@ let CC = (id, x) => MOD("computercraft", id, x)
 let TE = (id, x) => MOD("thermal", id, x)
 let Mek = (id, x) => MOD("mekanism", id, x)
 let OC = (id, x) => MOD("occultism", id, x)
+let SD = (id, x) => MOD("storagedrawers", id, x)
+let AC = (id, x) => MOD("aquaculture", id, x)
+
 
 let wood_types = [
 	MC("oak"), MC("spruce"), MC("birch"), MC("jungle"), MC("acacia"), MC("dark_oak"), MC("crimson"), MC("warped"),

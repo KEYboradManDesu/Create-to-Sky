@@ -45,4 +45,16 @@ onEvent("recipes", event => {
 	infinity("pipez:fluid_pipe", 16)
 	infinity("pipez:energy_pipe", 16)
 	infinity("pipez:gas_pipe", 16)
+
+
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_ingot", "upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot","kubejs:creative_machine")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_sword", "upgradednetherite_ultimate:ultimate_upgraded_netherite_sword","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_pickaxe", "upgradednetherite_ultimate:ultimate_upgraded_netherite_pickaxe","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_shovel", "upgradednetherite_ultimate:ultimate_upgraded_netherite_shovel","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_axe", "upgradednetherite_ultimate:ultimate_upgraded_netherite_axe","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_bow", "upgradednetherite_ultimate:ultimate_upgraded_netherite_bow","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_horse_armor", "upgradednetherite_ultimate:ultimate_upgraded_netherite_horse_armor","upgradednetherite_creative:creative_upgraded_netherite_ingot")
+
+
+
 })

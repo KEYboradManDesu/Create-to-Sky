@@ -31,6 +31,7 @@ onEvent("item.registry", event => {
 			.rarity(rarity ? rarity : RARITY_COMMON)
 	}
 	let initMechanisms = () => {
+		registerMechanism("Handmade", "粗制")
 		registerMechanism("Kinetic", "动力")
 		registerMechanism("Sealed", "密封")
 		registerMechanism("Infernal", "酷热", RARITY_UNCOMMON)
@@ -404,27 +405,14 @@ onEvent("block.registry", event => {
 			.tagBlock("create:wrench_pickup")
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
+	registerMachine("Handmade", "手工机", "solid")
 	registerMachine("Andesite", "安山机", "solid")
 	registerMachine("Brass", "黄铜机", "translucent")
 	registerMachine("Copper", "铜机", "cutout")
 	registerMachine("Zinc", "锌机", "cutout")
 	registerMachine("Enderium", "末影合金机", "cutout")
 	registerMachine("Obsidian", "黑曜机", "translucent")
-
-
-	let CreativeMachine = (name, localName, layer) => {
-		let id = name.toLowerCase() + "_machine"
-		event.create(id)
-			.model(modpackId + ":block/machine/" + id)
-			.material("lantern")
-			.hardness(-1.0)
-			.displayName(localName + "器")
-			.notSolid()
-			.renderType(layer)
-			.tagBlock("create:wrench_pickup")
-			.tagBlock("minecraft:mineable/pickaxe")
-	}
-	CreativeMachine("Creative", "§d§l创造机", "translucent")
+	registerMachine("Creative", "§d§l创造机", "translucent")
 
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
@@ -448,6 +436,7 @@ onEvent("block.registry", event => {
 		.hardness(3.0)
 		.displayName("§d§l智能矩阵")
 		.tagBlock("minecraft:mineable/pickaxe")
+
 
 })
 

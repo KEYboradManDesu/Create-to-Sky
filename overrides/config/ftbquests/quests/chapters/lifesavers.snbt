@@ -408,6 +408,7 @@
 			}]
 		}
 		{
+			title: "地狱刷石机"
 			x: 3.0d
 			y: 1.0d
 			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成地狱方块。"]
@@ -425,6 +426,73 @@
 				id: "0C5DA6A71EAF0107"
 				type: "item"
 				item: "skinnedlanterns:skeleton_soul_lantern_block"
+			}]
+		}
+		{
+			title: "战前演练"
+			x: -1.0d
+			y: -5.0d
+			description: ["还在用传统僵尸之类的生物测试伤害？试试训练人偶，它能为你提供精准的数值反馈。"]
+			id: "277D457E6B70CAFE"
+			tasks: [{
+				id: "7FB4C7EC1503FA0F"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "1ECD7C601BA75554"
+					type: "item"
+					item: "archers_paradox:training_arrow"
+					count: 32
+				}
+				{
+					id: "38C96DFC1E5B2B45"
+					type: "item"
+					item: "archers_paradox:challenge_arrow"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "深度怪物学习"
+			x: 3.0d
+			y: -5.0d
+			description: [
+				""
+				"人们总喜欢挂机获得怪物掉落物，现在机会来了。"
+			]
+			id: "59648ACAE14A5D28"
+			tasks: [{
+				id: "0EE4D06D2B31EE0A"
+				type: "item"
+				item: "hostilenetworks:sim_chamber"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "402BE90660ACDCD3"
+				type: "item"
+				item: "minecraft:clay"
+				count: 4
+			}]
+		}
+		{
+			title: "绘画之乐"
+			x: -3.0d
+			y: -5.0d
+			description: ["想记录下日落美景又不想用打破沉浸式体验的F2截图?你可以试试徒手画出来。"]
+			id: "4EDDF14C9B67AF68"
+			tasks: [{
+				id: "65D08E41105F0D88"
+				type: "item"
+				item: "xercapaint:item_palette"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "1964E4D6BE75303F"
+				type: "item"
+				item: "xercapaint:item_easel"
 			}]
 		}
 	]

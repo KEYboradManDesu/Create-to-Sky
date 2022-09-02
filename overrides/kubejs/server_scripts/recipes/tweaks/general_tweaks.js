@@ -30,6 +30,8 @@ onEvent("recipes", event => {
   event.remove({ output: ('projecte:collector_mk1') })
   event.remove({ output: ('projecte:philosophers_stone') })
 
+  event.remove({ output: ('vanillacookbook:netherite_apple') })
+
   event.remove({ output: ('immersiveengineering:ingot_nickel') })
   event.remove({ output: ('immersiveengineering:ingot_lead') })
   event.remove({ output: ('immersiveengineering:ingot_silver') })
@@ -109,6 +111,11 @@ onEvent("recipes", event => {
 
   event.remove({ id: ("twilightforest:uncrafting_table") })
 
+  event.remove({ id: ("hostilenetworks:living_matter/framework") })
+  event.remove({ id: ("hostilenetworks:living_matter/deep_learner") })
+  event.remove({ id: ("hostilenetworks:living_matter/matrix") })
+
+
   event.remove({ id: "mekanism:control_circuit/advanced" })
   event.remove({ id: "mekanism:control_circuit/elite" })
   event.remove({ id: "mekanism:chemical_tank/basic" })
@@ -122,7 +129,9 @@ onEvent("recipes", event => {
   event.remove({ id: "mekanism:metallurgic_infusing/alloy/atomic" })
   event.remove({ id: "mekanism:robit" })
 
-  event.remove({ id: "avaritia:infinity_catalyst" })
+  event.remove({ id: "exnihilosequentia:ens_copper_nugget" })
+
+  event.remove({ id: "mekanism:robit" })
 
   event.remove({ id: "immersiveengineering:crafting/component_iron" })
   event.remove({ id: "immersiveengineering:crafting/component_steel" })
@@ -281,6 +290,11 @@ onEvent("recipes", event => {
     event.recipes.createCrushing([Item.of(AE2("singularity")).withChance(1)], CR("crushing_wheel")).processingTime(250)
     event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
     event.recipes.createMilling([AE2("sky_dust"), AE2("sky_stone_block")], AE2("sky_stone_block")).processingTime(1000)
+
+    event.recipes.createSplashing([
+      Item.of(KJ("sand_ball")).withChance(0.125)
+    ], 'minecraft:sandstone')
+    event.recipes.thermal.bottler(KJ("sand_ball"), [Fluid.of(MC("water"), 50), "#forge:sand/colorless"]).energy(1000)
     
     event.shaped(KJ("chromatic_resonator"), [
       " R ",
@@ -311,6 +325,13 @@ onEvent("recipes", event => {
       R: '#forge:rods/iron',
       L: '#forge:gears/iron',
       S: '#forge:dyes/blue'
+    })
+
+    event.shaped("xercapaint:item_palette", [
+      "RR",
+      "RR"
+    ], {
+      R: '#forge:plastic'
     })
 
     event.shaped("industrialforegoing:tinydryrubber", [
@@ -501,10 +522,7 @@ onEvent("recipes", event => {
   event.recipes.createMixing(Item.of("forbidden_arcanus:xpetrified_ore", 1), ["create:experience_nugget", ["minecraft:andesite"]])
   event.recipes.createMixing(Item.of("forbidden_arcanus:arcane_crystal_ore", 1), ["#forge:normal_stone", ["ae2:certus_quartz_crystal"]])
   event.recipes.createMixing(Item.of("forbidden_arcanus:runic_stone", 1), ["#forge:normal_stone", ["#botania:petals"]])
-  event.recipes.createMixing(Item.of("forbidden_arcanus:mysterywood_sapling", 1), ["#forge:sapling", ["forbidden_arcanus:arcane_crystal_dust"]])
-  event.recipes.createMixing(Item.of("forbidden_arcanus:cherrywood_sapling", 1), ["#forge:sapling", ["#forge:dyes/pink"]])
-  event.recipes.createMixing(Item.of("forbidden_arcanus:growing_edelwood", 1), ["#forge:sapling", ["forbidden_arcanus:corrupti_dust"]])
-  event.recipes.createMixing(Item.of("forbidden_arcanus:fungyss", 1), ["#forge:sapling", ["#forge:mushrooms"]])
+
 
   event.recipes.createMixing(Item.of("buddycards:luminis_ore", 1), ["#forge:cobblestone", ["#forge:dusts/lumium"]])
   event.recipes.createMixing(Item.of("buddycards:buddycard_pack_base", 1), ["minecraft:grass_block", ["buddycards:luminis_crystal"]])
@@ -720,15 +738,16 @@ event.shaped(('buddycards:luminis_sleeve'), [
     "AADDDAA",
     "ADDDDDA",
     "DDBCBDD",
-    "DDCBCDD",
+    "DDCECDD",
     "DDBCBDD",
-    "AADDDAA",
+    "ADDDDDA",
     "AADDDAA"
   ], {
     A: "avaritia:neutronium",
     B: "avaritia:star_fuel",
     C: "kubejs:creative_machine",
     D: "avaritia:infinity",
+    E: "mekanism:pellet_antimatter"
   })
 
   event.remove({ output: ('avaritia:infinity') })
@@ -827,6 +846,8 @@ event.shaped(('buddycards:luminis_sleeve'), [
 
   onEvent('recipes', event => {
     trading(event)
+    drawersop(event)
+    tweaks(event)
   })
 
   function trading(event) {
@@ -893,5 +914,157 @@ event.shaped(('buddycards:luminis_sleeve'), [
 
 
 
+
+  function drawersop(event) {
+    let drawer_types = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak']
+    let drawer_sizes = ['1', '2', '4']
+    event.replaceInput({ id: SD('compacting_drawers_3') }, MC('iron_ingot'), CR('zinc_ingot'))
+    event.remove({ output: SD("upgrade_template") })
+  
+    drawer_types.forEach(e => {
+  
+      let trim = SD(`${e}_trim`)
+      let plank = MC(`${e}_planks`)
+      event.remove({ id: trim })
+      event.shaped(Item.of(trim, 4), [
+        'SSS',
+        'PMP',
+        'SSS'
+      ], {
+        P: CR('zinc_ingot'),
+        M: '#forge:chests/wooden',
+        S: plank
+      })
+  
+      event.stonecutting(SD("upgrade_template"), trim)
+  
+      drawer_sizes.forEach(size => {
+        let full = SD(`${e}_full_drawers_${size}`)
+        let half = SD(`${e}_half_drawers_${size}`)
+        event.remove({ id: full })
+        event.remove({ id: half })
+        event.stonecutting(full, trim)
+        event.stonecutting(Item.of(half, 2), trim)
+      })
+    })
+  
+  }
+  function tweaks(event) {
+  event.remove({ id: 'waterstrainer:string_mesh' })
+	event.remove({ id: 'waterstrainer:iron_mesh' })
+	event.remove({ id: 'waterstrainer:obsidian_mesh' })
+	event.remove({ id: 'waterstrainer:strainer_survivalist' })
+	event.remove({ id: 'waterstrainer:strainer_survivalist_solid' })
+	event.remove({ id: 'waterstrainer:strainer_survivalist_reinforced' })
+	event.remove({ id: 'waterstrainer:strainer_fisherman' })
+	event.remove({ id: 'waterstrainer:strainer_fisherman_solid' })
+	event.remove({ id: 'waterstrainer:strainer_fisherman_reinforced' })
+
+  event.remove({ id: "computercraft:turtle_advanced" })
+	event.remove({ id: "computercraft:turtle_advanced_upgrade" })
+	event.remove({ id: "computercraft:turtle_normal" })
+
+	event.smithing("computercraft:turtle_normal", "computercraft:computer_normal", TE("invar_gear"))
+	event.smithing("computercraft:turtle_advanced", "computercraft:computer_advanced", TE("invar_gear"))
+  event.recipes.createMechanicalCrafting("computercraft:turtle_normal", "AB", { A: "computercraft:computer_normal", B: TE("invar_gear") })
+	event.recipes.createMechanicalCrafting("computercraft:turtle_advanced", "AB", { A: "computercraft:computer_advanced", B: TE("invar_gear") })
+
+  event.shaped("computercraft:turtle_advanced", [
+		'SSS',
+		'SMS',
+		'S S'
+	], {
+		M: "computercraft:turtle_normal",
+		S: MC('gold_ingot')
+	})
+
+  event.shaped(AE2('entropy_manipulator'), [
+		'S  ',
+		' M ',
+		'  M'
+	], {
+		M: TE("lead_plate"),
+		S: AE2('#crystals/fluix')
+	})
+
+  event.shaped('waterstrainer:strainer_survivalist', [
+		'SSS',
+		'MMM',
+		'SSS'
+	], {
+		M: FD('canvas'),
+		S: 'minecraft:stick'
+	})
+
+	event.shaped('waterstrainer:strainer_fisherman', [
+		'SSS',
+		'MMM',
+		'SSS'
+	], {
+		M: FD('canvas'),
+		S: MC('bamboo')
+	})
+
+	event.shaped('waterstrainer:strainer_fisherman_reinforced', [
+		'SSS',
+		'MAM',
+		'SSS'
+	], {
+		A: AC('neptunium_ingot'),
+		M: FD('canvas'),
+		S: MC('bamboo')
+	})
+
+  event.remove({ id: "forbidden_arcanus:edelwood_stick" })
+	event.shaped("3x forbidden_arcanus:edelwood_stick", [
+		'S',
+		'A',
+		'S'
+	], {
+		S: 'forbidden_arcanus:edelwood_planks',
+		A: MC('stick')
+	})
+
+  event.remove({ output: TE("side_config_augment") })
+	event.shaped(TE("side_config_augment"), [
+		' S ',
+		'PMP',
+		' S '
+	], {
+		P: TE("invar_ingot"),
+		M: TE("redstone_servo"),
+		S: TE("gold_gear")
+	})
+ 
+
+  let crying_obsidian_cobblegen = (adjacent, output) => {
+		event.custom({
+			"type": "thermal:rock_gen",
+			"adjacent": adjacent,
+			"below": "minecraft:crying_obsidian",
+			"result": { "item": output }
+		})
+	}
+  crying_obsidian_cobblegen(MC("packed_ice"), MC("andesite"))
+	crying_obsidian_cobblegen(AP("polished_packed_ice"), MC("granite"))
+	crying_obsidian_cobblegen(AP("chiseled_packed_ice"), MC("diorite"))
+  crying_obsidian_cobblegen(AP("packed_ice_pillar"), CR("limestone"))
+
+  let rich_soul_soil_cobblegen = (adjacent, output) => {
+		event.custom({
+			"type": "thermal:rock_gen",
+			"adjacent": adjacent,
+			"below": "nethersdelight:rich_soul_soil",
+			"result": { "item": output }
+		})
+	}
+  rich_soul_soil_cobblegen(MC("magma_block"), MC("netherrack"))
+
+  event.recipes.createCrushing([Item.of(AC('neptunium_ingot', 2)), Item.of(AC('neptunium_nugget', 5)).withChance(.5)], AC('neptunes_bounty')).processingTime(500)
+  
+  event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:black_sand')
+	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:white_sand')
+	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:orange_sand')
+}
 
 })

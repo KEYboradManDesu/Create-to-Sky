@@ -46,6 +46,8 @@ onEvent("recipes", event => {
 	fluix_machine(AE2('formation_core'), 4, AE2("logic_processor"))
 	fluix_machine(AE2('annihilation_core'), 4, AE2("calculation_processor"))
 	fluix_machine(AE2('chest'), 1, MC('chest'))
+	fluix_machine(("hostilenetworks:sim_chamber"), 1, ('#forge:tools/swords'))
+	fluix_machine(("hostilenetworks:loot_fabricator"), 1, ('dummmmmmy:target_dummy_placer'))
 
 	event.recipes.createPressing(KJ("radiant_sheet"), CR("refined_radiance"))
 	event.recipes.createMechanicalCrafting(KJ('radiant_coil'), ['A'], { A: KJ('radiant_sheet') })
