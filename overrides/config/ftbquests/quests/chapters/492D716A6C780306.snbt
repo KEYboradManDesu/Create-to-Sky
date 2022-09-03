@@ -81,7 +81,7 @@
 			y: 0.0d
 			shape: "circle"
 			subtitle: "步骤 0"
-			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。"]
+			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。圆石也可以通过&6潜行&r右击&6泥土&r或&6草方块&r获得的&6卵石&r合成获得。"]
 			dependencies: ["75FB28B253B14876"]
 			hide: true
 			id: "3AAD60FC5E704C3A"

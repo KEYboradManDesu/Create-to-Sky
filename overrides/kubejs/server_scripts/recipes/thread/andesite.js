@@ -91,7 +91,7 @@ onEvent("recipes", event => {
 	], {
 		N: MC('iron_nugget'),
 		P: CR('iron_sheet'),
-		L: TE('lead_ingot')
+		L: '#forge:ingots/lead'
 	})
   event.remove({ output: TE('saw_blade') })
 	event.shaped(TE('saw_blade'), [
@@ -101,7 +101,7 @@ onEvent("recipes", event => {
 	], {
 		N: MC('iron_nugget'),
 		P: CR('iron_sheet'),
-		L: TE('lead_ingot')
+		L: '#forge:ingots/lead'
 	})
 
   andesite_machine('create:portable_storage_interface', 2)
@@ -137,6 +137,7 @@ onEvent("recipes", event => {
   handmade_machine('supplementaries:bellows', 1, '#forge:leather')
   handmade_machine('supplementaries:clock_block', 1, 'minecraft:clock')
   handmade_machine('supplementaries:speaker_block', 1, '#forge:gems/emerald')
+  handmade_machine('supplementaries:notice_board', 1, '#forge:paper')
 
   event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:handmade_mechanism_manual_only")
 

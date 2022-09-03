@@ -37,6 +37,7 @@ onEvent("recipes", event => {
 	copper_machine("create:item_drain", 1, MC("iron_bars"))
 	copper_machine("create:steam_engine", 2, MC("piston"))
 	copper_machine("create:smart_fluid_pipe", 2)
+	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
 
 
 })

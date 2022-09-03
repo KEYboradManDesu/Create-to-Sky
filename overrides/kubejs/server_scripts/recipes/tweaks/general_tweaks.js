@@ -123,6 +123,7 @@ onEvent("recipes", event => {
   event.remove({ id: ("hostilenetworks:living_matter/deep_learner") })
   event.remove({ id: ("hostilenetworks:living_matter/matrix") })
 
+  event.remove({ id: ("gardenofglass:pebble_to_cobblestone") })
 
   event.remove({ id: "mekanism:control_circuit/advanced" })
   event.remove({ id: "mekanism:control_circuit/elite" })
@@ -186,7 +187,13 @@ onEvent("recipes", event => {
   event.replaceInput("#forge:plates/iron", "create:iron_sheet")
   event.replaceInput("#forge:plates/copper", "create:copper_sheet")
 
-
+  event.shaped(MC("cobblestone"), [
+    "SSS",
+    "SSS",
+    "SSS"
+  ], {
+    S: "botania:pebble"
+  })
 
   event.remove({ id: CR("splashing/gravel") })
   event.recipes.createSplashing([
@@ -200,13 +207,24 @@ onEvent("recipes", event => {
     Item.of(MC("dead_bush")).withChance(0.05)
   ], "minecraft:red_sand")
 
+  
+  event.remove({ output: "excompressum:ugly_steel_plating" })
+  event.shaped("excompressum:ugly_steel_plating", [
+    " S ",
+    "STS",
+    " S "
+  ], {
+    T: '#forge:plates/enderium',
+    S: '#forge:ingots/steel'
+  })
+  
   event.remove({ output: MC("hopper") })
   event.shaped(MC("hopper"), [
     "T T",
     "S S",
     " S "
   ], {
-    T: "thermal:tin_ingot",
+    T: '#forge:ingots/tin',
     S: "create:iron_sheet"
   })
 
@@ -310,7 +328,7 @@ onEvent("recipes", event => {
       "LS "
     ], {
       R: TE("ruby"),
-      L: TE("lead_ingot"),
+      L: '#forge:ingots/lead',
       S: TE("sapphire")
     })
 

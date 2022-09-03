@@ -309,27 +309,20 @@
 			description: ["面向上方的&6动力锯&r则可以进一步处理原木..."]
 			dependencies: ["2CB570195DA7E106"]
 			id: "532EFE32C3A515B5"
-			tasks: [
-				{
-					id: "3C7A4BA98EEC90E8"
-					type: "item"
-					title: "任意去皮原木"
-					icon: "minecraft:stripped_oak_log"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "c:stripped_logs"
-						}
+			tasks: [{
+				id: "638F01EB56448ED2"
+				type: "item"
+				title: "任意去皮原木"
+				icon: "minecraft:stripped_oak_log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:stripped_logs"
 					}
-					consume_items: false
 				}
-				{
-					id: "7B60357D06FE3ADC"
-					type: "checkmark"
-					title: "自动生产"
-				}
-			]
+				consume_items: false
+			}]
 		}
 		{
 			title: "再次切割"

@@ -512,5 +512,17 @@
 				}
 			]
 		}
+		{
+			x: -5.0d
+			y: 1.0d
+			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册。"]
+			id: "40F2A5C2D4B1219F"
+			tasks: [{
+				id: "374681B5A5AF4BBD"
+				type: "item"
+				item: "akashictome:tome"
+				consume_items: false
+			}]
+		}
 	]
 }
