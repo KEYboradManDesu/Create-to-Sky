@@ -1,11 +1,11 @@
 {
-  "type": "indrev:smelter",
+  "type": "thermal:crucible",
   "ingredients": {
     "item": "createplus:brass_dust"
   },
   "fluidOutput": {
     "fluid": "tconstruct:molten_brass",
-    "amount": 9000
+    "amount": 10
   },
   "processTime": 600
 }

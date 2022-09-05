@@ -17,12 +17,7 @@ onEvent("recipes", event => {
 		else
 			event.stonecutting(Item.of(id, amount), "thermal:machine_frame")
 	}
-	machine_frame(("mekanism:basic_logistical_transporter"), 8, ('mekanism:basic_control_circuit'))
-	machine_frame(("mekanism:basic_pressurized_tube"), 8, ('#forge:glass_panes'))
-	machine_frame(("mekanism:basic_universal_cable"), 16, ('thermal:rf_coil'))
-	machine_frame(("mekanism:diversion_transporter"), 8, ('minecraft:iron_bars'))
-	machine_frame(("mekanism:restrictive_transporter"), 8, ('tconstruct:gold_bars'))
-	machine_frame(("mekanism:basic_mechanical_pipe"), 8, ('#forge:ingots/platinum'))
 	machine_frame(("mekanism:steel_casing"), 1, ('beyond_earth:compressed_steel'))
+	machine_frame(("mekanism:basic_pressurized_tube"), 16, ('create:smart_fluid_pipe'))
 
 })

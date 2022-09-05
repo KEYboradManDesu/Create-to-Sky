@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "indrev:silver_ingot"
+      "tag": "forge:ingots/silver"
     },
     {
       "item": "minecraft:gold_ingot"

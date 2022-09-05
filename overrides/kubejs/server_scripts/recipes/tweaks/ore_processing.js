@@ -107,6 +107,7 @@ onEvent('item.tags', event => {
   event.get('thermal:crafting/dies').add('#forge:profession_cards')
 
 	event.get("forge:dust/obsidian").add("#forge:dusts/obsidian")
+  event.get("forge:dusts").add("kubejs:desh_dust")
   
 
   event.get("forge:insulating").add("immersiveengineering:insulating_glass")

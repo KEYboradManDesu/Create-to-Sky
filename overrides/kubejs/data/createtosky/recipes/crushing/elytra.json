@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:elytra"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:elytra_broken",
+      "amount": 3,
+      "chance": 1
+    },
+    {
+      "item": "kubejs:elytra_broken",
+      "amount": 1,
+      "chance": 0.75
+    }
+  ]
+}

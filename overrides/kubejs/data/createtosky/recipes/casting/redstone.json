@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "name": "kubejs:redstone",
+    "name": "thermal:redstone",
     "amount": 500
   },
   "result": {

@@ -195,6 +195,16 @@ onEvent("recipes", event => {
     S: "botania:pebble"
   })
 
+  event.shaped(MC("elytra"), [
+    "SBS",
+    "C C",
+    "C C"
+  ], {
+    S: 'kubejs:elytra_broken',
+    B: '#forge:plates/netherite',
+    C: 'minecraft:phantom_membrane'
+  })
+
   event.remove({ id: CR("splashing/gravel") })
   event.recipes.createSplashing([
     Item.of(MC("iron_nugget", 3)).withChance(0.25),
@@ -206,6 +216,10 @@ onEvent("recipes", event => {
     Item.of(MC("gold_nugget", 2)).withChance(0.125),
     Item.of(MC("dead_bush")).withChance(0.05)
   ], "minecraft:red_sand")
+
+
+  event.remove({ id: "tconstruct:common/flint" })
+  event.shapeless('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel']).id("minecraft:flint_manual_only")
 
   
   event.remove({ output: "excompressum:ugly_steel_plating" })
@@ -316,6 +330,7 @@ onEvent("recipes", event => {
     event.recipes.createCrushing([Item.of(AE2("singularity")).withChance(1)], CR("crushing_wheel")).processingTime(250)
     event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
     event.recipes.createMilling([AE2("sky_dust"), AE2("sky_stone_block")], AE2("sky_stone_block")).processingTime(1000)
+    
 
     event.recipes.createSplashing([
       Item.of(KJ("sand_ball")).withChance(0.125)
@@ -837,14 +852,6 @@ event.shaped(('buddycards:luminis_sleeve'), [
     .loops(16)
     .id("thermal:invar_ingot")
 
-  event.recipes.createSequencedAssembly([
-    TE("lead_plate"),
-  ], TE("lead_ingot"), [
-      event.recipes.createPressing(s, s)
-  ]).transitionalItem(s)
-    .loops(2)
-    .id("thermal:lead_plate")
-
   let x = "avaritia:crystal_matrix_ingot"
   event.recipes.createSequencedAssembly([
     KJ("crystal_matrix_sheet"),
@@ -891,6 +898,8 @@ event.shaped(('buddycards:luminis_sleeve'), [
     drawersop(event)
     tweaks(event)
     prettierpipes(event)
+    rubberMatters(event)
+    oreProcessing(event)
   })
 
   function trading(event) {
@@ -959,7 +968,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
 
 
   function drawersop(event) {
-    let drawer_types = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak']
+    let drawer_types = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped']
     let drawer_sizes = ['1', '2', '4']
     event.replaceInput({ id: SD('compacting_drawers_3') }, MC('iron_ingot'), CR('zinc_ingot'))
     event.remove({ output: SD("upgrade_template") })
@@ -1168,5 +1177,155 @@ function prettierpipes(event) {
 	event.recipes.thermal.smelter(TC("rose_gold_ingot", 2), [MC("copper_ingot"), MC("gold_ingot")])
 	event.recipes.thermal.smelter(TE("constantan_ingot", 2), [MC("copper_ingot"), TE("nickel_ingot")])
 
+	function rubberMatters(event) {
+    let overrideTreeOutput = (id, trunk, leaf) => {
+      event.remove({ id: id })
+      event.custom({
+        "type": "thermal:tree_extractor",
+        "trunk": trunk,
+        "leaves": leaf,
+        "result": {
+          "fluid": "thermal:resin",
+          "amount": 25
+        }
+      });
+    }
+  
+    overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_jungle'), MC('jungle_log'), MC('jungle_leaves'))
+    overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_spruce'), MC('spruce_log'), MC('spruce_leaves'))
+    overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_dark_oak'), MC('dark_oak_log'), MC('dark_oak_leaves'))
+    overrideTreeOutput(TE('compat/biomesoplenty/tree_extractor_bop_maple'), MC('oak_log'), 'biomesoplenty:maple_leaves')
+  
+    event.remove({ id: CR('crafting/kinetics/belt_connector') })
+    event.shaped(CR('belt_connector', 3), [
+      'SSS',
+      'SSS'
+    ], {
+      S: TE('cured_rubber')
+    })
+  
+    event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), "4x minecraft:vine"])
+    event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), '4x #minecraft:flowers'])
+    event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(TE('resin'), 250)])
+  
+    event.remove({ id: 'thermal:rubber_3' })
+    event.remove({ id: 'thermal:rubber_from_dandelion' })
+    event.remove({ id: 'thermal:rubber_from_vine' })
+    
 
+  }
+  
+  function oreProcessing(event) {
+
+    let stone = Item.of(MC("cobblestone"), 1).withChance(.5)
+    let otherstone = Item.of(OC("otherstone"), 1).withChance(.5)
+  
+  
+    event.recipes.createCrushing([Item.of("forbidden_arcanus:stellarite_piece", 1), Item.of("forbidden_arcanus:stellarite_piece", 1).withChance(.25), stone], "forbidden_arcanus:stella_arcanum")
+    event.recipes.createCrushing([Item.of("forbidden_arcanus:xpetrified_orb", 2), Item.of("forbidden_arcanus:xpetrified_orb", 1).withChance(.25), stone], "forbidden_arcanus:xpetrified_ore")
+    event.recipes.createCrushing([Item.of("buddycards:luminis_crystal", 2), Item.of("buddycards:luminis_crystal", 1).withChance(.25), stone], "buddycards:luminis_ore")
+    event.recipes.createCrushing([Item.of("forbidden_arcanus:arcane_crystal", 2), Item.of("forbidden_arcanus:arcane_crystal_dust", 1).withChance(.25), stone], "forbidden_arcanus:arcane_crystal_ore")
+    event.recipes.createCrushing([Item.of(OC("iesnium_dust"), 2), Item.of(OC("iesnium_dust"), 1).withChance(.25), otherstone], OC("iesnium_ore"))
+    event.recipes.createCrushing([Item.of(TE("sapphire"), 2), Item.of(TE("sapphire"), 1).withChance(.25), stone], TE("sapphire_ore"))
+    event.recipes.createCrushing([Item.of(TE("ruby"), 2), Item.of(TE("ruby"), 1).withChance(.25), stone], TE("ruby_ore"))
+  
+    event.recipes.createMilling(['4x ' + MC('redstone')], TE('cinnabar')).processingTime(700)
+	  event.recipes.createCrushing(['6x ' + MC('redstone')], TE('cinnabar')).processingTime(500)
+	  event.recipes.thermal.pulverizer(['8x ' + MC('redstone')], TE('cinnabar')).energy(10000)
+  
+    event.recipes.createMilling(['3x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').processingTime(700)
+    event.recipes.createCrushing(['6x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').processingTime(500)
+    event.recipes.thermal.pulverizer(['9x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').energy(10000)
+  
+    event.recipes.createMilling([TE('sulfur_dust')], TE('sulfur')).processingTime(500)
+    event.recipes.createMilling([TE('niter_dust')], TE('niter')).processingTime(500)
+    event.recipes.createMilling([TE('apatite_dust')], TE('apatite')).processingTime(500)
+  
+    let dust_process = (name, ingot, nugget, dust, ore, byproduct, fluid_byproduct_name) => {
+      let crushed = CR('crushed_' + name + '_ore')
+      let fluid = TC("molten_" + name)
+      let fluid_byproduct = TC("molten_" + fluid_byproduct_name)
+  
+      event.smelting(Item.of(nugget, 3), crushed)
+      event.smelting(Item.of(nugget, 1), dust).cookingTime(40)
+      event.recipes.createMilling([Item.of(crushed, 1), stone], ore)
+      event.recipes.createMilling([Item.of(dust, 3)], crushed)
+      event.recipes.createCrushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushed)
+      event.recipes.thermal.pulverizer([Item.of(dust, 6)], crushed).energy(15000)
+      event.recipes.thermal.pulverizer([crushed], ore).energy(3000)
+      event.recipes.thermal.crucible(Fluid.of(fluid, 144), ingot).energy(2000)
+  
+      event.recipes.thermal.crucible(Fluid.of(fluid, 48), dust).energy(3000)
+      event.recipes.createSplashing([Item.of(nugget, 2)], dust)
+      event.recipes.createMixing([Fluid.of(fluid, 288)], [Item.of(dust, 3), AE2('matter_ball')]).superheated()
+  
+      event.remove({ input: "#forge:ores/" + name, type: TE("smelter") })
+      event.remove({ input: "#forge:ores/" + name, type: TE("pulverizer") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("blasting") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("smelting") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("crushing") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("milling") })
+  
+      event.custom({
+        "type": "thermal:smelter",
+        "ingredient": {
+          "item": crushed
+        },
+        "result": [
+          {
+            "item": nugget,
+            "chance": 9.0
+          },
+          {
+            "item": byproduct,
+            "chance": (byproduct.endsWith('nugget') ? 1.8 : 0.2)
+          },
+          {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+          }
+        ],
+        "experience": 0.2,
+        "energy": 20000
+      })
+  
+      event.custom({
+        "type": "tconstruct:melting",
+        "ingredient": {
+          "item": dust
+        },
+        "result": {
+          "fluid": fluid,
+          "amount": 48
+        },
+        "temperature": 500,
+        "time": 30,
+        "byproducts": [
+          {
+            "fluid": fluid_byproduct,
+            "amount": 16
+          }
+        ]
+      });
+  
+    }
+  
+    dust_process('nickel', TE('nickel_ingot'), TE('nickel_nugget'), TE('nickel_dust'), TE('nickel_ore'), CR('copper_nugget'), 'copper')
+    dust_process('lead', TE('lead_ingot'), TE('lead_nugget'), TE('lead_dust'), TE('lead_ore'), MC('iron_nugget'), 'iron')
+    dust_process('lead', TE('lead_ingot'), TE('lead_nugget'), TE('lead_dust'), 'mekanism:lead_ore', MC('iron_nugget'), 'iron')
+    dust_process('iron', MC('iron_ingot'), MC('iron_nugget'), TE('iron_dust'), MC('iron_ore'), TE('nickel_nugget'), 'nickel')
+    dust_process('gold', MC('gold_ingot'), MC('gold_nugget'), TE('gold_dust'), MC('gold_ore'), TE('cinnabar'), 'zinc')
+    dust_process('copper', MC('copper_ingot'), TE('copper_nugget'), TE('copper_dust'), MC('copper_ore'), MC('gold_nugget'), 'gold')
+    dust_process('zinc', CR('zinc_ingot'), CR('zinc_nugget'), KJ('zinc_dust'), CR('zinc_ore'), TE('sulfur'), 'lead')
+    dust_process('uranium', 'mekanism:ingot_uranium', 'mekanism:nugget_uranium', 'mekanism:dust_uranium', 'mekanism:uranium_ore', TE('sulfur'), 'lead')
+    dust_process('tin', 'thermal:tin_ingot', 'thermal:tin_nugget', 'thermal:tin_dust', 'thermal:tin_ore', TE('sulfur'), 'lead')
+    dust_process('tin', 'thermal:tin_ingot', 'thermal:tin_nugget', 'thermal:tin_dust', 'mekanism:tin_ore', MC('copper_ingot'), 'copper')
+    dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'thermal:silver_ore', TE('sulfur'), 'lead')
+    dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'occultism:silver_ore', TE('sulfur'), 'lead')
+    dust_process('aluminum', 'immersiveengineering:ingot_aluminum', 'immersiveengineering:nugget_aluminum', 'immersiveengineering:dust_aluminum', 'immersiveengineering:ore_aluminum', MC('iron_nugget'), 'iron')
+    dust_process('osmium', 'mekanism:ingot_osmium', 'mekanism:nugget_osmium', 'mekanism:dust_osmium', 'mekanism:osmium_ore', MC('iron_nugget'), 'iron')
+    
+    event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC('iron_ore'), CR('crushed_iron_ore'))
+    event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC('gold_ore'), CR('crushed_gold_ore'))
+  }
 })

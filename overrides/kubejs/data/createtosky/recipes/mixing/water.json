@@ -2,10 +2,10 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create:copper_sheet"
+      "tag": "forge:plates/copper"
     },
     {
-      "item": "kubejs:zinc_sheet"
+      "item": "createaddition:zinc_sheet"
     },
     {
       "fluid": "minecraft:water",
@@ -14,18 +14,18 @@
   ],
   "results": [
     {
-      "fluid": "indrev:hydrogen_still",
+      "fluid": "mekanism:hydrogen",
       "amount": 810
     },
     {
-      "fluid": "ad_astra:oxygen",
+      "fluid": "mekanism:oxygen",
       "amount": 405
     },
     {
-      "item": "create:copper_sheet"
+      "item": "createaddition:zinc_sheet"
     },
     {
-      "item": "kubejs:zinc_sheet"
+      "item": "createaddition:zinc_sheet"
     }
   ],
   "heatRequirement":"heated"

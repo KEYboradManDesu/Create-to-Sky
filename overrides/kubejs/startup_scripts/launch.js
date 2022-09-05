@@ -138,6 +138,10 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/empty_music_disc")
 			.displayName("空音乐唱片").rarity(RARITY_UNCOMMON)
 
+		event.create("elytra_broken")
+			.texture(modpackId + ":item/broken_elytra")
+			.displayName("鞘翅碎片").rarity(RARITY_UNCOMMON)
+
 		event.create("matter_plastics")
 			.texture(modpackId + ":item/matter_plastics")
 			.displayName("物质条").rarity(RARITY_UNCOMMON)

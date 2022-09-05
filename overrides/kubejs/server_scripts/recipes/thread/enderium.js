@@ -59,5 +59,10 @@ onEvent("recipes", event => {
 	ender_machine(('excompressum:auto_heavy_sieve'), 1, '#excompressum:heavy_sieve')
 	ender_machine(('excompressum:auto_compressor'), 1, 'avaritia:compressed_crafting_table')
 	ender_machine('kubejs:pipe_module_tier_3', 4)
+	ender_machine(("mekanism:basic_logistical_transporter"), 8, ('mekanism:basic_control_circuit'))
+	ender_machine(("mekanism:basic_universal_cable"), 16, ('thermal:rf_coil'))
+	ender_machine(("mekanism:basic_mechanical_pipe"), 8, ('#forge:ingots/platinum'))
+	ender_machine(("mekanism:diversion_transporter"), 8, ('minecraft:iron_bars'))
+	ender_machine(("mekanism:restrictive_transporter"), 8, ('tconstruct:gold_bars'))
 
 })
