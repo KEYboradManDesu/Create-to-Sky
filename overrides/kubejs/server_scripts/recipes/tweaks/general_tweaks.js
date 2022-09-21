@@ -221,8 +221,7 @@ onEvent("recipes", event => {
   event.remove({ id: "tconstruct:common/flint" })
   event.shapeless('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel']).id("minecraft:flint_manual_only")
 
-  
-  event.remove({ output: "excompressum:ugly_steel_plating" })
+/*  event.remove({ output: "excompressum:ugly_steel_plating" })
   event.shaped("excompressum:ugly_steel_plating", [
     " S ",
     "STS",
@@ -231,7 +230,7 @@ onEvent("recipes", event => {
     T: '#forge:plates/enderium',
     S: '#forge:ingots/steel'
   })
-  
+*/  
   event.remove({ output: MC("hopper") })
   event.shaped(MC("hopper"), [
     "T T",
@@ -309,16 +308,6 @@ onEvent("recipes", event => {
 
   event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, "#c:plates/brass", CR("golden_sheet"))
 
-  event.recipes.thermal.smelter(
-		[KJ("purified_sand")],
-		[KJ("rough_sand"), TE("earth_charge")])
-		.energy(5000)
-  
-  event.recipes.thermal.smelter(
-    [AE2("silicon")],
-    [KJ("silicon_compound"), TE("ice_charge")])
-    .energy(5000)
-
     let blitz = TE("blitz_powder")
     let basalz = TE("basalz_powder")
     let blizz = TE("blizz_powder")
@@ -335,7 +324,6 @@ onEvent("recipes", event => {
     event.recipes.createSplashing([
       Item.of(KJ("sand_ball")).withChance(0.125)
     ], 'minecraft:sandstone')
-    event.recipes.thermal.bottler(KJ("sand_ball"), [Fluid.of(MC("water"), 50), "#forge:sand/colorless"]).energy(1000)
     
     event.shaped(KJ("chromatic_resonator"), [
       " R ",
@@ -585,17 +573,6 @@ onEvent("recipes", event => {
 
   event.remove({ output: ('thermal:enderium_dust') })
   event.remove({ output: ('thermal:enderium_ingot') })
-  event.recipes.thermal.smelter(TE("enderium_ingot"), ["#forge:ingots/silver", "minecraft:chorus_fruit", MC("ender_pearl")]).energy(10000)
-	event.recipes.thermal.smelter(TE("enderium_ingot"), ["#forge:ingots/silver", "minecraft:chorus_fruit", AE2("ender_dust", 4)]).energy(10000)
-  event.recipes.thermal.smelter(TE("enderium_dust"), ["#forge:ingots/silver", "minecraft:chorus_fruit", AE2("ender_dust", 2)]).energy(10000)
-	event.recipes.thermal.smelter(KJ("abstruse_mechanism"), [KJ("inductive_mechanism"), TE("enderium_ingot")]).energy(2000)
-
-  event.recipes.thermal.smelter("avaritia:diamond_lattice", ["kubejs:alpha_ingot", "minecraft:nether_star", "#forge:dusts/diamond"]).energy(4000000)
-  
-  event.recipes.thermal.smelter("projecte:low_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/coal"]).energy(8000000)
-  event.recipes.thermal.smelter("projecte:medium_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/iron"]).energy(8000000)
-  event.recipes.thermal.smelter("projecte:high_covalence_dust", ["avaritia:crystal_matrix", "#forge:dusts/diamond"]).energy(8000000)
-
 
   event.recipes.create.mixing('create:creative_blaze_cake', [
     'createaddition:chocolate_cake',
@@ -1172,11 +1149,6 @@ function prettierpipes(event) {
 
 }
   
-  event.recipes.thermal.smelter([KJ("invar_compound"), KJ("invar_compound")], [TE("nickel_ingot"), MC("iron_ingot")])
-	event.recipes.thermal.smelter(CR("brass_ingot", 2), [MC("copper_ingot"), CR("zinc_ingot")])
-	event.recipes.thermal.smelter(TC("rose_gold_ingot", 2), [MC("copper_ingot"), MC("gold_ingot")])
-	event.recipes.thermal.smelter(TE("constantan_ingot", 2), [MC("copper_ingot"), TE("nickel_ingot")])
-
 	function rubberMatters(event) {
     let overrideTreeOutput = (id, trunk, leaf) => {
       event.remove({ id: id })
@@ -1231,11 +1203,9 @@ function prettierpipes(event) {
   
     event.recipes.createMilling(['4x ' + MC('redstone')], TE('cinnabar')).processingTime(700)
 	  event.recipes.createCrushing(['6x ' + MC('redstone')], TE('cinnabar')).processingTime(500)
-	  event.recipes.thermal.pulverizer(['8x ' + MC('redstone')], TE('cinnabar')).energy(10000)
   
     event.recipes.createMilling(['3x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').processingTime(700)
     event.recipes.createCrushing(['6x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').processingTime(500)
-    event.recipes.thermal.pulverizer(['9x ' + MC('glowstone_dust')], 'buddycards:luminis_crystal').energy(10000)
   
     event.recipes.createMilling([TE('sulfur_dust')], TE('sulfur')).processingTime(500)
     event.recipes.createMilling([TE('niter_dust')], TE('niter')).processingTime(500)
@@ -1248,84 +1218,174 @@ function prettierpipes(event) {
   
       event.smelting(Item.of(nugget, 3), crushed)
       event.smelting(Item.of(nugget, 1), dust).cookingTime(40)
-      event.recipes.createMilling([Item.of(crushed, 1), stone], ore)
+      event.recipes.createMilling([Item.of(crushed, 1), stone], "#forge:ores/" + name)
       event.recipes.createMilling([Item.of(dust, 3)], crushed)
       event.recipes.createCrushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushed)
-      event.recipes.thermal.pulverizer([Item.of(dust, 6)], crushed).energy(15000)
-      event.recipes.thermal.pulverizer([crushed], ore).energy(3000)
-      event.recipes.thermal.crucible(Fluid.of(fluid, 144), ingot).energy(2000)
-  
-      event.recipes.thermal.crucible(Fluid.of(fluid, 48), dust).energy(3000)
       event.recipes.createSplashing([Item.of(nugget, 2)], dust)
       event.recipes.createMixing([Fluid.of(fluid, 288)], [Item.of(dust, 3), AE2('matter_ball')]).superheated()
   
-      event.remove({ input: "#forge:ores/" + name, type: TE("smelter") })
-      event.remove({ input: "#forge:ores/" + name, type: TE("pulverizer") })
-      event.remove({ input: "#forge:ores/" + name, type: MC("blasting") })
-      event.remove({ input: "#forge:ores/" + name, type: MC("smelting") })
-      event.remove({ input: "#forge:ores/" + name, type: CR("crushing") })
-      event.remove({ input: "#forge:ores/" + name, type: CR("milling") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: TE("smelter") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: TE("pulverizer") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: MC("blasting") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: MC("smelting") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: CR("crushing") })
+      event.remove({ ingredients: "#forge:ores/" + name, type: CR("milling") })
+
+  event.custom({
+  "type": "thermal:crucible",
+  "ingredients": [{"item": ingot}],
+  "result": [{"fluid": fluid,"amount": 144}],
+  "energy": 5000
+})
+  event.custom({
+  "type": "thermal:crucible",
+  "ingredients": [{"item": dust}],
+  "result": [{"fluid": fluid,"amount": 48}],
+  "energy": 3000
+})
+  event.custom({
+  "type": "thermal:pulverizer",
+  "ingredients": [{"item": crushed}],
+  "result": [{"item": dust,"count": 6}],
+  "energy": 15000
+})
+  event.custom({
+  "type": "thermal:pulverizer",
+  "ingredients": [{"tag": "forge:ores/" + name}],
+  "result": [{"item": crushed},{"item": stone,"chance": 0.5}],
+  "energy": 3000
+})
+
+	event.custom({
+    "type": "thermal:smelter",
+    "ingredient": {"item": crushed},
+    "result": [{"item": nugget,"chance": 9.0},{"item": byproduct,"chance": (byproduct.endsWith('nugget') ? 1.8 : 0.2)},{"item": "thermal:rich_slag","chance": 0.2}],
+    "experience": 0.2,
+    "energy": 20000
+    })
+
+    event.custom({
+    "type": "tconstruct:melting",
+    "ingredient": {"item": dust},
+    "result": {"fluid": fluid,"amount": 48},"temperature": 500,"time": 30,
+    "byproducts": [{"fluid": fluid_byproduct,"amount": 16}]
+    })
   
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredient": {
-          "item": crushed
-        },
-        "result": [
-          {
-            "item": nugget,
-            "chance": 9.0
-          },
-          {
-            "item": byproduct,
-            "chance": (byproduct.endsWith('nugget') ? 1.8 : 0.2)
-          },
-          {
-            "item": "thermal:rich_slag",
-            "chance": 0.2
-          }
-        ],
-        "experience": 0.2,
-        "energy": 20000
-      })
-  
-      event.custom({
-        "type": "tconstruct:melting",
-        "ingredient": {
-          "item": dust
-        },
-        "result": {
-          "fluid": fluid,
-          "amount": 48
-        },
-        "temperature": 500,
-        "time": 30,
-        "byproducts": [
-          {
-            "fluid": fluid_byproduct,
-            "amount": 16
-          }
-        ]
-      });
-  
-    }
-  
+}
     dust_process('nickel', TE('nickel_ingot'), TE('nickel_nugget'), TE('nickel_dust'), TE('nickel_ore'), CR('copper_nugget'), 'copper')
     dust_process('lead', TE('lead_ingot'), TE('lead_nugget'), TE('lead_dust'), TE('lead_ore'), MC('iron_nugget'), 'iron')
-    dust_process('lead', TE('lead_ingot'), TE('lead_nugget'), TE('lead_dust'), 'mekanism:lead_ore', MC('iron_nugget'), 'iron')
+//    dust_process('lead', TE('lead_ingot'), TE('lead_nugget'), TE('lead_dust'), 'mekanism:lead_ore', MC('iron_nugget'), 'iron')
     dust_process('iron', MC('iron_ingot'), MC('iron_nugget'), TE('iron_dust'), MC('iron_ore'), TE('nickel_nugget'), 'nickel')
     dust_process('gold', MC('gold_ingot'), MC('gold_nugget'), TE('gold_dust'), MC('gold_ore'), TE('cinnabar'), 'zinc')
     dust_process('copper', MC('copper_ingot'), TE('copper_nugget'), TE('copper_dust'), MC('copper_ore'), MC('gold_nugget'), 'gold')
     dust_process('zinc', CR('zinc_ingot'), CR('zinc_nugget'), KJ('zinc_dust'), CR('zinc_ore'), TE('sulfur'), 'lead')
     dust_process('uranium', 'mekanism:ingot_uranium', 'mekanism:nugget_uranium', 'mekanism:dust_uranium', 'mekanism:uranium_ore', TE('sulfur'), 'lead')
     dust_process('tin', 'thermal:tin_ingot', 'thermal:tin_nugget', 'thermal:tin_dust', 'thermal:tin_ore', TE('sulfur'), 'lead')
-    dust_process('tin', 'thermal:tin_ingot', 'thermal:tin_nugget', 'thermal:tin_dust', 'mekanism:tin_ore', MC('copper_ingot'), 'copper')
+//    dust_process('tin', 'thermal:tin_ingot', 'thermal:tin_nugget', 'thermal:tin_dust', 'mekanism:tin_ore', MC('copper_ingot'), 'copper')
     dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'thermal:silver_ore', TE('sulfur'), 'lead')
-    dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'occultism:silver_ore', TE('sulfur'), 'lead')
+//    dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'occultism:silver_ore', TE('sulfur'), 'lead')
     dust_process('aluminum', 'immersiveengineering:ingot_aluminum', 'immersiveengineering:nugget_aluminum', 'immersiveengineering:dust_aluminum', 'immersiveengineering:ore_aluminum', MC('iron_nugget'), 'iron')
     dust_process('osmium', 'mekanism:ingot_osmium', 'mekanism:nugget_osmium', 'mekanism:dust_osmium', 'mekanism:osmium_ore', MC('iron_nugget'), 'iron')
     
     event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC('iron_ore'), CR('crushed_iron_ore'))
     event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC('gold_ore'), CR('crushed_gold_ore'))
   }
+
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "kubejs:rough_sand"},{"item": "thermal:earth_charge"}],
+  "result": [{"item": "kubejs:purified_sand"}],
+  "energy": 5000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "kubejs:silicon_compound"},{"item": "thermal:ice_charge"}],
+  "result": [{"item": "ae2:silicon"}],
+  "energy": 5000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "minecraft:chorus_fruit"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"},{"tag": "forge:dusts/ender_pearl"}], "count": 4}],
+  "result": [{"item": "thermal:enderium_ingot"}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "minecraft:chorus_fruit"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"},{"tag": "forge:dusts/ender_pearl"}], "count": 2}],
+  "result": [{"item": "thermal:enderium_dust"}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "kubejs:inductive_mechanism"},{"item": "thermal:enderium_ingot"}],
+  "result": [{"item": "kubejs:abstruse_mechanism"}],
+  "energy": 20000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "kubejs:alpha_ingot"},{"item": "minecraft:nether_star"},{"tag": "forge:dusts/diamond"}],
+  "result": [{"item": "avaritia:diamond_lattice"}],
+  "energy": 4000000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "avaritia:crystal_matrix"},{"tag": "forge:dusts/coal"}],
+  "result": [{"item": "projecte:low_covalence_dust"}],
+  "energy": 8000000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "avaritia:crystal_matrix"},{"tag": "forge:dusts/iron"}],
+  "result": [{"item": "projecte:medium_covalence_dust"}],
+  "energy": 8000000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"item": "avaritia:crystal_matrix"},{"tag": "forge:dusts/diamond"}],
+  "result": [{"item": "projecte:high_covalence_dust"}],
+  "energy": 8000000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"tag": "forge:ingots/nickel"},{"tag": "forge:ingots/iron"}],
+  "result": [{"item": "kubejs:invar_compound"},{"item": "kubejs:invar_compound"}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"tag": "forge:ingots/copper"},{"tag": "forge:ingots/zinc"}],
+  "result": [{"item": "create:brass_ingot","count": 2}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"tag": "forge:ingots/copper"},{"tag": "forge:ingots/gold"}],
+  "result": [{"item": "tconstruct:rose_gold_ingot","count": 2}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [{"tag": "forge:ingots/copper"},{"tag": "forge:ingots/nickel"}],
+  "result": [{"item": "thermal:constantan_ingot","count": 2}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:bottler",
+  "ingredients": [{"tag": "sand/colorless"},{"fluid": "minecraft:water","amount": 50}],
+  "result": [{"item": "kubejs:sand_ball"}],
+  "energy": 1000
+})
+  event.custom({
+  "type": "thermal:pulverizer",
+  "ingredients": [{"item": "buddycards:luminis_crystal"}],
+  "result": [{"item": "minecraft:glowstone_dust","count": 9}],
+  "energy": 10000
+})
+  event.custom({
+  "type": "thermal:pulverizer",
+  "ingredients": [{"item": "thermal:cinnabar"}],
+  "result": [{"item": "minecraft:redstone","count": 8}],
+  "energy": 10000
+})
+
 })
