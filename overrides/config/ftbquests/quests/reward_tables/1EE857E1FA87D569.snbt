@@ -1,0 +1,7 @@
+{
+	id: "1EE857E1FA87D569"
+	order_index: 28
+	title: "寰宇支配之剑"
+	loot_size: 1
+	rewards: [{ title: "寰宇支配之剑", icon: "avaritia:infinity_sword", item: "kubejs:rickroll" }]
+}

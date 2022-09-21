@@ -13,18 +13,6 @@
 	}
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	images: [{
-		x: 0.0d
-		y: 0.0d
-		width: 1.5d
-		height: 1.5d
-		rotation: 0.0d
-		image: "minecraft:textures/block/grass_block_side.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
 	quests: [
 		{
 			title: "筛出万物！"
@@ -54,6 +42,11 @@
 					}
 				}
 				consume_items: false
+			}]
+			rewards: [{
+				id: "0A5EB4BA3E78791D"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -134,6 +127,13 @@
 				id: "6824294DED36166D"
 				type: "item"
 				title: "任何锤子"
+				icon: {
+					id: "exnihilosequentia:wooden_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -174,6 +174,13 @@
 				id: "32933984ECFCE7E1"
 				type: "item"
 				title: "任何钩子"
+				icon: {
+					id: "exnihilosequentia:wooden_crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -364,6 +371,11 @@
 				type: "item"
 				item: "waterstrainer:strainer_base"
 				consume_items: false
+			}]
+			rewards: [{
+				id: "31D9B6393F088E76"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{

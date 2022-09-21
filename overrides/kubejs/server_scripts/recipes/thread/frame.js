@@ -18,6 +18,5 @@ onEvent("recipes", event => {
 			event.stonecutting(Item.of(id, amount), "thermal:machine_frame")
 	}
 	machine_frame(("mekanism:steel_casing"), 1, ('beyond_earth:compressed_steel'))
-	machine_frame(("mekanism:basic_pressurized_tube"), 16, ('create:smart_fluid_pipe'))
 
 })

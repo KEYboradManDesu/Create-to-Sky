@@ -101,13 +101,43 @@ onEvent('item.tags', event => {
 	});
 
 
+  event.get('forge:raw_materials').add('kubejs:raw_stormyx')
+  event.get('forge:raw_materials/stormyx').add('kubejs:raw_stormyx')
+  event.get('forge:raw_ores/stormyx').add('kubejs:raw_stormyx')
+  event.get('forge:ores/stormyx').add('kubejs:raw_stormyx')
+
+  event.get('forge:ingots').add('kubejs:stormyx_ingot')
+  event.get('forge:ingots/stormyx').add('kubejs:stormyx_ingot')
+
+  event.get('create:crushed_ores').add('kubejs:crushed_stormyx_ore')
+
+  event.get('forge:dusts').add('kubejs:stormyx_dust')
+  event.get('forge:dusts/stormyx').add('kubejs:stormyx_dust')
+
+  event.get('forge:nuggets').add('kubejs:stormyx_nugget')
+  event.get('forge:nuggets/stormyx').add('kubejs:stormyx_nugget')
+
+
+
   event.get('thermal:crafting/dies').add('#forge:trade_cards')
 	event.get('thermal:crafting/dies').add('#forge:profession_cards')
 
-  event.get('thermal:crafting/dies').add('#forge:profession_cards')
+  event.get('thermal:crafting/dies').add('kubejs:graphics_card_t1')
+  event.get('thermal:crafting/dies').add('kubejs:graphics_card_t2')
+  event.get('thermal:crafting/dies').add('kubejs:graphics_card_c')
+
 
 	event.get("forge:dust/obsidian").add("#forge:dusts/obsidian")
   event.get("forge:dusts").add("kubejs:desh_dust")
+
+  event.get("exnihilosequentia:hammer").add("#forbidden_arcanus:blacksmith_gavel")
+  event.get("exnihilosequentia:hammer").add("immersiveengineering:hammer")
+  event.get("exnihilosequentia:hammer").add("industrialforegoing:infinity_hammer")
+  event.get("exnihilosequentia:hammer").add("projecte:dm_hammer")
+  event.get("exnihilosequentia:hammer").add("projecte:rm_hammer")
+  event.get("exnihilosequentia:hammer").add("projecte:rm_morning_star")
+
+  event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
   
 
   event.get("forge:insulating").add("immersiveengineering:insulating_glass")
@@ -126,8 +156,7 @@ onEvent('item.tags', event => {
   event.get("forge:dyes/red").add("thermal:ruby_dust")
   event.get("forge:dyes/blue").add("thermal:sapphire_dust")
 
-  event.get("twilightforest:portal/activator").remove("minecraft:diamond")
-  event.get("twilightforest:portal/activator").add("thermal:enderium_ingot")
+  event.get("twilightforest:portal/gems").add("kubejs:twilight_diamond")
 
   event.get("forge:ingots/nickel").remove("immersiveengineering:ingot_nickel")
   event.get("forge:ingots/nickel").remove("exnihilosequentia:nickel_ingot")

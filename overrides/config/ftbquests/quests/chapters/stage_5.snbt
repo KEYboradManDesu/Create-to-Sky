@@ -59,6 +59,12 @@
 				item: "beyond_earth:nasa_workbench"
 				consume_items: false
 			}]
+			rewards: [{
+				id: "7C6BFF0BCCB129D6"
+				type: "item"
+				item: "kubejs:good_idea"
+				count: 4
+			}]
 		}
 		{
 			title: "不再迷路"
@@ -126,7 +132,7 @@
 			icon: "kubejs:three"
 			x: 0.5d
 			y: 13.5d
-			subtitle: "Contraption 43-1"
+			subtitle: "步骤 43-1"
 			description: [
 				"作为两个可用数字之一，3可以从未处理的逻辑中转换成八个可用的运算符，您的计算器将必须创建等量的从0到9的剩余数字。"
 				""
@@ -437,6 +443,7 @@
 			x: 0.0d
 			y: 4.0d
 			shape: "circle"
+			subtitle: "步骤 48"
 			description: ["如果您打算在外星着陆后生存下来，则需要一套特殊的盔甲。"]
 			dependencies: ["6A156D11D983661D"]
 			id: "6BA9A176EDA001A3"
@@ -497,7 +504,7 @@
 			x: 2.0d
 			y: 4.0d
 			shape: "circle"
-			subtitle: "步骤 48"
+			subtitle: "步骤 49"
 			description: [
 				"制作氧气灌注机,给你的氧气罐一点氧气"
 				""
@@ -630,8 +637,9 @@
 				tag: { }
 			}
 			x: 3.5999999999999996d
-			y: 7.199999999999999d
+			y: 8.4d
 			shape: "circle"
+			subtitle: "步骤 &b50-A"
 			description: [
 				"花一分钟时间制作一个代表你的太空计划的旗帜，以带到月球上。 您可以像横幅一样对其应用图案。"
 				"在你自己的时间里，坐在你组装好的火箭上，然后按 Space。"
@@ -667,7 +675,7 @@
 			title: "太空空间站"
 			icon: "beyond_earth:iron_mark_block"
 			x: 5.0d
-			y: 6.0d
+			y: 8.0d
 			shape: "circle"
 			description: ["在到达其他星球之前，可以优先考虑建造一座太空空间站。"]
 			hide_dependency_lines: true
@@ -686,7 +694,7 @@
 		{
 			title: "代步工具"
 			x: 5.0d
-			y: 8.0d
+			y: 9.0d
 			shape: "circle"
 			description: ["在外星你绝对不想徒步漫游，试着制造一辆拉风的&6漫步车&r。"]
 			hide_dependency_lines: true

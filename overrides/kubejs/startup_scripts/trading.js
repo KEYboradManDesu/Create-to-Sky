@@ -21,6 +21,7 @@ let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let IM = (id, x) => MOD("immersiveengineering", id, x)
 let CO = (id, x) => MOD("createoreexcavation", id, x)
+let EX = (id, x) => MOD("exnihilosequentia", id, x)
 //
 
 
@@ -124,6 +125,10 @@ onEvent('item.registry', event => {
 		{ in: TE('sulfur', 16), out: S(6) },
 		{ in: TE('niter', 16), out: S(6) },
 		{ in: MC('lapis_lazuli', 16), out: S(6) },
+		{ in: KJ('damascus_steel_ingot', 16), out: S(8) },
+		{ in: KJ('stormyx_ingot', 8), out: S(10) },
+		{ in: KJ('createcoin', 2), out: G(1) },
+		{ in: EX('platinum_ingot', 16), out: S(8) },
 		{ in: TE('apatite', 16), out: S(4) },
 		{ in: TE('sapphire', 1), out: S(10) },
 		{ in: TE('ruby', 1), out: S(10) },

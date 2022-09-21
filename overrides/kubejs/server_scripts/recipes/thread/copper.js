@@ -35,7 +35,7 @@ onEvent("recipes", event => {
 	copper_machine("create:spout", 1, MC("hopper"))
 	copper_machine("create:hose_pulley", 1)
 	copper_machine("create:item_drain", 1, MC("iron_bars"))
-	copper_machine("create:steam_engine", 2, MC("piston"))
+	copper_machine("create:steam_engine", 2, "create_sa:steam_engine")
 	copper_machine("create:smart_fluid_pipe", 2)
 	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
 

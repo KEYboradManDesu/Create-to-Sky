@@ -117,7 +117,7 @@ onEvent("recipes", event => {
 	andesite_machine('thermal:device_tree_extractor', 1, MC('bucket'))
 	andesite_machine(AE2('sky_compass'), 1, AE2('charged_certus_quartz_crystal'))
 	andesite_machine(AE2('charger'), 1, AE2('fluix_crystal'))
-	andesite_machine('thermal:dynamo_stirling', 1, TE('rf_coil'))
+	andesite_machine('thermal:dynamo_stirling', 1, 'create_sa:heat_engine')
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
   

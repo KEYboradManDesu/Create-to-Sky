@@ -37,13 +37,25 @@
 			subtitle: "2金币"
 			description: ["找不到烈焰人？给上小费，我帮你整个。"]
 			id: "252B9DD5BFB8184A"
-			tasks: [{
-				id: "5345AA8760A95127"
-				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 2b }
-				item: "thermal:gold_coin"
-				count: 2L
-			}]
+			tasks: [
+				{
+					id: "5345AA8760A95127"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 2b }
+					item: "thermal:gold_coin"
+					count: 2L
+				}
+				{
+					id: "10CEE9A1DB690CB1"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "5265755D8E0D998F"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [{
 				id: "0E01F7F590F428A4"
 				type: "item"
@@ -51,7 +63,7 @@
 			}]
 		}
 		{
-			title: "锯断一切"
+			title: "绝妙发明：锯断一切"
 			icon: {
 				id: "kubejs:netherite_saw"
 				Count: 1b
@@ -72,7 +84,7 @@
 			}
 			x: -8.5d
 			y: -6.5d
-			subtitle: "5金币"
+			subtitle: "2金币 4绝妙主意"
 			description: ["购买这个小工具来让制作&6动力构件&r的工具消耗降到最低。"]
 			hide_dependency_lines: true
 			id: "4F953BACF4D1C151"
@@ -91,36 +103,25 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 5b }
+					icon: { id: "thermal:gold_coin", Count: 2b }
 					item: "thermal:gold_coin"
-					count: 5L
+					count: 2L
+				}
+				{
+					id: "46D10341752C6106"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4L
 				}
 			]
 			rewards: [{
-				id: "56DB21D18FB1FF64"
-				type: "item"
-				item: {
-					id: "kubejs:netherite_saw"
-					Count: 1b
-					tag: {
-						RepairCost: 0
-						Unbreakable: 1
-						HideFlags: 1
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						display: {
-							Lore: ["{\"text\":\"不要在工作台中使用\"}"]
-							Name: "{\"text\":\"附魔锯子\",\"color\":\"gold\",\"italic\":false}"
-						}
-						Damage: 0
-					}
-				}
+				id: "75A139AB29383790"
+				type: "questsadditions:repeat"
+				table_id: 5797715269484357022L
 			}]
 		}
 		{
-			title: "不可能出问题"
+			title: "绝妙发明：不可能出问题"
 			icon: {
 				id: "kubejs:screwdriver"
 				Count: 1b
@@ -139,7 +140,7 @@
 			}
 			x: -7.0d
 			y: -6.5d
-			subtitle: "5金币"
+			subtitle: "2金币 4绝妙主意"
 			description: ["购买这个小工具来让制作&6精密构件&r的工具消耗降到最低。"]
 			id: "72CACE8F0E4701B1"
 			tasks: [
@@ -157,34 +158,25 @@
 				{
 					id: "74585BB7E80CF010"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 5b }
+					icon: { id: "thermal:gold_coin", Count: 2b }
 					item: "thermal:gold_coin"
-					count: 5L
+					count: 2L
+				}
+				{
+					id: "396C0C9C7AC72B03"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4L
 				}
 			]
 			rewards: [{
-				id: "743730BBE32A0875"
-				type: "item"
-				item: {
-					id: "kubejs:screwdriver"
-					Count: 1b
-					tag: {
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						display: {
-							Name: "{\"text\":\"附魔螺丝刀\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
+				id: "70A9951DB6F363DD"
+				type: "questsadditions:repeat"
+				table_id: 6431035667915262116L
 			}]
 		}
 		{
-			title: "磁之力"
+			title: "绝妙发明：磁之力"
 			icon: {
 				id: "kubejs:chromatic_resonator"
 				Count: 1b
@@ -198,7 +190,7 @@
 			}
 			x: -5.0d
 			y: -6.5d
-			subtitle: "7金币"
+			subtitle: "3金币 4绝妙主意"
 			description: ["购买这个小工具来让制作&6感应构件&r的工具消耗降到最低。"]
 			id: "43FC566E833BE834"
 			tasks: [
@@ -216,30 +208,21 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 7b }
+					icon: { id: "thermal:gold_coin", Count: 3b }
 					item: "thermal:gold_coin"
-					count: 7L
+					count: 3L
+				}
+				{
+					id: "148D35A1824C186B"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4L
 				}
 			]
 			rewards: [{
-				id: "0F4C7BB4C0ECB4CC"
-				type: "item"
-				item: {
-					id: "kubejs:chromatic_resonator"
-					Count: 1b
-					tag: {
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						display: {
-							Name: "{\"text\":\"附魔共振器\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
+				id: "3650ACAA4A833E5F"
+				type: "questsadditions:repeat"
+				table_id: 3477271029474899382L
 			}]
 		}
 		{
@@ -364,13 +347,20 @@
 			subtitle: "15银币"
 			description: ["你可以尽早买一些泥土作为你的地基。"]
 			id: "4B01606CE7AF3121"
-			tasks: [{
-				id: "188BEC2BA245DB13"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 15b }
-				item: "thermal:silver_coin"
-				count: 15L
-			}]
+			tasks: [
+				{
+					id: "188BEC2BA245DB13"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 15b }
+					item: "thermal:silver_coin"
+					count: 15L
+				}
+				{
+					id: "286B651D5F4A87AB"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "65597F84B69546EF"
@@ -409,13 +399,20 @@
 			subtitle: "50银币"
 			description: ["这个神秘的东西给你了一个看似无穷无尽的深度的谜盒。作为专家的你知道这一定是有限的，但什么在最底下呆着呢？"]
 			id: "09EA580B3D32FEEB"
-			tasks: [{
-				id: "3EA558277444F605"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 50b }
-				item: "thermal:silver_coin"
-				count: 50L
-			}]
+			tasks: [
+				{
+					id: "3EA558277444F605"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 50b }
+					item: "thermal:silver_coin"
+					count: 50L
+				}
+				{
+					id: "6164769C6A04515A"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [{
 				id: "1E10CE8D433DD70E"
 				type: "item"
@@ -536,13 +533,20 @@
 			subtitle: "55银币"
 			description: ["它像个背包，但很漂亮。"]
 			id: "4FD46F841CCD59F8"
-			tasks: [{
-				id: "709557A517B0143F"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 55b }
-				item: "thermal:silver_coin"
-				count: 55L
-			}]
+			tasks: [
+				{
+					id: "709557A517B0143F"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 55b }
+					item: "thermal:silver_coin"
+					count: 55L
+				}
+				{
+					id: "4468FE777D557530"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "7B8F11CCEDEBEBD6"
@@ -575,13 +579,20 @@
 			subtitle: "25银币"
 			description: ["“我在一间路旁被遗弃的作坊里找到了这个，你想要买它吗？”"]
 			id: "0CCF34BF1C5829AE"
-			tasks: [{
-				id: "32ACF7B1C0BD9D97"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 25b }
-				item: "thermal:silver_coin"
-				count: 25L
-			}]
+			tasks: [
+				{
+					id: "32ACF7B1C0BD9D97"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 25b }
+					item: "thermal:silver_coin"
+					count: 25L
+				}
+				{
+					id: "0C8E167480DA60FC"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [{
 				id: "37DBD1EF724A42D9"
 				type: "item"
@@ -608,13 +619,20 @@
 			y: 0.0d
 			subtitle: "60银币"
 			id: "6D9F2FBEB7CC5195"
-			tasks: [{
-				id: "165B9A886A26BCC8"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 60b }
-				item: "thermal:silver_coin"
-				count: 60L
-			}]
+			tasks: [
+				{
+					id: "165B9A886A26BCC8"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 60b }
+					item: "thermal:silver_coin"
+					count: 60L
+				}
+				{
+					id: "6FC5F74DE0034F9D"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [{
 				id: "6BCBFB22A82A5698"
 				type: "item"
@@ -629,13 +647,20 @@
 			subtitle: "45银币"
 			description: ["正如介绍所说：这个有魔力的钟可以探测周围光照不足的地方。交易含有可以让钟被诅咒的营火，真是赚到了！"]
 			id: "4B52A04818075900"
-			tasks: [{
-				id: "4FB1B4787D648565"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 45b }
-				item: "thermal:silver_coin"
-				count: 45L
-			}]
+			tasks: [
+				{
+					id: "4FB1B4787D648565"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 45b }
+					item: "thermal:silver_coin"
+					count: 45L
+				}
+				{
+					id: "0A64455CCD63B3F4"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "0257303302DADA1B"
@@ -650,7 +675,7 @@
 			]
 		}
 		{
-			title: "Windows更新补丁"
+			title: "绝妙发明：Windows更新补丁"
 			icon: {
 				id: "kubejs:flash_drive"
 				Count: 1b
@@ -667,7 +692,7 @@
 			}
 			x: -3.5d
 			y: -6.5d
-			subtitle: "7金币"
+			subtitle: "4金币 4绝妙主意"
 			description: ["购买这个小工具来让制作&6运算构件&r的工具消耗降到最低。"]
 			id: "00D6DD6AE8E3C014"
 			tasks: [
@@ -685,30 +710,21 @@
 				{
 					id: "04FA9389D991556D"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 7b }
+					icon: { id: "thermal:gold_coin", Count: 4b }
 					item: "thermal:gold_coin"
-					count: 7L
+					count: 4L
+				}
+				{
+					id: "459CB9CB86DAA9ED"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4L
 				}
 			]
 			rewards: [{
-				id: "3EA7518063CBEA5B"
-				type: "item"
-				item: {
-					id: "kubejs:flash_drive"
-					Count: 1b
-					tag: {
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						display: {
-							Name: "{\"text\":\"附魔闪存盘\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
+				id: "3F9F91676AF47EFF"
+				type: "questsadditions:repeat"
+				table_id: 8362274545548036324L
 			}]
 		}
 		{
@@ -719,13 +735,20 @@
 			subtitle: "6金币"
 			description: ["真正的信息专家不会出去很长时间，但还好必要的电脑部件可以在这里直接购买到你的背包里！"]
 			id: "4BAC95CCC72369AD"
-			tasks: [{
-				id: "3D328A6D69E64EDA"
-				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 12b }
-				item: "thermal:gold_coin"
-				count: 6L
-			}]
+			tasks: [
+				{
+					id: "3D328A6D69E64EDA"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 12b }
+					item: "thermal:gold_coin"
+					count: 6L
+				}
+				{
+					id: "68F1832D9706E3E7"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [{
 				id: "51ABA96DE3477D3B"
 				type: "item"
@@ -798,13 +821,20 @@
 			subtitle: "32银币"
 			description: ["一个热力膨胀武器小测试。"]
 			id: "1CC29991D5F248CA"
-			tasks: [{
-				id: "2BF8F9E5070C6122"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 32b }
-				item: "thermal:silver_coin"
-				count: 32L
-			}]
+			tasks: [
+				{
+					id: "2BF8F9E5070C6122"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 32b }
+					item: "thermal:silver_coin"
+					count: 32L
+				}
+				{
+					id: "3FAAC1B8720B4197"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "1C6218230C6D71A0"
@@ -839,13 +869,20 @@
 			y: -1.5d
 			subtitle: "24银币"
 			id: "42384DE39AA48976"
-			tasks: [{
-				id: "05BB5DFA82280C0C"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
-				count: 24L
-			}]
+			tasks: [
+				{
+					id: "05BB5DFA82280C0C"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 24b }
+					item: "thermal:silver_coin"
+					count: 24L
+				}
+				{
+					id: "3FDB8FBD3462B4A5"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "26A16DC998FEF595"
@@ -886,13 +923,20 @@
 			y: 1.5d
 			subtitle: "24银币"
 			id: "61B040CD0832EFC0"
-			tasks: [{
-				id: "6404722100F1DEF7"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
-				count: 24L
-			}]
+			tasks: [
+				{
+					id: "6404722100F1DEF7"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 24b }
+					item: "thermal:silver_coin"
+					count: 24L
+				}
+				{
+					id: "4B553628A4672ECC"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "6375AD9CBA9276E0"
@@ -951,13 +995,20 @@
 			y: 2.0d
 			subtitle: "24银币"
 			id: "117587D824D23D69"
-			tasks: [{
-				id: "06C835DB602D6F9F"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
-				count: 24L
-			}]
+			tasks: [
+				{
+					id: "06C835DB602D6F9F"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 24b }
+					item: "thermal:silver_coin"
+					count: 24L
+				}
+				{
+					id: "6EF437FAC72B6F71"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "4D33B3525FF09C68"
@@ -992,13 +1043,20 @@
 			y: 0.0d
 			subtitle: "24银币"
 			id: "2D75D1864FB1EF75"
-			tasks: [{
-				id: "3AA788B63B6A73EF"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
-				count: 24L
-			}]
+			tasks: [
+				{
+					id: "3AA788B63B6A73EF"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 24b }
+					item: "thermal:silver_coin"
+					count: 24L
+				}
+				{
+					id: "433C7663AAC53BBC"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "4961B49D79004571"
@@ -1039,13 +1097,20 @@
 			subtitle: "24银币"
 			description: ["对你的建筑外表不满意？没关系，树叶解决一切！"]
 			id: "7D93DAB3E8ACF953"
-			tasks: [{
-				id: "06028A67C6DCCD00"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
-				count: 24L
-			}]
+			tasks: [
+				{
+					id: "06028A67C6DCCD00"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 24b }
+					item: "thermal:silver_coin"
+					count: 24L
+				}
+				{
+					id: "55D26B10A9A1CB54"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 			rewards: [
 				{
 					id: "1BA12452E9A090EC"
@@ -1160,6 +1225,114 @@
 				id: "51C04B7CF4A61319"
 				type: "questsadditions:repeat_random"
 				table_id: 274727292144083129L
+			}]
+		}
+		{
+			title: "绝妙发明：无限火力"
+			icon: {
+				id: "kubejs:laser_blaster"
+				Count: 1b
+				tag: {
+					Unbreakable: 1
+					Damage: 0
+					HideFlags: 1
+					Enchantments: [{
+						lvl: 10s
+						id: "minecraft:unbreaking"
+					}]
+					display: {
+						Name: "{\"text\":\"附魔炼金发生器\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			x: -10.0d
+			y: -5.0d
+			subtitle: "4金币 4绝妙主意"
+			id: "2FD889609E86471D"
+			tasks: [
+				{
+					id: "7E317729C993506F"
+					type: "item"
+					item: {
+						id: "kubejs:laser_blaster"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2898FCE540CCA7A5"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 4b }
+					item: "thermal:gold_coin"
+					count: 4L
+				}
+				{
+					id: "0FF86DDEA6176700"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "29430B0533E16C53"
+				type: "questsadditions:repeat"
+				table_id: 7269046459409930819L
+			}]
+		}
+		{
+			title: "绝妙发明：绝对不会出问题"
+			icon: {
+				id: "kubejs:maga_screwdriver"
+				Count: 1b
+				tag: {
+					Unbreakable: 1
+					Damage: 0
+					HideFlags: 1
+					Enchantments: [{
+						lvl: 10s
+						id: "minecraft:unbreaking"
+					}]
+					display: {
+						Name: "{\"text\":\"附魔中子螺丝刀\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			x: -2.0d
+			y: -5.0d
+			subtitle: "16金币 8绝妙主意"
+			id: "1332F899213C4D41"
+			tasks: [
+				{
+					id: "1B7F2F3FB5441F62"
+					type: "item"
+					item: {
+						id: "kubejs:maga_screwdriver"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5F7E2E41013A6EEA"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 16b }
+					item: "thermal:gold_coin"
+					count: 16L
+				}
+				{
+					id: "1ABF4462015F61B7"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "6F577045D27E9664"
+				type: "questsadditions:repeat"
+				table_id: 492572487195875612L
 			}]
 		}
 	]

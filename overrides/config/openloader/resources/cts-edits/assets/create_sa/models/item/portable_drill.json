@@ -1,0 +1,8 @@
+{
+  "parent": "create_sa:custom/portable_drill",
+  "textures": {
+    "0": "create_sa:blocks/portable_drill",
+    "1": "create_sa:blocks/portable_drill_body",
+    "particle": "create_sa:items/brass_drill_head"
+  }
+}

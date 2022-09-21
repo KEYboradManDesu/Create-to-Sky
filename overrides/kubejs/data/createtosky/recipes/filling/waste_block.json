@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:stormyx_ingot"
+    },
+    {
+      "fluid": "kubejs:waste",
+      "amount": 720
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:waste_block"
+    }
+  ]
+}

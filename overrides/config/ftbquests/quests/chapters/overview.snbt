@@ -95,12 +95,19 @@
 					consume_items: false
 				}
 			]
-			rewards: [{
-				id: "24DFC6E24F62D97A"
-				type: "item"
-				item: "create:crafting_blueprint"
-				count: 3
-			}]
+			rewards: [
+				{
+					id: "24DFC6E24F62D97A"
+					type: "item"
+					item: "create:crafting_blueprint"
+					count: 3
+				}
+				{
+					id: "01733498B7FFDD05"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
 		}
 		{
 			title: "&6&l扬帆起航"
@@ -121,6 +128,11 @@
 				id: "5A8DF2D8553904BF"
 				type: "checkmark"
 				title: "&6解锁第一章"
+			}]
+			rewards: [{
+				id: "3A15697B85244BB4"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -149,6 +161,11 @@
 				stat: "minecraft:play_time"
 				value: 60
 			}]
+			rewards: [{
+				id: "598CB578ACEAF239"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&f&l橡胶垄断"
@@ -168,6 +185,11 @@
 				id: "681DACF11F193771"
 				type: "checkmark"
 				title: "&4解锁第一章 &7支线"
+			}]
+			rewards: [{
+				id: "343A1966C579237E"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -194,6 +216,11 @@
 				stat: "minecraft:play_time"
 				value: 60
 			}]
+			rewards: [{
+				id: "37FEAC779FC6E22F"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&6&l初入门道"
@@ -214,6 +241,11 @@
 				id: "28C41C062843C2CA"
 				type: "checkmark"
 				title: "&6解锁第二章"
+			}]
+			rewards: [{
+				id: "58015A6FBF702171"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -241,6 +273,11 @@
 				stat: "minecraft:play_time"
 				value: 60
 			}]
+			rewards: [{
+				id: "2BC6927C6C707808"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&f&l流动产业"
@@ -260,6 +297,11 @@
 				type: "checkmark"
 				title: "&2解锁第二章 &7支线"
 			}]
+			rewards: [{
+				id: "16A465A4DCA7AF97"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&2&l锌时代"
@@ -270,7 +312,7 @@
 			description: [
 				"&2锌机器&r不可置信地强大！从高效刷石到物品收集，它全都能胜任！是时候好好利用这些&2酷热的强大机器&r来为你的工厂添砖加瓦了。"
 				""
-				"Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms."
+				"请注意，&2酷热构件&r是支线。主装配线将继续使用&6精密构件&r。"
 			]
 			dependencies: [
 				"7888F9129E9FE517"
@@ -285,6 +327,11 @@
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 60
+			}]
+			rewards: [{
+				id: "499875B3F4D77686"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -308,6 +355,11 @@
 				id: "2F6FEDBB1BDCB36C"
 				type: "checkmark"
 				title: "&6解锁第三章"
+			}]
+			rewards: [{
+				id: "5D298690A242A909"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -335,6 +387,11 @@
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 60
+			}]
+			rewards: [{
+				id: "6F153ECBF1AAD850"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 		{
@@ -400,6 +457,11 @@
 				type: "checkmark"
 				title: "&6解锁第四章"
 			}]
+			rewards: [{
+				id: "61EF4CC9D9FF1C37"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&f&l智能时代"
@@ -430,6 +492,11 @@
 				stat: "minecraft:play_time"
 				value: 60
 			}]
+			rewards: [{
+				id: "36F6CA3B4B045A0D"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&6&l意识上传"
@@ -437,7 +504,7 @@
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&5最终章"
+			subtitle: "&6第五章"
 			description: [
 				"整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。"
 				""
@@ -450,6 +517,11 @@
 				type: "checkmark"
 				title: "&6解锁&5最终章"
 			}]
+			rewards: [{
+				id: "1A8986F834BC34E6"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&9&l&o..还要走得更远"
@@ -457,6 +529,7 @@
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
+			subtitle: "&5最终章"
 			description: [
 				"&o这也许只是你的一小步，却是&9全人类&r的一大步。"
 				""
@@ -489,6 +562,11 @@
 					consume_items: false
 				}
 			]
+			rewards: [{
+				id: "3F22D9D49148BFE4"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "终焉"
@@ -496,19 +574,24 @@
 			x: 3.0d
 			y: 1.5d
 			shape: "circle"
-			description: ["回想以前，我们徒手打造了10级文明。我们将走向&4&l无尽&r。"]
+			subtitle: "第六章 支线"
+			description: ["回想以前，我们徒手打造了10级文明。我们将走向&4&l无尽&r，将得到所有得不到的东西。"]
 			dependencies: ["4F7A70041B67A348"]
-			optional: true
 			id: "4BB283B651F880A9"
 			tasks: [{
 				id: "25D061C0B0C77A36"
 				type: "checkmark"
 				title: "&3解锁第六章 &7支线"
 			}]
+			rewards: [{
+				id: "13E114542DCFDC49"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
 		}
 		{
 			title: "&d&l创造时代"
-			x: 5.0d
+			x: 4.5d
 			y: 2.5d
 			subtitle: "&d&l挑战"
 			description: [
@@ -516,7 +599,6 @@
 				"&9&l&o世界很大，生活更大。"
 			]
 			dependencies: ["4BB283B651F880A9"]
-			optional: true
 			id: "17C02A7F51C8D117"
 			tasks: [{
 				id: "4D8CFDBEDC1073EE"
@@ -524,6 +606,11 @@
 				item: "kubejs:creative_mechanism"
 				count: 60L
 				consume_items: false
+			}]
+			rewards: [{
+				id: "491A7E706BA344B2"
+				type: "item"
+				item: "kubejs:good_idea"
 			}]
 		}
 	]

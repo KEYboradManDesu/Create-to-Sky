@@ -6,7 +6,7 @@
 		"1": "create:block/fan_side",
 		"2": "create:block/andesite_funnel_plating",
 		"3": "create:block/andesite_funnel_back",
-		"4": "appliedenergistics2:block/charger",
+		"4": "ae2:block/charger",
 		"particle": "create:block/andesite_casing"
 	},
 	"elements": [

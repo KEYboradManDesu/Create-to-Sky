@@ -3,9 +3,9 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "tag": "forge:dusts/iron"
+    "tag": "forge:ingots/iron"
   },
   "result": {
-    "item": "mekanism:dust_steel"
+    "item": "mekanism:ingot_steel"
   }
 }

@@ -16,7 +16,7 @@
         {
           "fluid": "kubejs:infinity",
           
-          "amount": 700
+          "amount": 500
         }
       ],
       "results": [
@@ -32,7 +32,23 @@
           "item": "kubejs:incomplete_creative_mechanism"
         },
         {
-          "item": "mekanism:pellet_antimatter"
+          "item": "kubejs:neutronium_drive_hyper_dense"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_creative_mechanism"
+        },
+        {
+          "item": "avaritia:neutronium_gear"
         }
       ],
       "results": [
@@ -64,7 +80,7 @@
           "item": "kubejs:incomplete_creative_mechanism"
         },
         {
-          "item": "avaritia:neutronium_gear"
+          "item": "kubejs:maga_screwdriver"
         }
       ],
       "results": [

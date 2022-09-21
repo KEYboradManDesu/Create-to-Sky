@@ -40,6 +40,7 @@
 				id: "601161A1565C5161"
 				type: "item"
 				item: "thermal:silver_coin"
+				count: 5L
 			}]
 			rewards: [{
 				id: "10718F040BF492C6"
@@ -192,7 +193,7 @@
 			x: -2.0d
 			y: 12.25d
 			shape: "circle"
-			subtitle: "30 Silver"
+			subtitle: "30 银币"
 			description: [
 				"达到黄铜阶段需要做出很多努力！"
 				""

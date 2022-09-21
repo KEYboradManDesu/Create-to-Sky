@@ -1,0 +1,24 @@
+{
+	id: "3041BF93F39BB5B6"
+	order_index: 24
+	title: "绝妙发明：附魔共鸣器"
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "kubejs:chromatic_resonator"
+			Count: 1b
+			tag: {
+				Unbreakable: 1
+				Damage: 0
+				HideFlags: 1
+				Enchantments: [{
+					lvl: 10s
+					id: "minecraft:unbreaking"
+				}]
+				display: {
+					Name: "{\"text\":\"附魔共鸣器\",\"color\":\"gold\",\"italic\":false}"
+				}
+			}
+		}
+	}]
+}

@@ -1,7 +1,7 @@
 {
 	id: "0D0BC5B3F6623669"
 	group: "0810E42B2DD79973"
-	order_index: 4
+	order_index: 5
 	filename: "lifesavers"
 	title: " 护肝员"
 	icon: "minecraft:totem_of_undying"
@@ -369,19 +369,26 @@
 			}]
 		}
 		{
-			title: "咻~趴！"
+			title: "芜湖起飞！"
+			icon: {
+				id: "create_sa:brass_jetpack_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: 5.0d
 			y: -1.0d
-			description: ["上天是人类一直的梦想，这个喷气背包可以让你短暂的飞翔。"]
+			description: ["上天是人类一直的梦想，这个喷气背包可以让你短暂的飞翔，它还可以为你的鞘翅加速。"]
 			id: "163FFB86DB68BD42"
 			tasks: [{
 				id: "01FE8F967FFF8815"
 				type: "item"
 				item: {
-					id: "create_stuff_additions:encased_jet_chestplate"
+					id: "create_jetpack:jetpack"
 					Count: 1b
 					tag: {
-						Damage: 0
+						Air: 900
 					}
 				}
 				consume_items: false
@@ -397,7 +404,7 @@
 			title: "地狱刷石机"
 			x: 5.0d
 			y: 1.0d
-			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成地狱方块。"]
+			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成下界土特产方块。"]
 			id: "4D360EB7CBCFF364"
 			tasks: [{
 				id: "4CCA92AD80B1D391"
@@ -522,6 +529,71 @@
 				type: "item"
 				item: "akashictome:tome"
 				consume_items: false
+			}]
+			rewards: [{
+				id: "33954F9F4A1A52DE"
+				type: "item"
+				item: "vanillacookbook:book_cake"
+			}]
+		}
+		{
+			title: "食物诱惑"
+			icon: "excompressum:pig_bait"
+			x: 5.0d
+			y: -5.0d
+			description: ["觉得岛屿过于冷清？可以试试动物诱饵，用于吸引动物，诱饵工作时玩家不可过于靠近，且旁边需要放置正确的群系方块。"]
+			id: "40BE5CC14CF0F866"
+			tasks: [{
+				id: "02D91FCEA8CC8AC7"
+				type: "item"
+				title: "任何诱饵"
+				icon: "excompressum:chicken_bait"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:baits"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "06B88AA7F7C6E254"
+				type: "item"
+				item: "minecraft:bone"
+				count: 8
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			id: "4617D47E057F7E9B"
+			tasks: [{
+				id: "1D7E87BE261FA743"
+				type: "questsadditions:structure"
+				name: ""
+				hasCustomPicture: false
+				layer: true
+				rightclick: false
+			}]
+		}
+		{
+			title: "転生暮色の異世界ライフ"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 6.0d
+			y: -3.0d
+			description: ["要想进入暮色，首先在地上挖出2x2x1（边长最大为8格）格的坑（底部需要填满）并灌满非流动水（即对角线倒水或4格都倒水），然后四边用任意植物（包括枯死的灌木，树叶，草，蕨类等，以及其它模组的植物）围起来（角落不需要），最后丢入一颗&e暮色钻石&r，一道闪电从天而降，传送门就此开启。"]
+			id: "79BA77EF0BB69750"
+			tasks: [{
+				id: "1687957B8D151A56"
+				type: "item"
+				item: "kubejs:twilight_diamond"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "20E0D4C7A9E0353B"
+				type: "item"
+				item: "twilightdelight:phytochemical_juice"
 			}]
 		}
 	]

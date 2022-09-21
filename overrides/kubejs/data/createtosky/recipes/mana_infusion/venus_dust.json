@@ -1,0 +1,15 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "beyond_earth:venus_stone"
+  },
+  "output": {
+    "item": "kubejs:venus_dust"
+  },
+  "mana": 2000,
+  "group": "botania:shrub_cycle",
+  "catalyst": {
+    "type": "block",
+    "block": "kubejs:ice_catalyst"
+  }
+}

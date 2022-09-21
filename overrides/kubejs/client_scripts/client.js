@@ -1,74 +1,156 @@
+// priority: 0
 
-onEvent("rei.remove.categories", event => {
-	event.yeet("minecraft:plugins/tag")
-//	event.yeet("alloy_forgery:forging")
-	event.yeet("minecraft:plugins/stripping")
-	event.yeet("minecraft:plugins/beacon_base")
-	event.yeet("minecraft:plugins/beacon_payment")
-	event.yeet("minecraft:plugins/pathing")
-	event.yeet("minecraft:plugins/waxing")
-	event.yeet("minecraft:plugins/wax_scraping")
-	event.yeet("minecraft:plugins/oxidizing")
-	event.yeet("minecraft:plugins/oxidation_scraping")
-	event.yeet("roughlyenoughitems:plugins/information")
-	event.yeet("farmersdelight:decomposition")
-	event.yeet("ae2:throwing_in_water")
-	event.yeet("ae2:condenser")
-	event.yeet("ae2:inscriber")
-//	event.yeet("create:fan_smoking")
-//	event.yeet("create:fan_blasting")
-	event.yeet("create:automatic_shapeless")
-	event.yeet("create:automatic_shaped")
-	event.yeet("create:automatic_packing")
-	event.yeet("create:automatic_brewing")
-	event.yeet("create:block_cutting")
-//	event.yeet("create:item_application")
-	event.yeet("create:mystery_conversation")
+onEvent('jei.hide.items', event => {
+	event.hide('appliedenergistics2:facade')
+	event.hide(`#buddycards:cards`)
+	event.hide(`#buddycards:gummy_cards`)
 })
 
-onEvent("rei.add.items", event => {
-	event.add("create:crushed_lead_ore")
-	event.add("create:crushed_nickel_ore")
-	event.add("create:crushed_tin_ore")
+onEvent('jei.subtypes', event => {
+	event.useNBT('advancedrocketry:planet_id_chip')
 })
-/*onEvent("rei.hide.items", event => {
-  event.hide("indrev:raw_silver_block")
-	event.hide("indrev:raw_silver")
-	event.hide("indrev:silver_ore")
-	event.hide("indrev:deepslate_silver_ore")
-	event.hide("indrev:silver_purified_ore")
-	event.hide("indrev:raw_tungsten_block")
-	event.hide("indrev:tungsten_ore")
-	event.hide("indrev:deepslate_tungsten_ore")
-	event.hide("indrev:tungsten_purified_ore")
-	event.hide("indrev:tungsten_ingot")
-	event.hide("indrev:tungsten_plate")
-	event.hide("indrev:tungsten_block")
-	event.hide("indrev:tungsten_nugget")
-	event.hide("indrev:tungsten_dust")
-	event.hide("indrev:raw_tungsten")
-	event.hide("indrev:copper_plate")
-	event.hide("indrev:iron_plate")
-	event.hide("indrev:gold_plate")
-	event.hide("indrev:enriched_nikolite_dust")
-	event.hide("indrev:nikolite_dust")
-	event.hide("indrev:enriched_nikolite_ingot")
-	event.hide("indrev:nikolite_ingot")
-	event.hide("indrev:deepslate_nikolite_ore")
-	event.hide("indrev:nikolite_ore")
 
-	event.hide("agape_space:copper_plate")
-	event.hide("agape_space:iron_plate")
-	event.hide("agape_space:gold_plate")
-	event.hide("agape_space:aluminum_plate")
+onEvent('jei.hide.fluids', event => {
+})
 
-	event.hide("create:propeller")
-	event.hide("create:copper_ladder")
+onEvent('jei.add.items', event => {
+	event.add('thermal:ruby')
+	event.add('thermal:ruby_dust')
+	event.add('thermal:ruby_ore')
+	event.add('thermal:apatite_ore')
+	event.add('thermal:sapphire')
+	event.add('thermal:sapphire_dust')
+	event.add('thermal:sapphire_ore')
 
-	event.hide("tconstruct:molten_tungsten_bucket")
 
-	event.hide("createplus:crushed_tungsten_ore")
-	event.hide("createplus:crushed_antimony_ore")
-	event.hide("createplus:crushed_titanium_ore")
-	event.hide("createplus:crushed_iridium_ore")
-})*/
+})
+
+onEvent('item.tooltip', tooltip => {
+	let holds = (id, slots) => tooltip.add("metalbarrels:" + id + "_barrel", [`§7${slots} 格`])
+	let main_assembly = (id, stage) => tooltip.add(id, [`§7主目标: ${stage == "5A" ? "§6最终章" : "§6章节 " + stage}`, '§8思考一下如何自动化制作此物品'])
+	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7附加目标: §6章节 ${stage}`])
+	let not_consumed = (id, stage) => tooltip.add(id, [`§7在§7装配线§7中不消耗`])
+	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7生成高度：Y= §6${y1} §7至 §6${y2}`])
+
+	
+
+	ore("forbidden_arcanus:arcane_crystal_ore", 1, 9)
+	ore("appliedenergistics2:charged_quartz_ore", 1, 30)
+	ore("forbidden_arcanus:xpetrified_ore", 1, 30)
+	ore("appliedenergistics2:quartz_ore", 1, 30)
+	ore("thermal:apatite_ore", 1, 30)
+	ore("thermal:cinnabar_ore", 1, 30)
+	ore("thermal:niter_ore", 1, 30)
+	ore("thermal:nickel_ore", 1, 40)
+	ore("thermal:ruby_ore", 1, 30)
+	ore("thermal:sapphire_ore", 1, 30)
+	ore("thermal:lead_ore", 1, 20)
+	ore("minecraft:emerald_ore", 1, 30)
+	ore("thermal:sulfur_ore", 12, 36)
+	ore("create:zinc_ore", 15, 70)
+	ore("create:copper_ore", 40, 85)
+
+	ore("minecraft:coal_ore", 1, 128)
+	ore("minecraft:iron_ore", 1, 64)
+	ore("minecraft:lapis_ore", 1, 32)
+	ore("minecraft:gold_ore", 1, 32)
+	ore("minecraft:diamond_ore", 1, 16)
+	ore("minecraft:redstone_ore", 1, 16)
+
+	holds('copper', 5 * 9)
+	holds('iron', 6 * 9)
+	holds('silver', 8 * 9)
+	holds('gold', 9 * 9)
+
+	bonus_assembly('kubejs:handmade_mechanism', "0")
+	main_assembly('kubejs:kinetic_mechanism', "1")
+	bonus_assembly('kubejs:sealed_mechanism', "1A")
+	bonus_assembly('create_sa:heat_engine', "1A")
+	bonus_assembly('create_sa:hydraulic_engine', "1A")
+	main_assembly('create:precision_mechanism', "2")
+	bonus_assembly('kubejs:infernal_mechanism', "2A")
+	bonus_assembly('create_sa:steam_engine', "2A")
+	bonus_assembly('kubejs:sturdy_mechanism', "2A")
+	main_assembly('kubejs:inductive_mechanism', "3")
+	bonus_assembly('kubejs:abstruse_mechanism', "3A")
+	main_assembly('kubejs:calculation_mechanism', "4")
+	main_assembly('kubejs:crystalmatrix_mechanism', "5")
+	main_assembly('kubejs:creative_mechanism', "5A")
+
+	not_consumed('kubejs:stone_saw')
+	not_consumed('kubejs:iron_saw')
+	not_consumed('kubejs:diamond_saw')
+	not_consumed('kubejs:netherite_saw')
+	not_consumed('kubejs:screwdriver')
+	// not_consumed('create:super_glue')
+	not_consumed('kubejs:chromatic_resonator')
+	not_consumed('kubejs:flash_drive')
+	not_consumed('kubejs:maga_screwdriver')
+	not_consumed('kubejs:laser_blaster')
+	not_consumed('kubejs:rubber_duck')
+	// not_consumed('xreliquary:mercy_cross')
+	// not_consumed('xreliquary:ender_staff')
+
+	global.substrates[0].forEach(e => tooltip.add(e.id, [`§8类型： §7火成`]));
+	global.substrates[1].forEach(e => tooltip.add(e.id, [`§8类型： §7草本`]));
+	global.substrates[2].forEach(e => tooltip.add(e.id, [`§8类型： §7不稳定`]));
+	global.substrates[3].forEach(e => tooltip.add(e.id, [`§8类型： §7晶化`]));
+	global.substrates[4].forEach(e => tooltip.add(e.id, [`§8类型： §7金属`]));
+	global.substrates[5].forEach(e => tooltip.add(e.id, [`§8类型： §7宝石`]));
+	global.substrates[6].forEach(e => tooltip.add(e.id, [`§8类型： §7催化剂`]));
+
+	tooltip.add("structurescompass:structures_compass", [`§7右键以激活`]);
+
+	tooltip.add("magicfeather:magicfeather", [`§6给予你创造飞行的能力`]);
+
+	tooltip.add("xreliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
+
+	tooltip.add("kubejs:good_idea", [`§6可用于兑换绝妙发明`]);
+
+	tooltip.add("kubejs:createcoin", [`§7新型加密货币，相比于比特币更稳定`]);
+
+	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§o§8最苦的卡片...§r`]);
+
+	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
+
+	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
+
+	tooltip.add("kubejs:accellerator_redstone", ["§7在混沌炼金的探索中：", "  §6返回一个 §e对应的 §6反应物",
+		"  §6若该反应物在 §e不正确 §6的格子里，那么它不会被消耗"]);
+	tooltip.add("kubejs:accellerator_glowstone", ["§7在混沌炼金的探索中：", "  §6返回一个 §e对应的 §6反应物",
+		"  §6若该反应物在 §e正确 §6的格子里，那么它不会被消耗"]);
+
+	for (i = 0; i < 15; i++)
+		tooltip.add(`kubejs:failed_alchemy_${i}`, [
+			`§7放入离心分离机来辨别`,
+			"",
+			"§6返回物品：",
+			"- 灰烬 §7表示每一个不正确的材料",
+			"- 红石 §7表示每一个正确的材料 §7在不正确的格子里。",
+			"- 荧石 §7表示每一个正确的材料 §7在正确的格子里"
+		])
+})
+
+onEvent('jei.information', event => {
+
+	let catalyst = (name, me) =>
+		[
+			`通过§5炼金镭射§0找到四种§9${me ? name : name + " §0反应物"}§9正确的配方§0。`, " ",
+			`§81.§0 将漏斗矿车的前4个格子都使用 §9${me ? name : name + " §0反应物"}§0占满`,
+			`§82.§0 对着物品激活§5炼金镭射§0，然后你就会发现§9${me ? me : name + " §9催化剂"}§0，或是一些指向正确配方的§9提示§0`, " ",
+			"§8注：§0正确的配方可能含有物品§9重复§0",
+			"§8注：§0正确的配方§9因世界而异§0",
+			"§8可选项：§0 在矿车的第5格放§9红石促成剂§0或§9荧石促成剂§0获取§9额外提示§0",
+		]
+
+	event.add('kubejs:substrate_igneous', catalyst("火成"))
+	event.add('kubejs:substrate_herbal', catalyst("草本"))
+	event.add('kubejs:substrate_volatile', catalyst("不稳定"))
+	event.add('kubejs:substrate_crystal', catalyst("晶化"))
+	event.add('kubejs:substrate_metal', catalyst("金属"))
+	event.add('kubejs:substrate_gem', catalyst("宝石"))
+
+	event.add('kubejs:substrate_chaos', catalyst("催化剂", "混沌催化剂").concat([
+		" ", "§8用法：§0", "使用§5炼金镭射§0混合§9混沌催化剂§0和任意数量的同种§9反应物§0时，会将该反应物§9嬗变§0成其它的反应物。每个世界都有§9不同的§0嬗变配方。"
+	]))
+})

@@ -192,8 +192,9 @@
 			y: 3.0d
 			shape: "circle"
 			subtitle: "步骤 5"
-			description: ["你不太可能把你的工厂平摊在地面，或是干脆不盖工厂。因此，也许你需要一种更加合理的方式来切换楼层。"]
+			description: ["你不太可能把你的工厂平摊在地上，或是干脆不盖工厂。因此，也许你需要一种更加合理的方式来利用空间。"]
 			dependencies: ["106C6DFDCB97327C"]
+			optional: true
 			id: "6B7F0631060A9E62"
 			tasks: [{
 				id: "0C764FDD555E8CCD"
@@ -454,6 +455,11 @@
 					item: "minecraft:iron_ingot"
 					random_bonus: 4
 				}
+				{
+					id: "7F4A39303FB5E506"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
 			]
 		}
 		{
@@ -584,6 +590,11 @@
 					type: "item"
 					item: "minecraft:copper_ingot"
 					random_bonus: 4
+				}
+				{
+					id: "62C256392515CDFA"
+					type: "item"
+					item: "kubejs:good_idea"
 				}
 			]
 		}

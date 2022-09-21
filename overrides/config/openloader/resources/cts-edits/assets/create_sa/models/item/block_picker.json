@@ -1,0 +1,7 @@
+{
+  "parent": "create_sa:custom/block_picker",
+  "textures": {
+    "4": "create_sa:blocks/block_picker",
+    "particle": "create_sa:items/copper_magnet"
+  }
+}

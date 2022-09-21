@@ -5,7 +5,7 @@
 	filename: "5F812A5C1DAF80F8"
 	title: "&f&l6&r 异星工厂"
 	icon: "beyond_earth:moon_globe"
-	default_quest_shape: "circle"
+	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -59,8 +59,8 @@
 		{
 			title: "着陆-火星"
 			icon: "beyond_earth:mars_stone"
-			x: -2.0d
-			y: 4.0d
+			x: 0.0d
+			y: 2.0d
 			shape: "hexagon"
 			description: [
 				"在&6火星&r你可以找到一种当地特色的矿石——&6紫金矿石&r。"
@@ -85,8 +85,9 @@
 		}
 		{
 			title: "太阳系任你闯"
-			x: -3.0d
-			y: 5.0d
+			x: -1.0d
+			y: 3.0d
+			shape: "circle"
 			subtitle: "步骤 52"
 			description: [
 				"在火星你可以找到一种当地特色的矿石——紫金矿石"
@@ -109,8 +110,8 @@
 		}
 		{
 			title: "着陆-水星"
-			x: -4.0d
-			y: 8.0d
+			x: -2.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["Ubu-idim-gud-ud（闪族语：水星）"]
 			dependencies: ["25D5CA649D70E7F3"]
@@ -131,8 +132,8 @@
 		}
 		{
 			title: "着陆-金星"
-			x: -2.0d
-			y: 8.0d
+			x: 0.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["特色：&6耐热金属矿石&r，用途：&64级火箭&r"]
 			dependencies: ["25D5CA649D70E7F3"]
@@ -156,6 +157,7 @@
 			icon: "beyond_earth:alien_spawn_egg"
 			x: 1.0d
 			y: 1.0d
+			shape: "circle"
 			description: ["在月球有一种奇怪的蓝色种族，似乎不太聪明的丫子。"]
 			dependencies: ["455ACDBB066B83CB"]
 			optional: true
@@ -168,8 +170,9 @@
 		}
 		{
 			title: "更远的未来"
-			x: -2.0d
-			y: 11.0d
+			x: -1.0d
+			y: 5.0d
+			shape: "circle"
 			subtitle: "步骤 53"
 			description: ["有了这艘&64级太空火箭&r我们可以前往更远的星系。"]
 			dependencies: ["1412C99D8D8960B3"]
@@ -192,8 +195,8 @@
 		}
 		{
 			title: "着陆-霜原星"
-			x: -2.0d
-			y: 14.0d
+			x: 0.0d
+			y: 6.0d
 			shape: "hexagon"
 			description: ["美丽的大冰块。"]
 			dependencies: ["418F815CE774BCFA"]
@@ -214,103 +217,7 @@
 			}]
 		}
 		{
-			title: "异星建筑师"
-			icon: "beyond_earth:venus_stone_bricks"
-			x: 0.0d
-			y: 7.0d
-			subtitle: "步骤52-1"
-			description: ["&6火星石&r可以制作成&6火星石砖&r，好看不贵。"]
-			dependencies: ["1412C99D8D8960B3"]
-			dependency_requirement: "one_completed"
-			optional: true
-			id: "1D2DC28E7A2E78FF"
-			tasks: [
-				{
-					id: "6BC686F888EBC784"
-					type: "item"
-					item: "beyond_earth:venus_stone_bricks"
-					consume_items: false
-				}
-				{
-					id: "3EC7FF26E6988C2E"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "我裂开了"
-			icon: "beyond_earth:cracked_venus_stone_bricks"
-			x: 0.0d
-			y: 9.0d
-			subtitle: "步骤 52-2"
-			description: ["烧制&6火星石砖&r直到它变为&6裂痕火星石砖&r。"]
-			dependencies: ["1D2DC28E7A2E78FF"]
-			dependency_requirement: "one_completed"
-			id: "71E0FF4D03BC0FAF"
-			tasks: [
-				{
-					id: "37DD92CACBAABFCD"
-					type: "item"
-					disable_toast: true
-					item: "beyond_earth:cracked_venus_stone_bricks"
-					consume_items: false
-				}
-				{
-					id: "107749FC9B2AF070"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "粉碎"
-			icon: "kubejs:venus_dust"
-			x: 2.0d
-			y: 9.0d
-			subtitle: "步骤 52-3"
-			description: ["通过粉碎&6裂纹火星石砖&r得到&6火星岩粉&r，通常你会额外的获得&6火星石砖&r。"]
-			dependencies: ["71E0FF4D03BC0FAF"]
-			id: "0641E2F76830E348"
-			tasks: [
-				{
-					id: "391A28839879959C"
-					type: "item"
-					item: "kubejs:venus_dust"
-					consume_items: false
-				}
-				{
-					id: "41704F8834B4005E"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "结晶"
-			icon: "kubejs:venus_quartz"
-			x: 4.0d
-			y: 9.0d
-			subtitle: "步骤52-4"
-			description: ["通过神奇的搅拌使&6火星岩粉&r结晶。"]
-			dependencies: ["0641E2F76830E348"]
-			id: "3EBC61A196157671"
-			tasks: [
-				{
-					id: "5EB1530A2928D808"
-					type: "item"
-					item: "kubejs:venus_quartz"
-					consume_items: false
-				}
-				{
-					id: "34084B9E9782F3FB"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "打磨"
+			title: "抛光"
 			icon: {
 				id: "create:sand_paper"
 				Count: 1b
@@ -318,13 +225,11 @@
 					Damage: 0
 				}
 			}
-			x: 5.0d
-			y: 10.0d
+			x: 3.0d
+			y: 7.0d
+			subtitle: "步骤 56"
 			description: ["拿出库存里积灰的&6砂纸&r好好抛光你的异星宝石。"]
-			dependencies: [
-				"3EBC61A196157671"
-				"445FDA210870576C"
-			]
+			dependencies: ["0DB40CED99730287"]
 			id: "286E976F0D0604DC"
 			tasks: [
 				{
@@ -348,155 +253,13 @@
 			]
 		}
 		{
-			title: "闪亮亮"
-			icon: "kubejs:polished_venus_quartz"
-			x: 6.0d
-			y: 9.0d
-			subtitle: "步骤 52-5"
-			description: ["真漂亮不是吗？"]
-			dependencies: ["286E976F0D0604DC"]
-			id: "5DD445593587E20A"
-			tasks: [
-				{
-					id: "0896E054545B7F20"
-					type: "item"
-					item: "kubejs:polished_venus_quartz"
-					consume_items: false
-				}
-				{
-					id: "76BF1253D357A929"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "无情铁手"
-			icon: "beyond_earth:glacio_stone_bricks"
-			x: 0.0d
-			y: 13.0d
-			subtitle: "步骤 53-1"
-			description: ["你的无情铁手可以将这些-1963461℃的石头盘成石砖"]
-			dependencies: ["31569CFC9329E197"]
-			id: "6648FC46498BFD07"
-			tasks: [
-				{
-					id: "14760FFC54970061"
-					type: "item"
-					item: "beyond_earth:glacio_stone"
-					consume_items: false
-				}
-				{
-					id: "6AD3A346F856BBEF"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "裂开"
-			icon: "beyond_earth:cracked_glacio_stone_bricks"
-			x: 0.0d
-			y: 11.0d
-			subtitle: "步骤53-2"
-			description: ["这些超低温的石砖极度易碎，烧制它就像&6[步骤 52-2]&r一样。"]
-			dependencies: ["6648FC46498BFD07"]
-			id: "083319366C9ACB16"
-			tasks: [
-				{
-					id: "063A3D908F9762EC"
-					type: "item"
-					item: "beyond_earth:cracked_glacio_stone_bricks"
-					consume_items: false
-				}
-				{
-					id: "3419453FA4A1EAF1"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "粉碎:二"
-			icon: "kubejs:glacio_dust"
-			x: 2.0d
-			y: 11.0d
-			subtitle: "步骤 53-3"
-			description: ["粉碎&6裂纹寒霜石砖&r像&6[步骤 52-3]&r一样。"]
-			dependencies: ["083319366C9ACB16"]
-			dependency_requirement: "one_completed"
-			id: "2F7D18AD5EBB989D"
-			tasks: [
-				{
-					id: "45D754F06FD01F7C"
-					type: "item"
-					item: "kubejs:glacio_dust"
-					consume_items: false
-				}
-				{
-					id: "05FE3FC7822623FF"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "结晶体的结晶体"
-			icon: "kubejs:glacio_quartz"
-			x: 4.0d
-			y: 11.0d
-			subtitle: "步骤53-4"
-			description: ["通过神奇的巫术使霜原岩粉结晶。"]
-			dependencies: ["2F7D18AD5EBB989D"]
-			id: "445FDA210870576C"
-			tasks: [
-				{
-					id: "51E9258F6E389EF2"
-					type: "item"
-					item: "kubejs:glacio_quartz"
-					consume_items: false
-				}
-				{
-					id: "518D04AC840C4714"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "闪亮亮:第二部，评分:9.7"
-			icon: "kubejs:polished_glacio_quartz"
-			x: 6.0d
-			y: 11.0d
-			subtitle: "步骤53-5"
-			description: ["能吃吗？"]
-			dependencies: ["286E976F0D0604DC"]
-			id: "0930EAC00F14AE50"
-			tasks: [
-				{
-					id: "6A0F930EA1316966"
-					type: "item"
-					item: "kubejs:polished_glacio_quartz"
-					consume_items: false
-				}
-				{
-					id: "359CC01C1AB080B6"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
 			title: "交融"
 			icon: "kubejs:alpha_quartz"
-			x: 7.0d
-			y: 10.0d
-			subtitle: "步骤 54"
-			description: ["将两块星球宝石混合压制成一块&6阿尔法晶体&r。看起来很好吃。"]
-			dependencies: [
-				"5DD445593587E20A"
-				"0930EAC00F14AE50"
-			]
+			x: 3.0d
+			y: 8.0d
+			subtitle: "步骤 57"
+			description: ["将两块星球宝石混合压制成一块&6阿尔法晶体&r。看起来很美味。"]
+			dependencies: ["286E976F0D0604DC"]
 			id: "00E287B896112207"
 			tasks: [
 				{
@@ -515,9 +278,9 @@
 		{
 			title: "威化饼干"
 			icon: "kubejs:alpha_ingot"
-			x: 8.0d
-			y: 9.0d
-			subtitle: "步骤 55"
+			x: 0.0d
+			y: 8.0d
+			subtitle: "步骤 58"
 			description: [
 				"将&6阿尔法晶体&r通过&6辊压机&r辊压16下获得&6阿尔法合金&r。"
 				"由于精炼&6阿尔法合金&r的过程漫长而又枯燥，所以你可能需要建造一条自动生产线..."
@@ -541,14 +304,13 @@
 		{
 			title: "慢长加工"
 			icon: "avaritia:diamond_lattice"
-			x: 8.0d
-			y: 8.0d
-			subtitle: "步骤 56"
-			description: ["在&6感应炉&r中加入&6钻石粉&r，&6下界之星&r以加固&6阿尔法合金&r，这将消耗约&64000000FE&r。"]
+			x: 0.0d
+			y: 9.0d
+			subtitle: "步骤 59"
+			description: ["在&6感应炉&r中加入&6钻石粉&r，&6星辰&r以加固&6阿尔法合金&r，这将消耗约&64000000FE&r。"]
 			dependencies: [
 				"211F451405ACF59E"
-				"0266FF8DC048858B"
-				"42112159CDECA0F8"
+				"78A312F0BD04E228"
 			]
 			id: "1C32C4DDD72AF1AC"
 			tasks: [
@@ -568,12 +330,13 @@
 		{
 			title: "杀凋"
 			icon: "minecraft:wither_rose"
-			x: 9.0d
-			y: 8.0d
-			subtitle: "步骤 55-1"
+			x: 1.0d
+			y: 11.0d
+			shape: "circle"
+			subtitle: "步骤 60-1"
 			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6模拟室&r，或者&6自动下界之星催化&r生产线。"]
 			hide_dependency_lines: true
-			dependencies: ["211F451405ACF59E"]
+			dependencies: ["1C32C4DDD72AF1AC"]
 			id: "0266FF8DC048858B"
 			tasks: [{
 				id: "5FBAEC8F216C4953"
@@ -588,49 +351,15 @@
 			}]
 		}
 		{
-			title: "我接受不了！"
-			icon: "thermal:diamond_dust"
-			x: 9.0d
-			y: 9.0d
-			subtitle: "步骤 55-2"
-			description: [
-				""
-				"制作&6钻石晶格&r的必要材料之一：&6钻石粉&r，你最好将其&6自动化&r。"
-			]
-			hide_dependency_lines: true
-			dependencies: ["211F451405ACF59E"]
-			id: "42112159CDECA0F8"
-			tasks: [
-				{
-					id: "64428DB5DE0939CD"
-					type: "item"
-					title: "钻石粉"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:dusts/diamond"
-						}
-					}
-					consume_items: false
-				}
-				{
-					id: "7FBED9D834444578"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
 			title: "昂贵物品 III"
 			icon: "avaritia:crystal_matrix_ingot"
-			x: 8.0d
-			y: 7.0d
-			subtitle: "步骤 57"
+			x: 0.0d
+			y: 11.0d
+			subtitle: "步骤 60"
 			description: ["猜猜&6钻石晶格&r+&6下界之星&r会擦出什么样的火花？答案是&6水晶矩阵锭&r。"]
 			dependencies: [
-				"1C32C4DDD72AF1AC"
 				"0266FF8DC048858B"
+				"1C32C4DDD72AF1AC"
 			]
 			id: "315CDAB5262EC376"
 			tasks: [
@@ -648,12 +377,12 @@
 			]
 		}
 		{
-			title: "霸王硬压板"
+			title: "没有什么是液压机搞不定的"
 			icon: "kubejs:crystal_matrix_sheet"
-			x: 8.0d
-			y: 6.0d
-			subtitle: "步骤 58"
-			description: ["高端的材料往往采用简单的加工，就像&6水晶矩阵锭&r，只需使用&6混压机&r混压48下即可变成板材。"]
+			x: 0.0d
+			y: 12.0d
+			subtitle: "步骤 61"
+			description: ["高端的材料往往采用简单的加工，就像&6水晶矩阵锭&r，只需使用&6混压机&r混压32下即可变成板材。"]
 			dependencies: ["315CDAB5262EC376"]
 			id: "2E0FBE0A1F0ED1F1"
 			tasks: [
@@ -671,13 +400,16 @@
 			]
 		}
 		{
-			title: "皮薄馅厚"
+			title: "海因斯科技"
 			icon: "kubejs:crystalmatrix_mechanism"
-			x: 6.0d
-			y: 6.0d
-			subtitle: "步骤 59"
-			description: ["现在是时候将各种各样的材料的齿轮装配成&6晶格构件&r吧！"]
-			dependencies: ["2E0FBE0A1F0ED1F1"]
+			x: 0.0d
+			y: 14.0d
+			subtitle: "步骤 62"
+			description: ["现在是时候装配&6晶格构件&r了！"]
+			dependencies: [
+				"2E0FBE0A1F0ED1F1"
+				"082EF209B07565AF"
+			]
 			id: "34260F620C3A90E7"
 			tasks: [
 				{
@@ -695,10 +427,10 @@
 		}
 		{
 			title: "&f&l第六章完成！&r"
-			x: 4.0d
-			y: 6.0d
+			x: 0.0d
+			y: 16.0d
 			shape: "hexagon"
-			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起步入&4&l无尽&r吧！"]
+			description: ["终于走到这一步了！你的外星工厂中所有的流水线都已组装完成，让我们一起迎接&d&l终章&r吧！"]
 			dependencies: ["34260F620C3A90E7"]
 			size: 2.0d
 			id: "5E5845C2A3CBF34F"
@@ -708,12 +440,20 @@
 				item: "avaritia:crystal_matrix"
 				consume_items: false
 			}]
+			rewards: [{
+				id: "59CE14A5E0E41E25"
+				type: "item"
+				item: "kubejs:good_idea"
+				count: 4
+			}]
 		}
 		{
 			title: "宇宙的尽头是工作台？"
 			icon: "avaritia:extreme_crafting_table"
-			x: 4.0d
-			y: 4.0d
+			x: 0.0d
+			y: 18.0d
+			shape: "hexagon"
+			subtitle: "步骤 63"
 			description: [
 				""
 				"&6终极工作台&r可让你合成一些稀有物品。准备好就开始下一步吧。"
@@ -743,26 +483,22 @@
 		{
 			title: "耐心测试"
 			icon: "avaritia:neutron_collector"
-			x: 4.0d
-			y: 2.0d
+			x: 0.0d
+			y: 20.0d
+			shape: "square"
+			subtitle: "步骤 65"
 			description: ["&6中子态素收集器&r可以收集一些肉眼不可见的物质：&6中子&r，你需要等待。"]
 			dependencies: ["09227C3DB592F602"]
 			id: "7839DED88F29B5CD"
 			tasks: [
 				{
-					id: "208E12D92E7434BC"
-					type: "item"
-					item: "avaritia:neutron_collector"
-					consume_items: false
-				}
-				{
-					id: "1EABF814E6B34BE2"
+					id: "3F09FDA82B87A5D5"
 					type: "item"
 					item: "avaritia:neutronium_ingot"
 					consume_items: false
 				}
 				{
-					id: "66DF998E75AA088A"
+					id: "692F5A22610E3747"
 					type: "checkmark"
 					title: "已自动化"
 				}
@@ -771,8 +507,9 @@
 		{
 			title: "(怎么又是齿轮)"
 			icon: "avaritia:neutronium_gear"
-			x: 6.0d
-			y: 1.0d
+			x: 2.0d
+			y: 21.0d
+			subtitle: "步骤 68"
 			description: ["将&6中子锭&r压制成板并制作成齿轮，你最好将其自动化。"]
 			dependencies: ["7839DED88F29B5CD"]
 			id: "4629C22BEAB2F8E9"
@@ -793,25 +530,17 @@
 		{
 			title: "俄罗斯套娃"
 			icon: "avaritia:infinity_ingot"
-			x: 5.0d
-			y: 3.0d
+			x: -1.0d
+			y: 22.0d
+			subtitle: "步骤 66"
 			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭，有了之前的经验你应该可以熟练的完成自动化。"]
-			dependencies: [
-				"7839DED88F29B5CD"
-				"666D3A0088EAD5EE"
-			]
+			dependencies: ["7839DED88F29B5CD"]
 			id: "6AEFF95FF106F145"
 			tasks: [
 				{
 					id: "62A82055466696D4"
 					type: "item"
 					item: "avaritia:infinity_catalyst"
-					consume_items: false
-				}
-				{
-					id: "50C14C10399A210F"
-					type: "item"
-					item: "avaritia:neutronium_compressor"
 					consume_items: false
 				}
 				{
@@ -829,12 +558,15 @@
 		}
 		{
 			icon: "kubejs:creative_mechanism"
-			x: 7.0d
-			y: 3.0d
+			x: 1.0d
+			y: 23.0d
+			subtitle: "步骤 69"
 			description: ["终于，是时候将&6晶格构件&r升级一下了！"]
 			dependencies: [
 				"6AEFF95FF106F145"
 				"4629C22BEAB2F8E9"
+				"666D3A0088EAD5EE"
+				"69B57B68F682D27B"
 			]
 			id: "1435BC0C1FD6636F"
 			tasks: [
@@ -853,8 +585,8 @@
 		}
 		{
 			title: "&d&l第六章支线完成！"
-			x: 9.0d
-			y: 3.0d
+			x: 0.0d
+			y: 26.0d
 			shape: "hexagon"
 			description: ["&6创世构件&r正在被源源不断地生产！全新的技术和魔法之门将为你打开！请发挥你的想象力，尽情创造！"]
 			dependencies: ["1435BC0C1FD6636F"]
@@ -866,9 +598,15 @@
 				item: "kubejs:creative_machine"
 				consume_items: false
 			}]
+			rewards: [{
+				id: "6FB060BE9F63723F"
+				type: "item"
+				item: "kubejs:good_idea"
+				count: 4
+			}]
 		}
 		{
-			title: "Plan B"
+			title: "最高级的工具，往往是最普通的形态"
 			icon: {
 				id: "kubejs:maga_screwdriver"
 				Count: 1b
@@ -876,19 +614,172 @@
 					Damage: 0
 				}
 			}
-			x: 6.0d
-			y: 4.0d
-			description: ["&6中子螺丝刀&r可以帮你更简单的完成&6无尽锭&r的自动生产，请好好利用这一点！"]
+			x: 2.0d
+			y: 23.0d
+			shape: "circle"
+			description: [
+				"接下来使用&6中子螺丝刀&r拧紧你的构件"
+				"&7保管好！"
+			]
 			hide_dependency_lines: true
 			dependencies: ["7839DED88F29B5CD"]
-			optional: true
 			id: "666D3A0088EAD5EE"
+			tasks: [{
+				id: "6FCFB3C1A7744C77"
+				type: "item"
+				item: {
+					id: "kubejs:maga_screwdriver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "科学(大虚)炼金"
+			icon: "botania:mana_pool"
+			x: 2.0d
+			y: 5.0d
+			subtitle: "步骤 54"
+			description: ["通过&6炼金晶化器&r可以将一些外星岩石转化为对应的岩石粉。"]
+			dependencies: [
+				"58AC2D54BDF3D867"
+				"21A95F0560BC5C1D"
+			]
+			id: "5B40C7A5DF090045"
 			tasks: [
 				{
-					id: "6FCFB3C1A7744C77"
+					id: "524D504EEBE73B6A"
+					type: "item"
+					item: "kubejs:ice_catalyst"
+					consume_items: false
+				}
+				{
+					id: "4AFE9546B84132B8"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "beyond_earth:venus_stone"
+			x: 1.0d
+			y: 3.0d
+			shape: "circle"
+			subtitle: "步骤 52-1"
+			description: ["外星的岩石中含有大量的未知元素，在探索发现之前，先准备好足够的样本。"]
+			dependencies: ["1412C99D8D8960B3"]
+			id: "58AC2D54BDF3D867"
+			tasks: [
+				{
+					id: "3E7417FF6117D417"
+					type: "item"
+					item: "beyond_earth:venus_stone"
+					consume_items: false
+				}
+				{
+					id: "2AF86B444D969929"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "beyond_earth:glacio_stone"
+			x: 1.0d
+			y: 7.0d
+			shape: "circle"
+			subtitle: "步骤 53-1"
+			description: ["外星的岩石中含有大量的未知元素，在探索发现之前，先准备好足够的样本。"]
+			dependencies: ["31569CFC9329E197"]
+			id: "21A95F0560BC5C1D"
+			tasks: [
+				{
+					id: "6D77A3D331AD645F"
+					type: "item"
+					item: "beyond_earth:glacio_stone"
+					consume_items: false
+				}
+				{
+					id: "6B8D603949221802"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "天外宝石"
+			icon: "kubejs:glacio_quartz"
+			x: 3.0d
+			y: 6.0d
+			subtitle: "步骤 55"
+			dependencies: ["5B40C7A5DF090045"]
+			id: "0DB40CED99730287"
+			tasks: [
+				{
+					id: "443B26AF4C85D612"
+					type: "item"
+					item: "kubejs:glacio_quartz"
+					consume_items: false
+				}
+				{
+					id: "513AEAC3C9A2ABC2"
+					type: "item"
+					item: "kubejs:venus_quartz"
+					consume_items: false
+				}
+				{
+					id: "6D03A6419AB2A088"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "未知信号"
+			icon: "kubejs:missingno"
+			x: -1.0d
+			y: 10.0d
+			shape: "circle"
+			description: ["你突然接收到了一段微弱的信号，断断续续的语音里一个自称“大人物”的人要求你向这个账户打一个&6奎特币&r以进一步交流，关于&6星辰&r的事。"]
+			dependencies: ["0F68DA1AC8F50701"]
+			id: "78A312F0BD04E228"
+			tasks: [{
+				id: "3C935CC944D5CD67"
+				type: "item"
+				item: "kubejs:createcoin"
+			}]
+			rewards: [{
+				id: "79E2E7C15CAB1F98"
+				type: "toast"
+				title: "解锁黑市"
+				icon: "minecraft:book"
+				description: "首次沟通"
+			}]
+		}
+		{
+			title: "矿老板"
+			icon: {
+				id: "kubejs:graphics_card_t1"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: 9.0d
+			description: ["知道现在什么最赚钱吗？挖矿！不是那个挖矿，是通过显卡算力挖矿。"]
+			hide_dependency_lines: true
+			dependencies: ["211F451405ACF59E"]
+			id: "58C81CF3D7357744"
+			tasks: [
+				{
+					id: "2955E1BD2B9E2789"
 					type: "item"
 					item: {
-						id: "kubejs:maga_screwdriver"
+						id: "kubejs:graphics_card_t1"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -897,9 +788,104 @@
 					consume_items: false
 				}
 				{
-					id: "1867CD8792818EC0"
+					id: "145B69F61742AEA7"
 					type: "checkmark"
 					title: "好的"
+				}
+			]
+			rewards: [{
+				id: "23CE3E24B2109C77"
+				type: "item"
+				item: "pipez:energy_pipe"
+				count: 16
+			}]
+		}
+		{
+			icon: "kubejs:blockchain"
+			x: -3.0d
+			y: 11.0d
+			description: ["&6实体区块链&r是一个共享的、不可篡改的账本，旨在促进业务网络中的村民交易记录和村民资产跟踪流程。 "]
+			hide_dependency_lines: true
+			dependencies: ["211F451405ACF59E"]
+			id: "4D758C3E20EA4E66"
+			tasks: [
+				{
+					id: "09CAC26DC2B792D8"
+					type: "item"
+					item: "kubejs:blockchain"
+					consume_items: false
+				}
+				{
+					id: "65EB2739DFF7DC58"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "加密货币"
+			icon: "kubejs:createcoin"
+			x: -2.0d
+			y: 10.0d
+			shape: "circle"
+			description: ["与大多数货币不同，比特币不依靠特定货币机构发行，它依据特定算法，通过大量的计算产生，而&6奎特币&r相比于比特币更加保值。"]
+			dependencies: [
+				"4D758C3E20EA4E66"
+				"58C81CF3D7357744"
+			]
+			id: "0F68DA1AC8F50701"
+			tasks: [
+				{
+					id: "39BA978A0AB00EA0"
+					type: "item"
+					item: "kubejs:createcoin"
+					consume_items: false
+				}
+				{
+					id: "236FC519F07875B8"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 14.0d
+			shape: "circle"
+			description: [
+				"接下来使用&6神器鸭&r武装你的构件"
+				"&7保管好神器！你不必自动化生产它！"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2E0FBE0A1F0ED1F1"]
+			id: "082EF209B07565AF"
+			tasks: [{
+				id: "2640B8453B2BBB7A"
+				type: "item"
+				item: "kubejs:rubber_duck"
+				consume_items: false
+			}]
+		}
+		{
+			title: "宇宙级处理器"
+			icon: "kubejs:neutronium_drive_hyper_dense"
+			x: 0.5d
+			y: 21.5d
+			subtitle: "步骤 67"
+			description: ["全宇宙最强大的处理器。"]
+			dependencies: ["7839DED88F29B5CD"]
+			id: "69B57B68F682D27B"
+			tasks: [
+				{
+					id: "32F90840DDE5B314"
+					type: "item"
+					item: "kubejs:neutronium_drive_hyper_dense"
+					consume_items: false
+				}
+				{
+					id: "1CE9C59EA5D145AC"
+					type: "checkmark"
+					title: "已自动化"
 				}
 			]
 		}

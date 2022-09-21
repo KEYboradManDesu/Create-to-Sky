@@ -981,6 +981,12 @@
 					item: "thermal:invar_ingot"
 					random_bonus: 4
 				}
+				{
+					id: "32A8106F9F5E0DB1"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
+				}
 			]
 		}
 		{
@@ -1016,7 +1022,7 @@
 			tasks: [{
 				id: "1E9F96D2152F7384"
 				type: "item"
-				title: "Bucket (Molten Silver)"
+				title: "熔融银桶"
 				item: "tconstruct:molten_silver_bucket"
 			}]
 		}
@@ -1035,13 +1041,27 @@
 					type: "item"
 					title: "银"
 					icon: "thermal:silver_block"
-					item: "thermal:silver_block"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:storage_blocks/silver"
+						}
+					}
 					consume_items: false
 				}
 				{
 					id: "21EC8A60BEC82284"
 					type: "item"
-					item: "thermal:silver_ingot"
+					title: "银锭"
+					icon: "thermal:silver_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/silver"
+						}
+					}
 					consume_items: false
 				}
 			]
@@ -1129,7 +1149,7 @@
 			x: 0.0d
 			y: 19.5d
 			shape: "circle"
-			description: ["感谢&6热力&r技术，现在你可以循环生产&6暗紫真菌&r了。这样一来，稳定生产&6末影合金&r也就不再成问题。"]
+			description: ["感谢&6热力&r技术，现在你可以循环生产&6紫颂果&r了。这样一来，稳定生产&6末影合金&r也就不再成问题。"]
 			dependencies: ["794B3C10C6110CB5"]
 			id: "1CCDA748B237F6F5"
 			tasks: [{
@@ -1178,6 +1198,12 @@
 					type: "item"
 					item: "thermal:enderium_ingot"
 					random_bonus: 4
+				}
+				{
+					id: "72CE167FCA5309F4"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
 				}
 			]
 		}

@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "kubejs:crystalmatrixt_mechanism"
+    "item": "kubejs:calculation_mechanism"
   },
   "transitionalItem": {
     "item": "kubejs:incomplete_crystalmatrix_mechanism"
@@ -14,7 +14,23 @@
           "item": "kubejs:incomplete_crystalmatrix_mechanism"
         },
         {
-          "item": "thermal:lapis_gear"
+          "item": "kubejs:crystal_matrix_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_crystalmatrix_mechanism"
+        },
+        {
+          "item": "kubejs:nether_gear"
         }
       ],
       "results": [
@@ -30,7 +46,7 @@
           "item": "kubejs:incomplete_crystalmatrix_mechanism"
         },
         {
-          "item": "thermal:iron_gear"
+          "item": "kubejs:nether_gear"
         }
       ],
       "results": [
@@ -46,25 +62,7 @@
           "item": "kubejs:incomplete_crystalmatrix_mechanism"
         },
         {
-          "item": "thermal:gold_gear"
-        }
-      ],
-      "results": [
-        {
-          "item": "kubejs:incomplete_crystalmatrix_mechanism"
-        }
-      ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "kubejs:incomplete_crystalmatrix_mechanism"
-        },
-        {
-          "fluid": "kubejs:matrix",
-          
-          "amount": 1000
+          "item": "kubejs:rubber_duck"
         }
       ],
       "results": [

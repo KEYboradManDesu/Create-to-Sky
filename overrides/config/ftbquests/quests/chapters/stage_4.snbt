@@ -656,6 +656,12 @@
 					item: "thermal:lead_plate"
 					random_bonus: 4
 				}
+				{
+					id: "571546C7B5B86F4E"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 4
+				}
 			]
 		}
 		{

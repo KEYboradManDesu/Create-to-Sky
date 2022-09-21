@@ -40,8 +40,6 @@ onEvent("item.registry", event => {
 		registerMechanism("Abstruse", "深邃", RARITY_UNCOMMON)
 		registerMechanism("Calculation", "智能", RARITY_UNCOMMON)
 		registerMechanism("crystalmatrix", "晶格", RARITY_UNCOMMON)
-		registerMechanism("crystalmatrixtt", "晶格3号", RARITY_UNCOMMON)
-		registerMechanism("crystalmatrixt", "晶格2号", RARITY_UNCOMMON)
 		registerMechanism("creative", "§d§l创世")
 	}
 	//	Machine Parts
@@ -89,7 +87,22 @@ onEvent("item.registry", event => {
 		event.create("screwdriver")
 			.texture(modpackId + ":item/screwdriver")
 			.displayName("强化螺丝刀").rarity(RARITY_UNCOMMON)
-			.maxDamage(512)
+			.maxDamage(124)
+
+		event.create("graphics_card_t1")
+			.texture(modpackId + ":item/graphics_card_t1")
+			.displayName("显卡").rarity(RARITY_UNCOMMON)
+			.maxDamage(124)
+
+		event.create("graphics_card_t2")
+			.texture(modpackId + ":item/graphics_card_t2")
+			.displayName("高级显卡").rarity(RARITY_UNCOMMON)
+			.maxDamage(248)
+
+		event.create("graphics_card_c")
+			.texture(modpackId + ":item/graphics_card_c")
+			.displayName("§d创造型显卡§r").rarity(RARITY_UNCOMMON)
+			.unstackable()
 		
 		
 		registerTypicalItem("Nickel Compound", "镶边镍锭")
@@ -170,6 +183,18 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/crushed/crushed_cobalt_ore")
 			.displayName("粉碎钴矿石")
 
+		event.create("crushed_calorite_ore")
+			.texture(modpackId + ":item/crushed/crushed_calorite_ore")
+			.displayName("粉碎耐热金属矿石")
+
+		event.create("crushed_desh_ore")
+			.texture(modpackId + ":item/crushed/crushed_desh_ore")
+			.displayName("粉碎戴斯矿石")
+
+		event.create("crushed_ostrum_ore")
+			.texture(modpackId + ":item/crushed/crushed_ostrum_ore")
+			.displayName("粉碎紫金矿石")
+
 		event.create("dye_entangled_singularity")
 			.texture(modpackId + ":item/dye_entangled_singularity")
 			.unstackable()
@@ -188,6 +213,7 @@ onEvent("item.registry", event => {
 		event.create("incomplete_basalz_rod")
 			.texture(modpackId + ":item/incomplete_basalz_shard")
 			.displayName("岩石残骸（未完成）")
+
 
 		event.create("incomplete_blitz_cube")
 			.texture(modpackId + ":item/incomplete_blitz_cube")
@@ -326,6 +352,101 @@ onEvent("item.registry", event => {
 			.displayName("增殖中的下界之星晶体").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
+		event.create("nether_gear")
+			.texture(modpackId + ":item/nether_gear")
+			.displayName("下界之星齿轮").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("incomplete_nether_gear")
+			.texture(modpackId + ":item/incomplete_nether_gear")
+			.displayName("下界之星齿轮（半成品）").rarity(RARITY_UNCOMMON)
+			.glow(true)
+
+		event.create("gear_die")
+			.texture(modpackId + ":item/gear_die")
+			.displayName("一次性齿轮模具").rarity(RARITY_UNCOMMON)
+
+		event.create("stormyx_ingot")
+			.texture(modpackId + ":item/stormyx_ingot")
+			.displayName("§d飓霆锭§r").rarity(RARITY_UNCOMMON)
+
+		event.create("stormyx_nugget")
+			.texture(modpackId + ":item/stormyx_nugget")
+			.displayName("§d飓霆粒§r").rarity(RARITY_UNCOMMON)
+
+		event.create("stormyx_dust")
+			.texture(modpackId + ":item/stormyx_dust")
+			.displayName("§d飓霆粉§r").rarity(RARITY_UNCOMMON)
+
+		event.create("raw_stormyx")
+			.texture(modpackId + ":item/raw_stormyx")
+			.displayName("§d粗飓霆岩§r").rarity(RARITY_UNCOMMON)
+
+		event.create("neutronium_drive_hyper_dense")
+			.texture(modpackId + ":item/neutronium_drive_hyper_dense")
+			.displayName("§e§l中子 QIO 驱动器§r").rarity(RARITY_UNCOMMON)
+
+		event.create("starrite")
+			.texture(modpackId + ":item/starrite")
+			.displayName("星辰").rarity(RARITY_UNCOMMON)
+
+		event.create("damascus_steel_ingot")
+			.texture(modpackId + ":item/damascus_steel_ingot")
+			.displayName("大马士革钢锭")
+
+		event.create("damascus_steel_dust")
+			.texture(modpackId + ":item/damascus_steel_dust")
+			.displayName("富集大马士革钢粉")
+
+		event.create("crushed_stormyx_ore")
+			.texture(modpackId + ":item/crushed/crushed_stormyx_ore")
+			.displayName("§d粉碎飓霆矿石")
+
+		event.create("twilight_diamond")
+			.texture(modpackId + ":item/twilight_diamond")
+			.displayName("暮色钻石").rarity(RARITY_UNCOMMON)
+
+		event.create("good_idea")
+			.texture(modpackId + ":item/good_idea")
+			.displayName("§e§l绝妙主意§r").rarity(RARITY_UNCOMMON)
+
+		event.create("blockchain")
+			.texture(modpackId + ":item/blockchain")
+			.displayName("实体区块链").rarity(RARITY_UNCOMMON)
+
+		event.create("createcoin")
+			.texture(modpackId + ":item/createcoin")
+			.displayName("奎特币").rarity(RARITY_UNCOMMON)
+
+		event.create("rickroll")
+			.texture(modpackId + ":item/rickroll")
+			.displayName("你被骗了！").rarity(RARITY_UNCOMMON)
+
+		event.create("stormyx_gear")
+			.texture(modpackId + ":item/stormyx_gear")
+			.displayName("§d飓霆齿轮§r").rarity(RARITY_UNCOMMON)
+
+		event.create("incomplete_graphics_card")
+			.texture(modpackId + ":item/incomplete_graphics_card")
+			.displayName("显卡（未完成）")
+
+		event.create("incomplete_blockchain")
+			.texture(modpackId + ":item/incomplete_blockchain")
+			.displayName("实体区块链（未完成）")
+
+		event.create("trade_card_unknow")
+			.texture(modpackId + ":item/trade_card")
+			.displayName("§6购买：§b§khu§on§mДa§r§b§k§oャ§e星辰？§b§mДa§r§b§k§oャ§r")
+			.unstackable()
+
+		event.create("rubber_duck")
+		    .parentModel(modpackId + ":item/rubber_duck")
+			.displayName("§b§l神器鸭§r")
+			.unstackable()
+	
+	
+
+
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')
 		event.create('pipe_module_tier_1').texture(modpackId + ":item/pipe_module_tier_1").displayName('黄铜管道模块')
 		event.create('pipe_module_tier_2').texture(modpackId + ":item/pipe_module_tier_2").displayName('殷钢管道模块')
@@ -459,9 +580,22 @@ onEvent("block.registry", event => {
 		.model(modpackId + ":block/computation_matrix")
 		.material("metal")
 		.hardness(3.0)
-		.displayName("§d§l智能矩阵")
+		.displayName("§d§l智能矩阵§r")
 		.tagBlock("minecraft:mineable/pickaxe")
 
+	event.create("waste_block")
+		.model(modpackId + ":block/waste_block")
+		.material("metal")
+		.hardness(3.0)
+		.displayName("§e废弃物质反应块§r")
+		.tagBlock("minecraft:mineable/pickaxe")
+
+	event.create("ice_catalyst")
+		.model(modpackId + ":block/ice_catalyst")
+		.material("glass")
+		.hardness(3.0)
+		.displayName("§e炼金晶化器§r")
+		.tagBlock("minecraft:mineable/pickaxe")
 
 })
 
@@ -482,6 +616,10 @@ onEvent("fluid.registry", event => {
 		.displayName("充能水")
 		.thinTexture(0x76d0f9)
 
+	event.create("mineral_water")
+		.displayName("矿泉水")
+		.thinTexture(0x76d0f9)
+
 	event.create("coke")
 		.displayName("液态焦炭")
 		.thinTexture(0x323232)
@@ -493,7 +631,7 @@ onEvent("fluid.registry", event => {
 		.noBlock()
 
 	event.create("infinity")
-		.displayName("§4§l熔融无尽")
+		.displayName("§4§l熔融无尽§r")
 		.thickTexture(0xFFFAFA)
 		.noBlock()	
 
@@ -511,7 +649,7 @@ onEvent("fluid.registry", event => {
 			.noBucket()
 	}
 	event.create("matrix")
-		.displayName("§d§l液态智能矩阵")
+		.displayName("§d§l液态智能矩阵§r")
 		.thinTexture(colors[0])
 		.noBlock()
 

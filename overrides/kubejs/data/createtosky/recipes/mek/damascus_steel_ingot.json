@@ -1,0 +1,1 @@
+{"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"item":"kubejs:damascus_steel_dust"}},"chemicalInput":{"amount":10,"tag":"mekanism:carbon"},"output":{"item":"kubejs:damascus_steel_ingot","count":2}}

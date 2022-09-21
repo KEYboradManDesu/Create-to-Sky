@@ -500,6 +500,12 @@
 					item: "create:brass_ingot"
 					random_bonus: 4
 				}
+				{
+					id: "00CBDA1EC1344434"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
+				}
 			]
 		}
 		{
@@ -697,6 +703,12 @@
 					type: "item"
 					item: "minecraft:gold_ingot"
 					random_bonus: 4
+				}
+				{
+					id: "7345894A7AE6B162"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
 				}
 			]
 		}

@@ -66,9 +66,9 @@
 	"item.exnihilosequentia.wooden_hammer": "木锤",
 
 	"item.exnihilosequentia.oak_seeds": "橡子",
-	"item.exnihilosequentia.spruce_seeds": "云杉种子",
-	"item.exnihilosequentia.birch_seeds": "白桦种子",
-	"item.exnihilosequentia.jungle_seeds": "雨林种子",
+	"item.exnihilosequentia.spruce_seeds": "云杉球果",
+	"item.exnihilosequentia.birch_seeds": "白桦絮",
+	"item.exnihilosequentia.jungle_seeds": "丛林木荚",
 	"item.exnihilosequentia.acacia_seeds": "合金欢种子",
 	"item.exnihilosequentia.dark_oak_seeds": "深色橡子",
 	"item.exnihilosequentia.kelp_seeds": "海带种子",
@@ -81,6 +81,7 @@
 	"item.exnihilosequentia.carrot_seeds": "胡萝卜种子",
 	"item.exnihilosequentia.potato_seeds": "马铃薯种子",
 	"item.exnihilosequentia.sweet_berry_seeds": "甜浆果种子",
+	"item.exnihilosequentia.mycelium_spores": "小块菌丝",
 
 	"item.exnihilosequentia.sea_water_bucket": "海水桶",
 	"item.exnihilosequentia.witch_water_bucket": "巫水桶",
@@ -99,6 +100,9 @@
 	"item.exnihilosequentia.pink_coral_larvae": "脑纹珊瑚碎片",
 	"item.exnihilosequentia.purple_coral_larvae": "气泡珊瑚碎片",
 	"item.exnihilosequentia.red_coral_larvae": "火珊瑚碎片",
-	"item.exnihilosequentia.yellow_coral_larvae": "鹿角珊瑚碎片"
+	"item.exnihilosequentia.yellow_coral_larvae": "鹿角珊瑚碎片",
+
+	"item.exnihilosequentia.unfired_crucible": "未烧制的坩埚",
+	"item.exnihilosequentia.fired_crucible": "坩埚"
 	
 }
