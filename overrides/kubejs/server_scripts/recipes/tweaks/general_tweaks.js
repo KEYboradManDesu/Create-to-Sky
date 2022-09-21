@@ -1224,12 +1224,14 @@ function prettierpipes(event) {
       event.recipes.createSplashing([Item.of(nugget, 2)], dust)
       event.recipes.createMixing([Fluid.of(fluid, 288)], [Item.of(dust, 3), AE2('matter_ball')]).superheated()
   
-      event.remove({ ingredients: "#forge:ores/" + name, type: TE("smelter") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: TE("pulverizer") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: MC("blasting") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: MC("smelting") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: CR("crushing") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: CR("milling") })
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:milling"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:crushing"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:smelter"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:pulverizer"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:blasting"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:smelting"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:crushing"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:milling"})
 
   event.custom({
   "type": "thermal:crucible",
@@ -1252,7 +1254,7 @@ function prettierpipes(event) {
   event.custom({
   "type": "thermal:pulverizer",
   "ingredients": [{"tag": "forge:ores/" + name}],
-  "result": [{"item": crushed},{"item": stone,"chance": 0.5}],
+  "result": [{"item": crushed}, {"item": "minecraft:cobblestone","chance": 0.5}],
   "energy": 3000
 })
 
