@@ -1187,7 +1187,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
       event.custom({
         type: 'thermal:press',
         ingredients: [
-          Ingredient.of(ingredient).toJson(),
+          Item.of(ingredient).toResultJson(),
           Ingredient.of(card_id).toJson(),
         ],
         result: [
@@ -1546,8 +1546,6 @@ function prettierpipes(event) {
       event.recipes.createSplashing([Item.of(nugget, 2)], dust)
       event.recipes.createMixing([Fluid.of(fluid, 540)], [Item.of(dust, 1), AE2('matter_ball')]).superheated()
   
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:milling"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:crushing"})
       event.remove({id: `thermal:machines/pulverizer/pulverizer_${name}_ore`})
       event.remove({id: `thermal:machines/smelter/smelter_${name}_ore`})
 //      event.remove({ input: "#forge:ores/" + name, type: TE("smelter") })
@@ -1662,8 +1660,6 @@ function prettierpipes(event) {
     "experience": 0.2,
     "energy": 20000
     })
-
-
 }
   
     dust_process2('cobalt', 'tconstruct:cobalt_ingot', 'tconstruct:cobalt_nugget', 'kubejs:cobalt_dust', 'tconstruct:cobalt_ore', TE('sulfur'), 'lead')
@@ -1774,5 +1770,7 @@ function prettierpipes(event) {
     "result": [{"item": "minecraft:redstone","count": 8}],
     "energy": 10000
   })
+ 
+    event.remove({ id: 'twilightforest:uncrafting_table' })
   
   })
