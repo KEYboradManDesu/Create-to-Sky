@@ -1226,12 +1226,14 @@ function prettierpipes(event) {
   
       event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:milling"})
       event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:crushing"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:smelter"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:pulverizer"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:blasting"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:smelting"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:crushing"})
-      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "thermal:milling"})
+      event.remove({id: `thermal:machines/pulverizer/pulverizer_${name}_ore`})
+      event.remove({id: `thermal:machines/smelter/smelter_${name}_ore`})
+//      event.remove({ input: "#forge:ores/" + name, type: TE("smelter") })
+//      event.remove({ input: "#forge:ores/" + name, type: TE("pulverizer") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("blasting") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("smelting") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("crushing") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("milling") })
 
   event.custom({
   "type": "thermal:crucible",
