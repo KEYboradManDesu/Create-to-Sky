@@ -1156,7 +1156,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
   ], "kubejs:alpha_quartz", [
     event.recipes.createPressing(z, z)
   ]).transitionalItem(z)
-    .loops(48)
+    .loops(16)
     .id("alpha_ingot")  
 
   wood_types.forEach(wood => {
@@ -1368,6 +1368,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
 		S: TE("gold_gear")
 	})
  
+  event.recipes.createCutting("4x kubejs:livingrock_gear", "botania:livingrock").processingTime(150)
 
   let crying_obsidian_cobblegen = (adjacent, output) => {
 		event.custom({
@@ -1532,6 +1533,10 @@ function prettierpipes(event) {
     event.recipes.createMilling([TE('niter_dust')], TE('niter')).processingTime(500)
     event.recipes.createMilling([TE('apatite_dust')], TE('apatite')).processingTime(500)
   
+
+
+
+
     let dust_process = (name, ingot, nugget, dust, ore, byproduct, fluid_byproduct_name) => {
       let crushed = CR('crushed_' + name + '_ore')
       let fluid = TC("molten_" + name)
@@ -1556,6 +1561,35 @@ function prettierpipes(event) {
       event.remove({ input: "#forge:ores/" + name, type: MC("smelting") })
       event.remove({ input: "#forge:ores/" + name, type: CR("crushing") })
       event.remove({ input: "#forge:ores/" + name, type: CR("milling") })
+
+      event.remove({ id: TE("smelting/" + name + "_ingot_from_dust_blasting") })
+      event.remove({ id: TE("smelting/" + name + "_ingot_from_dust_smelting") })
+
+      event.remove({ id: CR("blasting/" + name + "_ingot_compat_thermal") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_compat_thermal") })
+      event.remove({ id: CR("blasting/" + name + "_ingot_from_crushed") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_from_crushed") })
+
+      event.remove({ id: CR("blasting/" + name + "_ingot_compat_mekanism") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_compat_mekanism") })
+
+      event.remove({ id: CR("blasting/ingot_" + name + "compat_mekanism") })
+      event.remove({ id: CR("smelting/ingot_" + name + "compat_mekanism") })
+
+      event.remove({ id: CR("blasting/" + name + "_ingot_compat_immersiveengineering") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_compat_immersiveengineering") })
+
+      event.remove({ id: "mekanism:processing/" + name + "/ingot/from_dust_blasting" })
+      event.remove({ id: "mekanism:processing/" + name + "/ingot/from_dust_smelting" })
+      event.remove({ id: "immersiveengineering:smelting/ingot_" + name + "_from_dust_from_blasting" })
+      event.remove({ id: "immersiveengineering:smelting/" + name + "_ingot_from_dust_from_blasting" })
+      event.remove({ id: "immersiveengineering:smelting/" + name + "_ingot_from_dust" })
+      event.remove({ id: "occultism:blasting/" + name + "_ingot_from_dust" })
+      event.remove({ id: "occultism:smelting/" + name + "_ingot_from_dust" })
+
+
+
+    
 
   event.custom({
   "type": "thermal:crucible",
@@ -1634,12 +1668,37 @@ function prettierpipes(event) {
       event.recipes.createSplashing([Item.of(nugget, 2)], dust)
       //event.recipes.createMixing([Fluid.of(fluid, 288)], [Item.of(dust, 3), AE2('matter_ball')]).superheated()
   
-      event.remove({ ingredients: "#forge:ores/" + name, type: TE("smelter") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: TE("pulverizer") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: MC("blasting") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: MC("smelting") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: CR("crushing") })
-      event.remove({ ingredients: "#forge:ores/" + name, type: CR("milling") })
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:milling"})
+      event.remove({"input": [{"tag": "forge:ores/" + name}], "type": "create:crushing"})
+      event.remove({id: `thermal:machines/pulverizer/pulverizer_${name}_ore`})
+      event.remove({id: `thermal:machines/smelter/smelter_${name}_ore`})
+//      event.remove({ input: "#forge:ores/" + name, type: TE("smelter") })
+//      event.remove({ input: "#forge:ores/" + name, type: TE("pulverizer") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("blasting") })
+      event.remove({ input: "#forge:ores/" + name, type: MC("smelting") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("crushing") })
+      event.remove({ input: "#forge:ores/" + name, type: CR("milling") })
+
+      event.remove({ id: TE("smelting/" + name + "_ingot_from_dust_blasting") })
+      event.remove({ id: TE("smelting/" + name + "_ingot_from_dust_smelting") })
+
+      event.remove({ id: CR("blasting/" + name + "_ingot_compat_thermal") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_compat_thermal") })
+      event.remove({ id: CR("blasting/" + name + "_ingot_from_crushed") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_from_crushed") })
+
+      event.remove({ id: CR("blasting/" + name + "_ingot_compat_mekanism") })
+      event.remove({ id: CR("smelting/" + name + "_ingot_compat_mekanism") })
+
+      event.remove({ id: "mekanism:processing/" + name + "/ingot/from_dust_blasting" })
+      event.remove({ id: "mekanism:processing/" + name + "/ingot/from_dust_smelting" })
+      event.remove({ id: "immersiveengineering:smelting/ingot_" + name + "_from_dust_from_blasting" })
+      event.remove({ id: "immersiveengineering:smelting/" + name + "_ingot_from_dust_from_blasting" })
+      event.remove({ id: "immersiveengineering:smelting/" + name + "_ingot_from_dust" })
+      event.remove({ id: "occultism:blasting/" + name + "_ingot_from_dust" })
+      event.remove({ id: "occultism:smelting/" + name + "_ingot_from_dust" })
+
+
 
 
   event.custom({
@@ -1774,5 +1833,18 @@ function prettierpipes(event) {
     "result": [{"item": "minecraft:redstone","count": 8}],
     "energy": 10000
   })
+
+
+  let chop = (type, output) => {
+		event.custom({
+			"type": "occultism:spirit_fire",
+			"ingredient": { "item": KJ(type + "_slimy_fern_leaf") },
+			"result": { "item": TC(type + "_slime_fern") }
+		})
+	}
+
+	chop("earth", MC('gunpowder'))
+	chop("sky", MC('bone_meal'))
+	chop("ender", AE2('ender_dust'))
   
   })

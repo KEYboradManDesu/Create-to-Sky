@@ -68,7 +68,6 @@
 				"合成一些&6动力锯&r试试，它们可是伐木好手。"
 				"&7每当你能够自动生产某一物品时，就可以点击上方“自动生产”复选框以继续下一任务了。"
 			]
-			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
 			id: "2CB570195DA7E106"
 			tasks: [
@@ -165,10 +164,9 @@
 				""
 				"海带可以轻易地被&6动力收割机&r收集。"
 			]
-			hide_dependency_lines: true
 			dependencies: [
-				"77CD995DAF7FCD7E"
 				"5799D55BB26BA52C"
+				"77CD995DAF7FCD7E"
 			]
 			id: "608BF7BE3CB666F3"
 			tasks: [
@@ -602,9 +600,9 @@
 			title: "海带种子"
 			icon: "exnihilosequentia:kelp_seeds"
 			x: 6.0d
-			y: 0.0d
+			y: 1.0d
 			shape: "circle"
-			subtitle: "步骤 4-A"
+			subtitle: "步骤 4-1"
 			description: ["把&6筛子&r浸泡在水中，过筛&6沙子&r得到&6海带种子&r，&6海带种子&r在水底种植后变为&6海带&r。"]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]

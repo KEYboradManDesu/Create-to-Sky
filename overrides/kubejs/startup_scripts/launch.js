@@ -33,6 +33,8 @@ onEvent("item.registry", event => {
 	let initMechanisms = () => {
 		registerMechanism("Handmade", "粗制")
 		registerMechanism("Kinetic", "动力")
+		registerMechanism("Living", "§2活力")
+		registerMechanism("Incomp_living", "§b（待注魔）§2活力")
 		registerMechanism("Sealed", "密封")
 		registerMechanism("Infernal", "酷热", RARITY_UNCOMMON)
 		registerMechanism("Sturdy", "坚实", RARITY_UNCOMMON)
@@ -287,6 +289,10 @@ onEvent("item.registry", event => {
 			.displayName("下界之星碎片").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
+		event.create("livingrock_gear")
+			.texture(modpackId + ":item/livingrock_gear")
+			.displayName("活石齿轮")
+
 		event.create("growing_certus_seed_crystal")
 			.texture(modpackId + ":item/crystal/growing_certus_seed_crystal")
 			.displayName("生长中的赛特斯石英种子")
@@ -385,6 +391,10 @@ onEvent("item.registry", event => {
 		event.create("neutronium_drive_hyper_dense")
 			.texture(modpackId + ":item/neutronium_drive_hyper_dense")
 			.displayName("§e§l中子 QIO 驱动器§r").rarity(RARITY_UNCOMMON)
+
+		event.create("terrasteel_sheet")
+			.texture(modpackId + ":item/terrasteel_sheet")
+			.displayName("泰拉钢板").rarity(RARITY_UNCOMMON)
 
 		event.create("starrite")
 			.texture(modpackId + ":item/starrite")
@@ -553,6 +563,7 @@ onEvent("block.registry", event => {
 	}
 	registerMachine("Handmade", "手工机", "solid")
 	registerMachine("Andesite", "安山机", "solid")
+	registerMachine("Living", "§2活力机", "translucent")
 	registerMachine("Brass", "黄铜机", "translucent")
 	registerMachine("Copper", "铜机", "cutout")
 	registerMachine("Zinc", "锌机", "cutout")
@@ -570,6 +581,7 @@ onEvent("block.registry", event => {
 			.tagBlock("create:wrench_pickup")
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
+	registerCasing("Living", "§2活力")
 	registerCasing("Invar", "殷钢")
 	registerCasing("Fluix", "福鲁伊克斯")
 	registerCasing("Zinc", "锌")

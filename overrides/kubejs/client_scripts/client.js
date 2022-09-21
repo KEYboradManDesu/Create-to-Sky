@@ -66,7 +66,10 @@ onEvent('item.tooltip', tooltip => {
 	main_assembly('kubejs:kinetic_mechanism', "1")
 	bonus_assembly('kubejs:sealed_mechanism', "1A")
 	bonus_assembly('create_sa:heat_engine', "1A")
+	bonus_assembly('kubejs:living_mechanism', "1A-§b魔法§r")
 	bonus_assembly('create_sa:hydraulic_engine', "1A")
+	bonus_assembly('immersiveengineering:component_iron', "1A")
+	bonus_assembly('immersiveengineering:component_steel', "1A")
 	main_assembly('create:precision_mechanism', "2")
 	bonus_assembly('kubejs:infernal_mechanism', "2A")
 	bonus_assembly('create_sa:steam_engine', "2A")
@@ -98,6 +101,8 @@ onEvent('item.tooltip', tooltip => {
 	global.substrates[4].forEach(e => tooltip.add(e.id, [`§8类型： §7金属`]));
 	global.substrates[5].forEach(e => tooltip.add(e.id, [`§8类型： §7宝石`]));
 	global.substrates[6].forEach(e => tooltip.add(e.id, [`§8类型： §7催化剂`]));
+
+	tooltip.add("kubejs:incomp_living_mechanism", [`§b下一步：注魔`]);
 
 	tooltip.add("structurescompass:structures_compass", [`§7右键以激活`]);
 

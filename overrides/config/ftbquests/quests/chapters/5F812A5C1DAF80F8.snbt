@@ -332,7 +332,7 @@
 			icon: "minecraft:wither_rose"
 			x: 1.0d
 			y: 11.0d
-			shape: "circle"
+			shape: "square"
 			subtitle: "步骤 60-1"
 			description: ["制作&6钻石晶格&r的必要材料之一：&6下界之星&r，你最好建造一台&6模拟室&r，或者&6自动下界之星催化&r生产线。"]
 			hide_dependency_lines: true
@@ -400,7 +400,7 @@
 			]
 		}
 		{
-			title: "海因斯科技"
+			title: "海克斯科技"
 			icon: "kubejs:crystalmatrix_mechanism"
 			x: 0.0d
 			y: 14.0d
@@ -409,6 +409,7 @@
 			dependencies: [
 				"2E0FBE0A1F0ED1F1"
 				"082EF209B07565AF"
+				"0C063D4410F4C3BE"
 			]
 			id: "34260F620C3A90E7"
 			tasks: [
@@ -742,7 +743,7 @@
 			icon: "kubejs:missingno"
 			x: -1.0d
 			y: 10.0d
-			shape: "circle"
+			shape: "hexagon"
 			description: ["你突然接收到了一段微弱的信号，断断续续的语音里一个自称“大人物”的人要求你向这个账户打一个&6奎特币&r以进一步交流，关于&6星辰&r的事。"]
 			dependencies: ["0F68DA1AC8F50701"]
 			id: "78A312F0BD04E228"
@@ -884,6 +885,78 @@
 				}
 				{
 					id: "1CE9C59EA5D145AC"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "凋-—零——"
+			icon: "kubejs:nether_gear"
+			x: 2.0d
+			y: 13.0d
+			subtitle: "步骤 61-3"
+			dependencies: [
+				"0266FF8DC048858B"
+				"64B77BACBABE9688"
+				"2F0FD00C896018AD"
+			]
+			id: "0C063D4410F4C3BE"
+			tasks: [
+				{
+					id: "19B0F406CE0466AF"
+					type: "item"
+					item: "kubejs:nether_gear"
+					consume_items: false
+				}
+				{
+					id: "10546D5197A8C719"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "kubejs:starrite"
+			x: 4.0d
+			y: 13.0d
+			subtitle: "步骤 61-1"
+			description: ["加上从黑商那里买到的不可描述之物。"]
+			hide_dependency_lines: true
+			dependencies: ["78A312F0BD04E228"]
+			id: "64B77BACBABE9688"
+			tasks: [
+				{
+					id: "180F675CD60231FF"
+					type: "item"
+					item: "kubejs:starrite"
+					consume_items: false
+				}
+				{
+					id: "3FAE305BF4AD4A09"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "身在“辐”中不知“辐”"
+			icon: "kubejs:stormyx_ingot"
+			x: 2.0d
+			y: 11.0d
+			subtitle: "步骤 61-2"
+			description: ["如果你的血液发出黄绿色荧光，别担心这是正常现象。"]
+			dependencies: ["5B40C7A5DF090045"]
+			id: "2F0FD00C896018AD"
+			tasks: [
+				{
+					id: "0D5854C29684B6FB"
+					type: "item"
+					item: "kubejs:stormyx_nugget"
+					consume_items: false
+				}
+				{
+					id: "311A02705C10A6F6"
 					type: "checkmark"
 					title: "已自动化"
 				}

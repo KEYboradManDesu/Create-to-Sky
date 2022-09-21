@@ -1,0 +1,16 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "kubejs:kinetic_mechanism"
+    },
+    {
+      "item": "kubejs:kinetic_mechanism"
+    }
+  ],
+  "output": [
+    {
+      "item": "kubejs:living_mechanism"
+    }
+  ]
+}
