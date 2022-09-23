@@ -5,7 +5,7 @@
   },
   "fluidOutput": {
     "fluid": "tconstruct:molten_brass",
-    "amount": 900
+    "amount": 810
   },
   "processTime": 600
 }

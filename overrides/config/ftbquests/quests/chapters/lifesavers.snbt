@@ -520,23 +520,6 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
-			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册。"]
-			id: "40F2A5C2D4B1219F"
-			tasks: [{
-				id: "374681B5A5AF4BBD"
-				type: "item"
-				item: "akashictome:tome"
-				consume_items: false
-			}]
-			rewards: [{
-				id: "33954F9F4A1A52DE"
-				type: "item"
-				item: "vanillacookbook:book_cake"
-			}]
-		}
-		{
 			title: "食物诱惑"
 			icon: "excompressum:pig_bait"
 			x: 5.0d
@@ -565,35 +548,47 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
-			id: "4617D47E057F7E9B"
-			tasks: [{
-				id: "1D7E87BE261FA743"
-				type: "questsadditions:structure"
-				name: ""
-				hasCustomPicture: false
-				layer: true
-				rightclick: false
-			}]
-		}
-		{
 			title: "転生暮色の異世界ライフ"
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			x: 6.0d
 			y: -3.0d
 			description: ["要想进入暮色，首先在地上挖出2x2x1（边长最大为8格）格的坑（底部需要填满）并灌满非流动水（即对角线倒水或4格都倒水），然后四边用任意植物（包括枯死的灌木，树叶，草，蕨类等，以及其它模组的植物）围起来（角落不需要），最后丢入一颗&e暮色钻石&r，一道闪电从天而降，传送门就此开启。"]
 			id: "79BA77EF0BB69750"
-			tasks: [{
-				id: "1687957B8D151A56"
-				type: "item"
-				item: "kubejs:twilight_diamond"
-				consume_items: false
-			}]
+			tasks: [
+				{
+					id: "1687957B8D151A56"
+					type: "item"
+					item: "kubejs:twilight_diamond"
+					consume_items: false
+				}
+				{
+					id: "1D7FC0907977738D"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
 			rewards: [{
 				id: "20E0D4C7A9E0353B"
 				type: "item"
 				item: "twilightdelight:phytochemical_juice"
+			}]
+		}
+		{
+			title: "百科全书"
+			x: -5.0d
+			y: 1.0d
+			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册。"]
+			id: "3BAF9C609F33E3E3"
+			tasks: [{
+				id: "6FFADC41AA91C4EC"
+				type: "item"
+				item: "akashictome:tome"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5EF688AF078E593C"
+				type: "item"
+				item: "vanillacookbook:book_cake"
 			}]
 		}
 	]

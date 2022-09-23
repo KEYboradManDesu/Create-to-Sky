@@ -11,13 +11,13 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "tconstruct:alloy",
 		"inputs": [
-			{ "name": "tconstruct:molten_silver", "amount": 9000 },
-			{ "name": "tconstruct:ender_slime", "amount": 20250 },
-			{ "name": "tconstruct:molten_ender", "amount": 20250 }
+			{ "name": "tconstruct:molten_silver", "amount": 800 },
+			{ "name": "tconstruct:ender_slime", "amount": 100 },
+			{ "name": "tconstruct:molten_ender", "amount": 100 }
 		],
 		"result": {
 			"fluid": "tconstruct:molten_enderium",
-			"amount": 9000
+			"amount": 1000
 		},
 		"temperature": 850
 	})
@@ -25,11 +25,11 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": {
-			"item": "promenade:dark_amaranth_fungus"
+			"item": "minecraft:chorus_fruit"
 		},
 		"result": {
 			"fluid": "tconstruct:ender_slime",
-			"amount": 27000
+			"amount": 90
 		},
 		"temperature": 100,
 		"time": 10

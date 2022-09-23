@@ -25,7 +25,7 @@ onEvent("recipes", event => {
   living_machine('botania:elven_spreader', 1, '#forge:ingots/elementium')
   living_machine('botania:abstruse_platform', 1, 'botania:mana_pearl')
   living_machine('botania:turntable', 1, 'create:turntable')
-  
+  living_machine('botania:alfheim_portal', 1, 'kubejs:terrasteel_sheet')
 
 
 })

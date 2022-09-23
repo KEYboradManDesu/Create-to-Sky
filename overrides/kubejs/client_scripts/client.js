@@ -66,7 +66,9 @@ onEvent('item.tooltip', tooltip => {
 	main_assembly('kubejs:kinetic_mechanism', "1")
 	bonus_assembly('kubejs:sealed_mechanism', "1A")
 	bonus_assembly('create_sa:heat_engine', "1A")
-	bonus_assembly('kubejs:living_mechanism', "1A-§b魔法§r")
+	bonus_assembly('kubejs:living_mechanism', "§b植物魔法1§r")
+	bonus_assembly('kubejs:redstring_mechanism', "§b植物魔法2§r")
+	bonus_assembly('kubejs:corporea_mechanism', "§b植物魔法3§r")
 	bonus_assembly('create_sa:hydraulic_engine', "1A")
 	bonus_assembly('immersiveengineering:component_iron', "1A")
 	bonus_assembly('immersiveengineering:component_steel', "1A")
@@ -85,14 +87,13 @@ onEvent('item.tooltip', tooltip => {
 	not_consumed('kubejs:diamond_saw')
 	not_consumed('kubejs:netherite_saw')
 	not_consumed('kubejs:screwdriver')
-	// not_consumed('create:super_glue')
 	not_consumed('kubejs:chromatic_resonator')
 	not_consumed('kubejs:flash_drive')
 	not_consumed('kubejs:maga_screwdriver')
 	not_consumed('kubejs:laser_blaster')
 	not_consumed('kubejs:rubber_duck')
-	// not_consumed('xreliquary:mercy_cross')
-	// not_consumed('xreliquary:ender_staff')
+	not_consumed('reliquary:mercy_cross')
+	not_consumed('reliquary:ender_staff')
 
 	global.substrates[0].forEach(e => tooltip.add(e.id, [`§8类型： §7火成`]));
 	global.substrates[1].forEach(e => tooltip.add(e.id, [`§8类型： §7草本`]));
@@ -108,13 +109,15 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("magicfeather:magicfeather", [`§6给予你创造飞行的能力`]);
 
-	tooltip.add("xreliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
+	tooltip.add("reliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
+
+	tooltip.add("create:super_glue", [`§7在§7装配线§7中不消耗，需要漏斗放入`]);
 
 	tooltip.add("kubejs:good_idea", [`§6可用于兑换绝妙发明`]);
 
 	tooltip.add("kubejs:createcoin", [`§7新型加密货币，相比于比特币更稳定`]);
 
-	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§o§8最苦的卡片...§r`]);
+	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o最苦的卡片...§r`]);
 
 	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
 

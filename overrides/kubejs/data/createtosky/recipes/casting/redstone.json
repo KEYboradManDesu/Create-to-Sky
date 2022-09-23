@@ -2,7 +2,7 @@
   "type": "tconstruct:casting_basin",
   "fluid": {
     "name": "thermal:redstone",
-    "amount": 500
+    "amount": 900
   },
   "result": {
     "item": "minecraft:redstone_block"

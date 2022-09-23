@@ -1,0 +1,30 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:redstring_mechanism",
+      "amount": 1
+    },
+    {
+      "item": "botania:corporea_spark",
+      "amount": 1
+    },
+    {
+      "item": "botania:corporea_spark_master",
+      "amount": 1
+    },
+    {
+      "item": "reliquary:ender_staff",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:corporea_mechanism"
+    },
+    {
+      "item": "reliquary:ender_staff"
+    }
+  ],
+  "heatRequirement":"heated"
+}

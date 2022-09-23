@@ -1,0 +1,937 @@
+{
+	id: "32C4B62281328EB9"
+	group: "331B6409EF6A7840"
+	order_index: 1
+	filename: "botania"
+	title: "&f&lDLC&r 植物魔法"
+	icon: {
+		id: "botania:lexicon"
+		Count: 1b
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	subtitle: ["植物魔法入门"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "植物魔法"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"欢迎来到&a植物魔法的世界&f！在这里将着手教你打造魔法的工厂！"
+				""
+			]
+			dependencies: ["2BFDD3BF41E8F5A3"]
+			hide: true
+			size: 1.5d
+			id: "3712DD92B446BB60"
+			tasks: [
+				{
+					id: "19EDC9AB3FA57442"
+					type: "checkmark"
+					title: "植物魔法"
+				}
+				{
+					id: "1DEED7641D1FC4F6"
+					type: "item"
+					item: "botania:lexicon"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "403628F71EC2409D"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "花瓣药剂师"
+			x: -1.0d
+			y: -1.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-2"
+			description: ["&6花药台&f可让您制作所需的所有生成花和功能花。"]
+			min_required_dependencies: 1
+			dependencies: [
+				"19EDC9AB3FA57442"
+				"3712DD92B446BB60"
+			]
+			id: "61F484F59906F87C"
+			tasks: [{
+				id: "2BC8A3CB7C8210DB"
+				type: "item"
+				item: "botania:apothecary_default"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-3"
+			description: ["这朵白色的花将帮助您制作&a植物魔法&r中广泛使用的基础材料"]
+			dependencies: ["61F484F59906F87C"]
+			id: "56934B657C4AC28D"
+			tasks: [{
+				id: "1245D0684B36F178"
+				type: "item"
+				item: "botania:pure_daisy"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "116868DAA4E8A23D"
+				type: "random"
+			}]
+		}
+		{
+			title: "活化"
+			icon: "botania:livingrock"
+			x: -2.0d
+			y: -3.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-4"
+			dependencies: ["56934B657C4AC28D"]
+			id: "06490F2A5130591F"
+			tasks: [
+				{
+					id: "704F0B2986188CAE"
+					type: "item"
+					item: "botania:livingrock"
+					consume_items: false
+				}
+				{
+					id: "313583FEFA45E388"
+					type: "item"
+					item: "botania:livingwood"
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "不是石英齿轮！"
+			icon: "kubejs:livingrock_gear"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "步骤 &bM-6"
+			description: ["面向上方的&6动力锯&r则可以处理活石。"]
+			dependencies: ["06490F2A5130591F"]
+			id: "319B5F2C82917939"
+			tasks: [
+				{
+					id: "6D84407580A0FB47"
+					type: "item"
+					item: "kubejs:livingrock_gear"
+					consume_items: false
+				}
+				{
+					id: "6C15CA22F40265DC"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "步骤 &bM-5"
+			description: ["这个小盆将用于存储&b魔力&f和活化物品。"]
+			dependencies: ["06490F2A5130591F"]
+			id: "79A00580861BF4EF"
+			tasks: [{
+				id: "4C2DA448D23D2C1D"
+				type: "item"
+				item: "botania:mana_pool"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "46D1345D6AD5EF2B"
+				type: "item"
+				item: "botania:livingrock"
+				count: 16
+			}]
+		}
+		{
+			title: "额外的转化"
+			icon: "minecraft:blue_ice"
+			x: -3.0d
+			y: -1.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-3A"
+			description: ["这种花能够转换其他材料，请查看&6JEI&r了解更多信息。"]
+			dependencies: ["56934B657C4AC28D"]
+			id: "6E3B97A780726463"
+			tasks: [
+				{
+					id: "7DF780141F740C00"
+					type: "item"
+					item: "minecraft:blue_ice"
+					consume_items: false
+				}
+				{
+					id: "213BF152C646EBA3"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			title: "魔力转化"
+			x: 0.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-6"
+			dependencies: [
+				"3CD64FEC8723FC0E"
+				"79A00580861BF4EF"
+			]
+			id: "0DA91D4082835694"
+			tasks: [
+				{
+					id: "14E2E53502D0F714"
+					type: "item"
+					item: "botania:manasteel_ingot"
+					consume_items: false
+				}
+				{
+					id: "298D8CFECDB4BA6B"
+					type: "item"
+					item: "botania:mana_diamond"
+					consume_items: false
+				}
+				{
+					id: "44B2DEDA499B1CD7"
+					type: "item"
+					item: "botania:mana_pearl"
+					consume_items: false
+				}
+				{
+					id: "023589B048A455F7"
+					type: "item"
+					item: "botania:mana_string"
+					consume_items: false
+				}
+				{
+					id: "7DA5D2A14173D77E"
+					type: "item"
+					item: "botania:mana_glass"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "4F00018C04DCD033"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "你也是扳手啊！"
+			icon: {
+				id: "botania:twig_wand"
+				Count: 1b
+				tag: {
+					color1: 0
+					color2: 0
+				}
+			}
+			x: 0.0d
+			y: -3.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-5A"
+			description: ["&a植物魔法&f的主要工具，将在整个章节中使用。"]
+			dependencies: ["06490F2A5130591F"]
+			id: "3CD64FEC8723FC0E"
+			tasks: [
+				{
+					id: "7DEF3021F6CFACB4"
+					type: "item"
+					item: {
+						id: "botania:twig_wand"
+						Count: 1b
+						tag: { }
+					}
+					consume_items: false
+				}
+				{
+					id: "036988AE68BA16E5"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-7"
+			dependencies: ["0DA91D4082835694"]
+			dependency_requirement: "all_started"
+			id: "1D61112306592F4A"
+			tasks: [{
+				id: "5932C54E1F023EE3"
+				type: "item"
+				item: "botania:runic_altar"
+				consume_items: false
+			}]
+		}
+		{
+			title: "精灵传送门"
+			icon: "botania:natura_pylon"
+			x: 10.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "步骤 &bM-12"
+			description: ["&6精灵传送门&r能允许你向异次元的精灵进行交易。"]
+			dependencies: [
+				"67C4A3BA715F42F1"
+				"7B2944337FC73699"
+				"5A1627F51FC9B536"
+				"21C0AF989F31E5EB"
+			]
+			id: "2E2F8FEF5843A526"
+			tasks: [
+				{
+					id: "23400928425B6EAB"
+					type: "item"
+					item: "botania:alfheim_portal"
+					consume_items: false
+				}
+				{
+					id: "6A646B6024336D5E"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+					consume_items: false
+				}
+				{
+					id: "1C4AFABFEDA5CD84"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+					consume_items: false
+				}
+				{
+					id: "1DD940190B77D72B"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			icon: "botania:terra_plate"
+			x: 1.0d
+			y: -5.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-8"
+			description: ["搭建&6泰拉凝聚板&r并完成仪式。"]
+			dependencies: ["1D61112306592F4A"]
+			id: "629EE96E4C033EF3"
+			tasks: [
+				{
+					id: "6FF677134B5EA71C"
+					type: "item"
+					item: "botania:terra_plate"
+					consume_items: false
+				}
+				{
+					id: "2378AEB6AAED8A7E"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+					consume_items: false
+				}
+				{
+					id: "791FBBC1754DF7A4"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "有鲜花吗？"
+			icon: "botania:fertilizer"
+			x: 1.0d
+			y: 1.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-1"
+			description: ["&6花肥&f可用于种植更多&6魔力花&f，类似于骨粉种植草。"]
+			dependencies: ["3712DD92B446BB60"]
+			id: "77057620EA7AB2DA"
+			tasks: [
+				{
+					id: "3D9DBE3596FF4966"
+					type: "item"
+					item: "botania:fertilizer"
+					consume_items: false
+				}
+				{
+					id: "3F5E6E67CAE441AF"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			icon: "botania:ender_air_bottle"
+			x: 13.0d
+			y: -5.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-15-3a"
+			description: ["在&6末地&r使用瓶子或加热&6末影珍珠碎片&r获得。"]
+			hide_dependency_lines: true
+			dependencies: ["3712DD92B446BB60"]
+			id: "5699FE5E797AB504"
+			tasks: [
+				{
+					id: "34B74A40F13A619B"
+					type: "item"
+					item: "botania:ender_air_bottle"
+					consume_items: false
+				}
+				{
+					id: "5EA1BF51D36375F6"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "泰拉瑞亚"
+			icon: "botania:terrasteel_ingot"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "步骤 &bM-9"
+			description: ["&6泰拉钢锭&r，由&6泰拉凝聚板&r所组成的多方块结构制作出来。"]
+			dependencies: ["629EE96E4C033EF3"]
+			id: "67C4A3BA715F42F1"
+			tasks: [
+				{
+					id: "49FA0DE1FE525B4A"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					consume_items: false
+				}
+				{
+					id: "1801CA04F73B81E2"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			subtitle: "步骤 &bM-10"
+			description: ["将转化好的&6泰拉钢粒&r和&6活石齿轮&r华丽地安装到&6活木台阶&r上，最后再优雅地转化你的的半成品构件。"]
+			dependencies: [
+				"67C4A3BA715F42F1"
+				"319B5F2C82917939"
+				"79A00580861BF4EF"
+			]
+			id: "3B7AC4E8F6831C72"
+			tasks: [{
+				id: "5572FD6EBD49B8A9"
+				type: "item"
+				item: "kubejs:living_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			title: "&f&l魔法第一章完成！"
+			x: 5.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["恭喜！现在你可以自动生产&6活力构件&r了，你的魔法工厂已然初具雏形！不要错过这个完美的契机，继续向前努力！"]
+			dependencies: ["3B7AC4E8F6831C72"]
+			size: 2.0d
+			id: "30ABC7DC38C4584D"
+			tasks: [{
+				id: "29A0C5D159B8EEE8"
+				type: "item"
+				item: "kubejs:living_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "3AF4EC12A0F44BB3"
+					type: "item"
+					item: "kubejs:living_mechanism"
+					count: 16
+				}
+				{
+					id: "4C03D33FBA2F4813"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
+		}
+		{
+			icon: "botania:manasteel_ingot"
+			x: 9.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-13"
+			hide_dependency_lines: true
+			dependencies: ["0DA91D4082835694"]
+			id: "7B2944337FC73699"
+			tasks: [
+				{
+					id: "482CCF30C3F8C826"
+					type: "item"
+					item: "botania:manasteel_ingot"
+					consume_items: false
+				}
+				{
+					id: "07C2BE1B13504631"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-12-1"
+			hide_dependency_lines: true
+			dependencies: ["0DA91D4082835694"]
+			id: "5A1627F51FC9B536"
+			tasks: [{
+				id: "26BEE4CDCD34F0AC"
+				type: "item"
+				item: "botania:mana_pearl"
+				consume_items: false
+			}]
+		}
+		{
+			icon: "botania:elementium_ingot"
+			x: 11.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-13-1"
+			dependencies: ["2E2F8FEF5843A526"]
+			id: "0679D0D8D1E762BC"
+			tasks: [
+				{
+					id: "105550162DB9990B"
+					type: "item"
+					item: "botania:elementium_ingot"
+					consume_items: false
+				}
+				{
+					id: "62FC271E8C5D3EB8"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-12-2"
+			dependencies: ["2E2F8FEF5843A526"]
+			id: "59704704B2A45FEF"
+			tasks: [{
+				id: "110404442C4D73BE"
+				type: "item"
+				item: "botania:pixie_dust"
+				consume_items: false
+			}]
+		}
+		{
+			title: "刀法精湛"
+			icon: "botania:livingrock_slab"
+			x: 7.0d
+			y: -1.0d
+			subtitle: "步骤 &bM-11"
+			description: ["...再来一次，把它们切割成构件的基础材料。"]
+			dependencies: ["30ABC7DC38C4584D"]
+			id: "3B240F954A567A57"
+			tasks: [
+				{
+					id: "35D4185F91BF8C69"
+					type: "item"
+					item: "botania:livingrock_slab"
+					consume_items: false
+				}
+				{
+					id: "3C2F30B3B4DF52CA"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:red_string"
+			x: 9.0d
+			y: -1.0d
+			subtitle: "步骤 &bM-12-3"
+			dependencies: [
+				"59704704B2A45FEF"
+				"3B240F954A567A57"
+			]
+			id: "4C3926B842BBAC58"
+			tasks: [
+				{
+					id: "49EB4C0810B2E751"
+					type: "item"
+					item: "botania:red_string"
+					consume_items: false
+				}
+				{
+					id: "79B61EC70C046382"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:elementium_nugget"
+			x: 11.0d
+			y: -1.0d
+			subtitle: "步骤 &bM-13-2"
+			dependencies: [
+				"4C3926B842BBAC58"
+				"0679D0D8D1E762BC"
+			]
+			id: "113FC03FEB31DD51"
+			tasks: [
+				{
+					id: "01DF6B8DF1BFDBF2"
+					type: "item"
+					item: "botania:elementium_nugget"
+					consume_items: false
+				}
+				{
+					id: "702173CF5C2D3014"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "kubejs:redstring_mechanism"
+			x: 13.0d
+			y: -1.0d
+			subtitle: "步骤 &bM-14"
+			dependencies: [
+				"113FC03FEB31DD51"
+				"78639CA730390E38"
+			]
+			id: "7F8989FC3156BF9E"
+			tasks: [
+				{
+					id: "3D220A506CFDE882"
+					type: "item"
+					item: "kubejs:redstring_mechanism"
+					consume_items: false
+				}
+				{
+					id: "79A55E2142EC1B1B"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "&f&l魔法第二章完成！"
+			x: 15.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["无可比拟的魔法正被你捧在手中！在你庞大的工厂中，一定有某处可以利用它们进一步提高效率。看你的了！"]
+			dependencies: ["7F8989FC3156BF9E"]
+			size: 2.0d
+			id: "1CE2E7944353081F"
+			tasks: [{
+				id: "03702C35DBFD90FD"
+				type: "item"
+				item: "kubejs:redstring_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "255CA6D5FB87457C"
+					type: "item"
+					item: "kubejs:redstring_mechanism"
+					count: 16
+				}
+				{
+					id: "1CC7D60E7068815A"
+					type: "item"
+					item: "kubejs:good_idea"
+				}
+			]
+		}
+		{
+			title: "开祷！"
+			icon: {
+				id: "reliquary:mercy_cross"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 13.0d
+			y: 0.0d
+			shape: "circle"
+			description: ["你需要一把&6十字架&r以制造&6红线构件。&r"]
+			hide_dependency_lines: true
+			dependencies: ["113FC03FEB31DD51"]
+			id: "78639CA730390E38"
+			tasks: [
+				{
+					id: "24E8EA990D23BED2"
+					type: "item"
+					item: {
+						id: "reliquary:mercy_cross"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "31A14CB2A2DF2C93"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			icon: "botania:mana_diamond"
+			x: 10.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-15"
+			hide_dependency_lines: true
+			dependencies: ["0DA91D4082835694"]
+			id: "21C0AF989F31E5EB"
+			tasks: [
+				{
+					id: "0F6CEA3A4CEB674D"
+					type: "item"
+					item: "botania:mana_diamond"
+					consume_items: false
+				}
+				{
+					id: "4404FF50DE498D48"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:dragonstone"
+			x: 10.0d
+			y: -5.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-15-1"
+			dependencies: ["2E2F8FEF5843A526"]
+			id: "2A03835F3B6879F2"
+			tasks: [
+				{
+					id: "52EC2CF44941E63B"
+					type: "item"
+					item: "botania:dragonstone"
+					consume_items: false
+				}
+				{
+					id: "03400F8BD04C4F50"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:spark"
+			x: 14.0d
+			y: -5.0d
+			shape: "circle"
+			subtitle: "步骤 &bM-15-3b"
+			hide_dependency_lines: true
+			dependencies: ["1CE2E7944353081F"]
+			id: "00AF1FA6342BC4A7"
+			tasks: [
+				{
+					id: "3B9C156B63D4F463"
+					type: "item"
+					item: "botania:spark"
+					consume_items: false
+				}
+				{
+					id: "35CD783740409F83"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:corporea_spark"
+			x: 14.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "步骤 &bM-15-4"
+			dependencies: [
+				"00AF1FA6342BC4A7"
+				"1CE2E7944353081F"
+				"5699FE5E797AB504"
+			]
+			id: "7E74E544E3A6ED24"
+			tasks: [
+				{
+					id: "201243FB7FB925D8"
+					type: "item"
+					item: "botania:corporea_spark"
+					consume_items: false
+				}
+				{
+					id: "607564544D3431A4"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "botania:corporea_spark_master"
+			x: 14.0d
+			y: -3.0d
+			subtitle: "步骤 &bM-15-2"
+			dependencies: [
+				"2A03835F3B6879F2"
+				"7E74E544E3A6ED24"
+				"1CE2E7944353081F"
+			]
+			id: "27DA90ACD7BD0D55"
+			tasks: [
+				{
+					id: "4E57355E31AA5E7E"
+					type: "item"
+					item: "botania:corporea_spark_master"
+					consume_items: false
+				}
+				{
+					id: "5261C8D9D5B2FE2D"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "Fake News"
+			icon: "kubejs:corporea_mechanism"
+			x: 16.0d
+			y: -3.0d
+			subtitle: "步骤 &bM-16"
+			dependencies: [
+				"7E74E544E3A6ED24"
+				"27DA90ACD7BD0D55"
+				"6E6CC56DDEE06C1A"
+			]
+			id: "02487D6C79185B80"
+			tasks: [
+				{
+					id: "7E9762840CD6D218"
+					type: "item"
+					item: "kubejs:corporea_mechanism"
+					consume_items: false
+				}
+				{
+					id: "1B57FC9154EA78AB"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "你制杖吗？"
+			icon: {
+				id: "reliquary:ender_staff"
+				Count: 1b
+				tag: {
+					count: 0
+				}
+			}
+			x: 16.0d
+			y: -4.0d
+			shape: "circle"
+			description: ["你需要一根&6末影手杖&r以制造&6媒体构件。&r"]
+			hide_dependency_lines: true
+			dependencies: ["1CE2E7944353081F"]
+			id: "6E6CC56DDEE06C1A"
+			tasks: [
+				{
+					id: "52C3D259BF8E4387"
+					type: "item"
+					item: {
+						id: "reliquary:ender_staff"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [{
+									filter: {
+										id: "minecraft:ender_pearl"
+										Count: 1b
+									}
+									amount: 0
+								}]
+							}
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "7FAB59B0469622B2"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			title: "&a&l魔法第三章完成！"
+			x: 18.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"好样的，现在你有足够的&b媒体构件&r了！以后你肯定会感谢你自己的！"
+				"&a植物魔法&r引导到此结束，发挥你的想象力去创造更多东西吧！"
+			]
+			dependencies: ["02487D6C79185B80"]
+			size: 2.0d
+			id: "101D7D46604A7A60"
+			tasks: [{
+				id: "65909B92788F1876"
+				type: "item"
+				item: "kubejs:corporea_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "6B1BA6E767D68114"
+					type: "item"
+					item: "kubejs:corporea_mechanism"
+					count: 16
+				}
+				{
+					id: "4E0E8BA1E6C51837"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
+				}
+			]
+		}
+	]
+}

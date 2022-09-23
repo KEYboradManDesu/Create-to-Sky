@@ -100,6 +100,23 @@ onEvent('item.tags', event => {
 		event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
 	});
 
+  event.get('forge:glazed_terracotta').add('minecraft:white_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:orange_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:magenta_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:light_blue_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:yellow_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:lime_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:pink_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:gray_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:light_gray_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:cyan_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:purple_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:brown_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:green_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:red_glazed_terracotta')
+  event.get('forge:glazed_terracotta').add('minecraft:black_glazed_terracotta')
+
+  
 
   event.get('forge:raw_materials').add('kubejs:raw_stormyx')
   event.get('forge:raw_materials/stormyx').add('kubejs:raw_stormyx')
@@ -153,6 +170,11 @@ onEvent('item.tags', event => {
 	event.get("forge:tools/saws").add("kubejs:diamond_saw")
   event.get("forge:tools/saws").add("kubejs:netherite_saw")
 
+  event.get("minecraft:sand/colorless").add("minecraft:sand")
+  
+  // event.get("forge:press_gear_die").add("thermal:press_gear_die")
+  // event.get("forge:press_gear_die").add("immersiveengineering:mold_gear")
+  
   event.get("forge:dyes/red").add("thermal:ruby_dust")
   event.get("forge:dyes/blue").add("thermal:sapphire_dust")
 

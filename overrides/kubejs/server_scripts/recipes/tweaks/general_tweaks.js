@@ -133,6 +133,9 @@ onEvent("recipes", event => {
 
   event.remove({ id: ("gardenofglass:pebble_to_cobblestone") })
 
+  event.remove({ id: ("exnaturae:compressed_livingwood_crook") })
+  event.remove({ id: ("exnaturae:compressed_dreamwood_crook") })
+
   event.remove({ id: "mekanism:control_circuit/advanced" })
   event.remove({ id: "mekanism:control_circuit/elite" })
   event.remove({ id: "mekanism:chemical_tank/basic" })
@@ -276,6 +279,10 @@ onEvent("recipes", event => {
 
   event.remove({ id: "tconstruct:common/flint" })
   event.shapeless('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel']).id("minecraft:flint_manual_only")
+
+  event.remove({ id: "botania:red_string" })
+  event.shapeless('botania:red_string', ['minecraft:string', 'create:rose_quartz', 'botania:pixie_dust']).id("botania:red_string_only")
+
 
   event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [
@@ -760,6 +767,8 @@ onEvent("recipes", event => {
 
   event.recipes.createCrushing([Item.of("kubejs:elytra_broken", 2), Item.of("kubejs:elytra_broken", 2).withChance(.25)], "#forge:elytra")
 
+  event.recipes.createCrushing([Item.of("forbidden_arcanus:ender_pearl_fragment", 4), Item.of("forbidden_arcanus:ender_pearl_fragment", 2).withChance(.75)], "minecraft:ender_pearl")
+
   event.remove({ output: ('thermal:enderium_dust') })
   event.remove({ output: ('thermal:enderium_ingot') })
 
@@ -959,6 +968,30 @@ onEvent("recipes", event => {
     C: 'botania:alchemy_catalyst',
     D: 'thermal:sapphire_dust',
     E: 'forbidden_arcanus:rune'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("botania:red_string", 4), [
+    "AEBD"
+  ], {
+    A: 'minecraft:string',
+    B: 'botania:pixie_dust',
+    D: 'minecraft:redstone',
+    E: 'create:rose_quartz'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("botania:corporea_spark", 1), [
+    "AEB"
+  ], {
+    A: 'botania:spark',
+    B: 'botania:pixie_dust',
+    E: 'botania:ender_air_bottle'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("botania:corporea_spark_master", 1), [
+    "AE"
+  ], {
+    A: 'botania:corporea_spark',
+    E: 'botania:dragonstone'
   })
 
 
@@ -1187,7 +1220,7 @@ event.shaped(('buddycards:luminis_sleeve'), [
       event.custom({
         type: 'thermal:press',
         ingredients: [
-          Ingredient.of(ingredient).toJson(),
+          Item.of(ingredient).toResultJson(),
           Ingredient.of(card_id).toJson(),
         ],
         result: [
@@ -1405,6 +1438,13 @@ event.shaped(('buddycards:luminis_sleeve'), [
     "adjacent": 'beyond_earth:permafrost',
     "below": "beyond_earth:glacio_stone_bricks",
     "result": { "item": 'beyond_earth:glacio_stone' }
+  })
+
+  event.custom({
+    "type": "thermal:rock_gen",
+    "adjacent": 'minecraft:water',
+    "below": "minecraft:glowstone",
+    "result": { "item": 'minecraft:end_stone' }
   })
 
   
@@ -1834,6 +1874,12 @@ function prettierpipes(event) {
     "energy": 10000
   })
 
+  event.custom({
+		"type": "thermal:sawmill",
+		"ingredient": { "item": "kubejs:substrate_silicon" },
+		"result": [{ "item": AE2("silicon"), "count": 1 }],
+		"energy": 2000
+	})
 
   let chop = (type, output) => {
 		event.custom({

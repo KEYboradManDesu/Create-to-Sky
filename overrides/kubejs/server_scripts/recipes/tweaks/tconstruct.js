@@ -38,7 +38,7 @@ onEvent("recipes", event => {
 		},
 		"result": {
 			"fluid": "thermal:redstone",
-			"amount": 100
+			"amount": 90
 		},
 		"temperature": 250,
 		"time": 15
@@ -50,7 +50,7 @@ onEvent("recipes", event => {
 		},
 		"result": {
 			"fluid": "thermal:redstone",
-			"amount": 900
+			"amount": 810
 		},
 		"temperature": 250,
 		"time": 135
@@ -62,7 +62,7 @@ onEvent("recipes", event => {
 		},
 		"result": {
 			"fluid": "kubejs:infinity",
-			"amount": 100
+			"amount": 90
 		},
 		"temperature": 250,
 		"time": 135

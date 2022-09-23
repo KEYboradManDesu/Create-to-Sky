@@ -35,6 +35,8 @@ onEvent("item.registry", event => {
 		registerMechanism("Kinetic", "动力")
 		registerMechanism("Living", "§2活力")
 		registerMechanism("Incomp_living", "§b（待注魔）§2活力")
+		registerMechanism("Redstring", "§4红线")
+		registerMechanism("Corporea", "§3媒体")
 		registerMechanism("Sealed", "密封")
 		registerMechanism("Infernal", "酷热", RARITY_UNCOMMON)
 		registerMechanism("Sturdy", "坚实", RARITY_UNCOMMON)
@@ -564,12 +566,15 @@ onEvent("block.registry", event => {
 	registerMachine("Handmade", "手工机", "solid")
 	registerMachine("Andesite", "安山机", "solid")
 	registerMachine("Living", "§2活力机", "translucent")
+	registerMachine("Redstring", "§4红线机", "translucent")
+	registerMachine("Corporea", "§3媒体机", "translucent")
 	registerMachine("Brass", "黄铜机", "translucent")
 	registerMachine("Copper", "铜机", "cutout")
 	registerMachine("Zinc", "锌机", "cutout")
 	registerMachine("Enderium", "末影合金机", "cutout")
 	registerMachine("Obsidian", "黑曜机", "translucent")
 	registerMachine("Creative", "§d§l创造机", "translucent")
+
 
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
@@ -582,6 +587,8 @@ onEvent("block.registry", event => {
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
 	registerCasing("Living", "§2活力")
+	registerCasing("Redstring", "§4红线")
+	registerCasing("Corporea", "§3媒体")
 	registerCasing("Invar", "殷钢")
 	registerCasing("Fluix", "福鲁伊克斯")
 	registerCasing("Zinc", "锌")

@@ -1,5 +1,5 @@
 {
-  "type": "indrev:smelter",
+  "type": "thermal:crucible",
   "ingredients": {
     "item": "create:brass_ingot"
   },

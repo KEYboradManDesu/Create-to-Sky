@@ -1,7 +1,7 @@
 {
 	id: "492D716A6C780306"
 	group: "331B6409EF6A7840"
-	order_index: 1
+	order_index: 2
 	filename: "492D716A6C780306"
 	title: "&f&l0&r 无中生有"
 	icon: {
@@ -18,8 +18,8 @@
 			title: "筛出万物！"
 			icon: "exnihilosequentia:jungle_sieve"
 			x: 0.0d
-			y: 4.2d
-			shape: "circle"
+			y: 2.1d
+			shape: "square"
 			subtitle: "步骤 0-8"
 			description: ["合成出来只是一个筛框，是不自带筛网的，筛网需要另外合成并右键装配。可以用来筛沙子、泥土、灵魂沙、尘土。"]
 			dependencies: [
@@ -27,6 +27,7 @@
 				"7FA6289A7DFEF822"
 				"56EEBDFA030A6F5D"
 				"4F27CB86C95D6A35"
+				"1F5CEC4CAC0AA928"
 			]
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
@@ -54,7 +55,7 @@
 			icon: "exnihilosequentia:infested_leaves"
 			x: 1.4d
 			y: 1.4d
-			shape: "circle"
+			shape: "square"
 			subtitle: "步骤 0-2"
 			description: ["使用&6蚕&r对树叶使用后将&6树叶&r变为&6被感染的树叶&r，并且会不断扩散，把所有相邻的树叶方块尽可能多的感染，所以千万不要把蚕放进一片森林里，除非你不打算要这片森林了。只有感染到达100%才可以用钩子获得线（彻底变白），&6提前破坏不会获得任何东西&r。"]
 			dependencies: ["7FDFF28C233BC3A3"]
@@ -72,7 +73,7 @@
 			icon: "minecraft:lava_bucket"
 			x: 0.0d
 			y: 0.0d
-			shape: "circle"
+			shape: "hexagon"
 			subtitle: "步骤 0"
 			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。圆石也可以通过&6潜行&r右击&6泥土&r或&6草方块&r获得的&6卵石&r合成获得。"]
 			dependencies: ["75FB28B253B14876"]
@@ -117,7 +118,7 @@
 			title: "80！80！"
 			x: -1.4d
 			y: 0.7d
-			shape: "circle"
+			shape: "square"
 			subtitle: "步骤 0-4"
 			description: ["用&6锤子&r破坏&6石头&r能得到&6圆石&r。将&6圆石&r锤成&6沙砾&r，将&6沙砾&r锤成&6沙子&r，将&6沙子&r锤成&6尘土&r等等。不同材质的锤耐久与效率不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
@@ -164,7 +165,7 @@
 			title: "钩子函数"
 			x: 1.4d
 			y: 0.7d
-			shape: "circle"
+			shape: "square"
 			subtitle: "步骤 0-1"
 			description: ["使用&6钩子&r去破坏&6树叶&r能提高该树叶树苗和该树叶其他产物的掉落几率。同时也有几率掉落&6蚕&r。不同材质的&6钩子&r耐久度和破坏&6树叶&r的速度不同。"]
 			dependencies: ["3AAD60FC5E704C3A"]
@@ -211,8 +212,8 @@
 			title: "筛网"
 			icon: "exnihilosequentia:string_mesh"
 			x: 1.4d
-			y: 2.8d
-			shape: "circle"
+			y: 2.1d
+			shape: "square"
 			subtitle: "步骤 0-3"
 			description: ["最基础的&6线筛网&r，能允许你的&6砂砾&r筛出&6燧石&r。"]
 			dependencies: ["7D43046E1B776A14"]
@@ -236,7 +237,7 @@
 			title: "粉碎"
 			x: -1.4d
 			y: 1.4d
-			shape: "circle"
+			shape: "square"
 			subtitle: "步骤 0-5"
 			description: ["用&6锤子&r粉碎&6原石&r。"]
 			dependencies: ["79E6ADB2341757A1"]
@@ -254,7 +255,6 @@
 			title: "再粉碎"
 			x: -1.4d
 			y: 2.1d
-			shape: "circle"
 			subtitle: "步骤 0-6"
 			description: ["用&6锤子&r粉碎&6沙砾&r。"]
 			dependencies: ["7FA6289A7DFEF822"]
@@ -271,7 +271,6 @@
 			title: "大哥，搞定！"
 			x: -1.4d
 			y: 2.8d
-			shape: "circle"
 			subtitle: "步骤 0-7"
 			description: ["用&6锤子&r粉碎&6沙子&r。"]
 			dependencies: ["56EEBDFA030A6F5D"]
@@ -328,6 +327,7 @@
 		{
 			x: 2.8d
 			y: 2.8d
+			shape: "square"
 			subtitle: "步骤 0-10"
 			description: ["用&6燧石&r制作出你的第一个构件吧。"]
 			dependencies: ["6228AD9031B9247A"]
@@ -343,6 +343,7 @@
 		{
 			x: 2.8d
 			y: 4.2d
+			shape: "square"
 			subtitle: "步骤 0-11"
 			description: ["一个非常简单的手工机器，它会派上大用处的。"]
 			dependencies: ["0E8D425D2DA637AF"]
@@ -358,6 +359,7 @@
 		{
 			x: 2.1d
 			y: 4.8999999999999995d
+			shape: "square"
 			subtitle: "步骤 0-14"
 			description: ["&6滤网基座&r能允许&6滤网&r过滤水中各种各样的物质。"]
 			dependencies: [
@@ -381,6 +383,7 @@
 		{
 			x: 1.4d
 			y: 4.2d
+			shape: "square"
 			subtitle: "步骤 0-13"
 			description: ["最简易的滤网，但足够了。"]
 			dependencies: ["17054915BB1DA5D0"]
@@ -403,8 +406,10 @@
 			icon: "farmersdelight:straw"
 			x: 1.4d
 			y: 3.5d
+			shape: "square"
 			subtitle: "步骤 0-12"
 			description: ["通过使用&6小刀&r破坏&6草&r和&6高草&r得到&6草秆&r，可以用于合成&6粗布&r。"]
+			hide_dependency_lines: true
 			dependencies: ["641BF6D1C0119BAF"]
 			size: 0.7d
 			id: "17054915BB1DA5D0"
@@ -432,6 +437,7 @@
 		{
 			x: 2.1d
 			y: 5.6d
+			shape: "square"
 			subtitle: "步骤 0-15"
 			description: ["&6生存者过滤网&r能从水中过滤出&6黏土&r。"]
 			dependencies: ["6DC4A8DDD7A7472F"]

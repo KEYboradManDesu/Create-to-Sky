@@ -106,6 +106,7 @@
 					id: "01733498B7FFDD05"
 					type: "item"
 					item: "kubejs:good_idea"
+					count: 2
 				}
 			]
 		}
@@ -428,7 +429,7 @@
 			tasks: [{
 				id: "4BC5C43C7B23CA16"
 				type: "stat"
-				title: "Complete Bonus 3A"
+				title: "&3完成第三章 &7支线"
 				icon: "kubejs:abstruse_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -601,16 +602,49 @@
 			dependencies: ["4BB283B651F880A9"]
 			id: "17C02A7F51C8D117"
 			tasks: [{
-				id: "4D8CFDBEDC1073EE"
-				type: "item"
-				item: "kubejs:creative_mechanism"
-				count: 60L
-				consume_items: false
+				id: "33AC437A49ECAA83"
+				type: "stat"
+				title: "&d完成第六章 &7支线"
+				icon: "kubejs:creative_mechanism"
+				stat: "minecraft:play_time"
+				value: 60
 			}]
 			rewards: [{
 				id: "491A7E706BA344B2"
 				type: "item"
 				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "&a&l花粉过敏者禁止入内"
+			icon: "botania:lexicon"
+			x: -9.5d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "第一章 魔法支线"
+			description: ["&a植物魔法&r章节并非强制需求自动化。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？"]
+			dependencies: ["0E98B4D2BBF55308"]
+			id: "2B9CF43D0C99629F"
+			tasks: [{
+				id: "2BFDD3BF41E8F5A3"
+				type: "checkmark"
+				title: "&a解锁第一章 &7魔法支线"
+			}]
+		}
+		{
+			title: "&a&l活力四射"
+			x: -8.0d
+			y: -2.5d
+			subtitle: "&a挑战"
+			dependencies: ["2B9CF43D0C99629F"]
+			id: "430BF0DDA2022088"
+			tasks: [{
+				id: "5102842CEAA325A8"
+				type: "stat"
+				title: "&a完成植物魔法 &7支线"
+				icon: "kubejs:corporea_mechanism"
+				stat: "minecraft:play_time"
+				value: 60
 			}]
 		}
 	]

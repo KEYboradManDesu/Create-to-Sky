@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "reliquary:glacial_staff",
+      "amount": 1
+    },
+    {
+      "fluid": "kubejs:powered_water",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:blue_ice",
+      "amount": 4
+    },
+    {
+      "item": "reliquary:glacial_staff"
+    }
+  ]
+}
