@@ -147,6 +147,7 @@ onEvent("recipes", event => {
   event.remove({ id: "mekanismgenerators:generator/advanced_solar" })
   event.remove({ id: "mekanism:energy_tablet" })
   event.remove({ id: "mekanism:metallurgic_infusing/alloy/atomic" })
+  event.remove({ id: "mekanism:metallurgic_infusing/alloy/infused" })
   event.remove({ id: "mekanism:robit" })
 
   event.remove({ id: "exnihilosequentia:ens_copper_nugget" })
@@ -359,6 +360,45 @@ onEvent("recipes", event => {
     S: 'create_sa:zinc_handle',
     D: 'minecraft:ender_eye'
   })
+
+
+  event.remove({ output: "create_sa:blazing_pickaxe" })
+  event.shaped("create_sa:blazing_pickaxe", [
+    "DDD",
+    " S ",
+    " S "
+  ], {
+    S: '#forge:plates/obsidian',
+    D: 'kubejs:blaze_brass'
+  })
+  event.remove({ output: "create_sa:blazing_shovel" })
+  event.shaped("create_sa:blazing_shovel", [
+    " D ",
+    " S ",
+    " S "
+  ], {
+    S: '#forge:plates/obsidian',
+    D: 'kubejs:blaze_brass'
+  })
+  event.remove({ output: "create_sa:blazing_cleaver" })
+  event.shaped("create_sa:blazing_cleaver", [
+    " D ",
+    " D ",
+    " S "
+  ], {
+    S: '#forge:plates/obsidian',
+    D: 'kubejs:blaze_brass'
+  })
+  event.remove({ output: "create_sa:blazing_axe" })
+  event.shaped("create_sa:blazing_axe", [
+    "DD ",
+    "DS ",
+    " S "
+  ], {
+    S: '#forge:plates/obsidian',
+    D: 'kubejs:blaze_brass'
+  })
+
 
   event.remove({ output: "sophisticatedbackpacks:pump_upgrade" })
   event.shaped("sophisticatedbackpacks:pump_upgrade", [
@@ -994,23 +1034,96 @@ onEvent("recipes", event => {
     E: 'botania:dragonstone'
   })
 
+  event.remove({ output: ('create:wand_of_symmetry') })
+  event.recipes.createMechanicalCrafting(Item.of("create:wand_of_symmetry", 1), [
+    " A ",
+    "AEA",
+    " D ",
+    " B ",
+    " C ",
+  ], {
+    A: '#forge:glass',
+    D: 'create:precision_mechanism',
+    B: '#forge:ingots/brass',
+    C: '#forge:obsidian',
+    E: 'create:refined_radiance'
+  })
+
 
   event.remove({ output: ('mekanism:basic_mechanical_pipe') })
   event.recipes.createMechanicalCrafting(Item.of("mekanism:basic_mechanical_pipe", 8), [
-    "CABAC"
+    "CADBDAC"
   ], {
     A: 'mekanism:basic_control_circuit',
     B: 'kubejs:enderium_machine',
-    C: 'create_sa:hydraulic_engine'
+    C: 'create_sa:hydraulic_engine',
+    D: 'kubejs:overcharged_alloy'
   })
-
   event.remove({ output: ('mekanism:basic_pressurized_tube') })
   event.recipes.createMechanicalCrafting(Item.of("mekanism:basic_pressurized_tube", 8), [
-    "CABAC"
+    "CADBDAC"
   ], {
     A: 'mekanism:basic_control_circuit',
     B: 'kubejs:enderium_machine',
-    C: 'create_sa:steam_engine'
+    C: 'create_sa:steam_engine',
+    D: 'kubejs:overcharged_alloy'
+  })
+  event.remove({ output: ('mekanism:basic_thermodynamic_conductor') })
+  event.recipes.createMechanicalCrafting(Item.of("mekanism:basic_thermodynamic_conductor", 8), [
+    "CADBDAC"
+  ], {
+    A: 'pipez:energy_pipe',
+    B: 'kubejs:enderium_machine',
+    C: 'kubejs:infernal_mechanism',
+    D: 'kubejs:overcharged_alloy'
+  })
+  event.remove({ output: ('mekanism:diversion_transporter') })
+  event.recipes.createMechanicalCrafting(Item.of("mekanism:diversion_transporter", 8), [
+    "CADBDAC"
+  ], {
+    A: 'minecraft:iron_bars',
+    B: 'kubejs:enderium_machine',
+    C: 'kubejs:sealed_mechanism',
+    D: 'kubejs:overcharged_alloy'
+  })
+  event.remove({ output: ('mekanism:restrictive_transporter') })
+  event.recipes.createMechanicalCrafting(Item.of("mekanism:restrictive_transporter", 8), [
+    "CADBDAC"
+  ], {
+    A: 'tconstruct:gold_bars',
+    B: 'kubejs:enderium_machine',
+    C: 'kubejs:sealed_mechanism',
+    D: 'kubejs:overcharged_alloy'
+  })
+  event.remove({ output: ('mekanism:basic_logistical_transporter') })
+  event.recipes.createMechanicalCrafting(Item.of("mekanism:basic_logistical_transporter", 8), [
+    "CADBDAC"
+  ], {
+    A: 'prettypipes:pipe',
+    B: 'kubejs:enderium_machine',
+    C: 'create_sa:steam_engine',
+    D: 'kubejs:overcharged_alloy'
+  })
+  event.remove({ output: ('mekanism:basic_universal_cable') })
+  event.recipes.createMechanicalCrafting(Item.of("mekanism:basic_universal_cable", 8), [
+    "CADBDAC"
+  ], {
+    A: 'thermal:rf_coil',
+    B: 'kubejs:enderium_machine',
+    C: 'kubejs:inductive_mechanism',
+    D: 'kubejs:overcharged_alloy'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("kubejs:integrated_circuit", 1), [
+    "  B  ",
+    "ACECA",
+    " DDD ",
+  ], {
+    A: 'minecraft:redstone',
+    B: 'kubejs:lapis_sheet',
+    C: '#forge:nuggets/osmium',
+    D: '#forge:nuggets/gold',
+    E: 'create:precision_mechanism'
   })
 
   event.recipes.createMechanicalCrafting(Item.of("kubejs:neutronium_drive_hyper_dense", 2), [
@@ -1770,6 +1883,7 @@ function prettierpipes(event) {
     dust_process2('desh', 'beyond_earth:desh_ingot', 'beyond_earth:desh_nugget', 'kubejs:desh_dust', 'beyond_earth:moon_desh_ore', 'tconstruct:cobalt_nugget', 'cobalt')
     dust_process2('calorite', 'beyond_earth:calorite_ingot', 'beyond_earth:calorite_nugget', 'kubejs:calorite_dust', 'beyond_earth:venus_calorite_ore', 'tconstruct:cobalt_nugget', 'cobalt')
     dust_process2('stormyx', 'kubejs:stormyx_ingot', 'kubejs:stormyx_nugget', 'kubejs:stormyx_dust', 'kubejs:raw_stormyx', 'beyond_earth:desh_nugget', 'desh')
+    dust_process2('brass', 'create:brass_ingot', 'create:brass_nugget', 'kubejs:brass_dust', 'kubejs:raw_brass', CR('copper_nugget'), 'copper')
   }
   event.custom({
     "type": "thermal:smelter",
@@ -1785,13 +1899,13 @@ function prettierpipes(event) {
   })
     event.custom({
     "type": "thermal:smelter",
-    "ingredients": [{"item": "minecraft:chorus_fruit"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"},{"tag": "forge:dusts/ender_pearl"}], "count": 4}],
+    "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"}], "count": 4}],
     "result": [{"item": "thermal:enderium_ingot"}],
     "energy": 10000
   })
     event.custom({
     "type": "thermal:smelter",
-    "ingredients": [{"item": "minecraft:chorus_fruit"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"},{"tag": "forge:dusts/ender_pearl"}], "count": 2}],
+    "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"}], "count": 2}],
     "result": [{"item": "thermal:enderium_dust"}],
     "energy": 10000
   })

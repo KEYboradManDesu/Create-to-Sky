@@ -5,8 +5,8 @@
       "item": "mekanism:advanced_control_circuit"
     },
     {
-      "fluid": "thermal:ender",
-      "amount": 1000
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 250
     }
   ],
   "results": [

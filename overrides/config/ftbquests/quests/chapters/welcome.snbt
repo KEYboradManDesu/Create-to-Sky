@@ -38,6 +38,11 @@
 					type: "item"
 					item: "minecraft:cornflower"
 				}
+				{
+					id: "0C5FE046D9FAD48D"
+					type: "item"
+					item: "ftbquests:book"
+				}
 			]
 		}
 		{

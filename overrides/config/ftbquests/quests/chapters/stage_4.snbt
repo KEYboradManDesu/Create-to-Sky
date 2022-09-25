@@ -220,7 +220,7 @@
 		}
 		{
 			title: "玄武试炼"
-			icon: "kubejs:incomplete_basalz_rod"
+			icon: "thermal:blitz_powder"
 			x: -3.0d
 			y: 0.0d
 			subtitle: "步骤 33-1"
@@ -472,7 +472,7 @@
 		}
 		{
 			title: "暴雪试炼"
-			icon: "kubejs:incomplete_blitz_cube"
+			icon: "thermal:frost_melon_seeds"
 			x: 5.0d
 			y: 1.0d
 			subtitle: "步骤 39-1"

@@ -577,7 +577,7 @@
 			title: "百科全书"
 			x: -5.0d
 			y: 1.0d
-			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册。"]
+			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册（甚至哪怕是扳手）。"]
 			id: "3BAF9C609F33E3E3"
 			tasks: [{
 				id: "6FFADC41AA91C4EC"
@@ -590,6 +590,26 @@
 				type: "item"
 				item: "vanillacookbook:book_cake"
 			}]
+		}
+		{
+			icon: "exnihilosequentia:end_cake"
+			x: -5.0d
+			y: -5.0d
+			description: ["厌倦了寻找遗迹？做出这个末地甜点，摆放后刚好只够一个人吃，食用后会传送到末地。"]
+			id: "3F47F8B76ADFDF2B"
+			tasks: [
+				{
+					id: "0BD7711C1DCB8B58"
+					type: "item"
+					item: "exnihilosequentia:end_cake"
+					consume_items: false
+				}
+				{
+					id: "0DB6B16B08D8B31C"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
 		}
 	]
 }

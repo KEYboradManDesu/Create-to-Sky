@@ -10,6 +10,16 @@ onEvent("recipes", event => {
     A: 'kubejs:living_casing'
   })
 
+  event.remove({ output: "botania:mana_spreader" })
+  event.shaped("botania:mana_spreader", [
+    "LLL",
+    "BC ",
+    "LLL"
+  ], {
+    L: '#botania:livingwood_logs',
+    B: 'kubejs:livingrock_gear',
+    C: '#botania:petals'
+  })
 
   let living_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
@@ -21,7 +31,6 @@ onEvent("recipes", event => {
 			event.stonecutting(Item.of(id, amount), 'kubejs:living_machine')
 	}
 
-	living_machine('botania:mana_spreader', 1, 'minecraft:dispenser')
   living_machine('botania:elven_spreader', 1, '#forge:ingots/elementium')
   living_machine('botania:abstruse_platform', 1, 'botania:mana_pearl')
   living_machine('botania:turntable', 1, 'create:turntable')

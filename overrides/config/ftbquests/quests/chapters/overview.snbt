@@ -21,7 +21,7 @@
 			tasks: [{
 				id: "7F88BABEC9889C76"
 				type: "item"
-				title: "Any Logs"
+				title: "任何 原木"
 				icon: "minecraft:oak_log"
 				item: {
 					id: "itemfilters:tag"
@@ -516,7 +516,7 @@
 			tasks: [{
 				id: "251A91F6C21AEAFB"
 				type: "checkmark"
-				title: "&6解锁&5最终章"
+				title: "&6解锁&5第五章"
 			}]
 			rewards: [{
 				id: "1A8986F834BC34E6"
@@ -561,6 +561,11 @@
 						tag: { }
 					}
 					consume_items: false
+				}
+				{
+					id: "638DC41EF1C7C493"
+					type: "checkmark"
+					title: "&6解锁&5最终章"
 				}
 			]
 			rewards: [{

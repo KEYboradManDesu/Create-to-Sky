@@ -116,7 +116,7 @@ onEvent('item.tags', event => {
   event.get('forge:glazed_terracotta').add('minecraft:red_glazed_terracotta')
   event.get('forge:glazed_terracotta').add('minecraft:black_glazed_terracotta')
 
-  
+  event.get('ae2:crystals/fluix').add('#forge:gems/fluix')
 
   event.get('forge:raw_materials').add('kubejs:raw_stormyx')
   event.get('forge:raw_materials/stormyx').add('kubejs:raw_stormyx')
@@ -134,8 +134,6 @@ onEvent('item.tags', event => {
   event.get('forge:nuggets').add('kubejs:stormyx_nugget')
   event.get('forge:nuggets/stormyx').add('kubejs:stormyx_nugget')
 
-
-
   event.get('thermal:crafting/dies').add('#forge:trade_cards')
 	event.get('thermal:crafting/dies').add('#forge:profession_cards')
 
@@ -143,6 +141,10 @@ onEvent('item.tags', event => {
   event.get('thermal:crafting/dies').add('kubejs:graphics_card_t2')
   event.get('thermal:crafting/dies').add('kubejs:graphics_card_c')
 
+  event.get("forge:ores/brass").add("kubejs:raw_brass")
+  event.get("create:crushed_ores").add("kubejs:crushed_brass_ore")
+  event.get("forge:dusts/brass").add("kubejs:brass_dust")
+  event.get("forge:dusts").add("kubejs:brass_dust")
 
 	event.get("forge:dust/obsidian").add("#forge:dusts/obsidian")
   event.get("forge:dusts").add("kubejs:desh_dust")
@@ -156,6 +158,7 @@ onEvent('item.tags', event => {
 
   event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
   
+  event.get("kubejs:matrix").add("kubejs:computation_matrix")
 
   event.get("forge:insulating").add("immersiveengineering:insulating_glass")
   event.get("forge:insulating").add("immersiveengineering:slag_glass")
@@ -232,7 +235,7 @@ onEvent('item.tags', event => {
   event.get("forge:dusts/desh").add("kubejs:desh_dust")
   event.get("forge:dusts/calorite").add("kubejs:calorite_dust")
   event.get("forge:dusts/ostrum").add("kubejs:ostrum_dust")
-
+  event.get("forge:dusts/brass").add("kubejs:brass_dust")
   event.get("forge:dusts/cobalt").add("kubejs:cobalt_dust")
   event.get("forge:dusts/zinc").add("kubejs:zinc_dust")
 

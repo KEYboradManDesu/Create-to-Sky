@@ -164,10 +164,7 @@
 				""
 				"海带可以轻易地被&6动力收割机&r收集。"
 			]
-			dependencies: [
-				"5799D55BB26BA52C"
-				"77CD995DAF7FCD7E"
-			]
+			dependencies: ["5799D55BB26BA52C"]
 			id: "608BF7BE3CB666F3"
 			tasks: [
 				{
@@ -595,31 +592,6 @@
 					item: "kubejs:good_idea"
 				}
 			]
-		}
-		{
-			title: "海带种子"
-			icon: "exnihilosequentia:kelp_seeds"
-			x: 6.0d
-			y: 1.0d
-			shape: "circle"
-			subtitle: "步骤 4-1"
-			description: ["把&6筛子&r浸泡在水中，过筛&6沙子&r得到&6海带种子&r，&6海带种子&r在水底种植后变为&6海带&r。"]
-			hide_dependency_lines: true
-			dependencies: ["5799D55BB26BA52C"]
-			id: "77CD995DAF7FCD7E"
-			tasks: [{
-				id: "722EE0B31AF18232"
-				type: "item"
-				item: "exnihilosequentia:kelp_seeds"
-				consume_items: false
-				only_from_crafting: false
-			}]
-			rewards: [{
-				id: "4C173CE3AAADBC27"
-				type: "item"
-				item: "exnihilosequentia:kelp_seeds"
-				count: 3
-			}]
 		}
 	]
 }

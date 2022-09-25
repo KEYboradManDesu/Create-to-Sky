@@ -140,5 +140,5 @@ onEvent("recipes", event => {
   handmade_machine('supplementaries:notice_board', 1, '#forge:paper')
 
   event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:handmade_mechanism_manual_only")
-
+  
 })

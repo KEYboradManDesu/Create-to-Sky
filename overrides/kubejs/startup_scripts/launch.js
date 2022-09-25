@@ -187,6 +187,10 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/crushed/crushed_cobalt_ore")
 			.displayName("粉碎钴矿石")
 
+		event.create("crushed_brass_ore")
+			.texture(modpackId + ":item/crushed/crushed_brass")
+			.displayName("粉碎黄铜矿石")
+
 		event.create("crushed_calorite_ore")
 			.texture(modpackId + ":item/crushed/crushed_calorite_ore")
 			.displayName("粉碎耐热金属矿石")
@@ -456,7 +460,37 @@ onEvent("item.registry", event => {
 			.displayName("§b§l神器鸭§r")
 			.unstackable()
 	
-	
+		event.create("lapis_sheet")
+			.texture(modpackId + ":item/lapis_sheet")
+			.displayName("青金石板")
+
+		event.create("integrated_circuit")
+			.texture(modpackId + ":item/integrated_circuit")
+			.displayName("集成电路板").rarity(RARITY_UNCOMMON)
+
+		event.create("raw_brass")
+			.texture(modpackId + ":item/raw_brass")
+			.displayName("粗黄铜")	
+
+		event.create("brass_dust")
+			.texture(modpackId + ":item/brass_dust")
+			.displayName("黄铜粉")	
+
+		event.create("blaze_brass")
+			.texture(modpackId + ":item/blaze_brass")
+			.displayName("烈焰黄铜").rarity(RARITY_UNCOMMON)
+
+		event.create("chorus_chrome")
+			.texture(modpackId + ":item/chorus_chrome")
+			.displayName("紫颂紫金").rarity(RARITY_UNCOMMON)
+
+		event.create("charging_chromatic_compound")
+			.texture(modpackId + ":item/charging_chromatic_compound")
+			.displayName("超负荷合金（充能中）")
+
+		event.create("overcharged_alloy")
+			.texture(modpackId + ":item/overcharged_alloy")
+			.displayName("超负荷合金").rarity(RARITY_UNCOMMON)
 
 
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')

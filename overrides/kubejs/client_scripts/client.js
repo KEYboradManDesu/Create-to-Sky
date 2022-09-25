@@ -31,8 +31,15 @@ onEvent('item.tooltip', tooltip => {
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7附加目标: §6章节 ${stage}`])
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7在§7装配线§7中不消耗`])
 	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7生成高度：Y= §6${y1} §7至 §6${y2}`])
-
+	let collection = (id, stage) => tooltip.add(id, [`§6收藏品`])
 	
+	collection('kubejs:rickroll')
+	collection('kubejs:twilight_diamond')
+	collection('minecraft:dragon_head')
+	collection('minecraft:dragon_egg')
+	collection('minecraft:conduit')
+	collection('aquaculture:neptunes_bounty')
+	collection('alexsmobs:void_worm_effigy')
 
 	ore("forbidden_arcanus:arcane_crystal_ore", 1, 9)
 	ore("appliedenergistics2:charged_quartz_ore", 1, 30)
@@ -74,6 +81,7 @@ onEvent('item.tooltip', tooltip => {
 	bonus_assembly('immersiveengineering:component_steel', "1A")
 	main_assembly('create:precision_mechanism', "2")
 	bonus_assembly('kubejs:infernal_mechanism', "2A")
+	bonus_assembly('kubejs:integrated_circuit', "2A")
 	bonus_assembly('create_sa:steam_engine', "2A")
 	bonus_assembly('kubejs:sturdy_mechanism', "2A")
 	main_assembly('kubejs:inductive_mechanism', "3")
@@ -111,7 +119,7 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("reliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
 
-	tooltip.add("create:super_glue", [`§7在§7装配线§7中不消耗，需要漏斗放入`]);
+	tooltip.add("create:super_glue", [`§7在§7装配线§7中不消耗，需要漏斗才能放入目标容器`]);
 
 	tooltip.add("kubejs:good_idea", [`§6可用于兑换绝妙发明`]);
 
@@ -120,6 +128,8 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o最苦的卡片...§r`]);
 
 	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
+
+	tooltip.add("minecraft:end_portal_frame", [`§7可被扳手强行拆除，不会返还`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 

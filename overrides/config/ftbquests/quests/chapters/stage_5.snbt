@@ -605,6 +605,7 @@
 					id: "053CCBCD67BF125B"
 					type: "item"
 					item: "beyond_earth:rocket_launch_pad"
+					count: 9L
 					consume_items: false
 				}
 				{

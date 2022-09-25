@@ -3,7 +3,7 @@
 	group: "331B6409EF6A7840"
 	order_index: 2
 	filename: "492D716A6C780306"
-	title: "&f&l0&r 无中生有"
+	title: "&f&l0&r 无中生有 &6引导&r"
 	icon: {
 		id: "exnihilosequentia:wooden_crook"
 		Count: 1b
@@ -28,6 +28,7 @@
 				"56EEBDFA030A6F5D"
 				"4F27CB86C95D6A35"
 				"1F5CEC4CAC0AA928"
+				"70BE4C41D5715825"
 			]
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
@@ -74,7 +75,6 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "步骤 0"
 			description: ["流动的熔岩与水接触时，熔岩会变成圆石。十分的科学且方便。圆石也可以通过&6潜行&r右击&6泥土&r或&6草方块&r获得的&6卵石&r合成获得。"]
 			dependencies: ["75FB28B253B14876"]
 			hide: true
@@ -287,7 +287,7 @@
 			title: "矿物筛筛乐"
 			x: 2.1d
 			y: 2.8d
-			shape: "circle"
+			shape: "square"
 			description: ["进过升级的&6燧石筛网&r能允许你的&6砂砾&r筛出各种&6矿物粒&r。"]
 			dependencies: ["641BF6D1C0119BAF"]
 			size: 0.7d
@@ -447,6 +447,203 @@
 				id: "13CC4A17B7EAF481"
 				type: "item"
 				item: "minecraft:clay_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "海带种子"
+			icon: "exnihilosequentia:kelp_seeds"
+			x: 2.8d
+			y: 5.6d
+			shape: "square"
+			subtitle: "步骤 0-16"
+			description: ["把&6筛子&r浸泡在水中，过筛&6沙子&r得到&6海带种子&r，&6海带种子&r在水底种植后变为&6海带&r。"]
+			hide_dependency_lines: true
+			dependencies: ["6DC4A8DDD7A7472F"]
+			size: 0.7d
+			id: "77CD995DAF7FCD7E"
+			tasks: [{
+				id: "722EE0B31AF18232"
+				type: "item"
+				item: "exnihilosequentia:kelp_seeds"
+				consume_items: false
+				only_from_crafting: false
+			}]
+			rewards: [{
+				id: "4C173CE3AAADBC27"
+				type: "item"
+				item: "exnihilosequentia:kelp_seeds"
+				count: 3
+			}]
+		}
+		{
+			title: "混合在一起！"
+			x: 2.45d
+			y: 6.3d
+			shape: "square"
+			subtitle: "步骤 0-17"
+			description: ["像揉面一样将黏土和海藻混合在一起。"]
+			dependencies: [
+				"26CD6384A084A493"
+				"77CD995DAF7FCD7E"
+			]
+			size: 0.7d
+			id: "2B0D90A5C28A73AA"
+			tasks: [{
+				id: "6302FCC9EFED5D1C"
+				type: "item"
+				item: "architects_palette:algal_blend"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.45d
+			y: 7.0d
+			shape: "square"
+			subtitle: "步骤 0-18"
+			description: ["你需要将上一步产出的海藻混合物烧制成为更坚硬的海藻砖。"]
+			dependencies: ["2B0D90A5C28A73AA"]
+			size: 0.7d
+			id: "24D036D4C3EAC310"
+			tasks: [{
+				id: "5914403AF67C126B"
+				type: "item"
+				item: "architects_palette:algal_brick"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.45d
+			y: 8.0d
+			shape: "square"
+			subtitle: "步骤 0-19"
+			description: ["&6安山合金&r最基本同时是最重要的一种材料，常用于合成器械，是工业的源泉之一。"]
+			dependencies: [
+				"24D036D4C3EAC310"
+				"5EA017DA8FEA1589"
+			]
+			size: 0.7d
+			id: "73AEFB2E986A5654"
+			tasks: [{
+				id: "1C0A96819C2A89D8"
+				type: "item"
+				item: "create:andesite_alloy"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.45d
+			y: 9.0d
+			subtitle: "步骤 0-20"
+			description: ["用你灵巧的双手打造出&6动力构件&r吧！随后你将可以打造各种各样的器械。&a引导章节结束。"]
+			dependencies: ["73AEFB2E986A5654"]
+			id: "06B022F0D6B9D0CB"
+			tasks: [{
+				id: "3A7032D94A3D05F0"
+				type: "item"
+				item: "kubejs:kinetic_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.4d
+			y: 7.0d
+			shape: "square"
+			subtitle: "步骤 0-18-4"
+			description: ["收集安山岩可真是个累活。"]
+			dependencies: ["070C206A52575EBF"]
+			size: 0.7d
+			id: "5EA017DA8FEA1589"
+			tasks: [{
+				id: "5111DEB7E34725F1"
+				type: "item"
+				item: "minecraft:andesite"
+				consume_items: false
+			}]
+		}
+		{
+			x: -1.4d
+			y: 3.5d
+			shape: "square"
+			subtitle: "步骤 0-18-2"
+			dependencies: ["4423579A043BB100"]
+			size: 0.7d
+			id: "70BE4C41D5715825"
+			tasks: [{
+				id: "2B0CDA212E5C098E"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: false
+			}]
+		}
+		{
+			title: "回收再利用"
+			icon: "exnihilosequentia:birch_barrel"
+			x: -1.4d
+			y: 4.8999999999999995d
+			shape: "square"
+			subtitle: "步骤 0-18-1"
+			description: ["将有机物发酵成泥土（树叶 树种 蚕 蜘蛛丝 各种肉类 各种农作物）。"]
+			hide_dependency_lines: true
+			dependencies: ["3AAD60FC5E704C3A"]
+			size: 0.7d
+			id: "4423579A043BB100"
+			tasks: [{
+				id: "2CCD66A96929F64E"
+				type: "item"
+				title: "任何 桶"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:barrels"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "石粒！"
+			x: 0.0d
+			y: 5.6d
+			shape: "square"
+			subtitle: "步骤 0-18-3"
+			description: ["通过过筛&6泥土&r得到各种各样的石粒，我们只需要&6安山岩粒&r。"]
+			dependencies: ["439C4F9A4AFA0885"]
+			size: 0.7d
+			id: "070C206A52575EBF"
+			tasks: [{
+				id: "2F227DBE2964E07D"
+				type: "item"
+				item: "exnihilosequentia:andesite_pebble"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.4d
+			y: 9.1d
+			description: ["好看的护目镜，可不仅仅用来装饰，可以用来查看机械和动力源的具体数值，查看溜槽和隧道内的物品，查看流体元件中流体的具体数值。"]
+			dependencies: ["06B022F0D6B9D0CB"]
+			size: 0.7d
+			id: "040B9EEE6A8A49AC"
+			tasks: [{
+				id: "64A4A994812BE36E"
+				type: "item"
+				item: "create:goggles"
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.1d
+			description: ["扳手，机械动力的标志物品，机械动力中的重要工具之一。"]
+			dependencies: ["06B022F0D6B9D0CB"]
+			size: 0.7d
+			id: "66425EA88AA007D9"
+			tasks: [{
+				id: "4E17D73E98FB670B"
+				type: "item"
+				item: "create:wrench"
 				consume_items: false
 			}]
 		}

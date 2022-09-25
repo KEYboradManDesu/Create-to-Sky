@@ -47,6 +47,7 @@ onEvent("recipes", event => {
 	brass_machine('create:content_observer', 2)
 	brass_machine('thermal:machine_press', 1, MC('dropper'))
 	brass_machine('torchmaster:feral_flare_lantern', 1, MC('glowstone_dust'))
+  brass_machine('createaddition:tesla_coil', 1, 'immersiveengineering:coil_mv')
 	brass_machine('thermal:dynamo_numismatic', 1, TE('rf_coil'))
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)

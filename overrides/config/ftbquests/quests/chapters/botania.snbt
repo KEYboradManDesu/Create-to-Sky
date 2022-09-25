@@ -385,8 +385,8 @@
 		}
 		{
 			icon: "botania:ender_air_bottle"
-			x: 13.0d
-			y: -5.0d
+			x: 15.0d
+			y: -6.0d
 			shape: "circle"
 			subtitle: "步骤 &bM-15-3a"
 			description: ["在&6末地&r使用瓶子或加热&6末影珍珠碎片&r获得。"]
@@ -758,7 +758,7 @@
 		}
 		{
 			icon: "botania:spark"
-			x: 14.0d
+			x: 16.0d
 			y: -5.0d
 			shape: "circle"
 			subtitle: "步骤 &bM-15-3b"
@@ -781,8 +781,8 @@
 		}
 		{
 			icon: "botania:corporea_spark"
-			x: 14.0d
-			y: -4.0d
+			x: 15.0d
+			y: -5.0d
 			shape: "square"
 			subtitle: "步骤 &bM-15-4"
 			dependencies: [
@@ -808,7 +808,7 @@
 		{
 			icon: "botania:corporea_spark_master"
 			x: 14.0d
-			y: -3.0d
+			y: -5.0d
 			subtitle: "步骤 &bM-15-2"
 			dependencies: [
 				"2A03835F3B6879F2"
@@ -840,6 +840,7 @@
 				"7E74E544E3A6ED24"
 				"27DA90ACD7BD0D55"
 				"6E6CC56DDEE06C1A"
+				"002962C7195BFE96"
 			]
 			id: "02487D6C79185B80"
 			tasks: [
@@ -864,9 +865,20 @@
 				tag: {
 					count: 0
 				}
+				ForgeCaps: {
+					Parent: {
+						Items: [{
+							filter: {
+								id: "minecraft:ender_pearl"
+								Count: 1b
+							}
+							amount: 0
+						}]
+					}
+				}
 			}
-			x: 16.0d
-			y: -4.0d
+			x: 17.0d
+			y: -3.0d
 			shape: "circle"
 			description: ["你需要一根&6末影手杖&r以制造&6媒体构件。&r"]
 			hide_dependency_lines: true
@@ -930,6 +942,28 @@
 					type: "item"
 					item: "kubejs:good_idea"
 					count: 2
+				}
+			]
+		}
+		{
+			icon: "kubejs:blaze_brass"
+			x: 14.0d
+			y: -4.0d
+			subtitle: "步骤 &bM-15-5"
+			description: ["取地狱之精华。"]
+			dependencies: ["1CE2E7944353081F"]
+			id: "002962C7195BFE96"
+			tasks: [
+				{
+					id: "3985C2077C4B1D20"
+					type: "item"
+					item: "kubejs:blaze_brass"
+					consume_items: false
+				}
+				{
+					id: "4CE3C91C3A8D38FF"
+					type: "checkmark"
+					title: "已自动化"
 				}
 			]
 		}
