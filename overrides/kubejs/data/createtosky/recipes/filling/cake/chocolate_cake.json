@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:baked_chocolate_cake_base"
+    },
+    {
+      "fluid": "create:chocolate",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "vanillacookbook:chocolate_cake"
+    }
+  ]
+}

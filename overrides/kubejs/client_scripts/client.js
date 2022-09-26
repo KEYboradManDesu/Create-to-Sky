@@ -115,7 +115,7 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("structurescompass:structures_compass", [`§7右键以激活`]);
 
-	tooltip.add("magicfeather:magicfeather", [`§6给予你创造飞行的能力`]);
+	tooltip.add("magicfeather:magicfeather", [`§6在信标范围内给予你创造飞行的能力`]);
 
 	tooltip.add("reliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
 
@@ -125,11 +125,17 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("kubejs:createcoin", [`§7新型加密货币，相比于比特币更稳定`]);
 
+	tooltip.add("exnihilosequentia:end_cake", [`§7食用后将传送至末地`]);
+
+	tooltip.add("beyond_earth:oil_bucket", [`§7需要加热提纯至工业石油`]);
+
+	tooltip.add("kubejs:blaze_brass", [`§7一种烈焰催化剂，也可以当成金属使用`]);
+
 	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o最苦的卡片...§r`]);
 
 	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
 
-	tooltip.add("minecraft:end_portal_frame", [`§7可被扳手强行拆除，不会返还`]);
+	tooltip.add("minecraft:end_portal_frame", [`§6可被扳手强行拆除，不会返还`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 

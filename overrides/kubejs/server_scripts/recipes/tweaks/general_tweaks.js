@@ -91,6 +91,8 @@ onEvent("recipes", event => {
   event.remove({ output: 'immersiveengineering:pickaxe_steel' })
   event.remove({ output: 'immersiveengineering:hoe_steel' })
   event.remove({ output: 'immersiveengineering:shovel_steel' })
+
+  event.remove({ output: 'crockpot:cooked_egg' })
   
   event.remove({ id: KJ("stone_saw") })
   event.remove({ id: KJ("iron_saw") })
@@ -122,6 +124,13 @@ onEvent("recipes", event => {
   event.remove({ id: "thermal:machines/press/press_silver_ingot_to_coin" })
   event.remove({ id: "thermal:machines/press/press_silver_nugget_to_coin" })
 
+  event.remove({ id: "create:blasting/ingot_lead_compat_mekanism" })
+  event.remove({ id: "create:smelting/ingot_lead_compat_mekanism" })
+  event.remove({ id: "create:blasting/ingot_tin_compat_mekanism" })
+  event.remove({ id: "create:smelting/ingot_tin_compat_mekanism" })
+
+  event.remove({ id: "aquaculture:tin_can_to_iron_nugget" })
+  event.remove({ id: "aquaculture:tin_can_to_iron_nugget_from_blasting" })
 
   event.remove({ id: ("twilightforest:uncrafting_table") })
 
@@ -189,8 +198,11 @@ onEvent("recipes", event => {
   event.remove({ id: "beyond_earth:calorite_tank" })
   event.remove({ id: "beyond_earth:steel_ingot_blasting" })
   event.remove({ id: "beyond_earth:compressing/compressed_steel" })
+  event.remove({ id: "thermal:machines/refinery/refinery_crude_oil" })
 
   event.remove({ id: "createoreexcavation:drilling/redstone" })
+
+  event.remove({ id: "vanillacookbook:chocolate" })
 
   event.replaceInput("#forge:gold_plates", "create:golden_sheet")
   event.replaceInput("#forge:iron_plates", "create:iron_sheet")
@@ -277,6 +289,8 @@ onEvent("recipes", event => {
     Item.of(MC("dead_bush")).withChance(0.05)
   ], "minecraft:red_sand")
 
+  event.remove({ id: "vanillacookbook:stuffed_sea_pickle" })
+  event.shapeless('vanillacookbook:stuffed_sea_pickle', ['minecraft:sea_pickle', '#forge:cheese/cheese']).id("vanillacookbook:stuffed_sea_pickle_only")
 
   event.remove({ id: "tconstruct:common/flint" })
   event.shapeless('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel', '#forge:gravel']).id("minecraft:flint_manual_only")
@@ -285,6 +299,133 @@ onEvent("recipes", event => {
   event.shapeless('botania:red_string', ['minecraft:string', 'create:rose_quartz', 'botania:pixie_dust']).id("botania:red_string_only")
 
 
+  // cake
+  event.remove({ output: "shelve:cheese_cake" })
+  event.shaped("shelve:cheese_cake", [
+    " L ",
+    "BCB",
+    "AAA"
+  ], {
+    L: 'minecraft:sugar',
+    C: '#forge:eggs',
+    A: '#supplementaries:cookies',
+    B: '#forge:cheese/cheese'
+  })
+
+  event.remove({ output: "vanillacookbook:cheesecake" })
+  event.shaped("vanillacookbook:cheesecake", [
+    "LLL",
+    "BCB",
+    "AAA"
+  ], {
+    L: '#forge:cheese/cheese',
+    C: '#forge:eggs',
+    A: 'minecraft:wheat',
+    B: 'minecraft:sugar'
+  })
+  event.shaped("vanillacookbook:cheesecake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: '#forge:cheese/cheese',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:ice_cream_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'vanillacookbook:ice_cream',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:berry_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'minecraft:sweet_berries',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:carrot_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'minecraft:carrot',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:rose_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'minecraft:rose_bush',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:chorus_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'minecraft:chorus_fruit',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:book_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: '#forge:paper',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.shaped("vanillacookbook:mohnkuchen", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'minecraft:poppy',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.recipes.createFilling("tconstruct:earth_cake", ['createaddition:cake_base_baked', Fluid.of(TC('earth_slime'), 500)])
+  event.recipes.createFilling("tconstruct:sky_cake", ['createaddition:cake_base_baked', Fluid.of(TC('sky_slime'), 500)])
+  event.recipes.createFilling("tconstruct:ender_cake", ['createaddition:cake_base_baked', Fluid.of(TC('ender_slime'), 500)])
+  event.recipes.createFilling("tconstruct:blood_cake", ['createaddition:cake_base_baked', Fluid.of(TC('blood'), 500)])
+  event.recipes.createFilling("tconstruct:magma_cake", ['createaddition:cake_base_baked', Fluid.of(TC('magma'), 500)])
+  // 分茶
+  event.recipes.createFilling("caupona:water", ['minecraft:bowl', Fluid.of('minecraft:water', 250)])
+  event.recipes.createFilling("caupona:milk", ['minecraft:bowl', Fluid.of('minecraft:milk', 250)])
+  event.recipes.createFilling("caupona:nail_soup", ['minecraft:bowl', Fluid.of('caupona:nail_soup', 250)])
+
+  event.recipes.createMixing(Fluid.of("caupona:nail_soup", 500), [Fluid.of(MC('water'), 500)]).heated()
+
+  // other
+  
+  
   event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [
     "LAL",
@@ -775,7 +916,7 @@ onEvent("recipes", event => {
 		S: 'create:shadow_steel'
 	})
 
-  event.recipes.createPressing([TE('lead_plate')], TE('lead_ingot'))
+  event.recipes.createPressing([TE('lead_plate')], '#forge:ingots/lead')
 	event.recipes.createPressing([TE('enderium_plate')], TE('enderium_ingot'))
 	event.recipes.createPressing([TE('lumium_plate')], TE('lumium_ingot'))
 	event.recipes.createPressing([TE('signalum_plate')], TE('signalum_ingot'))
@@ -1905,7 +2046,7 @@ function prettierpipes(event) {
   })
     event.custom({
     "type": "thermal:smelter",
-    "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"}], "count": 2}],
+    "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:nuggets/ender_pearl"}], "count": 8}],
     "result": [{"item": "thermal:enderium_dust"}],
     "energy": 10000
   })

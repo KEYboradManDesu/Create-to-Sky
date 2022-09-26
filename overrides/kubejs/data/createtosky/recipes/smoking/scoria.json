@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:coal_block"
+  },
+  "result": "create:scoria",
+  "experience": 0.0,
+  "cookingtime": 100
+}

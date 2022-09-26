@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createaddition:cake_base_baked"
+    },
+    {
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "exnihilosequentia:end_cake"
+    }
+  ]
+}

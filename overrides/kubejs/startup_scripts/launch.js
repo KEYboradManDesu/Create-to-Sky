@@ -484,13 +484,17 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/chorus_chrome")
 			.displayName("紫颂紫金").rarity(RARITY_UNCOMMON)
 
-		event.create("charging_chromatic_compound")
-			.texture(modpackId + ":item/charging_chromatic_compound")
-			.displayName("超负荷合金（充能中）")
-
 		event.create("overcharged_alloy")
 			.texture(modpackId + ":item/overcharged_alloy")
 			.displayName("超负荷合金").rarity(RARITY_UNCOMMON)
+
+		event.create("baked_chocolate_cake_base")
+			.texture(modpackId + ":item/baked_chocolate_cake_base")
+			.displayName("烘焙巧克力蛋糕底座")	
+		
+		event.create("chocolate_cake_base")
+			.texture(modpackId + ":item/chocolate_cake_base")
+			.displayName("巧克力蛋糕底座")	
 
 
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')

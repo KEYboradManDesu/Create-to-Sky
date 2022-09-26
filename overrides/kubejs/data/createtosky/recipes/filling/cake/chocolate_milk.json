@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "forge:milk/milk_bottle"
+    },
+    {
+      "fluid": "create:chocolate",
+      "amount": 90
+    }
+  ],
+  "results": [
+    {
+      "item": "vanillacookbook:chocolate_milk"
+    }
+  ]
+}

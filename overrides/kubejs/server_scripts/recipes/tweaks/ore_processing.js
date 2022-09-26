@@ -116,6 +116,9 @@ onEvent('item.tags', event => {
   event.get('forge:glazed_terracotta').add('minecraft:red_glazed_terracotta')
   event.get('forge:glazed_terracotta').add('minecraft:black_glazed_terracotta')
 
+  event.get('forge:cheese/cheese').add('vanillacookbook:cheese')
+  event.get('forge:cheese/cheese').add('shelve:cheese')
+
   event.get('ae2:crystals/fluix').add('#forge:gems/fluix')
 
   event.get('forge:raw_materials').add('kubejs:raw_stormyx')
@@ -136,6 +139,8 @@ onEvent('item.tags', event => {
 
   event.get('thermal:crafting/dies').add('#forge:trade_cards')
 	event.get('thermal:crafting/dies').add('#forge:profession_cards')
+
+  event.get('forge:ores/cobalt').add('tconstruct:raw_cobalt')
 
   event.get('thermal:crafting/dies').add('kubejs:graphics_card_t1')
   event.get('thermal:crafting/dies').add('kubejs:graphics_card_t2')

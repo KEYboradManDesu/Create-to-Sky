@@ -573,7 +573,10 @@
 				"尽力而为，毕竟这是你一直在努力的最后一个装置。"
 				"&7虽然可能让调色板保持简单——在模组所处的状态下，看看你是否可以在这里避免使用任何时髦的特殊渲染块。现在崩溃到这将是毁灭性的。"
 			]
-			dependencies: ["6A156D11D983661D"]
+			dependencies: [
+				"6A156D11D983661D"
+				"3D42512D04C9C916"
+			]
 			id: "73473DC7269EC5B0"
 			tasks: [
 				{
@@ -713,6 +716,29 @@
 				}
 				consume_items: false
 			}]
+		}
+		{
+			icon: "beyond_earth:fuel_bucket"
+			x: 5.0d
+			y: 4.0d
+			shape: "circle"
+			subtitle: "步骤 &b50-1"
+			description: ["你的飞船不是烧煤的，你需要工业燃油来为你的飞船提供能量。"]
+			dependencies: ["6A156D11D983661D"]
+			id: "3D42512D04C9C916"
+			tasks: [
+				{
+					id: "7527411C121F3091"
+					type: "item"
+					item: "beyond_earth:fuel_bucket"
+					consume_items: false
+				}
+				{
+					id: "04E12CFDB2725AE9"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
 		}
 	]
 }

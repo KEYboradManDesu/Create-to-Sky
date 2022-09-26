@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:ice_cream"
+    },
+    {
+      "fluid": "create:chocolate",
+      "amount": 90
+    }
+  ],
+  "results": [
+    {
+      "item": "vanillacookbook:chocolate_ice_cream"
+    }
+  ]
+}
