@@ -8,7 +8,7 @@ onEvent("recipes", event => {
 		"cast_consumed": true,
 		"fluid": {
 			"name": "tconstruct:molten_electrum",
-			"amount": 27000
+			"amount": 2430
 		},
 		"result": "computercraft:computer_normal",
 		"cooling_time": 20

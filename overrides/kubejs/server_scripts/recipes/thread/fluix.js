@@ -48,6 +48,13 @@ onEvent("recipes", event => {
 	fluix_machine(AE2('chest'), 1, MC('chest'))
 	fluix_machine(("hostilenetworks:sim_chamber"), 1, ('#forge:tools/swords'))
 	fluix_machine(("hostilenetworks:loot_fabricator"), 1, ('dummmmmmy:target_dummy_placer'))
+	fluix_machine(("computercraft:wireless_modem_normal"), 4, ('minecraft:ender_pearl'))
+	fluix_machine(("computercraft:speaker"), 1, ('minecraft:note_block'))
+	fluix_machine(("computercraft:disk_drive"), 1, ('#forge:dusts/signalum'))
+	fluix_machine(("computercraft:printer"), 1, ('mekanism:dye_base'))
+	fluix_machine(("computercraft:monitor_normal"), 1, ('create:display_board'))
+	fluix_machine('computercraft:cable', 16)
+	fluix_machine('computercraft:wired_modem', 4)
 
 	event.recipes.createPressing(KJ("radiant_sheet"), CR("refined_radiance"))
 	event.recipes.createMechanicalCrafting(KJ('radiant_coil'), ['A'], { A: KJ('radiant_sheet') })
@@ -58,6 +65,25 @@ onEvent("recipes", event => {
 	], {
 		A: AE2('magenta_paint_ball')
 	})
+
+	event.remove({ output: "computercraft:wireless_modem_advanced" })
+    event.shaped("computercraft:wireless_modem_advanced", [
+    "DDD",
+    "DTD",
+	"DDD"
+    ], {
+    D: '#forge:ingots/gold',
+    T: 'computercraft:wireless_modem_normal'
+    })
+	event.remove({ output: "computercraft:monitor_advanced" })
+    event.shaped("computercraft:monitor_advanced", [
+    "DDD",
+    "DTD",
+	"DDD"
+    ], {
+    D: '#forge:ingots/gold',
+    T: 'computercraft:monitor_normal'
+    })
 
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, C("#redstone_dusts"), KJ("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("redstone"))
