@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "forge:plates/iron",
+      "count": 12
+    },
+    {
+      "item": "thermal:cured_rubber",
+      "count": 6
+    }
+  ],
+  "result": {
+    "item": "cgm:weighted_stock"
+  }
+}

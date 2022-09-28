@@ -3,7 +3,7 @@ onEvent("recipes", event => {
   
   event.remove({ mod: "agape_space" })
   event.remove({ type: AE2("inscriber") })
-  event.shaped(KJ("circuit_scrap", 2), [" A ", "ABA", " A "], { A: TE("invar_ingot"), B: ("#forge:plates/zinc") })
+  event.shaped(KJ("circuit_scrap", 2), [" A ", "ABA", " A "], { A: TE("invar_ingot"), B: ("kubejs:integrated_circuit") })
   event.stonecutting(AE2("silicon_press"), KJ("circuit_scrap"))
   event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
   event.stonecutting(AE2("calculation_processor_press"), KJ("circuit_scrap"))
@@ -34,6 +34,8 @@ onEvent("recipes", event => {
   event.remove({ output: ('projecte:philosophers_stone') })
 
   event.remove({ output: ('vanillacookbook:netherite_apple') })
+
+  event.remove({ output: ('neapolitan:chocolate_bar') })
 
   event.remove({ output: ('immersiveengineering:ingot_nickel') })
   event.remove({ output: ('immersiveengineering:ingot_lead') })
@@ -92,7 +94,25 @@ onEvent("recipes", event => {
   event.remove({ output: 'immersiveengineering:hoe_steel' })
   event.remove({ output: 'immersiveengineering:shovel_steel' })
 
+  event.remove({ output: 'cookingforblockheads:cow_jar' })
+  event.remove({ output: 'cookingforblockheads:milk_jar' })
+
   event.remove({ output: 'crockpot:cooked_egg' })
+  event.remove({ output: 'neapolitan:chocolate_strawberries' })
+  event.remove({ output: 'neapolitan:vanilla_chocolate_fingers' })
+  event.remove({ output: 'neapolitan:mint_chocolate' })
+  event.remove({ id: 'neapolitan:chocolate/chocolate_cake' })
+  event.remove({ id: 'neapolitan:chocolate/chocolate_ice_cream' })
+
+  event.remove({ output: 'beyond_earth:compressor' })
+  event.remove({ output: 'beyond_earth:fuel_refinery' })
+  event.remove({ id: "beyond_earth:compressing/compressed_ostrum" })
+  event.remove({ id: "beyond_earth:compressing/compressed_desh" })
+  event.remove({ id: "beyond_earth:compressing/compressed_calorite" })
+
+  event.remove({ output: 'industrialforegoing:iron_gear' })
+  event.remove({ output: 'industrialforegoing:gold_gear' })
+  event.remove({ output: 'industrialforegoing:diamond_gear' })
   
   event.remove({ id: KJ("stone_saw") })
   event.remove({ id: KJ("iron_saw") })
@@ -128,6 +148,8 @@ onEvent("recipes", event => {
   event.remove({ id: "create:smelting/ingot_lead_compat_mekanism" })
   event.remove({ id: "create:blasting/ingot_tin_compat_mekanism" })
   event.remove({ id: "create:smelting/ingot_tin_compat_mekanism" })
+  event.remove({ id: "create:splashing/mekanism/crushed_tin_ore" })
+
 
   event.remove({ id: "aquaculture:tin_can_to_iron_nugget" })
   event.remove({ id: "aquaculture:tin_can_to_iron_nugget_from_blasting" })
@@ -135,6 +157,10 @@ onEvent("recipes", event => {
   event.remove({ id: ("twilightforest:uncrafting_table") })
 
   event.remove({ id: ("expcaves:clay_ball") })
+
+  event.remove({ id: ("cgm:bazooka") })
+  event.remove({ id: ("cgm:heavy_rifle") })
+  event.remove({ id: ("cgm:machine_pistol") })
 
   event.remove({ id: ("hostilenetworks:living_matter/framework") })
   event.remove({ id: ("hostilenetworks:living_matter/deep_learner") })
@@ -203,6 +229,7 @@ onEvent("recipes", event => {
   event.remove({ id: "createoreexcavation:drilling/redstone" })
 
   event.remove({ id: "vanillacookbook:chocolate" })
+  event.remove({ id: 'vanillacookbook:chocolate_cake' })
 
   event.replaceInput("#forge:gold_plates", "create:golden_sheet")
   event.replaceInput("#forge:iron_plates", "create:iron_sheet")
@@ -210,6 +237,9 @@ onEvent("recipes", event => {
   event.replaceInput("#forge:plates/gold", "create:golden_sheet")
   event.replaceInput("#forge:plates/iron", "create:iron_sheet")
   event.replaceInput("#forge:plates/copper", "create:copper_sheet")
+
+  event.shaped('thermal:lead_ingot', [
+    'A'], { A: 'mekanism:ingot_lead' })
 
   event.shaped("thermal:raw_lead", [
     "S"
@@ -298,6 +328,47 @@ onEvent("recipes", event => {
   event.remove({ id: "botania:red_string" })
   event.shapeless('botania:red_string', ['minecraft:string', 'create:rose_quartz', 'botania:pixie_dust']).id("botania:red_string_only")
 
+  // gun
+  event.smithing('cgm:machine_pistol', 'cgm:pistol', 'kubejs:inductive_mechanism')
+  event.smithing('cgm:heavy_rifle', 'cgm:rifle', 'kubejs:abstruse_mechanism')
+  event.smithing('cgm:bazooka', 'cgm:grenade_launcher', 'ae2:controller')
+  event.shapeless('6x kubejs:black_gunpowder', ['minecraft:gunpowder', '#forge:dusts/charcoal', '#forge:dusts/niter', '#forge:dusts/sulfur']).id("kubejs:black_gunpowder")
+  
+  event.shapeless('4x cgm:shell', ['minecraft:gunpowder', '#forge:nuggets/copper', 'immersiveengineering:empty_shell']).id("kubejs:shell")
+  event.recipes.createMechanicalCrafting(Item.of("cgm:shell", 6), [
+    "B",
+    "D",
+    "A"
+  ], {
+    A: 'immersiveengineering:empty_shell',
+    B: '#forge:nuggets/copper',
+    D: 'kubejs:black_gunpowder'
+  })
+  event.recipes.createMechanicalCrafting(Item.of("immersiveengineering:empty_shell", 3), [
+    "D",
+    "A"
+  ], {
+    A: '#forge:plates/copper',
+    D: '#forge:paper'
+  })
+  event.recipes.createMechanicalCrafting(Item.of("immersiveengineering:empty_casing", 2), [
+    "D"
+  ], {
+    D: '#forge:plates/copper'
+  })
+  
+  event.shaped("16x cgm:basic_bullet", [
+    "L"
+  ], {
+    L: 'kubejs:box_nails'
+  })
+  event.shaped("32x cgm:advanced_bullet", [
+    "L"
+  ], {
+    L: 'kubejs:box_ammo'
+
+    
+  })
 
   // cake
   event.remove({ output: "shelve:cheese_cake" })
@@ -411,11 +482,59 @@ onEvent("recipes", event => {
     B: 'minecraft:sugar'
   })
 
+  event.shaped("neapolitan:banana_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: '#forge:fruits/banana',
+    C: '#forge:eggs',
+    A: 'kubejs:banana_dough',
+    B: 'minecraft:sugar'
+  })
+  event.shaped("neapolitan:strawberry_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: '#forge:fruits/strawberry',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+  event.shaped("neapolitan:vanilla_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'neapolitan:dried_vanilla_pods',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+  event.shaped("neapolitan:adzuki_cake", [
+    " L ",
+    "BCB",
+    " A "
+  ], {
+    L: 'neapolitan:roasted_adzuki_beans',
+    C: '#forge:eggs',
+    A: 'create:dough',
+    B: 'minecraft:sugar'
+  })
+
+  event.recipes.createFilling("neapolitan:chocolate_strawberries", ['#forge:fruits/strawberry', Fluid.of('create:chocolate', 90)])
+  event.recipes.createFilling("neapolitan:vanilla_chocolate_fingers", ['#neapolitan:dried_vanilla_pods', Fluid.of('create:chocolate', 90)])
+  event.recipes.createFilling("neapolitan:chocolate_ice_cream", ['neapolitan:vanilla_ice_cream', Fluid.of('create:chocolate', 90)])
+  event.recipes.createFilling("neapolitan:chocolate_spider_eye", ['minecraft:spider_eye', Fluid.of('create:chocolate', 45)])
+  event.recipes.createFilling("neapolitan:mint_chocolate", ['neapolitan:mint_leaves', Fluid.of('create:chocolate', 250)])
+
   event.recipes.createFilling("tconstruct:earth_cake", ['createaddition:cake_base_baked', Fluid.of(TC('earth_slime'), 500)])
   event.recipes.createFilling("tconstruct:sky_cake", ['createaddition:cake_base_baked', Fluid.of(TC('sky_slime'), 500)])
   event.recipes.createFilling("tconstruct:ender_cake", ['createaddition:cake_base_baked', Fluid.of(TC('ender_slime'), 500)])
   event.recipes.createFilling("tconstruct:blood_cake", ['createaddition:cake_base_baked', Fluid.of(TC('blood'), 500)])
   event.recipes.createFilling("tconstruct:magma_cake", ['createaddition:cake_base_baked', Fluid.of(TC('magma'), 500)])
+  event.shapeless('kubejs:banana_dough', ['#forge:dough', 'neapolitan:dried_banana']).id("kubejs:banana_dough")
   // 分茶
   event.recipes.createFilling("caupona:water", ['minecraft:bowl', Fluid.of('minecraft:water', 250)])
   event.recipes.createFilling("caupona:milk", ['minecraft:bowl', Fluid.of('minecraft:milk', 250)])

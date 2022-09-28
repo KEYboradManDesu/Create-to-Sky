@@ -140,11 +140,19 @@
 				id: "235CD0501F0E807C"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "4000DE1B90DA84CE"
-				type: "item"
-				item: "minecraft:wheat_seeds"
-			}]
+			rewards: [
+				{
+					id: "4000DE1B90DA84CE"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "28C64D54D41FF750"
+					type: "item"
+					item: "tetra:rack"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "&f&l肆"
@@ -227,11 +235,19 @@
 				id: "422CD0E2E5F2F158"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "27FC36C810ADB897"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
+			rewards: [
+				{
+					id: "27FC36C810ADB897"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "5D76DBD51C92616F"
+					type: "item"
+					item: "kubejs:protein_bar"
+					count: 8
+				}
+			]
 		}
 	]
 }

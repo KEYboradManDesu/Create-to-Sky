@@ -4,14 +4,14 @@
     "item": "thermal:hazmat_boots"
   },
   "transitionalItem": {
-    "item": "thermal:hazmat_boots"
+    "item": "kubejs:incomplete_space_boots"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         },
         {
           "item": "beyond_earth:compressed_steel"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_boots"
+          "item": "kubejs:incomplete_space_boots"
         }
       ]
     }

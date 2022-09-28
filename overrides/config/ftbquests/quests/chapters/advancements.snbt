@@ -415,5 +415,51 @@
 				}
 			]
 		}
+		{
+			title: "查理的巧克力工厂I"
+			icon: "create:bar_of_chocolate"
+			x: -1.0d
+			y: -6.0d
+			shape: "rsquare"
+			description: ["制作出巧克力自动化生产线。"]
+			id: "4A38517AC2118B36"
+			tasks: [
+				{
+					id: "6CA0771EB2C213FC"
+					type: "item"
+					item: "create:chocolate_bucket"
+					consume_items: false
+				}
+				{
+					id: "457570ABE5AECC38"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "查理的巧克力工厂II"
+			icon: "kubejs:sweet_mechanism"
+			x: -2.0d
+			y: -6.0d
+			shape: "circle"
+			description: ["机械动力的浪漫：搭建一条&6甜蜜构件&r生产线。"]
+			dependencies: ["4A38517AC2118B36"]
+			hide: true
+			id: "482BE74B40E1775D"
+			tasks: [
+				{
+					id: "5FEED724D3B39827"
+					type: "item"
+					item: "kubejs:sweet_mechanism"
+					consume_items: false
+				}
+				{
+					id: "0D0C7FA18B384870"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
 	]
 }

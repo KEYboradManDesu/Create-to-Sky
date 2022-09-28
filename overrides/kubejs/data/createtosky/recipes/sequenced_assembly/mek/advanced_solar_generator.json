@@ -4,14 +4,14 @@
     "item": "mekanismgenerators:heat_generator"
   },
   "transitionalItem": {
-    "item": "mekanismgenerators:solar_panel"
+    "item": "kubejs:incomplete_calculation_mechanism"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanismgenerators:turbine_rotor"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanismgenerators:solar_generator"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanismgenerators:solar_generator"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanismgenerators:solar_generator"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -75,7 +75,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanismgenerators:solar_generator"
@@ -83,39 +83,7 @@
       ],
       "results": [
         {
-          "item": "mekanismgenerators:solar_panel"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "mekanismgenerators:solar_panel"
-        },
-        {
-          "item": "mekanismgenerators:solar_generator"
-        }
-      ],
-      "results": [
-        {
-          "item": "mekanismgenerators:solar_panel"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "mekanismgenerators:solar_panel"
-        },
-        {
-          "item": "mekanismgenerators:solar_generator"
-        }
-      ],
-      "results": [
-        {
-          "item": "mekanismgenerators:solar_panel"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     }

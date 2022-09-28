@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:plates/iron",
+      "count": 6
+    },
+    {
+      "item": "thermal:cured_rubber",
+      "count": 8
+    }
+  ],
+  "result": {
+    "item": "cgm:light_stock"
+  }
+}

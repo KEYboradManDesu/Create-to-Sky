@@ -4,14 +4,14 @@
     "item": "thermal:hazmat_chestplate"
   },
   "transitionalItem": {
-    "item": "thermal:hazmat_chestplate"
+    "item": "kubejs:incomplete_space_suit"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         },
         {
           "item": "beyond_earth:oxygen_tank"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         },
         {
           "item": "beyond_earth:oxygen_gear"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         },
         {
           "item": "beyond_earth:oxygen_tank"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         }
       ]
     },
@@ -75,7 +75,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -83,7 +83,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_chestplate"
+          "item": "kubejs:incomplete_space_suit"
         }
       ]
     }

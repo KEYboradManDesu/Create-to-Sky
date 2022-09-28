@@ -4,14 +4,14 @@
     "item": "beyond_earth:engine_frame"
   },
   "transitionalItem": {
-    "item": "beyond_earth:engine_frame"
+    "item": "kubejs:incomplete_engine_steel"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         },
         {
           "item": "beyond_earth:compressed_steel"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         }
       ]
     }, 
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         },
         {
           "item": "beyond_earth:engine_fan"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         }
       ]
     }, 
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         },
         {
           "item": "beyond_earth:compressed_steel"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         }
       ]
     }, 
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         },
         {
           "item": "thermal:signalum_gear"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_steel"
         }
       ]
     }

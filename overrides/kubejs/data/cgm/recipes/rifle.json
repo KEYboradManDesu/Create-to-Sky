@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:inductive_mechanism",
+      "count": 32
+    },
+    {
+      "item": "immersiveengineering:gunpart_barrel",
+      "count": 1
+    },
+    {
+      "item": "kubejs:damascus_steel_ingot",
+      "count": 16
+    },
+    {
+      "item": "thermal:cured_rubber",
+      "count": 8
+    }
+  ],
+  "result": {
+    "item": "cgm:rifle"
+  }
+}

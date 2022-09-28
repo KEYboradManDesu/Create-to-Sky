@@ -4,14 +4,14 @@
     "item": "beyond_earth:compressed_steel"
   },
   "transitionalItem": {
-    "item": "beyond_earth:compressed_steel"
+    "item": "kubejs:incomplete_rocket_nose_cone"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_rocket_nose_cone"
         },
         {
           "item": "thermal:invar_plate"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_rocket_nose_cone"
         }
       ]
     },
@@ -27,12 +27,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_rocket_nose_cone"
         }
       ],
       "results": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_rocket_nose_cone"
         }
       ]
     },

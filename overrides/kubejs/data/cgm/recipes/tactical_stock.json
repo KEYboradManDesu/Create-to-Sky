@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:sealed_mechanism",
+      "count": 8
+    },
+    {
+      "tag": "forge:plates/iron",
+      "count": 8
+    }
+  ],
+  "result": {
+    "item": "cgm:tactical_stock"
+  }
+}

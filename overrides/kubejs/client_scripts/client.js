@@ -1,7 +1,7 @@
 // priority: 0
 
 onEvent('jei.hide.items', event => {
-	event.hide('appliedenergistics2:facade')
+	event.hide('ae2:facade')
 	event.hide(`#buddycards:cards`)
 	event.hide(`#buddycards:gummy_cards`)
 })
@@ -31,7 +31,7 @@ onEvent('item.tooltip', tooltip => {
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7附加目标: §6章节 ${stage}`])
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7在§7装配线§7中不消耗`])
 	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7生成高度：Y= §6${y1} §7至 §6${y2}`])
-	let collection = (id, stage) => tooltip.add(id, [`§6收藏品`])
+	let collection = (id, stage) => tooltip.add(id, [`附加目标：§6收藏品`])
 	
 	collection('kubejs:rickroll')
 	collection('kubejs:twilight_diamond')
@@ -40,29 +40,32 @@ onEvent('item.tooltip', tooltip => {
 	collection('minecraft:conduit')
 	collection('aquaculture:neptunes_bounty')
 	collection('alexsmobs:void_worm_effigy')
+	collection('kubejs:sweet_mechanism')
 
-	ore("forbidden_arcanus:arcane_crystal_ore", 1, 9)
-	ore("appliedenergistics2:charged_quartz_ore", 1, 30)
-	ore("forbidden_arcanus:xpetrified_ore", 1, 30)
-	ore("appliedenergistics2:quartz_ore", 1, 30)
-	ore("thermal:apatite_ore", 1, 30)
-	ore("thermal:cinnabar_ore", 1, 30)
-	ore("thermal:niter_ore", 1, 30)
-	ore("thermal:nickel_ore", 1, 40)
-	ore("thermal:ruby_ore", 1, 30)
-	ore("thermal:sapphire_ore", 1, 30)
-	ore("thermal:lead_ore", 1, 20)
-	ore("minecraft:emerald_ore", 1, 30)
-	ore("thermal:sulfur_ore", 12, 36)
-	ore("create:zinc_ore", 15, 70)
-	ore("create:copper_ore", 40, 85)
+	ore("forbidden_arcanus:arcane_crystal_ore", -40, 14)
+	ore("forbidden_arcanus:xpetrified_ore", -6, 35)
 
-	ore("minecraft:coal_ore", 1, 128)
+	ore("thermal:cinnabar_ore", -16, 48)
+	ore("thermal:niter_ore", -16, 64)
+	ore("thermal:nickel_ore", -40, 120)
+	ore("thermal:ruby_ore", -144, 16)
+	ore("thermal:sapphire_ore", -144, 16)
+	ore("thermal:lead_ore", -60, 40)
+	ore("thermal:silver_ore", -60, 40)
+	ore("thermal:apatite_ore", -16, 96)
+	ore("thermal:sulfur_ore", -16, 32)
+	ore("thermal:tin_ore", -20, 60)
+
+	ore("create:zinc_ore", -63, 70)
+
+	ore("minecraft:coal_ore", 136, 256)
 	ore("minecraft:iron_ore", 1, 64)
-	ore("minecraft:lapis_ore", 1, 32)
-	ore("minecraft:gold_ore", 1, 32)
-	ore("minecraft:diamond_ore", 1, 16)
-	ore("minecraft:redstone_ore", 1, 16)
+	ore("minecraft:lapis_ore", -32, 32)
+	ore("minecraft:gold_ore", 80, 384)
+	ore("minecraft:diamond_ore", -144, 16)
+	ore("minecraft:redstone_ore", -64, 15)
+	ore("minecraft:copper_ore", -16, 112)
+	ore("minecraft:emerald_ore", -16, 480)
 
 	holds('copper', 5 * 9)
 	holds('iron', 6 * 9)
@@ -111,30 +114,32 @@ onEvent('item.tooltip', tooltip => {
 	global.substrates[5].forEach(e => tooltip.add(e.id, [`§8类型： §7宝石`]));
 	global.substrates[6].forEach(e => tooltip.add(e.id, [`§8类型： §7催化剂`]));
 
+	tooltip.add("minecraft:redstone_ore", [`§7在本整合包中无法从自然获得`]);
 	tooltip.add("kubejs:incomp_living_mechanism", [`§b下一步：注魔`]);
-
+	tooltip.add("kubejs:protein_bar", [`§7快速补充能量，适合健身人士食用`]);
 	tooltip.add("structurescompass:structures_compass", [`§7右键以激活`]);
-
 	tooltip.add("magicfeather:magicfeather", [`§6在信标范围内给予你创造飞行的能力`]);
-
 	tooltip.add("reliquary:alkahestry_tome", [`§6不能在动力合成中使用`]);
-
 	tooltip.add("create:super_glue", [`§7在§7装配线§7中不消耗，需要漏斗才能放入目标容器`]);
-
 	tooltip.add("kubejs:good_idea", [`§6可用于兑换绝妙发明`]);
-
 	tooltip.add("kubejs:createcoin", [`§7新型加密货币，相比于比特币更稳定`]);
-
 	tooltip.add("exnihilosequentia:end_cake", [`§7食用后将传送至末地`]);
-
 	tooltip.add("beyond_earth:oil_bucket", [`§7需要加热提纯至工业石油`]);
+	tooltip.add("cookingforblockheads:sink", [`§7世上最小的无限水`]);
+	tooltip.add("kubejs:chorus_chrome", [`§7适合用来磨牙`]);
+	tooltip.add("kubejs:sweet_mechanism", [`§7全宇宙最甜蜜的构件`]);
+
+	tooltip.add("kubejs:matrix_sheet", [`§7暂时没用用处`]);
+
+	tooltip.add("kubejs:box_ammo", [`§7内装有32发全威力弹药`]);
+	tooltip.add("kubejs:box_ammo", [`§7罗德岛永恒枪械工坊鼎力赞助`]);
+
+	tooltip.add("kubejs:box_nails", [`§7内装有16颗钢钉`]);
+	tooltip.add("kubejs:box_nails", [`§7罗德岛永恒枪械工坊鼎力赞助`]);
 
 	tooltip.add("kubejs:blaze_brass", [`§7一种烈焰催化剂，也可以当成金属使用`]);
-
 	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o最苦的卡片...§r`]);
-
 	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
-
 	tooltip.add("minecraft:end_portal_frame", [`§6可被扳手强行拆除，不会返还`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);

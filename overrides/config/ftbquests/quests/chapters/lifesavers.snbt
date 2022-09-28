@@ -611,5 +611,31 @@
 				}
 			]
 		}
+		{
+			title: "时代变了"
+			icon: {
+				id: "cgm:pistol"
+				Count: 1b
+				tag: {
+					Color: 16711680
+				}
+			}
+			x: -6.0d
+			y: -3.0d
+			description: ["这把枪通过发射钢筋造成远程伤害。"]
+			id: "131C210439B0EF7B"
+			tasks: [{
+				id: "7596306F0C55282D"
+				type: "item"
+				item: {
+					id: "cgm:pistol"
+					Count: 1b
+					tag: {
+						AmmoCount: 4
+					}
+				}
+				consume_items: false
+			}]
+		}
 	]
 }

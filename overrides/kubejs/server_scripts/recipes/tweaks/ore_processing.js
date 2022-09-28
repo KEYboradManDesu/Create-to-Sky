@@ -121,6 +121,16 @@ onEvent('item.tags', event => {
 
   event.get('ae2:crystals/fluix').add('#forge:gems/fluix')
 
+  event.get('forge:gunpowder').add('kubejs:black_gunpowder')
+
+  event.get('forge:super_glue').add('create:super_glue')
+  event.get('forge:super_glue').add('#forge:slimeballs')
+
+  event.get('forge:fruits/strawberry').add('#forge:crops/strawberry')
+  event.get('neapolitan:dried_vanilla_pods').add('neapolitan:dried_vanilla_pods')
+
+  event.get('minecraft:wool_carpets').add('#minecraft:carpets')
+
   event.get('forge:raw_materials').add('kubejs:raw_stormyx')
   event.get('forge:raw_materials/stormyx').add('kubejs:raw_stormyx')
   event.get('forge:raw_ores/stormyx').add('kubejs:raw_stormyx')
@@ -236,6 +246,10 @@ onEvent('item.tags', event => {
   event.get("forge:dusts/copper").remove("immersiveengineering:dust_copper")
   event.get("forge:dusts/iron").remove("immersiveengineering:dust_iron")
   event.get("forge:dusts/gold").remove("immersiveengineering:dust_gold")
+
+  event.get("forge:gears/diamond").remove("industrialforegoing:diamond_gear")
+  event.get("forge:gears/gold").remove("industrialforegoing:gold_gear")
+  event.get("forge:gears/iron").remove("industrialforegoing:iron_gear")
 
   event.get("forge:dusts/desh").add("kubejs:desh_dust")
   event.get("forge:dusts/calorite").add("kubejs:calorite_dust")

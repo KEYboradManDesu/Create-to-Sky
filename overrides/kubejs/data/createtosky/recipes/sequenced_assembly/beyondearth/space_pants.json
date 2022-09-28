@@ -4,14 +4,14 @@
     "item": "thermal:hazmat_leggings"
   },
   "transitionalItem": {
-    "item": "thermal:hazmat_leggings"
+    "item": "kubejs:incomplete_space_leggings"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         },
         {
           "item": "beyond_earth:compressed_steel"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         },
         {
           "item": "beyond_earth:compressed_steel"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         },
         {
           "item": "kubejs:matter_plastics"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "thermal:hazmat_leggings"
+          "item": "kubejs:incomplete_space_leggings"
         }
       ]
     }

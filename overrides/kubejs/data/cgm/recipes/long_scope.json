@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:inductive_mechanism",
+      "count": 8
+    },
+    {
+      "tag": "forge:glass_panes",
+      "count": 2
+    },
+    {
+      "item": "thermal:signalum_gear",
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "cgm:long_scope"
+  }
+}

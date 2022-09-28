@@ -459,6 +459,24 @@ onEvent("item.registry", event => {
 		    .parentModel(modpackId + ":item/rubber_duck")
 			.displayName("§b§l神器鸭§r")
 			.unstackable()
+
+		event.create("incomplete_advanced_bullet")
+		    .parentModel(modpackId + ":item/advanced_bullet")
+			.displayName("全威力弹药（半成品）")
+
+		event.create("incomplete_basic_bullet")
+		    .parentModel(modpackId + ":item/basic_bullet")
+			.displayName("钢钉（半成品）")
+
+		event.create("box_ammo")
+		    .parentModel(modpackId + ":item/box_ammo")
+			.displayName("弹药箱").rarity(RARITY_UNCOMMON)
+			.maxStackSize(16)
+
+		event.create("box_nails")
+		    .parentModel(modpackId + ":item/box_nails")
+			.displayName("钢钉盒")
+			.maxStackSize(32)
 	
 		event.create("lapis_sheet")
 			.texture(modpackId + ":item/lapis_sheet")
@@ -483,6 +501,9 @@ onEvent("item.registry", event => {
 		event.create("chorus_chrome")
 			.texture(modpackId + ":item/chorus_chrome")
 			.displayName("紫颂紫金").rarity(RARITY_UNCOMMON)
+			.food((food) => {food.hunger(3)
+			.saturation(0.5)
+			.effect('minecraft:levitation', 100, 1, 1.0)})
 
 		event.create("overcharged_alloy")
 			.texture(modpackId + ":item/overcharged_alloy")
@@ -495,6 +516,111 @@ onEvent("item.registry", event => {
 		event.create("chocolate_cake_base")
 			.texture(modpackId + ":item/chocolate_cake_base")
 			.displayName("巧克力蛋糕底座")	
+
+		event.create("banana_dough")
+			.texture(modpackId + ":item/banana_dough")
+			.displayName("香蕉面团")	
+
+		event.create("black_gunpowder")
+			.texture(modpackId + ":item/gunpowder")
+			.displayName("黑火药")	
+
+		event.create("incomplete_calorite_engine")
+			.texture(modpackId + ":item/beyondearth/incomplete_calorite_engine")
+			.displayName("耐热金属引擎（半成品）")	
+
+		event.create("incomplete_engine_desh")
+			.texture(modpackId + ":item/beyondearth/incomplete_engine_desh")
+			.displayName("戴斯引擎（半成品）")	
+
+		event.create("incomplete_engine_ostrum")
+			.texture(modpackId + ":item/beyondearth/incomplete_engine_ostrum")
+			.displayName("紫金引擎（半成品）")	
+
+		event.create("incomplete_engine_steel")
+			.texture(modpackId + ":item/beyondearth/incomplete_engine_steel")
+			.displayName("钢引擎（半成品）")	
+
+		event.create("incomplete_calorite_tank")
+			.texture(modpackId + ":item/beyondearth/incomplete_calorite_tank")
+			.displayName("耐热金属燃油罐（半成品）")	
+
+		event.create("incomplete_tank_ostrum")
+			.texture(modpackId + ":item/beyondearth/incomplete_tank_ostrum")
+			.displayName("紫金燃油罐（半成品）")	
+
+		event.create("incomplete_tank_steel")
+			.texture(modpackId + ":item/beyondearth/incomplete_tank_steel")
+			.displayName("钢燃油罐（半成品）")	
+
+		event.create("incomplete_tank_desh")
+			.texture(modpackId + ":item/beyondearth/incomplete_tank_desh")
+			.displayName("戴斯燃油罐（半成品）")	
+
+		event.create("incomplete_item_fin")
+			.texture(modpackId + ":item/beyondearth/incomplete_item_fin")
+			.displayName("火箭尾翼（半成品）")	
+
+		event.create("incomplete_rocket_nose_cone")
+			.texture(modpackId + ":item/beyondearth/incomplete_rocket_nose_cone")
+			.displayName("火箭鼻锥（半成品）")	
+
+		event.create("incomplete_space_suit")
+			.texture(modpackId + ":item/beyondearth/incomplete_space_suit")
+			.displayName("太空服（半成品）")	
+			.maxStackSize(1)
+
+		event.create("incomplete_space_leggings")
+			.texture(modpackId + ":item/beyondearth/incomplete_space_leggings")
+			.displayName("太空裤（半成品）")	
+			.maxStackSize(1)
+
+		event.create("incomplete_space_boots")
+			.texture(modpackId + ":item/beyondearth/incomplete_space_boots")
+			.displayName("太空靴（半成品）")	
+			.maxStackSize(1)
+
+		event.create('protein_bar')
+		    .texture(modpackId + ":item/protein_bar")
+		    .displayName('Feed The Beast™蛋白棒').rarity(RARITY_UNCOMMON)
+		    .food((food) => {food.hunger(8)
+		    .saturation(0.5)})
+
+		event.create('white_chocolate_gear')
+		    .texture(modpackId + ":item/white_chocolate_gear")
+		    .displayName('棉花糖齿轮')
+		    .food((food) => {food.hunger(4)
+		    .saturation(0.5)
+			.effect('create_confectionery:rest', 100, 1, 1.0)})
+
+		event.create('caramel_sheet')
+		    .texture(modpackId + ":item/caramel_sheet")
+		    .displayName('焦糖板')
+		    .food((food) => {food.hunger(5)
+		    .saturation(0.5)
+			.effect('minecraft:speed', 100, 1, 1.0)})
+
+		event.create('incomplete_sweet_mechanism')
+		    .texture(modpackId + ":item/incomplete_sweet_mechanism")
+		    .displayName('甜蜜构件（半成品）').rarity(RARITY_UNCOMMON)
+		    .food((food) => {food.hunger(8)
+		    .saturation(0.5)
+			.effect('minecraft:speed', 100, 1, 1.0)})
+
+		event.create('sweet_mechanism')
+		    .texture(modpackId + ":item/sweet_mechanism")
+		    .displayName('甜蜜构件').rarity(RARITY_UNCOMMON)
+		    .food((food) => {food.hunger(20)
+		    .saturation(0.5)
+			.effect('minecraft:speed', 100, 1, 1.0)
+			.effect('minecraft:haste', 200, 1, 1.0)
+			.effect('minecraft:regeneration', 200, 1, 1.0)
+			.effect('minecraft:saturation', 1000, 1, 1.0)
+		})
+
+		event.create('matrix_sheet')
+		    .texture(modpackId + ":item/raw_logic_sheet")
+		    .displayName('§d智能逻辑板§r').rarity(RARITY_UNCOMMON)
 
 
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')
@@ -637,7 +763,7 @@ onEvent("block.registry", event => {
 		.model(modpackId + ":block/computation_matrix")
 		.material("metal")
 		.hardness(3.0)
-		.displayName("§d§l智能矩阵§r")
+		.displayName("§d智能矩阵§r")
 		.tagBlock("minecraft:mineable/pickaxe")
 
 	event.create("waste_block")
@@ -706,7 +832,7 @@ onEvent("fluid.registry", event => {
 			.noBucket()
 	}
 	event.create("matrix")
-		.displayName("§d§l液态智能矩阵§r")
+		.displayName("§d液态智能矩阵§r")
 		.thinTexture(colors[0])
 		.noBlock()
 

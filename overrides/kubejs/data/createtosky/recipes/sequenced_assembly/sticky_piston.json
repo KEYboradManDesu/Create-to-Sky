@@ -14,7 +14,7 @@
           "item": "minecraft:piston"
         },
         {
-          "item": "create:super_glue"
+          "tag": "forge:super_glue"
         }
       ],
       "results": [

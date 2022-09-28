@@ -1,0 +1,21 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "immersiveengineering:empty_shell",
+      "count": 4
+    },
+    {
+      "tag": "forge:nuggets/copper",
+      "count": 4
+    },
+    {
+      "item": "kubejs:black_gunpowder",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:shell",
+    "count": 16
+  }
+}

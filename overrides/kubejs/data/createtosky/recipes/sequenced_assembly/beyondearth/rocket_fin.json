@@ -4,14 +4,14 @@
     "item": "beyond_earth:compressed_steel"
   },
   "transitionalItem": {
-    "item": "beyond_earth:compressed_steel"
+    "item": "kubejs:incomplete_item_fin"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         },
         {
           "tag": "forge:ingots/steel"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         }
       ]
     },
@@ -27,12 +27,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         }
       ],
       "results": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         }
       ]
     },
@@ -40,12 +40,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         }
       ],
       "results": [
         {
-          "item": "beyond_earth:compressed_steel"
+          "item": "kubejs:incomplete_item_fin"
         }
       ]
     }

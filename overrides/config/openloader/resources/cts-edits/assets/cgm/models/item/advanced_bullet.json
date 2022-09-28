@@ -1,5 +1,5 @@
 {
-	"credit": "Model by MrCrayfish (https://twitter.com/MrCraayfish) using Blockbench",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "cgm:items/advanced_bullet",
 		"particle": "cgm:items/advanced_bullet"
@@ -15,7 +15,7 @@
 				"south": {"uv": [0, 0, 2, 7], "texture": "#1"},
 				"west": {"uv": [0, 0, 2, 7], "texture": "#1"},
 				"up": {"uv": [2, 0, 4, 2], "texture": "#1"},
-				"down": {"uv": [2, 2, 6, 6], "texture": "#1"}
+				"down": {"uv": [2, 2, 4, 4], "texture": "#1"}
 			}
 		}
 	],

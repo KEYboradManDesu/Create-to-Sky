@@ -4,14 +4,14 @@
     "item": "mekanism:basic_chemical_tank"
   },
   "transitionalItem": {
-    "item": "mekanism:basic_chemical_tank"
+    "item": "kubejs:incomplete_tank_desh"
   },
   "sequence": [
     {
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_tank_desh"
         },
         {
           "fluid": "beyond_earth:molten_desh",
@@ -20,7 +20,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_tank_desh"
         }
       ]
     }

@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "fluid": "thermal:redstone",
-      "amount": 500
+      "amount": 250
     },
     {
       "item": "ae2:certus_quartz_crystal"

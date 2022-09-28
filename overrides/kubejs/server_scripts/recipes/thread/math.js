@@ -114,7 +114,7 @@ onEvent("recipes", event => {
 		"type": "tconstruct:casting_basin",
 		"fluid": {
 			"name": "kubejs:matrix",
-			"amount": 81000
+			"amount": 1000
 		},
 		"result": Item.of(KJ("computation_matrix")).toResultJson(),
 		"cooling_time": 20

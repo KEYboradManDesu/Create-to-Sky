@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:eggs",
+      "amount": 1
+    },
+    {
+      "item": "minecraft:sugar",
+      "amount": 2
+    },
+    {
+      "fluid": "industrialforegoing:meat",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:protein_bar"
+    }
+  ]
+}

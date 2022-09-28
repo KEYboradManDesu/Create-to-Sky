@@ -4,14 +4,14 @@
     "item": "thermal:signalum_plate"
   },
   "transitionalItem": {
-    "item": "mekanism:advanced_control_circuit"
+    "item": "kubejs:incomplete_calculation_mechanism"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanism:alloy_atomic"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanism:alloy_atomic"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanism:ingot_refined_obsidian"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         },
         {
           "item": "mekanism:energy_tablet"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:advanced_control_circuit"
+          "item": "kubejs:incomplete_calculation_mechanism"
         }
       ]
     }

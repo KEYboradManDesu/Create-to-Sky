@@ -4,14 +4,14 @@
     "item": "mekanism:basic_chemical_tank"
   },
   "transitionalItem": {
-    "item": "mekanism:basic_chemical_tank"
+    "item": "kubejs:incomplete_tank_ostrum"
   },
   "sequence": [
     {
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_tank_ostrum"
         },
         {
           "fluid": "beyond_earth:molten_ostrum",
@@ -20,7 +20,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_tank_ostrum"
         }
       ]
     }

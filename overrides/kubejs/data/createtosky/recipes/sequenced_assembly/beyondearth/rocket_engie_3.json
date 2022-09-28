@@ -4,14 +4,14 @@
     "item": "beyond_earth:engine_frame"
   },
   "transitionalItem": {
-    "item": "beyond_earth:engine_frame"
+    "item": "kubejs:incomplete_engine_ostrum"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         },
         {
           "item": "beyond_earth:ostrum_ingot"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         }
       ]
     }, 
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         },
         {
           "item": "beyond_earth:engine_fan"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         }
       ]
     }, 
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         },
         {
           "item": "beyond_earth:compressed_ostrum"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         }
       ]
     }, 
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         },
         {
           "item": "thermal:signalum_gear"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "beyond_earth:engine_frame"
+          "item": "kubejs:incomplete_engine_ostrum"
         }
       ]
     }

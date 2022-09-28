@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:infernal_mechanism",
+      "count": 32
+    },
+    {
+      "item": "kubejs:overcharged_alloy",
+      "count": 8
+    },
+    {
+      "item": "immersiveengineering:gunpart_barrel",
+      "count": 6
+    },
+    {
+      "item": "kubejs:damascus_steel_ingot",
+      "count": 48
+    }
+  ],
+  "result": {
+    "item": "cgm:grenade_launcher"
+  }
+}

@@ -771,7 +771,7 @@
 			}
 			x: -3.0d
 			y: 9.0d
-			description: ["知道现在什么最赚钱吗？挖矿！不是那个挖矿，是通过显卡算力挖矿。"]
+			description: ["知道现在什么最赚钱吗（刷龙蛋不算）？挖矿！不是那个挖矿，是通过显卡算力挖矿。"]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
 			id: "58C81CF3D7357744"

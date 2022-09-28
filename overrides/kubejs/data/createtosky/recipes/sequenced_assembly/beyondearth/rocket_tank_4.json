@@ -4,14 +4,14 @@
     "item": "mekanism:basic_chemical_tank"
   },
   "transitionalItem": {
-    "item": "mekanism:basic_chemical_tank"
+    "item": "kubejs:incomplete_calorite_tank"
   },
   "sequence": [
     {
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_calorite_tank"
         },
         {
           "fluid": "beyond_earth:molten_calorite",
@@ -20,7 +20,7 @@
       ],
       "results": [
         {
-          "item": "mekanism:basic_chemical_tank"
+          "item": "kubejs:incomplete_calorite_tank"
         }
       ]
     }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "kubejs:banana_dough"
+  },
+  "result": "neapolitan:banana_bread",
+  "experience": 0.0,
+  "cookingtime": 100
+}

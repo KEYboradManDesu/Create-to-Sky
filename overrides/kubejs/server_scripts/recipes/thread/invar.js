@@ -47,8 +47,6 @@ onEvent("recipes", event => {
 		else
 			event.stonecutting(Item.of(id, amount), "mekanism:steel_casing")
 	}
-	steel_casing('beyond_earth:compressor', 1, "create:mechanical_press")
-  steel_casing('beyond_earth:fuel_refinery', 1, "#forge:buckets/empty")
   steel_casing('beyond_earth:oxygen_loader', 1, "beyond_earth:oxygen_tank")
 
   let invar_machine = (id, amount, other_ingredient) => {

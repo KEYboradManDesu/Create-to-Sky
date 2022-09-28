@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "immersiveengineering:revolver",
+      "count": 1
+    },
+    {
+      "item": "kubejs:sealed_mechanism",
+      "count": 8
+    },
+    {
+      "item": "immersiveengineering:gunpart_barrel",
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "cgm:shotgun"
+  }
+}
