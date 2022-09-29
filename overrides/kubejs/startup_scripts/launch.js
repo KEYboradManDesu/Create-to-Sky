@@ -584,11 +584,12 @@ onEvent("item.registry", event => {
 		    .texture(modpackId + ":item/protein_bar")
 		    .displayName('Feed The Beast™蛋白棒').rarity(RARITY_UNCOMMON)
 		    .food((food) => {food.hunger(8)
-		    .saturation(0.5)})
+		    .saturation(0.5)
+			.effect('minecraft:saturation', 200, 1, 1.0)})
 
 		event.create('white_chocolate_gear')
 		    .texture(modpackId + ":item/white_chocolate_gear")
-		    .displayName('棉花糖齿轮')
+		    .displayName('棉花糖夹心齿轮')
 		    .food((food) => {food.hunger(4)
 		    .saturation(0.5)
 			.effect('create_confectionery:rest', 100, 1, 1.0)})
@@ -596,7 +597,7 @@ onEvent("item.registry", event => {
 		event.create('caramel_sheet')
 		    .texture(modpackId + ":item/caramel_sheet")
 		    .displayName('焦糖板')
-		    .food((food) => {food.hunger(5)
+		    .food((food) => {food.hunger(6)
 		    .saturation(0.5)
 			.effect('minecraft:speed', 100, 1, 1.0)})
 
@@ -615,7 +616,7 @@ onEvent("item.registry", event => {
 			.effect('minecraft:speed', 100, 1, 1.0)
 			.effect('minecraft:haste', 200, 1, 1.0)
 			.effect('minecraft:regeneration', 200, 1, 1.0)
-			.effect('minecraft:saturation', 1000, 1, 1.0)
+			.effect('minecraft:saturation', 2000, 1, 1.0)
 		})
 
 		event.create('matrix_sheet')

@@ -50,6 +50,7 @@
 				"69311E02A8B3451D"
 				"3AD7553F3C8593F9"
 				"73473DC7269EC5B0"
+				"7A145B80B6ED42F0"
 			]
 			size: 2.0d
 			id: "47965C310D9847DC"
@@ -422,7 +423,10 @@
 			y: 3.0d
 			shape: "circle"
 			description: ["在加热的动力辊压机中制作物质条。你需要几个。"]
-			dependencies: ["3CBED6B591BCEDEA"]
+			dependencies: [
+				"3CBED6B591BCEDEA"
+				"62805DCDBB6975BC"
+			]
 			id: "6A156D11D983661D"
 			tasks: [{
 				id: "25532A2369192051"
@@ -443,8 +447,7 @@
 			x: 0.0d
 			y: 4.0d
 			shape: "circle"
-			subtitle: "步骤 48"
-			description: ["如果您打算在外星着陆后生存下来，则需要一套特殊的盔甲。"]
+			description: ["如果您打算在外星着陆后生存下来，一套特殊的盔甲是必要的。"]
 			dependencies: ["6A156D11D983661D"]
 			id: "6BA9A176EDA001A3"
 			tasks: [
@@ -573,10 +576,7 @@
 				"尽力而为，毕竟这是你一直在努力的最后一个装置。"
 				"&7虽然可能让调色板保持简单——在模组所处的状态下，看看你是否可以在这里避免使用任何时髦的特殊渲染块。现在崩溃到这将是毁灭性的。"
 			]
-			dependencies: [
-				"6A156D11D983661D"
-				"3D42512D04C9C916"
-			]
+			dependencies: ["6A156D11D983661D"]
 			id: "73473DC7269EC5B0"
 			tasks: [
 				{
@@ -718,27 +718,102 @@
 			}]
 		}
 		{
-			icon: "beyond_earth:fuel_bucket"
-			x: 5.0d
-			y: 4.0d
+			title: "高热量甜点"
+			x: 3.0d
+			y: 2.5d
 			shape: "circle"
-			subtitle: "步骤 &b50-1"
-			description: ["你的飞船不是烧煤的，你需要工业燃油来为你的飞船提供能量。"]
-			dependencies: ["6A156D11D983661D"]
-			id: "3D42512D04C9C916"
-			tasks: [
-				{
-					id: "7527411C121F3091"
-					type: "item"
-					item: "beyond_earth:fuel_bucket"
-					consume_items: false
-				}
-				{
-					id: "04E12CFDB2725AE9"
-					type: "checkmark"
-					title: "好的"
-				}
+			description: ["制作&6物质条&r需要极高的温度,甚至于目前最先进的&6殷钢机械&r和&6通用机械&r都达不到其所需。但是,你的烈焰人朋友可能很乐意帮你这个忙... ..."]
+			hide_dependency_lines: true
+			dependencies: ["3CBED6B591BCEDEA"]
+			id: "62805DCDBB6975BC"
+			tasks: [{
+				id: "53E6FD3667380491"
+				type: "item"
+				item: "create:blaze_cake"
+				consume_items: false
+			}]
+		}
+		{
+			title: "黑色黄金"
+			x: -2.5d
+			y: 6.0d
+			description: ["为了给火箭提供动力,我们需要一些强力的燃料。"]
+			hide_dependency_lines: true
+			dependencies: ["69311E02A8B3451D"]
+			id: "3BC496B4B4AA0FE6"
+			tasks: [{
+				id: "75962A4524881DC5"
+				type: "item"
+				item: "thermal:crude_oil_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "烃分馏机 I"
+			x: -1.5d
+			y: 7.0d
+			shape: "circle"
+			subtitle: "步骤 46-1"
+			description: ["原油可以在流体精炼机中被精炼为重油。"]
+			dependencies: ["3BC496B4B4AA0FE6"]
+			id: "7BCA6A894E3181E1"
+			tasks: [{
+				id: "0EAF9678426F632E"
+				type: "item"
+				item: "thermal:heavy_oil_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "烃分馏机 II"
+			x: -2.5d
+			y: 8.0d
+			shape: "circle"
+			subtitle: "步骤 46-2"
+			description: ["把原油精炼为重油时,轻油将会作为副产物出现。"]
+			dependencies: ["3BC496B4B4AA0FE6"]
+			id: "386B8C94E022C2EB"
+			tasks: [{
+				id: "766E301E8D9F1F93"
+				type: "item"
+				item: "thermal:light_oil_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "烃分馏机 III"
+			x: -0.5d
+			y: 8.0d
+			shape: "circle"
+			subtitle: "步骤 46-3"
+			description: ["重油和轻油都可以被精炼为精炼油。"]
+			dependencies: [
+				"386B8C94E022C2EB"
+				"7BCA6A894E3181E1"
 			]
+			id: "17541E4DEFA556A5"
+			tasks: [{
+				id: "1B6F730B1A63E092"
+				type: "item"
+				item: "thermal:refined_fuel_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "烃分馏机 IV"
+			x: 0.5d
+			y: 7.0d
+			shape: "circle"
+			subtitle: "步骤 46-4"
+			description: ["精炼油可以被精炼为航空燃油。"]
+			dependencies: ["17541E4DEFA556A5"]
+			id: "7A145B80B6ED42F0"
+			tasks: [{
+				id: "11D237A50A2EAAE0"
+				type: "item"
+				item: "beyond_earth:fuel_bucket"
+				consume_items: false
+			}]
 		}
 	]
 }

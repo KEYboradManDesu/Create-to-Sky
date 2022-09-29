@@ -32,6 +32,12 @@
 				consume_items: false
 				only_from_crafting: true
 			}]
+			rewards: [{
+				id: "67589286E1227D64"
+				type: "item"
+				item: "thermal:gold_coin"
+				count: 8
+			}]
 		}
 		{
 			title: "&f&l到达世界最高层！"
@@ -59,6 +65,11 @@
 					1569325055
 				]
 			}]
+			rewards: [{
+				id: "3D2056F0C231DFE5"
+				type: "item"
+				item: "thermal:gold_coin"
+			}]
 		}
 		{
 			title: "&7&l基建狂魔"
@@ -67,8 +78,8 @@
 				Count: 1b
 				tag: {
 					Enchantments: [{
-						id: "minecraft:unbreaking"
 						lvl: 1s
+						id: "minecraft:unbreaking"
 					}]
 				}
 			}
@@ -173,6 +184,12 @@
 					dimension: "beyond_earth:venus"
 				}
 			]
+			rewards: [{
+				id: "29D3A0726ACA9CAE"
+				type: "item"
+				item: "thermal:gold_coin"
+				count: 8
+			}]
 		}
 		{
 			title: "&8&l储存空间"
@@ -299,7 +316,7 @@
 			id: "407425094BB67456"
 		}
 		{
-			title: "&3&l下界空岛"
+			title: "&3&l到达世界最底层！"
 			icon: "minecraft:warped_nylium"
 			x: 4.0d
 			y: -7.0d
@@ -327,6 +344,12 @@
 					team_reward: true
 					item: "minecraft:twisting_vines"
 					count: 4
+				}
+				{
+					id: "3765DD9C344B3B3F"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 32
 				}
 			]
 		}
@@ -416,12 +439,12 @@
 			]
 		}
 		{
-			title: "查理的巧克力工厂I"
+			title: "&6&l查理的巧克力工厂I"
 			icon: "create:bar_of_chocolate"
 			x: -1.0d
 			y: -6.0d
 			shape: "rsquare"
-			description: ["制作出巧克力自动化生产线。"]
+			description: ["搭建巧克力自动化生产线。"]
 			id: "4A38517AC2118B36"
 			tasks: [
 				{
@@ -436,9 +459,14 @@
 					title: "已自动化"
 				}
 			]
+			rewards: [{
+				id: "0AEF72C7219A372C"
+				type: "item"
+				item: "thermal:gold_coin"
+			}]
 		}
 		{
-			title: "查理的巧克力工厂II"
+			title: "&6&l查理的巧克力工厂II"
 			icon: "kubejs:sweet_mechanism"
 			x: -2.0d
 			y: -6.0d

@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecraft:daylight_detector"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sculk_sensor"
+    }
+  ]
+}

@@ -11,7 +11,7 @@
     },
     {
       "fluid": "kubejs:powered_water",
-      "amount": 1000
+      "amount": 250
     }
   ],
   "results": [

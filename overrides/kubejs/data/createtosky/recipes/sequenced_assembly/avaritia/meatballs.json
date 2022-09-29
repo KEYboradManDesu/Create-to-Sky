@@ -1,25 +1,25 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "forge:meat_cooked"
+    "item": "kubejs:protein_bar"
   },
   "transitionalItem": {
-    "item": "minecraft:cooked_beef"
+    "item": "kubejs:protein_bar"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         },
         {
-          "item": "kubejs:maga_screwdriver"
+          "item": "avaritia:neutron_nugget"
         }
       ],
       "results": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ]
     },
@@ -27,17 +27,17 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         },
         {
           "fluid": "industrialforegoing:meat",
           
-          "amount": 1000
+          "amount": 250
         }
       ],
       "results": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ]
     },
@@ -45,12 +45,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ],
       "results": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ]
     },
@@ -58,12 +58,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ],
       "results": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ]
     },
@@ -71,12 +71,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ],
       "results": [
         {
-          "item": "minecraft:cooked_beef"
+          "item": "kubejs:protein_bar"
         }
       ]
     }
@@ -87,5 +87,5 @@
       "chance": 1
     }
   ],
-  "loops": 2
+  "loops": 1
 }

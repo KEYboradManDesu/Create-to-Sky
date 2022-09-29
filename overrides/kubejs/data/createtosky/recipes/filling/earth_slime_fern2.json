@@ -2,16 +2,16 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "minecraft:glass_bottle"
+      "item": "minecraft:fern"
     },
     {
-      "fluid": "cofh_core:experience",
+      "fluid": "create_things_and_misc:slime",
       "amount": 250
     }
   ],
   "results": [
     {
-      "item": "minecraft:experience_bottle"
+      "item": "tconstruct:earth_slime_fern"
     }
   ]
 }

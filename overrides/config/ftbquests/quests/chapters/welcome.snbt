@@ -66,6 +66,12 @@
 				id: "0680791525813778"
 				type: "checkmark"
 			}]
+			rewards: [{
+				id: "3CA638263588DC20"
+				type: "item"
+				item: "create:tree_fertilizer"
+				count: 4
+			}]
 		}
 		{
 			title: "&f&l壹"

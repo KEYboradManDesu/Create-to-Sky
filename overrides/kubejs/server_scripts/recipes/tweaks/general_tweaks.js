@@ -97,12 +97,21 @@ onEvent("recipes", event => {
   event.remove({ output: 'cookingforblockheads:cow_jar' })
   event.remove({ output: 'cookingforblockheads:milk_jar' })
 
+  event.remove({ output: 'create_things_and_misc:sticky_boots_boots' })
+  event.remove({ output: 'create_things_and_misc:mending_rune' })
+  event.remove({ output: 'create_things_and_misc:experience_sheet' })
+
   event.remove({ output: 'crockpot:cooked_egg' })
   event.remove({ output: 'neapolitan:chocolate_strawberries' })
   event.remove({ output: 'neapolitan:vanilla_chocolate_fingers' })
   event.remove({ output: 'neapolitan:mint_chocolate' })
   event.remove({ id: 'neapolitan:chocolate/chocolate_cake' })
   event.remove({ id: 'neapolitan:chocolate/chocolate_ice_cream' })
+
+  event.remove({ id: 'avaritia:infinity_catalyst' })
+  event.remove({ id: 'avaritia:ultimate_stew' })
+  event.remove({ id: 'avaritia:cosmic_meatballs' })
+  event.remove({ id: 'avaritia:endest_pearl' })
 
   event.remove({ output: 'beyond_earth:compressor' })
   event.remove({ output: 'beyond_earth:fuel_refinery' })
@@ -543,7 +552,7 @@ onEvent("recipes", event => {
   event.recipes.createMixing(Fluid.of("caupona:nail_soup", 500), [Fluid.of(MC('water'), 500)]).heated()
 
   // other
-  
+  event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
   
   event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [
@@ -2253,6 +2262,15 @@ function prettierpipes(event) {
 		"ingredient": { "item": "kubejs:substrate_silicon" },
 		"result": [{ "item": AE2("silicon"), "count": 1 }],
 		"energy": 2000
+	})
+
+  event.custom({
+		"type": "thermal:bottler",
+		"ingredients": [
+			{ "item": "ae2:certus_quartz_dust" },
+			{ "fluid": "tconstruct:molten_glass", "amount": 100 }
+		],
+		"result": [{ "item": "kubejs:substrate_certus" }]
 	})
 
   let chop = (type, output) => {

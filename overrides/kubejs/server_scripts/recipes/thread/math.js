@@ -9,7 +9,7 @@ onEvent("recipes", event => {
 			},
 			"fluid": {
 				"name": "kubejs:raw_logic",
-				"amount": 81
+				"amount": 200
 			},
 			"result": Item.of(KJ(e)).toResultJson(),
 			"cooling_time": 10
@@ -75,8 +75,8 @@ onEvent("recipes", event => {
 		})
 	}
 
-	let alloyAmount = 810
-	let outAmount = 4050
+	let alloyAmount = 200
+	let outAmount = 1000
 	event.custom({
 		"type": "tconstruct:alloy",
 		"inputs": [
@@ -98,17 +98,17 @@ onEvent("recipes", event => {
 		"temperature": 200
 	})
 
-	meltOrCrucible(KJ("calculation_mechanism"), KJ("raw_logic"), 2430)
-	meltOrCrucible(KJ("zero"), KJ("number_0"), 81)
-	meltOrCrucible(KJ("one"), KJ("number_1"), 81)
-	meltOrCrucible(KJ("two"), KJ("number_2"), 81)
-	meltOrCrucible(KJ("three"), KJ("number_3"), 81)
-	meltOrCrucible(KJ("four"), KJ("number_4"), 81)
-	meltOrCrucible(KJ("five"), KJ("number_5"), 81)
-	meltOrCrucible(KJ("six"), KJ("number_6"), 81)
-	meltOrCrucible(KJ("seven"), KJ("number_7"), 81)
-	meltOrCrucible(KJ("eight"), KJ("number_8"), 81)
-	meltOrCrucible(KJ("nine"), KJ("number_9"), 81)
+	meltOrCrucible(KJ("calculation_mechanism"), KJ("raw_logic"), 1000)
+	meltOrCrucible(KJ("zero"), KJ("number_0"), 200)
+	meltOrCrucible(KJ("one"), KJ("number_1"), 200)
+	meltOrCrucible(KJ("two"), KJ("number_2"), 200)
+	meltOrCrucible(KJ("three"), KJ("number_3"), 200)
+	meltOrCrucible(KJ("four"), KJ("number_4"), 200)
+	meltOrCrucible(KJ("five"), KJ("number_5"), 200)
+	meltOrCrucible(KJ("six"), KJ("number_6"), 200)
+	meltOrCrucible(KJ("seven"), KJ("number_7"), 200)
+	meltOrCrucible(KJ("eight"), KJ("number_8"), 200)
+	meltOrCrucible(KJ("nine"), KJ("number_9"), 200)
 
 	event.custom({
 		"type": "tconstruct:casting_basin",

@@ -3,10 +3,7 @@
   "mana": 500,
   "ingredients": [
     {
-      "item": "thermal:jar"
-    },
-    {
-      "item": "ae2:certus_quartz_dust"
+      "item": "kubejs:substrate_certus"
     },
     {
       "item": "kubejs:corporea_mechanism"

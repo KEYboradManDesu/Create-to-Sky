@@ -14,7 +14,7 @@
           "item": "minecraft:cooked_beef"
         },
         {
-          "item": "kubejs:maga_screwdriver"
+          "item": "avaritia:neutron_nugget"
         }
       ],
       "results": [
@@ -32,7 +32,7 @@
         {
           "fluid": "create:tea",
           
-          "amount": 1000
+          "amount": 750
         }
       ],
       "results": [
@@ -64,55 +64,7 @@
           "item": "farmersdelight:cooking_pot"
         },
         {
-          "item": "createaddition:chocolate_cake"
-        }
-      ],
-      "results": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        },
-        {
-          "item": "create_confectionery:white_chocolate_glazed_berries"
-        }
-      ],
-      "results": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        },
-        {
-          "item": "create_confectionery:caramel_glazed_berries"
-        }
-      ],
-      "results": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "farmersdelight:cooking_pot"
-        },
-        {
-          "item": "create_confectionery:ruby_chocolate_glazed_berries"
+          "item": "kubejs:sweet_mechanism"
         }
       ],
       "results": [

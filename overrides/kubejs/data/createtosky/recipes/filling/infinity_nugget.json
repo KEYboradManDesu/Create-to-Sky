@@ -2,7 +2,7 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "reliquary:infernal_tear"
+      "item": "minecraft:ghast_tear"
     },
     {
       "fluid": "kubejs:infinity",

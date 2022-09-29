@@ -549,7 +549,10 @@
 			y: 6.0d
 			subtitle: "步骤 40-1"
 			description: ["使用&6机械手&r将&6硅&r压模成&6硅板。&r你需要的&6硅压印模板&r可以在自然生成的陨石内部找到。"]
-			dependencies: ["067C5FDA4709F195"]
+			dependencies: [
+				"067C5FDA4709F195"
+				"346B390548F6E09E"
+			]
 			dependency_requirement: "one_completed"
 			id: "71D90A1E5D53FC0A"
 			tasks: [
@@ -719,6 +722,53 @@
 					type: "item"
 					item: "ae2:engineering_processor"
 					consume_items: false
+				}
+			]
+		}
+		{
+			title: "发现秘密"
+			icon: "kubejs:substrate_silicon"
+			x: -2.0d
+			y: 5.5d
+			description: ["神秘的路径已被追寻。从此开始，获取计算构件将非常简单。"]
+			hide_dependency_lines: true
+			dependencies: ["067C5FDA4709F195"]
+			id: "49584CAEDD5F1736"
+			tasks: [
+				{
+					id: "124EC231DA68C350"
+					type: "item"
+					item: "kubejs:substrate_silicon"
+					consume_items: false
+				}
+				{
+					id: "1ADCE42A69AE62FD"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "解包"
+			icon: "ae2:silicon"
+			x: -0.5d
+			y: 6.0d
+			shape: "circle"
+			subtitle: "步骤 39-A"
+			description: ["使用&6锯木机&r将硅从它的密封罐中分离。"]
+			dependencies: ["49584CAEDD5F1736"]
+			id: "346B390548F6E09E"
+			tasks: [
+				{
+					id: "5EFEC826C87FEE9B"
+					type: "item"
+					item: "ae2:silicon"
+					consume_items: false
+				}
+				{
+					id: "32362E4097B1E64F"
+					type: "checkmark"
+					title: "已自动化"
 				}
 			]
 		}

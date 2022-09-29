@@ -123,6 +123,8 @@ onEvent('item.tags', event => {
 
   event.get('forge:gunpowder').add('kubejs:black_gunpowder')
 
+  event.get('forge:tools/wrench').add('kubejs:screwdriver')
+
   event.get('forge:super_glue').add('create:super_glue')
   event.get('forge:super_glue').add('#forge:slimeballs')
 

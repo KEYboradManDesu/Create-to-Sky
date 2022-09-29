@@ -385,13 +385,13 @@
 		}
 		{
 			icon: "botania:ender_air_bottle"
-			x: 15.0d
+			x: 12.0d
 			y: -6.0d
 			shape: "circle"
 			subtitle: "步骤 &bM-15-3a"
 			description: ["在&6末地&r使用瓶子或加热&6末影珍珠碎片&r获得。"]
 			hide_dependency_lines: true
-			dependencies: ["3712DD92B446BB60"]
+			dependencies: ["1CE2E7944353081F"]
 			id: "5699FE5E797AB504"
 			tasks: [
 				{
@@ -758,8 +758,8 @@
 		}
 		{
 			icon: "botania:spark"
-			x: 16.0d
-			y: -5.0d
+			x: 13.0d
+			y: -6.0d
 			shape: "circle"
 			subtitle: "步骤 &bM-15-3b"
 			hide_dependency_lines: true
@@ -781,13 +781,12 @@
 		}
 		{
 			icon: "botania:corporea_spark"
-			x: 15.0d
-			y: -5.0d
-			shape: "square"
+			x: 14.0d
+			y: -6.0d
+			shape: "circle"
 			subtitle: "步骤 &bM-15-4"
 			dependencies: [
 				"00AF1FA6342BC4A7"
-				"1CE2E7944353081F"
 				"5699FE5E797AB504"
 			]
 			id: "7E74E544E3A6ED24"
@@ -807,7 +806,7 @@
 		}
 		{
 			icon: "botania:corporea_spark_master"
-			x: 14.0d
+			x: 16.0d
 			y: -5.0d
 			subtitle: "步骤 &bM-15-2"
 			dependencies: [
@@ -833,14 +832,13 @@
 		{
 			title: "Fake News"
 			icon: "kubejs:corporea_mechanism"
-			x: 16.0d
+			x: 18.0d
 			y: -3.0d
 			subtitle: "步骤 &bM-16"
 			dependencies: [
-				"7E74E544E3A6ED24"
-				"27DA90ACD7BD0D55"
 				"6E6CC56DDEE06C1A"
 				"002962C7195BFE96"
+				"27DA90ACD7BD0D55"
 			]
 			id: "02487D6C79185B80"
 			tasks: [
@@ -947,10 +945,11 @@
 		}
 		{
 			icon: "kubejs:blaze_brass"
-			x: 14.0d
-			y: -4.0d
+			x: 17.0d
+			y: -5.0d
 			subtitle: "步骤 &bM-15-5"
 			description: ["取地狱之精华。"]
+			hide_dependency_lines: true
 			dependencies: ["1CE2E7944353081F"]
 			id: "002962C7195BFE96"
 			tasks: [
@@ -966,6 +965,43 @@
 					title: "已自动化"
 				}
 			]
+		}
+		{
+			title: "未曾设想的道路"
+			x: 20.0d
+			y: -3.0d
+			shape: "hexagon"
+			description: ["用非常传统的魔法烧制&6赛特斯石英&r反应物得到&6硅反应物&r。"]
+			dependencies: [
+				"02487D6C79185B80"
+				"1542F79BD35B282E"
+				"067C5FDA4709F195"
+			]
+			hide: true
+			size: 1.5d
+			id: "4D8D63B176C860EC"
+			tasks: [{
+				id: "6F782D15F54824EA"
+				type: "item"
+				item: "kubejs:substrate_silicon"
+				consume_items: false
+			}]
+		}
+		{
+			title: "罐装食品"
+			x: 19.0d
+			y: -4.0d
+			shape: "circle"
+			description: ["将&6赛特斯石英粉末&r用玻璃密封好。"]
+			dependencies: ["067C5FDA4709F195"]
+			hide: true
+			id: "1542F79BD35B282E"
+			tasks: [{
+				id: "6A115268CD83F528"
+				type: "item"
+				item: "kubejs:substrate_certus"
+				consume_items: false
+			}]
 		}
 	]
 }

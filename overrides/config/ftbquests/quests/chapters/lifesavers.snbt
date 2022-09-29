@@ -338,12 +338,20 @@
 					consume_items: false
 				}
 			]
-			rewards: [{
-				id: "3E31A943AAC038E9"
-				type: "item"
-				item: "minecraft:iron_block"
-				count: 9
-			}]
+			rewards: [
+				{
+					id: "3E31A943AAC038E9"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 9
+				}
+				{
+					id: "1B80A7B19330A157"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 12
+				}
+			]
 		}
 		{
 			title: "上传到云端"
@@ -393,12 +401,19 @@
 				}
 				consume_items: false
 			}]
-			rewards: [{
-				id: "3BE6AFA2CDB4D00C"
-				type: "item"
-				item: "minecraft:coal"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "3BE6AFA2CDB4D00C"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+				{
+					id: "6FBA2AFB167FD707"
+					type: "item"
+					item: "thermal:gold_coin"
+				}
+			]
 		}
 		{
 			title: "地狱刷石机"
@@ -415,11 +430,19 @@
 				observe_type: 0
 				to_observe: "nethersdelight:rich_soul_soil"
 			}]
-			rewards: [{
-				id: "0C5DA6A71EAF0107"
-				type: "item"
-				item: "skinnedlanterns:skeleton_soul_lantern_block"
-			}]
+			rewards: [
+				{
+					id: "0C5DA6A71EAF0107"
+					type: "item"
+					item: "skinnedlanterns:skeleton_soul_lantern_block"
+				}
+				{
+					id: "6B28DFB0AC013219"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "战前演练"
@@ -567,11 +590,19 @@
 					title: "好的"
 				}
 			]
-			rewards: [{
-				id: "20E0D4C7A9E0353B"
-				type: "item"
-				item: "twilightdelight:phytochemical_juice"
-			}]
+			rewards: [
+				{
+					id: "20E0D4C7A9E0353B"
+					type: "item"
+					item: "twilightdelight:phytochemical_juice"
+				}
+				{
+					id: "1C1DF2A81FF449A0"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 32
+				}
+			]
 		}
 		{
 			title: "百科全书"

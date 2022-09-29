@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "supplementaries:sconce"
+    }
+  ],
+  "results": [
+    {
+      "item": "supplementaries:sconce_soul"
+    }
+  ]
+}

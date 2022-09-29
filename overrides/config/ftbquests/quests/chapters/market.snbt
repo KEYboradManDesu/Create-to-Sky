@@ -619,20 +619,13 @@
 			y: 0.0d
 			subtitle: "60银币"
 			id: "6D9F2FBEB7CC5195"
-			tasks: [
-				{
-					id: "165B9A886A26BCC8"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 60b }
-					item: "thermal:silver_coin"
-					count: 60L
-				}
-				{
-					id: "6FC5F74DE0034F9D"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "165B9A886A26BCC8"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 60b }
+				item: "thermal:silver_coin"
+				count: 60L
+			}]
 			rewards: [{
 				id: "6BCBFB22A82A5698"
 				type: "item"

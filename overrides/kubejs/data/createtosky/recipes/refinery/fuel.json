@@ -1,21 +1,17 @@
 {
   "type": "thermal:refinery",
   "ingredient": {
-    "fluid": "thermal:crude_oil",
-    "amount": 100
+    "fluid": "thermal:refined_fuel",
+    "amount": 200
   },
   "result": [
     {
       "fluid": "beyond_earth:fuel",
-      "amount": 75
+      "amount": 175
     },
     {
-      "fluid": "thermal:light_oil",
-      "amount": 60
-    },
-    {
-      "item": "thermal:bitumen",
-      "chance": 0.75
+      "item": "thermal:tar",
+      "chance": 0.55
     }
   ],
   "energy": 6000

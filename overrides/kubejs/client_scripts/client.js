@@ -41,6 +41,7 @@ onEvent('item.tooltip', tooltip => {
 	collection('aquaculture:neptunes_bounty')
 	collection('alexsmobs:void_worm_effigy')
 	collection('kubejs:sweet_mechanism')
+	collection('grimoireofgaia:doll_maid')
 
 	ore("forbidden_arcanus:arcane_crystal_ore", -40, 14)
 	ore("forbidden_arcanus:xpetrified_ore", -6, 35)
@@ -128,6 +129,8 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("cookingforblockheads:sink", [`§7世上最小的无限水`]);
 	tooltip.add("kubejs:chorus_chrome", [`§7适合用来磨牙`]);
 	tooltip.add("kubejs:sweet_mechanism", [`§7全宇宙最甜蜜的构件`]);
+	tooltip.add("avaritia:cosmic_meatballs", [`§7全是科技与狠活`]);
+	tooltip.add("avaritia:endest_pearl", [`§6易燃易爆，十分危险！`]);
 
 	tooltip.add("kubejs:matrix_sheet", [`§7暂时没用用处`]);
 
@@ -144,14 +147,14 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 
-	tooltip.add("kubejs:accellerator_redstone", ["§7在混沌炼金的探索中：", "  §6返回一个 §e对应的 §6反应物",
+	tooltip.add("kubejs:accellerator_redstone", ["§7在混沌炼金的探索中(§6暂未完成§r):", "  §6返回一个 §e对应的 §6反应物",
 		"  §6若该反应物在 §e不正确 §6的格子里，那么它不会被消耗"]);
-	tooltip.add("kubejs:accellerator_glowstone", ["§7在混沌炼金的探索中：", "  §6返回一个 §e对应的 §6反应物",
+	tooltip.add("kubejs:accellerator_glowstone", ["§7在混沌炼金的探索中(§6暂未完成§r):", "  §6返回一个 §e对应的 §6反应物",
 		"  §6若该反应物在 §e正确 §6的格子里，那么它不会被消耗"]);
 
 	for (i = 0; i < 15; i++)
 		tooltip.add(`kubejs:failed_alchemy_${i}`, [
-			`§7放入离心分离机来辨别`,
+			`§7放入离心分离机来辨别(§6暂未完成§r):`,
 			"",
 			"§6返回物品：",
 			"- 灰烬 §7表示每一个不正确的材料",
@@ -180,6 +183,6 @@ onEvent('jei.information', event => {
 	event.add('kubejs:substrate_gem', catalyst("宝石"))
 
 	event.add('kubejs:substrate_chaos', catalyst("催化剂", "混沌催化剂").concat([
-		" ", "§8用法：§0", "使用§5炼金镭射§0混合§9混沌催化剂§0和任意数量的同种§9反应物§0时，会将该反应物§9嬗变§0成其它的反应物。每个世界都有§9不同的§0嬗变配方。"
+		" ", "§8用法：§0", "使用§5炼金镭射§0混合§9混沌催化剂§0和任意数量的同种§9反应物§0时，会将该反应物§9嬗变§0成其它的反应物。每个世界都有§9不同的§0嬗变配方。(§6暂未完成§r)"
 	]))
 })

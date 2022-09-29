@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "decorative_blocks:chandelier"
+    }
+  ],
+  "results": [
+    {
+      "item": "decorative_blocks:soul_chandelier"
+    }
+  ]
+}
