@@ -11,7 +11,6 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Create to Sky",
-  "version": "0.95",
   "author": "kli_kli",
   "files": [
     {
@@ -345,16 +344,6 @@
       "required": true
     },
     {
-      "projectID": 456171,
-      "fileID": 3953988,
-      "required": true
-    },
-    {
-      "projectID": 624839,
-      "fileID": 3837254,
-      "required": false
-    },
-    {
       "projectID": 242830,
       "fileID": 3962438,
       "required": true
@@ -437,7 +426,7 @@
     {
       "projectID": 361276,
       "fileID": 3991008,
-      "required": false
+      "required": true
     },
     {
       "projectID": 268566,
