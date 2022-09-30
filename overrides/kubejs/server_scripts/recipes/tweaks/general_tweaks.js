@@ -200,6 +200,8 @@ onEvent("recipes", event => {
 
   event.remove({ id: "exnihilosequentia:ens_copper_nugget" })
 
+  event.remove({ id: "create:compat/ae2/milling/sky_stone_block" })
+
   event.remove({ id: "mekanism:robit" })
 
   event.remove({ id: "immersiveengineering:crafting/component_iron" })
@@ -575,6 +577,8 @@ onEvent("recipes", event => {
 
   // other
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
+
+  event.shapeless('2x create:tree_fertilizer', ['#minecraft:flowers', '#minecraft:flowers', 'thermal:apatite_dust']).id("kubejs:tree_fertilizer")
   
   event.remove({ id: "thermal:frost_melon_seeds" })
   event.shapeless('4x thermal:frost_melon_seeds', ['thermal:frost_melon_slice']).id("kubejs:frost_melon_seeds")
