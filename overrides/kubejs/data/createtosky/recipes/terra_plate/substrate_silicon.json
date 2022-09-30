@@ -1,6 +1,6 @@
 {
   "type": "botania:terra_plate",
-  "mana": 500,
+  "mana": 1200,
   "ingredients": [
     {
       "item": "thermal:jar"

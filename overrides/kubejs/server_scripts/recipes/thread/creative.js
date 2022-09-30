@@ -32,8 +32,8 @@ onEvent("recipes", event => {
 	creative_machine('create:creative_motor', 1, 'projecte:watch_of_flowing_time')
 	creative_machine('projecte:relay_mk1', 1, 'projecte:collector_mk1')
 	creative_machine('kubejs:graphics_card_c', 1, 'kubejs:graphics_card_t2')
+	creative_machine('upgradednetherite_creative:creative_upgraded_netherite_ingot', 1, 'upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot')
 
-	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_ingot", "upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot","kubejs:creative_machine")
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_sword", "upgradednetherite_ultimate:ultimate_upgraded_netherite_sword","upgradednetherite_creative:creative_upgraded_netherite_ingot")
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_pickaxe", "upgradednetherite_ultimate:ultimate_upgraded_netherite_pickaxe","upgradednetherite_creative:creative_upgraded_netherite_ingot")
 	event.smithing("upgradednetherite_creative:creative_upgraded_netherite_shovel", "upgradednetherite_ultimate:ultimate_upgraded_netherite_shovel","upgradednetherite_creative:creative_upgraded_netherite_ingot")

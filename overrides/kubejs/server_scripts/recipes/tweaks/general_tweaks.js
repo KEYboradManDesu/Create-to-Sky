@@ -119,6 +119,10 @@ onEvent("recipes", event => {
   event.remove({ id: "beyond_earth:compressing/compressed_desh" })
   event.remove({ id: "beyond_earth:compressing/compressed_calorite" })
 
+  event.remove({ id: "nyfsquiver:basic_quiver_item_craft" })
+
+  event.remove({ id: "vanillacookbook:cooked_egg_smoking" })
+
   event.remove({ output: 'industrialforegoing:iron_gear' })
   event.remove({ output: 'industrialforegoing:gold_gear' })
   event.remove({ output: 'industrialforegoing:diamond_gear' })
@@ -314,6 +318,24 @@ onEvent("recipes", event => {
     S: 'kubejs:elytra_broken',
     B: '#forge:plates/netherite',
     C: 'minecraft:phantom_membrane'
+  })
+
+  event.shaped("supplementaries:quiver", [
+    "  S",
+    " C ",
+    "C  "
+  ], {
+    S: '#forge:feathers',
+    C: '#forge:leather'
+  })
+
+  event.shaped("nyfsquiver:basic_quiver", [
+    "CCC",
+    "CSC",
+    "CCC"
+  ], {
+    S: 'supplementaries:quiver',
+    C: '#forge:leather'
   })
 
   event.remove({ id: CR("splashing/gravel") })
@@ -554,6 +576,11 @@ onEvent("recipes", event => {
   // other
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
   
+  event.remove({ id: "thermal:frost_melon_seeds" })
+  event.shapeless('4x thermal:frost_melon_seeds', ['thermal:frost_melon_slice']).id("kubejs:frost_melon_seeds")
+
+  event.recipes.createFilling("forbidden_arcanus:dark_nether_star", ['minecraft:nether_star', Fluid.of('materialis:molten_shadow_steel', 90)])
+
   event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [
     "LAL",
@@ -813,8 +840,13 @@ onEvent("recipes", event => {
 
     event.custom({
 			"type": "occultism:spirit_fire",
-			"ingredient": { "item": "kubejs:growing_small_nether_star" },
+			"ingredient": { "item": "kubejs:small_nether_star" },
 			"result": { "item": "minecraft:nether_star" }
+		})
+    event.custom({
+			"type": "occultism:spirit_fire",
+			"ingredient": { "item": "kubejs:nether_seed_star" },
+			"result": { "item": "kubejs:small_nether_star" }
 		})
     
     event.remove({ output: "minecraft:cobbled_deepslate" })
@@ -1075,6 +1107,12 @@ onEvent("recipes", event => {
   event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "kubejs:rickroll")
 
   event.recipes.createCrushing([Item.of("kubejs:elytra_broken", 2), Item.of("kubejs:elytra_broken", 2).withChance(.25)], "#forge:elytra")
+  
+  event.recipes.createCrushing([Item.of("kubejs:crushed_neutronium_drive_hyper_dense", 2), Item.of("kubejs:crushed_neutronium_drive_hyper_dense", 1).withChance(.55), Item.of("kubejs:stormyx_nugget", 1).withChance(.25)], "kubejs:neutronium_drive_hyper_dense")
+  event.recipes.createMilling(['2x ' + 'kubejs:crushed_neutronium_drive_hyper_dense'], 'kubejs:neutronium_drive_hyper_dense').processingTime(1000)
+
+  event.recipes.createCrushing([Item.of("kubejs:black_gunpowder", 4), Item.of("minecraft:gunpowder", 2).withChance(.55)], "nethersdelight:propelplant_stem")
+  event.recipes.createMilling(['2x ' + 'kubejs:black_gunpowder'], 'nethersdelight:propelplant_stem').processingTime(200)
 
   event.recipes.createCrushing([Item.of("forbidden_arcanus:ender_pearl_fragment", 4), Item.of("forbidden_arcanus:ender_pearl_fragment", 2).withChance(.75)], "minecraft:ender_pearl")
 
@@ -1407,8 +1445,8 @@ onEvent("recipes", event => {
     "A    F",
     " BMNE ",
     " ICDI ",
-    " FXJG ",
-    "E    H"
+    " KXJG ",
+    "Z    H"
   ], {
     A: Item.of('avaritia:singularity', '{Id:"avaritia:coal"}'),
     B: Item.of('avaritia:singularity', '{Id:"avaritia:copper"}'),
@@ -1418,6 +1456,8 @@ onEvent("recipes", event => {
     F: Item.of('avaritia:singularity', '{Id:"avaritia:iron"}'),
     G: Item.of('avaritia:singularity', '{Id:"avaritia:lapis_lazuli"}'),
     H: Item.of('avaritia:singularity', '{Id:"avaritia:redstone"}'),
+    K: Item.of('avaritia:singularity', '{Id:"avaritia:glowstone"}'),
+    Z: Item.of('avaritia:singularity', '{Id:"avaritia:platinum"}'),
     I: 'avaritia:crystal_matrix',
     M: 'avaritia:ultimate_stew',
     N: 'avaritia:cosmic_meatballs',
@@ -1517,6 +1557,107 @@ event.shaped(('buddycards:luminis_sleeve'), [
     D: "avaritia:neutronium",
   })
 
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:coal"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:coal_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:coal"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:iron"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:iron_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:iron"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:copper"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:copper_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:copper"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:gold"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:gold_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:gold"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:diamond"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:diamond_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:diamond"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:emerald"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:emerald_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:emerald"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:glowstone"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:glowstone',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:glowstone"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:lapis_lazuli"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:lapis_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:lapis_lazuli"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:redstone"}'), 3), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: 'minecraft:redstone_block',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:redstone"}')
+  })
+  event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:platinum"}'), 2), [
+    "AAAAA",
+    "AAAAA",
+    "AACAA",
+    "AAAAA",
+    "AAAAA"
+  ], {
+    A: '#forge:ingots/platinum',
+    C: Item.of('avaritia:singularity', '{Id:"avaritia:platinum"}')
+  })
+
 
     let dyes = [MC("orange_dye"), MC("magenta_dye"), MC("light_blue_dye"), MC("yellow_dye"), MC("lime_dye"), MC("pink_dye"), MC("cyan_dye"), MC("purple_dye"), MC("blue_dye"), MC("brown_dye"), MC("green_dye"), MC("red_dye")]
   event.recipes.createCompacting("1x " + KJ("dye_entangled_singularity"), [dyes, Item.of(AE2("quantum_entangled_singularity"), 1)])
@@ -1573,6 +1714,15 @@ event.shaped(('buddycards:luminis_sleeve'), [
   ]).transitionalItem(z)
     .loops(16)
     .id("alpha_ingot")  
+
+   let n = "kubejs:matter_plastics"
+  event.recipes.createSequencedAssembly([
+    "mekanism:hdpe_pellet",
+  ], "kubejs:matter_plastics", [
+    event.recipes.createPressing(n, n)
+  ]).transitionalItem(n)
+    .loops(8)
+    .id("mekanism:hdpe_pellet")
 
   wood_types.forEach(wood => {
     if (wood.startsWith("tconstruct")) {

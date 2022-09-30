@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecraft:fern"
+    }
+  ],
+  "results": [
+    {
+      "item": "nethersdelight:propelplant_stem"
+    }
+  ]
+}

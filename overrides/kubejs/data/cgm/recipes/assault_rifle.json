@@ -16,6 +16,10 @@
     {
       "item": "thermal:cured_rubber",
       "count": 8
+    },
+    {
+      "item": "nethersdelight:propelplant_cane",
+      "count": 8
     }
   ],
   "result": {

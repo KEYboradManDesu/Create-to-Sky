@@ -512,7 +512,10 @@
 			y: 21.0d
 			subtitle: "步骤 68"
 			description: ["将&6中子锭&r压制成板并制作成齿轮，你最好将其自动化。"]
-			dependencies: ["7839DED88F29B5CD"]
+			dependencies: [
+				"7839DED88F29B5CD"
+				"51F9745CFF8D5E96"
+			]
 			id: "4629C22BEAB2F8E9"
 			tasks: [
 				{
@@ -530,28 +533,25 @@
 		}
 		{
 			title: "俄罗斯套娃"
-			icon: "avaritia:infinity_ingot"
+			icon: "kubejs:infinity_bucket"
 			x: -1.0d
 			y: 22.0d
-			subtitle: "步骤 66"
-			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，最后再制成新的物质锭，有了之前的经验你应该可以熟练的完成自动化。"]
-			dependencies: ["7839DED88F29B5CD"]
+			subtitle: "步骤 66-3"
+			description: ["融化你的无尽锭。"]
+			dependencies: [
+				"7839DED88F29B5CD"
+				"62347665ECEB0738"
+			]
 			id: "6AEFF95FF106F145"
 			tasks: [
 				{
-					id: "62A82055466696D4"
+					id: "4B5AFFD4E7DEDBC1"
 					type: "item"
-					item: "avaritia:infinity_catalyst"
+					item: "kubejs:infinity_bucket"
 					consume_items: false
 				}
 				{
-					id: "08E0095CED9B22EA"
-					type: "item"
-					item: "avaritia:infinity_ingot"
-					consume_items: false
-				}
-				{
-					id: "0A32A751CD02018E"
+					id: "7D8A825610A79C89"
 					type: "checkmark"
 					title: "已自动化"
 				}
@@ -771,6 +771,7 @@
 			}
 			x: -3.0d
 			y: 9.0d
+			shape: "circle"
 			description: ["知道现在什么最赚钱吗（刷龙蛋不算）？挖矿！不是那个挖矿，是通过显卡算力挖矿。"]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
@@ -805,6 +806,7 @@
 			icon: "kubejs:blockchain"
 			x: -3.0d
 			y: 11.0d
+			shape: "circle"
 			description: ["&6实体区块链&r是一个共享的、不可篡改的账本，旨在促进业务网络中的村民交易记录和村民资产跟踪流程。 "]
 			hide_dependency_lines: true
 			dependencies: ["211F451405ACF59E"]
@@ -961,6 +963,53 @@
 					title: "已自动化"
 				}
 			]
+		}
+		{
+			x: -2.0d
+			y: 21.0d
+			shape: "circle"
+			subtitle: "步骤 66-2"
+			description: ["尝试用&6动力合成器&r自动化吧。"]
+			dependencies: ["0BAE9AA2B37D5522"]
+			id: "62347665ECEB0738"
+			tasks: [{
+				id: "17EEE4EC61D383A4"
+				type: "item"
+				item: "avaritia:infinity_ingot"
+				consume_items: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 20.0d
+			shape: "circle"
+			subtitle: "步骤 66-1"
+			description: ["这可能是最费材料的一步，你需要制作出&6中子态素压缩机&r，然后将一些日常材料压制成&6奇点&r，随后通过复杂的方式合成&6无尽催化剂&r，有了之前的经验你应该可以熟练的完成自动化。"]
+			hide_dependency_lines: true
+			dependencies: ["7839DED88F29B5CD"]
+			id: "0BAE9AA2B37D5522"
+			tasks: [{
+				id: "1F75DAA36A272E43"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+				consume_items: false
+			}]
+		}
+		{
+			title: "限定款下界之星"
+			x: 3.0d
+			y: 20.0d
+			shape: "circle"
+			description: ["你应该还记得很久之前制造的&6暗影钢&r吧？很好，因为我们现在要制作新产品了。"]
+			hide_dependency_lines: true
+			dependencies: ["7839DED88F29B5CD"]
+			id: "51F9745CFF8D5E96"
+			tasks: [{
+				id: "1C66FDDA9249B8E3"
+				type: "item"
+				item: "forbidden_arcanus:dark_nether_star"
+				consume_items: false
+			}]
 		}
 	]
 }

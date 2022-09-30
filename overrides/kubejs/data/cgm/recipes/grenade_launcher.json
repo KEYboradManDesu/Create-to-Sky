@@ -16,6 +16,10 @@
     {
       "item": "kubejs:damascus_steel_ingot",
       "count": 48
+    },
+    {
+      "item": "nethersdelight:propelplant_cane",
+      "count": 12
     }
   ],
   "result": {

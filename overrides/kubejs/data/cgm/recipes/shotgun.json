@@ -12,6 +12,10 @@
     {
       "item": "immersiveengineering:gunpart_barrel",
       "count": 2
+    },
+    {
+      "item": "nethersdelight:propelplant_cane",
+      "count": 4
     }
   ],
   "result": {

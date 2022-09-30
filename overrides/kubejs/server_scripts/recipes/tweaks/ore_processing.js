@@ -119,6 +119,31 @@ onEvent('item.tags', event => {
   event.get('forge:cheese/cheese').add('vanillacookbook:cheese')
   event.get('forge:cheese/cheese').add('shelve:cheese')
 
+  event.get('createtosky:blacklist').add('tconstruct:blood_vanilla_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:sky_vanilla_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:ender_vanilla_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:earth_vanilla_slime_grass')
+
+  event.get('createtosky:blacklist').add('tconstruct:earth_earth_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:sky_earth_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:ender_earth_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:blood_earth_slime_grass')
+
+  event.get('createtosky:blacklist').add('tconstruct:earth_sky_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:sky_sky_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:ender_sky_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:blood_sky_slime_grass')
+
+  event.get('createtosky:blacklist').add('tconstruct:earth_ender_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:sky_ender_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:ender_ender_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:blood_ender_slime_grass')
+
+  event.get('createtosky:blacklist').add('tconstruct:earth_ichor_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:sky_ichor_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:ender_ichor_slime_grass')
+  event.get('createtosky:blacklist').add('tconstruct:blood_ichor_slime_grass')
+
   event.get('ae2:crystals/fluix').add('#forge:gems/fluix')
 
   event.get('forge:gunpowder').add('kubejs:black_gunpowder')

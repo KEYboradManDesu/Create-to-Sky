@@ -6,10 +6,10 @@
   "output": {
     "item": "kubejs:corporea_mechanism"
   },
-  "mana": 2500,
+  "mana": 2000,
   "group": "botania:shrub_cycle",
   "catalyst": {
     "type": "block",
-    "block": "botania:corporea_crystal_cube"
+    "block": "kubejs:corporea_machine"
   }
 }

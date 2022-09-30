@@ -192,9 +192,11 @@
 		{
 			title: "&6&l任务内容"
 			icon: {
-				id: "beyond_earth:rocket_t1"
+				id: "occultism:book_of_calling_djinni_manage_machine"
 				Count: 1b
-				tag: { }
+				tag: {
+					spiritName: "Barsalmared"
+				}
 			}
 			disable_toast: true
 			x: -1.5d
@@ -252,6 +254,12 @@
 					type: "item"
 					item: "kubejs:protein_bar"
 					count: 8
+				}
+				{
+					id: "72B375CD5B9AEFC8"
+					type: "item"
+					item: "vanillacookbook:plain_salad"
+					count: 4
 				}
 			]
 		}

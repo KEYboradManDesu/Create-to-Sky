@@ -476,7 +476,7 @@
 			x: 5.0d
 			y: 1.0d
 			subtitle: "步骤 39-1"
-			description: ["就像早些时候一样，你需要将&6暴雪结晶&r进一步提纯。"]
+			description: ["就像早些时候一样，你需要特殊的物品将&6暴雪结晶&r进一步提纯。"]
 			dependencies: ["4B34B52092BA32BE"]
 			id: "01B0A6236A5073D1"
 			tasks: [

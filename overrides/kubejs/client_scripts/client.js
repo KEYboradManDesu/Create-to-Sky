@@ -131,6 +131,8 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("kubejs:sweet_mechanism", [`§7全宇宙最甜蜜的构件`]);
 	tooltip.add("avaritia:cosmic_meatballs", [`§7全是科技与狠活`]);
 	tooltip.add("avaritia:endest_pearl", [`§6易燃易爆，十分危险！`]);
+	tooltip.add("grimoireofgaia:doll_maid", [`§7Mic女仆装`]);
+	tooltip.add("kubejs:protein_bar", [`§7Mic最爱吃的品牌`]);
 
 	tooltip.add("kubejs:matrix_sheet", [`§7暂时没用用处`]);
 
@@ -142,8 +144,11 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("kubejs:blaze_brass", [`§7一种烈焰催化剂，也可以当成金属使用`]);
 	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o最苦的卡片...§r`]);
+	tooltip.add("kubejs:crushed_neutronium_drive_hyper_dense", [`§8§o修复我...§r`]);
 	tooltip.add("kubejs:graphics_card_t2", [`§7战术核显卡`]);
 	tooltip.add("minecraft:end_portal_frame", [`§6可被扳手强行拆除，不会返还`]);
+
+	tooltip.add("nethersdelight:propelplant_cane", [`§6使用小刀破坏枪药草茎获得`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 

@@ -161,7 +161,7 @@ onEvent("item.registry", event => {
 
 		event.create("matter_plastics")
 			.texture(modpackId + ":item/matter_plastics")
-			.displayName("物质条").rarity(RARITY_UNCOMMON)
+			.displayName("物质塑料条").rarity(RARITY_UNCOMMON)
 		
 			event.create("radiant_sheet")
 			.texture(modpackId + ":item/radiant_sheet")
@@ -396,7 +396,11 @@ onEvent("item.registry", event => {
 
 		event.create("neutronium_drive_hyper_dense")
 			.texture(modpackId + ":item/neutronium_drive_hyper_dense")
-			.displayName("§e§l中子 QIO 驱动器§r").rarity(RARITY_UNCOMMON)
+			.displayName("§d中子 QIO 驱动器§r").rarity(RARITY_UNCOMMON)
+
+		event.create("crushed_neutronium_drive_hyper_dense")
+			.texture(modpackId + ":item/crushed_neutronium_drive_hyper_dense")
+			.displayName("§d损坏的 QIO 电路板§r").rarity(RARITY_UNCOMMON)
 
 		event.create("terrasteel_sheet")
 			.texture(modpackId + ":item/terrasteel_sheet")
