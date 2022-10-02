@@ -579,11 +579,50 @@ onEvent("recipes", event => {
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
 
   event.shapeless('2x create:tree_fertilizer', ['#minecraft:flowers', '#minecraft:flowers', 'thermal:apatite_dust']).id("kubejs:tree_fertilizer")
+
+  event.remove({ output: "exnihilosequentia:wooden_hammer" })
+  event.shaped("exnihilosequentia:wooden_hammer", [
+    "LCL",
+    " C ",
+    " C "
+  ], {
+    L: '#minecraft:planks',
+    C: '#forge:rods'
+  })
+  event.remove({ output: "exnihilosequentia:stone_hammer" })
+  event.shaped("exnihilosequentia:stone_hammer", [
+    "LCL",
+    " C ",
+    " C "
+  ], {
+    L: '#forge:cobblestone',
+    C: '#forge:rods'
+  })
   
   event.remove({ id: "thermal:frost_melon_seeds" })
   event.shapeless('4x thermal:frost_melon_seeds', ['thermal:frost_melon_slice']).id("kubejs:frost_melon_seeds")
 
   event.recipes.createFilling("forbidden_arcanus:dark_nether_star", ['minecraft:nether_star', Fluid.of('materialis:molten_shadow_steel', 90)])
+
+  event.shaped("4x minecraft:vine", [
+    "LLL",
+    "LLL"
+  ], {
+    L: '#minecraft:leaves'
+  })
+
+  event.remove({ output: "create_things_and_misc:rose_quartz_sheet" })
+  event.remove({ output: "create_things_and_misc:radar" })
+  event.remove({ output: "create_things_and_misc:vibration_mechanism" })
+  event.shaped("create_things_and_misc:magnifying_glass", [
+    "  A",
+    " L ",
+    "D  "
+  ], {
+    A: '#forge:plates/copper',
+    L: '#forge:glass_panes/colorless',
+    D: '#forge:rods/copper'
+  })
 
   event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [

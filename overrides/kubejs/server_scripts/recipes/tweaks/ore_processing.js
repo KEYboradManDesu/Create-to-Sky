@@ -119,6 +119,13 @@ onEvent('item.tags', event => {
   event.get('forge:cheese/cheese').add('vanillacookbook:cheese')
   event.get('forge:cheese/cheese').add('shelve:cheese')
 
+  event.get('excompressum:sieves').add('exnihilotinkers:greenheart_sieve')
+  event.get('excompressum:sieves').add('exnihilotinkers:bloodshroom_sieve')
+  event.get('excompressum:sieves').add('exnihilotinkers:skyroot_sieve')
+  event.get('exnihilosequentia:sieves').add('exnihilotinkers:greenheart_sieve')
+  event.get('exnihilosequentia:sieves').add('exnihilotinkers:bloodshroom_sieve')
+  event.get('exnihilosequentia:sieves').add('exnihilotinkers:skyroot_sieve')
+
   event.get('createtosky:blacklist').add('tconstruct:blood_vanilla_slime_grass')
   event.get('createtosky:blacklist').add('tconstruct:sky_vanilla_slime_grass')
   event.get('createtosky:blacklist').add('tconstruct:ender_vanilla_slime_grass')

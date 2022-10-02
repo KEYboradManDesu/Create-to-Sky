@@ -122,6 +122,7 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Zinc Dust", "锌粉")
 
 		registerTypicalItem("Circuit Scrap", "压印模板碎片")
+		
 
 		event.create("incomplete_coke_chunk")
 			.texture(modpackId + ":item/incomplete_coke_chunk")
@@ -428,7 +429,7 @@ onEvent("item.registry", event => {
 
 		event.create("good_idea")
 			.texture(modpackId + ":item/good_idea")
-			.displayName("§e§l绝妙主意§r").rarity(RARITY_UNCOMMON)
+			.displayName("§d奇思妙想§r").rarity(RARITY_UNCOMMON)
 
 		event.create("blockchain")
 			.texture(modpackId + ":item/blockchain")

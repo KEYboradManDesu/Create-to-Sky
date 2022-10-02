@@ -134,7 +134,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("grimoireofgaia:doll_maid", [`§7Mic女仆装`]);
 	tooltip.add("kubejs:protein_bar", [`§7Mic最爱吃的品牌`]);
 
-	tooltip.add("kubejs:matrix_sheet", [`§7暂时没用用处`]);
+	tooltip.add("kubejs:matrix_sheet", [`§7暂时没有用处`]);
 
 	tooltip.add("kubejs:box_ammo", [`§7内装有32发全威力弹药`]);
 	tooltip.add("kubejs:box_ammo", [`§7罗德岛永恒枪械工坊鼎力赞助`]);
