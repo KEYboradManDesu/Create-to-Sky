@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    {
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:elite_control_circuit"
+    }
+  ]
+}

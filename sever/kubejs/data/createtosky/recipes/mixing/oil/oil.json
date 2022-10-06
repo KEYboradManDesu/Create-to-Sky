@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [ 
+    {
+      "fluid": "createaddition:seed_oil",
+      
+      "amount": 500
+    },
+    {
+      "item": "create:scoria"
+    },
+    {
+      "item": "kubejs:blaze_brass"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "thermal:crude_oil",
+      
+      "amount": 500
+    }
+  ],
+  "heatRequirement":"heated"
+}

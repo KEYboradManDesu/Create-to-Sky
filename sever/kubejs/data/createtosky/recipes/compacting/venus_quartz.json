@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:venus_dust",
+      "amount": 4
+    },
+    {
+      "item": "thermal:lightning_charge",
+      "amount": 1
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:venus_quartz"
+    }
+  ],
+  "heatRequirement":"superheated"
+}

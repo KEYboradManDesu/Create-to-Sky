@@ -1,0 +1,18 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "thermal:refined_fuel",
+    "amount": 200
+  },
+  "result": [
+    {
+      "fluid": "beyond_earth:fuel",
+      "amount": 175
+    },
+    {
+      "item": "thermal:tar",
+      "chance": 0.55
+    }
+  ],
+  "energy": 6000
+}

@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createaddition:cake_base_baked"
+  },
+  "transitionalItem": {
+    "item": "createaddition:cake_base_baked"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createaddition:cake_base_baked"
+        },
+        {
+          "fluid": "create:honey",
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "createaddition:cake_base_baked"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createaddition:cake_base_baked"
+        },
+        {
+          "fluid": "minecraft:milk",
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "createaddition:cake_base_baked"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createaddition:cake_base_baked"
+        },
+        {
+          "tag": "forge:crops/sadiroot"
+        }
+      ],
+      "results": [
+        {
+          "item": "createaddition:cake_base_baked"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:spice_cake",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

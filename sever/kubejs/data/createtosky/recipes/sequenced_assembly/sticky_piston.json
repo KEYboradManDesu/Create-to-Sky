@@ -1,0 +1,34 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:piston"
+  },
+  "transitionalItem": {
+    "item": "minecraft:piston"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:piston"
+        },
+        {
+          "tag": "forge:super_glue"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:piston"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sticky_piston",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

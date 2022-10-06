@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:polished_venus_quartz"
+    },
+    {
+      "fluid": "beyond_earth:molten_calorite",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:raw_calorite",
+      "amount": 4
+    }
+  ]
+}

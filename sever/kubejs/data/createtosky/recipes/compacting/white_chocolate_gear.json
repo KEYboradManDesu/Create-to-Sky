@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create_confectionery:marshmallow",
+      "amount": 2
+    },
+    {
+      "fluid": "create_confectionery:white_chocolate",
+      "amount": 250
+    },
+    {
+      "item": "thermal:press_gear_die",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:white_chocolate_gear",
+      "amount": 2
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "heatRequirement":"heated"
+}

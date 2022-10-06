@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/lapis",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:lapis_sheet"
+    }
+  ]
+}

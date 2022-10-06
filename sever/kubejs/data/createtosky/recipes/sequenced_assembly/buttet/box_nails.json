@@ -1,0 +1,76 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:plates/steel"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_basic_bullet"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        },
+        {
+          "tag": "forge:paper"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        },
+        {
+          "tag": "forge:super_glue"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basic_bullet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:box_nails",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

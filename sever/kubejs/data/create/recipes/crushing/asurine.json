@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:asurine"
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:raw_cobalt",
+      "chance": 0.8
+    },
+    {
+      "item": "create:crushed_zinc_ore",
+      "chance": 0.2
+    },
+    {
+      "item": "create:zinc_nugget",
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 250
+}

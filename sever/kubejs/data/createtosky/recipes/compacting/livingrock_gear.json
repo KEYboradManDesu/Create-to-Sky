@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "botania:livingrock",
+      "amount": 1
+    },
+    {
+      "item": "thermal:press_gear_die",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:livingrock_gear",
+      "amount": 6
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ]
+}

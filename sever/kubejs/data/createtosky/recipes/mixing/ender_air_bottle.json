@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "forge:nuggets/ender_pearl"
+    }
+  ],
+  "results": [
+    {
+      "item": "botania:ender_air_bottle"
+    }
+  ],
+  "heatRequirement":"heated"
+}

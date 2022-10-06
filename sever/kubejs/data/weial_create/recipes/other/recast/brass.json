@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:plates/brass"
+  },
+  "result": {
+    "item": "create:brass_ingot"
+  }
+}

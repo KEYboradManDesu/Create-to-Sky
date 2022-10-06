@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "kubejs:computation_matrix"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:matrix_sheet",
+      "amount": 1
+    }
+  ]
+}

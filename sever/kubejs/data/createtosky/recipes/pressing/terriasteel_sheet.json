@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/terrasteel",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:terrasteel_sheet"
+    }
+  ]
+}

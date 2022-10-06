@@ -1,0 +1,24 @@
+{
+	id: "740CC464D9AE88E4"
+	order_index: 25
+	title: "绝妙发明：附魔闪存"
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "kubejs:flash_drive"
+			Count: 1b
+			tag: {
+				Unbreakable: 1
+				Damage: 0
+				HideFlags: 1
+				Enchantments: [{
+					lvl: 10s
+					id: "minecraft:unbreaking"
+				}]
+				display: {
+					Name: "{\"text\":\"附魔闪存\",\"color\":\"gold\",\"italic\":false}"
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "kubejs:glacio_quartz"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:polished_glacio_quartz"
+    }
+  ]
+}

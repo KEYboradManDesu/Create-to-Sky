@@ -1,0 +1,27 @@
+{
+	"type": "alexsmobs:crimson_mosquito",
+	"name": "entity.alexsmobs.crimson_mosquito",
+	"name_color": "0xDC143C",
+	"gui_scale": 0.8,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 160,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:nether_prediction"
+	},
+	"trivia": "Nasty Mob",
+	"fabricator_drops": [
+		{
+			"item": "alexsmobs:mosquito_proboscis",
+			"count": 5
+		},
+		{
+			"item": "alexsmobs:blood_sac",
+			"count": 25
+		}
+	]
+}

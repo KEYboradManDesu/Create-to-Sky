@@ -1,0 +1,672 @@
+{
+	id: "0D0BC5B3F6623669"
+	group: "0810E42B2DD79973"
+	order_index: 5
+	filename: "lifesavers"
+	title: " 护肝员"
+	icon: "minecraft:totem_of_undying"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "呜——呜——"
+			icon: "kubejs:obsidian_machine"
+			x: -3.0d
+			y: -1.0d
+			description: ["火车是最灵活的中距离物品运输方式。讲真，如果你建造了第一条连接两个地方的铁路，那你肯定会忍不住去造更多。并且火车可自定义性和便利性是史无前例的。"]
+			id: "2A2FA80784667833"
+			tasks: [{
+				id: "35B9D6563292751A"
+				type: "item"
+				item: "create:track_station"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "31A760D676A05F0E"
+				type: "item"
+				item: "create:schedule"
+			}]
+		}
+		{
+			title: "工程师的好伙伴"
+			x: -5.0d
+			y: -1.0d
+			description: ["当你在制作新的装置时，这个小工具尤为实用。与其用组件装满你的口袋，不如从作坊里拿出工具箱随身携带。"]
+			id: "26C39961F2E2ABF2"
+			tasks: [{
+				id: "5E687A6CBD96D0EF"
+				type: "item"
+				title: "任意工具箱"
+				icon: "create:blue_toolbox"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "2AC846CB2DF485C8"
+				type: "item"
+				item: "create:golden_sheet"
+			}]
+		}
+		{
+			title: "大桶 II"
+			x: -3.0d
+			y: 1.0d
+			description: ["如果你正在寻找个超大且特别的储物方块，那就去试试储物抽屉吧。"]
+			id: "382EBC32AC27C839"
+			tasks: [{
+				id: "4BE344E1F204A43D"
+				type: "item"
+				title: "任意储物抽屉"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "2285D6CE87319B4A"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "烹饪的乐趣"
+			x: 0.0d
+			y: -3.0d
+			description: ["炉灶是一种好看而且非常有用的营火替代品。它可以和一个锅一起为你制作出游戏内最美味的饭菜。"]
+			id: "0E4476BA80B316F6"
+			tasks: [{
+				id: "72F2D3B586A81A2B"
+				type: "item"
+				item: "farmersdelight:stove"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "02BA7C4E293DD955"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+		}
+		{
+			title: "方块叠放器"
+			x: -1.0d
+			y: -1.0d
+			description: ["建筑手杖可以一键延伸一整个方块平面。"]
+			id: "2F469F6F1511D9C4"
+			tasks: [{
+				id: "039DD9EBD46B2C23"
+				type: "item"
+				title: "任意建筑手杖"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "constructionwand:stone_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:infinity_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+								}
+							}
+							{
+								id: "constructionwand:diamond_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:iron_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5B7C253D05152423"
+				type: "item"
+				item: "minecraft:scaffolding"
+				count: 16
+			}]
+		}
+		{
+			title: "帮我夹下菜"
+			x: 3.0d
+			y: -1.0d
+			description: ["人类的手臂还没有进化到可以高效地制造机器。还好，这个小工具可以通过显著增加你触及范围来弥补缺点。"]
+			id: "7061F42CF050ADCA"
+			tasks: [{
+				id: "0710C744349D2090"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "40E5D8DBF58086BB"
+				type: "item"
+				item: "create:cogwheel"
+				count: 8
+			}]
+		}
+		{
+			title: "自然指南针"
+			x: -4.0d
+			y: -3.0d
+			description: ["有时候你想去找一个特殊的生物群系，而自然指南针至少可以帮助你找到正确的方向。"]
+			id: "45E7810E21F6F9AE"
+			tasks: [{
+				id: "7AD38BD1318A493B"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "482338485BF4B3B0"
+				type: "item"
+				item: "biomesoplenty:spanish_moss"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "造房子的大炮"
+			x: 1.0d
+			y: -1.0d
+			description: ["你可以使用蓝图加农炮将任何.nbt的蓝图文件建造到你的世界中。你可以用它来放置你的一些建筑，你甚至也可以提前在别的世界中先建造好。"]
+			id: "09EB29F838620371"
+			tasks: [{
+				id: "103E6982FCFE8B6C"
+				type: "item"
+				item: "create:schematicannon"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "7AF62EF3656DD4E3"
+				type: "item"
+				item: "create:empty_schematic"
+			}]
+		}
+		{
+			title: "远大计划"
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"合成蓝图可以配置一些合成的配方，当你右键时，它可以将你的手持物品进行合成。"
+				""
+				"最快最高效的方法就是使用JEI将合成配方添加进蓝图的UI内，点击JEI配方右下角的“+”将配方转移入蓝图内部。"
+			]
+			id: "6D900619B1967D72"
+			tasks: [{
+				id: "006D992D77A782EF"
+				type: "item"
+				item: "create:crafting_blueprint"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "47ADAFAB537F63CE"
+				type: "item"
+				item: "minecraft:painting"
+			}]
+		}
+		{
+			title: "感应管道"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"随着感应机械的兴起，你想把能源炉和机器连接在一起组成能源网络。"
+				""
+				"需要注意的是，这些管道并不总是知道何时该从方块中抽取能量。你可以使用&6扳手&r潜行右键这些管道的连接处来启用/禁用能量抽取。"
+			]
+			id: "6BC864CC7CB2C316"
+			tasks: [{
+				id: "4912723B6A264380"
+				type: "item"
+				item: "pipez:energy_pipe"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5EA5B33DA2E47592"
+				type: "item"
+				item: "thermal:signalum_ingot"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "伙伴？"
+			x: 1.0d
+			y: -5.0d
+			description: ["在干草堆上放一个南瓜头可以做出一个稻草人，它可以照料你的作物。"]
+			id: "1DBFD0B34659A8F9"
+			tasks: [
+				{
+					id: "7596BE1437EA002D"
+					type: "item"
+					item: "minecraft:hay_block"
+					consume_items: false
+				}
+				{
+					id: "7986E1E6575F2C25"
+					type: "item"
+					item: "minecraft:carved_pumpkin"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "7BD14F5479FAB194"
+				type: "item"
+				item: "minecraft:sweet_berries"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "得得得得"
+			x: 4.0d
+			y: -3.0d
+			description: ["有时，你很难决定想要干什么事。还好，我们有一些可以帮助你解决无聊的手段。"]
+			id: "087659F192F41C6E"
+			tasks: [{
+				id: "573B45EF2A96EC13"
+				type: "item"
+				item: {
+					id: "playingcards:card_deck"
+					Count: 1b
+					tag: {
+						SkinID: 0b
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "7D8F9821B4D2ED15"
+				type: "item"
+				item: "thermal:gold_coin"
+			}]
+		}
+		{
+			title: "飞行模式"
+			icon: "magicfeather:magicfeather"
+			x: -1.0d
+			y: 1.0d
+			description: ["魔法羽毛可以让你创造飞行，但这一功能只在信标光柱范围内生效。即便如此，它也会在你建造大工厂时起到很大帮助。"]
+			id: "0F4B0608CBF966E6"
+			tasks: [
+				{
+					id: "18A86C2CE288A35A"
+					type: "item"
+					item: "magicfeather:magicfeather"
+					consume_items: false
+				}
+				{
+					id: "6D2E7DBD75292896"
+					type: "item"
+					item: "minecraft:beacon"
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3E31A943AAC038E9"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 9
+				}
+				{
+					id: "1B80A7B19330A157"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 12
+				}
+			]
+		}
+		{
+			title: "上传到云端"
+			icon: "cloudstorage:cloud_chest"
+			x: -2.0d
+			y: -3.0d
+			shape: "square"
+			description: ["&6云箱子&r能允许你将物品&6物理&r上传到云端，并可以从任何地方访问它！&b（&b非&6静电云箱子&r&b除了主人，其他玩家无法访问，漏斗也不例外！）"]
+			id: "7B34460F241184BD"
+			tasks: [{
+				id: "23E5594DDAD238A6"
+				type: "advancement"
+				title: "把云箱子放上天！"
+				advancement: "cloudstorage:cloudstorage/cloud_chest"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "4E1D7BE3DA49234C"
+				type: "item"
+				team_reward: false
+				item: "cloudstorage:balloon_bit"
+				count: 4
+			}]
+		}
+		{
+			title: "芜湖起飞！"
+			icon: {
+				id: "create_sa:brass_jetpack_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 5.0d
+			y: -1.0d
+			description: ["上天是人类一直的梦想，这个喷气背包可以让你短暂的飞翔，它还可以为你的鞘翅加速。"]
+			id: "163FFB86DB68BD42"
+			tasks: [{
+				id: "01FE8F967FFF8815"
+				type: "item"
+				item: {
+					id: "create_jetpack:jetpack"
+					Count: 1b
+					tag: {
+						Air: 900
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "3BE6AFA2CDB4D00C"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+				{
+					id: "6FBA2AFB167FD707"
+					type: "item"
+					item: "thermal:gold_coin"
+				}
+			]
+		}
+		{
+			title: "地狱刷石机"
+			x: 5.0d
+			y: 1.0d
+			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成下界土特产方块。"]
+			id: "4D360EB7CBCFF364"
+			tasks: [{
+				id: "4CCA92AD80B1D391"
+				type: "observation"
+				title: "观察 肥沃灵魂土"
+				icon: "nethersdelight:rich_soul_soil"
+				timer: 60L
+				observe_type: 0
+				to_observe: "nethersdelight:rich_soul_soil"
+			}]
+			rewards: [
+				{
+					id: "0C5DA6A71EAF0107"
+					type: "item"
+					item: "skinnedlanterns:skeleton_soul_lantern_block"
+				}
+				{
+					id: "6B28DFB0AC013219"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "战前演练"
+			x: -1.0d
+			y: -5.0d
+			description: ["还在用传统僵尸之类的生物测试伤害？试试训练人偶，它能为你提供精准的数值反馈。"]
+			id: "277D457E6B70CAFE"
+			tasks: [{
+				id: "7FB4C7EC1503FA0F"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "1ECD7C601BA75554"
+					type: "item"
+					item: "archers_paradox:training_arrow"
+					count: 32
+				}
+				{
+					id: "38C96DFC1E5B2B45"
+					type: "item"
+					item: "archers_paradox:challenge_arrow"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "深度怪物学习"
+			x: 3.0d
+			y: -5.0d
+			description: [
+				""
+				"人们总喜欢挂机获得怪物掉落物，现在机会来了。"
+			]
+			id: "59648ACAE14A5D28"
+			tasks: [{
+				id: "0EE4D06D2B31EE0A"
+				type: "item"
+				item: "hostilenetworks:sim_chamber"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "402BE90660ACDCD3"
+				type: "item"
+				item: "minecraft:clay"
+				count: 4
+			}]
+		}
+		{
+			title: "绘画之乐"
+			x: -3.0d
+			y: -5.0d
+			description: ["想记录下日落美景又不想用打破沉浸式体验的F2截图?你可以试试徒手画出来。"]
+			id: "4EDDF14C9B67AF68"
+			tasks: [{
+				id: "65D08E41105F0D88"
+				type: "item"
+				item: "xercapaint:item_palette"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "1964E4D6BE75303F"
+				type: "item"
+				item: "xercapaint:item_easel"
+			}]
+		}
+		{
+			title: "黄铜物品管道"
+			x: 3.0d
+			y: 1.0d
+			description: [
+				"随着黄铜机械的兴起，你想把能机器和机器连接在一起组成物品传输网络。"
+				""
+				"需要注意的是，这些管道并不总是知道何时该从方块中抽取物品。你可以在这些管道的连接处放置&6抽取升级&r来决定是输入还是输出。"
+			]
+			id: "5FE4578DA9061DA8"
+			tasks: [{
+				id: "409A0CB45FFA93D6"
+				type: "item"
+				item: "prettypipes:pipe"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "66CE4CCD49A486D1"
+					type: "item"
+					item: "create:brass_ingot"
+					count: 10
+				}
+				{
+					id: "00700E22F231A324"
+					type: "item"
+					item: "kubejs:pipe_module_tier_1"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "食物诱惑"
+			icon: "excompressum:pig_bait"
+			x: 5.0d
+			y: -5.0d
+			description: ["觉得岛屿过于冷清？可以试试动物诱饵，用于吸引动物，诱饵工作时玩家不可过于靠近，且旁边需要放置正确的群系方块。"]
+			id: "40BE5CC14CF0F866"
+			tasks: [{
+				id: "02D91FCEA8CC8AC7"
+				type: "item"
+				title: "任何诱饵"
+				icon: "excompressum:chicken_bait"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:baits"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "06B88AA7F7C6E254"
+				type: "item"
+				item: "minecraft:bone"
+				count: 8
+			}]
+		}
+		{
+			title: "転生暮色の異世界ライフ"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 6.0d
+			y: -3.0d
+			description: ["要想进入暮色，首先在地上挖出2x2x1（边长最大为8格）格的坑（底部需要填满）并灌满非流动水（即对角线倒水或4格都倒水），然后四边用任意植物（包括枯死的灌木，树叶，草，蕨类等，以及其它模组的植物）围起来（角落不需要），最后丢入一颗&e暮色钻石&r，一道闪电从天而降，传送门就此开启。"]
+			id: "79BA77EF0BB69750"
+			tasks: [
+				{
+					id: "1687957B8D151A56"
+					type: "item"
+					item: "kubejs:twilight_diamond"
+					consume_items: false
+				}
+				{
+					id: "1D7FC0907977738D"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+			rewards: [
+				{
+					id: "20E0D4C7A9E0353B"
+					type: "item"
+					item: "twilightdelight:phytochemical_juice"
+				}
+				{
+					id: "1C1DF2A81FF449A0"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "百科全书"
+			x: -5.0d
+			y: 1.0d
+			description: ["如果不想被满箱子书籍所烦恼的话，阿卡什宝典是个好帮手。如果想要添加一本手册到阿卡什宝典，只需要简单的在工作台中结合它们。你想要添加多少本手册都没问题，哪怕是完全一样的手册（甚至哪怕是扳手）。"]
+			id: "3BAF9C609F33E3E3"
+			tasks: [{
+				id: "6FFADC41AA91C4EC"
+				type: "item"
+				item: "akashictome:tome"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5EF688AF078E593C"
+				type: "item"
+				item: "vanillacookbook:book_cake"
+			}]
+		}
+		{
+			icon: "exnihilosequentia:end_cake"
+			x: -5.0d
+			y: -5.0d
+			description: ["厌倦了寻找遗迹？做出这个末地甜点，摆放后刚好只够一个人吃，食用后会传送到末地。"]
+			id: "3F47F8B76ADFDF2B"
+			tasks: [
+				{
+					id: "0BD7711C1DCB8B58"
+					type: "item"
+					item: "exnihilosequentia:end_cake"
+					consume_items: false
+				}
+				{
+					id: "0DB6B16B08D8B31C"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+		}
+		{
+			title: "时代变了"
+			icon: {
+				id: "cgm:pistol"
+				Count: 1b
+				tag: {
+					Color: 16711680
+				}
+			}
+			x: -6.0d
+			y: -3.0d
+			description: ["这把枪通过发射钢筋造成远程伤害。"]
+			id: "131C210439B0EF7B"
+			tasks: [{
+				id: "7596306F0C55282D"
+				type: "item"
+				item: {
+					id: "cgm:pistol"
+					Count: 1b
+					tag: {
+						AmmoCount: 4
+					}
+				}
+				consume_items: false
+			}]
+		}
+	]
+}

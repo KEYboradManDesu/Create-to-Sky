@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:basalt"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_basalz_rod"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        },
+        {
+          "item": "thermal:blitz_powder"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        },
+        {
+          "fluid": "minecraft:lava",
+          "amount": 200
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        },
+        {
+          "item": "kubejs:laser_blaster"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_basalz_rod"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:basalz_rod",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

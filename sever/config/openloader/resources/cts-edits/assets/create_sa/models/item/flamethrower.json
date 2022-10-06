@@ -1,0 +1,7 @@
+{
+  "parent": "create_sa:custom/flamethrower",
+  "textures": {
+    "0": "create_sa:blocks/flamethrower",
+    "particle": "create_sa:items/flamethrower"
+  }
+}

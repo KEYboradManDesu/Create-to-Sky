@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "kubejs:black_gunpowder"
+    },
+    {
+      "fluid": "minecraft:lava",
+      
+      "amount": 90
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:blaze_powder",
+      "count": 2
+    }
+  ]
+}

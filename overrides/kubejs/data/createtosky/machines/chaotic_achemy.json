@@ -1,0 +1,271 @@
+{
+  "name": "§6混沌炼金机§r",
+  "appearance": {
+    "block": "cabricality:machine/chaotic_achemy",
+	  "hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	  "mining_level": "minecraft:needs_stone_tool",
+    "sound": "minecraft:block.enchantment_table.use",
+    "running": {
+      "block": "cabricality:machine/chaotic_achemy_running",
+      "lightmode": 12
+  }
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "substrates1",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#kubejs:achemy_solt"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 	
+    {
+      "mode": "input",
+      "id": "substrates2",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#kubejs:achemy_solt"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "substrates3",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#kubejs:achemy_solt"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "substrates4",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#kubejs:achemy_solt"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "substrates5",
+      "capacity": 16,
+      "type": "custommachinery:item",
+      "filter": ["#kubejs:accellerator"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "tool",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "tool2",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "tool3",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "outtool",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "output"
+      }
+    }, 
+    {
+      "mode": "input",
+      "id": "outtool2",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "output"
+      }
+    },
+    {
+      "mode": "input",
+      "id": "outtool3",
+      "capacity": 1,
+      "type": "custommachinery:item",
+      "filter": ["#forge:tools/achemy"],
+      "whitelist": true,
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "fluid1",
+      "capacity": 5000,
+      "type": "custommachinery:fluid",
+	    "filter": ["kubejs:powered_water"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 	
+    {
+      "mode": "output",
+      "id": "output1",
+	    "capacity": 5000,
+      "type": "custommachinery:fluid",
+      "config": {
+        "default": "output"
+      }
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "cabricality:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "x": 43,
+      "y": 17,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "tool"
+    },
+    {
+      "x": 43,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "tool2"
+    },
+    {
+      "x": 43,
+      "y": 57,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "tool3"
+    },
+    {
+      "x": 43,
+      "y": 17,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "outtool"
+    },
+    {
+      "x": 43,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "outtool2"
+    },
+    {
+      "x": 43,
+      "y": 57,
+      "type": "custommachinery:slot",
+      "item": "kubejs:tool_empty",
+      "id": "outtool3"
+    },
+    {
+      "x": 88,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:substrate_empty",
+      "id": "substrates1"
+    },  	   
+    {
+      "x": 108,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:substrate_empty",
+      "id": "substrates2"
+    },   
+    {
+      "x": 128,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:substrate_empty",
+      "id": "substrates3"
+    }, 
+    {
+      "x": 148,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "item": "kubejs:substrate_empty",
+      "id": "substrates4"
+    }, 
+    {
+      "x": 148,
+      "y": 17,
+      "type": "custommachinery:slot",
+      "item": "kubejs:accellerator_empty",
+      "id": "substrates5"
+    }, 
+	{
+      "x": 65,
+      "y": 25,
+      "type": "custommachinery:fluid",
+      "id": "fluid1"
+    },  	    	
+    {
+      "id": "output1",
+      "x": 171,
+      "y": 25,
+      "type": "custommachinery:fluid"
+    },
+	{
+      "text": "§6§l混沌炼金反应器",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

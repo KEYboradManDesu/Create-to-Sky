@@ -1,0 +1,1 @@
+{"type":"mekanism:nucleosynthesizing","itemInput":{"ingredient":{"tag":"forge:slimeballs"}},"gasInput":{"amount":3,"gas":"mekanism:antimatter"},"output":{"item":"alexsmobs:mimicream"},"duration":800}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:plates/copper"
+    },
+    {
+      "item": "createaddition:zinc_sheet"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "mekanism:hydrogen",
+      "amount": 500
+    },
+    {
+      "fluid": "mekanism:oxygen",
+      "amount": 500
+    },
+    {
+      "item": "createaddition:zinc_sheet"
+    },
+    {
+      "item": "createaddition:zinc_sheet"
+    }
+  ],
+  "heatRequirement":"heated"
+}

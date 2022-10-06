@@ -1,0 +1,25 @@
+{
+	id: "5798313254C7BDBB"
+	order_index: 0
+	title: "&6购买农业卡片"
+	loot_size: 1
+	rewards: [
+		{ item: "kubejs:trade_card_rice" }
+		{ item: "kubejs:trade_card_straw" }
+		{ item: "kubejs:trade_card_glowshroom" }
+		{ item: "kubejs:trade_card_bramble" }
+		{ item: "kubejs:trade_card_barley" }
+		{ item: "kubejs:trade_card_watergrass" }
+		{ item: "kubejs:trade_card_reed" }
+		{ item: "kubejs:trade_card_clover_petal" }
+		{ item: "kubejs:trade_card_spanish_moss" }
+		{ item: "kubejs:trade_card_willow_vine" }
+		{ item: "kubejs:trade_card_cattail" }
+		{ item: "kubejs:trade_card_sugar_cane" }
+		{ item: "kubejs:trade_card_kelp" }
+		{ item: "kubejs:trade_card_bamboo" }
+		{ item: "kubejs:trade_card_vines" }
+		{ item: "kubejs:trade_card_tree_fertilizer" }
+		{ item: "kubejs:trade_card_sweet_berries" }
+	]
+}

@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:sealed_mechanism"
+  },
+  "transitionalItem": {
+    "item": "create_sa:incomplete_hydraulic_engine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        },
+        {
+          "tag": "forge:gears/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_steam_engine"
+        },
+        {
+          "tag": "forge:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        }
+      ]
+    },
+     {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        },
+        {
+          "fluid": "minecraft:water",
+          "nbt": {},
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "create_sa:incomplete_hydraulic_engine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "create_sa:hydraulic_engine",
+      "chance": 1.0
+    }
+  ],
+  "loops": 1
+}

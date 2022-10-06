@@ -1,0 +1,1 @@
+{"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"item":"kubejs:integrated_circuit"}},"chemicalInput":{"amount":10,"tag":"mekanism:redstone"},"output":{"item":"mekanism:alloy_infused"}}

@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelight:cooking_pot"
+  },
+  "transitionalItem": {
+    "item": "farmersdelight:cooking_pot"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:cooked_beef"
+        },
+        {
+          "item": "avaritia:neutron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "fluid": "create:tea",
+          
+          "amount": 750
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "minecraft:cake"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        },
+        {
+          "item": "kubejs:sweet_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "farmersdelight:cooking_pot"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "avaritia:ultimate_stew",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

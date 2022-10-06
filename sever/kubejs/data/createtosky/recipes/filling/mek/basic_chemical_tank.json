@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:copper_backtank"
+    },
+    {
+      "fluid": "tconstruct:molten_osmium",
+      "amount": 360
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:basic_chemical_tank"
+    }
+  ]
+}

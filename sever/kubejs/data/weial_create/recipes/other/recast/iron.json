@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:plates/iron"
+  },
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}

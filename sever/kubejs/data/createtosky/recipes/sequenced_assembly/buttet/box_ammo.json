@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:plates/copper"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_advanced_bullet"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        },
+        {
+          "item": "kubejs:black_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        },
+        {
+          "tag": "forge:nuggets/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        },
+        {
+          "tag": "forge:plates/iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_advanced_bullet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:box_ammo",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

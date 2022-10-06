@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "beyond_earth:engine_frame"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_calorite_engine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        },
+        {
+          "item": "beyond_earth:calorite_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        },
+        {
+          "item": "beyond_earth:engine_fan"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        },
+        {
+          "item": "beyond_earth:compressed_calorite"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        }
+      ]
+    }, 
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        },
+        {
+          "item": "thermal:signalum_gear"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_calorite_engine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:calorite_engine",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

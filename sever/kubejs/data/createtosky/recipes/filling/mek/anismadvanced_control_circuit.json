@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "mekanism:basic_control_circuit"
+    },
+    {
+      "fluid": "tconstruct:molten_signalum",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:advanced_control_circuit"
+    }
+  ]
+}

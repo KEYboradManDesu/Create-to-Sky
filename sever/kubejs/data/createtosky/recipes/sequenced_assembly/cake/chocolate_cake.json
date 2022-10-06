@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:baked_chocolate_cake_base"
+  },
+  "transitionalItem": {
+    "item": "kubejs:baked_chocolate_cake_base"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:baked_chocolate_cake_base"
+        },
+        {
+          "fluid": "create_confectionery:black_chocolate",
+          "amount": 500
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:baked_chocolate_cake_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:baked_chocolate_cake_base"
+        },
+        {
+          "tag": "forge:crops/strawberry"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:baked_chocolate_cake_base"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "thermal:chocolate_cake",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

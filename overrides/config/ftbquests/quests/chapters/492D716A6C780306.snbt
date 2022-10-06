@@ -33,9 +33,9 @@
 			size: 0.7d
 			id: "439C4F9A4AFA0885"
 			tasks: [{
-				id: "66312A09CF7C4411"
+				id: "41DF2D96B1D4845C"
 				type: "item"
-				title: "任何筛子"
+				title: "任意筛子"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

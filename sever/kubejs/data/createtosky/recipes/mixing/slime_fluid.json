@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "caupona:nail_soup",
+      
+      "amount": 200
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "caupona:nail_soup",
+      
+      "amount": 100
+    },
+    {
+      "fluid": "tconstruct:earth_slime",
+      
+      "amount": 300
+    }
+  ]
+}

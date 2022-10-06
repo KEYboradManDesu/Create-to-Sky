@@ -1,0 +1,14 @@
+{
+	id: "05E04CC1E95D7CD9"
+	order_index: 13
+	title: "&7&l职业:&r 渔夫"
+	icon: {
+		id: "aquaculture:gold_fishing_rod"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [{ item: "kubejs:profession_card_fishing" }]
+}

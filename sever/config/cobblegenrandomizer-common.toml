@@ -1,0 +1,33 @@
+
+#General settings
+[general]
+	#Use config instead of datapack
+	use_config = true
+
+	#List settings
+	#Syntax: ["modid:block|weight"]
+	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
+	#Forge tags are supported
+	[general.lists]
+		#Basalt gen
+		block_list_basalt = ["minecraft:basalt|100"]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone|100"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone|100"]
+
+		#Custom settings
+		[general.lists.custom]
+			#Custom generators
+			#Syntax: [gen]
+			#Gen: [type, block, list]
+			#Type: cobblestone, stone
+			#Block: resource location of the block below the generated block
+			#List: see List settings
+			#Examples:
+			#custom_generators = [
+			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
+			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
+			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
+			custom_generators = [["cobblestone", "minecraft:crying_obsidian", ["minecraft:andesite|25", "minecraft:granite|25", "minecraft:diorite|25", "create:gabbro|25", "create:limestone|25", "minecraft:deepslate|25"]], ["cobblestone", "thermal:rich_slag_block", ["create:scoria|50", "create:scorchia|25", "create:asurine|12", "create:ochrum|12", "create:crimsite|12", "create:veridium|12"]], ["cobblestone", "nethersdelight:rich_soul_soil", ["minecraft:netherrack|50", "minecraft:basalt|50", "occultism:iesnium_ore_natural|25", "minecraft:nether_gold_ore|25", "minecraft:nether_quartz_ore|25", "tconstruct:cobalt_ore|15", "minecraft:ancient_debris|1"]], ["cobblestone", "beyond_earth:venus_stone_bricks", ["beyond_earth:venus_stone|100"]], ["cobblestone", "beyond_earth:glacio_stone_bricks", ["beyond_earth:glacio_stone|100"]], ["cobblestone", "minecraft:glowstone", ["minecraft:end_stone|100"]]]
+

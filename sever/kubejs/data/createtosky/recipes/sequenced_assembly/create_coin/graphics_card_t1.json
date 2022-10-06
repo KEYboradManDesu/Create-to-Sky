@@ -1,0 +1,85 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:blank_pattern"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_graphics_card"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        },
+        {
+          "fluid": "kubejs:matrix",
+          
+          "amount": 720
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        },
+        {
+          "item": "ae2:engineering_processor"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        },
+        {
+          "item": "pipez:energy_pipe"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        },
+        {
+          "item": "mekanism:energy_tablet"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_graphics_card"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "kubejs:graphics_card_t1",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

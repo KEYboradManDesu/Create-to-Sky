@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "kubejs:venus_quartz"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:polished_venus_quartz"
+    }
+  ]
+}

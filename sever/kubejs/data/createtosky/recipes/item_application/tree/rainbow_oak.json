@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_sapling"
+    },
+    {
+      "item": "kubejs:dye_entangled_singularity"
+    }
+  ],
+  "results": [
+    {
+      "item": "twilightforest:rainbow_oak_sapling"
+    }
+  ]
+}

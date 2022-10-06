@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:nuggets/copper"
+  },
+  "transitionalItem": {
+    "item": "thermal:copper_nugget"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:copper_nugget"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:copper_nugget"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "thermal:copper_nugget"
+        },
+        {
+          "tag": "forge:saws"
+        }
+      ],
+      "results": [
+        {
+          "item": "thermal:copper_nugget"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createaddition:connector",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

@@ -1,0 +1,7 @@
+{
+	id: "60FA53E54FEA4596"
+	order_index: 17
+	title: "&7&l货币兑换卡"
+	loot_size: 1
+	rewards: [{ item: "kubejs:trade_card_exchange_currencies" }]
+}

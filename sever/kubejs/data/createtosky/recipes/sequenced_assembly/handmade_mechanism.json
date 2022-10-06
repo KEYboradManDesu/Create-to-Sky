@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:wooden_slabs"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_handmade_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_handmade_mechanism"
+        },
+        {
+          "item": "minecraft:flint"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_handmade_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_handmade_mechanism"
+        },
+        {
+          "tag": "forge:super_glue"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_handmade_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:handmade_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

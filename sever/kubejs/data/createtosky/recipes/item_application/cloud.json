@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "forge:wool/white"
+    },
+    {
+      "item": "create_confectionery:marshmallow"
+    }
+  ],
+  "results": [
+    {
+      "item": "cloudstorage:cloud"
+    }
+  ]
+}

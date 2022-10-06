@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:birch_sapling"
+    },
+    {
+      "item": "kubejs:dye_entangled_singularity"
+    }
+  ],
+  "results": [
+    {
+      "item": "biomesoplenty:rainbow_birch_sapling"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:diorite"
+    },
+    {
+      "item": "kubejs:radiant_sheet"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:refined_radiance_casing"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "thermal:redstone",
+      "amount": 250
+    },
+    {
+      "item": "ae2:certus_quartz_crystal"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:polished_rose_quartz"
+    }
+  ]
+}

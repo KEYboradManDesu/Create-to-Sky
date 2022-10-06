@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:plates/gold"
+  },
+  "result": {
+    "item": "minecraft:gold_ingot"
+  }
+}

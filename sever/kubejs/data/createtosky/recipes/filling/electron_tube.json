@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:polished_rose_quartz"
+    },
+    {
+      "fluid": "tconstruct:molten_iron",
+      
+      "amount": 90
+    }
+  ],
+  "results": [
+    {
+      "item": "create:electron_tube"
+    }
+  ]
+}

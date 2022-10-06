@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "thermal:hazmat_boots"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_space_boots"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        },
+        {
+          "item": "kubejs:matter_plastics"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        },
+        {
+          "item": "beyond_earth:compressed_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        },
+        {
+          "item": "kubejs:matter_plastics"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_space_boots"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:space_boots",
+      "chance": 1
+    }
+  ],
+  "loops": 3
+}

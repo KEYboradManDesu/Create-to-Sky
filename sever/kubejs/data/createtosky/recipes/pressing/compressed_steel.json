@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+      
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:compressed_steel",
+      "amount": 1
+    }
+  ]
+}

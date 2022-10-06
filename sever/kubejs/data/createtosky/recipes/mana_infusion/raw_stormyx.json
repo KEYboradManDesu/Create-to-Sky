@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "tag": "forge:raw_materials/uranium"
+  },
+  "output": {
+    "item": "kubejs:raw_stormyx"
+  },
+  "mana": 20000
+}
