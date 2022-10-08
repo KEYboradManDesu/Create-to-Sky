@@ -1,5 +1,5 @@
 {
-  "name": "§6混沌炼金机§r",
+  "name": "§6混沌炼金机（暂未完成）§r",
   "appearance": {
     "block": "cabricality:machine/chaotic_achemy",
 	  "hardness": 1,
@@ -79,7 +79,7 @@
       "filter": ["#forge:tools/achemy"],
       "whitelist": true,
       "config": {
-        "default": "input"
+        "default": "both"
       }
     }, 
     {
@@ -90,7 +90,7 @@
       "filter": ["#forge:tools/achemy"],
       "whitelist": true,
       "config": {
-        "default": "input"
+        "default": "both"
       }
     }, 
     {
@@ -101,42 +101,9 @@
       "filter": ["#forge:tools/achemy"],
       "whitelist": true,
       "config": {
-        "default": "input"
+        "default": "both"
       }
     }, 
-    {
-      "mode": "input",
-      "id": "outtool",
-      "capacity": 1,
-      "type": "custommachinery:item",
-      "filter": ["#forge:tools/achemy"],
-      "whitelist": true,
-      "config": {
-        "default": "output"
-      }
-    }, 
-    {
-      "mode": "input",
-      "id": "outtool2",
-      "capacity": 1,
-      "type": "custommachinery:item",
-      "filter": ["#forge:tools/achemy"],
-      "whitelist": true,
-      "config": {
-        "default": "output"
-      }
-    },
-    {
-      "mode": "input",
-      "id": "outtool3",
-      "capacity": 1,
-      "type": "custommachinery:item",
-      "filter": ["#forge:tools/achemy"],
-      "whitelist": true,
-      "config": {
-        "default": "output"
-      }
-    },
 	{
       "mode": "input",
       "id": "fluid1",
@@ -145,7 +112,7 @@
 	    "filter": ["kubejs:powered_water"],
       "whitelist": true,
       "config": {
-        "default": "input"
+        "default": "both"
       }
     }, 	
     {
@@ -192,27 +159,6 @@
       "type": "custommachinery:slot",
       "item": "kubejs:tool_empty",
       "id": "tool3"
-    },
-    {
-      "x": 43,
-      "y": 17,
-      "type": "custommachinery:slot",
-      "item": "kubejs:tool_empty",
-      "id": "outtool"
-    },
-    {
-      "x": 43,
-      "y": 37,
-      "type": "custommachinery:slot",
-      "item": "kubejs:tool_empty",
-      "id": "outtool2"
-    },
-    {
-      "x": 43,
-      "y": 57,
-      "type": "custommachinery:slot",
-      "item": "kubejs:tool_empty",
-      "id": "outtool3"
     },
     {
       "x": 88,
@@ -262,7 +208,7 @@
       "type": "custommachinery:fluid"
     },
 	{
-      "text": "§6§l混沌炼金反应器",
+      "text": "§6§l混沌炼金反应器（暂未完成）",
       "x": 43,
       "y": 7,
       "type": "custommachinery:text"

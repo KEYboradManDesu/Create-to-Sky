@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createcafe:bucket/pomegranate_tea_bucket"
+  }
+}

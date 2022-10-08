@@ -1,22 +1,22 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "forge:plates/copper"
+    "tag": "forge:plates/brass"
   },
   "transitionalItem": {
-    "item": "kubejs:incomplete_advanced_bullet"
+    "item": "kubejs:incomplete_box_ammo"
   },
   "sequence": [
     {
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         }
       ]
     },
@@ -24,7 +24,23 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
+        },
+        {
+          "item": "immersiveengineering:empty_casing"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_box_ammo"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_box_ammo"
         },
         {
           "item": "kubejs:black_gunpowder"
@@ -32,7 +48,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         }
       ]
     },
@@ -40,7 +56,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         },
         {
           "tag": "forge:nuggets/steel"
@@ -48,7 +64,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         }
       ]
     },
@@ -56,15 +72,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         },
         {
-          "tag": "forge:plates/iron"
+          "tag": "forge:plates/brass"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_advanced_bullet"
+          "item": "kubejs:incomplete_box_ammo"
         }
       ]
     }

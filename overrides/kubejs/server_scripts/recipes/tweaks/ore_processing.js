@@ -123,6 +123,8 @@ onEvent('item.tags', event => {
   event.get('forge:glazed_terracotta').add('minecraft:red_glazed_terracotta')
   event.get('forge:glazed_terracotta').add('minecraft:black_glazed_terracotta')
 
+  event.get('minecraft:melon_slice').add('minecraft:melon_slice')
+
   event.get('forge:cheese/cheese').add('vanillacookbook:cheese')
   event.get('forge:cheese/cheese').add('shelve:cheese')
 
@@ -270,6 +272,13 @@ onEvent('item.tags', event => {
   event.get("forge:gears/diamond").remove("industrialforegoing:diamond_gear")
   event.get("forge:gears/gold").remove("industrialforegoing:gold_gear")
   event.get("forge:gears/iron").remove("industrialforegoing:iron_gear")
+
+  event.get("forge:ingots/lead").remove("mekanism:ingot_lead")
+  event.get("forge:ingots/tin").remove("mekanism:ingot_tin")
+  event.get("forge:dusts/lead").remove("mekanism:dust_lead")
+  event.get("forge:dusts/tin").remove("mekanism:dust_tin")
+  event.get("forge:nuggets/lead").remove("mekanism:nugget_lead")
+  event.get("forge:nuggets/tin").remove("mekanism:nugget_tin")
 
   event.get("forge:dusts/desh").add("kubejs:desh_dust")
   event.get("forge:dusts/calorite").add("kubejs:calorite_dust")

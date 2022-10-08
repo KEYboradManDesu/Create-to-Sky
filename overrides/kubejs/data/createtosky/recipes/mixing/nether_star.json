@@ -10,7 +10,7 @@
       "tag": "forge:nether_stars"
     },
     {
-      "item": "avaritia:infinity_catalyst"
+      "item": "kubejs:blaze_brass"
     }
   ],
   "results": [
@@ -19,7 +19,7 @@
       "amount": 2
     },
     {
-      "item": "avaritia:infinity_catalyst",
+      "item": "create:brass_ingot",
       "amount": 1
     }
   ],

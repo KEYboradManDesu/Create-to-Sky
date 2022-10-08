@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "createcafe:block/coffee_stage0" },
+    "age=1": { "model": "createcafe:block/coffee_stage1" },
+    "age=2": { "model": "createcafe:block/coffee_stage2" },
+    "age=3": { "model": "createcafe:block/coffee_stage3" },
+    "age=4": { "model": "createcafe:block/coffee_stage4" },
+    "age=5": { "model": "createcafe:block/coffee_stage5" },
+    "age=6": { "model": "createcafe:block/coffee_stage6" },
+    "age=7": { "model": "createcafe:block/coffee_stage7" }
+  }
+}

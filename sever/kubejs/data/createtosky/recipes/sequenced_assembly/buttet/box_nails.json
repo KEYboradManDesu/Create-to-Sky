@@ -4,19 +4,19 @@
     "tag": "forge:plates/steel"
   },
   "transitionalItem": {
-    "item": "kubejs:incomplete_basic_bullet"
+    "item": "kubejs:incomplete_box_nails"
   },
   "sequence": [
     {
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         }
       ]
     },
@@ -24,12 +24,12 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         }
       ]
     },
@@ -37,7 +37,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         },
         {
           "tag": "forge:paper"
@@ -45,7 +45,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         }
       ]
     },
@@ -53,7 +53,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
         },
         {
           "tag": "forge:super_glue"
@@ -61,7 +61,23 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_basic_bullet"
+          "item": "kubejs:incomplete_box_nails"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_box_nails"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_box_nails"
         }
       ]
     }

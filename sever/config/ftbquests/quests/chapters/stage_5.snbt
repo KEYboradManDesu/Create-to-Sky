@@ -37,6 +37,7 @@
 		{
 			title: "准备起飞！"
 			icon: "beyond_earth:nasa_workbench"
+			disable_toast: true
 			x: 2.0d
 			y: 7.75d
 			shape: "hexagon"
@@ -642,8 +643,7 @@
 			}
 			x: 3.5999999999999996d
 			y: 8.4d
-			shape: "circle"
-			subtitle: "步骤 &b50-A"
+			shape: "square"
 			description: [
 				"花一分钟时间制作一个代表你的太空计划的旗帜，以带到月球上。 您可以像横幅一样对其应用图案。"
 				"在你自己的时间里，坐在你组装好的火箭上，然后按 Space。"

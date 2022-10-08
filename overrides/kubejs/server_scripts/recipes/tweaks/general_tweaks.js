@@ -125,6 +125,13 @@ onEvent("recipes", event => {
   event.remove({ id: 'neapolitan:chocolate/chocolate_cake' })
   event.remove({ id: 'neapolitan:chocolate/chocolate_ice_cream' })
 
+  event.remove({ output: 'mekanism:ingot_lead' })
+  event.remove({ output: 'mekanism:ingot_tin' })
+  event.remove({ output: 'mekanism:dust_lead' })
+  event.remove({ output: 'mekanism:dust_tin' })
+  event.remove({ output: 'mekanism:nugget_lead' })
+  event.remove({ output: 'mekanism:nugget_tin' })
+
   event.remove({ id: 'avaritia:infinity_catalyst' })
   event.remove({ id: 'avaritia:ultimate_stew' })
   event.remove({ id: 'avaritia:cosmic_meatballs' })
@@ -269,9 +276,6 @@ onEvent("recipes", event => {
   event.replaceInput("#forge:plates/gold", "create:golden_sheet")
   event.replaceInput("#forge:plates/iron", "create:iron_sheet")
   event.replaceInput("#forge:plates/copper", "create:copper_sheet")
-
-  event.shaped('thermal:lead_ingot', [
-    'A'], { A: 'mekanism:ingot_lead' })
 
   event.shaped("thermal:raw_lead", [
     "S"
@@ -1115,7 +1119,7 @@ onEvent("recipes", event => {
     S: 'projecte:dark_matter'
   })
 
-  event.shaped(('avaritia:neutronium_gear'), [
+  event.shaped(('4x avaritia:neutronium_gear'), [
 		' S ',
 		'SCS',
 		' S '
@@ -1165,6 +1169,7 @@ onEvent("recipes", event => {
   event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "#minecraft:music_discs")
   event.recipes.createMilling([Item.of("avaritia:record_fragment", 4)], "#minecraft:music_discs")
   event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "kubejs:rickroll")
+  event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "create_confectionery:the_bright_side")
 
   event.recipes.createCrushing([Item.of("kubejs:elytra_broken", 2), Item.of("kubejs:elytra_broken", 2).withChance(.25)], "#forge:elytra")
   

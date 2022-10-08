@@ -41,7 +41,7 @@ onEvent("item.registry", event => {
 		registerMechanism("Infernal", "酷热", RARITY_UNCOMMON)
 		registerMechanism("Sturdy", "坚实", RARITY_UNCOMMON)
 		registerMechanism("Inductive", "超频", RARITY_UNCOMMON)
-		registerMechanism("Abstruse", "深邃", RARITY_UNCOMMON)
+		registerMechanism("Abstruse", "§3深邃", RARITY_UNCOMMON)
 		registerMechanism("Calculation", "智能", RARITY_UNCOMMON)
 		registerMechanism("crystalmatrix", "晶格", RARITY_UNCOMMON)
 		registerMechanism("creative", "§d§l创世")
@@ -465,13 +465,13 @@ onEvent("item.registry", event => {
 			.displayName("§b§l神器鸭§r")
 			.unstackable()
 
-		event.create("incomplete_advanced_bullet")
-		    .parentModel(modpackId + ":item/advanced_bullet")
-			.displayName("全威力弹药（半成品）")
+		event.create("incomplete_box_ammo")
+		    .parentModel(modpackId + ":item/incomplete_box_ammo")
+			.displayName("弹药箱（半成品）")
 
-		event.create("incomplete_basic_bullet")
-		    .parentModel(modpackId + ":item/basic_bullet")
-			.displayName("钢钉（半成品）")
+		event.create("incomplete_box_nails")
+		    .parentModel(modpackId + ":item/incomplete_box_nails")
+			.displayName("钢钉盒（半成品）")
 
 		event.create("box_ammo")
 		    .parentModel(modpackId + ":item/box_ammo")
@@ -825,7 +825,7 @@ onEvent("fluid.registry", event => {
 		.noBlock()
 
 	event.create("infinity")
-		.displayName("§4§l熔融无尽§r")
+		.displayName("§c熔融无尽§r")
 		.thickTexture(0xFFFAFA)
 		.noBlock()	
 

@@ -439,12 +439,13 @@
 			]
 		}
 		{
-			title: "&6&l查理的巧克力工厂I"
+			title: "&6&l查理的巧克力工厂 I"
 			icon: "create:bar_of_chocolate"
 			x: -1.0d
 			y: -6.0d
 			shape: "rsquare"
-			description: ["搭建巧克力自动化生产线。"]
+			subtitle: "梦幻世界"
+			description: ["尝试搭建&6巧克力&r自动化生产线。"]
 			id: "4A38517AC2118B36"
 			tasks: [
 				{
@@ -466,12 +467,13 @@
 			}]
 		}
 		{
-			title: "&6&l查理的巧克力工厂II"
+			title: "&6&l查理的巧克力工厂 II"
 			icon: "kubejs:sweet_mechanism"
 			x: -2.0d
 			y: -6.0d
 			shape: "circle"
-			description: ["机械动力的浪漫：搭建一条&6甜蜜构件&r生产线。"]
+			subtitle: "真正的梦幻世界"
+			description: ["尝试搭建一条&6甜蜜构件&r生产线。"]
 			dependencies: ["4A38517AC2118B36"]
 			hide: true
 			id: "482BE74B40E1775D"
@@ -486,6 +488,19 @@
 					id: "0D0C7FA18B384870"
 					type: "checkmark"
 					title: "已自动化"
+				}
+			]
+			rewards: [
+				{
+					id: "65BC66681021FBA6"
+					type: "item"
+					item: "thermal:gold_coin"
+					count: 2
+				}
+				{
+					id: "324616E78202F845"
+					type: "item"
+					item: "vanillacookbook:chocolate_egg"
 				}
 			]
 		}

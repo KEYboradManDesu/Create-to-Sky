@@ -1,5 +1,14 @@
 onEvent("recipes", event => {
 
+	event.recipes.createMechanicalCrafting((Item.of('custommachinery:custom_machine_item', '{machine:"createtosky:chaotic_achemy"}')), [
+		'CCC',
+		'ABA',
+		'CCC'      
+	], { 
+		A: 'thermal:machine_frame' ,
+		B: 'botania:alchemy_catalyst' ,
+		C: 'minecraft:obsidian' 
+})
 
 	let alchemy_mix = (output, catalyst, r1, r2, amount) => {
 		event.recipes.createMixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
@@ -115,7 +124,7 @@ onEvent("recipes", event => {
 	recompact(TE("ruby_dust"), TE("ruby"))
 	recompact("forbidden_arcanus:arcane_crystal_dust", "forbidden_arcanus:arcane_crystal")
 
-	/*global.substrates.forEach(a => {
+	global.substrates.forEach(a => {
 		a.forEach(e => {
 			if (!e.ingredient)
 				return
@@ -124,14 +133,8 @@ onEvent("recipes", event => {
 				"ingredients": [Ingredient.of(e.ingredient).toJson(), { "fluid": "tconstruct:molten_glass", "amount": 100 }],
 				"result": [{ "item": e.id }]
 			})
-			event.custom({
-				"type": "thermal:sawmill",
-				"ingredient": { "item": e.id },
-				"result": [{ "item": e.outputItem ? e.outputItem : typeof e.ingredient == "string" ? e.ingredient : e.ingredient[0], "chance": 0.75 }],
-				"energy": 2000
-			})
 		})
-	})*/
+	})
 
 	event.custom({
 		"type": "thermal:sawmill",
@@ -174,16 +177,16 @@ onEvent("recipes", event => {
 		"result": [{ "item": "kubejs:accellerator_glowstone" }]
 	})
 
-	function rnd(seed) {
+function rnd(seed) {
 		let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
 		return seedO / (233280.0)
-	}
+}
 	
-	function rand(number, seed) {
+function rand(number, seed) {
 		return Math.ceil(rnd(seed) * number)
-	}
+}
 	
-	function select(input, seed) {
+function select(input, seed) {
 		let selectTemp = input
 		let selected = []
 		for (let i = 0; i < 4; i++) {
@@ -192,39 +195,42 @@ onEvent("recipes", event => {
 			selectTemp.splice(num, 1)
 		}
 		return selected
-	}
-	function chaosT(subs, seed, event) {
-		if (DEBUG == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
-		let igneous = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone"]
-		let herbal = ["red", "orange", "yellow", "green", "blue", "magenta"]
-		let volatile = ["blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine"]
-		let metal = ["zinc", "copper", "iron", "lead", "gold"]
-		let crystal = ["sulfur", "certus"]
-		let gem = ["lapis", "emerald", "diamond", "ruby", "sapphire"]
-		let chaos = ["igneous", "herbal", "volatile", "crystal", "metal", "gem"]
-		let allSubstrate = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone", "red", "orange", "yellow", "green", "blue", "magenta", "blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine", "zinc", "copper", "iron", "lead", "gold", "sulfur", "certus", "lapis", "emerald", "diamond", "ruby", "sapphire"]
+}
 	
-		if (DEBUG == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
-	
-		if (subs == select(chaos, seed).sort().toString()) return "chaos"
-		if (subs == select(igneous, seed).sort().toString()) return "igneous"
-		if (subs == select(herbal, seed).sort().toString()) return "herbal"
-		if (subs == select(volatile, seed).sort().toString()) return "volatile"
-		if (subs == select(metal, seed).sort().toString()) return "metal"
-		if (subs == select(gem, seed).sort().toString()) return "gem"
-		if (subs == ["sulfur", "certus"].sort().toString()) return "crystal"
-	
-	
-	
-		if (subs == ["chaos", allSubstrate[rand(allSubstrate.length, seed + 114514)]].sort().toString()) return "silicon"
-		if (subs == ["chaos", allSubstrate[rand(allSubstrate.length, seed + 1919810)]].sort().toString()) return "silver"
-	
-		return ""
-	}
-	
+function chaosT(subs, seed, event) {
 
-   event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
+	if (DEBUG == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
+	let igneous = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone"]
+	let herbal = ["red", "orange", "yellow", "green", "blue", "magenta"]
+	let volatile = ["blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine"]
+	let metal = ["zinc", "copper", "iron", "lead", "gold"]
+	let crystal = ["sulfur", "certus"]
+	let gem = ["lapis", "emerald", "diamond", "ruby", "sapphire"]
+	let chaos = ["igneous", "herbal", "volatile", "crystal", "metal", "gem"]
+	let allSubstrate = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone", "red", "orange", "yellow", "green", "blue", "magenta", "blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine", "zinc", "copper", "iron", "lead", "gold", "sulfur", "certus", "lapis", "emerald", "diamond", "ruby", "sapphire"]
+
+	if (DEBUG == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
+
+	if (subs == select(chaos, seed).sort().toString()) return "chaos"
+	if (subs == select(igneous, seed).sort().toString()) return "igneous"
+	if (subs == select(herbal, seed).sort().toString()) return "herbal"
+	if (subs == select(volatile, seed).sort().toString()) return "volatile"
+	if (subs == select(metal, seed).sort().toString()) return "metal"
+	if (subs == select(gem, seed).sort().toString()) return "gem"
+	if (subs == ["sulfur", "certus"].sort().toString()) return "crystal"
+
+
+
+	if (subs == ["chaos", allSubstrate[rand(allSubstrate.length, seed + 114514)]].sort().toString()) return "silicon"
+	if (subs == ["chaos", allSubstrate[rand(allSubstrate.length, seed + 1919810)]].sort().toString()) return "silver"
+
+	return ""
+
+}
+
+   /*event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")
+   .requireFluid("kubejs:powered_water")
    .requireItemTag("#cabricality:substrates", 1, "substrates1")
    .requireItemTag("#cabricality:substrates", 1, "substrates2")
    .requireItemTag("#cabricality:substrates", 1, "substrates3")
@@ -233,11 +239,12 @@ onEvent("recipes", event => {
    .runCommandOnEnd("/particle ae2:matter_cannon_fx ~0.5 ~0.5 ~0.5",false)
    .runCommandOnEnd("/playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 0.95 1.5",false)
    .dropItemOnEnd('kubejs:substrate_chaos')
+   .produceFluid("minecraft:water")*/
 
 
    event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")
-   .requireItem("thermal:flux_magnet")
+   .requireFluid("kubejs:powered_water")
    .requireItem("minecraft:basalt", "substrates1")
    .requireItem("minecraft:basalt", "substrates2")
    .requireItem("minecraft:basalt", "substrates3")
@@ -246,11 +253,10 @@ onEvent("recipes", event => {
    .runCommandOnEnd("/particle ae2:matter_cannon_fx ~0.5 ~0.5 ~0.5",false)
    .runCommandOnEnd("/playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 0.95 1.5",false)
    .dropItemOnEnd('4x thermal:basalz_rod')
-   .dropItemOnEnd('thermal:flux_magnet')
+   .produceFluid("minecraft:water")
 
    event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")
-   .requireItem("ae2:entropy_manipulator")
    .requireItem("minecraft:snow_block", "substrates1")
    .requireItem("minecraft:snow_block", "substrates2")
    .requireItem("minecraft:snow_block", "substrates3")
@@ -259,7 +265,6 @@ onEvent("recipes", event => {
    .runCommandOnEnd("/particle ae2:matter_cannon_fx ~0.5 ~0.5 ~0.5",false)
    .runCommandOnEnd("/playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 0.95 1.5",false)
    .dropItemOnEnd('4x thermal:blizz_rod')
-   .dropItemOnEnd('ae2:entropy_manipulator')
 
   
 	
