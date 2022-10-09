@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "cgm:items/table",
-		"2": "cgm:items/texture",
-		"3": "cgm:items/wrench",
-		"6": "cgm:items/workbench",
-		"particle": "cgm:items/wrench"
+		"1": "cgm:block/workbench5",
+		"2": "cgm:block/workbench4",
+		"3": "cgm:block/workbench3",
+		"6": "cgm:block/workbench2",
+		"particle": "cgm:block/workbench3"
 	},
 	"elements": [
 		{

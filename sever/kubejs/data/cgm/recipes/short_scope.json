@@ -6,12 +6,12 @@
       "count": 2
     },
     {
-      "tag": "forge:glass_panes",
+      "item": "thermal:signalum_gear",
       "count": 1
     },
     {
-      "item": "thermal:signalum_gear",
-      "count": 2
+      "item": "create:nixie_tube",
+      "count": 1
     }
   ],
   "result": {

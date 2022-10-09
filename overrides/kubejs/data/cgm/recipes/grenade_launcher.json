@@ -15,7 +15,11 @@
     },
     {
       "item": "kubejs:damascus_steel_ingot",
-      "count": 48
+      "count": 24
+    },
+    {
+      "tag": "forge:plates/brass",
+      "count": 32
     },
     {
       "item": "nethersdelight:propelplant_cane",

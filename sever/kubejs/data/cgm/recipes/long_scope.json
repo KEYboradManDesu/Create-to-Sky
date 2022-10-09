@@ -6,12 +6,12 @@
       "count": 8
     },
     {
-      "tag": "forge:glass_panes",
+      "item": "thermal:signalum_gear",
       "count": 2
     },
     {
-      "item": "thermal:signalum_gear",
-      "count": 2
+      "item": "minecraft:spyglass",
+      "count": 1
     }
   ],
   "result": {

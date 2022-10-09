@@ -2,8 +2,8 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:plates/iron",
-      "count": 2
+      "tag": "forge:plates/brass",
+      "count": 6
     },
     {
       "item": "thermal:cured_rubber",

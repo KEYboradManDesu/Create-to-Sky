@@ -280,6 +280,14 @@ onEvent('item.tags', event => {
   event.get("forge:nuggets/lead").remove("mekanism:nugget_lead")
   event.get("forge:nuggets/tin").remove("mekanism:nugget_tin")
 
+  event.get("forge:storage_blocks/lead").remove("immersiveengineering:storage_lead")
+  event.get("forge:storage_blocks/nickel").remove("immersiveengineering:storage_nickel")
+  event.get("forge:storage_blocks/silver").remove("immersiveengineering:storage_silver")
+  event.get("forge:storage_blocks/constantan").remove("immersiveengineering:storage_constantan")
+  event.get("forge:storage_blocks/uranium").remove("immersiveengineering:storage_uranium")
+  event.get("forge:storage_blocks/electrum").remove("immersiveengineering:storage_electrum")
+
+
   event.get("forge:dusts/desh").add("kubejs:desh_dust")
   event.get("forge:dusts/calorite").add("kubejs:calorite_dust")
   event.get("forge:dusts/ostrum").add("kubejs:ostrum_dust")

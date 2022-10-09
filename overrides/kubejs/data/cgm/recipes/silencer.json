@@ -8,6 +8,10 @@
     {
       "item": "minecraft:sponge",
       "count": 1
+    },
+    {
+      "tag": "forge:plates/brass",
+      "count": 8
     }
   ],
   "result": {

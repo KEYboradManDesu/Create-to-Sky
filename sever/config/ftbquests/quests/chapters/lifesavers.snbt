@@ -648,7 +648,7 @@
 				id: "cgm:pistol"
 				Count: 1b
 				tag: {
-					Color: 16711680
+					AmmoCount: 4
 				}
 			}
 			x: -6.0d

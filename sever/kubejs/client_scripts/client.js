@@ -133,6 +133,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("avaritia:endest_pearl", [`§6易燃易爆，十分危险！`]);
 	tooltip.add("grimoireofgaia:doll_maid", [`§7Mic女仆装`]);
 	tooltip.add("kubejs:protein_bar", [`§7Mic最爱吃的品牌`]);
+	tooltip.add("kubejs:damascus_steel_ingot", [`§7适合锻造枪支`]);
 
 	tooltip.add("kubejs:matrix_sheet", [`§7暂时没有用处`]);
 

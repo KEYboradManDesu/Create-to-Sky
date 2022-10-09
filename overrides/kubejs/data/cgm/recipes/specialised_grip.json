@@ -2,7 +2,7 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:plates/iron",
+      "tag": "forge:plates/brass",
       "count": 6
     },
     {
