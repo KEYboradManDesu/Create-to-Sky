@@ -280,6 +280,8 @@ onEvent('item.tags', event => {
   event.get("forge:nuggets/lead").remove("mekanism:nugget_lead")
   event.get("forge:nuggets/tin").remove("mekanism:nugget_tin")
 
+  event.get("forge:storage_blocks/tin").remove("mekanism:block_tin")
+  event.get("forge:storage_blocks/lead").remove("mekanism:block_lead")
   event.get("forge:storage_blocks/lead").remove("immersiveengineering:storage_lead")
   event.get("forge:storage_blocks/nickel").remove("immersiveengineering:storage_nickel")
   event.get("forge:storage_blocks/silver").remove("immersiveengineering:storage_silver")
