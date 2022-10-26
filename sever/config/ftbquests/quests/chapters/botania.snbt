@@ -62,10 +62,7 @@
 			subtitle: "步骤 &bM-2"
 			description: ["&6花药台&f可让您制作所需的所有生成花和功能花。"]
 			min_required_dependencies: 1
-			dependencies: [
-				"19EDC9AB3FA57442"
-				"3712DD92B446BB60"
-			]
+			dependencies: ["3712DD92B446BB60"]
 			id: "61F484F59906F87C"
 			tasks: [{
 				id: "2BC8A3CB7C8210DB"

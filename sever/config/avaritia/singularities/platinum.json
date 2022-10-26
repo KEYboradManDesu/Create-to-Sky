@@ -1,0 +1,20 @@
+{
+  "name": "singularity.avaritia.platinum",
+  "colors": [
+    "6feaef",
+    "57b8bc"
+  ],
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/platinum",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/platinum"
+  }
+}

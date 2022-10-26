@@ -1,0 +1,19 @@
+
+#Enable/Disable Recipes
+[compat]
+	#Disable recipes for duplicate/similar items to Farmer's Delight? (Default: false)
+	hideFDItems = false
+	#Disable recipes for duplicate/similar items to Neapolitan? (Default: false)
+	hideNPItems = false
+
+#Enable/Disable Features
+[features]
+	#Disable additional Villager trades? (Default: false)
+	trades = false
+	#Disable additional loot? (Default: false)
+	loot = false
+	#Disable Chorus Cake Teleportation? (Default: false)
+	cakeTeleportation = false
+	#Disable the returnal of a bottle when smelting cheese in a furnace? (Default: false)
+	cheeseBottle = false
+

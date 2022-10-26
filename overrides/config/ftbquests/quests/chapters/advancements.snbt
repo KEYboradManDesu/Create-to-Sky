@@ -65,11 +65,24 @@
 					1569325055
 				]
 			}]
-			rewards: [{
-				id: "3D2056F0C231DFE5"
-				type: "item"
-				item: "thermal:gold_coin"
-			}]
+			rewards: [
+				{
+					id: "3D2056F0C231DFE5"
+					type: "item"
+					item: "thermal:gold_coin"
+				}
+				{
+					id: "33E08067015B05D7"
+					type: "item"
+					item: {
+						id: "supplementaries:bubble_blower"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "&7&l基建狂魔"
@@ -293,6 +306,11 @@
 				}
 				stat: "minecraft:fly_one_cm"
 				value: 1145141919
+			}]
+			rewards: [{
+				id: "55B7B0533F84B792"
+				type: "item"
+				item: "upgradednetherite_items:creative_upgraded_netherite_totem"
 			}]
 		}
 		{

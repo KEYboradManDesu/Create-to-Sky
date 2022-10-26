@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "computercraft:block/full_modem",
   "textures": {
-    "all": "computercraft:block/wired_modem_face_peripheral"
+    "side": "computercraft:block/full_wired_modem_face_peripheral"
   }
 }

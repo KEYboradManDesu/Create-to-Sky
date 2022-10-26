@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "fluid": "kubejs:fine_sand",
-      "amount": 405
+      "amount": 450
     },
     {
       "item": "kubejs:purified_sand"

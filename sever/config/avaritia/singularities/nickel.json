@@ -1,0 +1,20 @@
+{
+  "name": "singularity.avaritia.nickel",
+  "colors": [
+    "e1d798",
+    "b1976c"
+  ],
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/nickel",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/nickel"
+  }
+}

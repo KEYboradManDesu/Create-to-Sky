@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_sa:large_fueling_tank"
+    },
+    {
+      "fluid": "beyond_earth:molten_desh",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:desh_tank"
+    }
+  ]
+}

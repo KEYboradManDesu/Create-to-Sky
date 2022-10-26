@@ -1,0 +1,6 @@
+
+#Compatibility Configs
+[ore]
+	#Enable cobalt ore pieces, chunks and ingots if they exist. 'enableOreOverride' in the main Ex Nihilo config must be true for this to work. (Default: true)
+	enableCobalt = true
+

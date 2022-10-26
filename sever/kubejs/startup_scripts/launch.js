@@ -628,6 +628,11 @@ onEvent("item.registry", event => {
 		    .texture(modpackId + ":item/raw_logic_sheet")
 		    .displayName('§d智能逻辑板§r').rarity(RARITY_UNCOMMON)
 
+		event.create('illegal_gun_parts')
+		    .texture(modpackId + ":item/illegal_gun_parts")
+		    .displayName('非法枪械部件').rarity(RARITY_UNCOMMON)
+			.maxStackSize(4)
+
 		event.create('tool_empty')
 		    .texture(modpackId + ":item/tool_empty")
 		    .displayName('幽灵工具')
@@ -817,12 +822,15 @@ onEvent("fluid.registry", event => {
 	event.create("coke")
 		.displayName("液态焦炭")
 		.thinTexture(0x323232)
+		.bucketColor(0x323232)
 		.noBlock()
 
 	event.create("fine_sand")
 		.displayName("细砂")
-		.thickTexture(0xded6a4)
-		.noBlock()
+		.thickTexture(0xE3DBB0)
+		.bucketColor(0xE3DBB0)
+		.stillTexture(modpackId + ':fluid/fine_sand_still')
+		.flowingTexture(modpackId + ':fluid/fine_sand_flow')
 
 	event.create("infinity")
 		.displayName("§c熔融无尽§r")
@@ -833,19 +841,27 @@ onEvent("fluid.registry", event => {
 	event.create("raw_logic")
 		.displayName("玻色-爱因斯坦凝聚态逻辑（未处理）")
 		.thinTexture(0xE7FFCB)
-		.noBlock()
+		.bucketColor(0xE7FFCB)
+		.stillTexture(modpackId + ':fluid/number_still')
+		.flowingTexture(modpackId + ':fluid/number_flow')
+		.color(0xE7FFCB)
 
 	for (i = 0; i < 10; i++) {
 		event.create("number_" + i)
 			.displayName("玻色-爱因斯坦凝聚态逻辑 （" + i + "）")
 			.thinTexture(colors[i])
-			.noBlock()
-			.noBucket()
+			.bucketColor(colors[i])
+			.stillTexture(modpackId + ':fluid/number_still')
+			.flowingTexture(modpackId + ':fluid/number_flow')
+			.color(colors[i])
+			
 	}
 	event.create("matrix")
 		.displayName("§d液态智能矩阵§r")
 		.thinTexture(colors[0])
-		.noBlock()
+		.bucketColor(colors[0])
+		.stillTexture(modpackId + ':fluid/matrix_still')
+		.flowingTexture(modpackId + ':fluid/matrix_flow')
 
 		
 		

@@ -41,19 +41,14 @@
 				{
 					id: "5345AA8760A95127"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 2b }
-					item: "thermal:gold_coin"
-					count: 2L
+					icon: { id: "thermal:silver_coin", Count: 16b }
+					item: "thermal:silver_coin"
+					count: 16L
 				}
 				{
 					id: "10CEE9A1DB690CB1"
 					type: "item"
 					item: "create:empty_blaze_burner"
-				}
-				{
-					id: "5265755D8E0D998F"
-					type: "item"
-					item: "kubejs:good_idea"
 				}
 			]
 			rewards: [{

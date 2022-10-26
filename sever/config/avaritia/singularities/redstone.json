@@ -1,0 +1,11 @@
+{
+  "name": "singularity.avaritia.redstone",
+  "colors": [
+    "ff0000",
+    "8a0901"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:redstone"
+  }
+}

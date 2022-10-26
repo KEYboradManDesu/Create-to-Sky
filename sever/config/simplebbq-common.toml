@@ -1,0 +1,12 @@
+
+#General settings
+[general]
+	#Set this value to change the minimum cooking time for the Campfire Cooking Recipe when cooking on the grill.
+	#Note that this value will not be greater than the base cooking time, so even if a large value is set, it will still be equal to the base cooking time.
+	#Range: > 1
+	campfireCookingOnGrillMinimumCookingTime = 200
+	#Set this value to change the cooking time modifier for the Campfire Cooking Recipe when cooking on the grill.
+	#actualCookingTime = min(baseCookingTime * campfireCookingOnGrillSpeedModifier, campfireCookingOnGrillMinimumCookingTime)
+	#Range: 0.0 ~ 1.0
+	campfireCookingOnGrillCookingTimeModifier = 0.5
+

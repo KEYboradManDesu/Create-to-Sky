@@ -1,0 +1,68 @@
+
+#General Settings
+[General]
+	#Disable mobs that use the Invisibility status effect when far from a player [Default: false]
+	disableInvisibility = false
+	#All mobs are now hostile [Default: false]
+	allPassiveMobsHostile = false
+	#Stop befriended mobs from despawning [Default: false]
+	friendlyPersistence = false
+
+#Attribute settings
+[Attributes]
+
+	#Tier 1
+	[Attributes.Tier1]
+		#Defines the health of Tier 1 Gaia mobs (50 = half, 200 = double) [40 = 20 Hearts]
+		#Range: > 1
+		tier1maxHealth = 40
+		#Defines the attack damage of Tier 1 Gaia mobs (50 = half, 200 = double) [4 = 2 Hearts]
+		#Range: > 1
+		tier1attackDamage = 4
+		#Defines the maximum amount of hits required to defeat Tier 1 Gaia mobs (0 = disable)
+		#Range: > 1
+		tier1baseDefense = 2
+
+	#Tier 2
+	[Attributes.Tier2]
+		#Defines the health of Tier 2 Gaia mobs (50 = half, 200 = double) [80 = 40 Hearts]
+		#Range: > 1
+		tier2maxHealth = 80
+		#Defines the attack damage of Tier 2 Gaia mobs (50 = half, 200 = double) [8 = 4 Hearts]
+		#Range: > 1
+		tier2attackDamage = 8
+		#Defines the maximum amount of hits required to defeat Tier 2 Gaia mobs (0 = disable)
+		#Range: > 1
+		tier2baseDefense = 4
+
+	#Tier 3
+	[Attributes.Tier3]
+		#Defines the health of Tier 3 Gaia mobs (50 = half, 200 = double) [160 = 80 Hearts]
+		#Range: > 1
+		tier3maxHealth = 160
+		#Defines the attack damage of Tier 3 Gaia mobs (50 = half, 200 = double) [12 = 6 Hearts]
+		#Range: > 1
+		tier3attackDamage = 12
+		#Defines the maximum amount of hits required to defeat Tier 3 Gaia mobs (0 = disable)
+		#Range: > 1
+		tier3baseDefense = 8
+
+#Damage settings
+[Damage]
+	#Archers arrows deal an additional 1 (0.5 heart) of damage. [Default: true]
+	baseDamage = true
+	#Base Damage (melee) won't penetrate Shields. [Default: true]
+	shieldsBlockPiercing = true
+
+#Spawn settings
+[Spawn]
+	#Mobs only spawn after a certain amount of days have passed [Default: false]
+	spawnDaysPassed = false
+	#Amount of days required to have passed before they can start spawning [Default: 3]
+	#Range: > 1
+	spawnDaysSet = 3
+	#Remove spawn conditions related to height (Y-axis) [Default: false]
+	disableYRestriction = false
+	#Remove spawn conditions related to weather [Default: false]
+	spawnWeather = false
+

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.avaritia.glowstone",
+  "colors": [
+    "ffd38f",
+    "a06135"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  }
+}

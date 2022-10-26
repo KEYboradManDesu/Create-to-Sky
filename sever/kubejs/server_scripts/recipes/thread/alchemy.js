@@ -244,7 +244,6 @@ function chaosT(subs, seed, event) {
 
    event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")
-   .requireFluid("kubejs:powered_water")
    .requireItem("minecraft:basalt", "substrates1")
    .requireItem("minecraft:basalt", "substrates2")
    .requireItem("minecraft:basalt", "substrates3")
@@ -253,7 +252,6 @@ function chaosT(subs, seed, event) {
    .runCommandOnEnd("/particle ae2:matter_cannon_fx ~0.5 ~0.5 ~0.5",false)
    .runCommandOnEnd("/playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 0.95 1.5",false)
    .dropItemOnEnd('4x thermal:basalz_rod')
-   .produceFluid("minecraft:water")
 
    event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")

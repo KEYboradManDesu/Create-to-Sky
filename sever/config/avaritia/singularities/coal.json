@@ -1,0 +1,11 @@
+{
+  "name": "singularity.avaritia.coal",
+  "colors": [
+    "363739",
+    "261e24"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:coal"
+  }
+}

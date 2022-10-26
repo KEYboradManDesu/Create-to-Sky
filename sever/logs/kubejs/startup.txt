@@ -1,0 +1,5 @@
+[19:32:39] [INFO ] Loaded script startup_scripts:launch.js in 0.214 s
+[19:32:39] [INFO ] Loaded script startup_scripts:trading.js in 0.048 s
+[19:32:39] [INFO ] Loaded script startup_scripts:substrates.js in 0.009 s
+[19:32:39] [INFO ] Loaded script startup_scripts:worldgen.js in 0.001 s
+[19:32:39] [INFO ] Loaded 4/4 KubeJS startup scripts in 0.594 s

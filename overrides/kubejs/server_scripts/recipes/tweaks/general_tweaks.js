@@ -1,6 +1,5 @@
 onEvent("recipes", event => {
   
-  
   event.remove({ mod: "agape_space" })
   event.remove({ type: AE2("inscriber") })
   event.shaped(KJ("circuit_scrap", 2), [" A ", "ABA", " A "], { A: TE("invar_ingot"), B: ("kubejs:integrated_circuit") })
@@ -383,7 +382,7 @@ onEvent("recipes", event => {
   event.shapeless('botania:red_string', ['minecraft:string', 'create:rose_quartz', 'botania:pixie_dust']).id("botania:red_string_only")
 
   // gun
-  event.smithing('cgm:machine_pistol', 'cgm:pistol', 'kubejs:inductive_mechanism')
+  event.smithing('cgm:machine_pistol', 'cgm:pistol', 'immersiveengineering:toolupgrade_revolver_magazine')
   event.smithing('cgm:heavy_rifle', 'cgm:rifle', 'kubejs:abstruse_mechanism')
   event.smithing('cgm:bazooka', 'cgm:grenade_launcher', 'ae2:controller')
   event.shapeless('6x kubejs:black_gunpowder', ['minecraft:gunpowder', '#forge:dusts/charcoal', '#forge:dusts/niter', '#forge:dusts/sulfur']).id("kubejs:black_gunpowder")
@@ -600,6 +599,16 @@ onEvent("recipes", event => {
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
 
   event.shapeless('2x create:tree_fertilizer', ['#minecraft:flowers', '#minecraft:flowers', 'thermal:apatite_dust']).id("kubejs:tree_fertilizer")
+
+  event.shaped("forbidden_arcanus:edelwood_log", [
+    "BAB",
+    "ACA",
+    "BAB"
+  ], {
+    C: '#minecraft:oak_logs',
+    A: 'quark:soul_bead',
+    B: 'forbidden_arcanus:arcane_bone_meal'
+  })
 
   event.remove({ output: "exnihilosequentia:wooden_hammer" })
   event.shaped("exnihilosequentia:wooden_hammer", [
@@ -1545,9 +1554,9 @@ onEvent("recipes", event => {
   event.remove({ output: ('beyond_earth:nasa_workbench') })
   event.recipes.createMechanicalCrafting(Item.of("beyond_earth:nasa_workbench", 1), [
     " AADAA ",
-    "EFCGCFE",
-    "BHCCCHB",
-    "EECCCEE",
+    "EFBGBFE",
+    "BHBCBHB",
+    "EEBBBEE",
     "BBBBBBB"
   ], {
     A: 'create:mechanical_arm',
@@ -2261,12 +2270,6 @@ function prettierpipes(event) {
     "energy": 20000
     })
 
-    event.custom({
-    "type": "tconstruct:melting",
-    "ingredient": {"item": dust},
-    "result": {"fluid": fluid,"amount": 48},"temperature": 500,"time": 30,
-    "byproducts": [{"fluid": fluid_byproduct,"amount": 16}]
-    })
 
 }
   
@@ -2358,6 +2361,13 @@ function prettierpipes(event) {
     "experience": 0.2,
     "energy": 20000
     })
+
+  event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": {"item": dust},
+		"result": {"fluid": fluid,"amount": 90},"temperature": 500,"time": 30,
+    "byproducts": [{"fluid": fluid_byproduct,"amount": 10}]
+		})
 
 
 }
@@ -2500,4 +2510,5 @@ function prettierpipes(event) {
 	chop("sky", MC('bone_meal'))
 	chop("ender", AE2('ender_dust'))
   
+
   })

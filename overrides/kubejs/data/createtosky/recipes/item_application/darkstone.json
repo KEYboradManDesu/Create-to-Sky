@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "forbidden_arcanus:dark_matter"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:darkstone"
+    }
+  ]
+}

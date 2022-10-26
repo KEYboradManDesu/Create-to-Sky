@@ -1,0 +1,13 @@
+[19:34:12.979][INFO]: Reading Custom Machinery Machines...
+[19:34:12.981][INFO]: Parsing machine json: createtosky:chaotic_achemy in datapack: KubeJS Resource Pack [data]
+[19:34:13.014][INFO]: Successfully parsed machine json: createtosky:chaotic_achemy
+[19:34:13.014][INFO]: Finished creating custom machines.
+[19:34:13.014][INFO]: Reading Custom Machinery Upgrades json
+[19:34:13.015][INFO]: No machine upgrade json found.
+[19:34:13.015][INFO]: Collecting machine upgrades with kubeJS.
+[19:34:13.019][INFO]: No machine upgrades found with kubejs
+[19:34:13.019][INFO]: Finished creating custom machine upgrades.
+[19:37:15.565][INFO]: Sending recipe: kubejs:custom_machine/createtosky/chaotic_achemy/1 to clients
+[19:37:15.568][INFO]: Sucessfully send recipe: kubejs:custom_machine/createtosky/chaotic_achemy/1 to clients.
+[19:37:15.617][INFO]: Sending recipe: kubejs:custom_machine/createtosky/chaotic_achemy/0 to clients
+[19:37:15.618][INFO]: Sucessfully send recipe: kubejs:custom_machine/createtosky/chaotic_achemy/0 to clients.

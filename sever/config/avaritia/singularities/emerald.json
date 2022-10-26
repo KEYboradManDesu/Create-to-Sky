@@ -1,0 +1,11 @@
+{
+  "name": "singularity.avaritia.emerald",
+  "colors": [
+    "7df8ac",
+    "8e1a"
+  ],
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

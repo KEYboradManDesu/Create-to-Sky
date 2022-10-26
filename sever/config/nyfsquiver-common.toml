@@ -1,0 +1,55 @@
+#Should Quivers be Required for Bow Usage?
+requireQuiver = false
+#Should Melding show up in the Enchanting Table?
+meldingEnchantTable = true
+#Should Melding show up on Books?
+meldingBooks = true
+#Should Cycling show up in the Enchanting Table?
+cyclingEnchantTable = true
+#Should Cycling show up on Books?
+cyclingBooks = true
+#Should Quinfinity show up in the Enchanting Table?
+quinfinityEnchantTable = true
+#Should Quinfinity show up on Books?
+quinfinityBooks = true
+#How many rows does the basic quiver have?
+#Range: 1 ~ 13
+rowsBasic = 1
+#How many rows does the iron quiver have?
+#Range: 1 ~ 13
+rowsIron = 2
+#How many rows does the copper quiver have?
+#Range: 1 ~ 13
+rowsCopper = 2
+#How many rows does the gold quiver have?
+#Range: 1 ~ 13
+rowsGold = 3
+#How many rows does the diamond quiver have?
+#Range: 1 ~ 13
+rowsDiamond = 4
+#How many rows does the Netherite quiver have?
+#Range: 1 ~ 13
+rowsNetherite = 5
+#How many columns does the basic quiver have?
+#Range: 1 ~ 13
+columnsBasic = 9
+#How many columns does the iron quiver have?
+#Range: 1 ~ 13
+columnsIron = 9
+#How many columns does the copper quiver have?
+#Range: 1 ~ 13
+columnsCopper = 7
+#How many columns does the gold quiver have?
+#Range: 1 ~ 13
+columnsGold = 9
+#How many columns does the diamond quiver have?
+#Range: 1 ~ 13
+columnsDiamond = 9
+#How many columns does the Netherite quiver have?
+#Range: 1 ~ 13
+columnsNetherite = 9
+#Range: -1000 ~ 1000
+xPos = 76
+#Range: -1000 ~ 1000
+yPos = 24
+

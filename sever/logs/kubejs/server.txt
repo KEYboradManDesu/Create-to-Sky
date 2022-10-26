@@ -1,0 +1,137 @@
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/recipe.js in 0.002 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/obsidian.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/invar.js in 0.002 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/computer.js in 0.0 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/fluix.js in 0.002 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/math.js in 0.004 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/corporea.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/andesite.js in 0.003 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/copper.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/living.js in 0.002 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/creative.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/frame.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/brass.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/zinc.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/enderium.js in 0.001 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/alchemy.js in 0.008 s
+[19:33:18] [INFO ] Loaded script server_scripts:recipes/thread/redstring.js in 0.001 s
+[19:33:19] [INFO ] Loaded script server_scripts:recipes/tweaks/general_tweaks.js in 0.041 s
+[19:33:19] [INFO ] Loaded script server_scripts:recipes/tweaks/ore_processing.js in 0.005 s
+[19:33:19] [INFO ] Loaded script server_scripts:recipes/tweaks/tconstruct.js in 0.001 s
+[19:33:19] [INFO ] Loaded script server_scripts:tags/tags.js in 0.004 s
+[19:33:19] [INFO ] Loaded script server_scripts:cabricality.js in 0.004 s
+[19:33:19] [INFO ] Loaded 22/22 KubeJS server scripts in 0.109 s
+[19:33:19] [INFO ] Scripts loaded
+[19:33:19] [INFO ] Scanning recipes...
+[19:33:38] [INFO ] [blocks] Found 827 tags, added 148 objects, removed 0 objects
+[19:33:38] [INFO ] [blocks] Found 827 tags, added 296 objects, removed 0 objects
+[19:33:41] [INFO ] [items] Found 1718 tags, added 44 objects, removed 0 objects
+[19:33:41] [INFO ] [items] Found 1749 tags, added 543 objects, removed 61 objects
+[19:33:54] [WARN ] Failed to parse recipe 'minecraft:gold_netherite_quiver_smithing[minecraft:smithing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_gold_ingot'
+[19:33:54] [WARN ] Failed to parse recipe minecraft:gold_netherite_quiver_smithing[minecraft:smithing]: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_gold_ingot'
+[19:33:54] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/limestone_brick_vertical_slab[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_brick_slab'
+[19:33:54] [WARN ] Failed to parse recipe architects_palette:vertslabs/limestone_brick_vertical_slab[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_brick_slab'
+[19:33:54] [WARN ] Failed to parse recipe 'createcafe:compat/altar/blood_orange2[bloodmagic:altar]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: bloodmagic:altar
+[19:33:54] [WARN ] Failed to parse recipe createcafe:compat/altar/blood_orange2[bloodmagic:altar]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'bloodmagic:altar'
+[19:33:54] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:54] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:54] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:54] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:54] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/mushy_limestone_brick_vertical_slab_revert[minecraft:crafting_shapeless]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_brick_vertical_slab'
+[19:33:54] [WARN ] Failed to parse recipe architects_palette:vertslabs/mushy_limestone_brick_vertical_slab_revert[minecraft:crafting_shapeless]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_brick_vertical_slab'
+[19:33:55] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:55] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:55] [WARN ] Failed to parse recipe 'createcafe:milling/coffee_milling[create:milling]': {"item":"createcafe:coffee"} is not a valid result!
+[19:33:55] [WARN ] Failed to parse recipe 'create_crystal_clear:steel_glass_casing[create:item_application]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'alloyed:steel_ingot'
+[19:33:55] [WARN ] Failed to parse recipe create_crystal_clear:steel_glass_casing[create:item_application]: com.google.gson.JsonSyntaxException: Unknown item 'alloyed:steel_ingot'
+[19:33:55] [WARN ] Failed to parse recipe 'createcafe:crushing/coffee_crushing[create:crushing]': {"item":"createcafe:coffee"} is not a valid result!
+[19:33:55] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/stonecutting/mushy_limestone_brick_vslab_from_mushy_limestone_bricks_stonecutting[minecraft:stonecutting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_bricks'
+[19:33:55] [WARN ] Failed to parse recipe architects_palette:vertslabs/stonecutting/mushy_limestone_brick_vslab_from_mushy_limestone_bricks_stonecutting[minecraft:stonecutting]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_bricks'
+[19:33:55] [WARN ] Failed to parse recipe 'create_confectionery:black_chocolate_recipe_6[create:mixing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:black_chocolate_bricks_wall'
+[19:33:55] [WARN ] Failed to parse recipe create_confectionery:black_chocolate_recipe_6[create:mixing]: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:black_chocolate_bricks_wall'
+[19:33:55] [WARN ] Failed to parse recipe 'shelve:water_cage[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'shelve:water_cage'
+[19:33:55] [WARN ] Failed to parse recipe shelve:water_cage[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'shelve:water_cage'
+[19:33:55] [WARN ] Failed to parse recipe 'createtosky:smelter/brass/molten_brass_from_block[thermal:crucible]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Invalid Thermal Series recipe: createtosky:smelter/brass/molten_brass_from_block
+Refer to the recipe's ResourceLocation to find the mod responsible and let them know!
+[19:33:55] [WARN ] Failed to parse recipe createtosky:smelter/brass/molten_brass_from_block[thermal:crucible]: com.google.gson.JsonSyntaxException: Invalid Thermal Series recipe: createtosky:smelter/brass/molten_brass_from_block
+Refer to the recipe's ResourceLocation to find the mod responsible and let them know!
+[19:33:55] [WARN ] Failed to parse recipe 'create_sa:steam_engine_recipe[create:sequenced_assembly]': {"item":"create:crushed_brass_ore","chance":2.0} is not a valid result!
+[19:33:55] [WARN ] Failed to parse recipe 'create_confectionery:white_chocolate_recipe_6[create:mixing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:white_chocolate_bricks_wall'
+[19:33:55] [WARN ] Failed to parse recipe create_confectionery:white_chocolate_recipe_6[create:mixing]: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:white_chocolate_bricks_wall'
+[19:33:55] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:55] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:55] [WARN ] Failed to parse recipe 'caupona:water_level/nail_soup[watersource:water_level_item]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: watersource:water_level_item
+[19:33:55] [WARN ] Failed to parse recipe caupona:water_level/nail_soup[watersource:water_level_item]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'watersource:water_level_item'
+[19:33:55] [WARN ] Failed to parse recipe 'excompressum:mana_hammer[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'excompressum:hammer_mana'
+[19:33:55] [WARN ] Failed to parse recipe excompressum:mana_hammer[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'excompressum:hammer_mana'
+[19:33:55] [WARN ] Failed to parse recipe 'caupona:water_level/wooden_cup_nail_soup[watersource:water_level_fluid]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: watersource:water_level_fluid
+[19:33:55] [WARN ] Failed to parse recipe caupona:water_level/wooden_cup_nail_soup[watersource:water_level_fluid]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'watersource:water_level_fluid'
+[19:33:55] [WARN ] Failed to parse recipe 'twilightdelight:sequenced_assembly/fiery_snakes[create:sequenced_assembly]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'miinecraft:bowl'
+[19:33:55] [WARN ] Failed to parse recipe twilightdelight:sequenced_assembly/fiery_snakes[create:sequenced_assembly]: com.google.gson.JsonSyntaxException: Unknown item 'miinecraft:bowl'
+[19:33:55] [WARN ] Failed to parse recipe 'create_things_and_misc:schematic_chair[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'create_things_and_misc:deleted_mod_element'
+[19:33:55] [WARN ] Failed to parse recipe create_things_and_misc:schematic_chair[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'create_things_and_misc:deleted_mod_element'
+[19:33:55] [WARN ] Failed to parse recipe 'createtosky:smelter/brass/molten_brass_from_ingot[thermal:crucible]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Invalid Thermal Series recipe: createtosky:smelter/brass/molten_brass_from_ingot
+Refer to the recipe's ResourceLocation to find the mod responsible and let them know!
+[19:33:55] [WARN ] Failed to parse recipe createtosky:smelter/brass/molten_brass_from_ingot[thermal:crucible]: com.google.gson.JsonSyntaxException: Invalid Thermal Series recipe: createtosky:smelter/brass/molten_brass_from_ingot
+Refer to the recipe's ResourceLocation to find the mod responsible and let them know!
+[19:33:55] [WARN ] Failed to parse recipe 'create_sa:magma_cream_recipe[create:mixing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'minecraft:slime'
+[19:33:55] [WARN ] Failed to parse recipe create_sa:magma_cream_recipe[create:mixing]: com.google.gson.JsonSyntaxException: Unknown item 'minecraft:slime'
+[19:33:55] [WARN ] Failed to parse recipe 'create_sa:hydraulic_engine_recipe[create:sequenced_assembly]': {"item":"minecraft:copper_nugget","chance":2.0} is not a valid result!
+[19:33:55] [WARN ] Failed to parse recipe 'minecraft:emerald_netherite_quiver_smithing[minecraft:smithing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_emerald_ingot'
+[19:33:55] [WARN ] Failed to parse recipe minecraft:emerald_netherite_quiver_smithing[minecraft:smithing]: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_emerald_ingot'
+[19:33:55] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/mushy_limestone_brick_vertical_slab[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_brick_slab'
+[19:33:55] [WARN ] Failed to parse recipe architects_palette:vertslabs/mushy_limestone_brick_vertical_slab[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:mushy_limestone_brick_slab'
+[19:33:55] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:55] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe 'create_confectionery:chocolate_recipe_6[create:mixing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:chocolate_bricks_wall'
+[19:33:56] [WARN ] Failed to parse recipe create_confectionery:chocolate_recipe_6[create:mixing]: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:chocolate_bricks_wall'
+[19:33:56] [WARN ] Failed to parse recipe 'minecraft:diamond_netherite_quiver_smithing[minecraft:smithing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_diamond_ingot'
+[19:33:56] [WARN ] Failed to parse recipe minecraft:diamond_netherite_quiver_smithing[minecraft:smithing]: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_diamond_ingot'
+[19:33:56] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/limestone_brick_vertical_slab_revert[minecraft:crafting_shapeless]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_brick_vertical_slab'
+[19:33:56] [WARN ] Failed to parse recipe architects_palette:vertslabs/limestone_brick_vertical_slab_revert[minecraft:crafting_shapeless]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_brick_vertical_slab'
+[19:33:56] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/limestone_vertical_slab_revert[minecraft:crafting_shapeless]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_vertical_slab'
+[19:33:56] [WARN ] Failed to parse recipe architects_palette:vertslabs/limestone_vertical_slab_revert[minecraft:crafting_shapeless]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_vertical_slab'
+[19:33:56] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/stonecutting/limestone_brick_vslab_from_limestone_and_limestone_bricks_stonecutting[minecraft:stonecutting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone'
+[19:33:56] [WARN ] Failed to parse recipe architects_palette:vertslabs/stonecutting/limestone_brick_vslab_from_limestone_and_limestone_bricks_stonecutting[minecraft:stonecutting]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone'
+[19:33:56] [WARN ] Failed to parse recipe 'alexsdelight:barbecue_on_a_stick[minecraft:crafting_shapeless]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'amfd:singular_cooked_moose_rib'
+[19:33:56] [WARN ] Failed to parse recipe alexsdelight:barbecue_on_a_stick[minecraft:crafting_shapeless]: com.google.gson.JsonSyntaxException: Unknown item 'amfd:singular_cooked_moose_rib'
+[19:33:56] [WARN ] Failed to parse recipe 'create_sa:heat_engine_recipe[create:sequenced_assembly]': {"item":"minecraft:copper_nugget","chance":2.0} is not a valid result!
+[19:33:56] [WARN ] Failed to parse recipe 'createaddition:compat/tconstruct/tinkers_bronze[create:mixing]': {"item":"tconstruct:tinkers_bronze_ingot","count":3} is not a valid result!
+[19:33:56] [WARN ] Failed to parse recipe 'caupona:water_level/plain_water[watersource:water_level_item]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: watersource:water_level_item
+[19:33:56] [WARN ] Failed to parse recipe caupona:water_level/plain_water[watersource:water_level_item]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'watersource:water_level_item'
+[19:33:56] [WARN ] Failed to parse recipe 'materialis:tinker_spell_write[materialis:tinker_spell_write]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: materialis:tinker_spell_write
+[19:33:56] [WARN ] Failed to parse recipe materialis:tinker_spell_write[materialis:tinker_spell_write]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'materialis:tinker_spell_write'
+[19:33:56] [WARN ] Failed to parse recipe 'create_confectionery:ruby_chocolate_recipe_6[create:mixing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:ruby_chocolate_brick_wall'
+[19:33:56] [WARN ] Failed to parse recipe create_confectionery:ruby_chocolate_recipe_6[create:mixing]: com.google.gson.JsonSyntaxException: Unknown item 'create_confectionery:ruby_chocolate_brick_wall'
+[19:33:56] [WARN ] Failed to parse recipe 'minecraft:iron_netherite_quiver_smithing[minecraft:smithing]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_iron_ingot'
+[19:33:56] [WARN ] Failed to parse recipe minecraft:iron_netherite_quiver_smithing[minecraft:smithing]: com.google.gson.JsonSyntaxException: Unknown item 'advancednetherite:netherite_iron_ingot'
+[19:33:56] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/limestone_vertical_slab[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_slab'
+[19:33:56] [WARN ] Failed to parse recipe architects_palette:vertslabs/limestone_vertical_slab[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone_slab'
+[19:33:56] [WARN ] Failed to parse recipe 'createtosky:filling/dark_amaranth_roots[create:filling]': {"item":"promenade:dark_amaranth_roots"} is not a valid result!
+[19:33:56] [WARN ] Failed to parse recipe 'caupona:thirst/thermos_water[watersource:thirst_item]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: watersource:thirst_item
+[19:33:56] [WARN ] Failed to parse recipe caupona:thirst/thermos_water[watersource:thirst_item]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'watersource:thirst_item'
+[19:33:56] [WARN ] Failed to parse recipe 'architects_palette:vertslabs/stonecutting/limestone_vslab_from_limestone_stonecutting[minecraft:stonecutting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone'
+[19:33:56] [WARN ] Failed to parse recipe architects_palette:vertslabs/stonecutting/limestone_vslab_from_limestone_stonecutting[minecraft:stonecutting]: com.google.gson.JsonSyntaxException: Unknown item 'architects_palette:limestone'
+[19:33:56] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe 'caupona:water_level/dilute_soup[watersource:water_level_item]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: watersource:water_level_item
+[19:33:56] [WARN ] Failed to parse recipe caupona:water_level/dilute_soup[watersource:water_level_item]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'watersource:water_level_item'
+[19:33:56] [WARN ] Failed to parse recipe 'createcafe:compat/altar/blood_orange[bloodmagic:altar]'! Falling back to vanilla: java.lang.NullPointerException: Unknown recipe type: bloodmagic:altar
+[19:33:56] [WARN ] Failed to parse recipe createcafe:compat/altar/blood_orange[bloodmagic:altar]: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'bloodmagic:altar'
+[19:33:56] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe 'cgm:advanced_bullet[cgm:workbench]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'forge:nuggets/steel'
+[19:33:56] [WARN ] Failed to parse recipe cgm:advanced_bullet[cgm:workbench]: com.google.gson.JsonSyntaxException: Unknown item 'forge:nuggets/steel'
+[19:33:56] [WARN ] Failed to parse recipe 'createaddition:compat/immersiveengineering/blastfurnace_preheater[minecraft:crafting_shaped]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Unknown item 'createaddition:heater'
+[19:33:56] [WARN ] Failed to parse recipe createaddition:compat/immersiveengineering/blastfurnace_preheater[minecraft:crafting_shaped]: com.google.gson.JsonSyntaxException: Unknown item 'createaddition:heater'
+[19:33:56] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[19:33:56] [INFO ] Found 18977 recipes and 0 failed recipes in 2.399 s
+[19:34:01] [INFO ] Posted recipe events in 4.542 s
+[19:34:01] [WARN ] Error parsing recipe create_sa:sponge_pressing[create:compacting]: {"type":"create:compacting","ingredients":[{"item":"minecraft:wet_sponge"}],"results":[{"item":"minecraft:sponge","count":1},{"fluid":"minecraft:water","amount":1000,"nbt":null}]}: com.google.gson.JsonSyntaxException: Expected nbt to be a string, was null (json)
+[19:34:02] [INFO ] Modified & removed recipes in 796.2 ms
+[19:34:02] [INFO ] Added recipes in 110.0 ms
+[19:34:02] [INFO ] Added 1577 recipes, removed 820 recipes, modified 114 recipes, with 1 failed recipes and 0 fall-backed recipes
+[19:34:13] [INFO ] Collecting Custom Machine upgrades from JS scripts.
