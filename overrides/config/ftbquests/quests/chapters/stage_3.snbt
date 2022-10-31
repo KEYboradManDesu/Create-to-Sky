@@ -1147,7 +1147,7 @@
 			title: "暗紫循环"
 			icon: "minecraft:chorus_fruit"
 			x: 1.0d
-			y: 17.0d
+			y: 16.0d
 			shape: "circle"
 			description: ["感谢&6热力&r技术，现在你可以循环生产&6紫颂果&r了。这样一来，稳定生产&6末影合金&r也就不再成问题。"]
 			dependencies: ["794B3C10C6110CB5"]
@@ -1253,7 +1253,7 @@
 			x: 0.0d
 			y: 17.5d
 			shape: "circle"
-			description: ["用上这个机械动力的老朋友来加固你的&6银锭&r。"]
+			description: ["你得用上这个机械动力的老朋友来加固你的&6银锭&r。"]
 			dependencies: ["794B3C10C6110CB5"]
 			id: "03C98DF2D7C94A23"
 			tasks: [
@@ -1262,7 +1262,7 @@
 					type: "item"
 					item: "kubejs:chorus_chrome"
 					consume_items: false
-					only_from_crafting: true
+					only_from_crafting: false
 				}
 				{
 					id: "4B90A38C9A80FFED"
@@ -1274,7 +1274,7 @@
 		{
 			icon: "kubejs:overcharged_alloy"
 			x: -5.0d
-			y: 8.0d
+			y: 7.7d
 			description: ["当&6异彩化合物&r充能后候，它会转化为&6超负荷合金&r。"]
 			dependencies: ["7B23C933D76458BA"]
 			optional: true
