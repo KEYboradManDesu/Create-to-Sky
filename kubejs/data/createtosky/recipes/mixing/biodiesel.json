@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createaddition:bioethanol",
+      "amount": 250
+    },
+    {
+      "fluid": "createaddition:seed_oil",
+      "amount": 250
+    },
+    {
+      "item": "immersiveengineering:dust_saltpeter"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "immersiveengineering:biodiesel",
+      "amount": 500
+    }
+  ],
+  "heatRequirement":"heated"
+}

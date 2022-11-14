@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:sturdy_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incompete_propeller"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_propeller"
+        },
+        {
+          "item": "create_sa:small_fueling_tank"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_propeller"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_propeller"
+        },
+        {
+          "item": "create:propeller"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_propeller"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_propeller"
+        },
+        {
+          "fluid": "createbigcannons:molten_cast_iron",
+          
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_propeller"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "simpleplanes:propeller",
+      "chance": 1
+    }
+  ],
+  "loops": 4
+}

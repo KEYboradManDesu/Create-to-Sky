@@ -1,7 +1,0 @@
-{
-	id: "219838824AF572A3"
-	order_index: 19
-	title: "&l手动银币兑换"
-	loot_size: 1
-	rewards: [{ item: "thermal:silver_coin", count: 64 }]
-}

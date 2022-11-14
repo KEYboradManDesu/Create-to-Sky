@@ -1,7 +1,0 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "minecraft:block/cube_all",
-	"textures": {
-		"all": "cabricality:block/machine/handmade/handmade_casing"
-	}
-}

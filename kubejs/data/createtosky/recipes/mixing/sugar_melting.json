@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:fine_sugar",
+      "amount": 180
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createcafe:melted_sugar",
+      "amount": 200
+    }
+  ],
+  "heatRequirement":"heated"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "beyond_earth:cheese"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:mozerella_chese",
+      "amount": 5
+    }
+  ],
+  "heatRequirement":"heated"
+}

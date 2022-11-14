@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smoking",
-  "ingredient": {
-    "item": "minecraft:twisting_vines"
-  },
-  "result": "minecraft:weeping_vines",
-  "experience": 0.0,
-  "cookingtime": 100
-}

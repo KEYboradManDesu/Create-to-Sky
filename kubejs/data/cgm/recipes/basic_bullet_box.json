@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "cgm:basic_bullet",
+      "count": 64
+    },
+    {
+      "tag": "supplementaries:presents",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:box_nails",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder",
+      "count": 2
+    },
+    {
+      "item": "kubejs:black_gunpowder",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "createbigcannons:packed_gunpowder",
+      "count": 2
+    }
+  ]
+}

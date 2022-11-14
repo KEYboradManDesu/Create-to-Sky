@@ -1,0 +1,35 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "projecte:klein_star_zwei"
+  },
+  "transitionalItem": {
+    "item": "projecte:klein_star_drei"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "projecte:klein_star_drei"
+        },
+        {
+          "fluid": "kubejs:alchemical_coke",
+          "amount": 450
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:klein_star_drei"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:klein_star_vier",
+      "chance": 1
+    }
+  ],
+  "loops": 16
+}

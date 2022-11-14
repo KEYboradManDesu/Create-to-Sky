@@ -1,7 +1,0 @@
-{
-	id: "50C7716BF85E85E2"
-	order_index: 20
-	title: "&l手动金币兑换"
-	loot_size: 1
-	rewards: [{ item: "thermal:gold_coin" }]
-}

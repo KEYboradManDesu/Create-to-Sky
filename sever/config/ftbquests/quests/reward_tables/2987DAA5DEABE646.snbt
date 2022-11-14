@@ -1,7 +1,0 @@
-{
-	id: "2987DAA5DEABE646"
-	order_index: 16
-	title: "神秘巴迪卡包"
-	loot_size: 1
-	rewards: [{ item: "buddycards:buddycard_pack_mystery" }]
-}

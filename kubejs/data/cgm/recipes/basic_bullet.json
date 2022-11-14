@@ -1,0 +1,13 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "beyond_earth:compressed_steel",
+      "count": 4
+    }
+  ],
+  "result": {
+    "item": "cgm:basic_bullet",
+    "count": 4
+  }
+}

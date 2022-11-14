@@ -1,7 +1,0 @@
-{
-	id: "06FA170D01E1F54E"
-	order_index: 29
-	title: "&6Unkonw"
-	loot_size: 1
-	rewards: [{ item: "kubejs:trade_card_unknow" }]
-}

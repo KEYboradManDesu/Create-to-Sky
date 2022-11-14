@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smoking",
-  "ingredient": {
-    "item": "kubejs:chocolate_cake_base"
-  },
-  "result": "kubejs:baked_chocolate_cake_base",
-  "experience": 0.0,
-  "cookingtime": 100
-}

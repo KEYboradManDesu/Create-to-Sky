@@ -1,0 +1,30 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "beyond_earth:permafrost"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:dirt",
+      "chance": 1
+    },
+    {
+      "item": "thermal:glowstone_mushroom_spores",
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:slime_mushroom_spores",
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:gunpowder_mushroom_spores",
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:redstone_mushroom_spores",
+      "chance": 0.25
+    }
+  ]
+}

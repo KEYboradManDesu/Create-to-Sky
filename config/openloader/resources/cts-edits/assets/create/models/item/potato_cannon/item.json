@@ -1,0 +1,13 @@
+{
+    "parent": "create:item/potato_cannon/item_parent",
+    
+	"overrides": [
+		{
+			"predicate": {
+				"damaged": 1,
+				"minecraft:damage": 0.5
+			},
+			"model": "create:item/potato_cannon/test"
+		}
+	]
+}

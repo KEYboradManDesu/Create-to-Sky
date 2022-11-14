@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "beyond_earth:moon_stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:sky_stone_block"
+    }
+  ]
+}

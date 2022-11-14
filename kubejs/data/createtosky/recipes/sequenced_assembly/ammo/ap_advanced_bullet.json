@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:empty_casing"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incompete_armour_piercing_buttle"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        },
+        {
+          "item": "createbigcannons:packed_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        },
+        {
+          "item": "createbigcannons:nethersteel_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        },
+        {
+          "fluid": "tconstruct:molten_cobalt",
+          
+          "amount": 5
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incompete_armour_piercing_buttle"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "kubejs:armour_piercing_buttle",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

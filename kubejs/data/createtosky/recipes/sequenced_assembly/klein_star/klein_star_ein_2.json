@@ -1,0 +1,35 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createaddition:capacitor"
+  },
+  "transitionalItem": {
+    "item": "projecte:klein_star_zwei"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "projecte:klein_star_zwei"
+        },
+        {
+          "fluid": "kubejs:alchemical_coke",
+          "amount": 450
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:klein_star_zwei"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:klein_star_zwei",
+      "chance": 1
+    }
+  ],
+  "loops": 16
+}

@@ -1,0 +1,13 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "createbigcannons:he_shell",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:missile",
+    "count": 4
+  }
+}

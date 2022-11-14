@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:item/cosmetic_puffy_scarf"
+	},
+	"display": {
+		"gui": {
+			"translation": [0, -1, 0]
+		}
+	}
+}

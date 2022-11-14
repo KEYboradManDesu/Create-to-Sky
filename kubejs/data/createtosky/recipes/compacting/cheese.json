@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:mozerella_chese",
+      "amount": 20
+    }
+  ],
+  "results": [
+    {
+      "item": "beyond_earth:cheese"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:mozerella_chese",
+      "amount": 800
+    },
+    {
+      "item": "kubejs:creative_mechanism"
+    },
+    {
+      "item": "avaritia:star_fuel"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:creative_chese",
+      "amount": 500
+    }
+  ],
+  "heatRequirement":"superheated"
+}

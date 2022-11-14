@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:butter",
+      "amount": 200
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:butter"
+    }
+  ]
+}

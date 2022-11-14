@@ -1,8 +1,0 @@
-{
-    "parent": "create:item/linked_controller",
-    "textures": {
-		"redstone_antenna": "create:block/redstone_antenna",
-		"particle": "libvulpes:item/linker",
-		"redstone_bridge": "libvulpes:item/linker"
-	}
-}

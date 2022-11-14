@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:coke",
+      
+      "amount": 200
+    },
+    {
+      "item": "thermal:redstone_mushroom_spores"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:alchemical_coke",
+      "amount": 200
+    }
+  ],
+  "heatRequirement":"heated"
+}

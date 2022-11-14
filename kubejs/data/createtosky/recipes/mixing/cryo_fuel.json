@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "beyond_earth:ice_shard"
+    },
+    {
+      "fluid": "immersiveengineering:biodiesel",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:cryo_fuel",
+      "amount": 50
+    }
+  ],
+  "heatRequirement":"heated"
+}

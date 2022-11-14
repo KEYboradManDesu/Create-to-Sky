@@ -1,0 +1,48 @@
+{
+	id: "5FCC22C840F67E8D"
+	order_index: 30
+	title: "书籍借阅"
+	icon: "minecraft:writable_book"
+	loot_size: 1
+	rewards: [
+		{ item: "exoticbirds:bird_book" }
+		{
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "thermal:guidebook"
+				}
+			}
+		}
+		{
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "crockpot:book"
+				}
+			}
+		}
+		{
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "industrialforegoing:industrial_foregoing"
+				}
+			}
+		}
+		{ item: "immersiveengineering:manual" }
+		{
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "caupona:book"
+				}
+			}
+		}
+		{ item: "tconstruct:materials_and_you" }
+	]
+}

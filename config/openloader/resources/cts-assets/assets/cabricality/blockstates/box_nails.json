@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"cabricality:item/box_nails","uvlock":true},"facing=south":{"model":"cabricality:item/box_nails","y":180,"uvlock":true},"facing=west":{"model":"cabricality:item/box_nails","y":270,"uvlock":true},"facing=east":{"model":"cabricality:item/box_nails","y":90,"uvlock":true}}}

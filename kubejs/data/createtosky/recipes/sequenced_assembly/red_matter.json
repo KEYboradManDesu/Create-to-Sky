@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "projecte:dark_matter"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_red_matter"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_red_matter"
+        },
+        {
+          "fluid": "kubejs:red_matter_pulp",
+          "amount": 50
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_red_matter"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_red_matter"
+        },
+        {
+          "tag": "create:sandpaper"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_red_matter"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:red_matter"
+    }
+  ],
+  "loops": 20
+}

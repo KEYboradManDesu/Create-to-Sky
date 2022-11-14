@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:chaos_resin",
+      
+      "amount": 300
+    },
+    {
+      "fluid": "materialis:molten_shadow_steel",
+      
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:dark_matter_pulp",
+      
+      "amount": 200
+    }
+  ],
+  "heatRequirement":"heated"
+
+}

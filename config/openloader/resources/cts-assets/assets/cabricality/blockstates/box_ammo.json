@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"cabricality:item/box_ammo","uvlock":true},"facing=south":{"model":"cabricality:item/box_ammo","y":180,"uvlock":true},"facing=west":{"model":"cabricality:item/box_ammo","y":270,"uvlock":true},"facing=east":{"model":"cabricality:item/box_ammo","y":90,"uvlock":true}}}

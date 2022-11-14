@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:venus_dust",
+      "amount": 4
+    },
+    {
+      "item": "thermal:lightning_charge",
+      "amount": 1
+    },
+    {
+      "fluid": "kubejs:cryo_fuel",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:venus_quartz"
+    }
+  ],
+  "heatRequirement":"superheated"
+}

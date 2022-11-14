@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "immersiveengineering:empty_shell"
+  },
+  "transitionalItem": {
+    "item": "immersiveengineering:empty_shell"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        },
+        {
+          "item": "createbigcannons:packed_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        },
+        {
+          "item": "createbigcannons:shot_balls"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        },
+        {
+          "fluid": "tconstruct:molten_aluminum",
+          
+          "amount": 5
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:empty_shell"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "cgm:shell",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

@@ -1,0 +1,34 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "supplementaries:presents"
+  },
+  "transitionalItem": {
+    "item": "supplementaries:present"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "supplementaries:present"
+        },
+        {
+          "item": "cgm:basic_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "supplementaries:present"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:box_nails",
+      "chance": 1
+    }
+  ],
+  "loops": 64
+}

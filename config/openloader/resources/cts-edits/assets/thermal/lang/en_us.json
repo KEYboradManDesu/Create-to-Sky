@@ -1,0 +1,10 @@
+{
+  "block.thermal.dynamo_compression": "§fCompression Dynamo",
+  "block.thermal.dynamo_lapidary": "§fLapidary Dynamo",
+  "block.thermal.dynamo_magmatic": "§fMagmatic Dynamo",
+  "block.thermal.dynamo_numismatic": "§fNumismatic Dynamo",
+  "block.thermal.dynamo_stirling": "§fStirling Dynamo",
+
+  "block.thermal.fluid_cell": "§fFluid Cell",
+  "block.thermal.energy_cell": "§fRedstone Flux Cell"
+}

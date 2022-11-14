@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:alchemical_coke",
+      "amount": 900
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:alchemical_coal"
+    }
+  ]
+}

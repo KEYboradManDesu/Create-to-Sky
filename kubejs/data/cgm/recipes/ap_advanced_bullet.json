@@ -1,0 +1,25 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:empty_casing",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:nethersteel_nugget",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:packed_gunpowder",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:nethersteel_nugget",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:armour_piercing_buttle",
+    "count": 4
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "kubejs:inductive_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:components"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "tag": "forge:plates/lead"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "item": "mekanism:alloy_reinforced"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "item": "ae2:silicon"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "tag": "forge:glass_panes"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanismgenerators:solar_panel",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

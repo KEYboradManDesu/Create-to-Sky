@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "redstonepen:block/redstone_relay_on",
+		"2": "redstonepen:block/redstone_torch",
+		"3": "redstonepen:block/redstone_relay_base",
+		"particle": "redstonepen:block/redstone_torch"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 0],
+			"to": [12, 1, 16],
+			"faces": {
+				"north": {"uv": [4, 0, 11, 1], "texture": "#3"},
+				"east": {"uv": [4, 0, 5, 16], "texture": "#3"},
+				"south": {"uv": [4, 15, 12, 16], "texture": "#3"},
+				"west": {"uv": [11, 0, 12, 16], "texture": "#3"},
+				"up": {"uv": [4, 0, 12, 16], "texture": "#1"},
+				"down": {"uv": [4, 0, 12, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [7, 0.5, 6],
+			"to": [9, 4.5, 8],
+			"faces": {
+				"north": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"east": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"south": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"west": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"up": {"uv": [9, 6, 7, 8], "texture": "#2"},
+				"down": {"uv": [9, 10, 7, 12], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7, 0.5, 2],
+			"to": [9, 4.5, 4],
+			"faces": {
+				"north": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"east": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"south": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"west": {"uv": [9, 6, 7, 10], "texture": "#2"},
+				"up": {"uv": [9, 6, 7, 8], "texture": "#2"},
+				"down": {"uv": [9, 10, 7, 12], "texture": "#2"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [101, 14, -86],
+			"translation": [2.75, 0, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [33, -9, 39],
+			"translation": [5.25, 0.75, -3.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 1.25, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"gui": {
+			"rotation": [3, -90, -90],
+			"translation": [0, 0.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"fixed": {
+			"rotation": [0, 90, -90],
+			"translation": [0, 0, -8]
+		}
+	}
+}

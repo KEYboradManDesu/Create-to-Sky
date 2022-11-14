@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"cabricality:item/box_shell","uvlock":true},"facing=south":{"model":"cabricality:item/box_shell","y":180,"uvlock":true},"facing=west":{"model":"cabricality:item/box_shell","y":270,"uvlock":true},"facing=east":{"model":"cabricality:item/box_shell","y":90,"uvlock":true}}}

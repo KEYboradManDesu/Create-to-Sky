@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:dragon_head"
+    },
+    {
+      "item": "kubejs:blaze_brass"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:dragon_breath",
+      "amount": 3
+    },
+    {
+      "item": "minecraft:dragon_head"
+    }
+  ],
+  "heatRequirement":"heated"
+}

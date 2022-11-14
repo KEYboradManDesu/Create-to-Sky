@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/zinc"
+	},
+	"result": {
+		"item": "create_sa:zinc_handle",
+		"count": 2
+	}
+}

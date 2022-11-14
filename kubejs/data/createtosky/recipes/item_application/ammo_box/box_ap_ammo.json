@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "kubejs:box_ap_ammo"
+    },
+    {
+      "item": "immersiveengineering:wirecutter"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:incomplete_box_ap_ammo"
+    }
+  ]
+}

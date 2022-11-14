@@ -1,0 +1,17 @@
+{
+  "gui.tconstruct.alloyer": "§fAlloyer",
+  "gui.tconstruct.duct": "§fDuct",
+  "gui.tconstruct.heater": "§fHeater",
+  "gui.tconstruct.melter": "§fMelter",
+  "gui.tconstruct.smeltery": "§fSmeltery",
+  "gui.tconstruct.foundry": "§fFoundry",
+
+  "gui.tconstruct.part_builder": "§fPart Builder",
+  "gui.tconstruct.tinker_station": "§fTinker Station",
+  "gui.tconstruct.crafting_station": "§fCrafting Station",
+  "gui.tconstruct.tinkers_anvil": "§fTinker's Anvil",
+
+  "gui.tconstruct.tinkers_chest": "§fTinker's Chest",
+  "gui.tconstruct.cast_chest": "§fCast Chest",
+  "gui.tconstruct.part_chest": "§fPart Chest"
+}

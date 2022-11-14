@@ -1,0 +1,83 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bow"
+  },
+  "transitionalItem": {
+    "item": "minecraft:bow"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:bow"
+        },
+        {
+          "fluid": "tconstruct:molten_steel",
+          "amount": 200
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bow"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bow"
+        },
+        {
+          "item": "mekanism:alloy_infused"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bow"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bow"
+        },
+        {
+          "item": "mekanism:hdpe_stick"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bow"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bow"
+        },
+        {
+          "item": "mekanism:energy_tablet"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bow"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:electric_bow",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

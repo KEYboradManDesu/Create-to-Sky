@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:armour_piercing_buttle",
+      "count": 48
+    },
+    {
+      "tag": "supplementaries:presents",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:box_ap_ammo",
+    "count": 1
+  }
+}

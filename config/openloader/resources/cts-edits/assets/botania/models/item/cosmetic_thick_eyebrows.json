@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:item/cosmetic_thick_eyebrows"
+	},
+	"display": {
+		"gui": {
+			"translation": [1, -1, 0]
+		}
+	}
+}

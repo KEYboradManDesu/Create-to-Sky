@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:item/slingshot"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 45],
+			"translation": [0, 3.75, 1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 0, -45],
+			"translation": [0, 3.75, 1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [16, 23, 45],
+			"translation": [3, 0, -6.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [16, -23, -45],
+			"translation": [3, 0, -6.75]
+		}
+	}
+}

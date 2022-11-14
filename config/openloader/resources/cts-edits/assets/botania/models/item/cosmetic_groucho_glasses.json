@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:item/cosmetic_groucho_glasses"
+	},
+	"display": {
+		"gui": {
+			"translation": [0, -2, 0]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:empty_casing",
+      "count": 4
+    },
+    {
+      "tag": "forge:nuggets/cast_iron",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:packed_gunpowder",
+      "count": 4
+    },
+    {
+      "tag": "forge:dusts/constantan",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:advanced_bullet",
+    "count": 4
+  }
+}

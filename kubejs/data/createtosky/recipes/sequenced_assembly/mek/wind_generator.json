@@ -1,0 +1,99 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:steel_casing"
+  },
+  "transitionalItem": {
+    "item": "mekanism:steel_casing"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:steel_casing"
+        },
+        {
+          "item": "kubejs:zinc_machine"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:steel_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:steel_casing"
+        },
+        {
+          "item": "mekanism:basic_energy_cube"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:steel_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:steel_casing"
+        },
+        {
+          "item": "pipez:energy_pipe"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:steel_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:steel_casing"
+        },
+        {
+          "item": "mekanismgenerators:turbine_blade"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:steel_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "mekanism:steel_casing"
+        },
+        {
+          "fluid": "tconstruct:molten_invar",
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:steel_casing"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanismgenerators:wind_generator",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

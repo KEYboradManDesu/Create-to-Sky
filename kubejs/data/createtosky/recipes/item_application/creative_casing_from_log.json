@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "ae2:smooth_sky_stone_block"
+    },
+    {
+      "item": "architects_palette:unobtanium"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:creative_casing"
+    }
+  ]
+}

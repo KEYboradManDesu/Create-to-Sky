@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"0": "projecte:block/pedestal_bottom",
+		"1": "projecte:block/pedestal_side",
+		"2": "projecte:block/pedestal_top",
+		"particle": "projecte:block/pedestal_bottom"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [13, 1.5, 13],
+			"faces": {
+				"north": {"uv": [1, 13, 15, 16], "texture": "#1"},
+				"east": {"uv": [1, 13, 15, 16], "texture": "#1"},
+				"south": {"uv": [1, 13, 15, 16], "texture": "#1"},
+				"west": {"uv": [1, 13, 15, 16], "texture": "#1"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#2"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"from": [4.25, 1.25, 4.25],
+			"to": [11.75, 8.75, 11.75],
+			"faces": {
+				"north": {"uv": [13, 3, 3, 13], "texture": "#1"},
+				"east": {"uv": [13, 3, 3, 13], "texture": "#1"},
+				"south": {"uv": [13, 3, 3, 13], "texture": "#1"},
+				"west": {"uv": [13, 3, 3, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3, 8.5, 3],
+			"to": [13, 10, 13],
+			"faces": {
+				"north": {"uv": [1, 0, 15, 3], "texture": "#1"},
+				"east": {"uv": [1, 0, 15, 3], "texture": "#1"},
+				"south": {"uv": [1, 0, 15, 3], "texture": "#1"},
+				"west": {"uv": [1, 0, 15, 3], "texture": "#1"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#2"},
+				"down": {"uv": [15, 15, 1, 1], "texture": "#2"}
+			}
+		}
+	]
+}

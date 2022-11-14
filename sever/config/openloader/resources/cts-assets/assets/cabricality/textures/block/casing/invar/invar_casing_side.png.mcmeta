@@ -1,7 +1,0 @@
-{
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [ "cabricality:block/casing/invar/invar_casing_ctm" ]
-	}
-}

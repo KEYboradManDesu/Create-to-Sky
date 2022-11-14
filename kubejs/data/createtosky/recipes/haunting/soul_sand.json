@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "forbidden_arcanus:soulless_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ]
+}

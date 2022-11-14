@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cabricality:block/casing/fluix/fluix_casing"
-  }
-}

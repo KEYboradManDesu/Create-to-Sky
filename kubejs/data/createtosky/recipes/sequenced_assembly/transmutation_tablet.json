@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "projecte:transmutation_table"
+  },
+  "transitionalItem": {
+    "item": "projecte:transmutation_table"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "projecte:transmutation_table"
+        },
+        {
+          "item": "kubejs:matrix_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:transmutation_table"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "projecte:transmutation_table"
+        },
+        {
+          "item": "projecte:klein_star_omega"
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:transmutation_table"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "projecte:transmutation_table"
+        },
+        {
+          "fluid": "kubejs:creative_chese",
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:transmutation_table"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:transmutation_tablet",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

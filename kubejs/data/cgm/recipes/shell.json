@@ -1,0 +1,25 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "immersiveengineering:empty_shell",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:shot_balls",
+      "count": 4
+    },
+    {
+      "item": "createbigcannons:packed_gunpowder",
+      "count": 4
+    },
+    {
+      "tag": "forge:dusts/aluminum",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:shell",
+    "count": 4
+  }
+}

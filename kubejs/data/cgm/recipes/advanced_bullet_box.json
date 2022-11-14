@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "cgm:advanced_bullet",
+      "count": 64
+    },
+    {
+      "tag": "supplementaries:presents",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:box_ammo",
+    "count": 1
+  }
+}

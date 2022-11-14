@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:item/cosmetic_eyepatch"
+	},
+	"display": {
+		"gui": {
+			"translation": [0, -1, 0]
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"item": "mekanism:hdpe_rod"
+	},
+	"result": {
+		"item": "mekanism:hdpe_stick",
+		"count": 1
+	}
+}

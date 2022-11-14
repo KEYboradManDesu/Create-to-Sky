@@ -1,0 +1,45 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:rods/steel"
+  },
+  "transitionalItem": {
+    "item": "immersiveengineering:stick_steel"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:stick_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:stick_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:stick_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:stick_steel"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "cgm:basic_bullet",
+      "chance": 1
+    }
+  ],
+  "loops": 3
+}

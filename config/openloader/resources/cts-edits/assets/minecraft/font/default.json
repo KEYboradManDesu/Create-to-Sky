@@ -1,0 +1,185 @@
+{
+    "providers": [
+	{
+        "type": "bitmap",
+        "file": "minecraft:font/potion_recipe.png",
+        "ascent": 1,
+        "height": 142,
+        "chars": ["\uE001"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/potion_recipe_bottle.png",
+        "ascent": 1,
+        "height": 85,
+        "chars": ["\uE002"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/banner_motif.png",
+        "ascent": 1,
+        "height": 72,
+        "chars": ["\uE003"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/map_recipe.png",
+        "ascent": 1,
+        "height": 73,
+        "chars": ["\uE004"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/furnace_recipe.png",
+        "ascent": 1,
+        "height": 59,
+        "chars": ["\uE005"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/blast_furnace_recipe.png",
+        "ascent": 1,
+        "height": 59,
+        "chars": ["\uE006"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/smoker_recipe.png",
+        "ascent": 1,
+        "height": 59,
+        "chars": ["\uE007"]
+    },
+
+
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/inventory_icon.png",
+        "ascent": 9,
+        "height": 12,
+        "chars": [
+            "\uE100\uE101\uE102\uE103\uE104\uE105\uE106\uE107\uE108\uE109\uE110\uE111\uE112"
+        ]
+    },
+
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/symbol/option.png",
+        "ascent": 9,
+        "height": 12,
+        "chars": ["\uE200"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/symbol/quit.png",
+        "ascent": 9,
+        "height": 12,
+        "chars": ["\uE201"]
+    },
+
+
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/food.png",
+        "ascent": 8,
+        "height": 9,
+        "chars": [
+            "\uE301",
+            "\uE302",
+            "\uE303",
+            "\uE304",
+            "\uE305",
+            "\uE306",
+            "\uE307",
+            "\uE308",
+            "\uE309",
+            "\uE310",
+            "\uE311",
+            "\uE312",
+            "\uE313",
+            "\uE314",
+            "\uE315",
+            "\uE316",
+            "\uE317",
+            "\uE318",
+            "\uE319",
+            "\uE320",
+            "\uE321",
+            "\uE322",
+            "\uE323",
+            "\uE324",
+            "\uE325",
+            "\uE326",
+            "\uE327",
+            "\uE328",
+            "\uE329",
+            "\uE330",
+            "\uE331",
+            "\uE332",
+            "\uE333",
+            "\uE334",
+            "\uE335",
+            "\uE336",
+            "\uE337",
+            "\uE338",
+            "\uE339",
+            "\uE340",
+            "\uE341"
+        ]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:font/effect.png",
+        "ascent": 8,
+        "height": 9,
+        "chars": [
+            "\uE400\uE401\uE402\uE403\uE404\uE405\uE406\uE407",
+            "\uE408\uE409\uE410\uE411\uE412\uE413\uE414\uE415",
+            "\uE416\uE417\uE418\uE419\uE420\uE421\uE422\uE423",
+            "\uE424\uE425\uE426\uE427\uE428\uE429\uE430\uE431"
+        ]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/container/command_block/command_block_impulse.png",
+        "ascent": 167,
+        "height": 181,
+        "chars": ["\uE500"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/container/command_block/command_block_chain.png",
+        "ascent": 167,
+        "height": 181,
+        "chars": ["\uE501"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/container/command_block/command_block_repeat.png",
+        "ascent": 167,
+        "height": 181,
+        "chars": ["\uE502"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/container/command_block/command_block_needs_redstone.png",
+        "ascent": 167,
+        "height": 181,
+        "chars": ["\uE503"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/container/command_block/command_block_always_active.png",
+        "ascent": 167,
+        "height": 181,
+        "chars": ["\uE504"]
+    },
+
+    {
+        "type": "bitmap",
+        "file": "minecraft:gui/default.png",
+        "ascent": -100,
+        "height": 256,
+        "chars": ["\uE999"]
+    }
+    ]
+}

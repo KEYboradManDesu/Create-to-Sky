@@ -1,0 +1,35 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "projecte:klein_star_vier"
+  },
+  "transitionalItem": {
+    "item": "projecte:klein_star_sphere"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "projecte:klein_star_sphere"
+        },
+        {
+          "fluid": "kubejs:alchemical_coke",
+          "amount": 450
+        }
+      ],
+      "results": [
+        {
+          "item": "projecte:klein_star_sphere"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "projecte:klein_star_omega",
+      "chance": 1
+    }
+  ],
+  "loops": 16
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:plates/gold",
+      "amount": 4
+    },
+    {
+      "tag": "forge:nuggets/netherite_scrap",
+      "amount": 4
+    },
+    {
+      "item": "forbidden_arcanus:soul",
+      "amount": 1
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 50
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:netherite_plating"
+    }
+  ],
+  "heatRequirement":"heated"
+}

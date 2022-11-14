@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "tag": "forge:nuggets/silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:soul",
+      "count": 1
+    },
+    {
+      "item": "forbidden_arcanus:soulless_sand",
+      "count": 1
+    }
+  ],
+  "heatRequirement":"heated"
+}

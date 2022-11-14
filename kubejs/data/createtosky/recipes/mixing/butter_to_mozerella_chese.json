@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:mozerella_chese",
+      
+      "amount": 200
+    },
+    {
+      "fluid": "kubejs:butter",
+      
+      "amount": 800
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:mozerella_chese",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement":"heated"
+}

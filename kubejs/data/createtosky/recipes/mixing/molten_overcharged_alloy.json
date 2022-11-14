@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "kubejs:overcharged_alloy"
+    },
+    {
+      "fluid": "tconstruct:molten_diamond",
+      
+      "amount": 50
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:molten_overcharged_alloy",
+      "amount": 180
+    }
+  ],
+  "heatRequirement":"heated"
+}

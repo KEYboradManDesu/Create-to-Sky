@@ -1,0 +1,52 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "transitionalItem": {
+    "item": "minecraft:paper"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "tag": "forge:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "createbigcannons:shot_balls"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:paper"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "musketmod:cartridge",
+      "count": 6,
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

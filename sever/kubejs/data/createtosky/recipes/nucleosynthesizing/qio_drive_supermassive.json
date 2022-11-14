@@ -1,1 +1,0 @@
-{"type":"mekanism:nucleosynthesizing","itemInput":{"ingredient":{"item":"kubejs:crushed_neutronium_drive_hyper_dense"}},"gasInput":{"amount":10,"gas":"mekanism:antimatter"},"output":{"item":"mekanism:qio_drive_supermassive"},"duration":500}

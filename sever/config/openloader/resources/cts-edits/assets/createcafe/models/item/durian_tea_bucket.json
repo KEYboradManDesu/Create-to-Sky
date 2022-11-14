@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "createcafe:bucket/durian_tea_bucket"
-  }
-}

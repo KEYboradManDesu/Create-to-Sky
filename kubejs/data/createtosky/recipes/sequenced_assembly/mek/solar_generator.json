@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:steel_casing"
+  },
+  "transitionalItem": {
+    "item": "kubejs:components"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "item": "pipez:energy_pipe"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "item": "mekanismgenerators:solar_panel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:components"
+        },
+        {
+          "item": "thermal:dynamo_magmatic"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:components"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanismgenerators:solar_generator",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

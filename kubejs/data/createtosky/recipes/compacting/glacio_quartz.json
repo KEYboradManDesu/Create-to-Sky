@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:glacio_dust",
+      "amount": 4
+    },
+    {
+      "item": "thermal:ice_charge",
+      "amount": 1
+    },
+    {
+      "fluid": "kubejs:cryo_fuel",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:glacio_quartz"
+    }
+  ],
+  "heatRequirement":"superheated"
+}
