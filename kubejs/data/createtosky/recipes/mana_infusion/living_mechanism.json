@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "kubejs:incomp_living_mechanism"
+  },
+  "output": {
+    "item": "kubejs:living_mechanism"
+  },
+  "mana": 3000
+}
