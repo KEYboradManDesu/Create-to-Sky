@@ -121,6 +121,8 @@ onEvent("recipes", event => {
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
   andesite_machine('kubejs:pipe_module_utility', 4)
+  andesite_machine('camera:camera', 1, ('#minecraft:buttons'))
+  andesite_machine('create_mechanical_extruder:mechanical_extruder', 1, ('create:mechanical_drill'))
   
 
 
@@ -139,7 +141,9 @@ onEvent("recipes", event => {
   handmade_machine('supplementaries:clock_block', 1, 'minecraft:clock')
   handmade_machine('supplementaries:speaker_block', 1, '#forge:gems/emerald')
   handmade_machine('supplementaries:notice_board', 1, '#forge:paper')
+  handmade_machine('extractinator:extractinator', 1, 'minecraft:cauldron')
 
-  event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:logs']).id("kubejs:handmade_mechanism_manual_only")
   
+  //event.shapeless(KJ('handmade_mechanism'), ['#immersiveengineering:tools/hammers', MC('flint'), '#minecraft:wooden_slabs']).id("kubejs:handmade_mechanism2")
+  event.shapeless(KJ('handmade_mechanism'), ['#forge:slimeballs', MC('flint'), '#minecraft:wooden_slabs']).id("kubejs:handmade_mechanism")
 })

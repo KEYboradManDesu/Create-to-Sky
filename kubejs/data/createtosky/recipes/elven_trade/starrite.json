@@ -1,0 +1,23 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "kubejs:createcoin"
+    },
+    {
+      "item": "kubejs:createcoin"
+    },
+    {
+      "item": "kubejs:createcoin"
+    },
+    {
+      "item": "kubejs:createcoin"
+    }
+  ],
+  "output": [
+    {
+      "item": "kubejs:starrite",
+      "amount": 1
+    }
+  ]
+}

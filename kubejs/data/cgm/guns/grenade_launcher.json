@@ -10,7 +10,7 @@
   "projectile": {
     "item": "cgm:grenade",
     "visible": true,
-    "damage": 20.0,
+    "damage": 35.0,
     "size": 0.2,
     "speed": 1.5,
     "life": 50,

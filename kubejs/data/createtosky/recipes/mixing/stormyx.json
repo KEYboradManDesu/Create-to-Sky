@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "architects_palette:sunmetal_blend",
+      "amount": 1
+    },
+    {
+      "item": "mekanism:yellow_cake_uranium",
+      "amount": 4
+    },
+    {
+      "item": "thermal:blitz_powder",
+      "amount": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:raw_stormyx",
+      "amount": 1
+    }
+  ],
+  "heatRequirement":"heated"
+}

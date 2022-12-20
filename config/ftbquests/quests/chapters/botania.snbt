@@ -1,7 +1,7 @@
 {
 	id: "32C4B62281328EB9"
 	group: "331B6409EF6A7840"
-	order_index: 8
+	order_index: 9
 	filename: "botania"
 	title: "&f&lDLC&r 植物魔法"
 	icon: {
@@ -11,7 +11,11 @@
 			"botania:elven_unlock": 1b
 		}
 	}
-	subtitle: ["植物魔法入门"]
+	subtitle: [
+		"植物魔法入门"
+		"任务表尚未完成"
+	]
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

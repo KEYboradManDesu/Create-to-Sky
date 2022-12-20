@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "kubejs:alpha_quartz"
+    },
+    {
+      "fluid": "kubejs:chaos_resin",
+      
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:chimera_lava",
+      "amount": 250
+    }
+  ],
+  "heatRequirement":"superheated"
+}

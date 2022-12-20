@@ -30,7 +30,7 @@
           "item": "kubejs:protein_bar"
         },
         {
-          "fluid": "industrialforegoing:meat",
+          "fluid": "caupona:meat_soup",
           
           "amount": 250
         }

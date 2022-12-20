@@ -132,6 +132,8 @@ onEvent('item.tags', event => {
 	event.get('forge:blocks/bronze').add('thermal:bronze_block')
 	event.get('forge:blocks/bronze').add('mekanism:block_bronze')
   
+	event.get('forge:ingots/bronze').remove('tcintegrations:bronze_ingot')
+
 	event.get('minecraft:melon_slice').add('minecraft:melon_slice')
   
 	event.get('forge:cheese/cheese').add('vanillacookbook:cheese')
@@ -179,13 +181,14 @@ onEvent('item.tags', event => {
 	event.get('forge:nuggets/stormyx').add('kubejs:stormyx_nugget')
   
 	event.get('thermal:crafting/dies').add('#forge:trade_cards')
-	  event.get('thermal:crafting/dies').add('#forge:profession_cards')
+	event.get('thermal:crafting/dies').add('#forge:profession_cards')
+	event.get('thermal:crafting/dies').add('#forge:profession_cards')
   
 	event.get('forge:ores/cobalt').add('tconstruct:raw_cobalt')
   
 	event.get('thermal:crafting/dies').add('kubejs:graphics_card_t1')
 	event.get('thermal:crafting/dies').add('kubejs:graphics_card_t2')
-	event.get('thermal:crafting/dies').add('kubejs:graphics_card_c')
+	event.get('thermal:crafting/dies').add('kubejs:trade_card_unknow')
   
 	event.get("forge:ores/brass").add("kubejs:raw_brass")
 	event.get("create:crushed_ores").add("kubejs:crushed_brass_ore")
@@ -197,7 +200,7 @@ onEvent('item.tags', event => {
   
 	event.get("exnihilosequentia:hammer").add("#forbidden_arcanus:blacksmith_gavel")
 	event.get("exnihilosequentia:hammer").add("immersiveengineering:hammer")
-	event.get("exnihilosequentia:hammer").add("industrialforegoing:infinity_hammer")
+	//event.get("exnihilosequentia:hammer").add("industrialforegoing:infinity_hammer")
 	event.get("exnihilosequentia:hammer").add("projecte:dm_hammer")
 	event.get("exnihilosequentia:hammer").add("projecte:rm_hammer")
 	event.get("exnihilosequentia:hammer").add("projecte:rm_morning_star")
@@ -283,9 +286,9 @@ onEvent('item.tags', event => {
 	event.get("forge:dusts/iron").remove("immersiveengineering:dust_iron")
 	event.get("forge:dusts/gold").remove("immersiveengineering:dust_gold")
   
-	event.get("forge:gears/diamond").remove("industrialforegoing:diamond_gear")
-	event.get("forge:gears/gold").remove("industrialforegoing:gold_gear")
-	event.get("forge:gears/iron").remove("industrialforegoing:iron_gear")
+	//event.get("forge:gears/diamond").remove("industrialforegoing:diamond_gear")
+	//event.get("forge:gears/gold").remove("industrialforegoing:gold_gear")
+	//event.get("forge:gears/iron").remove("industrialforegoing:iron_gear")
   
 	event.get("forge:ingots/lead").remove("mekanism:ingot_lead")
 	event.get("forge:ingots/tin").remove("mekanism:ingot_tin")

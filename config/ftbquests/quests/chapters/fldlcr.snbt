@@ -1,11 +1,11 @@
 {
 	id: "7A6D1AD191F1A3CA"
 	group: "331B6409EF6A7840"
-	order_index: 9
+	order_index: 10
 	filename: "fldlcr"
 	title: "&f&lDLC&r 炼金术士"
 	icon: "projecte:red_matter"
-	subtitle: ["咸鱼之力"]
+	subtitle: ["任务表尚未完成"]
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -16,6 +16,7 @@
 		y: 0.0d
 		shape: "hexagon"
 		subtitle: "触及阴暗"
+		description: ["咕咕咕"]
 		dependencies: ["154DA49D22AAD44B"]
 		size: 2.0d
 		id: "7D12009BA8EB29B4"

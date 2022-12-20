@@ -27,7 +27,7 @@ onEvent("recipes", event => {
 	creative_machine(Item.of('tconstruct:creative_slot', '{slot:"souls"}'), 1, 'tconstruct:jeweled_apple')
 	creative_machine('thermal:fluid_tank_creative_augment', 1, 'thermal:fluid_tank_augment')
 	creative_machine('thermal:machine_catalyst_creative_augment', 1, 'thermal:machine_catalyst_augment')
-	creative_machine('projecte:collector_mk1', 1, 'industrialforegoing:resourceful_furnace')
+	creative_machine('projecte:collector_mk1', 1, 'avaritia:neutron_collector')
 	creative_machine('projecte:philosophers_stone', 1, 'kubejs:laser_blaster')
 	creative_machine('create:creative_motor', 1, 'projecte:watch_of_flowing_time')
 	creative_machine('createbigcannons:cannon_crafting_wand', 1, 'createbigcannons:ram_head')

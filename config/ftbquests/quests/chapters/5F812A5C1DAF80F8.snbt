@@ -1,10 +1,12 @@
 {
 	id: "5F812A5C1DAF80F8"
 	group: "331B6409EF6A7840"
-	order_index: 7
+	order_index: 8
 	filename: "5F812A5C1DAF80F8"
 	title: "&f&l6&r 异星工厂"
-	icon: "beyond_earth:moon_globe"
+	icon: "beyond_earth:moon_cheese_ore"
+	subtitle: ["任务表尚未完成"]
+	always_invisible: true
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
@@ -16,7 +18,6 @@
 			shape: "hexagon"
 			subtitle: "绿奶酪星球"
 			description: ["你做到了！你成功登录了月球！现在着手准备建设外星吧。"]
-			dependencies: ["75CF8B6BAC6A01EF"]
 			hide: true
 			size: 2.0d
 			id: "455ACDBB066B83CB"
@@ -263,7 +264,7 @@
 		}
 		{
 			title: "威化饼干"
-			icon: "kubejs:alpha_ingot"
+			icon: "kubejs:chimera_ingot"
 			x: 1.0d
 			y: 9.0d
 			subtitle: "步骤 58"
@@ -277,7 +278,7 @@
 				{
 					id: "20AF9CA01D298DEA"
 					type: "item"
-					item: "kubejs:alpha_ingot"
+					item: "kubejs:chimera_ingot"
 					consume_items: false
 				}
 				{
@@ -294,10 +295,7 @@
 			y: 9.0d
 			subtitle: "步骤 59"
 			description: ["在&6感应炉&r中加入&6钻石粉&r，&6星辰&r以加固&6阿尔法合金&r。"]
-			dependencies: [
-				"211F451405ACF59E"
-				"78A312F0BD04E228"
-			]
+			dependencies: ["211F451405ACF59E"]
 			id: "1C32C4DDD72AF1AC"
 			tasks: [
 				{
@@ -725,119 +723,6 @@
 			]
 		}
 		{
-			title: "未知信号"
-			icon: "kubejs:missingno"
-			x: -1.0d
-			y: 10.0d
-			shape: "hexagon"
-			description: ["你突然接收到了一段微弱的信号，断断续续的语音里一个自称“大人物”的人要求你向这个账户打一个&6奎特币&r以进一步交流，关于&6星辰&r的事。"]
-			dependencies: ["0F68DA1AC8F50701"]
-			id: "78A312F0BD04E228"
-			tasks: [{
-				id: "3C935CC944D5CD67"
-				type: "item"
-				item: "kubejs:createcoin"
-			}]
-			rewards: [{
-				id: "79E2E7C15CAB1F98"
-				type: "toast"
-				title: "解锁黑市"
-				icon: "minecraft:book"
-				description: "首次沟通"
-			}]
-		}
-		{
-			title: "矿老板"
-			icon: {
-				id: "kubejs:graphics_card_t1"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -3.0d
-			y: 9.0d
-			shape: "circle"
-			description: ["知道现在什么最赚钱吗（刷龙蛋不算）？挖矿！不是那个挖矿，是通过显卡算力挖矿。"]
-			hide_dependency_lines: true
-			dependencies: ["211F451405ACF59E"]
-			id: "58C81CF3D7357744"
-			tasks: [
-				{
-					id: "2955E1BD2B9E2789"
-					type: "item"
-					item: {
-						id: "kubejs:graphics_card_t1"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					consume_items: false
-				}
-				{
-					id: "145B69F61742AEA7"
-					type: "checkmark"
-					title: "好的"
-				}
-			]
-			rewards: [{
-				id: "23CE3E24B2109C77"
-				type: "item"
-				item: "pipez:energy_pipe"
-				count: 16
-			}]
-		}
-		{
-			icon: "kubejs:blockchain"
-			x: -3.0d
-			y: 11.0d
-			shape: "circle"
-			description: ["&6实体区块链&r是一个共享的、不可篡改的账本，旨在促进业务网络中的村民交易记录和村民资产跟踪流程。 "]
-			hide_dependency_lines: true
-			dependencies: ["211F451405ACF59E"]
-			id: "4D758C3E20EA4E66"
-			tasks: [
-				{
-					id: "09CAC26DC2B792D8"
-					type: "item"
-					item: "kubejs:blockchain"
-					consume_items: false
-				}
-				{
-					id: "65EB2739DFF7DC58"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
-			title: "加密货币"
-			icon: "kubejs:createcoin"
-			x: -2.0d
-			y: 10.0d
-			shape: "circle"
-			description: ["与大多数货币不同，比特币不依靠特定货币机构发行，它依据特定算法，通过大量的计算产生，而&6奎特币&r相比于比特币更加保值。"]
-			dependencies: [
-				"4D758C3E20EA4E66"
-				"58C81CF3D7357744"
-			]
-			id: "0F68DA1AC8F50701"
-			tasks: [
-				{
-					id: "39BA978A0AB00EA0"
-					type: "item"
-					item: "kubejs:createcoin"
-					consume_items: false
-				}
-				{
-					id: "236FC519F07875B8"
-					type: "checkmark"
-					title: "已自动化"
-				}
-			]
-		}
-		{
 			x: -1.0d
 			y: 14.0d
 			shape: "circle"
@@ -909,9 +794,9 @@
 			x: 4.0d
 			y: 13.0d
 			subtitle: "步骤 61-1"
-			description: ["加上从黑商那里买到的不可描述之物。"]
+			description: ["不可描述之物。"]
 			hide_dependency_lines: true
-			dependencies: ["78A312F0BD04E228"]
+			dependencies: ["2F0FD00C896018AD"]
 			id: "64B77BACBABE9688"
 			tasks: [
 				{

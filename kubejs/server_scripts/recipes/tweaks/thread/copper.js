@@ -39,7 +39,7 @@ onEvent("recipes", event => {
 	copper_machine("create:smart_fluid_pipe", 2)
 	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
 	copper_machine("create_enchantment_industry:disenchanter", 1, "#create:sandpaper")
-	copper_machine("create_enchantment_industry:copier", 1, "#forge:plates/iron")
+	copper_machine("create_enchantment_industry:printer", 1, "#forge:plates/iron")
 
 
 })

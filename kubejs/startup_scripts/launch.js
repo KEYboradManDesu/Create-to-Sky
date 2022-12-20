@@ -185,8 +185,8 @@ onEvent("item.registry", event => {
 
 		event.create("laser_blaster")
 			.texture(modpackId + ":item/laser_blaster")
-			.displayName("炼金镭射发生器").rarity(RARITY_UNCOMMON)
-			.maxDamage(512)
+			.displayName("§d炼金钝化棒§r").rarity(RARITY_UNCOMMON)
+			.maxDamage(100)
 		
 		event.create("crushed_cobalt_ore")
 			.texture(modpackId + ":item/crushed/crushed_cobalt_ore")
@@ -287,12 +287,12 @@ onEvent("item.registry", event => {
 
 		event.create("alpha_quartz")
 			.texture(modpackId + ":item/alpha_quartz")
-			.displayName("致密阿尔法晶体").rarity(RARITY_UNCOMMON)
+			.displayName("致密外星石晶体").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
-		event.create("alpha_ingot")
+		event.create("chimera_ingot")
 			.texture(modpackId + ":item/alpha_ingot")
-			.displayName("致密阿尔法合金").rarity(RARITY_UNCOMMON)
+			.displayName("致密奇美拉").rarity(RARITY_UNCOMMON)
 			.glow(true)
 
 		event.create("nether_seed_star")
@@ -461,7 +461,7 @@ onEvent("item.registry", event => {
 
 		event.create("trade_card_unknow")
 			.texture(modpackId + ":item/trade_card")
-			.displayName("§6购买铭牌：§b§khu§on§mДaャ§e星辉§b§khu§on§mДaャ")
+			.displayName("§6购买铭牌：§e星辉")
 			.unstackable()
 
 		event.create("rubber_duck")
@@ -600,11 +600,6 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/netherite_plating")
 			.displayName("下界板材")
 
-		event.create("cryo_bucket")
-			.texture(modpackId + ":item/cryo_fuel_bucket")
-			.displayName("超低温有机燃料桶").rarity(RARITY_UNCOMMON)
-			.maxStackSize(1)
-
 		event.create('protein_bar')
 		    .texture(modpackId + ":item/protein_bar")
 		    .displayName('Feed The Beast™蛋白棒').rarity(RARITY_UNCOMMON)
@@ -705,6 +700,27 @@ onEvent("item.registry", event => {
 		event.create("incompete_armour_piercing_buttle")
 			.texture(modpackId + ":item/buttle/incompete_armour_piercing_buttle")
 			.displayName("全威力穿甲弹药（半成品）").rarity(RARITY_UNCOMMON)
+
+		event.create("diamond_shard")
+			.texture(modpackId + ":item/diamond_shard")
+			.displayName("钻石碎片")
+
+		event.create("diamond_ingot")
+			.texture(modpackId + ":item/diamond_ingot")
+			.displayName("钻石锭")
+
+		event.create("diamond_tool_embryo")
+			.texture(modpackId + ":item/diamond_tool_embryo")
+			.displayName("钻石工具胚")
+			.maxStackSize(1)
+
+		event.create("canvas_doll")
+			.texture(modpackId + ":item/canvas_doll")
+			.displayName("粗布人偶")
+
+		event.create("diamond_lattice")
+			.texture(modpackId + ":item/diamond_lattice")
+			.displayName("钻石晶格").rarity(RARITY_UNCOMMON)
 
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')
 		event.create('pipe_module_tier_1').texture(modpackId + ":item/pipe_module_tier_1").displayName('黄铜管道模块')
@@ -995,6 +1011,15 @@ onEvent("fluid.registry", event => {
 			
 	}
 
+	event.create("star")
+		.displayName("§e星华§r")
+		.thinTexture(0xFCFCFC)
+		.bucketColor(0xFCFCFC)
+		.stillTexture(modpackId + ':fluid/number_still')
+		.flowingTexture(modpackId + ':fluid/number_flow')
+		.color(0xFCFCFC)
+		.noBlock()	
+
 	event.create("matrix")
 		.displayName("§d液态智能矩阵§r")
 		.thinTexture(colors[0])
@@ -1063,6 +1088,22 @@ onEvent("fluid.registry", event => {
 		.bucketColor(0x1f003d)
 		.stillTexture(modpackId + ':fluid/chaos_resin_still')
 		.flowingTexture(modpackId + ':fluid/chaos_resin_flow')
+		.noBlock()	
+
+	event.create("chimera_lava")
+		.displayName("奇美拉岩浆")
+		.thickTexture(0xFF00FF)
+		.bucketColor(0xFF00FF)
+		.stillTexture(modpackId + ':fluid/chimera_lava_still')
+		.flowingTexture(modpackId + ':fluid/chimera_lava_flow')
+		.noBlock()	
+
+	event.create("alpha_lava")
+		.displayName("阿尔法岩浆")
+		.thickTexture(0xFFFAFA)
+		.bucketColor(0xFFC125)
+		.stillTexture(modpackId + ':fluid/lava_still')
+		.flowingTexture(modpackId + ':fluid/lava_flow')
 		.noBlock()	
 
 		

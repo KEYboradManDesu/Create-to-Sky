@@ -10,13 +10,14 @@
       "amount": 1
     },
     {
-      "fluid": "kubejs:powered_water",
+      "fluid": "kubejs:mozerella_chese",
       "amount": 250
     }
   ],
   "results": [
     {
-      "item": "kubejs:alpha_quartz"
+      "item": "kubejs:alpha_quartz",
+      "amount": 2
     }
   ],
   "heatRequirement":"superheated"

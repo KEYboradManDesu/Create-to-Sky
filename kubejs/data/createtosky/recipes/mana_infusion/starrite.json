@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "ae2:sky_stone_block"
+  },
+  "output": {
+    "item": "kubejs:starrite"
+  },
+  "mana": 180000
+}

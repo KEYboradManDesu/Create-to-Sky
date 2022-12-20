@@ -11,7 +11,7 @@
   },
   "projectile": {
     "item": "kubejs:armour_piercing_buttle",
-    "damage": 12.0,
+    "damage": 16.0,
     "size": 0.2,
     "speed": 8.0,
     "life": 30

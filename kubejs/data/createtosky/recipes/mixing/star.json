@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "materialis:molten_refined_radiance",
+      
+      "amount": 200
+    },
+    {
+      "tag": "forge:nether_stars"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:star",
+      "amount": 500
+    }
+  ],
+  "heatRequirement":"heated"
+}

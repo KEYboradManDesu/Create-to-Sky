@@ -140,12 +140,15 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("kubejs:sweet_mechanism", [`§7全宇宙最齁死人的构件`]);
 	tooltip.add("avaritia:cosmic_meatballs", [`§7全是科技与狠活`]);
 	tooltip.add("avaritia:endest_pearl", [`§6易燃易爆，十分危险！`]);
-	tooltip.add("grimoireofgaia:doll_maid", [`§7Mic女仆手办`]);
+	//tooltip.add("grimoireofgaia:doll_maid", [`§7Mic女仆手办`]);
 	tooltip.add("kubejs:protein_bar", [`§7同时也是Mic最爱吃的品牌`]);
 	tooltip.add("beyond_earth:cheese", [`§7月球果然是奶酪做的！`]);
 	tooltip.add("create:creative_blaze_cake", [`§7召唤simibubi之力！`]);
 	tooltip.add("beyond_earth:permafrost", [`§7含有大量的稀有燃料，可能封印着远古生命体`]);
 	tooltip.add("kubejs:rubber_duck", [`§7捏~捏捏~`]);
+	tooltip.add("twilightforest:mazebreaker_pickaxe", [`§8我的神镐！`]);
+	tooltip.add("kubejs:diamond_tool_embryo", [`§7可被切割成钻石工具。`]);
+	tooltip.add("kubejs:trade_card_unknow", [`§7来自异世的贸易单。`]);
 
 	tooltip.add("excompressum:compressed_andesite", [`§7我是9块安山岩的结合体`]);
 	tooltip.add("kubejs:compressed_limestone", [`§7我是9块石灰岩的结合体`]);
@@ -170,8 +173,6 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("kubejs:incomplete_box_ap_ammo", [`§7内装有48发全威力穿甲弹药`]);
 	tooltip.add("kubejs:incomplete_box_ap_ammo", [`§8罗德岛永恒枪械工坊鼎力赞助`]);
 
-
-
 	tooltip.add("kubejs:blaze_brass", [`§7烈焰催化剂`]);
 	tooltip.add("kubejs:neutronium_drive_hyper_dense", [`§8§o宇宙最苦的卡片...§r`]);
 	tooltip.add("kubejs:crushed_neutronium_drive_hyper_dense", [`§8§o修复我...§r`]);
@@ -181,6 +182,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("nethersdelight:propelplant_cane", [`§6使用小刀破坏枪药草茎获得`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
+	tooltip.add("pipez:item_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 
 	tooltip.add("kubejs:accellerator_redstone", ["§7在混沌炼金的探索中:", "  §6返回一个 §e对应的 §6反应物",
 		"  §6若该反应物在 §e不正确 §6的格子里，那么它不会被消耗"]);

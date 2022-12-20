@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "minecraft:leaves"
+  },
+  "result": {
+    "item": "minecraft:green_dye"
+  }
+}

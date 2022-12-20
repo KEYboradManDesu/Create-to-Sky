@@ -1,0 +1,1 @@
+{"type":"mekanism:reaction","itemInput":{"ingredient":{"item":"kubejs:diamond_lattice"}},"fluidInput":{"amount":50,"fluid":"kubejs:star"},"gasInput":{"amount":200,"gas":"mekanism:polonium"},"duration":100,"itemOutput":{"item":"avaritia:crystal_matrix_ingot"},"gasOutput":{"gas":"mekanism:spent_nuclear_waste","amount":200}}

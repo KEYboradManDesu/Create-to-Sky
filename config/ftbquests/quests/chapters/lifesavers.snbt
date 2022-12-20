@@ -1,7 +1,7 @@
 {
 	id: "0D0BC5B3F6623669"
 	group: "0810E42B2DD79973"
-	order_index: 5
+	order_index: 4
 	filename: "lifesavers"
 	title: " 护肝员"
 	icon: "minecraft:totem_of_undying"
@@ -387,7 +387,7 @@
 					Damage: 0
 				}
 			}
-			x: 5.0d
+			x: 6.0d
 			y: -1.0d
 			subtitle: "芜湖起飞！"
 			description: ["上天是人类一直的梦想，这个喷气背包可以让你短暂的飞翔，它还可以为你的鞘翅加速。"]
@@ -497,10 +497,11 @@
 			}]
 		}
 		{
-			title: "绘画之乐"
+			title: "记录美好生活 I"
 			x: -3.0d
 			y: -5.0d
-			description: ["想记录下日落美景又不想用打破沉浸式体验的F2截图?你可以试试绘画。"]
+			subtitle: "绘画之乐"
+			description: ["想记录下日落美景又不想使用打破沉浸式体验的F2截图?你可以试试绘画。"]
 			id: "4EDDF14C9B67AF68"
 			tasks: [{
 				id: "65D08E41105F0D88"
@@ -508,11 +509,18 @@
 				item: "xercapaint:item_palette"
 				consume_items: false
 			}]
-			rewards: [{
-				id: "1964E4D6BE75303F"
-				type: "item"
-				item: "xercapaint:item_easel"
-			}]
+			rewards: [
+				{
+					id: "1964E4D6BE75303F"
+					type: "item"
+					item: "xercapaint:item_easel"
+				}
+				{
+					id: "2DE640469EA41180"
+					type: "item"
+					item: "thermal:gold_coin"
+				}
+			]
 		}
 		{
 			title: "黄铜物品管道"
@@ -628,7 +636,7 @@
 		}
 		{
 			icon: "exnihilosequentia:end_cake"
-			x: -5.0d
+			x: -6.0d
 			y: -5.0d
 			description: ["厌倦了寻找遗迹？做出这个末地甜点，摆放后刚好只够一个人吃，食用后会传送到末地。"]
 			id: "3F47F8B76ADFDF2B"
@@ -657,7 +665,7 @@
 			}
 			x: -7.0d
 			y: -3.0d
-			description: ["这是把使用了蒸汽原理通过发射钢筋造成远程伤害的发射器。"]
+			description: ["使用这把搭载着蒸汽激发通过发射钢筋造成远程伤害的发射器给予敌人（好友）打击。"]
 			dependencies: ["07124A0D7BF5D024"]
 			id: "131C210439B0EF7B"
 			tasks: [{
@@ -771,8 +779,9 @@
 		}
 		{
 			title: "机械飞升 II"
-			x: 6.0d
+			x: 5.0d
 			y: -1.0d
+			subtitle: "helicopter~helicopter~"
 			description: ["有了飞机等大型交通工具，从一地点飞到另一个地点将会是燎发摧枯般简单。"]
 			dependencies: ["163FFB86DB68BD42"]
 			id: "316859075BBCF9AB"
@@ -828,6 +837,32 @@
 				item: "minecraft:redstone_block"
 				count: 4
 			}]
+		}
+		{
+			title: "记录美好生活 II"
+			x: -4.0d
+			y: -5.0d
+			description: ["这台精密的不需要胶卷的相机可以随时随刻记录景色，并可以和你的好朋友分享。"]
+			dependencies: ["4EDDF14C9B67AF68"]
+			id: "6FDE54FE1F075262"
+			tasks: [{
+				id: "31F6271B0BB05CD3"
+				type: "item"
+				item: "camera:camera"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "5E2071B8904DCD5E"
+					type: "item"
+					item: "camera:album"
+				}
+				{
+					id: "7AAE89802FFA7963"
+					type: "item"
+					item: "thermal:gold_coin"
+				}
+			]
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
 	id: "492D716A6C780306"
 	group: "331B6409EF6A7840"
-	order_index: 1
+	order_index: 2
 	filename: "492D716A6C780306"
 	title: "&f&l0&r 粉墨登场 &a/ &6引导指南&r"
 	icon: {
@@ -11,6 +11,7 @@
 			Damage: 0
 		}
 	}
+	always_invisible: true
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
@@ -535,7 +536,7 @@
 			x: 2.45d
 			y: 9.0d
 			subtitle: "步骤 0-20"
-			description: ["用你灵巧的双手打造出&6动力构件&r吧！随后你将可以打造各种各样的器械。&a入门部分结束。之后你也可以在这个页面了解更多生存知识&r。"]
+			description: ["用你灵巧的双手打造出&6动力构件&r吧！随后你将可以打造各种各样的器械。&a入门部分结束。"]
 			dependencies: ["73AEFB2E986A5654"]
 			id: "06B022F0D6B9D0CB"
 			tasks: [{
@@ -584,7 +585,6 @@
 			shape: "square"
 			subtitle: "步骤 0-18-1"
 			description: ["将有机物发酵成泥土（树叶 树种 蚕 蜘蛛丝 各种肉类 各种农作物）。"]
-			hide_dependency_lines: true
 			dependencies: ["3AAD60FC5E704C3A"]
 			size: 0.7d
 			id: "4423579A043BB100"
@@ -645,205 +645,6 @@
 				type: "item"
 				item: "create:wrench"
 				consume_items: false
-			}]
-		}
-		{
-			title: "科学用电"
-			icon: "createaddition:alternator"
-			x: -3.0d
-			y: 8.0d
-			shape: "hexagon"
-			subtitle: "节约！"
-			description: ["如果你的工厂有大量多余的&6应力&r，先恭喜你，你可以使用&6交流发电机&r将&6应力&r转化为新颖&4FE能源&r，这将对你之后的生成有极大的帮助。&a除此之外，还有大量的发电方式，本教程仅展示常规发电方式。"]
-			hide_dependency_lines: true
-			dependencies: ["06B022F0D6B9D0CB"]
-			hide: true
-			id: "2F34F3E56D93F79B"
-			tasks: [
-				{
-					id: "467A49C834192F30"
-					type: "item"
-					item: "createaddition:alternator"
-					consume_items: false
-				}
-				{
-					id: "03E5851AD6DCE2AF"
-					type: "checkmark"
-					title: "好的"
-				}
-			]
-			rewards: [
-				{
-					id: "1C369F098C15B336"
-					type: "command"
-					title: "俺寻思：交流发电机"
-					icon: {
-						id: "occultism:book_of_calling_djinni_manage_machine"
-						Count: 1b
-						tag: {
-							spiritName: "Breslamarark"
-						}
-					}
-					team_reward: false
-					auto: "disabled"
-					command: "/create ponder createaddition:alternator @p"
-					player_command: false
-				}
-				{
-					id: "184AC53F244BEA64"
-					type: "item"
-					item: {
-						id: "thermal:rf_potato"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
-		}
-		{
-			title: "斯特林发电机"
-			icon: "thermal:dynamo_stirling"
-			x: -3.0d
-			y: 9.0d
-			subtitle: "火力发电"
-			description: ["&6斯特林能源炉&r能允许你使用&e可燃烧的&r物品燃烧产生&4FE能源&r。"]
-			dependencies: ["2F34F3E56D93F79B"]
-			id: "53087D3818871958"
-			tasks: [
-				{
-					id: "5F2094D3A08F37C8"
-					type: "item"
-					item: "thermal:dynamo_stirling"
-					consume_items: false
-				}
-				{
-					id: "1590E9DD11F8942C"
-					type: "checkmark"
-					title: "好的"
-				}
-			]
-			rewards: [{
-				id: "2CE025F201A703FA"
-				type: "item"
-				item: "minecraft:coal"
-				count: 8
-			}]
-		}
-		{
-			title: "图书借阅"
-			icon: "minecraft:bookshelf"
-			x: 0.0d
-			y: 8.0d
-			shape: "hexagon"
-			subtitle: "知识就是力量"
-			description: ["这世上的书籍可太多了，寻找适合的书籍也是一种挑战。"]
-			hide_dependency_lines: true
-			dependencies: ["06B022F0D6B9D0CB"]
-			id: "55C942DFC0DA28FF"
-			tasks: [{
-				id: "2AE2860B7DCFEFA1"
-				type: "item"
-				title: "任何书架"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:bookshelves"
-					}
-				}
-				consume_items: true
-			}]
-			rewards: [{
-				id: "684D2A73BFC848C7"
-				type: "questsadditions:repeat"
-				icon: "minecraft:writable_book"
-				table_id: 6902930572330827405L
-			}]
-		}
-		{
-			title: "风力发电机"
-			icon: "mekanismgenerators:wind_generator"
-			x: -3.5d
-			y: 10.0d
-			subtitle: "风力发电"
-			description: ["&3风力发电机&r能允许你使用&e风&r产生&4FE能源&r。"]
-			dependencies: ["53087D3818871958"]
-			id: "288D94D16BD9C1A8"
-			tasks: [{
-				id: "7428A88664C7CAE0"
-				type: "checkmark"
-				title: "好的"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 10.0d
-			subtitle: "风力发电"
-			description: ["&3风力发电机&r能允许你使用&e阳光&r产生&4FE能源&r，其特点将使发电机&4&l在夜晚无法发电&r。"]
-			dependencies: ["53087D3818871958"]
-			id: "61E4A35268642AB3"
-			tasks: [{
-				id: "4185213C065FD9BE"
-				type: "item"
-				item: "mekanismgenerators:solar_generator"
-				consume_items: false
-			}]
-		}
-		{
-			x: -3.0d
-			y: 11.0d
-			description: ["&6蓄电池&r可以存储大量的&4FE能源&r，应对不时之需。"]
-			dependencies: [
-				"288D94D16BD9C1A8"
-				"61E4A35268642AB3"
-				"58B575B3C72CB894"
-			]
-			id: "08325D2EB98D0356"
-			tasks: [{
-				id: "0F4A08DF2661EB22"
-				type: "item"
-				item: "createaddition:accumulator"
-				consume_items: false
-			}]
-			rewards: [{
-				id: "4BD223065C33992C"
-				type: "item"
-				item: "kubejs:good_idea"
-			}]
-		}
-		{
-			title: "超导"
-			x: -2.0d
-			y: 9.0d
-			description: ["&6线轴+连接器&r可以让你在物体之间建立FE传输。"]
-			dependencies: ["2F34F3E56D93F79B"]
-			id: "58B575B3C72CB894"
-			tasks: [
-				{
-					id: "50D3592BC594E112"
-					type: "item"
-					item: "createaddition:copper_spool"
-					consume_items: false
-				}
-				{
-					id: "15AF9C01B2DEF3DD"
-					type: "item"
-					disable_toast: true
-					item: "createaddition:gold_spool"
-					consume_items: false
-				}
-				{
-					id: "487C733EA77CB81B"
-					type: "item"
-					item: "createaddition:connector"
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "36723E8D0BD24F6B"
-				type: "item"
-				item: "createaddition:copper_wire"
-				count: 8
 			}]
 		}
 	]

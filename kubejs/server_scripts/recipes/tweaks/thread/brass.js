@@ -51,7 +51,7 @@ onEvent("recipes", event => {
 	brass_machine('thermal:dynamo_numismatic', 1, TE('rf_coil'))
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)
-  brass_machine('industrialforegoing:machine_frame_pity', 1, ('minecraft:redstone_block'))
+  //brass_machine('industrialforegoing:machine_frame_pity', 1, ('minecraft:redstone_block'))
   brass_machine('kubejs:pipe_module_tier_1', 4)
   brass_machine('create_things_and_misc:card_reader', 2)
   brass_machine('create_things_and_misc:card_scripter', 1, ('create:display_board'))

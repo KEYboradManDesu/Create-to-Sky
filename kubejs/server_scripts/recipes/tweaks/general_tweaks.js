@@ -140,9 +140,26 @@ onEvent("recipes", event => {
   event.remove({ id: "immersiveengineering:crafting/stick_aluminum" })
   event.remove({ id: "immersiveengineering:crafting/stick_iron" })
 
-  event.remove({ output: 'industrialforegoing:iron_gear' })
-  event.remove({ output: 'industrialforegoing:gold_gear' })
-  event.remove({ output: 'industrialforegoing:diamond_gear' })
+  //event.remove({ output: 'industrialforegoing:iron_gear' })
+  //event.remove({ output: 'industrialforegoing:gold_gear' })
+  //event.remove({ output: 'industrialforegoing:diamond_gear' })
+
+  event.remove({ id: "tcintegrations:smeltery/melting/metal/neptunium/block" })
+  event.remove({ id: "tcintegrations:smeltery/melting/metal/neptunium/ingot" })
+  event.remove({ id: "tcintegrations:smeltery/melting/metal/neptunium/nugget" })
+  event.remove({ id: "materialis:smeltery/melting/metal/manasteel/block" })
+  event.remove({ id: "materialis:smeltery/melting/metal/manasteel/ingot" })
+  event.remove({ id: "materialis:smeltery/melting/metal/manasteel/nugget" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_axe" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_pick" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_sword" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_shovel" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_shears" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_hoe" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_helmet" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_chestplate" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_boots" })
+  event.remove({ id: "materialis:smeltery/melting/metal/tools/manasteel/manasteel_leggings" })  //匠魂冲突配方解决
 
   event.remove({ id: TC("smeltery/casting/metal/gold/coin_sand_cast") })
   event.remove({ id: TC("smeltery/casting/metal/gold/coin_gold_cast") })
@@ -260,6 +277,9 @@ onEvent("recipes", event => {
   event.remove({ id: ('projecte:transmutation_tablet') })//删除便携式转化桌配方
 
   event.remove({ id: 'create:milling/sandstone' })//删除机械动力原版粉碎砂岩配方
+
+  event.remove({ output: 'avaritia:diamond_lattice' })
+  event.remove({ id: "avaritia:crystal_matrix_ingot" })
 
   //解决箱装物品冲突
 
@@ -434,58 +454,68 @@ onEvent("recipes", event => {
 	event.remove({output: 'minecraft:diamond_shovel'})
 	event.remove({output: 'minecraft:diamond_axe'})
 
+  event.stonecutting(Item.of('minecraft:diamond_helmet', 1), 'kubejs:diamond_ingot')
+  event.stonecutting(Item.of('minecraft:diamond_chestplate', 1), 'kubejs:diamond_ingot')
+  event.stonecutting(Item.of('minecraft:diamond_leggings', 1), 'kubejs:diamond_ingot')
+  event.stonecutting(Item.of('minecraft:diamond_pickaxe', 1), 'kubejs:diamond_ingot')
+  event.stonecutting(Item.of('minecraft:diamond_sword', 1), 'kubejs:diamond_tool_embryo')
+  event.stonecutting(Item.of('minecraft:diamond_hoe', 1), 'kubejs:diamond_tool_embryo')
+  event.stonecutting(Item.of('minecraft:diamond_shovel', 1), 'kubejs:diamond_tool_embryo')
+  event.stonecutting(Item.of('minecraft:diamond_axe', 1), 'kubejs:diamond_tool_embryo')
+  event.shapeless('kubejs:diamond_tool_embryo', ['kubejs:diamond_ingot', '#forge:rods']).id("kubejs:diamond_tool_embryo")
+
 event.recipes.createSequencedAssembly([
         'minecraft:diamond_helmet',
 		], 'create_sa:brass_helmet', [
-event.recipes.createFilling('create_sa:brass_helmet', ['create_sa:brass_helmet', {fluid: 'tconstruct:molten_diamond', amount: 100}]), 
+event.recipes.createFilling('create_sa:brass_helmet', ['create_sa:brass_helmet', {fluid: 'tconstruct:molten_diamond', amount: 50}]), 
 	]).transitionalItem('create_sa:brass_helmet').loops(5) 
 
 event.recipes.createSequencedAssembly([
         'minecraft:diamond_chestplate', 
 	], 'create_sa:brass_chestplate', [ 
-		event.recipes.createFilling('create_sa:brass_chestplate', ['create_sa:brass_chestplate', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+		event.recipes.createFilling('create_sa:brass_chestplate', ['create_sa:brass_chestplate', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 	]).transitionalItem('create_sa:brass_chestplate').loops(8) 
 
 event.recipes.createSequencedAssembly([
         'minecraft:diamond_leggings', 
 	], 'create_sa:brass_leggings', [ 
-event.recipes.createFilling('create_sa:brass_leggings', ['create_sa:brass_leggings', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_leggings', ['create_sa:brass_leggings', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 	]).transitionalItem('create_sa:brass_leggings').loops(6) 
 
 event.recipes.createSequencedAssembly([ 
         'minecraft:diamond_boots',
 	], 'create_sa:brass_boots', [
-event.recipes.createFilling('create_sa:brass_boots', ['create_sa:brass_boots', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_boots', ['create_sa:brass_boots', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 	]).transitionalItem('create_sa:brass_boots').loops(4) 
 
 event.recipes.createSequencedAssembly([  
   'minecraft:diamond_pickaxe',  
 ], 'create_sa:brass_pickaxe', [  
-event.recipes.createFilling('create_sa:brass_pickaxe', ['create_sa:brass_pickaxe', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_pickaxe', ['create_sa:brass_pickaxe', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 ]).transitionalItem('create_sa:brass_pickaxe').loops(3) 
 
 event.recipes.createSequencedAssembly([  
   'minecraft:diamond_axe',  
 ], 'create_sa:brass_axe', [  
-event.recipes.createFilling('create_sa:brass_axe', ['create_sa:brass_axe', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_axe', ['create_sa:brass_axe', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 ]).transitionalItem('create_sa:brass_axe').loops(3) 
 
 event.recipes.createSequencedAssembly([  
   'minecraft:diamond_shovel',  
 ], 'create_sa:brass_shovel', [  
-event.recipes.createFilling('create_sa:brass_shovel', ['create_sa:brass_shovel', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_shovel', ['create_sa:brass_shovel', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 ]).transitionalItem('create_sa:brass_shovel').loops(1) 
 
 event.recipes.createSequencedAssembly([  
   'minecraft:diamond_sword',  
 ], 'create_sa:brass_sword', [  
-event.recipes.createFilling('create_sa:brass_sword', ['create_sa:brass_sword', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_sword', ['create_sa:brass_sword', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 ]).transitionalItem('create_sa:brass_sword').loops(2) 
 
 event.recipes.createSequencedAssembly([  
   'minecraft:diamond_hoe',  
 ], 'create_sa:brass_hoe', [  
-event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {fluid: 'tconstruct:molten_diamond', amount: 100}]),
+event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {fluid: 'tconstruct:molten_diamond', amount: 50}]),
 ]).transitionalItem('create_sa:brass_hoe').loops(2) 
   // 简易飞机相关
   event.remove({ id: 'simpleplanes:propeller' })
@@ -519,18 +549,8 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     C: 'thermal:cured_rubber'
   }) //胶头刷配方
 
-  event.shaped(Item.of("kubejs:stock"), [
-    "BC",
-  ], {
-    C: 'immersiveengineering:hammer',
-    B: '#forge:stripped_logs',
-  })//火铳枪托
-  event.shaped(Item.of("kubejs:musket_barrel"), [
-    "BC",
-  ], {
-    C: 'immersiveengineering:hammer',
-    B: '#forge:rods/iron',
-  })//火铳枪管
+  event.shapeless('kubejs:stock', ['#forge:stripped_logs', 'immersiveengineering:hammer']).id("kubejs:stock")//火铳枪托
+  event.shapeless('kubejs:musket_barrel', ['#forge:rods/iron', 'immersiveengineering:hammer']).id("kubejs:stock")//火铳枪管
   
   event.shapeless('musketmod:pistol', ['kubejs:stock', 'kubejs:musket_barrel', 'minecraft:flint_and_steel']).id("kubejs:pistol")//短铳
   event.remove({ id: 'musketmod:pistol' })
@@ -809,17 +829,27 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
 
   // 未分类
 
+  event.shaped("kubejs:canvas_doll", [
+    "AAA",
+    "ASA",
+    "AAA"
+  ], {
+    S: 'exnihilosequentia:crafting_doll',
+    A: 'farmersdelight:canvas'
+  })//粗布人偶
+
+  event.smithing('pipez:item_pipe', 'prettypipes:pipe', 'kubejs:abstruse_mechanism')//pipez物品管道
+  event.recipes.createMechanicalCrafting(Item.of("pipez:item_pipe", 1), [
+    "DB"
+  ], {
+    D: 'prettypipes:pipe',
+    B: 'kubejs:abstruse_mechanism'
+  })
+
   event.shapeless('farmersdelight:straw', ['#forge:fiber_hemp', '#forge:fiber_hemp']).id("kubejs:straw") //工业大麻纤维合成草杆
 
   event.shapeless('beyond_earth:permafrost', ['#minecraft:sand', '#forge:slag', 'thermal:compost', 'thermal:blizz_powder']).id("kubejs:permafrost")//合成冻土
 
-  event.shaped("kubejs:cryo_bucket", [
-    "C",
-    "S"
-  ], {
-    S: 'kubejs:cryo_fuel_bucket',
-    C: 'thermal:blizz_rod'
-  })
 
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
 
@@ -897,7 +927,7 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     D: '#forge:rods/copper'
   })
 
-  event.remove({ output: "industrialforegoing:pitiful_generator" })
+  /*event.remove({ output: "industrialforegoing:pitiful_generator" })
   event.shaped("industrialforegoing:pitiful_generator", [
     "LAL",
     "BCB",
@@ -908,7 +938,7 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     A: 'create_sa:heat_engine',
     S: 'thermal:dynamo_stirling',
     B: 'minecraft:iron_bars'
-  })
+  })*/
   
   event.remove({ output: "architects_palette:nether_brass_blend" })
   event.shaped("4x architects_palette:nether_brass_blend", [
@@ -1188,15 +1218,15 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     })
 
     event.shaped(KJ("laser_blaster"), [
-      "RL ",
-      "LAS",
-      " LL"
+      " L ",
+      "LAL",
+      " B "
     ], {
       L: CR("sturdy_sheet"),
-      R: ("thermal:flux_magnet"),
-      A: ("ae2:entropy_manipulator"),
-      S: ("industrialforegoing:laser_lens9")
+      A: ("#forge:ingots/stormyx"),
+      B: ("create_sa:medium_fueling_tank")
     })
+    event.shapeless('kubejs:laser_blaster', ['kubejs:laser_blaster', '#forge:nuggets/stormyx']).id("kubejs:laser_blaster_2")
 
     event.shaped(KJ("screwdriver"), [
       "R  ",
@@ -1215,12 +1245,12 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
       R: '#forge:plastic'
     })
 
-    event.shaped("industrialforegoing:tinydryrubber", [
+    /*event.shaped("industrialforegoing:tinydryrubber", [
       "RR",
       "RR"
     ], {
       R: 'thermal:rubber'
-    })
+    })*/
 
     event.shaped(KJ("maga_screwdriver"), [
       "R  ",
@@ -1427,6 +1457,9 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   event.recipes.createCrushing([Item.of("minecraft:red_sand", 2), Item.of("immersiveengineering:dust_saltpeter", 1).withChance(.55)], "minecraft:red_sandstone")
 
   event.recipes.createCrushing([Item.of("minecraft:sand", 1), Item.of("beyond_earth:ice_shard", 1).withChance(.75), Item.of("beyond_earth:ice_shard", 1).withChance(.45), Item.of("thermal:blizz_powder", 1).withChance(.25)], "beyond_earth:permafrost")//冻土出冰刺
+
+  event.recipes.createMilling([Item.of("kubejs:diamond_shard", 1), Item.of("createaddition:diamond_grit", 1).withChance(.15)], "minecraft:diamond")//钻石碎合成
+  event.recipes.createMilling([Item.of("createaddition:diamond_grit", 1)], "kubejs:diamond_shard")//粉碎钻石碎
 
   event.remove({ output: ('thermal:enderium_dust') })
   event.remove({ output: ('thermal:enderium_ingot') })
@@ -2056,14 +2089,14 @@ event.shaped(('buddycards:luminis_sleeve'), [
     .loops(48)
     .id("kubejs:neutronium_sheet")
 
-  let z = "kubejs:alpha_quartz"
+  /*let z = "kubejs:alpha_quartz"
     event.recipes.createSequencedAssembly([
-    KJ("alpha_ingot"),
+    KJ("chimera_ingot"),
   ], "kubejs:alpha_quartz", [
     event.recipes.createPressing(z, z)
   ]).transitionalItem(z)
     .loops(16)
-    .id("alpha_ingot")  
+    .id("kubejs:chimera_ingot")  */
 
    let n = "kubejs:matter_plastics"
   event.recipes.createSequencedAssembly([
@@ -2311,7 +2344,11 @@ event.shaped(('buddycards:luminis_sleeve'), [
 			"below": "minecraft:crying_obsidian",
 			"result": { "item": output }
 		})
+    event.recipes.createMechanicalExtruderExtruding(Item.of(output),[Fluid.of("minecraft:lava", 1000),Item.of(adjacent)])//.withCatalyst(adjacent)
+    event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:andesite'),[Fluid.of("minecraft:lava", 1000),Fluid.of("minecraft:water", 1000)]).withCatalyst('kubejs:double_compressed_andesite')
+    event.recipes.createMechanicalExtruderExtruding(Item.of('create:limestone'),[Fluid.of("minecraft:lava", 1000),Fluid.of("minecraft:water", 1000)]).withCatalyst('kubejs:double_compressed_limestone')
 	}
+  
   crying_obsidian_cobblegen(MC("packed_ice"), MC("andesite"))
 	crying_obsidian_cobblegen(AP("polished_packed_ice"), MC("granite"))
 	crying_obsidian_cobblegen(AP("chiseled_packed_ice"), MC("diorite"))
@@ -2704,12 +2741,12 @@ function prettierpipes(event) {
     "result": [{"item": "kubejs:abstruse_mechanism"}],
     "energy": 20000
   })
-    event.custom({
+    /*event.custom({
     "type": "thermal:smelter",
     "ingredients": [{"item": "kubejs:alpha_ingot"},{"item": "kubejs:starrite"},{"tag": "forge:dusts/diamond"}],
     "result": [{"item": "avaritia:diamond_lattice"}],
     "energy": 60000
-  })
+  })*/
     event.custom({
     "type": "thermal:smelter",
     "ingredients": [{"item": "avaritia:neutron_nugget"},{"tag": "forge:dusts/coal"}],

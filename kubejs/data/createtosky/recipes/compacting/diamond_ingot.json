@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:diamond_shard",
+      "amount": 6
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:diamond_ingot",
+      "amount": 1
+    }
+  ],
+  "heatRequirement":"heated"
+}

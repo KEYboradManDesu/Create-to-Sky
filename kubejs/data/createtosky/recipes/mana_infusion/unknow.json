@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "tag": "forge:trade_cards"
+  },
+  "output": {
+    "item": "kubejs:trade_card_unknow"
+  },
+  "mana": 4000
+}

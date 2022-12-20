@@ -1,7 +1,7 @@
 {
 	id: "1F9517DCFB1DB297"
 	group: "331B6409EF6A7840"
-	order_index: 0
+	order_index: 1
 	filename: "overview"
 	title: "&a▶ 纵览"
 	icon: "minecraft:oak_sapling"
@@ -536,10 +536,7 @@
 				""
 				""
 			]
-			dependencies: [
-				"5E62059675895213"
-				"47965C310D9847DC"
-			]
+			dependencies: ["5E62059675895213"]
 			size: 2.0d
 			id: "4F7A70041B67A348"
 			tasks: [
@@ -551,16 +548,6 @@
 					disable_toast: true
 					stat: "minecraft:play_one_minute"
 					value: 1
-				}
-				{
-					id: "68543E92A6B517DC"
-					type: "item"
-					item: {
-						id: "beyond_earth:rocket_t1"
-						Count: 1b
-						tag: { }
-					}
-					consume_items: false
 				}
 				{
 					id: "638DC41EF1C7C493"
@@ -631,7 +618,9 @@
 				"&a植物魔法&r章节并非强制需求自动化。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？"
 				"&7单击上方复选框，揭幕DLC额外支线内容。"
 			]
+			hide_dependency_lines: true
 			dependencies: ["0E98B4D2BBF55308"]
+			optional: true
 			id: "2B9CF43D0C99629F"
 			tasks: [{
 				id: "2BFDD3BF41E8F5A3"
@@ -644,7 +633,10 @@
 			x: -8.0d
 			y: -2.5d
 			subtitle: "&a挑战"
-			dependencies: ["2B9CF43D0C99629F"]
+			dependencies: [
+				"2B9CF43D0C99629F"
+				"02487D6C79185B80"
+			]
 			id: "430BF0DDA2022088"
 			tasks: [{
 				id: "5102842CEAA325A8"
@@ -656,7 +648,7 @@
 			}]
 		}
 		{
-			title: "&4&l大炼金术士"
+			title: "没做完owo &4&l大炼金术士 "
 			icon: "projecte:red_matter"
 			x: 3.5d
 			y: -1.5d
@@ -666,7 +658,9 @@
 				"物质只是一团数字，只要你好好的利用它。。。"
 				"&7单击上方复选框，揭幕DLC额外支线内容。"
 			]
+			hide_dependency_lines: true
 			dependencies: ["4F7A70041B67A348"]
+			optional: true
 			id: "489352B1EBF967D0"
 			tasks: [{
 				id: "154DA49D22AAD44B"

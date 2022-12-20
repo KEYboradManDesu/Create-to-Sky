@@ -230,10 +230,7 @@
 			x: 1.5714285714285836d
 			y: -5.4642857142857295d
 			shape: "circle"
-			dependencies: [
-				"47965C310D9847DC"
-				"4F7A70041B67A348"
-			]
+			dependencies: ["4F7A70041B67A348"]
 			size: 1.7d
 			id: "4D94E2619DDAADC4"
 			tasks: [
@@ -528,6 +525,7 @@
 			x: 0.0d
 			y: -2.0d
 			shape: "rsquare"
+			subtitle: "火药的味道"
 			description: ["搭建上述所有弹药的全自动生产线。"]
 			id: "65B9D982E9FB4AA9"
 			tasks: [

@@ -4,17 +4,17 @@
     {
       "fluid": "minecraft:water",
       
-      "amount": 500
+      "amount": 250
     },
     {
-      "tag": "forge:raw_meat"
+      "tag": "caupona:meats/meat"
     }
   ],
   "results": [
     {
-      "fluid": "industrialforegoing:meat",
+      "fluid": "caupona:meat_soup",
       
-      "amount": 500
+      "amount": 250
     }
   ],
   "heatRequirement":"heated"

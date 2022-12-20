@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "kubejs:canvas_doll"
+  },
+  "result": {
+    "item": "exnihilosequentia:blaze_doll"
+  }
+}

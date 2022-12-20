@@ -1,0 +1,14 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "kubejs:chimera_lava",
+    "amount": 200
+  },
+  "result": [
+    {
+      "fluid": "kubejs:alpha_lava",
+      "amount": 175
+    }
+  ],
+  "energy": 6000
+}
