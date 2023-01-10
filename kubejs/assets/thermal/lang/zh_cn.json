@@ -1,0 +1,12 @@
+{
+	"block.thermal.machine_press": "交易站",
+	"block.thermal.machine_sawmill": "反应物提取机",
+	"block.thermal.machine_frame": "殷钢机械装置",
+	"info.thermal.machine_press.0": "自动将物品交换成硬币，反之亦然。",
+	"info.thermal.machine_press.1": "需要任务面板中购买的交易卡片。",
+	"info.thermal.machine_press.2": "谢谢惠顾！",
+	"info.thermal.machine_sawmill.0": "自动从玻璃罐中移除反应物。",
+	"info.thermal.machine_sawmill.1": "",
+	"info.thermal.machine_sawmill.2": "",
+	"msg.fuelingStation.link": "起始坐标标记为"
+}

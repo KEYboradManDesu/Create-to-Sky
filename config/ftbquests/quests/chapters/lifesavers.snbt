@@ -54,10 +54,11 @@
 			}]
 		}
 		{
-			title: "大桶"
-			x: -3.0d
+			title: "大桶 II"
+			x: -2.0d
 			y: 1.0d
 			description: ["如果你正在寻找个超大且特别的储物方块，那就去试试储物抽屉吧。"]
+			dependencies: ["3D3E0141F6BF94D2"]
 			id: "382EBC32AC27C839"
 			tasks: [{
 				id: "4BE344E1F204A43D"
@@ -72,12 +73,20 @@
 				}
 				consume_items: false
 			}]
-			rewards: [{
-				id: "2285D6CE87319B4A"
-				type: "item"
-				item: "storagedrawers:upgrade_template"
-				random_bonus: 4
-			}]
+			rewards: [
+				{
+					id: "2285D6CE87319B4A"
+					type: "item"
+					item: "storagedrawers:upgrade_template"
+					random_bonus: 4
+				}
+				{
+					id: "530F312DDC40FF60"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 16
+				}
+			]
 		}
 		{
 			title: "烹饪的乐趣"
@@ -245,7 +254,7 @@
 		}
 		{
 			title: "感应管道"
-			x: 1.0d
+			x: 2.0d
 			y: 1.0d
 			subtitle: "工业革命"
 			description: [
@@ -322,7 +331,7 @@
 		{
 			title: "飞行模式"
 			icon: "magicfeather:magicfeather"
-			x: -1.0d
+			x: 0.0d
 			y: 1.0d
 			description: ["魔法羽毛可以让你创造飞行，但这一功能只在信标光柱范围内生效。即便如此，它也会在你建造大工厂时起到很大帮助。"]
 			id: "0F4B0608CBF966E6"
@@ -419,35 +428,6 @@
 			]
 		}
 		{
-			title: "地狱刷石机"
-			x: 5.0d
-			y: 1.0d
-			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成下界土特产方块。"]
-			id: "4D360EB7CBCFF364"
-			tasks: [{
-				id: "4CCA92AD80B1D391"
-				type: "observation"
-				title: "观察 肥沃灵魂土"
-				icon: "nethersdelight:rich_soul_soil"
-				timer: 60L
-				observe_type: 0
-				to_observe: "nethersdelight:rich_soul_soil"
-			}]
-			rewards: [
-				{
-					id: "0C5DA6A71EAF0107"
-					type: "item"
-					item: "skinnedlanterns:skeleton_soul_lantern_block"
-				}
-				{
-					id: "6B28DFB0AC013219"
-					type: "item"
-					item: "thermal:silver_coin"
-					count: 8
-				}
-			]
-		}
-		{
 			title: "战前演练"
 			x: -1.0d
 			y: -5.0d
@@ -516,15 +496,16 @@
 					item: "xercapaint:item_easel"
 				}
 				{
-					id: "2DE640469EA41180"
+					id: "0B3C470DA7DE980A"
 					type: "item"
-					item: "thermal:gold_coin"
+					item: "thermal:silver_coin"
+					count: 16
 				}
 			]
 		}
 		{
 			title: "黄铜物品管道"
-			x: 3.0d
+			x: 4.0d
 			y: 1.0d
 			subtitle: "蒸汽朋克"
 			description: [
@@ -682,52 +663,13 @@
 			}]
 		}
 		{
-			title: "三亿圆石的梦（雾）"
-			x: 7.0d
-			y: 1.0d
-			subtitle: "\"重\"度压缩爱好者"
-			description: ["高度压缩的石头能使刷石机产出对应的石头。"]
-			id: "7888E72BA95FA79E"
-			tasks: [
-				{
-					id: "54EAED20C63AFE82"
-					type: "item"
-					disable_toast: true
-					item: "kubejs:double_compressed_limestone"
-					consume_items: false
-				}
-				{
-					id: "259C112C849AEC60"
-					type: "item"
-					disable_toast: true
-					item: "kubejs:double_compressed_andesite"
-					consume_items: false
-				}
-			]
-			rewards: [
-				{
-					id: "6DB0273B719D4AD9"
-					type: "item"
-					team_reward: true
-					item: "minecraft:andesite"
-					count: 16
-				}
-				{
-					id: "22EA766F8A08A3CC"
-					type: "item"
-					item: "create:limestone"
-					count: 16
-				}
-			]
-		}
-		{
 			title: "时代变了 I"
 			x: -6.0d
 			y: -3.0d
 			subtitle: "母婴用具"
 			description: [
 				"老式的撞击式燧发机构的枪械。"
-				"&7你也可以在快捷栏放满装填了的火枪来当一回快枪手。"
+				"&7多把火枪连射可能有意想不到的效果=w=。"
 			]
 			id: "07124A0D7BF5D024"
 			tasks: [
@@ -863,6 +805,32 @@
 					item: "thermal:gold_coin"
 				}
 			]
+		}
+		{
+			title: "大桶"
+			x: -3.0d
+			y: 1.0d
+			description: ["如果你需要一个可以在一格内储存大量物品的方块，那么你可以考虑一下升级后的木桶。"]
+			id: "3D3E0141F6BF94D2"
+			tasks: [{
+				id: "61F2998EB2E09D69"
+				type: "item"
+				title: "任意升级木桶"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:barrels"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "3222ED275DE7884D"
+				type: "item"
+				item: "minecraft:barrel"
+				random_bonus: 4
+			}]
 		}
 	]
 }

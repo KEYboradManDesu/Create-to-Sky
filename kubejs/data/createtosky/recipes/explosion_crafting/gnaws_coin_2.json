@@ -1,0 +1,9 @@
+{
+  "type": "crockpot:explosion_crafting",
+  "ingredient": {
+    "item": "minecraft:cake"
+  },
+  "result": "kubejs:gnaws_coin_2",
+  "lossrate": 0.90,
+  "onlyblock": true
+}

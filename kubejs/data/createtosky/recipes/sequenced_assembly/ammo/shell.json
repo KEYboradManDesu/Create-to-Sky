@@ -14,7 +14,7 @@
           "item": "immersiveengineering:empty_shell"
         },
         {
-          "item": "createbigcannons:packed_gunpowder"
+          "item": "createbigcannons:shot_balls"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "immersiveengineering:empty_shell"
         },
         {
-          "item": "createbigcannons:shot_balls"
+          "item": "createbigcannons:packed_gunpowder"
         }
       ],
       "results": [

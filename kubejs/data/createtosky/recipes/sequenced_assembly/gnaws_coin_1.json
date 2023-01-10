@@ -1,0 +1,55 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:blaze_burner"
+  },
+  "transitionalItem": {
+    "item": "create:blaze_burner"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:blaze_burner"
+        },
+        {
+          "item": "crockpot:netherosia"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:blaze_burner"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:blaze_burner"
+        },
+        {
+          "item": "create:blaze_cake"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:blaze_burner"
+        }
+      ]
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "kubejs:gnaws_coin_1",
+      "chance": 0.05
+    },
+    {
+      "item": "create:blaze_burner",
+      "chance": 0.95
+    }
+  ],
+  "loops": 2
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "expcaves:rusty_pickaxe"
+  },
+  "result": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "experience": 0.7,
+  "cookingtime": 150
+}

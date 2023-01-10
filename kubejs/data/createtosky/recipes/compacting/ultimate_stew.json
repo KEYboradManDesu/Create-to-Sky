@@ -1,0 +1,32 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "farmersdelight:cake_slice",
+      "amount": 4
+    },
+    {
+      "item": "kubejs:ultimate_cake_slice",
+      "amount": 3
+    },
+    {
+      "item": "crockpot:gnaws_coin",
+      "amount": 1
+    },
+    {
+      "fluid": "kubejs:mozerella_chese",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "avaritia:ultimate_stew",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:gnaws_hungry",
+      "amount": 1
+    }
+  ],
+  "heatRequirement":"superheated"
+}

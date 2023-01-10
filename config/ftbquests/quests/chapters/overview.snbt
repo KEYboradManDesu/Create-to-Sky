@@ -11,7 +11,7 @@
 		{
 			title: "&a&l一切都要从那棵树说起..."
 			icon: "minecraft:grass_block"
-			x: -13.5d
+			x: -14.0d
 			y: 0.0d
 			shape: "hexagon"
 			subtitle: "砍伐一棵树"
@@ -375,10 +375,7 @@
 				"好吧，先不谈这些...放眼望去，你马上就能踏出历史性的一步了！&6新技术的合理运用&r能够继续推动你前进。"
 				"&7一小步，还是一大步？"
 			]
-			dependencies: [
-				"780E8AE86250C73D"
-				"6CBA3D97CAD5DB63"
-			]
+			dependencies: ["780E8AE86250C73D"]
 			id: "400CDC316DCDFE88"
 			tasks: [{
 				id: "7FEEF6BED2C3F31B"
@@ -421,10 +418,7 @@
 			y: 2.5d
 			subtitle: "&3挑战"
 			description: ["&3传...传送！&r有了&3末影合金机器&r后，你不仅能在眨眼间移动物品和流体，还能将工厂的生产效率提升到前所未有的高度..."]
-			dependencies: [
-				"2BB2C7B95E3C89AE"
-				"6DBEF7A11890ADF8"
-			]
+			dependencies: ["2BB2C7B95E3C89AE"]
 			id: "2F50046724A0DF9C"
 			tasks: [{
 				id: "4BC5C43C7B23CA16"
@@ -477,11 +471,7 @@
 				"&710, 9, 8..."
 			]
 			min_required_dependencies: 3
-			dependencies: [
-				"6824055533465010"
-				"26173D4777F439B1"
-				"1BF8F3CC8BEBB620"
-			]
+			dependencies: ["26173D4777F439B1"]
 			hide: false
 			id: "08716DBF9C882623"
 			tasks: [{
@@ -505,7 +495,7 @@
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6第五章"
+			subtitle: "&6第五章 "
 			description: [
 				"整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。"
 				""
@@ -533,8 +523,9 @@
 			subtitle: "&5最终章"
 			description: [
 				"&o这也许只是你的一小步，却是&9全人类&r的一大步。"
-				""
-				""
+				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r"
+				"&9&l&o世界很大，生活更大。"
+				"&6主线已经宣告结束，如果你还想追求极限的话请跟我走。（未完成）"
 			]
 			dependencies: ["5E62059675895213"]
 			size: 2.0d
@@ -544,10 +535,10 @@
 					id: "058AEB3EF218C7D2"
 					type: "stat"
 					title: "&6完成第五章"
-					icon: "beyond_earth:nasa_workbench"
+					icon: "kubejs:computation_matrix"
 					disable_toast: true
-					stat: "minecraft:play_one_minute"
-					value: 1
+					stat: "minecraft:play_time"
+					value: 60
 				}
 				{
 					id: "638DC41EF1C7C493"
@@ -562,110 +553,19 @@
 			}]
 		}
 		{
-			title: "终焉"
-			icon: "avaritia:infinity_catalyst"
-			x: 3.5d
-			y: 1.5d
+			title: "&a开荒指南"
+			icon: "minecraft:writable_book"
+			x: -14.0d
+			y: 2.0d
 			shape: "circle"
-			subtitle: "第六章 支线"
-			description: ["回想以前，我们徒手打造了10级文明。我们将走向&4&l无尽&r，将得到所有得不到的东西。"]
-			dependencies: ["4F7A70041B67A348"]
-			id: "4BB283B651F880A9"
-			tasks: [{
-				id: "25D061C0B0C77A36"
-				type: "checkmark"
-				title: "&3解锁第六章 &7支线"
-			}]
-			rewards: [{
-				id: "13E114542DCFDC49"
-				type: "item"
-				item: "kubejs:good_idea"
-			}]
-		}
-		{
-			title: "&d&l创造时代"
-			x: 5.0d
-			y: 2.5d
-			subtitle: "&d&l挑战"
-			description: [
-				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r"
-				"&9&l&o世界很大，生活更大。"
-			]
-			dependencies: ["4BB283B651F880A9"]
-			id: "17C02A7F51C8D117"
-			tasks: [{
-				id: "33AC437A49ECAA83"
-				type: "stat"
-				title: "&d完成第六章 &7支线"
-				icon: "kubejs:creative_mechanism"
-				stat: "minecraft:play_time"
-				value: 60
-			}]
-			rewards: [{
-				id: "491A7E706BA344B2"
-				type: "item"
-				item: "kubejs:good_idea"
-			}]
-		}
-		{
-			title: "&a&l花粉过敏者禁止入内"
-			icon: "botania:lexicon"
-			x: -9.5d
-			y: -1.5d
-			shape: "circle"
-			subtitle: "DLC 魔法支线"
-			description: [
-				"&a植物魔法&r章节并非强制需求自动化。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？"
-				"&7单击上方复选框，揭幕DLC额外支线内容。"
-			]
-			hide_dependency_lines: true
-			dependencies: ["0E98B4D2BBF55308"]
+			description: ["如果不怎么了解空岛可以阅读此可选章节。"]
+			dependencies: ["75FB28B253B14876"]
 			optional: true
-			id: "2B9CF43D0C99629F"
+			id: "1FA26B9A6D07BA33"
 			tasks: [{
-				id: "2BFDD3BF41E8F5A3"
+				id: "21A8C11E4FE26924"
 				type: "checkmark"
-				title: "&a解锁DLC &7魔法支线"
-			}]
-		}
-		{
-			title: "&a&l活力四射"
-			x: -8.0d
-			y: -2.5d
-			subtitle: "&a挑战"
-			dependencies: [
-				"2B9CF43D0C99629F"
-				"02487D6C79185B80"
-			]
-			id: "430BF0DDA2022088"
-			tasks: [{
-				id: "5102842CEAA325A8"
-				type: "stat"
-				title: "&a完成植物魔法 &7支线"
-				icon: "kubejs:corporea_mechanism"
-				stat: "minecraft:play_time"
-				value: 60
-			}]
-		}
-		{
-			title: "没做完owo &4&l大炼金术士 "
-			icon: "projecte:red_matter"
-			x: 3.5d
-			y: -1.5d
-			shape: "circle"
-			subtitle: "DLC 等价交换"
-			description: [
-				"物质只是一团数字，只要你好好的利用它。。。"
-				"&7单击上方复选框，揭幕DLC额外支线内容。"
-			]
-			hide_dependency_lines: true
-			dependencies: ["4F7A70041B67A348"]
-			optional: true
-			id: "489352B1EBF967D0"
-			tasks: [{
-				id: "154DA49D22AAD44B"
-				type: "checkmark"
-				title: "&a解锁DLC &4等价交换"
+				title: "开启启蒙章节"
 			}]
 		}
 	]

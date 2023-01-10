@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "create:block/small_steel_pipe",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "create:block/small_steel_pipe"
+        },
+        "axis=z": {
+            "model": "create:block/small_steel_pipe",
+            "x": 90,
+            "y": 180
+        }
+    }
+}

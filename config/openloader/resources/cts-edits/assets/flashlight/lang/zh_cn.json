@@ -1,0 +1,8 @@
+{
+  "item.flashlight.flashlight": "黄铜照明2000流明",
+  "item.flashlight.smallredstonebattery": "微型红石电池",
+  "item.flashlight.liOn": "§7模式: §3开",
+  "item.flashlight.liOff": "§7模式: §4关",
+  "tooltip.flashlight.batLife": "§6电量: §e%s",
+  "item.smallredstonebattery.singleUse": "§3一次性使用"
+}

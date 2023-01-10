@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "item": "create_confectionery:full_chocolate_bar"
+    },
+    {
+      "item": "create_confectionery:full_black_chocolate_bar"
+    },
+    {
+      "item": "create_confectionery:full_white_chocolate_bar"
+    },
+    {
+      "item": "create_confectionery:full_ruby_chocolate_bar"
+    },
+    {
+      "item": "create_confectionery:gingerbread_man"
+    }
+  ],
+  "result": {
+    "item": "kubejs:gnaws_coin_4"
+  },
+  "container": {
+    "item": "minecraft:emerald"
+  },
+  "experience": 2.0,
+  "cookingtime": 400
+}

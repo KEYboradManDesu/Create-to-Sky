@@ -1,0 +1,40 @@
+{
+  "general": {
+    "rate": 5,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 20,
+    "reloadAmount": 5,
+    "recoilAngle": 3.0,
+    "recoilKick": 1.0,
+    "recoilAdsReduction": 0.5,
+    "alwaysSpread": true,
+    "spread": 2.0
+  },
+  "projectile": {
+    "item": "create:refined_radiance",
+    "damage": 20.0,
+    "size": 0.2,
+    "speed": 3.0,
+    "life": 25
+  },
+  "sounds": {
+    "fire": "minecraft:block.note_block.bass",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.pistol.cock",
+    "silencedFire": "minecraft:block.note_block.bass"
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.5,
+      "zOffset": -1.0,
+      "fovModifier": 0.7
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 3.7,
+        "zOffset": 6.0,
+        "scale": 0.75
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "minecraft:glass_bottle",
+      "count": 1
+    },
+    {
+      "tag": "forge:dusts/glowstone",
+      "count": 1
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:glowstone_bottle",
+    "count": 1
+  }
+}

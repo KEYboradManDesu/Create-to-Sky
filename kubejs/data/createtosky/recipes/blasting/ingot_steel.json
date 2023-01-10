@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "kubejs:coal_compound"
+  },
+  "result": {
+    "item": "mekanism:ingot_steel"
+  }
+}

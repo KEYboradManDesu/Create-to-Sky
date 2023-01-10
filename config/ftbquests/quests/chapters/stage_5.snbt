@@ -1,9 +1,9 @@
 {
 	id: "75CF8B6BAC6A01EF"
 	group: "331B6409EF6A7840"
-	order_index: 7
+	order_index: 8
 	filename: "stage_5"
-	title: "5 &r简单运算&f"
+	title: "&f&l5 &r简单运算&f"
 	icon: "kubejs:computation_matrix"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -179,6 +179,7 @@
 					id: "651374A7A3486148"
 					type: "advancement"
 					title: "制作 一阶火箭"
+					icon: "beyond_earth:steel_engine"
 					advancement: "beyond_earth:rocket_advancement"
 					criterion: ""
 				}
@@ -194,7 +195,7 @@
 			x: 2.0d
 			y: 9.5d
 			shape: "circle"
-			subtitle: "装置 45"
+			subtitle: "步骤 45"
 			description: [
 				"为了制作导航电脑，你需要很多数字。"
 				""
@@ -244,7 +245,7 @@
 							XferIn: 0b
 						}
 						TankInv: [{
-							FluidName: "kubejs:raw_logic"
+							FluidName: "kubejs:matrix"
 							Capacity: 32000
 							Tank: 0b
 							Amount: 32000
@@ -256,7 +257,7 @@
 			x: 2.0d
 			y: 15.5d
 			shape: "square"
-			subtitle: "装置 42"
+			subtitle: "步骤 42"
 			description: ["为了给机械计算器提供数字和运算符，所有的运算构件必须熔化成具象且可被处理的图形化能量。"]
 			dependencies: ["5D0454F977C4F080"]
 			size: 1.5d
@@ -279,7 +280,7 @@
 			icon: "kubejs:three"
 			x: 0.5d
 			y: 13.5d
-			subtitle: "装置 43-1"
+			subtitle: "步骤 43-1"
 			description: [
 				"作为两种可直接获得的数字之一，“3”可以通过未加工的逻辑浇筑获得。它可以和“8”以及别的运算符来计算出0~9中剩下的所有数字。"
 				""
@@ -305,7 +306,7 @@
 			icon: "kubejs:eight"
 			x: 3.5d
 			y: 13.5d
-			subtitle: "装置 43-3"
+			subtitle: "步骤 43-3"
 			description: [
 				"第二种可以直接获得的数字是“8”，它也可以使用液态逻辑浇筑获得。"
 				""
@@ -331,7 +332,7 @@
 			icon: "kubejs:zero"
 			x: 5.5d
 			y: 11.5d
-			subtitle: "装置 44-8"
+			subtitle: "步骤 44-8"
 			description: ["3-3、2-2、8-8……？总共有39种方法算出0。这真是一个艰难的决定！"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -357,7 +358,7 @@
 			icon: "kubejs:one"
 			x: -1.5d
 			y: 11.5d
-			subtitle: "装置 44-1"
+			subtitle: "步骤 44-1"
 			description: ["3-2、4÷4、8-7……？一共有21种方法算出1。你会选择什么？"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -383,7 +384,7 @@
 			icon: "kubejs:two"
 			x: -0.5d
 			y: 11.5d
-			subtitle: "装置 44-2"
+			subtitle: "步骤 44-2"
 			description: ["3-1、8÷4、1+1……？总共有17种方式算出2。你最喜欢什么？"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -409,7 +410,7 @@
 			icon: "kubejs:four"
 			x: 0.5d
 			y: 11.5d
-			subtitle: "装置 44-3"
+			subtitle: "步骤 44-3"
 			description: ["6-2、2×2、3+1……？一共有16种方式算出4。请作出明智的选择。"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -435,7 +436,7 @@
 			icon: "kubejs:five"
 			x: 1.5d
 			y: 11.5d
-			subtitle: "装置 44-4"
+			subtitle: "步骤 44-4"
 			description: ["3+2、6-1、8-3……？一共有14种方式算出5。你想怎么做？"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -461,7 +462,7 @@
 			icon: "kubejs:six"
 			x: 2.5d
 			y: 11.5d
-			subtitle: "装置 44-5"
+			subtitle: "步骤 44-5"
 			description: ["3×2、3+3、8-2……？一共有16种方式算出6。祝你一切顺利。"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -487,7 +488,7 @@
 			icon: "kubejs:seven"
 			x: 3.5d
 			y: 11.5d
-			subtitle: "装置 44-6"
+			subtitle: "步骤 44-6"
 			description: ["9-2、4+3、8-1……？总共有14种方式算出7。手气不错？"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -513,7 +514,7 @@
 			icon: "kubejs:nine"
 			x: 4.5d
 			y: 11.5d
-			subtitle: "装置 44-7"
+			subtitle: "步骤 44-7"
 			description: ["3×3、4+5、8+1……？一共有15种方式算出9。选择权在你。"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -540,7 +541,7 @@
 			icon: "ae2:matter_ball"
 			x: 2.0d
 			y: 3.0d
-			subtitle: "装置 41"
+			subtitle: "步骤 41"
 			description: [
 				"火箭设备是由轻质且坚固的材料——物质塑料制成的。物质球可以在物质聚合器中产生。"
 				""
@@ -692,7 +693,7 @@
 			x: -1.0d
 			y: 6.0d
 			shape: "circle"
-			description: ["如果你想在落地之后活下来，一套特殊的宇航服是必要的。"]
+			description: ["如果你想在落地之后活下来，一套特殊的宇航服是必要的。如果你有多余的下界合金，你可以考虑给宇航服加固下。"]
 			dependencies: ["6A156D11D983661D"]
 			id: "6BA9A176EDA001A3"
 			tasks: [
@@ -748,8 +749,8 @@
 		}
 		{
 			title: "记得呼吸"
-			x: 3.5d
-			y: 9.0d
+			x: 3.4261904761904702d
+			y: 8.590476190476195d
 			shape: "circle"
 			description: ["为了让你在太空中有喘息之地，一个空间站是必要的。"]
 			hide_dependency_lines: true
@@ -768,7 +769,7 @@
 			x: 0.5d
 			y: 6.0d
 			shape: "circle"
-			subtitle: "装置 48"
+			subtitle: "步骤 48"
 			description: ["通过加热搅拌将水分离为其成分，就可以得到你需要的氧。"]
 			dependencies: ["6A156D11D983661D"]
 			id: "3AD7553F3C8593F9"
@@ -793,7 +794,7 @@
 			x: 2.0d
 			y: 6.0d
 			shape: "circle"
-			subtitle: "装置 49"
+			subtitle: "步骤 49"
 			description: [
 				"火箭的发射台需要特殊的材料和加固构成。"
 				""
@@ -815,7 +816,7 @@
 			icon: "kubejs:plus"
 			x: 2.0d
 			y: 14.0d
-			subtitle: "装置 43-2"
+			subtitle: "步骤 43-2"
 			description: ["没有运算符，数据中心的数字就无法组合到一起而产生其它的数字。你需要为你的计算装置自动提供任何它们需要的运算符。"]
 			dependencies: ["70D563EF30E9CB97"]
 			id: "4E85C8A2EEEB57C3"
@@ -857,9 +858,9 @@
 			x: 3.5d
 			y: 6.0d
 			shape: "circle"
-			subtitle: "装置 &b50"
+			subtitle: "步骤 &b50"
 			description: [
-				"当你的发射台准备就绪，是时候搭建你的飞船了。"
+				"当你的发射台准备就绪，是时候搭建你的飞船了，其中最重要的是下界钢防火层。"
 				""
 				"尽你最大的努力，毕竟这是你的最终目标。"
 			]
@@ -893,7 +894,24 @@
 					item: "beyond_earth:compressed_steel"
 					consume_items: false
 				}
+				{
+					id: "389C9DBF0EC8357A"
+					type: "item"
+					item: "createbigcannons:very_large_nethersteel_cannon_layer"
+					consume_items: false
+				}
+				{
+					id: "347AB49A286633F2"
+					type: "item"
+					item: "beyond_earth:steel_engine"
+					consume_items: false
+				}
 			]
+			rewards: [{
+				id: "63C596DBBDF23B36"
+				type: "item"
+				item: "vanillacookbook:neapolitan_ice_cream"
+			}]
 		}
 		{
 			icon: {
@@ -904,6 +922,7 @@
 			x: 5.0d
 			y: 6.0d
 			shape: "circle"
+			description: ["外星代步工具。"]
 			dependencies: ["6A156D11D983661D"]
 			id: "13E3B63C2D69BBC9"
 			tasks: [

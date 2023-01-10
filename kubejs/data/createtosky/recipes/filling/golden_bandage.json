@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "majruszsdifficulty:bandage"
+    },
+    {
+      "fluid": "tconstruct:molten_gold",
+      "amount": 40
+    }
+  ],
+  "results": [
+    {
+      "item": "majruszsdifficulty:golden_bandage"
+    }
+  ]
+}

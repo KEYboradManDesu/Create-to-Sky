@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alloyedguns:items/unarmed_missile"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "forbidden_arcanus:cloth"
+    }
+  ],
+  "results": [
+    {
+      "item": "majruszsdifficulty:cloth"
+    }
+  ]
+}

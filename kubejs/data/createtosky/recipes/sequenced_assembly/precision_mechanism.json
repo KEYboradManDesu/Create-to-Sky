@@ -59,7 +59,11 @@
   "results": [
     {
       "item": "create:precision_mechanism",
-      "chance": 1
+      "chance": 0.995
+    },
+    {
+      "item": "kubejs:scarp_mechanism",
+      "chance": 0.005
     }
   ],
   "loops": 1

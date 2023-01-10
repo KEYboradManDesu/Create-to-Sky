@@ -1,0 +1,1 @@
+{"type":"mekanism:injecting","itemInput":{"amount":3,"ingredient":{"tag":"forge:raw_materials/platinum"}},"chemicalInput":{"amount":1,"gas":"mekanism:hydrogen_chloride"},"output":{"item":"kubejs:platinum_shard","count":8}}

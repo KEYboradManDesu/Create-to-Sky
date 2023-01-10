@@ -1,0 +1,9 @@
+{
+  "type": "crockpot:explosion_crafting",
+  "ingredient": {
+    "item": "kubejs:quartz_iron_ingot"
+  },
+  "result": "moreminecarts:silica_steel_mix",
+  "lossrate": 0,
+  "onlyblock": true
+}

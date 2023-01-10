@@ -3,17 +3,17 @@
   "ingredients": [
     {
       "fluid": "tconstruct:molten_copper",
-      "amount": 500
+      "amount": 4
     },
     {
       "fluid": "tconstruct:molten_tin",
-      "amount": 500
+      "amount": 4
     }
   ],
   "results": [
     {
       "fluid": "tconstruct:molten_bronze",
-      "amount": 500
+      "amount": 4
     }
   ]
 }

@@ -1,0 +1,126 @@
+{
+	"credit": "Made with Blockbench by ThatAvocado_Boi",
+	"textures": {
+		"1": "cgm:items/tactical_stock",
+		"particle": "cgm:items/tactical_stock"
+	},
+	"elements": [
+		{
+			"from": [7.75, 7.75, 8],
+			"to": [8.25, 8.55, 14.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.45, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 1, 1, 2], "texture": "#1"},
+				"up": {"uv": [0, 1, 8, 2], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 5, 8, 6], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.57905, 8.32845, 8.001],
+			"to": [9.00325, 8.60115, 14.7],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.43837, 7.06276, 12.5]},
+			"faces": {
+				"north": {"uv": [0, 1, 1, 2], "texture": "#1"},
+				"up": {"uv": [0, 2, 8, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.44995, 7.75005, 7.999],
+			"to": [8.54995, 8.25005, 14.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.99995, 8.00005, 10.7]},
+			"faces": {
+				"north": {"uv": [0, 1, 1, 2], "texture": "#1"},
+				"east": {"uv": [0, 3, 8, 4], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [0, 3, 8, 4], "texture": "#1"},
+				"down": {"uv": [0, 2, 1.1, 8.701], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.99675, 8.32845, 8.001],
+			"to": [7.42095, 8.60115, 14.7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.56163, 7.06276, 12.5]},
+			"faces": {
+				"north": {"uv": [0, 2, 1, 3], "texture": "#1"},
+				"up": {"uv": [0, 2, 8, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.75, 8.25009, 14.7],
+			"to": [8.25, 8.55009, 15.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.25009, 2.9]},
+			"faces": {
+				"south": {"uv": [10, 1, 12, 2], "texture": "#1"},
+				"up": {"uv": [8, 1, 10, 2], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [14.73088, 5.78037, 14.7],
+			"to": [15.15508, 6.05307, 15.699],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.43837, -1.63715, 14]},
+			"faces": {
+				"south": {"uv": [9, 1, 10, 2], "texture": "#1"},
+				"up": {"uv": [8, 2, 10, 3], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.45005, 4.85005, 14.7],
+			"to": [8.55005, 8.25005, 15.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.05005, 12.20005, 2.9]},
+			"faces": {
+				"north": {"uv": [7, 3, 9, 10], "texture": "#1"},
+				"east": {"uv": [8, 10, 10, 3], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [10, 3, 13, 10], "texture": "#1"},
+				"west": {"uv": [8, 3, 10, 10], "texture": "#1"},
+				"down": {"uv": [8, 10, 10, 12], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.6511, 5.25009, 7.47154],
+			"to": [8.3491, 5.97009, 14.7],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.00005, 4.75005, 13.7]},
+			"faces": {
+				"north": {"uv": [3, 4, 3.698, 4.72], "texture": "#1"},
+				"east": {"uv": [0, 10, 6, 8], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [3, 4, 3.698, 4.72], "texture": "#1"},
+				"west": {"uv": [0, 8, 6, 10], "texture": "#1"},
+				"up": {"uv": [0, 6, 6, 8], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 10, 6, 12], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [0.84492, 5.78037, 14.7],
+			"to": [1.26912, 6.05307, 15.699],
+			"rotation": {"angle": -45, "axis": "z", "origin": [7.56163, -1.63715, 14]},
+			"faces": {
+				"south": {"uv": [12, 1, 13, 2], "texture": "#1"},
+				"up": {"uv": [8, 2, 10, 3], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2.25, -3.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 2, -3.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"translation": [-3.5, 6, 3],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"translation": [0, 1, -2.75]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [4.75, -1.25, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-4.25, 1.25, -1.25]
+		}
+	}
+}

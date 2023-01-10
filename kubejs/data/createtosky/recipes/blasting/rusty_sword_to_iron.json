@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "expcaves:rusty_sword"
+  },
+  "result": {
+    "item": "minecraft:iron_sword"
+  },
+  "experience": 0.7,
+  "cookingtime": 150
+}

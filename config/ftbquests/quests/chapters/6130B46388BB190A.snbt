@@ -88,7 +88,6 @@
 			subtitle: "节约！"
 			description: ["如果你的工厂有大量多余的&6应力&r，先恭喜你，你可以使用&6交流发电机&r将&6应力&r转化为新颖&4FE能源&r，这将对你之后的生成有极大的帮助。&a除此之外，还有大量的发电方式，本教程未收录全。"]
 			hide_dependency_lines: true
-			dependencies: ["06B022F0D6B9D0CB"]
 			hide: true
 			id: "2F34F3E56D93F79B"
 			tasks: [
@@ -193,7 +192,6 @@
 			subtitle: "知识就是力量"
 			description: ["馆藏出售！"]
 			hide_dependency_lines: true
-			dependencies: ["06B022F0D6B9D0CB"]
 			id: "55C942DFC0DA28FF"
 			tasks: [{
 				id: "2AE2860B7DCFEFA1"
@@ -214,6 +212,74 @@
 				icon: "minecraft:writable_book"
 				table_id: 6902930572330827405L
 			}]
+		}
+		{
+			title: "地狱刷石机"
+			x: 1.0d
+			y: 3.0d
+			description: ["这种来自地狱的肥沃土可以让&6刷石机&r生成下界土特产方块。"]
+			id: "4D360EB7CBCFF364"
+			tasks: [{
+				id: "4CCA92AD80B1D391"
+				type: "observation"
+				title: "观察 肥沃灵魂土"
+				icon: "nethersdelight:rich_soul_soil"
+				timer: 60L
+				observe_type: 0
+				to_observe: "nethersdelight:rich_soul_soil"
+			}]
+			rewards: [
+				{
+					id: "0C5DA6A71EAF0107"
+					type: "item"
+					item: "skinnedlanterns:skeleton_soul_lantern_block"
+				}
+				{
+					id: "6B28DFB0AC013219"
+					type: "item"
+					item: "thermal:silver_coin"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "三亿圆石的梦（雾）"
+			x: 3.0d
+			y: 3.0d
+			subtitle: "\"重\"度压缩爱好者"
+			description: ["高度压缩的石头能使刷石机产出对应的石头。"]
+			id: "7888E72BA95FA79E"
+			tasks: [
+				{
+					id: "54EAED20C63AFE82"
+					type: "item"
+					disable_toast: true
+					item: "kubejs:double_compressed_limestone"
+					consume_items: false
+				}
+				{
+					id: "259C112C849AEC60"
+					type: "item"
+					disable_toast: true
+					item: "kubejs:double_compressed_andesite"
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "6DB0273B719D4AD9"
+					type: "item"
+					team_reward: true
+					item: "minecraft:andesite"
+					count: 16
+				}
+				{
+					id: "22EA766F8A08A3CC"
+					type: "item"
+					item: "create:limestone"
+					count: 16
+				}
+			]
 		}
 	]
 }

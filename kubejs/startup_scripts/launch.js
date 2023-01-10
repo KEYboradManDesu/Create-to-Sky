@@ -113,7 +113,6 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Invar Compound", "殷钢混合物")
 		registerTypicalItem("Silicon Compound", "含硅化合物")
 
-		registerTypicalItem("Sand Ball", "沙球")
 		registerTypicalItem("Coke Chunk", "小块焦炭")
 		registerTypicalItem("Rough Sand", "粗砂")
 		registerTypicalItem("Purified Sand", "高纯砂")
@@ -123,6 +122,10 @@ onEvent("item.registry", event => {
 
 		registerTypicalItem("Circuit Scrap", "压印模板碎片")
 		
+		event.create("sand_ball")
+			.texture(modpackId + ":item/sand_ball")
+			.displayName("沙球")
+			.unstackable()
 
 		event.create("incomplete_coke_chunk")
 			.texture(modpackId + ":item/incomplete_coke_chunk")
@@ -466,8 +469,13 @@ onEvent("item.registry", event => {
 
 		event.create("rubber_duck")
 		    .parentModel(modpackId + ":item/rubber_duck")
-			.displayName("§b§l神器鸭§r")
-			.unstackable()
+			.displayName("§6镭射橡皮鸭§r").rarity(RARITY_UNCOMMON)
+			.maxDamage(2147483647)
+
+		event.create("rubberduck")
+		    .parentModel(modpackId + ":item/rubberduck")
+			.displayName("§6橡皮鸭§r").rarity(RARITY_UNCOMMON)
+			.maxStackSize(16)
 
 		event.create("incomplete_box_ammo")
 		    .parentModel(modpackId + ":item/incomplete_box_ammo")
@@ -495,7 +503,7 @@ onEvent("item.registry", event => {
 
 		event.create("integrated_circuit")
 			.texture(modpackId + ":item/integrated_circuit")
-			.displayName("集成电路板").rarity(RARITY_UNCOMMON)
+			.displayName("集成处理器").rarity(RARITY_UNCOMMON)
 
 		event.create("raw_brass")
 			.texture(modpackId + ":item/raw_brass")
@@ -643,11 +651,6 @@ onEvent("item.registry", event => {
 		    .texture(modpackId + ":item/raw_logic_sheet")
 		    .displayName('§d智能逻辑板§r').rarity(RARITY_UNCOMMON)
 
-		event.create('illegal_gun_parts')
-		    .texture(modpackId + ":item/illegal_gun_parts")
-		    .displayName('非法枪械部件').rarity(RARITY_UNCOMMON)
-			.maxStackSize(4)
-
 		event.create('tool_empty')
 		    .texture(modpackId + ":item/tool_empty")
 		    .displayName('幽灵工具')
@@ -714,6 +717,34 @@ onEvent("item.registry", event => {
 			.displayName("钻石工具胚")
 			.maxStackSize(1)
 
+		event.create("platinum_nugget")
+			.texture(modpackId + ":item/metal/platinum_nugget")
+			.displayName("铂粒")
+			
+		event.create("platinum_dust")
+			.texture(modpackId + ":item/metal/platinum_dust")
+			.displayName("铂粉")
+
+		event.create("platinum_dirt_dust")
+			.texture(modpackId + ":item/metal/platinum_dirt_dust")
+			.displayName("污浊铂粉")
+
+		event.create("platinum_crystal")
+			.texture(modpackId + ":item/metal/platinum_crystal")
+			.displayName("铂结晶")
+
+		event.create("platinum_clumps")
+			.texture(modpackId + ":item/metal/platinum_clumps")
+			.displayName("铂碎块")
+
+		event.create("platinum_shard")
+			.texture(modpackId + ":item/metal/platinum_shard")
+			.displayName("铂碎片")
+
+		event.create("raw_platinum")
+			.texture(modpackId + ":item/metal/raw_platinum")
+			.displayName("粗铂")
+
 		event.create("canvas_doll")
 			.texture(modpackId + ":item/canvas_doll")
 			.displayName("粗布人偶")
@@ -721,6 +752,95 @@ onEvent("item.registry", event => {
 		event.create("diamond_lattice")
 			.texture(modpackId + ":item/diamond_lattice")
 			.displayName("钻石晶格").rarity(RARITY_UNCOMMON)
+
+		event.create('basic_gun_kit')
+			.texture(modpackId + ":item/gunkit/basic_gun_kit")
+			.displayName('基础枪械改装件')
+			.maxStackSize(4)
+ 
+		event.create('crude_gun_kit')
+			.texture(modpackId + ":item/gunkit/crude_gun_kit")
+			.displayName('粗制枪械改装件')
+			.maxStackSize(4)
+ 
+		event.create('advanced_gun_kit')
+			.texture(modpackId + ":item/gunkit/advanced_gun_kit")
+			.displayName('进阶枪械改装件')
+			.maxStackSize(4)
+ 
+		event.create('illegal_gun_kit')
+			.texture(modpackId + ":item/gunkit/illegal_gun_kit")
+			.displayName('非法枪械改装件').rarity(RARITY_UNCOMMON)
+			.maxStackSize(4)
+		
+		event.create('unfinished_gun')
+			.texture(modpackId + ":item/gunkit/unfinished_gun")
+			.displayName('枪机')
+		
+		event.create('gunpowder_bottle')
+			.texture(modpackId + ":item/gunkit/gunpowder_bottle")
+			.displayName('火药瓶')
+ 
+		event.create('glowstone_bottle')
+			.texture(modpackId + ":item/gunkit/glowstone_bottle")
+			.displayName('混有萤石的火药瓶')
+ 
+		event.create('grenade_fuze')
+			.texture(modpackId + ":item/gunkit/grenade_fuze")
+			.displayName('手雷引信')
+
+		event.create('quartz_iron_ingot')
+			.texture(modpackId + ":item/quartz_iron_ingot")
+			.displayName('含铁石英')
+
+		event.create("silica_steel_piece")
+			.texture(modpackId + ":item/metal/silica_steel_nugget")
+			.displayName("硅钢块")
+
+		event.create("scrap")
+			.texture(modpackId + ":item/scrap")
+			.displayName("废料")
+
+		event.create("scarp_mechanism")
+			.texture(modpackId + ":item/scarp_mechanism")
+			.displayName("精密构件（残次品）")
+
+		event.create("coal_compound")
+			.texture(modpackId + ":item/coal_compound")
+			.displayName("富碳铁锭")
+
+		event.create("gnaws_hungry")
+			.texture(modpackId + ":item/gnaws_coin/gnaws_hungry")
+			.displayName("§d暴食的饥饿§r")
+			.maxStackSize(1)
+
+		event.create("gnaws_coin_1")
+			.texture(modpackId + ":item/gnaws_coin/gnaws_coin_1")
+			.displayName("§d暴食碎片A§r")
+			.maxStackSize(1)
+		event.create("gnaws_coin_2")
+			.texture(modpackId + ":item/gnaws_coin/gnaws_coin_2")
+			.displayName("§d暴食碎片B§r")
+			.maxStackSize(1)
+		event.create("gnaws_coin_3")
+			.texture(modpackId + ":item/gnaws_coin/gnaws_coin_3")
+			.displayName("§d暴食碎片C§r")
+			.maxStackSize(1)
+		event.create("gnaws_coin_4")
+			.texture(modpackId + ":item/gnaws_coin/gnaws_coin_4")
+			.displayName("§d暴食碎片D§r")
+			.maxStackSize(1)
+
+		event.create("ultimate_cake_slice")
+			.texture(modpackId + ":item/ultimate_cake_slice")
+			.displayName("§d中子蛋糕切片").rarity(RARITY_UNCOMMON)
+			.food((food) => {food.hunger(7.0)
+			.saturation(0.5)
+			.effect('minecraft:jump_boost', 2000, 1, 1.0)
+			.effect('minecraft:haste', 2250, 1, 1.0)
+			.effect('minecraft:speed', 2000, 1, 1.0)
+			.effect('minecraft:strength', 2500, 1, 1.0)})
+
 
 		event.create('pipe_module_utility').texture(modpackId + ":item/pipe_module_utility").displayName('通用管道模块')
 		event.create('pipe_module_tier_1').texture(modpackId + ":item/pipe_module_tier_1").displayName('黄铜管道模块')

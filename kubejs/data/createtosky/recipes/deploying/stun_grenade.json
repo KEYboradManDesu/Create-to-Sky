@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "kubejs:glowstone_bottle"
+    },
+    {
+      "item": "kubejs:grenade_fuze"
+    }
+  ],
+  "results": [
+    {
+      "item": "cgm:stun_grenade"
+    }
+  ]
+}

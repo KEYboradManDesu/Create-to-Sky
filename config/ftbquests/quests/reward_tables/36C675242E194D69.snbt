@@ -1,0 +1,14 @@
+{
+	id: "36C675242E194D69"
+	order_index: 32
+	title: "&a&l经验盲盒"
+	icon: "create:experience_nugget"
+	loot_size: 1
+	rewards: [
+		{ item: "create:experience_nugget", count: 8, weight: 45 }
+		{ item: "create:experience_nugget", count: 5, weight: 45 }
+		{ item: "create:experience_nugget", count: 10, weight: 30 }
+		{ item: "create:experience_nugget", count: 30, weight: 25 }
+		{ item: "create:experience_nugget", count: 50, weight: 2 }
+	]
+}

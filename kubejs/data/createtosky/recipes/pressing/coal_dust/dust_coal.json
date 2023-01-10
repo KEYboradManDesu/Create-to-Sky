@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:dust_coal",
+      "amount": 1
+    }
+  ]
+}

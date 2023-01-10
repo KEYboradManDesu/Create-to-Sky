@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:alloy_reinforced"
+  },
+  "transitionalItem": {
+    "item": "mekanism:alloy_reinforced"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        },
+        {
+          "item": "kubejs:matrix_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        },
+        {
+          "fluid": "tconstruct:molten_signalum",
+          "amount": 75
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        },
+        {
+          "fluid": "tconstruct:molten_osmium",
+          "amount": 15
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_reinforced"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:alloy_atomic",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

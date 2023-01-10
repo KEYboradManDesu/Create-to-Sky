@@ -1,7 +1,7 @@
 {
 	id: "3CEC7BECE6B40994"
 	group: "331B6409EF6A7840"
-	order_index: 4
+	order_index: 5
 	filename: "stage_2"
 	title: "&f&l2&r 初入门道"
 	icon: "kubejs:brass_machine"
@@ -109,7 +109,7 @@
 				"你可以无限压榨它。这些&6陨石&r尽管数次粉身碎骨却并不会失去质量？迈尔的棺材板压不住啦！"
 				""
 				"四处转转，也许你就能找到一个巨坑，那正是陨石坠落的迹象。如果你找不到，试试让&6陨石罗盘&r为你指路。"
-				"&7自由资都害怕你压榨陨石的样子。"
+				"&7安资都害怕你压榨陨石的样子。"
 			]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
@@ -512,7 +512,7 @@
 			title: "炎之律者"
 			x: 0.5d
 			y: 17.0d
-			shape: "circle"
+			shape: "square"
 			description: ["这是你第一次接触这么高的温度——你需要一个&2烈焰人燃烧室&r来使材料达到足够的温度！对着&2烈焰人&r或&2烈焰人刷怪笼&r使用&2烈焰人燃烧室&r就可以将它们收入囊中。"]
 			hide_dependency_lines: true
 			dependencies: [
@@ -711,6 +711,40 @@
 					count: 2
 				}
 			]
+		}
+		{
+			title: "Oh-Scarp！"
+			icon: "kubejs:scarp_mechanism"
+			x: 0.5d
+			y: 11.5d
+			shape: "circle"
+			description: [
+				"最不想看到的事情还是发生了，你的生产线出现了&6残次品&r。虽然损毁率很低，但是小小的异常也会导致生产的停滞。"
+				"&7利用好&6黄铜隧道&7，它们能有效的过滤传送带上的物品。"
+			]
+			dependencies: ["19715EBCBBA1B4AD"]
+			hide: true
+			optional: true
+			id: "49690E9E567C6A35"
+			tasks: [
+				{
+					id: "29A659186945F355"
+					type: "item"
+					item: "kubejs:scarp_mechanism"
+					consume_items: false
+				}
+				{
+					id: "48FC12FBE53D36FE"
+					type: "checkmark"
+					title: "好的"
+				}
+			]
+			rewards: [{
+				id: "57271D0DD9231586"
+				type: "item"
+				item: "kubejs:scrap"
+				count: 4
+			}]
 		}
 	]
 }

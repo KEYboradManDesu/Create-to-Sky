@@ -12,10 +12,6 @@
     {
       "item": "create:wheat_flour",
       "count": 1
-    },
-    {
-      "item": "minecraft:wheat_seeds",
-      "count": 2
     }
   ]
 }

@@ -58,7 +58,7 @@ onEvent("recipes", event => {
   event.remove({ output: ('immersiveengineering:plate_uranium') })
   event.remove({ output: ('immersiveengineering:plate_constantan') })
   event.remove({ output: ('immersiveengineering:plate_electrum') })
-  event.remove({ output: ('immersiveengineering:plate_steel') })
+  //event.remove({ output: ('immersiveengineering:plate_steel') })
   event.remove({ output: ('immersiveengineering:plate_copper') })
   event.remove({ output: ('immersiveengineering:plate_iron') })
   event.remove({ output: ('immersiveengineering:plate_gold') })
@@ -119,7 +119,6 @@ onEvent("recipes", event => {
   event.remove({ output: 'mekanism:nugget_tin' })
 
   event.remove({ id: 'avaritia:infinity_catalyst' })
-  event.remove({ id: 'avaritia:ultimate_stew' })
   event.remove({ id: 'avaritia:cosmic_meatballs' })
   event.remove({ id: 'avaritia:endest_pearl' })
 
@@ -129,7 +128,7 @@ onEvent("recipes", event => {
   event.remove({ id: "beyond_earth:compressing/compressed_desh" })
   event.remove({ id: "beyond_earth:compressing/compressed_calorite" })
 
-  event.remove({ id: "nyfsquiver:basic_quiver_item_craft" })
+  //event.remove({ id: "nyfsquiver:basic_quiver_item_craft" })
 
   event.remove({ id: "vanillacookbook:cooked_egg_smoking" })
 
@@ -140,9 +139,14 @@ onEvent("recipes", event => {
   event.remove({ id: "immersiveengineering:crafting/stick_aluminum" })
   event.remove({ id: "immersiveengineering:crafting/stick_iron" })
 
+  event.remove({ output: 'mekanism:block_lead' })
+  event.remove({ output: 'mekanism:block_tin' })
+
   //event.remove({ output: 'industrialforegoing:iron_gear' })
   //event.remove({ output: 'industrialforegoing:gold_gear' })
   //event.remove({ output: 'industrialforegoing:diamond_gear' })
+
+  event.remove({mod: 'additionalguns'})//移除更多的枪的所有配方
 
   event.remove({ id: "tcintegrations:smeltery/melting/metal/neptunium/block" })
   event.remove({ id: "tcintegrations:smeltery/melting/metal/neptunium/ingot" })
@@ -185,10 +189,6 @@ onEvent("recipes", event => {
   event.remove({ id: ("twilightforest:uncrafting_table") })
 
   event.remove({ id: ("expcaves:clay_ball") })
-
-  event.remove({ id: ("cgm:bazooka") })
-  event.remove({ id: ("cgm:heavy_rifle") })
-  event.remove({ id: ("cgm:machine_pistol") })
 
   event.remove({ id: ("createbigcannons:compacting/packed_gunpowder") })//移除打包火药原版配方
 
@@ -290,6 +290,10 @@ onEvent("recipes", event => {
   event.remove({ output: 'thermal:beetroot_block' })
   event.remove({ output: 'thermal:tomato_block' })
 
+  //删除原版电路板合成
+  event.remove({ id: "mekanism:metallurgic_infusing/alloy/reinforced" })
+  event.remove({ id: "mekanism:control_circuit/basic" })
+  event.remove({ id: "immersiveengineering:blueprint/circuit_board" })
 
   //其他
 
@@ -302,6 +306,16 @@ onEvent("recipes", event => {
 
   event.stonecutting(KJ("matter_plastic_ball"), KJ("matter_plastics"))
 
+  event.stonecutting("2x kubejs:lapis_sheet", "minecraft:lapis_lazuli")//青金石板
+
+  event.remove({ output: 'beyond_earth_giselle_addon:press_compressing_die' })
+  event.remove({ output: 'thermal:press_coin_die' })
+  event.remove({ output: 'thermal:press_gear_die' })
+  event.stonecutting("beyond_earth_giselle_addon:press_compressing_die", "#forge:plates/invar")
+  event.stonecutting("thermal:press_coin_die", "#forge:plates/invar")
+  event.stonecutting("thermal:press_gear_die", "#forge:plates/invar")
+
+  
   event.remove({ id: FD("flint_knife") })
   event.remove({ id: FD("iron_knife") })
   event.remove({ id: FD("golden_knife") })
@@ -412,14 +426,14 @@ onEvent("recipes", event => {
     C: '#forge:leather'
   })
 
-  event.shaped("nyfsquiver:basic_quiver", [
+ /* event.shaped("nyfsquiver:basic_quiver", [
     "CCC",
     "CSC",
     "CCC"
   ], {
     S: 'supplementaries:quiver',
     C: '#forge:leather'
-  })
+  })*/
 
   event.remove({ id: CR("splashing/gravel") })
   event.recipes.createSplashing([
@@ -441,6 +455,17 @@ onEvent("recipes", event => {
 
   event.remove({ id: "botania:red_string" })
   event.shapeless('botania:red_string', ['minecraft:string', 'create:rose_quartz', 'botania:pixie_dust']).id("botania:red_string_only")
+
+  event.shaped("forbidden_arcanus:eternal_stella", [
+		'PEP',
+		'SDS',
+		'PEP'
+	], {
+		P: "forbidden_arcanus:xpetrified_orb",
+		E: "minecraft:emerald",
+		S: "forbidden_arcanus:stellarite_piece",
+		D: "kubejs:rubberduck"
+	}) //永恒之石
 
   //黄铜工具转钻石工具 创意来自Create Astral
 
@@ -521,6 +546,9 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   event.remove({ id: 'simpleplanes:propeller' })
 
   // cgm枪械与机械动力：火炮
+  event.remove({ id: ("cgm:bazooka") })
+  event.remove({ id: ("cgm:heavy_rifle") })
+  event.remove({ id: ("cgm:machine_pistol") })
 
   event.remove({ id: 'createbigcannons:shot_balls' })
   event.remove({ id: 'musketmod:cartridge' })
@@ -536,6 +564,9 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   //event.shapeless('4x cgm:shell', ['kubejs:black_gunpowder', 'createbigcannons:shot_balls', 'immersiveengineering:empty_shell']).id("kubejs:shell")
   event.shapeless('4x musketmod:cartridge', ['minecraft:paper', 'minecraft:gunpowder', 'createbigcannons:shot_balls']).id("kubejs:cartridge")
 
+  event.shapeless('4x kubejs:grenade_fuze', ['#forge:nuggets/steel', '#forge:dusts/redstone']).id("kubejs:grenade_fuze")
+
+
   event.stonecutting("4x cgm:missile","createbigcannons:he_shell")
 
   event.remove({ id: 'createbigcannons:worm_head' })
@@ -549,8 +580,28 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     C: 'thermal:cured_rubber'
   }) //胶头刷配方
 
-  event.shapeless('kubejs:stock', ['#forge:stripped_logs', 'immersiveengineering:hammer']).id("kubejs:stock")//火铳枪托
-  event.shapeless('kubejs:musket_barrel', ['#forge:rods/iron', 'immersiveengineering:hammer']).id("kubejs:stock")//火铳枪管
+  event.shaped("2x kubejs:rubberduck", [
+    "CCC",
+    "CSB",
+    "CCC"
+  ], {
+    S: 'thermal:cured_rubber',
+    B: '#forge:dyes/orange',
+    C: '#forge:dyes/yellow'
+  })//橡皮鸭
+
+  event.shaped("additionalguns:p250", [
+    "  C",
+    " B ",
+    "BS "
+  ], {
+    S: 'kubejs:abstruse_mechanism',
+    B: 'create:shadow_steel',
+    C: 'create:refined_radiance'
+  })//光辉镭射枪
+
+  event.shapeless('kubejs:stock', ['#forge:stripped_logs', '#immersiveengineering:tools/hammers']).id("kubejs:stock")//火铳枪托
+  event.shapeless('kubejs:musket_barrel', ['#forge:rods/iron', '#immersiveengineering:tools/hammers']).id("kubejs:musket_barrel")//火铳枪管
   
   event.shapeless('musketmod:pistol', ['kubejs:stock', 'kubejs:musket_barrel', 'minecraft:flint_and_steel']).id("kubejs:pistol")//短铳
   event.remove({ id: 'musketmod:pistol' })
@@ -820,14 +871,13 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   event.recipes.createFilling("tconstruct:blood_cake", ['createaddition:cake_base_baked', Fluid.of(TC('blood'), 500)])
   event.recipes.createFilling("tconstruct:magma_cake", ['createaddition:cake_base_baked', Fluid.of(TC('magma'), 500)])
   event.shapeless('kubejs:banana_dough', ['#forge:dough', 'neapolitan:dried_banana']).id("kubejs:banana_dough")
+ 
   // 分茶
   event.recipes.createFilling("caupona:water", ['minecraft:bowl', Fluid.of('minecraft:water', 250)])
   event.recipes.createFilling("caupona:milk", ['minecraft:bowl', Fluid.of('minecraft:milk', 250)])
   event.recipes.createFilling("caupona:nail_soup", ['minecraft:bowl', Fluid.of('caupona:nail_soup', 250)])
+  event.recipes.createMixing(Fluid.of("caupona:nail_soup", 500), [Fluid.of(MC('water'), 500)]).heated()  
 
-  event.recipes.createMixing(Fluid.of("caupona:nail_soup", 500), [Fluid.of(MC('water'), 500)]).heated()
-
-  // 未分类
 
   event.shaped("kubejs:canvas_doll", [
     "AAA",
@@ -837,6 +887,10 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     S: 'exnihilosequentia:crafting_doll',
     A: 'farmersdelight:canvas'
   })//粗布人偶
+
+  event.shaped("minecraft:candle", [
+    'A',
+    'M'], { M: "kubejs:butter",A: "#forge:string" })
 
   event.smithing('pipez:item_pipe', 'prettypipes:pipe', 'kubejs:abstruse_mechanism')//pipez物品管道
   event.recipes.createMechanicalCrafting(Item.of("pipez:item_pipe", 1), [
@@ -848,12 +902,38 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
 
   event.shapeless('farmersdelight:straw', ['#forge:fiber_hemp', '#forge:fiber_hemp']).id("kubejs:straw") //工业大麻纤维合成草杆
 
+  event.shapeless('4x majruszsdifficulty:bandage', ['farmersdelight:canvas', 'farmersdelight:canvas']).id("kubejs:bandage")//绷带
+  event.recipes.createMechanicalCrafting(Item.of("majruszsdifficulty:bandage", 2), [
+    "BA",
+    "AB"
+  ], {
+    A: 'minecraft:string',
+    B: '#supplementaries:straw'
+  })//更简便的绷带合成
+
   event.shapeless('beyond_earth:permafrost', ['#minecraft:sand', '#forge:slag', 'thermal:compost', 'thermal:blizz_powder']).id("kubejs:permafrost")//合成冻土
 
+  event.remove({ id: "moreminecarts:silica_steel_mix" }) //禁用硅钢混合物合成
+  event.shapeless('kubejs:quartz_iron_ingot', ['#forge:ingots/iron', '#ae2:all_quartz', '#ae2:all_quartz']).id("kubejs:quartz_iron_ingot")//含铁石英
+
+  event.shapeless('4x kubejs:silica_steel_piece', ['moreminecarts:silica_steel']).id("kubejs:silica_steel_piece")
+  event.shaped("moreminecarts:silica_steel", [
+    "AA",
+    "AA"
+  ], {
+    A: 'kubejs:silica_steel_piece'
+  })
 
   event.shapeless('create:super_glue', ['create_things_and_misc:glue_packaging', '#forge:slimeballs', '#forge:slimeballs']).id("create:glue_packaging_to_super_glue")
 
   event.shapeless('2x create:tree_fertilizer', ['#minecraft:flowers', '#minecraft:flowers', 'thermal:apatite_dust']).id("kubejs:tree_fertilizer")
+
+  event.remove({ id: "flashlight:smallredstonebattery" })
+  event.shapeless('8x flashlight:smallredstonebattery', ['createaddition:capacitor', '#forge:dusts/redstone']).id("kubejs:smallredstonebattery")//一次性红石电池
+  event.remove({ id: "flashlight:flashlight" })
+  event.smithing('flashlight:flashlight', 'create:precision_mechanism', 'create:electron_tube')//黄铜照明2000流明
+
+  event.shapeless('kubejs:coal_compound', ['#forge:ingots/iron', '#kubejs:coal_dust', '#kubejs:coal_dust']).id("kubejs:coal_compound")//富碳铁锭
 
   event.shapeless('9x excompressum:compressed_andesite', ['kubejs:double_compressed_andesite']).id("kubejs:compressed_andesite")
   event.shapeless('9x create:limestone', ['kubejs:compressed_limestone']).id("kubejs:limestone")
@@ -1163,7 +1243,7 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     S: "minecraft:stick"
   })
 
-  event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, "#c:plates/brass", CR("golden_sheet"))
+  event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, "#forge:plates/brass", CR("golden_sheet"))
 
 
     let blitz = TE("blitz_powder")
@@ -1436,6 +1516,9 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   event.recipes.createMixing(Item.of("thermal:blitz_rod", 1), ["#forge:sand", ["cloudstorage:cloud"]])
   event.recipes.createMixing(Item.of("cloudstorage:spawn_egg_badloon", 1), ["#forge:eggs", ["thermal:cured_rubber"], ["#forge:dyes/red"]])
 
+  event.recipes.createMixing([Item.of("thermal:basalz_rod", 16),Item.of('thermal:flux_magnet', '{Energy:0}')], [Item.of("minecraft:basalt", 16), [Item.of('thermal:flux_magnet', '{Energy:50000}')]])
+  event.recipes.createMixing([Item.of("thermal:blizz_rod", 64),Item.of('ae2:entropy_manipulator', '{internalCurrentPower:0.0d}')], [Item.of("minecraft:snow_block", 64), [Item.of('ae2:entropy_manipulator', '{internalCurrentPower:200000.0d}')]])//第四章
+
   event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "kubejs:empty_music_disc")
   event.recipes.createMilling([Item.of("avaritia:record_fragment", 4)], "kubejs:empty_music_disc")
   event.recipes.createCrushing([Item.of("avaritia:record_fragment", 4), Item.of("avaritia:record_fragment", 2).withChance(.5)], "#minecraft:music_discs")
@@ -1461,8 +1544,14 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   event.recipes.createMilling([Item.of("kubejs:diamond_shard", 1), Item.of("createaddition:diamond_grit", 1).withChance(.15)], "minecraft:diamond")//钻石碎合成
   event.recipes.createMilling([Item.of("createaddition:diamond_grit", 1)], "kubejs:diamond_shard")//粉碎钻石碎
 
-  event.remove({ output: ('thermal:enderium_dust') })
-  event.remove({ output: ('thermal:enderium_ingot') })
+  event.recipes.createMilling([Item.of("create:electron_tube", 2)], "kubejs:scarp_mechanism")//残次构件回收
+
+  event.recipes.createMilling([Item.of("thermal:netherite_dust", 1), Item.of("kubejs:gnaws_coin_3", 1).withChance(.05)], "upgradednetherite_items:enchanted_gold_upgraded_netherite_apple")//暴食碎片C
+
+  //event.remove({ output: ('thermal:enderium_dust') })
+  //event.remove({ output: ('thermal:enderium_ingot') })
+  event.remove({ id: ('thermal:fire_charge/enderium_ingot_2') })
+  event.remove({ id: ('thermal:machines/smelter/smelter_alloy_enderium') })
 
   event.custom({
     type: 'thermal:press',
@@ -1585,10 +1674,10 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
 
  //还没分类的
 
- event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 180), [
+ event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 200), [
   {fluid: 'tconstruct:molten_iron', amount: 200},
   '3x #kubejs:coal_dust',
-]).processingTime(2500)
+]).processingTime(2500).heated()
 
   event.remove({ output: ('expcaves:clay_lump') })
   event.shaped(('9x expcaves:clay_lump'), [
@@ -1685,17 +1774,17 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
   })
 
   event.recipes.createMechanicalCrafting(Item.of("kubejs:rubber_duck", 1), [
-    "CAEEEE",
-    "ABAAAA",
-    "ABDBAE",
-    "ABBAAE",
-    "EAAEEE"
+    "CF    ",
+    "ABFFFF",
+    "ABDBF ",
+    "ABBAA ",
+    " AA   "
   ], {
     A: 'kubejs:crystal_matrix_sheet',
     B: 'kubejs:createcoin',
     C: 'minecraft:dragon_head',
-    D: 'minecraft:dragon_egg',
-    E: 'minecraft:air'
+    D: 'kubejs:rubberduck',
+    F: 'mekanism:ultimate_control_circuit'
   })
 
   event.recipes.createMechanicalCrafting(Item.of("kubejs:ice_catalyst", 1), [
@@ -1816,16 +1905,25 @@ event.recipes.createFilling('create_sa:brass_hoe', ['create_sa:brass_hoe', {flui
     D: 'kubejs:overcharged_alloy'
   })
 
-  event.recipes.createMechanicalCrafting(Item.of("kubejs:integrated_circuit", 1), [
-    "  B  ",
-    "ACECA",
-    " DDD ",
+  event.recipes.createMechanicalCrafting(Item.of("crockpot:gnaws_coin", 1), [
+    "AB",
+    "CD"
   ], {
-    A: 'minecraft:redstone',
+    A: 'kubejs:gnaws_coin_1',
+    B: 'kubejs:gnaws_coin_2',
+    C: 'kubejs:gnaws_coin_3',
+    D: 'kubejs:gnaws_coin_4'
+  })
+
+  event.recipes.createMechanicalCrafting(Item.of("kubejs:integrated_circuit", 1), [
+    " B ",
+    "CEC",
+    "DDD",
+  ], {
     B: 'kubejs:lapis_sheet',
     C: '#forge:nuggets/osmium',
     D: '#forge:nuggets/gold',
-    E: 'create:precision_mechanism'
+    E: 'kubejs:silica_steel_piece'
   })
 
   event.recipes.createMechanicalCrafting(Item.of("kubejs:neutronium_drive_hyper_dense", 2), [
@@ -1940,6 +2038,37 @@ event.shaped(('buddycards:luminis_sleeve'), [
     D: "avaritia:neutronium",
   })
 
+  event.remove({ id: 'avaritia:ultimate_stew' })
+  event.recipes.createMechanicalCrafting(Item.of("avaritia:ultimate_stew", 1), [
+    " JKL ",
+    "SFBGM",
+    "TDAEN",
+    "UHCIO",
+    " PQR "
+  ], {
+    A: "kubejs:sweet_mechanism",
+    B: "avaritia:neutron_nugget",
+    C: "create:blaze_cake",
+    D: "vanillacookbook:book_cake",
+    E: "vanillacookbook:mohnkuchen",
+    F: "vanillacookbook:carrot_cake",
+    G: "neapolitan:mint_cake",
+    H: "neapolitan:strawberry_cake",
+    I: "vanillacookbook:glow_berry_cake",
+    J: "neapolitan:vanilla_cake",
+    K: "minecraft:cake",
+    L: "vanillacookbook:cheesecake",
+    M: "vanillacookbook:berry_cake",
+    N: "createaddition:honey_cake",
+    O: "vanillacookbook:ice_cream_cake",
+    P: "thermal:chocolate_cake",
+    Q: "exnihilosequentia:end_cake",
+    R: "thermal:carrot_cake",
+    S: "neapolitan:banana_cake",
+    T: "vanillacookbook:chorus_cake",
+    U: "createaddition:chocolate_cake",
+  })
+
   event.recipes.createMechanicalCrafting(Item.of(Item.of('avaritia:singularity', '{Id:"avaritia:coal"}'), 3), [
     "AAAAA",
     "AAAAA",
@@ -2040,6 +2169,31 @@ event.shaped(('buddycards:luminis_sleeve'), [
     A: '#forge:ingots/platinum',
     C: Item.of('avaritia:singularity', '{Id:"avaritia:platinum"}')
   })
+
+  event.remove({ output: ('beyond_earth:rocket_t1') })
+  event.recipes.createMechanicalCrafting('beyond_earth:rocket_t1', [
+    '  A  ',
+    '  B  ',
+    ' BIB ',
+    ' BDB ',
+    ' BEB ',
+    ' BDB ',
+    'BFDFB',
+    'KGCGK',
+    'K H K'
+    
+  ], {
+    A: 'beyond_earth:rocket_nose_cone',
+    B: '#forge:plates/steel',
+    C: 'kubejs:computation_matrix',
+    D: 'createbigcannons:very_large_nethersteel_cannon_layer',
+    E: 'create_crystal_clear:train_clear_glass_casing',
+    F: 'kubejs:matrix_sheet',
+    G: 'beyond_earth:steel_tank',
+    H: 'beyond_earth:steel_engine',
+    I: 'computercraft:computer_advanced',
+    K: 'beyond_earth:rocket_fin'
+  })//火箭
 
 
     let dyes = [MC("orange_dye"), MC("magenta_dye"), MC("light_blue_dye"), MC("yellow_dye"), MC("lime_dye"), MC("pink_dye"), MC("cyan_dye"), MC("purple_dye"), MC("blue_dye"), MC("brown_dye"), MC("green_dye"), MC("red_dye")]
@@ -2146,6 +2300,8 @@ event.shaped(('buddycards:luminis_sleeve'), [
     prettierpipes(event)
     rubberMatters(event)
     oreProcessing(event)
+    alloys(event)
+    barrels(event)
   })
 
   function trading(event) {
@@ -2572,13 +2728,13 @@ function prettierpipes(event) {
   event.custom({
   "type": "thermal:crucible",
   "ingredients": [{"item": ingot}],
-  "result": [{"fluid": fluid,"amount": 144}],
+  "result": [{"fluid": fluid,"amount": 120}],
   "energy": 5000
 })
   event.custom({
   "type": "thermal:crucible",
   "ingredients": [{"item": dust}],
-  "result": [{"fluid": fluid,"amount": 48}],
+  "result": [{"fluid": fluid,"amount": 145}],
   "energy": 3000
 })
   event.custom({
@@ -2619,6 +2775,7 @@ function prettierpipes(event) {
     //    dust_process('silver', 'thermal:silver_ingot', 'thermal:silver_nugget', 'thermal:silver_dust', 'occultism:silver_ore', TE('sulfur'), 'lead')
     dust_process('aluminum', 'immersiveengineering:ingot_aluminum', 'immersiveengineering:nugget_aluminum', 'immersiveengineering:dust_aluminum', 'immersiveengineering:ore_aluminum', MC('iron_nugget'), 'iron')
     dust_process('osmium', 'mekanism:ingot_osmium', 'mekanism:nugget_osmium', 'mekanism:dust_osmium', 'mekanism:osmium_ore', MC('iron_nugget'), 'iron')
+    dust_process('platinum', 'exnihilosequentia:platinum_ingot', 'kubejs:platinum_nugget', 'kubejs:platinum_dust', 'kubejs:raw_platinum', 'thermal:silver_coin', 'copper')
 
 
     
@@ -2727,20 +2884,28 @@ function prettierpipes(event) {
     "type": "thermal:smelter",
     "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:ender_pearls"}], "count": 4}],
     "result": [{"item": "thermal:enderium_ingot"}],
-    "energy": 10000
+    "energy": 7000
   })
     event.custom({
     "type": "thermal:smelter",
     "ingredients": [{"item": "kubejs:chorus_chrome"},{"tag": "forge:ingots/silver"},{"value": [{"tag": "forge:nuggets/ender_pearl"}], "count": 8}],
     "result": [{"item": "thermal:enderium_dust"}],
-    "energy": 10000
+    "energy": 7000
   })
     event.custom({
     "type": "thermal:smelter",
     "ingredients": [{"item": "kubejs:inductive_mechanism"},{"item": "thermal:enderium_ingot"}],
     "result": [{"item": "kubejs:abstruse_mechanism"}],
-    "energy": 20000
+    "energy": 8000
   })
+
+  event.custom({
+    "type": "thermal:smelter",
+    "ingredients": [{"tag": "forge:dusts/coal"},{"tag": "forge:ingots/iron"},{"value": [{"tag": "ae2:all_quartz"}], "count": 1}],
+    "result": [{"item": "moreminecarts:silica_steel_mix"}],
+    "energy": 5000
+  })//硅钢混合物
+
     /*event.custom({
     "type": "thermal:smelter",
     "ingredients": [{"item": "kubejs:alpha_ingot"},{"item": "kubejs:starrite"},{"tag": "forge:dusts/diamond"}],
@@ -2842,5 +3007,95 @@ function prettierpipes(event) {
 	chop("sky", MC('bone_meal'))
 	chop("ender", AE2('ender_dust'))
   
+
+  function alloys(event) {
+
+    event.remove({ id: TC('smeltery/alloys/molten_bronze') })
+    event.remove({ id: TC('smeltery/alloys/molten_brass') })
+    event.remove({ id: TC('smeltery/alloys/molten_invar') })
+    event.remove({ id: TC('smeltery/alloys/molten_electrum') })
+    event.remove({ id: TC('smeltery/alloys/molten_constantan') })
+    event.remove({ id: TC('smeltery/alloys/molten_rose_gold') })
+    event.remove({ id: TC('smeltery/alloys/molten_enderium') })
+    event.remove({ id: TC('smeltery/alloys/molten_lumium') })
+    event.remove({ id: TC('smeltery/alloys/molten_signalum') })
+  
+    event.custom({
+      "type": "tconstruct:alloy",
+      "inputs": [
+        { "name": "tconstruct:molten_silver", "amount": 144 },
+        { "name": "tconstruct:molten_copper", "amount": 144 },
+        { "name": "thermal:redstone", "amount": 1000 }
+      ],
+      "result": {
+        "fluid": "tconstruct:molten_signalum",
+        "amount": 144
+      },
+      "temperature": 1000
+    })
+  
+    event.custom({
+      "type": "tconstruct:alloy",
+      "inputs": [
+        { "name": "tconstruct:molten_silver", "amount": 144 },
+        { "name": "tconstruct:molten_copper", "amount": 144 },
+        { "name": "thermal:glowstone", "amount": 1000 }
+      ],
+      "result": {
+        "fluid": "tconstruct:molten_lumium",
+        "amount": 144
+      },
+      "temperature": 1000
+    })
+  
+    event.remove({ type: MC("crafting_shapeless"), output: TE('constantan_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('electrum_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('lumium_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('signalum_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('enderium_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('bronze_dust') })
+    event.remove({ type: MC("crafting_shapeless"), output: TE('invar_dust') })
+  
+    event.recipes.createMixing(Fluid.of(TC('molten_brass'), 4), [Fluid.of(TC('molten_copper'), 4), Fluid.of(TC('molten_zinc'), 4)]).processingTime(1)
+    event.recipes.createMixing(Fluid.of(TC('molten_constantan'), 4), [Fluid.of(TC('molten_copper'), 4), Fluid.of(TC('molten_nickel'), 4)]).processingTime(1)
+    event.recipes.createMixing(Fluid.of(TC('molten_rose_gold'), 4), [Fluid.of(TC('molten_copper'), 4), Fluid.of(TC('molten_gold'), 4)]).processingTime(1)
+  
+    event.recipes.thermal.smelter([KJ("invar_compound"), KJ("invar_compound")], [TE("nickel_ingot"), MC("iron_ingot")])
+    event.recipes.thermal.smelter(CR("brass_ingot", 2), [MC("copper_ingot"), CR("zinc_ingot")])
+    event.recipes.thermal.smelter(TC("rose_gold_ingot", 2), [MC("copper_ingot"), MC("gold_ingot")])
+    event.recipes.thermal.smelter(TE("constantan_ingot", 2), [MC("copper_ingot"), TE("nickel_ingot")])
+  
+  }
+
+  function barrels(event) {
+    event.remove({ mod: "metalbarrels" })
+  
+    let smithAndMechCraft = (r, i1, i2) => {
+      event.smithing(r, i1, i2)
+      event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
+    }
+  
+    event.remove({ id: TE("dynamo_gourmand") })
+    smithAndMechCraft(TE("dynamo_gourmand"), TE("dynamo_stirling"), [MC("golden_carrot")])
+    smithAndMechCraft(TE("dynamo_gourmand"), TE("dynamo_stirling"), [MC("golden_apple")])
+    event.remove({ id: TE("dynamo_lapidary") })
+    smithAndMechCraft(TE("dynamo_lapidary"), TE("dynamo_numismatic"), [TE("lapis_gear")])
+    event.remove({ id: TE("dynamo_disenchantment") })
+    smithAndMechCraft(TE("dynamo_disenchantment"), TE("dynamo_compression"), ["forbidden_arcanus:rune"])
+  
+    smithAndMechCraft("metalbarrels:copper_barrel", MC("barrel"), ("#forge:ingots/constantan"))
+    smithAndMechCraft("metalbarrels:iron_barrel", MC("barrel"), "moreminecarts:silica_steel")
+    smithAndMechCraft("metalbarrels:silver_barrel", MC("barrel"), "forbidden_arcanus:rune")
+    smithAndMechCraft("metalbarrels:gold_barrel", MC("barrel"), TC("cobalt_ingot"))
+    smithAndMechCraft("metalbarrels:diamond_barrel", MC("barrel"), "create:refined_radiance")
+    smithAndMechCraft("metalbarrels:obsidian_barrel", MC("barrel"), "create:shadow_steel")
+  
+    event.shapeless("metalbarrels:wood_to_copper", ["metalbarrels:copper_barrel"])
+    event.shapeless("metalbarrels:wood_to_iron", ["metalbarrels:iron_barrel"])
+    event.shapeless("metalbarrels:wood_to_silver", ["metalbarrels:silver_barrel"])
+    event.shapeless("metalbarrels:wood_to_gold", ["metalbarrels:gold_barrel"])
+    event.shapeless("metalbarrels:wood_to_diamond", ["metalbarrels:diamond_barrel"])
+    event.shapeless("metalbarrels:wood_to_obsidian", ["metalbarrels:obsidian_barrel"])
+  }
 
   })

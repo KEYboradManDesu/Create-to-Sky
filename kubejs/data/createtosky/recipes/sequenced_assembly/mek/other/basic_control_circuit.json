@@ -1,0 +1,86 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "immersiveengineering:circuit_board"
+  },
+  "transitionalItem": {
+    "item": "immersiveengineering:circuit_board"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        },
+        {
+          "tag": "forge:wires/aluminum"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        },
+        {
+          "item": "createaddition:capacitor"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        },
+        {
+          "item": "kubejs:integrated_circuit"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        },
+        {
+          "item": "kubejs:screwdriver"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:circuit_board"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:basic_control_circuit",
+      "chance": 0.995
+    },
+    {
+      "item": "kubejs:scrap",
+      "chance": 0.005
+    }
+  ],
+  "loops": 1
+}

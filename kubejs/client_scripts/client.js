@@ -36,6 +36,7 @@ onEvent('item.tooltip', tooltip => {
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7在§7装配线§7中不消耗，仅消耗耐久`])
 	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7生成高度：Y= §6${y1} §7至 §6${y2}`])
 	let collection = (id, stage) => tooltip.add(id, [`附加目标：§6收藏品`])
+	let scrap = (id) => tooltip.add(id, [`附加目标：§6残次品`])
 	let ammo = (id, stage) => tooltip.add(id, [`§7弹药类型: §r ${stage}`])
 	
 	collection('kubejs:rickroll')
@@ -76,7 +77,8 @@ onEvent('item.tooltip', tooltip => {
 	holds('copper', 5 * 9)
 	holds('iron', 6 * 9)
 	holds('silver', 8 * 9)
-	holds('gold', 9 * 9)
+	holds('obsidian', 12 * 9)
+	holds('diamond', 12 * 9)
 
 	bonus_assembly('kubejs:handmade_mechanism', "0")
 	main_assembly('kubejs:kinetic_mechanism', "1")
@@ -99,6 +101,9 @@ onEvent('item.tooltip', tooltip => {
 	main_assembly('kubejs:calculation_mechanism', "4")
 	main_assembly('kubejs:crystalmatrix_mechanism', "5")
 	main_assembly('kubejs:creative_mechanism', "5A")
+
+	scrap('kubejs:scarp_mechanism')
+	scrap('kubejs:scrap')
 
 	not_consumed('kubejs:stone_saw')
 	not_consumed('kubejs:iron_saw')
@@ -145,10 +150,15 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("beyond_earth:cheese", [`§7月球果然是奶酪做的！`]);
 	tooltip.add("create:creative_blaze_cake", [`§7召唤simibubi之力！`]);
 	tooltip.add("beyond_earth:permafrost", [`§7含有大量的稀有燃料，可能封印着远古生命体`]);
-	tooltip.add("kubejs:rubber_duck", [`§7捏~捏捏~`]);
+	tooltip.add("kubejs:rubber_duck", [`§6这只小鸭子只会镭射眼。`]);
+	tooltip.add("kubejs:rubberduck", [`§7捏~捏捏~`]);
 	tooltip.add("twilightforest:mazebreaker_pickaxe", [`§8我的神镐！`]);
 	tooltip.add("kubejs:diamond_tool_embryo", [`§7可被切割成钻石工具。`]);
 	tooltip.add("kubejs:trade_card_unknow", [`§7来自异世的贸易单。`]);
+	tooltip.add("majruszsdifficulty:cloth", [`§7某位已逝之人的衣服碎片。`]);
+	tooltip.add("kubejs:gnaws_hungry", [`§b灵魂不绑定`]);
+	tooltip.add("kubejs:gnaws_hungry", [`§7饿饿，生气气`]);
+	tooltip.add("crockpot:gnaws_coin", [`§7好啊，很好啊(赞赏)`]);
 
 	tooltip.add("excompressum:compressed_andesite", [`§7我是9块安山岩的结合体`]);
 	tooltip.add("kubejs:compressed_limestone", [`§7我是9块石灰岩的结合体`]);
@@ -180,6 +190,11 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("minecraft:end_portal_frame", [`§6可被扳手强行拆除，不会返还!`]);
 
 	tooltip.add("nethersdelight:propelplant_cane", [`§6使用小刀破坏枪药草茎获得`]);
+
+	tooltip.add("flashlight:smallredstonebattery", [`§6使用时请放在副手然后右键手电筒。`]);
+	tooltip.add("flashlight:flashlight", [`§6需要微型红石电池。`]);
+
+	tooltip.add("kubejs:scarp_mechanism", [`§8也许处理处理还能用。`]);
 
 	tooltip.add("pipez:energy_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);
 	tooltip.add("pipez:item_pipe", [`§7潜行右键时：`, `§7标记 §f输入位置`, `§7使用 §f扳手 §7更改连接方式。`]);

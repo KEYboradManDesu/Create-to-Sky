@@ -1,0 +1,20 @@
+{
+  "type": "createbigcannons:melting",
+  "ingredients": [
+    {
+      "item": "kubejs:scrap"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tconstruct:molten_copper",
+      "amount": 90
+    },
+    {
+      "fluid": "tconstruct:molten_osmium",
+      "amount": 35
+    }
+  ],
+  "processingTime": 180,
+  "heatRequirement": "heated"
+}

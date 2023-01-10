@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "thermal:creosote",
+      
+      "amount": 12
+    },
+    {
+      "fluid": "createaddition:bioethanol",
+      
+      "amount": 8
+    }
+  ],
+  "results": [
+    {
+      "fluid": "immersiveengineering:phenolic_resin",
+      "amount": 8
+    }
+  ],
+  "heatRequirement":"heated"
+}

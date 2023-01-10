@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "item": "kubejs:sweet_mechanism"
+    },
+    {
+      "item": "kubejs:ultimate_cake_slice"
+    },
+    {
+      "item": "minecraft:cake"
+    },
+    {
+      "item": "minecraft:cake"
+    },
+    {
+      "item": "minecraft:cake"
+    },
+    {
+      "item": "minecraft:cake"
+    }
+  ],
+  "result": {
+    "item": "crockpot:gnaws_coin"
+  },
+  "container": {
+    "item": "kubejs:gnaws_hungry"
+  },
+  "experience": 2.0,
+  "cookingtime": 400
+}

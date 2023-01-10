@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "kubejs:gunpowder_bottle"
+    },
+    {
+      "tag": "forge:dusts/glowstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:glowstone_bottle"
+    }
+  ]
+}

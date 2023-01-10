@@ -205,7 +205,7 @@ onEvent('item.tags', event => {
 	event.get("exnihilosequentia:hammer").add("projecte:rm_hammer")
 	event.get("exnihilosequentia:hammer").add("projecte:rm_morning_star")
   
-	event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
+	//event.get("forge:plates/steel").add("beyond_earth:compressed_steel")
 	
 	event.get("kubejs:matrix").add("kubejs:computation_matrix")
   
@@ -236,6 +236,7 @@ onEvent('item.tags', event => {
   
 	event.get("kubejs:coal_dust").add("mekanism:dust_coal")
 	event.get("kubejs:coal_dust").add("mekanism:dust_charcoal")
+	event.get("kubejs:coal_dust").add("immersiveengineering:dust_coke")
   
 	event.get("forge:ingots/nickel").remove("immersiveengineering:ingot_nickel")
 	event.get("forge:ingots/nickel").remove("exnihilosequentia:nickel_ingot")
@@ -268,7 +269,7 @@ onEvent('item.tags', event => {
 	event.get("forge:plates/silver").remove("immersiveengineering:plate_silver")
 	event.get("forge:plates/constantan").remove("immersiveengineering:plate_constantan")
 	event.get("forge:plates/electrum").remove("immersiveengineering:plate_electrum")
-	event.get("forge:plates/steel").remove("immersiveengineering:plate_steel")
+	//event.get("forge:plates/steel").remove("immersiveengineering:plate_steel")
 	event.get("forge:plates/copper").remove("immersiveengineering:plate_copper")
 	event.get("forge:plates/iron").remove("immersiveengineering:plate_iron")
 	event.get("forge:plates/gold").remove("immersiveengineering:plate_gold")
@@ -303,6 +304,9 @@ onEvent('item.tags', event => {
 	event.get("forge:storage_blocks/constantan").remove("immersiveengineering:storage_constantan")
 	event.get("forge:storage_blocks/uranium").remove("immersiveengineering:storage_uranium")
 	event.get("forge:storage_blocks/electrum").remove("immersiveengineering:storage_electrum")
+
+	event.get("forge:storage_blocks/lead").remove("mekanism:block_lead")
+	event.get("forge:storage_blocks/tin").remove("mekanism:block_tin")
   
 	event.get("forge:rods/iron").remove("beyond_earth:iron_stick")
 	event.get("forge:rods/iron").remove("createaddition:iron_rod")
@@ -313,5 +317,52 @@ onEvent('item.tags', event => {
 	event.get("forge:dusts/brass").add("kubejs:brass_dust")
 	event.get("forge:dusts/cobalt").add("kubejs:cobalt_dust")
 	event.get("forge:dusts/zinc").add("kubejs:zinc_dust")
+
+	event.get("forge:eggs").add("exoticbirds:mystery_egg")
+
+	event.get("supplementaries:straw").add("expcaves:plant_fiber")
+	event.get("forge:fiber_hemp").add("expcaves:plant_fiber")
+	event.get("forge:crops/flax").add("expcaves:plant_fiber")
+	event.get("supplementaries:throwable_bricks").add("expcaves:brick_half")
+	event.get("forge:tools/knives").add("expcaves:chef_knife")
+	event.get("forge:tools/knives").add("expcaves:butcher_knife")
+	event.get("forge:tools/knives").add("expcaves:iron_dagger")
+	event.get("exnihilosequentia:crook").add("expcaves:wooden_cane")
+
+	event.get("kubejs:barrels").add("metalbarrels:iron_barrel")
+	event.get("kubejs:barrels").add("metalbarrels:silver_barrel")
+	event.get("kubejs:barrels").add("metalbarrels:copper_barrel")
+	event.get("kubejs:barrels").add("metalbarrels:gold_barrel")
+	event.get("kubejs:barrels").add("metalbarrels:diamond_barrel")
+	event.get("kubejs:barrels").add("metalbarrels:obsidian_barrel")
+
+	event.get("exnihilosequentia:hammer").add("#excompressum:compressed_hammer")
+
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:string_mesh")
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:flint_mesh")
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:iron_mesh")
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:diamond_mesh")
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:emerald_mesh")
+	event.get("exnihilosequentia:mesh").add("exnihilosequentia:netherite_mesh")
+
+	event.get("forge:nuggets/platinum").add("kubejs:platinum_nugget")
+	event.get("forge:nuggets").add("kubejs:platinum_nugget")
+	event.get("forge:dusts/platinum").add("kubejs:platinum_dust")
+	event.get("forge:dusts").add("kubejs:platinum_dust")
+	event.get("mekanism:dirty_dusts/platinum").add("kubejs:platinum_dirt_dust")
+	event.get("mekanism:dirty_dusts").add("kubejs:platinum_dirt_dust")
+	event.get("mekanism:crystals/platinum").add("kubejs:platinum_crystal")
+	event.get("mekanism:crystals").add("kubejs:platinum_crystal")
+	event.get("mekanism:clumps/platinum").add("kubejs:platinum_clumps")
+	event.get("mekanism:clumps").add("kubejs:platinum_clumps")
+	event.get("mekanism:shards/platinum").add("kubejs:platinum_shard")
+	event.get("mekanism:shards").add("kubejs:platinum_shard")
+	event.get("forge:raw_materials/platinum").add("kubejs:raw_platinum")
+	event.get("forge:raw_materials").add("kubejs:raw_platinum")
+
+	event.get("forge:tools/knives").add("kubejs:rubber_duck")
+	event.get("farmersdelight:tools/knives").add("#forge:tools/knives")
+
+	event.get("forge:dyes/yellow").add("#forge:dusts/sulfur")
   
   })

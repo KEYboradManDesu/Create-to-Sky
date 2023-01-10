@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:coal_coke",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:dust_coke",
+      "amount": 1
+    }
+  ]
+}

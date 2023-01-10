@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "tag": "forge:crops/wheat"
+    }
+  ],
+  "tool": {
+    "tag": "exnihilosequentia:hammer"
+  },
+  "result": [
+    {
+      "item": "create:wheat_flour",
+      "count": 1
+    },
+    {
+      "item": "minecraft:wheat_seeds",
+      "count": 2
+    }
+  ]
+}

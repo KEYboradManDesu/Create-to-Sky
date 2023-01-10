@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "forge:gunpowder"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:gunpowder_bottle"
+    }
+  ]
+}

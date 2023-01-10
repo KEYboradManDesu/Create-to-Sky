@@ -1,0 +1,1027 @@
+{
+	id: "492D716A6C780306"
+	group: "331B6409EF6A7840"
+	order_index: 2
+	filename: "492D716A6C780306"
+	title: "&f&l0&r 粉墨登场 &a/ &6开荒指南&r"
+	icon: {
+		id: "exnihilosequentia:wooden_crook"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	always_invisible: true
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "古法人工精炼"
+			icon: "exnihilosequentia:jungle_sieve"
+			x: 0.0d
+			y: 3.5d
+			shape: "hexagon"
+			description: [
+				"合成出来只是一个筛框，是不自带筛网的，筛网需要另外合成并右键装配。可以用来筛沙子、泥土、灵魂沙、尘土。"
+				"&6至此，你掌握了基本的矿物再生。"
+			]
+			dependencies: [
+				"584CFE8B492B012D"
+				"641BF6D1C0119BAF"
+				"1F5CEC4CAC0AA928"
+				"7FA6289A7DFEF822"
+				"56EEBDFA030A6F5D"
+				"4F27CB86C95D6A35"
+				"70BE4C41D5715825"
+			]
+			dependency_requirement: "one_completed"
+			size: 0.7d
+			id: "439C4F9A4AFA0885"
+			tasks: [{
+				id: "41DF2D96B1D4845C"
+				type: "item"
+				title: "任意筛子"
+				icon: "exnihilosequentia:oak_sieve"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:sieves"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "0A5EB4BA3E78791D"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "纤维化"
+			icon: "exnihilosequentia:infested_leaves"
+			x: 1.4d
+			y: 2.8d
+			shape: "square"
+			description: ["使用&6蚕&r对树叶使用后将&6树叶&r变为&6被感染的树叶&r，并且会不断扩散，把所有相邻的树叶方块尽可能多的感染，所以千万不要把蚕放进一片森林里，除非你不打算要这片森林了。只有感染到达100%才可以用钩子获得线（彻底变白），&6提前破坏不会获得任何东西&r。"]
+			dependencies: ["7FDFF28C233BC3A3"]
+			size: 0.7d
+			id: "7D43046E1B776A14"
+			tasks: [{
+				id: "28F11E076D361C23"
+				type: "item"
+				item: "minecraft:string"
+				consume_items: false
+			}]
+		}
+		{
+			title: "拆迁好手"
+			x: -1.4d
+			y: 1.4d
+			shape: "square"
+			description: ["被锤子破坏的方块将会被&6粉碎&r，圆石变砂砾，砂砾变沙子，沙子变粉尘。好好利用这一点！"]
+			dependencies: ["584CFE8B492B012D"]
+			size: 0.7d
+			id: "79E6ADB2341757A1"
+			tasks: [{
+				id: "6824294DED36166D"
+				type: "item"
+				title: "任何锤子"
+				icon: {
+					id: "exnihilosequentia:wooden_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:hammer"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "54B60362B67A806F"
+					type: "item"
+					team_reward: false
+					item: "minecraft:sand"
+					count: 4
+				}
+				{
+					id: "2BA3499D32D0D545"
+					type: "item"
+					team_reward: false
+					item: "exnihilosequentia:dust"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "钩子函数"
+			icon: {
+				id: "exnihilosequentia:wooden_crook"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.4d
+			y: 1.4d
+			shape: "square"
+			description: ["使用&6钩子&r去破坏&6树叶&r能提高该树叶树苗和该树叶其他产物的掉落几率。同时也有几率掉落&6蚕&r。不同材质的&6钩子&r耐久度和破坏&6树叶&r的速度不同。"]
+			dependencies: ["584CFE8B492B012D"]
+			size: 0.7d
+			id: "7FDFF28C233BC3A3"
+			tasks: [{
+				id: "32933984ECFCE7E1"
+				type: "item"
+				title: "任何钩子"
+				icon: {
+					id: "exnihilosequentia:wooden_crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:crook"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "64A4ABA00645585A"
+					type: "item"
+					team_reward: false
+					item: "exnihilosequentia:silkworm"
+					count: 4
+				}
+				{
+					id: "422D67EED2758A85"
+					type: "item"
+					team_reward: false
+					item: "create:honeyed_apple"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "筛网"
+			icon: "exnihilosequentia:string_mesh"
+			x: 1.4d
+			y: 3.5d
+			shape: "square"
+			description: ["最基础的筛网，能允许你的砂砾筛出&6燧石&r。"]
+			dependencies: ["7D43046E1B776A14"]
+			size: 0.7d
+			id: "641BF6D1C0119BAF"
+			tasks: [{
+				id: "694F59C9AE7FABA0"
+				type: "item"
+				icon: "exnihilosequentia:string_mesh"
+				item: "exnihilosequentia:string_mesh"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "357CE31EAA324850"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 8
+			}]
+		}
+		{
+			title: "古法3D人工分子重组"
+			x: -1.4d
+			y: 2.8d
+			shape: "square"
+			description: ["使用锤子粉碎&6圆石&r。"]
+			dependencies: [
+				"79E6ADB2341757A1"
+				"00FED9AE1821A44E"
+			]
+			size: 0.7d
+			id: "7FA6289A7DFEF822"
+			tasks: [{
+				id: "4C829296E200969F"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 4L
+				consume_items: false
+				only_from_crafting: false
+			}]
+		}
+		{
+			title: "再粉碎"
+			x: -1.4d
+			y: 3.5d
+			shape: "square"
+			description: ["使用锤子&r粉碎&6沙砾&r。"]
+			dependencies: ["7FA6289A7DFEF822"]
+			size: 0.7d
+			id: "56EEBDFA030A6F5D"
+			tasks: [{
+				id: "5A842797FA91761B"
+				type: "item"
+				item: "minecraft:sand"
+				consume_items: false
+			}]
+		}
+		{
+			title: "再再粉碎"
+			x: -1.4d
+			y: 4.2d
+			shape: "square"
+			description: ["使用锤子&r粉碎&6沙子&r。"]
+			dependencies: ["56EEBDFA030A6F5D"]
+			size: 0.7d
+			id: "4F27CB86C95D6A35"
+			tasks: [{
+				id: "45546C71F5BBEDAA"
+				type: "item"
+				item: "exnihilosequentia:dust"
+				consume_items: false
+			}]
+		}
+		{
+			title: "获得升级"
+			x: 1.4d
+			y: 4.2d
+			shape: "square"
+			description: ["进过升级的&6筛网&r能允许你的&6砂砾&r筛出各种&6矿物粒&r。"]
+			dependencies: ["641BF6D1C0119BAF"]
+			size: 0.7d
+			id: "1F5CEC4CAC0AA928"
+			tasks: [{
+				id: "5B5D8927B75547D5"
+				type: "item"
+				icon: "exnihilosequentia:flint_mesh"
+				item: "exnihilosequentia:flint_mesh"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "04E27814AAE56D31"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:cobblestone"
+			x: -2.8d
+			y: 1.4d
+			shape: "square"
+			description: ["石头到处有，但是迟早有耗尽的一天。好在岩浆和水在一起可以迅速凝结成圆石。"]
+			dependencies: ["584CFE8B492B012D"]
+			size: 0.7d
+			id: "00FED9AE1821A44E"
+			tasks: [{
+				id: "77A882EBEA5EA692"
+				type: "item"
+				title: "圆石"
+				icon: "minecraft:cobblestone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				count: 32L
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 10.5d
+			shape: "square"
+			description: ["最简易的滤网，但足够了。"]
+			dependencies: ["17054915BB1DA5D0"]
+			size: 0.7d
+			id: "2618DE286746BB3E"
+			tasks: [{
+				id: "1201464F6745E056"
+				type: "item"
+				item: {
+					id: "waterstrainer:strainer_survivalist"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			icon: "farmersdelight:straw"
+			x: 3.5d
+			y: 9.1d
+			description: ["使用小刀破坏&6草&r和&6高草&r概率得到&6草秆&r，可以用于合成&6粗布&r。"]
+			dependencies: ["16F92200E1BDB3A9"]
+			size: 0.7d
+			id: "17054915BB1DA5D0"
+			tasks: [
+				{
+					id: "7CC9583AFF58928A"
+					type: "item"
+					item: "farmersdelight:straw"
+					consume_items: false
+				}
+				{
+					id: "472C80536C0607DC"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "431095C5C5FD7F9F"
+				type: "item"
+				item: "farmersdelight:canvas"
+			}]
+		}
+		{
+			x: -2.8d
+			y: 6.3d
+			shape: "square"
+			description: ["&6黏土&r通常分布在河床下，潮湿的洞穴。"]
+			dependencies: [
+				"40FD7B0D7FFB2076"
+				"230732F1FF5BEB54"
+			]
+			size: 0.7d
+			id: "26CD6384A084A493"
+			tasks: [{
+				id: "13CC4A17B7EAF481"
+				type: "item"
+				item: "minecraft:clay_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "发酵"
+			x: 2.8d
+			y: 2.8d
+			shape: "square"
+			description: ["将有机物发酵成泥土。"]
+			dependencies: ["4423579A043BB100"]
+			size: 0.7d
+			id: "70BE4C41D5715825"
+			tasks: [{
+				id: "2B0CDA212E5C098E"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 8L
+				consume_items: false
+			}]
+			rewards: [{
+				id: "657BF6C54DFAF489"
+				type: "item"
+				item: "botania:fertilizer"
+				count: 8
+			}]
+		}
+		{
+			title: "回收再利用"
+			icon: "exnihilosequentia:oak_barrel"
+			x: 2.8d
+			y: 1.4d
+			shape: "square"
+			description: ["将有机物发酵成泥土（树叶，树种，蚕，蜘蛛丝，各种肉类，各种农作物）。"]
+			dependencies: ["584CFE8B492B012D"]
+			size: 0.7d
+			id: "4423579A043BB100"
+			tasks: [{
+				id: "2CCD66A96929F64E"
+				type: "item"
+				title: "任何桶"
+				icon: "exnihilosequentia:oak_barrel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:barrels"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "第一篇：梦开始的地方"
+			icon: "minecraft:oak_sapling"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "开荒"
+			description: [
+				"&6欢迎来到Create to Sky开荒指南！&r"
+				""
+				"首先，你需要木头，很多木头以及更多的木头。从大自然一昧地索取总不是个长久的办法，你最好赶快实现木材的自给自足和充足供应。"
+				"&7记住，JEI是你的好帮手！"
+			]
+			dependencies: ["21A8C11E4FE26924"]
+			id: "584CFE8B492B012D"
+			tasks: [
+				{
+					id: "061561A40163B91D"
+					type: "item"
+					title: "任意原木"
+					icon: "minecraft:oak_log"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 4L
+					consume_items: false
+				}
+				{
+					id: "6BB68FDEC4BB525F"
+					type: "item"
+					title: "任意树苗"
+					icon: "minecraft:oak_sapling"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "115DDCA231CB218E"
+					type: "item"
+					item: "create:tree_fertilizer"
+					count: 8
+				}
+				{
+					id: "4602D6F322A950CC"
+					type: "loot"
+					title: "&e空岛开荒包&r"
+					icon: "cfm:stripped_oak_crate"
+					team_reward: false
+					table_id: 2502707641431327974L
+				}
+			]
+		}
+		{
+			title: "第二篇：步入正轨"
+			icon: {
+				id: "minecraft:stone_hoe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 5.0d
+			shape: "hexagon"
+			subtitle: "采集与奉献"
+			description: [
+				"饥饿驱动着你寻找竭泽而渔的食物来源以及更高的效率。"
+				"&7PS:现在开始养殖动物，以后的你会感谢现在的你！"
+			]
+			hide_dependency_lines: true
+			dependencies: ["439C4F9A4AFA0885"]
+			id: "40FD7B0D7FFB2076"
+			tasks: [{
+				id: "250FB6ECCF227368"
+				type: "item"
+				title: "任意锄头"
+				icon: {
+					id: "minecraft:stone_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools/hoes"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "种下一颗种子"
+			x: -0.7d
+			y: 6.3d
+			shape: "square"
+			subtitle: "你想要我的种子吗？"
+			description: ["开垦土地，撒下种子。"]
+			dependencies: ["40FD7B0D7FFB2076"]
+			size: 0.7d
+			id: "481ABB4A2E34EFC5"
+			tasks: [{
+				id: "370FE306A3E355EC"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				consume_items: false
+			}]
+		}
+		{
+			title: "终于长出了果实"
+			x: -0.7d
+			y: 7.0d
+			shape: "square"
+			subtitle: "收获日"
+			dependencies: ["481ABB4A2E34EFC5"]
+			size: 0.7d
+			id: "54DB66D9384092FA"
+			tasks: [{
+				id: "7755BD6BD15A4503"
+				type: "item"
+				item: "minecraft:wheat"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "56EB5233DD3F6332"
+				type: "item"
+				item: {
+					id: "quark:seed_pouch"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "细细切做臊子"
+			icon: "create:wheat_flour"
+			x: -0.7d
+			y: 7.7d
+			description: ["使用小刀在砧板上处理小麦。"]
+			dependencies: [
+				"54DB66D9384092FA"
+				"0C5564E85637A886"
+			]
+			size: 0.7d
+			id: "367530FD13410485"
+			tasks: [{
+				id: "7FF0FEE2142DA989"
+				type: "item"
+				item: "create:wheat_flour"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "668FBC6FD953FE79"
+				type: "item"
+				item: "create:honeyed_apple"
+			}]
+		}
+		{
+			title: "面多加水，水多加面"
+			x: -0.7d
+			y: 8.4d
+			shape: "square"
+			description: ["小麦粉加水即可揉成面团。"]
+			dependencies: [
+				"367530FD13410485"
+				"0EA1B290103103AA"
+			]
+			size: 0.7d
+			id: "61A63F057F699967"
+			tasks: [{
+				id: "7B37132E2B2785EC"
+				type: "item"
+				item: "create:dough"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.4d
+			y: 6.3d
+			shape: "square"
+			description: ["最好的垫脚石！"]
+			dependencies: ["40FD7B0D7FFB2076"]
+			size: 0.7d
+			id: "7816512C8DFC3DE8"
+			tasks: [{
+				id: "3B7965DE260EB00C"
+				type: "item"
+				title: "任意树叶"
+				icon: "minecraft:oak_leaves"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:leaves"
+					}
+				}
+				count: 16L
+				consume_items: false
+			}]
+		}
+		{
+			x: 0.7d
+			y: 7.0d
+			description: ["树叶可以在坩埚中榨成水。"]
+			dependencies: ["7816512C8DFC3DE8"]
+			size: 0.7d
+			id: "0EA1B290103103AA"
+			tasks: [{
+				id: "47D3F26A9B9CF295"
+				type: "item"
+				item: "minecraft:water_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "草木灰"
+			x: 1.4d
+			y: 7.0d
+			description: ["将树叶烧成灰。"]
+			dependencies: ["7816512C8DFC3DE8"]
+			size: 0.7d
+			id: "6FAA19BC11DF2448"
+			tasks: [{
+				id: "321B2AB662C12F2A"
+				type: "item"
+				item: "minecraft:green_dye"
+				consume_items: false
+			}]
+		}
+		{
+			title: "纯天然"
+			x: -0.7d
+			y: 9.1d
+			shape: "square"
+			description: ["为你的面团染个色，然后欺骗自己它是粘液球。"]
+			dependencies: [
+				"61A63F057F699967"
+				"16E50FC68478288C"
+			]
+			size: 0.7d
+			id: "14B2D65240D18700"
+			tasks: [{
+				id: "138A34ACB12A603E"
+				type: "item"
+				item: "minecraft:slime_ball"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "46F8731D258D7D75"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			x: 0.7d
+			y: 8.4d
+			dependencies: [
+				"6FAA19BC11DF2448"
+				"4D691644497DE1D7"
+			]
+			size: 0.7d
+			id: "16E50FC68478288C"
+			tasks: [{
+				id: "7423F298D29B99DA"
+				type: "item"
+				item: "minecraft:lime_dye"
+				consume_items: false
+			}]
+		}
+		{
+			title: "古法人工3D易形"
+			x: -2.8d
+			y: 4.8999999999999995d
+			description: ["将黏土捏成锅状。"]
+			dependencies: ["26CD6384A084A493"]
+			size: 0.7d
+			id: "35F2D3357AE72339"
+			tasks: [{
+				id: "64043770F317AC6E"
+				type: "item"
+				item: "exnihilosequentia:unfired_crucible"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.8d
+			y: 3.5d
+			shape: "square"
+			description: ["坩埚可以用来加工岩浆或者水，只需要常见的石头和树叶。"]
+			dependencies: [
+				"35F2D3357AE72339"
+				"00FED9AE1821A44E"
+			]
+			size: 0.7d
+			id: "4055041DAFB26BB8"
+			tasks: [{
+				id: "59D453D65ABEF688"
+				type: "item"
+				item: "exnihilosequentia:fired_crucible"
+				consume_items: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			shape: "square"
+			description: ["滚热的岩浆，你绝对不想喝一口。"]
+			dependencies: ["4055041DAFB26BB8"]
+			size: 0.7d
+			id: "671B8D59DA4395FE"
+			tasks: [{
+				id: "3F4DC769B6C26FA9"
+				type: "item"
+				item: "minecraft:lava_bucket"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "004A608B69770389"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "舌尖上的空岛"
+			icon: {
+				id: "farmersdelight:iron_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.8d
+			y: 6.3d
+			shape: "square"
+			description: ["处理食材的小刀。"]
+			dependencies: ["40FD7B0D7FFB2076"]
+			size: 0.7d
+			id: "16F92200E1BDB3A9"
+			tasks: [{
+				id: "4557EF60F52987AE"
+				type: "item"
+				title: "任意小刀"
+				icon: {
+					id: "farmersdelight:iron_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools/knives"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "古法人工3D切割技术"
+			x: 2.8d
+			y: 7.7d
+			shape: "square"
+			description: ["处理食材的地方，厨师的家。"]
+			dependencies: [
+				"16F92200E1BDB3A9"
+				"730B14EAB68F06FA"
+			]
+			size: 0.7d
+			id: "0C5564E85637A886"
+			tasks: [{
+				id: "1030E1C68642EDB9"
+				type: "item"
+				item: "farmersdelight:cutting_board"
+				consume_items: false
+			}]
+		}
+		{
+			title: "钓鱼佬"
+			icon: {
+				id: "minecraft:fishing_rod"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 4.2d
+			y: 6.3d
+			shape: "square"
+			description: [
+				"没有哪款生存游戏离不开钓鱼，空岛也一样。"
+				"&7钓鱼切记需远离高压线！"
+			]
+			dependencies: ["40FD7B0D7FFB2076"]
+			size: 0.7d
+			id: "196E576856E80C61"
+			tasks: [
+				{
+					id: "782A8D8E67C95A7D"
+					type: "item"
+					item: {
+						id: "minecraft:fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "26473255167D8751"
+					type: "item"
+					item: "aquaculture:tackle_box"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "535C4650158D3B58"
+				type: "item"
+				item: "aquaculture:gold_hook"
+			}]
+		}
+		{
+			title: "<・)))><<"
+			icon: "minecraft:salmon"
+			x: 4.2d
+			y: 7.7d
+			subtitle: "sakala~"
+			description: ["鱼，好吃。"]
+			dependencies: ["196E576856E80C61"]
+			size: 0.7d
+			id: "730B14EAB68F06FA"
+			tasks: [{
+				id: "52A7D69E60D98FC4"
+				type: "item"
+				title: "任意的鱼"
+				icon: "minecraft:salmon"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_fishes"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "1F5D7F5A5FCB1B0C"
+				type: "item"
+				item: "waterstrainer:worm"
+				count: 4
+			}]
+		}
+		{
+			title: "骨头灰"
+			x: 2.1d
+			y: 8.4d
+			description: ["处理下来的骨头。"]
+			dependencies: ["0C5564E85637A886"]
+			size: 0.7d
+			id: "4D691644497DE1D7"
+			tasks: [{
+				id: "69F92D90880BEEC4"
+				type: "item"
+				item: "minecraft:bone_meal"
+				consume_items: false
+			}]
+		}
+		{
+			title: "生鱼片"
+			x: 2.8d
+			y: 8.4d
+			subtitle: "忌吃生食！"
+			description: ["处理过的鱼。"]
+			dependencies: ["0C5564E85637A886"]
+			size: 0.7d
+			id: "663B572B46FB2175"
+			tasks: [{
+				id: "58A241E5743E6430"
+				type: "item"
+				item: "farmersdelight:salmon_slice"
+				consume_items: false
+			}]
+		}
+		{
+			title: "粗制构件"
+			icon: "kubejs:handmade_mechanism"
+			x: 0.0d
+			y: 12.0d
+			description: ["能用就行。"]
+			dependencies: ["14B2D65240D18700"]
+			id: "738648DFF200212F"
+			tasks: [{
+				id: "1C64D0039E6F3F80"
+				type: "item"
+				item: "kubejs:handmade_mechanism"
+				count: 8L
+			}]
+		}
+		{
+			title: "&f&l入门章节完成！&r"
+			x: 0.0d
+			y: 13.2d
+			shape: "hexagon"
+			description: ["恭喜！现在你生产了第一台&6粗制机器&r了！不要错过这个完美的契机，继续向前努力！"]
+			dependencies: ["738648DFF200212F"]
+			size: 1.2d
+			id: "60575B1FDF66BB83"
+			tasks: [{
+				id: "3958AF197A1C9BDD"
+				type: "item"
+				item: "kubejs:handmade_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "2E2E5EDD515A3F69"
+					type: "random"
+					title: "你应得的奖励"
+					team_reward: false
+					auto: "disabled"
+					table_id: 2227126643817174377L
+				}
+				{
+					id: "4B8E5496A28D5C09"
+					type: "item"
+					item: "kubejs:good_idea"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -2.8d
+			y: 10.5d
+			shape: "square"
+			description: ["耐用的过滤器，需要搭配上滤网。"]
+			dependencies: [
+				"60575B1FDF66BB83"
+				"2618DE286746BB3E"
+			]
+			size: 0.7d
+			id: "230732F1FF5BEB54"
+			tasks: [{
+				id: "5E02D8B5F226F689"
+				type: "item"
+				item: "waterstrainer:strainer_base"
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.8999999999999995d
+			y: 7.0d
+			subtitle: "深海的嘉惠"
+			description: ["传说在开阔水域&7(5×4×5)&r钓鱼的钓鱼佬有极小的概率钓上来海王的宝藏。"]
+			dependencies: ["196E576856E80C61"]
+			size: 0.7d
+			id: "0BDA9CB397CBDF9B"
+			tasks: [{
+				id: "34F5AD18D7470B56"
+				type: "item"
+				item: "aquaculture:neptunes_bounty"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "629012DA65A728B5"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+		}
+		{
+			title: "普通餐"
+			x: -1.4d
+			y: 7.7d
+			shape: "square"
+			description: ["你的美味早餐。"]
+			dependencies: [
+				"54DB66D9384092FA"
+				"61A63F057F699967"
+			]
+			size: 0.7d
+			id: "200CCF8F57ACC27E"
+			tasks: [{
+				id: "54B0E918D07424FA"
+				type: "item"
+				item: "minecraft:bread"
+				consume_items: false
+			}]
+		}
+	]
+}

@@ -240,7 +240,7 @@ function chaosT(subs, seed, event) {
    .produceFluid("minecraft:water")*/
 
 
-   event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
+   /*event.recipes.custommachinery.custom_machine("createtosky:chaotic_achemy", 1)
    .requireRedstone(4, ">>")
    .requireItem("minecraft:basalt", "substrates1")
    .requireItem("minecraft:basalt", "substrates2")
@@ -260,7 +260,7 @@ function chaosT(subs, seed, event) {
    .runCommandOnEnd("/particle minecraft:flash ~0.5 ~0.5 ~0.5 0 0 0 .01 1",false)
    .runCommandOnEnd("/particle ae2:matter_cannon_fx ~0.5 ~0.5 ~0.5",false)
    .runCommandOnEnd("/playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 0.95 1.5",false)
-   .dropItemOnEnd('4x thermal:blizz_rod')
+   .dropItemOnEnd('4x thermal:blizz_rod')*/
 
   
 	

@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "kubejs:grenade_fuze",
+      "count": 1
+    },
+    {
+      "item": "kubejs:gunpowder_bottle",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:grenade",
+    "count": 1
+  }
+}

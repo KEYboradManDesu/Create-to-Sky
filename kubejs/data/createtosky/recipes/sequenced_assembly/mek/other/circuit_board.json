@@ -1,0 +1,72 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "immersiveengineering:plate_duroplast"
+  },
+  "transitionalItem": {
+    "item": "immersiveengineering:plate_duroplast"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        },
+        {
+          "tag": "forge:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        },
+        {
+          "fluid": "immersiveengineering:phenolic_resin",
+          "amount": 45
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        },
+        {
+          "fluid": "tconstruct:molten_osmium",
+          "amount": 15
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_duroplast"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:circuit_board",
+      "chance": 0.991
+    },
+    {
+      "item": "kubejs:scrap",
+      "chance": 0.009
+    }
+  ],
+  "loops": 1
+}

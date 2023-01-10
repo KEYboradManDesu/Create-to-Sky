@@ -1,0 +1,75 @@
+{
+	id: "22BB6757082B84E6"
+	order_index: 31
+	title: "空岛生存包"
+	icon: "cfm:stripped_oak_crate"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:pickadze"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.75f
+						"tconstruct:attack_damage": 1.15f
+						"tconstruct:durability": 1.3f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.391f
+						"tconstruct:mining_speed": 5.015625f
+						"tconstruct:attack_damage": 3.01875f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 784.87494f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:bane_of_sssss"
+							level: 1s
+						}
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:lightweight"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 1s
+						}
+						{
+							name: "tconstruct:shovel_flatten"
+							level: 1s
+						}
+					]
+					Damage: 0
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:cobalt"
+					]
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+		}
+		{ item: "minecraft:water_bucket" }
+		{ item: "minecraft:lava_bucket" }
+		{ item: "minecraft:scaffolding", count: 32 }
+		{ item: "kubejs:protein_bar", count: 8 }
+		{
+			item: {
+				id: "exnihilosequentia:bone_crook"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

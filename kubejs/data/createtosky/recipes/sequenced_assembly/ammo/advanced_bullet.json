@@ -14,7 +14,7 @@
           "item": "kubejs:incompete_advanced_bullet"
         },
         {
-          "item": "createbigcannons:packed_gunpowder"
+          "tag": "forge:nuggets/cast_iron"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "kubejs:incompete_advanced_bullet"
         },
         {
-          "tag": "forge:nuggets/cast_iron"
+          "item": "createbigcannons:packed_gunpowder"
         }
       ],
       "results": [

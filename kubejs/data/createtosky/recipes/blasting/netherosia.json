@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "crockpot:collected_dust"
+  },
+  "result": {
+    "item": "crockpot:netherosia"
+  }
+}

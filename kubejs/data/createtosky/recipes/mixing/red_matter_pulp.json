@@ -10,11 +10,6 @@
       "fluid": "kubejs:mozerella_chese",
       
       "amount": 100
-    },
-    {
-      "fluid": "kubejs:molten_overcharged_alloy",
-      
-      "amount": 100
     }
   ],
   "results": [

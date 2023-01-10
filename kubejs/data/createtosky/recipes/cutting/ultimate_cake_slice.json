@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "avaritia:ultimate_stew"
+    }
+  ],
+  "tool": {
+    "item": "kubejs:rubber_duck"
+  },
+  "result": [
+    {
+      "item": "kubejs:ultimate_cake_slice",
+      "count": 7
+    }
+  ]
+}

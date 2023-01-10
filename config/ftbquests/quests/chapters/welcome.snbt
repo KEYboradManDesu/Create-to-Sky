@@ -151,12 +151,20 @@
 					id: "4000DE1B90DA84CE"
 					type: "item"
 					item: "minecraft:wheat_seeds"
+					count: 4
 				}
 				{
 					id: "28C64D54D41FF750"
 					type: "item"
 					item: "tetra:rack"
 					count: 4
+				}
+				{
+					id: "1B2C3EBA8D1B1025"
+					type: "item"
+					item: "majruszsdifficulty:bandage"
+					count: 4
+					random_bonus: 12
 				}
 			]
 		}

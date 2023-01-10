@@ -1,0 +1,8 @@
+{
+  "item.flashlight.flashlight": "Flashlight",
+  "item.flashlight.smallredstonebattery": "Small redstone battery",
+  "item.flashlight.liOn": "§7§lLight: §3ON",
+  "item.flashlight.liOff": "§7§lLight: §4OFF",
+  "tooltip.flashlight.batLife": "§6§lBattery: §e%s",
+  "item.smallredstonebattery.singleUse": "§3Single-Use"
+}

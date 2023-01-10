@@ -1,7 +1,7 @@
 {
 	id: "32C4B62281328EB9"
 	group: "331B6409EF6A7840"
-	order_index: 9
+	order_index: 11
 	filename: "botania"
 	title: "&f&lDLC&r 植物魔法"
 	icon: {
@@ -35,7 +35,6 @@
 				"欢迎来到&a植物魔法的世界&f！在这里将着手教你打造魔法的工厂！"
 				""
 			]
-			dependencies: ["2BFDD3BF41E8F5A3"]
 			hide: true
 			size: 1.5d
 			id: "3712DD92B446BB60"
@@ -976,7 +975,6 @@
 			dependencies: [
 				"02487D6C79185B80"
 				"1542F79BD35B282E"
-				"067C5FDA4709F195"
 			]
 			hide: true
 			size: 1.5d
@@ -994,7 +992,6 @@
 			y: -4.0d
 			shape: "circle"
 			description: ["将&6赛特斯石英粉末&r用玻璃密封好。"]
-			dependencies: ["067C5FDA4709F195"]
 			hide: true
 			id: "1542F79BD35B282E"
 			tasks: [{

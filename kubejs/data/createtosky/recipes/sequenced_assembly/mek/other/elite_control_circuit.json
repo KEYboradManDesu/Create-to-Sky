@@ -1,0 +1,35 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:advanced_control_circuit"
+  },
+  "transitionalItem": {
+    "item": "mekanism:advanced_control_circuit"
+  },
+  "sequence": [
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    {
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 45
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:advanced_control_circuit"
+    }
+  ]
+}
+],
+"results": [
+  {
+    "item": "mekanism:elite_control_circuit",
+    "chance": 1
+  }
+],
+"loops": 2
+}

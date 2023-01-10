@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:alloy_infused"
+  },
+  "transitionalItem": {
+    "item": "mekanism:alloy_infused"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_infused"
+        },
+        {
+          "item": "kubejs:silica_steel_piece"
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_infused"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_infused"
+        },
+        {
+          "fluid": "tconstruct:molten_diamond",
+          "amount": 75
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_infused"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "mekanism:alloy_infused"
+        },
+        {
+          "fluid": "tconstruct:molten_osmium",
+          "amount": 15
+        }
+      ],
+      "results": [
+        {
+          "item": "mekanism:alloy_infused"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:alloy_reinforced",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:nuggets/steel",
+      "count": 1
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:grenade_fuze",
+    "count": 4
+  }
+}

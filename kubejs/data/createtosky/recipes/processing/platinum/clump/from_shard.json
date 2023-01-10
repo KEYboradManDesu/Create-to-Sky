@@ -1,0 +1,1 @@
+{"type":"mekanism:purifying","itemInput":{"ingredient":{"tag":"mekanism:shards/platinum"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"kubejs:platinum_clumps"}}

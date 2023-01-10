@@ -30,34 +30,6 @@
 			}]
 		}
 		{
-			title: "烈焰人.zip"
-			icon: "create:blaze_burner"
-			x: -7.5d
-			y: 0.5d
-			subtitle: "2金币"
-			description: ["找不到烈焰人？给上小费，我帮你整个。"]
-			id: "252B9DD5BFB8184A"
-			tasks: [
-				{
-					id: "5345AA8760A95127"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 16b }
-					item: "thermal:silver_coin"
-					count: 16L
-				}
-				{
-					id: "10CEE9A1DB690CB1"
-					type: "item"
-					item: "create:empty_blaze_burner"
-				}
-			]
-			rewards: [{
-				id: "0E01F7F590F428A4"
-				type: "item"
-				item: "create:blaze_burner"
-			}]
-		}
-		{
 			title: "绝妙发明：锯断一切"
 			icon: {
 				id: "kubejs:netherite_saw"
@@ -319,6 +291,7 @@
 					type: "item"
 					item: "minecraft:bread"
 					count: 2
+					random_bonus: 32
 				}
 				{
 					id: "51A8014ACD2153F6"
@@ -342,20 +315,13 @@
 			subtitle: "15银币"
 			description: ["你可以尽早买一些泥土作为你的地基。"]
 			id: "4B01606CE7AF3121"
-			tasks: [
-				{
-					id: "188BEC2BA245DB13"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 15b }
-					item: "thermal:silver_coin"
-					count: 15L
-				}
-				{
-					id: "286B651D5F4A87AB"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "188BEC2BA245DB13"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+			}]
 			rewards: [
 				{
 					id: "65597F84B69546EF"
@@ -394,20 +360,13 @@
 			subtitle: "50银币"
 			description: ["这个神秘的东西给你了一个看似无穷无尽的深度的谜盒。作为专家的你知道这一定是有限的，但什么在最底下呆着呢？"]
 			id: "09EA580B3D32FEEB"
-			tasks: [
-				{
-					id: "3EA558277444F605"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 50b }
-					item: "thermal:silver_coin"
-					count: 50L
-				}
-				{
-					id: "6164769C6A04515A"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "3EA558277444F605"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 50b }
+				item: "thermal:silver_coin"
+				count: 50L
+			}]
 			rewards: [{
 				id: "1E10CE8D433DD70E"
 				type: "item"
@@ -528,20 +487,13 @@
 			subtitle: "55银币"
 			description: ["它像个背包，但很漂亮。"]
 			id: "4FD46F841CCD59F8"
-			tasks: [
-				{
-					id: "709557A517B0143F"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 55b }
-					item: "thermal:silver_coin"
-					count: 55L
-				}
-				{
-					id: "4468FE777D557530"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "709557A517B0143F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 55b }
+				item: "thermal:silver_coin"
+				count: 55L
+			}]
 			rewards: [
 				{
 					id: "7B8F11CCEDEBEBD6"
@@ -574,20 +526,13 @@
 			subtitle: "25银币"
 			description: ["“我在一间路旁被遗弃的作坊里找到了这个，你想要买它吗？”"]
 			id: "0CCF34BF1C5829AE"
-			tasks: [
-				{
-					id: "32ACF7B1C0BD9D97"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 25b }
-					item: "thermal:silver_coin"
-					count: 25L
-				}
-				{
-					id: "0C8E167480DA60FC"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "32ACF7B1C0BD9D97"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 25b }
+				item: "thermal:silver_coin"
+				count: 25L
+			}]
 			rewards: [{
 				id: "37DBD1EF724A42D9"
 				type: "item"
@@ -635,20 +580,13 @@
 			subtitle: "45银币"
 			description: ["正如介绍所说：这个有魔力的钟可以探测周围光照不足的地方。交易含有可以让钟被诅咒的营火，真是赚到了！"]
 			id: "4B52A04818075900"
-			tasks: [
-				{
-					id: "4FB1B4787D648565"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 45b }
-					item: "thermal:silver_coin"
-					count: 45L
-				}
-				{
-					id: "0A64455CCD63B3F4"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "4FB1B4787D648565"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 45b }
+				item: "thermal:silver_coin"
+				count: 45L
+			}]
 			rewards: [
 				{
 					id: "0257303302DADA1B"
@@ -723,20 +661,13 @@
 			subtitle: "6金币"
 			description: ["真正的信息专家不会出去很长时间，但还好必要的电脑部件可以在这里直接购买到你的背包里！"]
 			id: "4BAC95CCC72369AD"
-			tasks: [
-				{
-					id: "3D328A6D69E64EDA"
-					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 12b }
-					item: "thermal:gold_coin"
-					count: 6L
-				}
-				{
-					id: "68F1832D9706E3E7"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "3D328A6D69E64EDA"
+				type: "item"
+				icon: { id: "thermal:gold_coin", Count: 12b }
+				item: "thermal:gold_coin"
+				count: 2L
+			}]
 			rewards: [{
 				id: "51ABA96DE3477D3B"
 				type: "item"
@@ -809,20 +740,13 @@
 			subtitle: "32银币"
 			description: ["一个热力膨胀武器小测试。"]
 			id: "1CC29991D5F248CA"
-			tasks: [
-				{
-					id: "2BF8F9E5070C6122"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 32b }
-					item: "thermal:silver_coin"
-					count: 32L
-				}
-				{
-					id: "3FAAC1B8720B4197"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "2BF8F9E5070C6122"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 32b }
+				item: "thermal:silver_coin"
+				count: 32L
+			}]
 			rewards: [
 				{
 					id: "1C6218230C6D71A0"
@@ -856,21 +780,15 @@
 			x: -2.5d
 			y: -1.5d
 			subtitle: "24银币"
+			description: ["做好除虫。"]
 			id: "42384DE39AA48976"
-			tasks: [
-				{
-					id: "05BB5DFA82280C0C"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 24b }
-					item: "thermal:silver_coin"
-					count: 24L
-				}
-				{
-					id: "3FDB8FBD3462B4A5"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "05BB5DFA82280C0C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 24b }
+				item: "thermal:silver_coin"
+				count: 24L
+			}]
 			rewards: [
 				{
 					id: "26A16DC998FEF595"
@@ -911,20 +829,13 @@
 			y: 1.5d
 			subtitle: "24银币"
 			id: "61B040CD0832EFC0"
-			tasks: [
-				{
-					id: "6404722100F1DEF7"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 24b }
-					item: "thermal:silver_coin"
-					count: 24L
-				}
-				{
-					id: "4B553628A4672ECC"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "6404722100F1DEF7"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 24b }
+				item: "thermal:silver_coin"
+				count: 24L
+			}]
 			rewards: [
 				{
 					id: "6375AD9CBA9276E0"
@@ -983,20 +894,13 @@
 			y: 2.0d
 			subtitle: "24银币"
 			id: "117587D824D23D69"
-			tasks: [
-				{
-					id: "06C835DB602D6F9F"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 24b }
-					item: "thermal:silver_coin"
-					count: 24L
-				}
-				{
-					id: "6EF437FAC72B6F71"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "06C835DB602D6F9F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 24b }
+				item: "thermal:silver_coin"
+				count: 24L
+			}]
 			rewards: [
 				{
 					id: "4D33B3525FF09C68"
@@ -1031,20 +935,13 @@
 			y: 0.0d
 			subtitle: "24银币"
 			id: "2D75D1864FB1EF75"
-			tasks: [
-				{
-					id: "3AA788B63B6A73EF"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 24b }
-					item: "thermal:silver_coin"
-					count: 24L
-				}
-				{
-					id: "433C7663AAC53BBC"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "3AA788B63B6A73EF"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 24b }
+				item: "thermal:silver_coin"
+				count: 24L
+			}]
 			rewards: [
 				{
 					id: "4961B49D79004571"
@@ -1085,20 +982,13 @@
 			subtitle: "24银币"
 			description: ["对你的建筑外表不满意？没关系，树叶解决一切！"]
 			id: "7D93DAB3E8ACF953"
-			tasks: [
-				{
-					id: "06028A67C6DCCD00"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 24b }
-					item: "thermal:silver_coin"
-					count: 24L
-				}
-				{
-					id: "55D26B10A9A1CB54"
-					type: "item"
-					item: "kubejs:good_idea"
-				}
-			]
+			tasks: [{
+				id: "06028A67C6DCCD00"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 24b }
+				item: "thermal:silver_coin"
+				count: 24L
+			}]
 			rewards: [
 				{
 					id: "1BA12452E9A090EC"
@@ -1180,6 +1070,7 @@
 			x: 0.5d
 			y: -1.5d
 			subtitle: "12银币"
+			description: ["愿魔力与你同在。"]
 			id: "17A8F97F7C95FC73"
 			tasks: [{
 				id: "2D7A18F40FC439F6"
@@ -1206,6 +1097,7 @@
 			tasks: [{
 				id: "6AEDD26D0FFF8963"
 				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 16b }
 				item: "thermal:silver_coin"
 				count: 16L
 			}]
@@ -1321,6 +1213,28 @@
 				id: "6F577045D27E9664"
 				type: "questsadditions:repeat"
 				table_id: 492572487195875612L
+			}]
+		}
+		{
+			title: "知识变现"
+			icon: "create:experience_nugget"
+			x: -7.5d
+			y: 1.0d
+			subtitle: "1 &5奇思妙想"
+			description: ["把脑袋的知识换成实在的物品。"]
+			id: "112E8D09403DB86C"
+			tasks: [{
+				id: "083DFA82F849B0F5"
+				type: "item"
+				item: "kubejs:good_idea"
+			}]
+			rewards: [{
+				id: "4CABBD2EA8EC79AB"
+				type: "questsadditions:repeat_random"
+				title: "&a&l经验盲盒"
+				icon: "create:experience_nugget"
+				team_reward: false
+				table_id: 3946970921689501033L
 			}]
 		}
 	]

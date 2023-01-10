@@ -3,17 +3,17 @@
   "ingredients": [
     {
       "fluid": "tconstruct:molten_gold",
-      "amount": 500
+      "amount": 4
     },
     {
       "fluid": "tconstruct:molten_silver",
-      "amount": 500
+      "amount": 4
     }
   ],
   "results": [
     {
       "fluid": "tconstruct:molten_electrum",
-      "amount": 500
+      "amount": 4
     }
   ]
 }

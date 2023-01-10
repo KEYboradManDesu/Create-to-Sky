@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "results": [
+    {
+      "item": "moreminecarts:glass_cactus"
+    }
+  ]
+}
